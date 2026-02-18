@@ -1,0 +1,14 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('expertMode.tradeForm.sellMode')
+    - locator resolved to <button tabindex="0" role="button" type="button" aria-labelledby="«r1t»" data-testid="expertMode.tradeForm.sellMode" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-secondary-default-border)] background-color-[var(--components--act…>…</button>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - performing click action
+
+    at TradeForm.switchTo (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/trade/BTC/EUR/TradeForm.ts:60:38)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/trading/expert-mode.spec.ts:55:45

@@ -1,0 +1,13 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Sign-up attempt 1 failed. Retrying...
+Sign-up attempt 2 failed. Retrying...
+Sign-up attempt 3 failed. Retrying...
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: /^1 février(.*)$/ }) to be detached
+    21 × locator resolved to visible <button tabindex="0" role="button" type="button" aria-selected="true" aria-label="1 février 2023" class="css-g5y9jx r-1loqt21 r-1otgn73">…</button>
+
+    at DatePicker.chooseDay (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/DatePicker.ts:39:32)
+    at DatePicker.pickDate (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/DatePicker.ts:67:5)
+    at CompanyIdentificationInformationModal.pickRegistrationDate (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/dashboard/_components/CompanyIdentificationInformationModal.ts:24:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/onboarding/complete-flows.spec.ts:268:3
