@@ -1,0 +1,12 @@
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByText('La validation a échoué.')
+Expected: visible
+Timeout: 10000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 10000ms
+  - waiting for getByText('La validation a échoué.')
+
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/transfers/deposit.spec.ts:33:59
