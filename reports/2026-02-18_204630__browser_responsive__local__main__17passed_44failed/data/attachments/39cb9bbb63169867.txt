@@ -1,0 +1,8 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('listitem').filter({ hasText: 'Dépôt / retrait' })
+
+    at ResponsiveMenu.goTo (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/ResponsiveMenu.ts:77:37)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/wallet/crypto-address.spec.ts:26:48
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/wallet/crypto-address.spec.ts:23:3
