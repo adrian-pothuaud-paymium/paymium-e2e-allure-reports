@@ -1,0 +1,4 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"0","Authentification","0","Connexion","1","0","Un utilisateur peut se connecter avec des identifiants valides et sans 2FA","0"
+"0","","0","","4","1","","0"
+"0","Authentification","0","Connexion","1","0","Un utilisateur peut se connecter avec des identifiants valides et 2FA activée","0"
