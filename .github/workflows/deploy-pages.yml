@@ -1,0 +1,40 @@
+# Deploy to GitHub Pages using Actions (bypasses Jekyll build entirely)
+# Triggers on every push to main — near-instant deployment.
+# Queued: lets in-progress deploy finish, then runs the next one in order.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+# Queue deployments: let the running one finish, pending ones wait in order
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
