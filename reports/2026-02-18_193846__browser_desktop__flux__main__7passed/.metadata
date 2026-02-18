@@ -1,0 +1,9 @@
+TIMESTAMP=2026-02-18_193846
+ENVIRONMENT=flux
+BRANCH=main
+JOB=browser_desktop
+TOTAL=7
+PASSED=7
+FAILED=0
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37802
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/202905
