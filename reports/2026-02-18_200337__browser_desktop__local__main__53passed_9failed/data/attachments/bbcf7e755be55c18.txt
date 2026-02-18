@@ -1,0 +1,7 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByText(/Un code à 6 chiffres a été envoyé par SMS./) to be visible
+
+    at ConfirmWithdrawAddressModal.waitForSMSCode (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/withdraw/ConfirmWithdrawAddressModal.ts:39:8)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/wallet/crypto-address.spec.ts:73:56
