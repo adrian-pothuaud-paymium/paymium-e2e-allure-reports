@@ -1,0 +1,9 @@
+TIMESTAMP=2026-02-18_040439
+ENVIRONMENT=flux
+BRANCH=main
+JOB=sanity-browser
+TOTAL=7
+PASSED=7
+FAILED=0
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37690
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/201958
