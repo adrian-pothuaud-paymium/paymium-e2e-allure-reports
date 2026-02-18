@@ -7,16 +7,38 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#f0f2f5;color:#1a1a2e;min-height:100vh}
-.container{max-width:1320px;margin:0 auto;padding:2rem 1rem}
-.header{text-align:center;margin-bottom:2rem}
+.container{max-width:1400px;margin:0 auto;padding:2rem 1rem}
+.header{text-align:center;margin-bottom:1.5rem}
 .header h1{font-size:1.6rem;color:#1a1a2e;margin-bottom:.3rem}
 .header p{color:#666;font-size:.9rem}
+
+/* ─── Toolbar ─── */
+.toolbar{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-bottom:1rem;padding:0 .25rem}
+.search-box{flex:1 1 280px;position:relative}
+.search-box input{width:100%;padding:9px 14px 9px 36px;border:1px solid #d0d5dd;border-radius:8px;font-size:.88rem;background:#fff;transition:border .2s}
+.search-box input:focus{outline:none;border-color:#1565c0;box-shadow:0 0 0 3px rgba(21,101,192,.12)}
+.search-box svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:#999;pointer-events:none}
+.filters{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}
+.filter-group{display:flex;align-items:center;gap:.3rem}
+.filter-group label{font-size:.78rem;color:#666;font-weight:600;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap}
+.filter-group select{padding:6px 28px 6px 10px;border:1px solid #d0d5dd;border-radius:8px;font-size:.84rem;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 5l3 3 3-3' fill='none' stroke='%23666' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 8px center;appearance:none;-webkit-appearance:none;cursor:pointer;transition:border .2s}
+.filter-group select:focus{outline:none;border-color:#1565c0}
+.filter-btn{padding:6px 14px;border:1px solid #d0d5dd;border-radius:8px;font-size:.82rem;background:#fff;cursor:pointer;color:#666;font-weight:500;transition:all .15s}
+.filter-btn:hover{border-color:#1565c0;color:#1565c0}
+.filter-btn.active{background:#1565c0;color:#fff;border-color:#1565c0}
+.count{font-size:.78rem;color:#999;margin-left:auto;white-space:nowrap}
+
+/* ─── Table ─── */
 .card{background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.06);overflow:hidden}
 table{width:100%;border-collapse:collapse}
-thead th{background:#1a1a2e;color:#fff;padding:12px 16px;text-align:left;font-size:.82rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+thead th{background:#1a1a2e;color:#fff;padding:12px 16px;text-align:left;font-size:.82rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;user-select:none;white-space:nowrap}
+thead th:hover{background:#2a2a4e}
+thead th .sort-arrow{display:inline-block;margin-left:4px;font-size:.7rem;opacity:.5}
+thead th.sorted .sort-arrow{opacity:1}
 tbody td{padding:10px 16px;border-bottom:1px solid #f0f0f0;font-size:.88rem;vertical-align:middle}
 tbody tr:last-child td{border-bottom:none}
 tbody tr:hover td{background:#f8f9ff}
+tbody tr.hidden{display:none}
 .badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.78rem;font-weight:600;white-space:nowrap}
 .pass{background:#e8f5e9;color:#2e7d32}
 .fail{background:#ffebee;color:#c62828}
@@ -27,8 +49,8 @@ a.rlink:hover{text-decoration:underline}
 a.ci{color:#999;font-size:.78rem;text-decoration:none}
 a.ci:hover{color:#1565c0}
 .foot{text-align:center;margin-top:1.5rem;color:#aaa;font-size:.78rem}
-.empty{padding:3rem;text-align:center;color:#aaa}
-@media(max-width:768px){.container{padding:1rem .5rem}thead th,tbody td{padding:8px 10px;font-size:.78rem}.header h1{font-size:1.3rem}}
+.empty-row td{padding:3rem;text-align:center;color:#aaa;font-style:italic}
+@media(max-width:768px){.container{padding:1rem .5rem}.toolbar{flex-direction:column}.search-box{flex:1 1 100%}.count{margin-left:0;margin-top:.3rem}thead th,tbody td{padding:8px 10px;font-size:.78rem}.header h1{font-size:1.3rem}}
 </style>
 </head>
 <body>
@@ -37,13 +59,59 @@ a.ci:hover{color:#1565c0}
 <h1>Paymium E2E - Allure Reports</h1>
 <p>Test reports deployed from GitLab CI/CD to GitHub Pages</p>
 </div>
+
+<!-- Toolbar: Search + Filters -->
+<div class="toolbar">
+  <div class="search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+    <input type="text" id="searchInput" placeholder="Search by date, branch, job, environment..." autocomplete="off">
+  </div>
+  <div class="filters">
+    <div class="filter-group">
+      <label>Env</label>
+      <select id="filterEnv"><option value="">All</option></select>
+    </div>
+    <div class="filter-group">
+      <label>Job</label>
+      <select id="filterJob"><option value="">All</option></select>
+    </div>
+    <div class="filter-group">
+      <label>Status</label>
+      <select id="filterStatus">
+        <option value="">All</option>
+        <option value="pass">All passed</option>
+        <option value="fail">Has failures</option>
+      </select>
+    </div>
+    <button class="filter-btn" id="btnReset" title="Reset all filters">Clear</button>
+  </div>
+  <span class="count" id="rowCount"></span>
+</div>
+
 <div class="card">
-<table>
+<table id="reportsTable">
 <thead>
-<tr><th>Date (UTC)</th><th>Env</th><th>Branch</th><th>Job</th><th>Results</th><th>Report</th><th>CI</th></tr>
-</thead>
-<tbody>
 <tr>
+  <th data-col="0">Date (UTC) <span class="sort-arrow">▼</span></th>
+  <th data-col="1">Env <span class="sort-arrow">▼</span></th>
+  <th data-col="2">Branch <span class="sort-arrow">▼</span></th>
+  <th data-col="3">Job <span class="sort-arrow">▼</span></th>
+  <th data-col="4">Results <span class="sort-arrow">▼</span></th>
+  <th data-col="5">Report</th>
+  <th data-col="6">CI</th>
+</tr>
+</thead>
+<tbody id="reportsBody">
+<tr data-env="flux" data-job="sanity-browser" data-fail="0">
+<td>2026-02-18 02:14:44</td>
+<td><span class="badge env">flux</span></td>
+<td title="main">main</td>
+<td><span class="badge job">sanity-browser</span></td>
+<td><span class="badge pass">7 passed</span></td>
+<td><a class="rlink" href="reports/2026-02-18_021444__sanity-browser__flux__main__7passed/index.html">View Report &rarr;</a></td>
+<td><a class="ci" href="https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37688" target="_blank">pipeline</a> | <a class="ci" href="https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/201939" target="_blank">job</a></td>
+</tr>
+<tr data-env="sandbox" data-job="sanity-browser" data-fail="0">
 <td>2026-02-18 02:08:41</td>
 <td><span class="badge env">sandbox</span></td>
 <td title="main">main</td>
@@ -52,7 +120,7 @@ a.ci:hover{color:#1565c0}
 <td><a class="rlink" href="reports/2026-02-18_020841__sanity-browser__sandbox__main__7passed/index.html">View Report &rarr;</a></td>
 <td><a class="ci" href="https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37687" target="_blank">pipeline</a> | <a class="ci" href="https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/201932" target="_blank">job</a></td>
 </tr>
-<tr>
+<tr data-env="flux" data-job="sanity-browser" data-fail="0">
 <td>2026-02-18 02:08:37</td>
 <td><span class="badge env">flux</span></td>
 <td title="main">main</td>
@@ -61,7 +129,7 @@ a.ci:hover{color:#1565c0}
 <td><a class="rlink" href="reports/2026-02-18_020837__sanity-browser__flux__main__7passed/index.html">View Report &rarr;</a></td>
 <td><a class="ci" href="https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37687" target="_blank">pipeline</a> | <a class="ci" href="https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/201930" target="_blank">job</a></td>
 </tr>
-<tr>
+<tr data-env="staging" data-job="sanity-browser" data-fail="0">
 <td>2026-02-18 02:08:28</td>
 <td><span class="badge env">staging</span></td>
 <td title="main">main</td>
@@ -70,7 +138,7 @@ a.ci:hover{color:#1565c0}
 <td><a class="rlink" href="reports/2026-02-18_020828__sanity-browser__staging__main__7passed/index.html">View Report &rarr;</a></td>
 <td><a class="ci" href="https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37687" target="_blank">pipeline</a> | <a class="ci" href="https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/201931" target="_blank">job</a></td>
 </tr>
-<tr>
+<tr data-env="flux" data-job="sanity-browser" data-fail="0">
 <td>2026-02-18 02:02:22</td>
 <td><span class="badge env">flux</span></td>
 <td title="main">main</td>
@@ -82,7 +150,110 @@ a.ci:hover{color:#1565c0}
 </tbody>
 </table>
 </div>
-<div class="foot">Last updated: 2026-02-18 02:08:45 UTC</div>
+<div class="foot">Last updated: 2026-02-18 02:14:48 UTC</div>
 </div>
+<script>
+(function(){
+  const table=document.getElementById('reportsTable');
+  const tbody=document.getElementById('reportsBody');
+  const searchInput=document.getElementById('searchInput');
+  const filterEnv=document.getElementById('filterEnv');
+  const filterJob=document.getElementById('filterJob');
+  const filterStatus=document.getElementById('filterStatus');
+  const btnReset=document.getElementById('btnReset');
+  const rowCount=document.getElementById('rowCount');
+  const rows=Array.from(tbody.querySelectorAll('tr[data-env]'));
+
+  /* ── Populate filter dropdowns from data ── */
+  function populateSelect(sel,values){
+    const current=sel.value;
+    while(sel.options.length>1) sel.remove(1);
+    [...values].sort().forEach(v=>{
+      const o=document.createElement('option');
+      o.value=v; o.textContent=v; sel.appendChild(o);
+    });
+    sel.value=current;
+  }
+  function refreshDropdowns(){
+    const envs=new Set(), jobs=new Set();
+    rows.forEach(r=>{envs.add(r.dataset.env); jobs.add(r.dataset.job);});
+    populateSelect(filterEnv,envs);
+    populateSelect(filterJob,jobs);
+  }
+  refreshDropdowns();
+
+  /* ── Filter logic ── */
+  function applyFilters(){
+    const q=searchInput.value.toLowerCase().trim();
+    const env=filterEnv.value;
+    const job=filterJob.value;
+    const status=filterStatus.value;
+    let visible=0;
+    rows.forEach(row=>{
+      let show=true;
+      if(q){
+        const text=row.textContent.toLowerCase();
+        /* support multiple words (AND logic) */
+        q.split(/\s+/).forEach(word=>{if(!text.includes(word)) show=false;});
+      }
+      if(env && row.dataset.env!==env) show=false;
+      if(job && row.dataset.job!==job) show=false;
+      if(status==='fail' && row.dataset.fail!=='1') show=false;
+      if(status==='pass' && row.dataset.fail==='1') show=false;
+      row.classList.toggle('hidden',!show);
+      if(show) visible++;
+    });
+    rowCount.textContent=visible+' / '+rows.length+' reports';
+  }
+  searchInput.addEventListener('input',applyFilters);
+  filterEnv.addEventListener('change',applyFilters);
+  filterJob.addEventListener('change',applyFilters);
+  filterStatus.addEventListener('change',applyFilters);
+  btnReset.addEventListener('click',function(){
+    searchInput.value='';filterEnv.value='';filterJob.value='';filterStatus.value='';
+    applyFilters();
+  });
+
+  /* ── Column sorting ── */
+  let sortCol=-1, sortAsc=true;
+  table.querySelectorAll('thead th[data-col]').forEach(th=>{
+    const col=parseInt(th.dataset.col);
+    if(col>4) return; /* don't sort Report / CI columns */
+    th.addEventListener('click',function(){
+      if(sortCol===col){sortAsc=!sortAsc;}else{sortCol=col;sortAsc=col===0?false:true;}
+      /* update arrows */
+      table.querySelectorAll('thead th').forEach(h=>h.classList.remove('sorted'));
+      th.classList.add('sorted');
+      th.querySelector('.sort-arrow').textContent=sortAsc?'▲':'▼';
+      /* sort visible rows */
+      rows.sort((a,b)=>{
+        const at=a.children[col].textContent.trim().toLowerCase();
+        const bt=b.children[col].textContent.trim().toLowerCase();
+        if(at<bt) return sortAsc?-1:1;
+        if(at>bt) return sortAsc?1:-1;
+        return 0;
+      });
+      rows.forEach(r=>tbody.appendChild(r));
+    });
+  });
+
+  /* ── Keyboard shortcut: / to focus search ── */
+  document.addEventListener('keydown',function(e){
+    if(e.key==='/'&&document.activeElement!==searchInput){e.preventDefault();searchInput.focus();}
+    if(e.key==='Escape'){searchInput.blur();searchInput.value='';filterEnv.value='';filterJob.value='';filterStatus.value='';applyFilters();}
+  });
+
+  /* ── Init ── */
+  applyFilters();
+
+  /* ── URL params: pre-fill filters from ?env=xxx&job=xxx&q=xxx ── */
+  const params=new URLSearchParams(window.location.search);
+  if(params.get('env')){filterEnv.value=params.get('env');}
+  if(params.get('job')){filterJob.value=params.get('job');}
+  if(params.get('status')){filterStatus.value=params.get('status');}
+  if(params.get('q')){searchInput.value=params.get('q');}
+  if(params.toString()) applyFilters();
+})();
+</script>
 </body>
 </html>
