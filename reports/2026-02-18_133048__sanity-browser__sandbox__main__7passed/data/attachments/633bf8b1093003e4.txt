@@ -1,0 +1,15 @@
+Submit button was not activated within 10 seconds
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /^(.*)\/dashboard$/
+Received string:  "https://account.sandbox-paymium.com/sign-in"
+Timeout: 20000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 20000ms
+    24 × unexpected value "https://account.sandbox-paymium.com/sign-in"
+
+    at Dashboard.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/BasePage.ts:16:29)
+    at Dashboard.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/AccountPage.ts:35:17)
+    at Dashboard.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/dashboard/index.ts:28:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/_setup/authAndCookies.setup.ts:137:33
