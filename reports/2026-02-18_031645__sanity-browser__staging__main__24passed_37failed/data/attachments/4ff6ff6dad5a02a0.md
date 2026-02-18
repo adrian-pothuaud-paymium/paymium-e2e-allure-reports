@@ -1,0 +1,90 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - button [ref=e49] [cursor=pointer]:
+        - img [ref=e51]
+    - generic [ref=e52]:
+      - navigation
+      - generic [ref=e53]:
+        - form [ref=e57]:
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - generic [ref=e61]:
+                - generic [ref=e62]: De
+                - generic [ref=e63]:
+                  - 'button "1 Max Montant trop élevé (max : 0)" [ref=e65] [cursor=pointer]':
+                    - generic [ref=e67]:
+                      - generic [ref=e68]:
+                        - 'textbox "ex : 123.45" [ref=e69]': "1"
+                        - button "Max" [ref=e72]:
+                          - generic [ref=e73]: Max
+                      - generic [ref=e74]: "Montant trop élevé (max : 0)"
+                  - button "USDC" [ref=e75] [cursor=pointer]:
+                    - button "USDC" [ref=e79]:
+                      - textbox [ref=e81]: USDC
+                      - generic [ref=e84]:
+                        - img [ref=e85]
+                        - generic [ref=e90]: USDC
+                      - img [ref=e91]
+                - generic [ref=e93]:
+                  - generic [ref=e94]: "Solde:"
+                  - generic [ref=e95]: 0,000000 USDC
+              - button [ref=e96] [cursor=pointer]:
+                - button [ref=e97]:
+                  - img [ref=e98]
+              - generic [ref=e102]:
+                - generic [ref=e104]:
+                  - generic [ref=e105]: À
+                  - generic [ref=e106]: (estimation)
+                - generic [ref=e107]:
+                  - button "0.00049871" [ref=e109] [cursor=pointer]:
+                    - 'textbox "ex : 123.45" [ref=e113]': "0.00049871"
+                  - button "Ethereum" [ref=e114] [cursor=pointer]:
+                    - button "Ethereum" [ref=e118]:
+                      - textbox [ref=e120]: ETH
+                      - generic [ref=e123]:
+                        - img [ref=e124]
+                        - generic [ref=e135]: Ethereum
+                      - img [ref=e136]
+                - generic [ref=e138]:
+                  - generic [ref=e139]: "Solde:"
+                  - generic [ref=e140]: 0,00000000 ETH
+              - generic [ref=e141] [cursor=pointer]:
+                - button "Convertir" [disabled]:
+                  - generic: Convertir
+            - generic [ref=e144]:
+              - generic [ref=e145]: Récapitulatif
+              - generic [ref=e147]:
+                - generic [ref=e148]: "Acheter pour ce montant :"
+                - generic [ref=e150]: 0,00049871 ETH
+              - generic [ref=e151]:
+                - generic [ref=e152]: Prix
+                - generic [ref=e154]:
+                  - generic [ref=e155]: 2 005,145340
+                  - generic [ref=e156]: USDC / ETH
+              - generic [ref=e158]:
+                - generic [ref=e159]: Frais
+                - generic [ref=e161]: 0,00000448 ETH
+              - generic [ref=e163]:
+                - generic [ref=e164]: Montant
+                - generic [ref=e166]: 1,000000 USDC
+          - button
+        - contentinfo [ref=e167]:
+          - generic [ref=e168]:
+            - generic [ref=e169]: Copyright © 2026
+            - link "Paymium" [ref=e171]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e172]: 6.14.1
+            - link "Statut" [ref=e174]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e176]:
+              - /url: ""
+```
