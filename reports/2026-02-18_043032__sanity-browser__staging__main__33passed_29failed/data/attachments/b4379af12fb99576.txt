@@ -1,0 +1,12 @@
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+Submit button was not activated within 10 seconds
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('listitem').filter({ hasText: /BTC sortants \/ BTC entrants/ }).first()
+
+    at ContentSelect.select (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/ContentSelect.ts:45:25)
+    at SupportTicketFormModal.selectCategory (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/help/tickets/SupportTicketFormModal.ts:21:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/support/support-tickets.spec.ts:50:5
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/support/support-tickets.spec.ts:46:3

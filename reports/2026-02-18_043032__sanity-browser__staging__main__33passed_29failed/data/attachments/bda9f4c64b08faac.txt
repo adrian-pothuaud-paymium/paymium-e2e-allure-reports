@@ -1,0 +1,16 @@
+Submit button was not activated within 10 seconds
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByRole('tab', { name: 'Allocation' })
+Expected: visible
+Timeout: 20000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 20000ms
+  - waiting for getByRole('tab', { name: 'Allocation' })
+
+    at Wallet.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/BasePage.ts:21:30)
+    at Wallet.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/AccountPage.ts:35:5)
+    at Wallet.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/wallet/index.ts:31:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/navigation/navbar.spec.ts:25:3
