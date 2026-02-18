@@ -1,0 +1,35 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Gérer les adresses' })
+    - locator resolved to <button dir="auto" role="button" type="button" class="css-146c3p1 font-size-[14px] line-height-[24px] font-weight-[var(--font-font-weight-lg)] color-[var(--colors-text-brand)] font-family-[var(--font-family)] text-decoration-color-[var(--colors-text-brand)] align-self-[flex-end] md:font-size-[16px] md:line-height-[24px] md:font-weight-[var(--font-font-weight-lg)] focus:text-decoration-line-[underline] active:text-decoration-line-[underline] cursor-[pointer] hover:text-decoration-line-[underline] r-1lo…>Gérer les adresses</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is not stable
+  - retrying click action
+    - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+    at WithdrawBTC.manageAddresses (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/withdraw/BTC/index.ts:73:36)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/wallet/crypto-address.spec.ts:40:38
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/wallet/crypto-address.spec.ts:36:3

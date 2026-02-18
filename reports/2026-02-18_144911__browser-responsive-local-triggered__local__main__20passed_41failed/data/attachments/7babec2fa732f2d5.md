@@ -1,0 +1,128 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e51]
+      - generic [ref=e52]:
+        - navigation
+        - generic [ref=e53]:
+          - form [ref=e57]:
+            - generic [ref=e58]:
+              - generic [ref=e59]:
+                - generic [ref=e61]:
+                  - generic [ref=e62]: De
+                  - generic [ref=e63]:
+                    - button "0.001 Max" [ref=e65] [cursor=pointer]:
+                      - generic [ref=e68]:
+                        - 'textbox "ex : 123.45" [active] [ref=e69]': "0.001"
+                        - button "Max" [ref=e72]:
+                          - generic [ref=e73]: Max
+                    - button "Ethereum" [ref=e74] [cursor=pointer]:
+                      - button "Ethereum" [ref=e78]:
+                        - textbox [ref=e80]: ETH
+                        - generic [ref=e82]:
+                          - img [ref=e83]
+                          - generic [ref=e94]: Ethereum
+                        - img [ref=e95]
+                  - generic [ref=e97]:
+                    - generic [ref=e98]: "Solde:"
+                    - generic [ref=e99]: 2,14991123 ETH
+                - button [ref=e100] [cursor=pointer]:
+                  - button [ref=e101]:
+                    - img [ref=e102]
+                - generic [ref=e106]:
+                  - generic [ref=e108]:
+                    - generic [ref=e109]: À
+                    - generic [ref=e110]: (estimation)
+                  - generic [ref=e111]:
+                    - button "1.64" [ref=e113] [cursor=pointer]:
+                      - 'textbox "ex : 123.45" [ref=e117]': "1.64"
+                    - button "Euro" [ref=e118] [cursor=pointer]:
+                      - button "Euro" [ref=e122]:
+                        - textbox [ref=e124]: EUR
+                        - generic [ref=e126]:
+                          - img [ref=e127]
+                          - generic [ref=e132]: Euro
+                        - img [ref=e133]
+                  - generic [ref=e135]:
+                    - generic [ref=e136]: "Solde:"
+                    - generic [ref=e137]: 219,72 €
+                - button "Convertir" [ref=e139] [cursor=pointer]:
+                  - generic [ref=e140]: Convertir
+              - generic [ref=e143]:
+                - generic [ref=e144]: Récapitulatif
+                - generic [ref=e146]:
+                  - generic [ref=e147]: "Montant reçu estimé :"
+                  - generic [ref=e149]: 1,64 €
+                - generic [ref=e150]:
+                  - generic [ref=e151]: Prix
+                  - generic [ref=e153]:
+                    - generic [ref=e154]: 1 643,27
+                    - generic [ref=e155]: € / ETH
+                - generic [ref=e157]:
+                  - generic [ref=e158]: Frais
+                  - generic [ref=e160]: 0,02 €
+                - generic [ref=e162]:
+                  - generic [ref=e163]: Montant
+                  - generic [ref=e165]: 0,00100000 ETH
+            - button
+          - contentinfo [ref=e166]:
+            - generic [ref=e167]:
+              - generic [ref=e168]: Copyright © 2026
+              - link "Paymium" [ref=e170]:
+                - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+              - generic [ref=e171]: 6.14.1
+              - link "Statut" [ref=e173]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e175]:
+                - /url: ""
+  - generic [ref=e176]:
+    - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e177]':
+      - generic [ref=e178]:
+        - generic [ref=e179]:
+          - button "Fermer le widget sans consentement" [ref=e180] [cursor=pointer]:
+            - generic [ref=e181]: Continuer sans accepter
+          - generic [ref=e183]:
+            - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e186]:
+              - generic [ref=e187]: Des cookies pour
+              - generic [ref=e188]: vos bitcoins !
+            - generic [ref=e189]:
+              - paragraph [ref=e190]:
+                - text: Parce que
+                - strong [ref=e191]: stacker des sats ça donne faim
+                - text: ", nous vous proposons une pause cookie ! 🍪"
+              - paragraph [ref=e192]:
+                - text: Avec votre accord, Paymium aimerait utiliser des
+                - strong [ref=e193]: cookies
+                - text: placés par nous et/ou par nos partenaires sur notre site.
+              - paragraph [ref=e194]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+              - paragraph [ref=e195]:
+                - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                - strong [ref=e196]: Vous choisissez ceux qui vous plaisent
+                - text: ", comme pour le trading !"
+              - paragraph [ref=e197]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+            - paragraph [ref=e199]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+          - button "Consentements certifiés par Axeptio" [ref=e202]:
+            - generic [ref=e203]: Consentements certifiés par
+            - img "Axeptio" [ref=e207]
+        - generic [ref=e211]:
+          - button "Je choisis les cookies à configurer" [ref=e212] [cursor=pointer]: Je choisis
+          - button "Accepter les cookies" [ref=e213] [cursor=pointer]: OK pour moi
+      - generic [ref=e214]:
+        - text: Axeptio consent
+        - checkbox [ref=e215]
+      - generic [ref=e216]:
+        - paragraph [ref=e217]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+        - paragraph [ref=e218]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+    - button "Fermer le widget sans consentement" [ref=e219] [cursor=pointer]:
+      - img [ref=e223]
+```
