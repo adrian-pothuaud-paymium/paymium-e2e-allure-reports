@@ -1,0 +1,134 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e51]
+      - generic [ref=e52]:
+        - navigation
+        - generic [ref=e53]:
+          - form [ref=e57]:
+            - generic [ref=e58]:
+              - generic [ref=e59]:
+                - generic [ref=e60]:
+                  - generic [ref=e61]:
+                    - generic [ref=e62]: De
+                    - generic [ref=e63]:
+                      - button "Max" [ref=e65] [cursor=pointer]:
+                        - generic [ref=e68]:
+                          - 'textbox "ex : 123.45" [ref=e69]'
+                          - button "Max" [ref=e72]:
+                            - generic [ref=e73]: Max
+                      - button "Euro" [ref=e74] [cursor=pointer]:
+                        - button "Euro" [ref=e78]:
+                          - textbox [ref=e80]: EUR
+                          - generic [ref=e83]:
+                            - img [ref=e84]
+                            - generic [ref=e89]: Euro
+                          - img [ref=e90]
+                    - generic [ref=e92]:
+                      - generic [ref=e93]: "Solde:"
+                      - generic [ref=e94]: 813,89 €
+                  - generic [ref=e95]:
+                    - generic [ref=e97]: Payer avec
+                    - generic [ref=e98]:
+                      - button "Compte de trading 813,89 € Approvisionner le compte" [ref=e99] [cursor=pointer]:
+                        - generic [ref=e100]:
+                          - generic [ref=e101]:
+                            - generic [ref=e102]: Compte de trading
+                            - generic [ref=e103]: 813,89 €
+                          - button "Approvisionner le compte" [ref=e105]:
+                            - link "Approvisionner le compte" [ref=e106]
+                          - img [ref=e108]
+                      - button "Carte bancaire 5555********4444 Transaction sécurisée via Worldpay Changer de carte" [ref=e110] [cursor=pointer]:
+                        - generic [ref=e112]:
+                          - generic [ref=e113]:
+                            - generic [ref=e114]: Carte bancaire
+                            - generic [ref=e115]: 5555********4444
+                            - generic [ref=e116]:
+                              - img [ref=e117]
+                              - img [ref=e124]
+                          - generic [ref=e129]: Transaction sécurisée via Worldpay
+                          - button "Changer de carte" [ref=e134]:
+                            - link "Changer de carte" [ref=e135]
+                - button [ref=e136] [cursor=pointer]:
+                  - button [ref=e137]:
+                    - img [ref=e138]
+                - generic [ref=e142]:
+                  - generic [ref=e144]:
+                    - generic [ref=e145]: À
+                    - generic [ref=e146]: (estimation)
+                  - generic [ref=e147]:
+                    - button [ref=e149] [cursor=pointer]:
+                      - 'textbox "ex : 123.45" [ref=e153]'
+                    - button "Bitcoin" [ref=e154] [cursor=pointer]:
+                      - button "Bitcoin" [ref=e158]:
+                        - textbox [ref=e160]: BTC
+                        - generic [ref=e163]:
+                          - img [ref=e164]
+                          - generic [ref=e169]: Bitcoin
+                        - img [ref=e170]
+                  - generic [ref=e172]:
+                    - generic [ref=e173]: "Solde:"
+                    - generic [ref=e174]: 0,44199177 BTC
+                - generic [ref=e175] [cursor=pointer]:
+                  - button "Convertir" [disabled]:
+                    - generic: Convertir
+              - generic [ref=e178]:
+                - generic [ref=e179]: Récapitulatif
+                - generic [ref=e181]:
+                  - generic [ref=e182]: "Acheter pour ce montant :"
+                  - generic [ref=e184]: 0,00000000 BTC
+                - generic [ref=e185]:
+                  - generic [ref=e186]: Prix
+                  - generic [ref=e188]:
+                    - generic [ref=e189]: 1 703,53
+                    - generic [ref=e190]: € / BTC
+                - generic [ref=e192]:
+                  - generic [ref=e193]: Frais
+                  - generic [ref=e195]: 0,00000000 BTC
+                - generic [ref=e197]:
+                  - generic [ref=e198]: Montant
+                  - generic [ref=e200]: 0,00 €
+            - button
+          - contentinfo [ref=e201]:
+            - generic [ref=e202]:
+              - generic [ref=e203]: Copyright © 2026
+              - link "Paymium" [ref=e205]:
+                - /url: https://sandbox-paymium.webflow.io/
+              - generic [ref=e206]: 6.14.1
+              - link "Statut" [ref=e208]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e210]:
+                - /url: ""
+  - dialog [ref=e212]:
+    - generic [ref=e220]:
+      - generic [ref=e224]: Paiement par carte
+      - generic [ref=e228]:
+        - generic [ref=e230]:
+          - generic [ref=e231]:
+            - generic [ref=e232]: Montant
+            - generic [ref=e233]: 25,00 €
+          - generic [ref=e234]:
+            - generic [ref=e235]: "Montant reçu estimé :"
+            - generic [ref=e236]: 0,01439022 ETH
+          - generic [ref=e237]:
+            - generic [ref=e238]: Prix
+            - generic [ref=e239]: 1 737,29 €
+        - generic [ref=e244]:
+          - generic [ref=e245]:
+            - img [ref=e247]
+            - generic [ref=e250]: Paiement par carte effectué avec succès !
+          - button "Historique" [ref=e251] [cursor=pointer]:
+            - generic [ref=e252]: Historique
+          - button "Tableau de bord" [ref=e253] [cursor=pointer]:
+            - generic [ref=e254]: Tableau de bord
+```
