@@ -1,0 +1,7 @@
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('marketSearch').getByRole('link', { name: /Achat récurrent|Set up DCA/ })
+
+    at MainNavigation.goto (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/MainNavigation.ts:65:31)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/investment/dca.spec.ts:28:41
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/investment/dca.spec.ts:26:3
