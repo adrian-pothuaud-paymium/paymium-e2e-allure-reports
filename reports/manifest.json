@@ -13,6 +13,19 @@
   }
 ,
   {
+    "folder": "2026-02-18_164921__sanity-browser__flux__main__7passed",
+    "timestamp": "2026-02-18_164921",
+    "environment": "flux",
+    "branch": "main",
+    "job": "sanity-browser",
+    "total": 7,
+    "passed": 7,
+    "failed": 0,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37789",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/202799"
+  }
+,
+  {
     "folder": "2026-02-18_164917__browser-desktop-local-triggered__local__main__55passed_7failed",
     "timestamp": "2026-02-18_164917",
     "environment": "local",
@@ -257,19 +270,6 @@
     "failed": 0,
     "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37776",
     "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/202702"
-  }
-,
-  {
-    "folder": "2026-02-18_151340__sanity-browser__flux__main__7passed",
-    "timestamp": "2026-02-18_151340",
-    "environment": "flux",
-    "branch": "main",
-    "job": "sanity-browser",
-    "total": 7,
-    "passed": 7,
-    "failed": 0,
-    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37776",
-    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/202701"
   }
 ,
   {

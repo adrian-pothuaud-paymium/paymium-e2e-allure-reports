@@ -1,0 +1,6 @@
+Error: page.goto: net::ERR_SOCKET_NOT_CONNECTED at https://account-flux.sandbox-paymium.com/sign-in
+Call log:
+  - navigating to "https://account-flux.sandbox-paymium.com/sign-in", waiting until "domcontentloaded"
+
+    at SignIn.goto (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/sign-in/index.ts:70:21)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/_setup/authAndCookies.setup.ts:95:29
