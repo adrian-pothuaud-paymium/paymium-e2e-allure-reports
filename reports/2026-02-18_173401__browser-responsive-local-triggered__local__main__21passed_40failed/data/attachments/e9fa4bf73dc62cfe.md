@@ -1,0 +1,215 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e51]
+      - generic [ref=e52]:
+        - navigation
+        - generic [ref=e53]:
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - generic [ref=e58]: Bienvenue ADRIAN
+              - generic [ref=e59]: Suivez, planifiez et gérez vos actifs.
+            - generic [ref=e60]:
+              - generic [ref=e61]:
+                - generic [ref=e62]: Valeur de mon portefeuille
+                - generic [ref=e63]:
+                  - generic [ref=e64]: ≈
+                  - generic [ref=e65]: 131 362,39 €
+              - generic [ref=e66]:
+                - tablist [ref=e68]:
+                  - generic [ref=e69]:
+                    - tab "Solde" [selected] [ref=e70] [cursor=pointer]:
+                      - generic [ref=e71]: Solde
+                    - tab "Allocation" [ref=e72] [cursor=pointer]:
+                      - generic [ref=e73]: Allocation
+                - tabpanel "Solde" [ref=e75]:
+                  - generic [ref=e76]:
+                    - generic [ref=e77]:
+                      - generic [ref=e79] [cursor=pointer]: 1D
+                      - generic [ref=e81] [cursor=pointer]: 1W
+                      - generic [ref=e83] [cursor=pointer]: 1M
+                      - generic [ref=e85] [cursor=pointer]: 3M
+                      - generic [ref=e87] [cursor=pointer]: 1Y
+                      - generic [ref=e89] [cursor=pointer]: ALL
+                    - generic [ref=e91]:
+                      - generic [ref=e92]:
+                        - img [ref=e93]
+                        - generic [ref=e95]: 96 538,38€
+                      - generic [ref=e96]:
+                        - img [ref=e97]
+                        - generic [ref=e99]: 43 992,54€
+              - generic [ref=e105]:
+                - button "Acheter" [ref=e106] [cursor=pointer]:
+                  - img [ref=e107]
+                  - generic [ref=e108]: Acheter
+                - button "Vendre" [ref=e109] [cursor=pointer]:
+                  - img [ref=e110]
+                  - generic [ref=e111]: Vendre
+                - button "Déposer" [ref=e112] [cursor=pointer]:
+                  - generic [ref=e113]: Déposer
+                - button "Retirer" [ref=e114] [cursor=pointer]:
+                  - generic [ref=e115]: Retirer
+            - generic [ref=e116]: Le marché
+            - list [ref=e117]:
+              - listitem [ref=e118] [cursor=pointer]:
+                - generic [ref=e119]:
+                  - img [ref=e120]
+                  - generic [ref=e124]:
+                    - generic [ref=e125]: Bitcoin
+                    - generic [ref=e126]: BTC
+                - generic [ref=e127]:
+                  - generic [ref=e129]: 99 700,00 €
+                  - generic [ref=e132]:
+                    - img [ref=e133]
+                    - generic [ref=e135]: 0,6 %
+              - separator [ref=e136]
+              - listitem [ref=e137] [cursor=pointer]:
+                - generic [ref=e138]:
+                  - img [ref=e139]
+                  - generic [ref=e149]:
+                    - generic [ref=e150]: Ethereum
+                    - generic [ref=e151]: ETH
+                - generic [ref=e152]:
+                  - generic [ref=e154]: 1 668,07 €
+                  - generic [ref=e157]:
+                    - img [ref=e158]
+                    - generic [ref=e160]: 0,05 %
+              - separator [ref=e161]
+              - listitem [ref=e162] [cursor=pointer]:
+                - generic [ref=e163]:
+                  - img [ref=e164]
+                  - generic [ref=e168]:
+                    - generic [ref=e169]: USDC
+                    - generic [ref=e170]: USDC
+                - generic [ref=e171]:
+                  - generic [ref=e173]: 0,84 €
+                  - generic [ref=e176]:
+                    - img [ref=e177]
+                    - generic [ref=e179]: 0,01 %
+              - separator [ref=e180]
+              - listitem [ref=e181] [cursor=pointer]:
+                - generic [ref=e182]:
+                  - img [ref=e183]
+                  - generic [ref=e188]:
+                    - generic [ref=e189]: Euro CoinVertible
+                    - generic [ref=e190]: EURCV
+                - generic [ref=e191]:
+                  - generic [ref=e193]: 1,00 €
+                  - generic [ref=e195]: "-"
+              - separator [ref=e196]
+              - listitem [ref=e197] [cursor=pointer]:
+                - generic [ref=e198]:
+                  - img [ref=e199]
+                  - generic [ref=e203]:
+                    - generic [ref=e204]: Litecoin
+                    - generic [ref=e205]: LTC
+                - generic [ref=e206]:
+                  - generic [ref=e208]: 45,89 €
+                  - generic [ref=e210]: "-"
+              - separator [ref=e211]
+              - listitem [ref=e212] [cursor=pointer]:
+                - generic [ref=e213]:
+                  - img [ref=e214]
+                  - generic [ref=e218]:
+                    - generic [ref=e219]: Bitcoin Cash
+                    - generic [ref=e220]: BCH
+                - generic [ref=e221]:
+                  - generic [ref=e223]: 474,38 €
+                  - generic [ref=e226]:
+                    - img [ref=e227]
+                    - generic [ref=e229]: 0,19 %
+              - separator [ref=e230]
+              - listitem [ref=e231] [cursor=pointer]:
+                - generic [ref=e232]:
+                  - img [ref=e233]
+                  - generic [ref=e241]:
+                    - generic [ref=e242]: Ethereum Classic
+                    - generic [ref=e243]: ETC
+                - generic [ref=e244]:
+                  - generic [ref=e246]: 7,28 €
+                  - generic [ref=e249]:
+                    - img [ref=e250]
+                    - generic [ref=e252]: 0,2 %
+              - separator [ref=e253]
+              - listitem [ref=e254] [cursor=pointer]:
+                - generic [ref=e255]:
+                  - img [ref=e256]
+                  - generic [ref=e260]:
+                    - generic [ref=e261]: Basic Attention Token
+                    - generic [ref=e262]: BAT
+                - generic [ref=e263]:
+                  - generic [ref=e265]: 0,10 €
+                  - generic [ref=e268]:
+                    - img [ref=e269]
+                    - generic [ref=e271]: 0,17 %
+              - separator [ref=e272]
+              - listitem [ref=e273] [cursor=pointer]:
+                - generic [ref=e274]:
+                  - img [ref=e275]
+                  - generic [ref=e279]:
+                    - generic [ref=e280]: Bcio
+                    - generic [ref=e281]: BCIO
+                - generic [ref=e282]:
+                  - generic [ref=e284]: 0,03 €
+                  - generic [ref=e286]: "-"
+          - contentinfo [ref=e287]:
+            - generic [ref=e288]:
+              - generic [ref=e289]: Copyright © 2026
+              - link "Paymium" [ref=e291]:
+                - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+              - generic [ref=e292]: 6.14.1
+              - link "Statut" [ref=e294]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e296]:
+                - /url: ""
+  - generic [ref=e297]:
+    - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e298]':
+      - generic [ref=e299]:
+        - generic [ref=e300]:
+          - button "Fermer le widget sans consentement" [ref=e301] [cursor=pointer]:
+            - generic [ref=e302]: Continuer sans accepter
+          - generic [ref=e304]:
+            - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e307]:
+              - generic [ref=e308]: Des cookies pour
+              - generic [ref=e309]: vos bitcoins !
+            - generic [ref=e310]:
+              - paragraph [ref=e311]:
+                - text: Parce que
+                - strong [ref=e312]: stacker des sats ça donne faim
+                - text: ", nous vous proposons une pause cookie ! 🍪"
+              - paragraph [ref=e313]:
+                - text: Avec votre accord, Paymium aimerait utiliser des
+                - strong [ref=e314]: cookies
+                - text: placés par nous et/ou par nos partenaires sur notre site.
+              - paragraph [ref=e315]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+              - paragraph [ref=e316]:
+                - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                - strong [ref=e317]: Vous choisissez ceux qui vous plaisent
+                - text: ", comme pour le trading !"
+              - paragraph [ref=e318]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+            - paragraph [ref=e320]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+          - button "Consentements certifiés par Axeptio" [ref=e323]:
+            - generic [ref=e324]: Consentements certifiés par
+            - img "Axeptio" [ref=e328]
+        - generic [ref=e332]:
+          - button "Je choisis les cookies à configurer" [ref=e333] [cursor=pointer]: Je choisis
+          - button "Accepter les cookies" [ref=e334] [cursor=pointer]: OK pour moi
+      - generic [ref=e335]:
+        - text: Axeptio consent
+        - checkbox [ref=e336]
+      - generic [ref=e337]:
+        - paragraph [ref=e338]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+        - paragraph [ref=e339]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+    - button "Fermer le widget sans consentement" [ref=e340] [cursor=pointer]:
+      - img [ref=e344]
+```
