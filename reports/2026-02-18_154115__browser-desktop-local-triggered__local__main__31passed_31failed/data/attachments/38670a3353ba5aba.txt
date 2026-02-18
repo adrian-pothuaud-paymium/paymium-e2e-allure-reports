@@ -1,0 +1,10 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Sign-up attempt 1 failed. Retrying...
+Sign-up attempt 2 failed. Retrying...
+Sign-up attempt 3 failed. Retrying...
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Compléter' })
+
+    at InvestorProfile.complete (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/dashboard/_components/InvestorProfile.ts:51:31)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/onboarding/complete-flows.spec.ts:397:47
