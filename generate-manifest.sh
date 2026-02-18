@@ -34,16 +34,16 @@ for meta in $(find "${REPORTS_DIR}" -maxdepth 2 -name ".metadata" -type f 2>/dev
   dir_path=$(dirname "${meta}")
   dir_name=$(basename "${dir_path}")
 
-  # Read metadata values
-  R_TS=$(grep '^TIMESTAMP=' "${meta}" | cut -d= -f2-)
-  R_ENV=$(grep '^ENVIRONMENT=' "${meta}" | cut -d= -f2-)
-  R_BRANCH=$(grep '^BRANCH=' "${meta}" | cut -d= -f2-)
-  R_JOB_META=$(grep '^JOB=' "${meta}" | cut -d= -f2-)
-  R_TOTAL=$(grep '^TOTAL=' "${meta}" | cut -d= -f2-)
-  R_PASSED=$(grep '^PASSED=' "${meta}" | cut -d= -f2-)
-  R_FAILED=$(grep '^FAILED=' "${meta}" | cut -d= -f2-)
-  R_PIPE=$(grep '^PIPELINE_URL=' "${meta}" | cut -d= -f2-)
-  R_JOBURL=$(grep '^JOB_URL=' "${meta}" | cut -d= -f2-)
+  # Read metadata values (strip \r for Windows-edited files)
+  R_TS=$(grep '^TIMESTAMP=' "${meta}" | cut -d= -f2- | tr -d '\r')
+  R_ENV=$(grep '^ENVIRONMENT=' "${meta}" | cut -d= -f2- | tr -d '\r')
+  R_BRANCH=$(grep '^BRANCH=' "${meta}" | cut -d= -f2- | tr -d '\r')
+  R_JOB_META=$(grep '^JOB=' "${meta}" | cut -d= -f2- | tr -d '\r')
+  R_TOTAL=$(grep '^TOTAL=' "${meta}" | cut -d= -f2- | tr -d '\r')
+  R_PASSED=$(grep '^PASSED=' "${meta}" | cut -d= -f2- | tr -d '\r')
+  R_FAILED=$(grep '^FAILED=' "${meta}" | cut -d= -f2- | tr -d '\r')
+  R_PIPE=$(grep '^PIPELINE_URL=' "${meta}" | cut -d= -f2- | tr -d '\r')
+  R_JOBURL=$(grep '^JOB_URL=' "${meta}" | cut -d= -f2- | tr -d '\r')
 
   # Extract job from folder name (pattern: {timestamp}__{job}__{env}__{branch}__{status})
   # This is more reliable than .metadata JOB which may not match the folder
@@ -66,8 +66,10 @@ for meta in $(find "${REPORTS_DIR}" -maxdepth 2 -name ".metadata" -type f 2>/dev
     echo "," >> "${MANIFEST}.tmp"
   fi
 
-  # Write JSON entry (escaping special chars in branch names)
-  R_BRANCH_ESC=$(echo "${R_BRANCH}" | sed 's/"/\\"/g')
+  # Write JSON entry (escaping backslashes then double-quotes for all string values)
+  R_BRANCH_ESC=$(printf '%s' "${R_BRANCH}" | sed 's/\\/\\\\/g; s/"/\\"/g')
+  R_PIPE_ESC=$(printf '%s' "${R_PIPE}" | sed 's/\\/\\\\/g; s/"/\\"/g')
+  R_JOBURL_ESC=$(printf '%s' "${R_JOBURL}" | sed 's/\\/\\\\/g; s/"/\\"/g')
 
   cat >> "${MANIFEST}.tmp" << ENTRY
   {
@@ -79,8 +81,8 @@ for meta in $(find "${REPORTS_DIR}" -maxdepth 2 -name ".metadata" -type f 2>/dev
     "total": ${R_TOTAL},
     "passed": ${R_PASSED},
     "failed": ${R_FAILED},
-    "pipelineUrl": "${R_PIPE}",
-    "jobUrl": "${R_JOBURL}"
+    "pipelineUrl": "${R_PIPE_ESC}",
+    "jobUrl": "${R_JOBURL_ESC}"
   }
 ENTRY
 
