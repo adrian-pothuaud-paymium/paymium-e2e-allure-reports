@@ -1,5 +1,18 @@
 [
   {
+    "folder": "2026-02-18_194049__browser_responsive__flux__main__5passed_2failed",
+    "timestamp": "2026-02-18_194049",
+    "environment": "flux",
+    "branch": "main",
+    "job": "browser_responsive",
+    "total": 7,
+    "passed": 5,
+    "failed": 2,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37802",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/202906"
+  }
+,
+  {
     "folder": "2026-02-18_193722__android-sanity-triggered__SANDBOX__adrian_test_ids_onboarding__0passed",
     "timestamp": "2026-02-18_193722",
     "environment": "SANDBOX",
