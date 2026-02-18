@@ -1,7 +1,7 @@
 TIMESTAMP=2026-02-18_033415
 ENVIRONMENT=flux
 BRANCH=main
-JOB=sanity-browser
+JOB=non-reg-browser-desktop
 TOTAL=62
 PASSED=29
 FAILED=33

@@ -1,7 +1,7 @@
 TIMESTAMP=2026-02-18_032543
 ENVIRONMENT=sandbox
 BRANCH=main
-JOB=sanity-browser
+JOB=non-reg-browser-desktop
 TOTAL=62
 PASSED=32
 FAILED=30
