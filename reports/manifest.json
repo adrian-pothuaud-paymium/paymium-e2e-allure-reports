@@ -13,6 +13,19 @@
   }
 ,
   {
+    "folder": "2026-02-18_200106__browser_responsive__flux__--UPSTREAM_BRANCH_NAME-__7passed",
+    "timestamp": "2026-02-18_200106",
+    "environment": "flux",
+    "branch": "${UPSTREAM_BRANCH_NAME}",
+    "job": "browser_responsive",
+    "total": 7,
+    "passed": 7,
+    "failed": 0,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37806",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/202941"
+  }
+,
+  {
     "folder": "2026-02-18_194049__browser_responsive__flux__main__5passed_2failed",
     "timestamp": "2026-02-18_194049",
     "environment": "flux",
