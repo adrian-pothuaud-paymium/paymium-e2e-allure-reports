@@ -1,5 +1,18 @@
 [
   {
+    "folder": "2026-02-18_151552__sanity-browser__sandbox__main__7passed",
+    "timestamp": "2026-02-18_151552",
+    "environment": "sandbox",
+    "branch": "main",
+    "job": "sanity-browser",
+    "total": 7,
+    "passed": 7,
+    "failed": 0,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37776",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/202703"
+  }
+,
+  {
     "folder": "2026-02-18_151340__sanity-browser__staging__main__7passed",
     "timestamp": "2026-02-18_151340",
     "environment": "staging",
@@ -231,19 +244,6 @@
     "failed": 0,
     "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37762",
     "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/202600"
-  }
-,
-  {
-    "folder": "2026-02-18_133432__sanity-browser__sandbox__main__7passed",
-    "timestamp": "2026-02-18_133432",
-    "environment": "sandbox",
-    "branch": "main",
-    "job": "sanity-browser",
-    "total": 7,
-    "passed": 7,
-    "failed": 0,
-    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37758",
-    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/202569"
   }
 ,
   {
