@@ -1,0 +1,13 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByText('Votre transfert a été validé')
+Expected: visible
+Timeout: 10000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 10000ms
+  - waiting for getByText('Votre transfert a été validé')
+
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/transfers/send-by-email.spec.ts:53:64

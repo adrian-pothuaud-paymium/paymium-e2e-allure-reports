@@ -1,5 +1,18 @@
 [
   {
+    "folder": "2026-02-18_165134__browser-desktop-local-triggered__local__main__52passed_10failed",
+    "timestamp": "2026-02-18_165134",
+    "environment": "local",
+    "branch": "main",
+    "job": "browser-desktop-local-triggered",
+    "total": 62,
+    "passed": 52,
+    "failed": 10,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37784",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/202757"
+  }
+,
+  {
     "folder": "2026-02-18_164147__sanity-browser__sandbox__main__7passed",
     "timestamp": "2026-02-18_164147",
     "environment": "sandbox",
