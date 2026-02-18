@@ -1,0 +1,85 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e11] [cursor=pointer]:
+        - /url: https://www.paymium.com/
+        - img [ref=e13]
+      - button [ref=e50] [cursor=pointer]:
+        - img [ref=e52]
+    - generic [ref=e53]:
+      - navigation
+      - generic [ref=e54]:
+        - form [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: Se connecter à Paymium
+            - generic [ref=e61]:
+              - generic [ref=e62]:
+                - generic [ref=e63]: Authentification à deux facteurs
+                - generic [ref=e64]: Entrez le code à 6 chiffres généré par votre application d'authentification.
+              - generic [ref=e66]:
+                - generic [ref=e67]: "2"
+                - generic [ref=e68]: "4"
+                - generic [ref=e69]: "2"
+                - generic [ref=e70]: "4"
+                - generic [ref=e71]: "9"
+                - generic [ref=e72]: "1"
+                - textbox "Authentification à deux facteurs" [active] [ref=e73]: "242491"
+            - alert [ref=e74]:
+              - img [ref=e76]
+              - generic [ref=e81]: Request failed with status code 500
+            - button "Se connecter" [ref=e82] [cursor=pointer]:
+              - generic [ref=e83]: Se connecter
+        - contentinfo [ref=e84]:
+          - generic [ref=e85]:
+            - generic [ref=e86]: Copyright © 2026
+            - link "Paymium" [ref=e88]:
+              - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+            - generic [ref=e89]: 6.15.0
+            - link "Statut" [ref=e91]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e93]:
+              - /url: ""
+  - generic [ref=e94]:
+    - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e95]':
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - button "Fermer le widget sans consentement" [ref=e98] [cursor=pointer]:
+            - generic [ref=e99]: Continuer sans accepter
+          - generic [ref=e101]:
+            - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e104]:
+              - generic [ref=e105]: Des cookies pour
+              - generic [ref=e106]: vos bitcoins !
+            - generic [ref=e107]:
+              - paragraph [ref=e108]:
+                - text: Parce que
+                - strong [ref=e109]: stacker des sats ça donne faim
+                - text: ", nous vous proposons une pause cookie ! 🍪"
+              - paragraph [ref=e110]:
+                - text: Avec votre accord, Paymium aimerait utiliser des
+                - strong [ref=e111]: cookies
+                - text: placés par nous et/ou par nos partenaires sur notre site.
+              - paragraph [ref=e112]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+              - paragraph [ref=e113]:
+                - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                - strong [ref=e114]: Vous choisissez ceux qui vous plaisent
+                - text: ", comme pour le trading !"
+              - paragraph [ref=e115]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+            - paragraph [ref=e117]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+          - button "Consentements certifiés par Axeptio" [ref=e120]:
+            - generic [ref=e121]: Consentements certifiés par
+            - img "Axeptio" [ref=e125]
+        - generic [ref=e129]:
+          - button "Je choisis les cookies à configurer" [ref=e130] [cursor=pointer]: Je choisis
+          - button "Accepter les cookies" [ref=e131] [cursor=pointer]: OK pour moi
+      - generic [ref=e132]:
+        - text: Axeptio consent
+        - checkbox [ref=e133]
+      - generic [ref=e134]:
+        - paragraph [ref=e135]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+        - paragraph [ref=e136]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+    - button "Fermer le widget sans consentement" [ref=e137] [cursor=pointer]:
+      - img [ref=e141]
+```
