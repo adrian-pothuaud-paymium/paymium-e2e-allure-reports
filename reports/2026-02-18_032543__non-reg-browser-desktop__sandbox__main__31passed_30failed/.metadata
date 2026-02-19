@@ -1,9 +1,0 @@
-TIMESTAMP=2026-02-18_032543
-ENVIRONMENT=sandbox
-BRANCH=main
-JOB=non-reg-browser-desktop
-TOTAL=61
-PASSED=31
-FAILED=30
-PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37688
-JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/201944

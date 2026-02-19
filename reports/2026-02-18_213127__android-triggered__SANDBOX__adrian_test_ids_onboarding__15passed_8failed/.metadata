@@ -1,9 +1,0 @@
-TIMESTAMP=2026-02-18_213127
-ENVIRONMENT=SANDBOX
-BRANCH=adrian_test_ids_onboarding
-JOB=android-triggered
-TOTAL=23
-PASSED=15
-FAILED=8
-PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37797
-JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/202872

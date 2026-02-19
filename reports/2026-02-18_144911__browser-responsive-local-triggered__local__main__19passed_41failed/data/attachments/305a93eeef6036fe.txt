@@ -1,3 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event "response"
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/transfers/withdraw.spec.ts:67:14

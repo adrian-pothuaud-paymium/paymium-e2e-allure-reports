@@ -1,3 +1,0 @@
-Found 2 DCA plans to delete.
-Deleted DCA plan with ID: 5019
-Deleted DCA plan with ID: 5020

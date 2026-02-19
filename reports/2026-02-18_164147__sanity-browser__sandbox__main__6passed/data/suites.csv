@@ -1,8 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","13730","Un utilisateur peut se connecter avec des identifiants valides et sans 2FA","sandbox_sanity","2026-02-18","passed","2026-02-18","","authentication/sign-in.spec.ts","",""
-"","29026","(auth.setup) utilisateur approuvé avec 2FA","sandbox_setup","2026-02-18","passed","2026-02-18","","_setup/authAndCookies.setup.ts","",""
-"","32386","Un utilisateur peut se connecter avec des identifiants valides et 2FA activée","sandbox_sanity","2026-02-18","passed","2026-02-18","","authentication/sign-in.spec.ts","",""
-"","3","(clean) tickets de support","sandbox_clean","2026-02-18","skipped","2026-02-18","","_clean/cleanTestAccount.clean.ts","",""
-"","8087","(setup) cookies accepté","sandbox_setup","2026-02-18","passed","2026-02-18","","_setup/authAndCookies.setup.ts","",""
-"","4205","(clean) BTC DCA","sandbox_clean","2026-02-18","passed","2026-02-18","","_clean/cleanTestAccount.clean.ts","",""
-"","4243","(clean) BTC Withdrawal Addresses","sandbox_clean","2026-02-18","passed","2026-02-18","","_clean/cleanTestAccount.clean.ts","",""

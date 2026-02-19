@@ -1,8 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","11921","Un utilisateur peut se connecter avec des identifiants valides et 2FA activée","staging_sanity","2026-02-18","passed","2026-02-18","","authentication/sign-in.spec.ts","",""
-"","3415","(clean) BTC Withdrawal Addresses","staging_clean","2026-02-18","passed","2026-02-18","","_clean/cleanTestAccount.clean.ts","",""
-"","14810","(auth.setup) utilisateur approuvé avec 2FA","staging_setup","2026-02-18","passed","2026-02-18","","_setup/authAndCookies.setup.ts","",""
-"","10583","Un utilisateur peut se connecter avec des identifiants valides et sans 2FA","staging_sanity","2026-02-18","passed","2026-02-18","","authentication/sign-in.spec.ts","",""
-"","4712","(clean) BTC DCA","staging_clean","2026-02-18","passed","2026-02-18","","_clean/cleanTestAccount.clean.ts","",""
-"","10497","(setup) cookies accepté","staging_setup","2026-02-18","passed","2026-02-18","","_setup/authAndCookies.setup.ts","",""
-"","2","(clean) tickets de support","staging_clean","2026-02-18","skipped","2026-02-18","","_clean/cleanTestAccount.clean.ts","",""
