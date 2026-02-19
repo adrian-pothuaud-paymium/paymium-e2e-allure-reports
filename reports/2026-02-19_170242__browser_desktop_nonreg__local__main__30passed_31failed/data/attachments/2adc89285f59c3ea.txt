@@ -1,0 +1,15 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Sign-up attempt 1 failed. Retrying...
+Sign-up attempt 2 failed. Retrying...
+Sign-up attempt 3 failed. Retrying...
+Sign-up attempt 4 failed. Retrying...
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByText('Le relevé d\'identité bancaire') to be detached
+    24 × locator resolved to visible <label for="rib" class="font-weight-[var(--font-font-weight-lg)]">Le relevé d'identité bancaire (RIB) de votre entr…</label>
+
+    at FinancialDataModal.waitForLocatorsDetached (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/BasePage.ts:37:22)
+    at FinancialDataModal.waitForDetached (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/dashboard/_components/FinancialDataModal.ts:52:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/onboarding/complete-flows.spec.ts:332:71
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/onboarding/complete-flows.spec.ts:319:3
