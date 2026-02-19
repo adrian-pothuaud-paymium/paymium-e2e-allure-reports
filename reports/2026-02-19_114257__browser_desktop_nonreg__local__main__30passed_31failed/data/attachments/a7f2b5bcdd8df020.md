@@ -1,0 +1,208 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - generic:
+      - generic:
+        - generic:
+          - link:
+            - /url: /dashboard
+            - generic:
+              - img
+          - generic:
+            - button:
+              - img
+            - button:
+              - generic: FR
+              - img
+            - button:
+              - generic:
+                - generic:
+                  - img
+            - button:
+              - img
+            - button:
+              - img
+            - button:
+              - img
+        - generic:
+          - navigation:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                    - textbox:
+                      - /placeholder: Chercher
+              - generic:
+                - link:
+                  - /url: /dashboard
+                  - img
+                  - generic: Tableau de bord
+                - link:
+                  - /url: /wallet
+                  - img
+                  - generic: Portefeuille
+                - link:
+                  - /url: /swap
+                  - img
+                  - generic: Achat / vente
+                - link:
+                  - /url: /deposit/EUR
+                  - img
+                  - generic: Dépôt / retrait
+                - link:
+                  - /url: /recurrent
+                  - img
+                  - generic: Achat récurrent
+                - link:
+                  - /url: /trade/BTC/EUR
+                  - img
+                  - generic: Mode expert
+                - link:
+                  - /url: /referral
+                  - img
+                  - generic: Parrainage
+                - link:
+                  - /url: /family
+                  - img
+                  - generic: Plan Bitcoin Famille
+                - link:
+                  - /url: /history
+                  - img
+                  - generic: Historique
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Tickets
+                  - button:
+                    - img
+                    - generic: Créer un nouveau ticket
+                - generic:
+                  - generic:
+                    - generic:
+                      - tablist:
+                        - generic:
+                          - tab [selected]:
+                            - generic: Tous
+                            - generic:
+                              - generic: "1"
+                          - tab:
+                            - generic: Répondu
+                            - generic:
+                              - generic: "0"
+                          - tab:
+                            - generic: Fermé
+                            - generic:
+                              - generic: "0"
+                          - tab:
+                            - generic: En attente
+                            - generic:
+                              - generic: "1"
+                  - list:
+                    - listitem:
+                      - generic:
+                        - generic: Titre
+                        - generic:
+                          - generic:
+                            - img
+                            - img
+                      - generic:
+                        - generic: Date
+                        - generic:
+                          - img
+                      - generic:
+                        - generic: Statut
+                        - generic:
+                          - generic:
+                            - img
+                            - img
+                    - separator
+                    - listitem [active]:
+                      - generic:
+                        - generic: Problème de connexion - 1771498773329
+                        - generic: Je n'arrive pas à me connecter à mon compte.
+                      - generic:
+                        - generic: 19/02/2026
+                        - generic: 11:59
+                      - generic:
+                        - generic:
+                          - generic: En attente
+            - contentinfo:
+              - generic:
+                - generic: Copyright © 2026
+                - generic:
+                  - link:
+                    - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+                    - text: Paymium
+                - generic: 6.15.0
+                - generic:
+                  - link:
+                    - /url: /status
+                    - text: Statut
+                - generic:
+                  - link:
+                    - /url: ""
+                    - text: Gérer vos cookies
+    - dialog "Problème de connexion - 1771498773329" [ref=e8]:
+      - generic [ref=e10]:
+        - generic [ref=e12]:
+          - generic [ref=e14]: Problème de connexion - 1771498773329
+          - button "Close" [ref=e15] [cursor=pointer]:
+            - img [ref=e16]
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - generic [ref=e23]:
+              - generic [ref=e24]: Description
+              - generic [ref=e25]: Je n'arrive pas à me connecter à mon compte.
+            - generic [ref=e27]: Commentaires
+          - form [ref=e28]:
+            - generic [ref=e29]: Ajouter un commentaire
+            - generic [ref=e31]:
+              - generic [ref=e33]: Commentaires
+              - textbox "Commentaires" [ref=e35]
+            - button "Créer" [disabled]:
+              - generic: Créer
+  - dialog [ref=e37]:
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - button [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]: Continuer sans accepter
+        - generic [ref=e43]:
+          - heading [level=1] [ref=e46]:
+            - generic [ref=e47]: Des cookies pour
+            - generic [ref=e48]: vos bitcoins !
+          - generic [ref=e49]:
+            - paragraph [ref=e50]:
+              - text: Parce que
+              - strong [ref=e51]: stacker des sats ça donne faim
+              - text: ", nous vous proposons une pause cookie ! 🍪"
+            - paragraph [ref=e52]:
+              - text: Avec votre accord, Paymium aimerait utiliser des
+              - strong [ref=e53]: cookies
+              - text: placés par nous et/ou par nos partenaires sur notre site.
+            - paragraph [ref=e54]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+            - paragraph [ref=e55]:
+              - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+              - strong [ref=e56]: Vous choisissez ceux qui vous plaisent
+              - text: ", comme pour le trading !"
+            - paragraph [ref=e57]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+          - paragraph [ref=e59]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+        - button [ref=e62]:
+          - generic [ref=e63]: Consentements certifiés par
+          - img [ref=e67]
+      - generic [ref=e71]:
+        - button [ref=e72] [cursor=pointer]: Je choisis
+        - button [ref=e73] [cursor=pointer]: OK pour moi
+    - generic [ref=e74]:
+      - text: Axeptio consent
+      - checkbox [ref=e75]
+    - generic [ref=e76]:
+      - paragraph [ref=e77]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+      - paragraph [ref=e78]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+  - button [ref=e79] [cursor=pointer]:
+    - img [ref=e83]
+```
