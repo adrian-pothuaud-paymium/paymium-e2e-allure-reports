@@ -37,6 +37,21 @@ jobs:
         with:
           fetch-depth: 0 # Full history needed for orphan squash
 
+      - name: Setup Node.js (for stats history)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Capture stats history (before pruning)
+        run: |
+          echo "Capturing stats from current manifest before pruning..."
+          if [ -f "reports/manifest.json" ]; then
+            node update-stats-history.js || echo "Warning: stats capture failed (non-blocking)"
+          else
+            echo "No manifest.json yet, generating first..."
+            sh generate-manifest.sh
+          fi
+
       - name: Prune old reports
         id: prune
         run: |

@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paymium E2E — Stats Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #f0f2f5;
+            color: #1a1a2e;
+            min-height: 100vh
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem 1rem
+        }
+
+        /* ─── Header ─── */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: .5rem
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            color: #1a1a2e
+        }
+
+        .back-link {
+            color: #1565c0;
+            text-decoration: none;
+            font-size: .88rem;
+            font-weight: 500
+        }
+
+        .back-link:hover {
+            text-decoration: underline
+        }
+
+        .header-sub {
+            width: 100%;
+            color: #888;
+            font-size: .82rem
+        }
+
+        /* ─── Period Selector ─── */
+        .period-bar {
+            display: flex;
+            gap: .4rem;
+            margin-bottom: 1.2rem;
+            flex-wrap: wrap;
+            align-items: center
+        }
+
+        .period-btn {
+            padding: 6px 16px;
+            border: 1px solid #d0d5dd;
+            border-radius: 8px;
+            background: #fff;
+            font-size: .84rem;
+            cursor: pointer;
+            color: #666;
+            font-weight: 500;
+            transition: all .15s
+        }
+
+        .period-btn:hover {
+            border-color: #1565c0;
+            color: #1565c0
+        }
+
+        .period-btn.active {
+            background: #1565c0;
+            color: #fff;
+            border-color: #1565c0
+        }
+
+        .period-label {
+            font-size: .78rem;
+            color: #999;
+            margin-left: .5rem
+        }
+
+        /* ─── Summary Cards ─── */
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: .8rem;
+            margin-bottom: 1.5rem
+        }
+
+        .summary-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+            text-align: center
+        }
+
+        .summary-card .sc-value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            line-height: 1.2
+        }
+
+        .summary-card .sc-label {
+            font-size: .76rem;
+            color: #888;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: .04em
+        }
+
+        .summary-card.accent-green .sc-value {
+            color: #2e7d32
+        }
+
+        .summary-card.accent-red .sc-value {
+            color: #c62828
+        }
+
+        .summary-card.accent-blue .sc-value {
+            color: #1565c0
+        }
+
+        /* ─── Charts Grid ─── */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem
+        }
+
+        .chart-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .06)
+        }
+
+        .chart-card h3 {
+            font-size: .92rem;
+            color: #1a1a2e;
+            margin-bottom: 12px;
+            font-weight: 600
+        }
+
+        .chart-card canvas {
+            width: 100% !important;
+            max-height: 280px
+        }
+
+        /* ─── Doughnut row ─── */
+        .doughnut-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem
+        }
+
+        .doughnut-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+            text-align: center
+        }
+
+        .doughnut-card h3 {
+            font-size: .92rem;
+            color: #1a1a2e;
+            margin-bottom: 12px;
+            font-weight: 600
+        }
+
+        .doughnut-card canvas {
+            max-height: 220px;
+            margin: 0 auto
+        }
+
+        /* ─── History Table ─── */
+        .history-section {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+            overflow: hidden;
+            margin-bottom: 1.5rem
+        }
+
+        .history-header {
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            user-select: none;
+            border-bottom: 1px solid #f0f0f0
+        }
+
+        .history-header:hover {
+            background: #fafbff
+        }
+
+        .history-header h3 {
+            font-size: .92rem;
+            font-weight: 600
+        }
+
+        .history-toggle {
+            font-size: .78rem;
+            color: #888
+        }
+
+        .history-body {
+            display: none;
+            overflow-x: auto
+        }
+
+        .history-body.open {
+            display: block
+        }
+
+        .history-body table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: .82rem
+        }
+
+        .history-body thead th {
+            background: #f8f9fa;
+            padding: 10px 14px;
+            text-align: left;
+            font-weight: 600;
+            color: #555;
+            border-bottom: 2px solid #e0e0e0;
+            white-space: nowrap
+        }
+
+        .history-body tbody td {
+            padding: 8px 14px;
+            border-bottom: 1px solid #f0f0f0
+        }
+
+        .history-body tbody tr:hover td {
+            background: #f8f9ff
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: .74rem;
+            font-weight: 600
+        }
+
+        .badge-green {
+            background: #e8f5e9;
+            color: #2e7d32
+        }
+
+        .badge-red {
+            background: #ffebee;
+            color: #c62828
+        }
+
+        .badge-blue {
+            background: #e3f2fd;
+            color: #1565c0
+        }
+
+        /* ─── Loading ─── */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: #666
+        }
+
+        .loading .spinner {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            border: 3px solid #e0e0e0;
+            border-top-color: #1565c0;
+            border-radius: 50%;
+            animation: spin .7s linear infinite;
+            margin-bottom: .8rem
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        .error-msg {
+            text-align: center;
+            padding: 2rem;
+            color: #c62828;
+            background: #ffebee;
+            border-radius: 10px;
+            margin: 1rem 0
+        }
+
+        .foot {
+            text-align: center;
+            color: #aaa;
+            font-size: .78rem;
+            margin-top: 1rem
+        }
+
+        /* ─── Responsive ─── */
+        @media(max-width:768px) {
+            .container {
+                padding: 1rem .5rem
+            }
+
+            .charts-grid {
+                grid-template-columns: 1fr
+            }
+
+            .doughnut-grid {
+                grid-template-columns: 1fr
+            }
+
+            .header h1 {
+                font-size: 1.2rem
+            }
+
+            .summary-grid {
+                grid-template-columns: repeat(3, 1fr)
+            }
+        }
+
+        @media(max-width:540px) {
+            .summary-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Paymium E2E — Stats Dashboard</h1>
+            <a href="index.html" class="back-link">← Back to Reports</a>
+            <div class="header-sub" id="headerSub">Historical test execution statistics</div>
+        </div>
+
+        <!-- Period selector -->
+        <div class="period-bar">
+            <button class="period-btn" data-days="7">7 days</button>
+            <button class="period-btn active" data-days="14">14 days</button>
+            <button class="period-btn" data-days="30">30 days</button>
+            <button class="period-btn" data-days="90">90 days</button>
+            <button class="period-btn" data-days="0">All time</button>
+            <span class="period-label" id="periodLabel"></span>
+        </div>
+
+        <!-- Summary cards -->
+        <div class="summary-grid" id="summaryGrid">
+            <div class="summary-card">
+                <div class="sc-value" id="scTotalRuns">—</div>
+                <div class="sc-label">Total runs</div>
+            </div>
+            <div class="summary-card accent-green">
+                <div class="sc-value" id="scPassRate">—</div>
+                <div class="sc-label">Pass rate</div>
+            </div>
+            <div class="summary-card accent-green">
+                <div class="sc-value" id="scTotalPassed">—</div>
+                <div class="sc-label">Tests passed</div>
+            </div>
+            <div class="summary-card accent-red">
+                <div class="sc-value" id="scTotalFailed">—</div>
+                <div class="sc-label">Tests failed</div>
+            </div>
+            <div class="summary-card accent-blue">
+                <div class="sc-value" id="scAvgRunsDay">—</div>
+                <div class="sc-label">Avg runs/day</div>
+            </div>
+            <div class="summary-card">
+                <div class="sc-value" id="scAvgTestsRun">—</div>
+                <div class="sc-label">Avg tests/run</div>
+            </div>
+            <div class="summary-card">
+                <div class="sc-value" id="scActiveDays">—</div>
+                <div class="sc-label">Active days</div>
+            </div>
+            <div class="summary-card accent-blue">
+                <div class="sc-value" id="scPeakDay">—</div>
+                <div class="sc-label">Peak day (runs)</div>
+            </div>
+        </div>
+
+        <!-- Charts: Activity Overview -->
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3>Daily Runs by Platform</h3>
+                <canvas id="chartPlatformRuns"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Daily Runs by Environment</h3>
+                <canvas id="chartEnvRuns"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Passed / Failed per Day (Global)</h3>
+                <canvas id="chartPassFail"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Pass Rate — Global + by Platform (%)</h3>
+                <canvas id="chartPassRate"></canvas>
+            </div>
+        </div>
+
+        <!-- Charts: Per-platform metrics -->
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3>Avg Tests per Run — by Platform</h3>
+                <canvas id="chartAvgTestsRun"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Total Tests Executed — by Platform</h3>
+                <canvas id="chartTestVolume"></canvas>
+            </div>
+        </div>
+
+        <!-- Per-platform Passed/Failed (dynamic) -->
+        <div class="charts-grid" id="platformPassFailCharts"></div>
+
+        <!-- Doughnuts: Distribution -->
+        <div class="doughnut-grid">
+            <div class="doughnut-card">
+                <h3>Runs by Platform</h3>
+                <canvas id="chartPlatformPie"></canvas>
+            </div>
+            <div class="doughnut-card">
+                <h3>Runs by Environment</h3>
+                <canvas id="chartEnvPie"></canvas>
+            </div>
+            <div class="doughnut-card">
+                <h3>Overall Pass / Fail</h3>
+                <canvas id="chartOverallPie"></canvas>
+            </div>
+        </div>
+
+        <!-- Per-platform Pass/Fail doughnuts (dynamic) -->
+        <div class="doughnut-grid" id="platformDoughnuts"></div>
+
+        <!-- History Table -->
+        <div class="history-section">
+            <div class="history-header" id="historyToggle">
+                <h3>Daily History</h3>
+                <span class="history-toggle" id="historyToggleIcon">▼ Show table</span>
+            </div>
+            <div class="history-body" id="historyBody">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Runs</th>
+                            <th>Passed</th>
+                            <th>Failed</th>
+                            <th>Pass rate</th>
+                            <th>Avg tests/run</th>
+                            <th>Browser</th>
+                            <th>Android</th>
+                            <th>iOS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTbody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="loadingIndicator" class="loading">
+            <div class="spinner"></div>
+            <div>Loading stats...</div>
+        </div>
+
+        <div class="foot" id="footerInfo"></div>
+    </div>
+
+    <script>
+        (function () {
+            /* ─── Color palette ─── */
+            var C = {
+                browser: 'rgb(21, 101, 192)',
+                android: 'rgb(46, 125, 50)',
+                ios: 'rgb(239, 108, 0)',
+                other: 'rgb(117, 117, 117)',
+                sandbox: 'rgb(123, 31, 162)',
+                staging: 'rgb(21, 101, 192)',
+                flux: 'rgb(239, 108, 0)',
+                local: 'rgb(46, 125, 50)',
+                unknown: 'rgb(117, 117, 117)',
+                passed: 'rgb(76, 175, 80)',
+                failed: 'rgb(239, 83, 80)'
+            };
+
+            function alpha(rgb, a) {
+                return rgb.replace('rgb(', 'rgba(').replace(')', ', ' + a + ')');
+            }
+
+            /* ─── State ─── */
+            var allEntries = [];
+            var filteredEntries = [];
+            var activeDays = 14;
+            var charts = {};
+
+            /* ─── DOM ─── */
+            var loadingEl = document.getElementById('loadingIndicator');
+
+            /* ─── Period buttons ─── */
+            document.querySelectorAll('.period-btn').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    document.querySelectorAll('.period-btn').forEach(function (b) { b.classList.remove('active'); });
+                    btn.classList.add('active');
+                    activeDays = parseInt(btn.dataset.days);
+                    filterAndRender();
+                });
+            });
+
+            /* ─── History table toggle ─── */
+            document.getElementById('historyToggle').addEventListener('click', function () {
+                var body = document.getElementById('historyBody');
+                var icon = document.getElementById('historyToggleIcon');
+                var open = body.classList.toggle('open');
+                icon.textContent = open ? '▲ Hide table' : '▼ Show table';
+            });
+
+            /* ─── Filter entries by period ─── */
+            function filterAndRender() {
+                if (activeDays === 0) {
+                    filteredEntries = allEntries.slice();
+                } else {
+                    var cutoff = new Date();
+                    cutoff.setDate(cutoff.getDate() - activeDays);
+                    var cutoffStr = cutoff.toISOString().slice(0, 10);
+                    filteredEntries = allEntries.filter(function (e) { return e.date >= cutoffStr; });
+                }
+
+                var label = document.getElementById('periodLabel');
+                if (filteredEntries.length > 0) {
+                    label.textContent = filteredEntries[0].date + ' → ' + filteredEntries[filteredEntries.length - 1].date +
+                        ' (' + filteredEntries.length + ' days)';
+                } else {
+                    label.textContent = 'No data';
+                }
+
+                renderSummary();
+                renderCharts();
+                renderTable();
+            }
+
+            /* ─── Summary cards ─── */
+            function renderSummary() {
+                var runs = 0, passed = 0, failed = 0;
+                var peakRuns = 0, peakDate = '-';
+                filteredEntries.forEach(function (e) {
+                    runs += e.totals.runs;
+                    passed += e.totals.passed;
+                    failed += e.totals.failed;
+                    if (e.totals.runs > peakRuns) {
+                        peakRuns = e.totals.runs;
+                        peakDate = e.date;
+                    }
+                });
+                var total = passed + failed;
+                var rate = total > 0 ? (passed / total * 100).toFixed(1) : '0';
+                var avgTestsPerRun = runs > 0 ? (total / runs).toFixed(1) : '0';
+
+                document.getElementById('scTotalRuns').textContent = runs.toLocaleString();
+                document.getElementById('scPassRate').textContent = rate + '%';
+                document.getElementById('scTotalPassed').textContent = passed.toLocaleString();
+                document.getElementById('scTotalFailed').textContent = failed.toLocaleString();
+                document.getElementById('scAvgRunsDay').textContent =
+                    filteredEntries.length > 0 ? (runs / filteredEntries.length).toFixed(1) : '0';
+                document.getElementById('scAvgTestsRun').textContent = avgTestsPerRun;
+                document.getElementById('scActiveDays').textContent = filteredEntries.filter(function (e) { return e.totals.runs > 0; }).length;
+                document.getElementById('scPeakDay').textContent = peakRuns + ' (' + peakDate.slice(5) + ')';
+            }
+
+            /* ─── Collect all unique keys across entries ─── */
+            function collectKeys(entries, field) {
+                var keys = {};
+                entries.forEach(function (e) {
+                    Object.keys(e[field] || {}).forEach(function (k) { keys[k] = true; });
+                });
+                return Object.keys(keys).sort();
+            }
+
+            /* ─── Destroy and recreate a chart ─── */
+            function makeChart(canvasId, config) {
+                if (charts[canvasId]) {
+                    charts[canvasId].destroy();
+                }
+                var ctx = document.getElementById(canvasId).getContext('2d');
+                charts[canvasId] = new Chart(ctx, config);
+            }
+
+            /* ─── Shared chart options ─── */
+            var sharedLineOpts = {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: { mode: 'index', intersect: false },
+                plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, padding: 10, font: { size: 11 } } } },
+                scales: {
+                    x: { grid: { display: false }, ticks: { font: { size: 10 }, maxRotation: 45 } },
+                    y: { beginAtZero: true, ticks: { font: { size: 10 } } }
+                }
+            };
+
+            /* ─── Render all charts ─── */
+            function renderCharts() {
+                var labels = filteredEntries.map(function (e) { return e.date.slice(5); }); // MM-DD
+
+                // === Platform Runs (line) ===
+                var platforms = collectKeys(filteredEntries, 'platforms');
+                makeChart('chartPlatformRuns', {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: platforms.map(function (p) {
+                            return {
+                                label: p,
+                                data: filteredEntries.map(function (e) { return (e.platforms[p] || {}).runs || 0; }),
+                                borderColor: C[p] || C.other,
+                                backgroundColor: alpha(C[p] || C.other, 0.1),
+                                borderWidth: 2,
+                                tension: 0.3,
+                                fill: true,
+                                pointRadius: filteredEntries.length > 30 ? 0 : 3
+                            };
+                        })
+                    },
+                    options: sharedLineOpts
+                });
+
+                // === Environment Runs (line) ===
+                var envs = collectKeys(filteredEntries, 'environments');
+                makeChart('chartEnvRuns', {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: envs.map(function (env) {
+                            return {
+                                label: env,
+                                data: filteredEntries.map(function (e) { return (e.environments[env] || {}).runs || 0; }),
+                                borderColor: C[env] || C.unknown,
+                                backgroundColor: alpha(C[env] || C.unknown, 0.1),
+                                borderWidth: 2,
+                                tension: 0.3,
+                                fill: false,
+                                pointRadius: filteredEntries.length > 30 ? 0 : 3
+                            };
+                        })
+                    },
+                    options: sharedLineOpts
+                });
+
+                // === Passed / Failed (stacked bar) ===
+                makeChart('chartPassFail', {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [
+                            {
+                                label: 'Passed',
+                                data: filteredEntries.map(function (e) { return e.totals.passed; }),
+                                backgroundColor: alpha(C.passed, 0.7),
+                                borderColor: C.passed,
+                                borderWidth: 1
+                            },
+                            {
+                                label: 'Failed',
+                                data: filteredEntries.map(function (e) { return e.totals.failed; }),
+                                backgroundColor: alpha(C.failed, 0.7),
+                                borderColor: C.failed,
+                                borderWidth: 1
+                            }
+                        ]
+                    },
+                    options: Object.assign({}, sharedLineOpts, {
+                        scales: {
+                            x: { stacked: true, grid: { display: false }, ticks: { font: { size: 10 }, maxRotation: 45 } },
+                            y: { stacked: true, beginAtZero: true, ticks: { font: { size: 10 } } }
+                        }
+                    })
+                });
+
+                // === Pass Rate — Global + by Platform (line) ===
+                var prPR = filteredEntries.length > 30 ? 0 : 3;
+                var prDatasets = [{
+                    label: 'Global',
+                    data: filteredEntries.map(function (e) {
+                        var t = e.totals.passed + e.totals.failed;
+                        return t > 0 ? Math.round(e.totals.passed / t * 100) : null;
+                    }),
+                    borderColor: '#333',
+                    backgroundColor: 'transparent',
+                    borderWidth: 2.5,
+                    borderDash: [6, 3],
+                    tension: 0.3,
+                    fill: false,
+                    pointRadius: prPR,
+                    spanGaps: true
+                }];
+                platforms.forEach(function (p) {
+                    prDatasets.push({
+                        label: p,
+                        data: filteredEntries.map(function (e) {
+                            var pd = e.platforms[p] || {};
+                            var t = (pd.passed || 0) + (pd.failed || 0);
+                            return t > 0 ? Math.round(pd.passed / t * 100) : null;
+                        }),
+                        borderColor: C[p] || C.other,
+                        backgroundColor: 'transparent',
+                        borderWidth: 1.5,
+                        tension: 0.3,
+                        fill: false,
+                        pointRadius: prPR > 0 ? 2 : 0,
+                        spanGaps: true
+                    });
+                });
+                makeChart('chartPassRate', {
+                    type: 'line',
+                    data: { labels: labels, datasets: prDatasets },
+                    options: Object.assign({}, sharedLineOpts, {
+                        scales: {
+                            x: { grid: { display: false }, ticks: { font: { size: 10 }, maxRotation: 45 } },
+                            y: { beginAtZero: true, max: 100, ticks: { font: { size: 10 }, callback: function (v) { return v + '%'; } } }
+                        }
+                    })
+                });
+
+                // === Avg Tests per Run — by Platform (line) ===
+                var atDatasets = [{
+                    label: 'Global',
+                    data: filteredEntries.map(function (e) {
+                        if (e.totals.runs === 0) return null;
+                        return Math.round((e.totals.passed + e.totals.failed) / e.totals.runs * 10) / 10;
+                    }),
+                    borderColor: '#333',
+                    backgroundColor: 'transparent',
+                    borderWidth: 2.5,
+                    borderDash: [6, 3],
+                    tension: 0.3,
+                    fill: false,
+                    pointRadius: prPR,
+                    spanGaps: true
+                }];
+                platforms.forEach(function (p) {
+                    atDatasets.push({
+                        label: p,
+                        data: filteredEntries.map(function (e) {
+                            var pd = e.platforms[p] || {};
+                            if (!pd.runs) return null;
+                            return Math.round(((pd.passed || 0) + (pd.failed || 0)) / pd.runs * 10) / 10;
+                        }),
+                        borderColor: C[p] || C.other,
+                        backgroundColor: 'transparent',
+                        borderWidth: 1.5,
+                        tension: 0.3,
+                        fill: false,
+                        pointRadius: prPR > 0 ? 2 : 0,
+                        spanGaps: true
+                    });
+                });
+                makeChart('chartAvgTestsRun', {
+                    type: 'line',
+                    data: { labels: labels, datasets: atDatasets },
+                    options: sharedLineOpts
+                });
+
+                // === Total Tests Executed — stacked by Platform (bar) ===
+                var stackedBarOpts = Object.assign({}, sharedLineOpts, {
+                    scales: {
+                        x: { stacked: true, grid: { display: false }, ticks: { font: { size: 10 }, maxRotation: 45 } },
+                        y: { stacked: true, beginAtZero: true, ticks: { font: { size: 10 } } }
+                    }
+                });
+                makeChart('chartTestVolume', {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: platforms.map(function (p) {
+                            return {
+                                label: p,
+                                data: filteredEntries.map(function (e) {
+                                    var pd = e.platforms[p] || {};
+                                    return (pd.passed || 0) + (pd.failed || 0);
+                                }),
+                                backgroundColor: alpha(C[p] || C.other, 0.7),
+                                borderColor: C[p] || C.other,
+                                borderWidth: 1
+                            };
+                        })
+                    },
+                    options: stackedBarOpts
+                });
+
+                // === Per-platform Passed/Failed bar charts (dynamic) ===
+                var pfStackedOpts = Object.assign({}, sharedLineOpts, {
+                    scales: {
+                        x: { stacked: true, grid: { display: false }, ticks: { font: { size: 10 }, maxRotation: 45 } },
+                        y: { stacked: true, beginAtZero: true, ticks: { font: { size: 10 } } }
+                    }
+                });
+                var pfContainer = document.getElementById('platformPassFailCharts');
+                pfContainer.innerHTML = '';
+                platforms.forEach(function (p) {
+                    if (charts['chartPF_' + p]) { charts['chartPF_' + p].destroy(); delete charts['chartPF_' + p]; }
+                });
+                platforms.forEach(function (p) {
+                    var cap = p.charAt(0).toUpperCase() + p.slice(1);
+                    var div = document.createElement('div');
+                    div.className = 'chart-card';
+                    div.innerHTML = '<h3>Passed / Failed — ' + cap + '</h3><canvas id="chartPF_' + p + '"></canvas>';
+                    pfContainer.appendChild(div);
+                });
+                platforms.forEach(function (p) {
+                    makeChart('chartPF_' + p, {
+                        type: 'bar',
+                        data: {
+                            labels: labels,
+                            datasets: [
+                                {
+                                    label: 'Passed',
+                                    data: filteredEntries.map(function (e) { return (e.platforms[p] || {}).passed || 0; }),
+                                    backgroundColor: alpha(C.passed, 0.7),
+                                    borderColor: C.passed,
+                                    borderWidth: 1
+                                },
+                                {
+                                    label: 'Failed',
+                                    data: filteredEntries.map(function (e) { return (e.platforms[p] || {}).failed || 0; }),
+                                    backgroundColor: alpha(C.failed, 0.7),
+                                    borderColor: C.failed,
+                                    borderWidth: 1
+                                }
+                            ]
+                        },
+                        options: pfStackedOpts
+                    });
+                });
+
+                // === Platform Distribution (doughnut) ===
+                var platformTotals = {};
+                platforms.forEach(function (p) { platformTotals[p] = 0; });
+                filteredEntries.forEach(function (e) {
+                    platforms.forEach(function (p) {
+                        platformTotals[p] += (e.platforms[p] || {}).runs || 0;
+                    });
+                });
+                makeChart('chartPlatformPie', {
+                    type: 'doughnut',
+                    data: {
+                        labels: platforms,
+                        datasets: [{
+                            data: platforms.map(function (p) { return platformTotals[p]; }),
+                            backgroundColor: platforms.map(function (p) { return alpha(C[p] || C.other, 0.8); }),
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: { position: 'bottom', labels: { boxWidth: 12, padding: 10, font: { size: 11 } } }
+                        }
+                    }
+                });
+
+                // === Environment Distribution (doughnut) ===
+                var envTotals = {};
+                envs.forEach(function (env) { envTotals[env] = 0; });
+                filteredEntries.forEach(function (e) {
+                    envs.forEach(function (env) {
+                        envTotals[env] += (e.environments[env] || {}).runs || 0;
+                    });
+                });
+                makeChart('chartEnvPie', {
+                    type: 'doughnut',
+                    data: {
+                        labels: envs,
+                        datasets: [{
+                            data: envs.map(function (env) { return envTotals[env]; }),
+                            backgroundColor: envs.map(function (env) { return alpha(C[env] || C.unknown, 0.8); }),
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: { position: 'bottom', labels: { boxWidth: 12, padding: 10, font: { size: 11 } } }
+                        }
+                    }
+                });
+
+                // === Overall Pass/Fail (doughnut) ===
+                var totalPassed = 0, totalFailed = 0;
+                filteredEntries.forEach(function (e) {
+                    totalPassed += e.totals.passed;
+                    totalFailed += e.totals.failed;
+                });
+                makeChart('chartOverallPie', {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Passed', 'Failed'],
+                        datasets: [{
+                            data: [totalPassed, totalFailed],
+                            backgroundColor: [alpha(C.passed, 0.8), alpha(C.failed, 0.8)],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: { position: 'bottom', labels: { boxWidth: 12, padding: 10, font: { size: 11 } } }
+                        }
+                    }
+                });
+
+                // === Per-platform Pass/Fail doughnuts (dynamic) ===
+                var pdContainer = document.getElementById('platformDoughnuts');
+                pdContainer.innerHTML = '';
+                var doughnutOpts = {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'bottom', labels: { boxWidth: 12, padding: 10, font: { size: 11 } } }
+                    }
+                };
+                platforms.forEach(function (p) {
+                    if (charts['chartPFPie_' + p]) { charts['chartPFPie_' + p].destroy(); delete charts['chartPFPie_' + p]; }
+                });
+                platforms.forEach(function (p) {
+                    var pPassed = 0, pFailed = 0;
+                    filteredEntries.forEach(function (e) {
+                        pPassed += (e.platforms[p] || {}).passed || 0;
+                        pFailed += (e.platforms[p] || {}).failed || 0;
+                    });
+                    if (pPassed + pFailed === 0) return;
+                    var cap = p.charAt(0).toUpperCase() + p.slice(1);
+                    var div = document.createElement('div');
+                    div.className = 'doughnut-card';
+                    div.innerHTML = '<h3>Pass / Fail — ' + cap + '</h3><canvas id="chartPFPie_' + p + '"></canvas>';
+                    pdContainer.appendChild(div);
+                });
+                platforms.forEach(function (p) {
+                    var pPassed = 0, pFailed = 0;
+                    filteredEntries.forEach(function (e) {
+                        pPassed += (e.platforms[p] || {}).passed || 0;
+                        pFailed += (e.platforms[p] || {}).failed || 0;
+                    });
+                    if (pPassed + pFailed === 0) return;
+                    makeChart('chartPFPie_' + p, {
+                        type: 'doughnut',
+                        data: {
+                            labels: ['Passed', 'Failed'],
+                            datasets: [{
+                                data: [pPassed, pFailed],
+                                backgroundColor: [alpha(C.passed, 0.8), alpha(C.failed, 0.8)],
+                                borderWidth: 2
+                            }]
+                        },
+                        options: doughnutOpts
+                    });
+                });
+            }
+
+            /* ─── History table ─── */
+            function renderTable() {
+                var tbody = document.getElementById('historyTbody');
+                tbody.innerHTML = '';
+
+                // Show newest first in table
+                var reversed = filteredEntries.slice().reverse();
+                reversed.forEach(function (e) {
+                    var tr = document.createElement('tr');
+                    var total = e.totals.passed + e.totals.failed;
+                    var rate = total > 0 ? Math.round(e.totals.passed / total * 100) : 0;
+
+                    var browserRuns = (e.platforms.browser || {}).runs || 0;
+                    var androidRuns = (e.platforms.android || {}).runs || 0;
+                    var iosRuns = (e.platforms.ios || {}).runs || 0;
+                    var avgTests = e.totals.runs > 0 ? Math.round((total) / e.totals.runs * 10) / 10 : '-';
+
+                    tr.innerHTML =
+                        '<td>' + e.date + '</td>' +
+                        '<td><strong>' + e.totals.runs + '</strong></td>' +
+                        '<td><span class="badge badge-green">' + e.totals.passed + '</span></td>' +
+                        '<td>' + (e.totals.failed > 0 ? '<span class="badge badge-red">' + e.totals.failed + '</span>' : '0') + '</td>' +
+                        '<td>' + rate + '%</td>' +
+                        '<td>' + avgTests + '</td>' +
+                        '<td>' + (browserRuns || '-') + '</td>' +
+                        '<td>' + (androidRuns || '-') + '</td>' +
+                        '<td>' + (iosRuns || '-') + '</td>';
+                    tbody.appendChild(tr);
+                });
+            }
+
+            /* ─── Escape HTML ─── */
+            function esc(s) {
+                var d = document.createElement('div');
+                d.textContent = s || '';
+                return d.innerHTML;
+            }
+
+            /* ─── Show error ─── */
+            function showError(msg) {
+                loadingEl.innerHTML = '<div class="error-msg">' + esc(msg) + '</div>';
+            }
+
+            /* ─── Load data ─── */
+            fetch('stats-history.json?_=' + Date.now())
+                .then(function (res) {
+                    if (!res.ok) throw new Error('stats-history.json not found (HTTP ' + res.status + '). Run: node update-stats-history.js');
+                    return res.json();
+                })
+                .then(function (data) {
+                    loadingEl.style.display = 'none';
+                    allEntries = data.entries || [];
+
+                    if (allEntries.length === 0) {
+                        showError('No historical data yet. Stats will appear after the first manifest generation.');
+                        return;
+                    }
+
+                    document.getElementById('headerSub').textContent =
+                        'History: ' + allEntries[0].date + ' → ' + allEntries[allEntries.length - 1].date +
+                        ' (' + allEntries.length + ' days) — Last updated: ' +
+                        new Date(data.lastUpdated).toLocaleString();
+
+                    document.getElementById('footerInfo').textContent =
+                        'Data from stats-history.json — persisted beyond report retention';
+
+                    filterAndRender();
+                })
+                .catch(function (err) {
+                    showError('Could not load stats: ' + err.message);
+                    console.error('[Stats]', err);
+                });
+        })();
+    </script>
+</body>
+
+</html>

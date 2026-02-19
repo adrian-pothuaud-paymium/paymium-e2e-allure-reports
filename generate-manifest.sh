@@ -95,3 +95,11 @@ echo "]" >> "${MANIFEST}.tmp"
 mv "${MANIFEST}.tmp" "${MANIFEST}"
 
 echo "[manifest] Generated ${MANIFEST} with ${COUNT} entries."
+
+# ─── Update stats history (preserves data beyond report retention) ───
+if command -v node >/dev/null 2>&1; then
+  echo "[manifest] Updating stats history..."
+  node "${SCRIPT_DIR}/update-stats-history.js" "${REPORTS_DIR}" || echo "[manifest] Warning: stats history update failed (non-blocking)"
+else
+  echo "[manifest] Skipping stats history update (node not available)"
+fi

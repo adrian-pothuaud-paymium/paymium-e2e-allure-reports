@@ -309,6 +309,163 @@
       font-style: italic
     }
 
+    /* ─── Stats Preview Bar ─── */
+    .stats-bar {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+      margin-bottom: 1rem;
+      overflow: hidden
+    }
+
+    .stats-bar-header {
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+      gap: 12px;
+      cursor: pointer;
+      user-select: none
+    }
+
+    .stats-bar-header:hover {
+      background: #fafbff
+    }
+
+    .stats-bar-metrics {
+      display: flex;
+      gap: 18px;
+      flex: 1;
+      flex-wrap: wrap
+    }
+
+    .stats-bar-metric {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      font-size: .82rem
+    }
+
+    .stats-bar-metric .val {
+      font-weight: 700;
+      color: #1a1a2e
+    }
+
+    .stats-bar-metric .lbl {
+      color: #888
+    }
+
+    .stats-bar-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .stats-bar-link {
+      font-size: .8rem;
+      color: #1565c0;
+      text-decoration: none;
+      font-weight: 500;
+      white-space: nowrap
+    }
+
+    .stats-bar-link:hover {
+      text-decoration: underline
+    }
+
+    .stats-expand-btn {
+      background: none;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 4px 8px;
+      cursor: pointer;
+      font-size: .72rem;
+      color: #888;
+      transition: all .15s
+    }
+
+    .stats-expand-btn:hover {
+      border-color: #1565c0;
+      color: #1565c0
+    }
+
+    .stats-bar-body {
+      border-top: 1px solid #f0f0f0;
+      padding: 12px 16px;
+      display: none
+    }
+
+    .stats-bar-body.open {
+      display: block
+    }
+
+    /* ─── Mini Charts Row ─── */
+    .mini-charts-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 4px
+    }
+
+    .mini-chart-title {
+      font-size: .68rem;
+      color: #888;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .03em;
+      margin-bottom: 2px
+    }
+
+    .mini-chart-svg {
+      width: 100%;
+      height: 75px
+    }
+
+    .mini-chart-svg svg {
+      width: 100%;
+      height: 100%
+    }
+
+    .mini-chart-svg .bar-group:hover rect {
+      filter: brightness(.88)
+    }
+
+    .mini-charts-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: .68rem;
+      color: #aaa;
+      margin-top: 3px
+    }
+
+    .mini-legend {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap
+    }
+
+    .mini-legend span {
+      display: flex;
+      align-items: center;
+      gap: 2px
+    }
+
+    .mini-legend .ml-dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 2px
+    }
+
+    @media(max-width:640px) {
+      .mini-charts-row {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .mini-chart-svg {
+        height: 55px
+      }
+    }
+
     @media(max-width:768px) {
       .container {
         padding: 1rem .5rem
@@ -336,6 +493,10 @@
       .header h1 {
         font-size: 1.3rem
       }
+
+      .stats-bar-metrics {
+        gap: 10px
+      }
     }
   </style>
 </head>
@@ -345,6 +506,48 @@
     <div class="header">
       <h1>Paymium E2E - Allure Reports</h1>
       <p>Test reports deployed from GitLab CI/CD to GitHub Pages</p>
+    </div>
+
+    <!-- Stats Preview Bar (loaded from stats-history.json) -->
+    <div class="stats-bar" id="statsBar" style="display:none">
+      <div class="stats-bar-header" id="statsToggle">
+        <span style="font-size:1.1rem">📊</span>
+        <div class="stats-bar-metrics">
+          <div class="stats-bar-metric"><span class="val" id="sRuns7d">—</span><span class="lbl">runs (7d)</span></div>
+          <div class="stats-bar-metric"><span class="val" id="sPass7d">—</span><span class="lbl">pass rate</span></div>
+          <div class="stats-bar-metric"><span class="val" id="sRuns30d">—</span><span class="lbl">runs (30d)</span>
+          </div>
+          <div class="stats-bar-metric"><span class="val" id="sPass30d">—</span><span class="lbl">pass rate</span></div>
+        </div>
+        <div class="stats-bar-actions">
+          <a href="stats.html" class="stats-bar-link" onclick="event.stopPropagation()">Dashboard →</a>
+          <button class="stats-expand-btn" id="statsExpandBtn" title="Toggle chart">▼</button>
+        </div>
+      </div>
+      <div class="stats-bar-body open" id="statsBody">
+        <div class="mini-charts-row">
+          <div class="mini-chart">
+            <div class="mini-chart-title">Runs by Platform</div>
+            <div class="mini-chart-svg" id="miniPlatformRuns"></div>
+          </div>
+          <div class="mini-chart">
+            <div class="mini-chart-title">Runs by Env</div>
+            <div class="mini-chart-svg" id="miniEnvRuns"></div>
+          </div>
+          <div class="mini-chart">
+            <div class="mini-chart-title">Pass Rate %</div>
+            <div class="mini-chart-svg" id="miniPassRate"></div>
+          </div>
+          <div class="mini-chart">
+            <div class="mini-chart-title">Avg Tests/Run</div>
+            <div class="mini-chart-svg" id="miniAvgTests"></div>
+          </div>
+        </div>
+        <div class="mini-charts-footer">
+          <div class="mini-legend" id="miniLegend"></div>
+          <span id="miniDateRange"></span>
+        </div>
+      </div>
     </div>
 
     <!-- Toolbar: Search + Filters -->
@@ -650,6 +853,203 @@
           showError('Could not load reports: ' + err.message);
           console.error('[Allure Index]', err);
         });
+    })();
+  </script>
+
+  <!-- Stats Overview — 4 mini SVG charts (no external lib) -->
+  <script>
+    (function () {
+      var PC = { browser: '#1565c0', android: '#2e7d32', ios: '#ef6c00', other: '#757575' };
+      var EC = { sandbox: '#7b1fa2', staging: '#1565c0', flux: '#ef6c00', local: '#2e7d32', unknown: '#757575' };
+
+      fetch('stats-history.json?_=' + Date.now())
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (data) {
+          if (!data || !data.entries || !data.entries.length) return;
+
+          var bar = document.getElementById('statsBar');
+          bar.style.display = '';
+          var entries = data.entries;
+
+          function computeStats(days) {
+            var cutoff = new Date();
+            cutoff.setDate(cutoff.getDate() - days);
+            var cutoffStr = cutoff.toISOString().slice(0, 10);
+            var runs = 0, passed = 0, failed = 0;
+            entries.forEach(function (e) {
+              if (e.date >= cutoffStr) {
+                runs += e.totals.runs;
+                passed += e.totals.passed;
+                failed += e.totals.failed;
+              }
+            });
+            var total = passed + failed;
+            var rate = total > 0 ? Math.round(passed / total * 100) : 0;
+            return { runs: runs, rate: rate };
+          }
+
+          var s7 = computeStats(7);
+          var s30 = computeStats(30);
+          document.getElementById('sRuns7d').textContent = s7.runs;
+          document.getElementById('sPass7d').textContent = s7.rate + '%';
+          document.getElementById('sRuns30d').textContent = s30.runs;
+          document.getElementById('sPass30d').textContent = s30.rate + '%';
+
+          var last14 = entries.slice(-14);
+          if (last14.length > 0) {
+            document.getElementById('miniDateRange').textContent =
+              last14[0].date + ' → ' + last14[last14.length - 1].date;
+            renderMiniCharts(last14);
+          }
+
+          /* Toggle */
+          var toggle = document.getElementById('statsToggle');
+          var body = document.getElementById('statsBody');
+          var btn = document.getElementById('statsExpandBtn');
+          btn.textContent = '▲';
+          toggle.addEventListener('click', function () {
+            var open = body.classList.toggle('open');
+            btn.textContent = open ? '▲' : '▼';
+          });
+        })
+        .catch(function () { });
+
+      /* ─── Collect keys ─── */
+      function collectKeys(entries, field) {
+        var keys = {};
+        entries.forEach(function (e) {
+          Object.keys(e[field] || {}).forEach(function (k) { keys[k] = true; });
+        });
+        return Object.keys(keys).sort();
+      }
+
+      /* ─── Shared SVG constants ─── */
+      var W = 200, H = 65, pL = 2, pR = 2, pT = 2, pB = 12;
+      var cW = W - pL - pR, cH = H - pT - pB;
+
+      function svgOpen() { return '<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg" style="font-family:sans-serif">'; }
+
+      function dateLabels(entries) {
+        var svg = [];
+        var n = entries.length;
+        [0, Math.floor(n / 2), n - 1].forEach(function (idx) {
+          if (idx >= n) return;
+          var x = pL + (idx + 0.5) * (cW / n);
+          svg.push('<text x="' + x + '" y="' + (H - 1) + '" text-anchor="middle" fill="#bbb" font-size="6">' + entries[idx].date.slice(5) + '</text>');
+        });
+        return svg.join('');
+      }
+
+      /* ─── Stacked bar chart ─── */
+      function renderStackedBars(containerId, entries, field, colors) {
+        var keys = collectKeys(entries, field);
+        var maxVal = 0;
+        entries.forEach(function (e) {
+          var sum = 0;
+          keys.forEach(function (k) { sum += (e[field][k] || {}).runs || 0; });
+          if (sum > maxVal) maxVal = sum;
+        });
+        if (maxVal === 0) maxVal = 1;
+        var n = entries.length;
+        var barW = cW / n;
+        var gap = barW * 0.2;
+        var bw = barW - gap;
+
+        var svg = [svgOpen()];
+        entries.forEach(function (e, i) {
+          var x = pL + i * barW + gap / 2;
+          var yBase = pT + cH;
+          var parts = [];
+          keys.forEach(function (k) {
+            var val = (e[field][k] || {}).runs || 0;
+            var h = (val / maxVal) * cH;
+            if (h > 0) parts.push({ k: k, h: h, val: val });
+          });
+          var title = e.date;
+          keys.forEach(function (k) { title += '  ' + k + ': ' + ((e[field][k] || {}).runs || 0); });
+          svg.push('<g class="bar-group">');
+          svg.push('<rect x="' + (pL + i * barW) + '" y="' + pT + '" width="' + barW + '" height="' + cH + '" fill="transparent"><title>' + title + '</title></rect>');
+          var offset = 0;
+          parts.forEach(function (p) {
+            svg.push('<rect x="' + x + '" y="' + (yBase - offset - p.h) + '" width="' + bw + '" height="' + p.h + '" fill="' + (colors[p.k] || '#999') + '" rx="0.8"><title>' + title + '</title></rect>');
+            offset += p.h;
+          });
+          svg.push('</g>');
+        });
+        svg.push(dateLabels(entries));
+        svg.push('</svg>');
+        document.getElementById(containerId).innerHTML = svg.join('');
+      }
+
+      /* ─── Line chart ─── */
+      function renderLine(containerId, entries, valueFn, color, unit) {
+        var values = entries.map(valueFn);
+        var nums = values.filter(function (v) { return v !== null; });
+        var maxV = nums.length > 0 ? Math.max.apply(null, nums) : 1;
+        var minV = nums.length > 0 ? Math.min.apply(null, nums) : 0;
+        if (maxV === minV) { maxV += 1; minV = Math.max(0, minV - 1); }
+        var range = maxV - minV;
+        var n = entries.length;
+        var stepX = cW / Math.max(n - 1, 1);
+
+        var svg = [svgOpen()];
+        /* Grid */
+        for (var g = 0; g <= 2; g++) {
+          var yg = pT + cH - (g / 2) * cH;
+          svg.push('<line x1="' + pL + '" y1="' + yg + '" x2="' + (W - pR) + '" y2="' + yg + '" stroke="#eee" stroke-width="0.4"/>');
+        }
+        /* Y labels */
+        svg.push('<text x="' + pL + '" y="' + (pT + 5) + '" fill="#bbb" font-size="5.5">' + Math.round(maxV) + (unit || '') + '</text>');
+        svg.push('<text x="' + pL + '" y="' + (pT + cH) + '" fill="#bbb" font-size="5.5">' + Math.round(minV) + (unit || '') + '</text>');
+        /* Points */
+        var pts = [];
+        values.forEach(function (v, i) {
+          if (v === null) return;
+          var x = pL + i * stepX;
+          var y = pT + cH - ((v - minV) / range) * cH;
+          pts.push({ x: x, y: y, title: entries[i].date + ': ' + v + (unit || '') });
+        });
+        if (pts.length > 1) {
+          var lineStr = pts.map(function (p) { return p.x + ',' + p.y; }).join(' ');
+          var areaStr = pts[0].x + ',' + (pT + cH) + ' ' + lineStr + ' ' + pts[pts.length - 1].x + ',' + (pT + cH);
+          svg.push('<polygon points="' + areaStr + '" fill="' + color + '" fill-opacity="0.12"/>');
+          svg.push('<polyline points="' + lineStr + '" fill="none" stroke="' + color + '" stroke-width="1.5" stroke-linejoin="round"/>');
+        }
+        pts.forEach(function (p) {
+          svg.push('<circle cx="' + p.x + '" cy="' + p.y + '" r="1.8" fill="' + color + '"><title>' + p.title + '</title></circle>');
+        });
+        svg.push(dateLabels(entries));
+        svg.push('</svg>');
+        document.getElementById(containerId).innerHTML = svg.join('');
+      }
+
+      /* ─── Build legend ─── */
+      function buildLegend(entries) {
+        var legendEl = document.getElementById('miniLegend');
+        var items = [];
+        collectKeys(entries, 'platforms').forEach(function (p) {
+          items.push('<span><i class="ml-dot" style="background:' + (PC[p] || '#999') + '"></i>' + p + '</span>');
+        });
+        items.push('<span style="margin-left:4px;border-left:1px solid #ddd;padding-left:6px"></span>');
+        collectKeys(entries, 'environments').forEach(function (e) {
+          items.push('<span><i class="ml-dot" style="background:' + (EC[e] || '#999') + '"></i>' + e + '</span>');
+        });
+        legendEl.innerHTML = items.join('');
+      }
+
+      /* ─── Render all 4 ─── */
+      function renderMiniCharts(entries) {
+        renderStackedBars('miniPlatformRuns', entries, 'platforms', PC);
+        renderStackedBars('miniEnvRuns', entries, 'environments', EC);
+        renderLine('miniPassRate', entries, function (e) {
+          var t = e.totals.passed + e.totals.failed;
+          return t > 0 ? Math.round(e.totals.passed / t * 100) : null;
+        }, '#1565c0', '%');
+        renderLine('miniAvgTests', entries, function (e) {
+          return e.totals.runs > 0 ? Math.round((e.totals.passed + e.totals.failed) / e.totals.runs * 10) / 10 : null;
+        }, '#795548', '');
+        buildLegend(entries);
+      }
     })();
   </script>
 </body>
