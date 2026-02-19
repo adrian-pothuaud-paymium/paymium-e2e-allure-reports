@@ -1,0 +1,17 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected pattern: /^Tableau de bord - Paymium$/
+Received string:  "Se connecter - Paymium"
+Timeout: 20000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 20000ms
+    5 × unexpected value "Paymium"
+    - unexpected value "Se déconnecter - Paymium"
+    17 × unexpected value "Se connecter - Paymium"
+
+    at Dashboard.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/BasePage.ts:17:29)
+    at Dashboard.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/AccountPage.ts:35:5)
+    at Dashboard.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/dashboard/index.ts:28:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/transfers/send-by-email.spec.ts:18:3
