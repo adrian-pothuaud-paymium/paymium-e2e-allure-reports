@@ -1,360 +1,657 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paymium E2E - Allure Reports</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#f0f2f5;color:#1a1a2e;min-height:100vh}
-.container{max-width:1400px;margin:0 auto;padding:2rem 1rem}
-.header{text-align:center;margin-bottom:1.5rem}
-.header h1{font-size:1.6rem;color:#1a1a2e;margin-bottom:.3rem}
-.header p{color:#666;font-size:.9rem}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paymium E2E - Allure Reports</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
 
-/* ─── Loading / Error ─── */
-.loading{text-align:center;padding:3rem;color:#666}
-.loading .spinner{display:inline-block;width:28px;height:28px;border:3px solid #e0e0e0;border-top-color:#1565c0;border-radius:50%;animation:spin .7s linear infinite;margin-bottom:.8rem}
-@keyframes spin{to{transform:rotate(360deg)}}
-.error-msg{text-align:center;padding:2rem;color:#c62828;background:#ffebee;border-radius:10px;margin:1rem 0}
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f0f2f5;
+      color: #1a1a2e;
+      min-height: 100vh
+    }
 
-/* ─── Toolbar ─── */
-.toolbar{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-bottom:1rem;padding:0 .25rem}
-.search-box{flex:1 1 280px;position:relative}
-.search-box input{width:100%;padding:9px 14px 9px 36px;border:1px solid #d0d5dd;border-radius:8px;font-size:.88rem;background:#fff;transition:border .2s}
-.search-box input:focus{outline:none;border-color:#1565c0;box-shadow:0 0 0 3px rgba(21,101,192,.12)}
-.search-box svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:#999;pointer-events:none}
-.filters{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}
-.filter-group{display:flex;align-items:center;gap:.3rem}
-.filter-group label{font-size:.78rem;color:#666;font-weight:600;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap}
-.filter-group select{padding:6px 28px 6px 10px;border:1px solid #d0d5dd;border-radius:8px;font-size:.84rem;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 5l3 3 3-3' fill='none' stroke='%23666' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 8px center;appearance:none;-webkit-appearance:none;cursor:pointer;transition:border .2s}
-.filter-group select:focus{outline:none;border-color:#1565c0}
-.filter-btn{padding:6px 14px;border:1px solid #d0d5dd;border-radius:8px;font-size:.82rem;background:#fff;cursor:pointer;color:#666;font-weight:500;transition:all .15s}
-.filter-btn:hover{border-color:#1565c0;color:#1565c0}
-.filter-btn.active{background:#1565c0;color:#fff;border-color:#1565c0}
-.count{font-size:.78rem;color:#999;margin-left:auto;white-space:nowrap}
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem 1rem
+    }
 
-/* ─── Table ─── */
-.card{background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.06);overflow:hidden}
-table{width:100%;border-collapse:collapse}
-thead th{background:#1a1a2e;color:#fff;padding:12px 16px;text-align:left;font-size:.82rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;user-select:none;white-space:nowrap}
-thead th:hover{background:#2a2a4e}
-thead th .sort-arrow{display:inline-block;margin-left:4px;font-size:.7rem;opacity:.5}
-thead th.sorted .sort-arrow{opacity:1}
-tbody td{padding:10px 16px;border-bottom:1px solid #f0f0f0;font-size:.88rem;vertical-align:middle}
-tbody tr:last-child td{border-bottom:none}
-tbody tr:hover td{background:#f8f9ff}
-tbody tr.hidden{display:none}
-.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.78rem;font-weight:600;white-space:nowrap}
-.pass{background:#e8f5e9;color:#2e7d32}
-.fail{background:#ffebee;color:#c62828}
-.env{background:#e3f2fd;color:#1565c0}
-.job{background:#f3e5f5;color:#7b1fa2}
-a.rlink{color:#1565c0;text-decoration:none;font-weight:500}
-a.rlink:hover{text-decoration:underline}
-a.ci{color:#999;font-size:.78rem;text-decoration:none}
-a.ci:hover{color:#1565c0}
-.foot{text-align:center;margin-top:1.5rem;color:#aaa;font-size:.78rem}
-.empty-row td{padding:3rem;text-align:center;color:#aaa;font-style:italic}
-@media(max-width:768px){.container{padding:1rem .5rem}.toolbar{flex-direction:column}.search-box{flex:1 1 100%}.count{margin-left:0;margin-top:.3rem}thead th,tbody td{padding:8px 10px;font-size:.78rem}.header h1{font-size:1.3rem}}
-</style>
+    .header {
+      text-align: center;
+      margin-bottom: 1.5rem
+    }
+
+    .header h1 {
+      font-size: 1.6rem;
+      color: #1a1a2e;
+      margin-bottom: .3rem
+    }
+
+    .header p {
+      color: #666;
+      font-size: .9rem
+    }
+
+    /* ─── Loading / Error ─── */
+    .loading {
+      text-align: center;
+      padding: 3rem;
+      color: #666
+    }
+
+    .loading .spinner {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      border: 3px solid #e0e0e0;
+      border-top-color: #1565c0;
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+      margin-bottom: .8rem
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    .error-msg {
+      text-align: center;
+      padding: 2rem;
+      color: #c62828;
+      background: #ffebee;
+      border-radius: 10px;
+      margin: 1rem 0
+    }
+
+    /* ─── Toolbar ─── */
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding: 0 .25rem
+    }
+
+    .search-box {
+      flex: 1 1 280px;
+      position: relative
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 9px 14px 9px 36px;
+      border: 1px solid #d0d5dd;
+      border-radius: 8px;
+      font-size: .88rem;
+      background: #fff;
+      transition: border .2s
+    }
+
+    .search-box input:focus {
+      outline: none;
+      border-color: #1565c0;
+      box-shadow: 0 0 0 3px rgba(21, 101, 192, .12)
+    }
+
+    .search-box svg {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      color: #999;
+      pointer-events: none
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem;
+      align-items: center
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: .3rem
+    }
+
+    .filter-group label {
+      font-size: .78rem;
+      color: #666;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .03em;
+      white-space: nowrap
+    }
+
+    .filter-group select {
+      padding: 6px 28px 6px 10px;
+      border: 1px solid #d0d5dd;
+      border-radius: 8px;
+      font-size: .84rem;
+      background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 5l3 3 3-3' fill='none' stroke='%23666' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 8px center;
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+      transition: border .2s
+    }
+
+    .filter-group select:focus {
+      outline: none;
+      border-color: #1565c0
+    }
+
+    .filter-btn {
+      padding: 6px 14px;
+      border: 1px solid #d0d5dd;
+      border-radius: 8px;
+      font-size: .82rem;
+      background: #fff;
+      cursor: pointer;
+      color: #666;
+      font-weight: 500;
+      transition: all .15s
+    }
+
+    .filter-btn:hover {
+      border-color: #1565c0;
+      color: #1565c0
+    }
+
+    .filter-btn.active {
+      background: #1565c0;
+      color: #fff;
+      border-color: #1565c0
+    }
+
+    .count {
+      font-size: .78rem;
+      color: #999;
+      margin-left: auto;
+      white-space: nowrap
+    }
+
+    /* ─── Table ─── */
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+      overflow: hidden
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse
+    }
+
+    thead th {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 12px 16px;
+      text-align: left;
+      font-size: .82rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap
+    }
+
+    thead th:hover {
+      background: #2a2a4e
+    }
+
+    thead th .sort-arrow {
+      display: inline-block;
+      margin-left: 4px;
+      font-size: .7rem;
+      opacity: .5
+    }
+
+    thead th.sorted .sort-arrow {
+      opacity: 1
+    }
+
+    tbody td {
+      padding: 10px 16px;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: .88rem;
+      vertical-align: middle
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none
+    }
+
+    tbody tr:hover td {
+      background: #f8f9ff
+    }
+
+    tbody tr.hidden {
+      display: none
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: .78rem;
+      font-weight: 600;
+      white-space: nowrap
+    }
+
+    .pass {
+      background: #e8f5e9;
+      color: #2e7d32
+    }
+
+    .fail {
+      background: #ffebee;
+      color: #c62828
+    }
+
+    .env {
+      background: #e3f2fd;
+      color: #1565c0
+    }
+
+    .job {
+      background: #f3e5f5;
+      color: #7b1fa2
+    }
+
+    a.rlink {
+      color: #1565c0;
+      text-decoration: none;
+      font-weight: 500
+    }
+
+    a.rlink:hover {
+      text-decoration: underline
+    }
+
+    a.ci {
+      color: #999;
+      font-size: .78rem;
+      text-decoration: none
+    }
+
+    a.ci:hover {
+      color: #1565c0
+    }
+
+    .foot {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: #aaa;
+      font-size: .78rem
+    }
+
+    .empty-row td {
+      padding: 3rem;
+      text-align: center;
+      color: #aaa;
+      font-style: italic
+    }
+
+    @media(max-width:768px) {
+      .container {
+        padding: 1rem .5rem
+      }
+
+      .toolbar {
+        flex-direction: column
+      }
+
+      .search-box {
+        flex: 1 1 100%
+      }
+
+      .count {
+        margin-left: 0;
+        margin-top: .3rem
+      }
+
+      thead th,
+      tbody td {
+        padding: 8px 10px;
+        font-size: .78rem
+      }
+
+      .header h1 {
+        font-size: 1.3rem
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="container">
-<div class="header">
-<h1>Paymium E2E - Allure Reports</h1>
-<p>Test reports deployed from GitLab CI/CD to GitHub Pages</p>
-</div>
+  <div class="container">
+    <div class="header">
+      <h1>Paymium E2E - Allure Reports</h1>
+      <p>Test reports deployed from GitLab CI/CD to GitHub Pages</p>
+    </div>
 
-<!-- Toolbar: Search + Filters -->
-<div class="toolbar">
-  <div class="search-box">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-    <input type="text" id="searchInput" placeholder="Search by date, branch, job, environment..." autocomplete="off">
+    <!-- Toolbar: Search + Filters -->
+    <div class="toolbar">
+      <div class="search-box">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input type="text" id="searchInput" placeholder="Search by date, branch, job, environment..."
+          autocomplete="off">
+      </div>
+      <div class="filters">
+        <div class="filter-group">
+          <label>Env</label>
+          <select id="filterEnv">
+            <option value="">All</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Job</label>
+          <select id="filterJob">
+            <option value="">All</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Status</label>
+          <select id="filterStatus">
+            <option value="">All</option>
+            <option value="pass">All passed</option>
+            <option value="fail">Has failures</option>
+          </select>
+        </div>
+        <button class="filter-btn" id="btnReset" title="Reset all filters">Clear</button>
+      </div>
+      <span class="count" id="rowCount"></span>
+    </div>
+
+    <div class="card">
+      <table id="reportsTable">
+        <thead>
+          <tr>
+            <th data-col="0">Date (UTC) <span class="sort-arrow">▼</span></th>
+            <th data-col="1">Env <span class="sort-arrow">▼</span></th>
+            <th data-col="2">Branch <span class="sort-arrow">▼</span></th>
+            <th data-col="3">Job <span class="sort-arrow">▼</span></th>
+            <th data-col="4">Results <span class="sort-arrow">▼</span></th>
+            <th data-col="5">Report</th>
+            <th data-col="6">CI</th>
+          </tr>
+        </thead>
+        <tbody id="reportsBody">
+        </tbody>
+      </table>
+    </div>
+    <div id="loadingIndicator" class="loading">
+      <div class="spinner"></div>
+      <div>Loading reports...</div>
+    </div>
+    <div class="foot" id="footerInfo"></div>
   </div>
-  <div class="filters">
-    <div class="filter-group">
-      <label>Env</label>
-      <select id="filterEnv"><option value="">All</option></select>
-    </div>
-    <div class="filter-group">
-      <label>Job</label>
-      <select id="filterJob"><option value="">All</option></select>
-    </div>
-    <div class="filter-group">
-      <label>Status</label>
-      <select id="filterStatus">
-        <option value="">All</option>
-        <option value="pass">All passed</option>
-        <option value="fail">Has failures</option>
-      </select>
-    </div>
-    <button class="filter-btn" id="btnReset" title="Reset all filters">Clear</button>
-  </div>
-  <span class="count" id="rowCount"></span>
-</div>
 
-<div class="card">
-<table id="reportsTable">
-<thead>
-<tr>
-  <th data-col="0">Date (UTC) <span class="sort-arrow">▼</span></th>
-  <th data-col="1">Env <span class="sort-arrow">▼</span></th>
-  <th data-col="2">Branch <span class="sort-arrow">▼</span></th>
-  <th data-col="3">Job <span class="sort-arrow">▼</span></th>
-  <th data-col="4">Results <span class="sort-arrow">▼</span></th>
-  <th data-col="5">Report</th>
-  <th data-col="6">CI</th>
-</tr>
-</thead>
-<tbody id="reportsBody">
-</tbody>
-</table>
-</div>
-<div id="loadingIndicator" class="loading">
-  <div class="spinner"></div>
-  <div>Loading reports...</div>
-</div>
-<div class="foot" id="footerInfo"></div>
-</div>
+  <script>
+    (function () {
+      /* ─── DOM references ─── */
+      var table = document.getElementById('reportsTable');
+      var tbody = document.getElementById('reportsBody');
+      var searchInput = document.getElementById('searchInput');
+      var filterEnv = document.getElementById('filterEnv');
+      var filterJob = document.getElementById('filterJob');
+      var filterStatus = document.getElementById('filterStatus');
+      var btnReset = document.getElementById('btnReset');
+      var rowCount = document.getElementById('rowCount');
+      var loadingEl = document.getElementById('loadingIndicator');
+      var footerEl = document.getElementById('footerInfo');
 
-<script>
-(function(){
-  /* ─── DOM references ─── */
-  var table = document.getElementById('reportsTable');
-  var tbody = document.getElementById('reportsBody');
-  var searchInput = document.getElementById('searchInput');
-  var filterEnv = document.getElementById('filterEnv');
-  var filterJob = document.getElementById('filterJob');
-  var filterStatus = document.getElementById('filterStatus');
-  var btnReset = document.getElementById('btnReset');
-  var rowCount = document.getElementById('rowCount');
-  var loadingEl = document.getElementById('loadingIndicator');
-  var footerEl = document.getElementById('footerInfo');
+      var allReports = [];
+      var rows = [];
 
-  var allReports = [];
-  var rows = [];
+      /* ─── Format timestamp: "2026-02-18_143000" → "2026-02-18 14:30:00" ─── */
+      function formatTimestamp(ts) {
+        if (!ts) return '-';
+        var m = ts.match(/^(\d{4}-\d{2}-\d{2})_(\d{2})(\d{2})(\d{2})$/);
+        if (!m) return ts;
+        return m[1] + ' ' + m[2] + ':' + m[3] + ':' + m[4];
+      }
 
-  /* ─── Format timestamp: "2026-02-18_143000" → "2026-02-18 14:30:00" ─── */
-  function formatTimestamp(ts) {
-    if (!ts) return '-';
-    var m = ts.match(/^(\d{4}-\d{2}-\d{2})_(\d{2})(\d{2})(\d{2})$/);
-    if (!m) return ts;
-    return m[1] + ' ' + m[2] + ':' + m[3] + ':' + m[4];
-  }
+      /* ─── Escape HTML ─── */
+      function esc(s) {
+        var d = document.createElement('div');
+        d.textContent = s || '';
+        return d.innerHTML;
+      }
 
-  /* ─── Escape HTML ─── */
-  function esc(s) {
-    var d = document.createElement('div');
-    d.textContent = s || '';
-    return d.innerHTML;
-  }
+      /* ─── Build one table row from a report entry ─── */
+      function buildRow(r) {
+        var tr = document.createElement('tr');
+        var hasFail = r.failed > 0;
+        tr.dataset.env = r.environment || '';
+        tr.dataset.job = r.job || '';
+        tr.dataset.fail = hasFail ? '1' : '0';
 
-  /* ─── Build one table row from a report entry ─── */
-  function buildRow(r) {
-    var tr = document.createElement('tr');
-    var hasFail = r.failed > 0;
-    tr.dataset.env = r.environment || '';
-    tr.dataset.job = r.job || '';
-    tr.dataset.fail = hasFail ? '1' : '0';
+        /* Date */
+        var tdDate = document.createElement('td');
+        tdDate.textContent = formatTimestamp(r.timestamp);
+        tr.appendChild(tdDate);
 
-    /* Date */
-    var tdDate = document.createElement('td');
-    tdDate.textContent = formatTimestamp(r.timestamp);
-    tr.appendChild(tdDate);
+        /* Env */
+        var tdEnv = document.createElement('td');
+        tdEnv.innerHTML = '<span class="badge env">' + esc(r.environment) + '</span>';
+        tr.appendChild(tdEnv);
 
-    /* Env */
-    var tdEnv = document.createElement('td');
-    tdEnv.innerHTML = '<span class="badge env">' + esc(r.environment) + '</span>';
-    tr.appendChild(tdEnv);
+        /* Branch */
+        var tdBranch = document.createElement('td');
+        var branchText = r.branch || '';
+        var e2eText = r.e2eBranch || '';
+        if (e2eText && e2eText !== branchText) {
+          tdBranch.innerHTML = esc(branchText) + ' <span style="opacity:.55;font-size:.85em">(e2e: ' + esc(e2eText) + ')</span>';
+          tdBranch.title = branchText + ' (e2e: ' + e2eText + ')';
+        } else {
+          tdBranch.textContent = branchText;
+          tdBranch.title = branchText;
+        }
+        tr.appendChild(tdBranch);
 
-    /* Branch */
-    var tdBranch = document.createElement('td');
-    tdBranch.textContent = r.branch || '';
-    tdBranch.title = r.branch || '';
-    tr.appendChild(tdBranch);
+        /* Job */
+        var tdJob = document.createElement('td');
+        tdJob.innerHTML = '<span class="badge job">' + esc(r.job) + '</span>';
+        tr.appendChild(tdJob);
 
-    /* Job */
-    var tdJob = document.createElement('td');
-    tdJob.innerHTML = '<span class="badge job">' + esc(r.job) + '</span>';
-    tr.appendChild(tdJob);
+        /* Results */
+        var tdResults = document.createElement('td');
+        var statusHtml = '<span class="badge pass">' + (r.passed || 0) + ' passed</span>';
+        if (hasFail) {
+          statusHtml += ' <span class="badge fail">' + r.failed + ' failed</span>';
+        }
+        tdResults.innerHTML = statusHtml;
+        tr.appendChild(tdResults);
 
-    /* Results */
-    var tdResults = document.createElement('td');
-    var statusHtml = '<span class="badge pass">' + (r.passed || 0) + ' passed</span>';
-    if (hasFail) {
-      statusHtml += ' <span class="badge fail">' + r.failed + ' failed</span>';
-    }
-    tdResults.innerHTML = statusHtml;
-    tr.appendChild(tdResults);
+        /* Report link */
+        var tdReport = document.createElement('td');
+        tdReport.innerHTML = '<a class="rlink" href="reports/' + encodeURI(r.folder) + '/index.html">View Report &rarr;</a>';
+        tr.appendChild(tdReport);
 
-    /* Report link */
-    var tdReport = document.createElement('td');
-    tdReport.innerHTML = '<a class="rlink" href="reports/' + encodeURI(r.folder) + '/index.html">View Report &rarr;</a>';
-    tr.appendChild(tdReport);
+        /* CI links */
+        var tdCI = document.createElement('td');
+        var ciParts = [];
+        if (r.pipelineUrl) {
+          ciParts.push('<a class="ci" href="' + esc(r.pipelineUrl) + '" target="_blank">pipeline</a>');
+        }
+        if (r.jobUrl) {
+          ciParts.push('<a class="ci" href="' + esc(r.jobUrl) + '" target="_blank">job</a>');
+        }
+        tdCI.innerHTML = ciParts.length ? ciParts.join(' | ') : '-';
+        tr.appendChild(tdCI);
 
-    /* CI links */
-    var tdCI = document.createElement('td');
-    var ciParts = [];
-    if (r.pipelineUrl) {
-      ciParts.push('<a class="ci" href="' + esc(r.pipelineUrl) + '" target="_blank">pipeline</a>');
-    }
-    if (r.jobUrl) {
-      ciParts.push('<a class="ci" href="' + esc(r.jobUrl) + '" target="_blank">job</a>');
-    }
-    tdCI.innerHTML = ciParts.length ? ciParts.join(' | ') : '-';
-    tr.appendChild(tdCI);
+        return tr;
+      }
 
-    return tr;
-  }
-
-  /* ─── Populate filter dropdowns ─── */
-  function populateSelect(sel, values) {
-    var current = sel.value;
-    while (sel.options.length > 1) sel.remove(1);
-    Array.from(values).sort().forEach(function(v) {
-      var o = document.createElement('option');
-      o.value = v; o.textContent = v; sel.appendChild(o);
-    });
-    sel.value = current;
-  }
-
-  function refreshDropdowns() {
-    var envs = new Set(), jobs = new Set();
-    allReports.forEach(function(r) {
-      if (r.environment) envs.add(r.environment);
-      if (r.job) jobs.add(r.job);
-    });
-    populateSelect(filterEnv, envs);
-    populateSelect(filterJob, jobs);
-  }
-
-  /* ─── Filter logic ─── */
-  function applyFilters() {
-    var q = searchInput.value.toLowerCase().trim();
-    var env = filterEnv.value;
-    var job = filterJob.value;
-    var status = filterStatus.value;
-    var visible = 0;
-
-    rows.forEach(function(row) {
-      var show = true;
-      if (q) {
-        var text = row.textContent.toLowerCase();
-        q.split(/\s+/).forEach(function(word) {
-          if (!text.includes(word)) show = false;
+      /* ─── Populate filter dropdowns ─── */
+      function populateSelect(sel, values) {
+        var current = sel.value;
+        while (sel.options.length > 1) sel.remove(1);
+        Array.from(values).sort().forEach(function (v) {
+          var o = document.createElement('option');
+          o.value = v; o.textContent = v; sel.appendChild(o);
         });
-      }
-      if (env && row.dataset.env !== env) show = false;
-      if (job && row.dataset.job !== job) show = false;
-      if (status === 'fail' && row.dataset.fail !== '1') show = false;
-      if (status === 'pass' && row.dataset.fail === '1') show = false;
-      row.classList.toggle('hidden', !show);
-      if (show) visible++;
-    });
-
-    rowCount.textContent = visible + ' / ' + rows.length + ' reports';
-  }
-
-  /* ─── Column sorting ─── */
-  var sortCol = -1, sortAsc = true;
-  table.querySelectorAll('thead th[data-col]').forEach(function(th) {
-    var col = parseInt(th.dataset.col);
-    if (col > 4) return;
-    th.addEventListener('click', function() {
-      if (sortCol === col) { sortAsc = !sortAsc; } else { sortCol = col; sortAsc = col === 0 ? false : true; }
-      table.querySelectorAll('thead th').forEach(function(h) { h.classList.remove('sorted'); });
-      th.classList.add('sorted');
-      th.querySelector('.sort-arrow').textContent = sortAsc ? '▲' : '▼';
-      rows.sort(function(a, b) {
-        var at = a.children[col].textContent.trim().toLowerCase();
-        var bt = b.children[col].textContent.trim().toLowerCase();
-        if (at < bt) return sortAsc ? -1 : 1;
-        if (at > bt) return sortAsc ? 1 : -1;
-        return 0;
-      });
-      rows.forEach(function(r) { tbody.appendChild(r); });
-    });
-  });
-
-  /* ─── Event listeners ─── */
-  searchInput.addEventListener('input', applyFilters);
-  filterEnv.addEventListener('change', applyFilters);
-  filterJob.addEventListener('change', applyFilters);
-  filterStatus.addEventListener('change', applyFilters);
-  btnReset.addEventListener('click', function() {
-    searchInput.value = ''; filterEnv.value = ''; filterJob.value = ''; filterStatus.value = '';
-    applyFilters();
-  });
-
-  /* ─── Keyboard shortcuts: / to focus, Escape to clear ─── */
-  document.addEventListener('keydown', function(e) {
-    if (e.key === '/' && document.activeElement !== searchInput) { e.preventDefault(); searchInput.focus(); }
-    if (e.key === 'Escape') {
-      searchInput.blur(); searchInput.value = '';
-      filterEnv.value = ''; filterJob.value = ''; filterStatus.value = '';
-      applyFilters();
-    }
-  });
-
-  /* ─── Show error ─── */
-  function showError(msg) {
-    loadingEl.innerHTML = '<div class="error-msg">' + esc(msg) + '</div>';
-  }
-
-  /* ─── Fetch manifest.json and render table ─── */
-  fetch('reports/manifest.json?_=' + Date.now())
-    .then(function(res) {
-      if (!res.ok) throw new Error('Failed to load manifest.json (HTTP ' + res.status + ')');
-      return res.json();
-    })
-    .then(function(data) {
-      loadingEl.style.display = 'none';
-      allReports = data;
-
-      /* Sort descending by timestamp (newest first) */
-      allReports.sort(function(a, b) {
-        return (b.timestamp || '').localeCompare(a.timestamp || '');
-      });
-
-      /* Build all rows in a document fragment for performance */
-      var fragment = document.createDocumentFragment();
-      allReports.forEach(function(report) {
-        var tr = buildRow(report);
-        rows.push(tr);
-        fragment.appendChild(tr);
-      });
-      tbody.appendChild(fragment);
-
-      /* Empty state */
-      if (rows.length === 0) {
-        var emptyTr = document.createElement('tr');
-        emptyTr.className = 'empty-row';
-        emptyTr.innerHTML = '<td colspan="7">No reports found</td>';
-        tbody.appendChild(emptyTr);
+        sel.value = current;
       }
 
-      /* Populate filter dropdowns */
-      refreshDropdowns();
+      function refreshDropdowns() {
+        var envs = new Set(), jobs = new Set();
+        allReports.forEach(function (r) {
+          if (r.environment) envs.add(r.environment);
+          if (r.job) jobs.add(r.job);
+        });
+        populateSelect(filterEnv, envs);
+        populateSelect(filterJob, jobs);
+      }
 
-      /* Apply URL params if present: ?env=xxx&job=xxx&status=xxx&q=xxx */
-      var params = new URLSearchParams(window.location.search);
-      if (params.get('env')) filterEnv.value = params.get('env');
-      if (params.get('job')) filterJob.value = params.get('job');
-      if (params.get('status')) filterStatus.value = params.get('status');
-      if (params.get('q')) searchInput.value = params.get('q');
+      /* ─── Filter logic ─── */
+      function applyFilters() {
+        var q = searchInput.value.toLowerCase().trim();
+        var env = filterEnv.value;
+        var job = filterJob.value;
+        var status = filterStatus.value;
+        var visible = 0;
 
-      /* Initial filter pass */
-      applyFilters();
+        rows.forEach(function (row) {
+          var show = true;
+          if (q) {
+            var text = row.textContent.toLowerCase();
+            q.split(/\s+/).forEach(function (word) {
+              if (!text.includes(word)) show = false;
+            });
+          }
+          if (env && row.dataset.env !== env) show = false;
+          if (job && row.dataset.job !== job) show = false;
+          if (status === 'fail' && row.dataset.fail !== '1') show = false;
+          if (status === 'pass' && row.dataset.fail === '1') show = false;
+          row.classList.toggle('hidden', !show);
+          if (show) visible++;
+        });
 
-      /* Footer */
-      footerEl.textContent = allReports.length + ' reports loaded dynamically from manifest.json';
-    })
-    .catch(function(err) {
-      showError('Could not load reports: ' + err.message);
-      console.error('[Allure Index]', err);
-    });
-})();
-</script>
+        rowCount.textContent = visible + ' / ' + rows.length + ' reports';
+      }
+
+      /* ─── Column sorting ─── */
+      var sortCol = -1, sortAsc = true;
+      table.querySelectorAll('thead th[data-col]').forEach(function (th) {
+        var col = parseInt(th.dataset.col);
+        if (col > 4) return;
+        th.addEventListener('click', function () {
+          if (sortCol === col) { sortAsc = !sortAsc; } else { sortCol = col; sortAsc = col === 0 ? false : true; }
+          table.querySelectorAll('thead th').forEach(function (h) { h.classList.remove('sorted'); });
+          th.classList.add('sorted');
+          th.querySelector('.sort-arrow').textContent = sortAsc ? '▲' : '▼';
+          rows.sort(function (a, b) {
+            var at = a.children[col].textContent.trim().toLowerCase();
+            var bt = b.children[col].textContent.trim().toLowerCase();
+            if (at < bt) return sortAsc ? -1 : 1;
+            if (at > bt) return sortAsc ? 1 : -1;
+            return 0;
+          });
+          rows.forEach(function (r) { tbody.appendChild(r); });
+        });
+      });
+
+      /* ─── Event listeners ─── */
+      searchInput.addEventListener('input', applyFilters);
+      filterEnv.addEventListener('change', applyFilters);
+      filterJob.addEventListener('change', applyFilters);
+      filterStatus.addEventListener('change', applyFilters);
+      btnReset.addEventListener('click', function () {
+        searchInput.value = ''; filterEnv.value = ''; filterJob.value = ''; filterStatus.value = '';
+        applyFilters();
+      });
+
+      /* ─── Keyboard shortcuts: / to focus, Escape to clear ─── */
+      document.addEventListener('keydown', function (e) {
+        if (e.key === '/' && document.activeElement !== searchInput) { e.preventDefault(); searchInput.focus(); }
+        if (e.key === 'Escape') {
+          searchInput.blur(); searchInput.value = '';
+          filterEnv.value = ''; filterJob.value = ''; filterStatus.value = '';
+          applyFilters();
+        }
+      });
+
+      /* ─── Show error ─── */
+      function showError(msg) {
+        loadingEl.innerHTML = '<div class="error-msg">' + esc(msg) + '</div>';
+      }
+
+      /* ─── Fetch manifest.json and render table ─── */
+      fetch('reports/manifest.json?_=' + Date.now())
+        .then(function (res) {
+          if (!res.ok) throw new Error('Failed to load manifest.json (HTTP ' + res.status + ')');
+          return res.json();
+        })
+        .then(function (data) {
+          loadingEl.style.display = 'none';
+          allReports = data;
+
+          /* Sort descending by timestamp (newest first) */
+          allReports.sort(function (a, b) {
+            return (b.timestamp || '').localeCompare(a.timestamp || '');
+          });
+
+          /* Build all rows in a document fragment for performance */
+          var fragment = document.createDocumentFragment();
+          allReports.forEach(function (report) {
+            var tr = buildRow(report);
+            rows.push(tr);
+            fragment.appendChild(tr);
+          });
+          tbody.appendChild(fragment);
+
+          /* Empty state */
+          if (rows.length === 0) {
+            var emptyTr = document.createElement('tr');
+            emptyTr.className = 'empty-row';
+            emptyTr.innerHTML = '<td colspan="7">No reports found</td>';
+            tbody.appendChild(emptyTr);
+          }
+
+          /* Populate filter dropdowns */
+          refreshDropdowns();
+
+          /* Apply URL params if present: ?env=xxx&job=xxx&status=xxx&q=xxx */
+          var params = new URLSearchParams(window.location.search);
+          if (params.get('env')) filterEnv.value = params.get('env');
+          if (params.get('job')) filterJob.value = params.get('job');
+          if (params.get('status')) filterStatus.value = params.get('status');
+          if (params.get('q')) searchInput.value = params.get('q');
+
+          /* Initial filter pass */
+          applyFilters();
+
+          /* Footer */
+          footerEl.textContent = allReports.length + ' reports loaded dynamically from manifest.json';
+        })
+        .catch(function (err) {
+          showError('Could not load reports: ' + err.message);
+          console.error('[Allure Index]', err);
+        });
+    })();
+  </script>
 </body>
+
 </html>
