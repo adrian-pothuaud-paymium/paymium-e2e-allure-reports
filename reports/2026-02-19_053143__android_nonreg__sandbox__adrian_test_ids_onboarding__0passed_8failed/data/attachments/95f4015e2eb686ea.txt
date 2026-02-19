@@ -1,0 +1,91 @@
+.........Console Logs.........
+
+
+
+Test Step: Open App and go to Sign In
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:20
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:21
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément non affiché: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+            |-- Élément non affiché: //android.widget.Button[@text="Accepter les cookies"]
+    |-- UpdateScreen.waitForScreen(20000)
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément trouvé: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+    |-- AxeptioCookies.acceptCookies()
+        |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+            |-- Clic sur le premier élément existant parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément existant trouvé: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+
+
+Test Step: Sign in with test account
+|-- Shortcuts.authenticate() paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:24
+    |-- SignIn.fillEmail(adrianpothuaud@gmail.com)
+    |-- SignIn.fillPassword(********)
+    |-- SignIn.submit()
+    |-- SignIn.waitFor2FA()
+    |-- SignIn.fill2FA(********)
+    |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired(********)
+        |-- CreatePinCode.waitForScreen(20000)
+        |-- CreatePinCode.create()
+        |-- CreateAccessCode.waitForScreen(20000)
+        |-- CreateAccessCode.fillCode(********)
+        |-- ConfirmPinCode.waitForScreen(20000)
+        |-- ConfirmPinCode.fillCode(********)
+        |-- EnableBiometrics.waitForScreen(20000)
+    |-- DashboardScreen.waitForScreen()
+
+
+Test Step: Go to Buy screen
+|-- DashboardScreen.goToBuy() paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:27
+    |-- SwipeUtils.magicSwipe({"to":"//android.widget.Button[@content-desc=\"Acheter\"]"})
+        |-- [magicSwipe] Searching for element: //android.widget.Button[@content-desc="Acheter"]
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+|-- BuySell.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:28
+
+
+Test Step: Vérification des contrôles sur le montant
+|-- BuySell.fillAmount(-10) paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:31
+|-- Assert.text(Le montant doit être supérieur à 0) paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:32
+|-- BuySell.fillAmount(0) paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:33
+|-- Assert.text(Le montant doit être supérieur à 0) paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:34
+|-- BuySell.fillAmount(10000000000) paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:35
+|-- Assert.text(Montant trop élevé) paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:36
+
+
+Test Step: Complétion d'un achat de BTC avec une nouvelle carte de paiement
+|-- BuySell.fillAmount(25) paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:39
+|-- BuySell.selectCardPayment() paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:40
+    |-- SwipeUtils.magicSwipe({"to":"android=new UiSelector().resourceId(\"selectCardPayment\")"})
+        |-- [magicSwipe] Searching for element: android=new UiSelector().resourceId("selectCardPayment")
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+|-- BuySell.changeToNewPaymentCard() paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:41
+    |-- SwipeUtils.magicSwipe({"to":"android=new UiSelector().description(\"Changer de carte\")"})
+        |-- [magicSwipe] Searching for element: android=new UiSelector().description("Changer de carte")
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+|-- BuySell.convert() paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:42
+    |-- SwipeUtils.magicSwipe({"to":"android=new UiSelector().resourceId(\"TriggerOrder\")"})
+        |-- [magicSwipe] Searching for element: android=new UiSelector().resourceId("TriggerOrder")
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Starting bidirectional search with priority (down first, max 5 iterations)
+        |-- [magicSwipe] Phase 1: searching undefined
+        |-- [magicSwipe] Element found in phase 1 (iteration 1, swipe 1)
+|-- WorldpayPaymentDetails.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:44
+|-- WorldpayPaymentDetails.fillCardNumber(5555555555554444) paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:45
+|-- WorldpayPaymentDetails.fillCardHolderName(WorldPay Dev) paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:46
+|-- WorldpayPaymentDetails.fillExpiryMonth(12) paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:47
+|-- WorldpayPaymentDetails.fillExpiryYear(30) paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:48
+|-- WorldpayPaymentDetails.fillSecurityCode(********) paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:49
+|-- WorldpayPaymentDetails.submitPayment() paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:50
+|-- Assert.text(Paiement par carte effectué avec succès) paymium-e2e-united/tests/wdio-android/tests/trading/buy-BTC-new-card.spec.ts:51

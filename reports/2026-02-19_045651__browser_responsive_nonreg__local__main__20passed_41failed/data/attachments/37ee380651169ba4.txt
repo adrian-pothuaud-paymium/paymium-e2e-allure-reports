@@ -1,0 +1,7 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.fill: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('input#price')
+
+    at TradeForm.fillPrice (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/trade/BTC/EUR/TradeForm.ts:72:27)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/trading/expert-mode.spec.ts:29:45

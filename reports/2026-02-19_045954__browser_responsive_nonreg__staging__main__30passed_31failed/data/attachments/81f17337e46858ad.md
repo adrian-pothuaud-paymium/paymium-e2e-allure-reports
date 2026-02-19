@@ -1,0 +1,98 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - button [ref=e49] [cursor=pointer]:
+        - img [ref=e51]
+    - generic [ref=e52]:
+      - navigation
+      - generic [ref=e53]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: Transfert
+          - generic [ref=e57]:
+            - tablist [ref=e59]:
+              - generic [ref=e60]:
+                - tab "Déposer" [ref=e62] [cursor=pointer]:
+                  - generic [ref=e63]: Déposer
+                - tab "Retirer" [selected] [ref=e64] [cursor=pointer]:
+                  - generic [ref=e65]: Retirer
+                - tab "Transfert interne" [ref=e66] [cursor=pointer]:
+                  - generic [ref=e67]: Transfert interne
+                - tab "Envoyer par email" [ref=e68] [cursor=pointer]:
+                  - generic [ref=e69]: Envoyer par email
+            - tabpanel "Retirer" [ref=e70]:
+              - form [ref=e73]:
+                - generic [ref=e74]:
+                  - generic [ref=e75]:
+                    - generic [ref=e76]: Retrait
+                    - generic [ref=e77]:
+                      - generic [ref=e79]:
+                        - generic [ref=e81]: Devise
+                        - button "Devise" [ref=e83] [cursor=pointer]:
+                          - textbox [ref=e85]: BTC
+                          - generic [ref=e88]:
+                            - img [ref=e89]
+                            - generic [ref=e94]: Bitcoin
+                          - img [ref=e95]
+                      - alert [ref=e97]:
+                        - generic [ref=e98]: Retirer uniquement des BTC vers des adresses du réseau Bitcoin. Les retraits vers des adresses générées sur d'autres réseaux pourraient entraîner la perte de vos fonds.
+                      - generic [ref=e99]:
+                        - img [ref=e101]
+                        - generic [ref=e106]: Mettez à jour vos adresses de retrait précédentes
+                        - generic [ref=e107]: Conformément à la réglementation en vigueur, vos adresses de retrait doivent être mises à jour et confirmées pour pouvoir être utilisées. Vous pouvez également supprimer celles que vous n'utilisez plus.
+                        - button "Commencer la mise à jour" [ref=e108] [cursor=pointer]:
+                          - generic [ref=e109]: Commencer la mise à jour
+                  - generic [ref=e110]:
+                    - generic [ref=e111]:
+                      - generic [ref=e112]:
+                        - generic [ref=e113]: Bitcoin disponible
+                        - generic [ref=e114]:
+                          - img [ref=e115]
+                          - generic [ref=e118]: BTC
+                      - generic [ref=e119]:
+                        - generic [ref=e120]: Montant total
+                        - generic [ref=e121]: 0,00000000 BTC
+                      - generic [ref=e122]:
+                        - generic [ref=e123]: Montant verrouillé
+                        - generic [ref=e124]: 0,00000000 BTC
+                      - separator [ref=e125]
+                      - generic [ref=e126]:
+                        - generic [ref=e127]: Disponible à retirer
+                        - generic [ref=e128]: 0,00000000 BTC
+                    - generic [ref=e129]:
+                      - generic [ref=e130]:
+                        - img [ref=e131]
+                        - generic [ref=e133]: Informations retrait BTC
+                        - button "Masquer" [ref=e134] [cursor=pointer]:
+                          - generic [ref=e135]: Masquer
+                      - list [ref=e139]:
+                        - generic [ref=e140]: "Les transferts de bitcoins sont traités exclusivement sur la blockchain Bitcoin. Pour effectuer votre transfert :"
+                        - listitem [ref=e141]:
+                          - generic [ref=e143]: "1"
+                          - generic [ref=e144]: Remplissez le formulaire.
+                        - listitem [ref=e145]:
+                          - generic [ref=e147]: "2"
+                          - generic [ref=e148]: Autorisez le transfert en renseignant le code à 6 chiffres qui vous sera envoyé à votre email.
+                        - listitem [ref=e149]:
+                          - generic [ref=e151]: "3"
+                          - generic [ref=e152]: Généralement, les transferts sont exécutés en quelques minutes. Au-delà de 24h, veuillez contacter notre service support client.
+                        - listitem [ref=e153]:
+                          - generic [ref=e154]: Dans certains cas, notre équipe peut vous demander des informations complémentaires par mesure de sécurité.
+        - contentinfo [ref=e155]:
+          - generic [ref=e156]:
+            - generic [ref=e157]: Copyright © 2026
+            - link "Paymium" [ref=e159]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e160]: 6.14.1
+            - link "Statut" [ref=e162]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e164]:
+              - /url: ""
+```

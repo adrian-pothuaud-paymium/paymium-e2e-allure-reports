@@ -1,0 +1,174 @@
+.........Console Logs.........
+
+
+
+Test Step: Launch app and go to Sign Up
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:34
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:35
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément non affiché: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+            |-- Élément non affiché: //android.widget.Button[@text="Accepter les cookies"]
+    |-- UpdateScreen.waitForScreen(20000)
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément trouvé: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+    |-- AxeptioCookies.acceptCookies()
+        |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+            |-- Clic sur le premier élément existant parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément existant trouvé: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+|-- SignIn.goToSignUp() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:36
+|-- SignUpAccountType.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:37
+
+
+Test Step: Account type
+|-- SignUpAccountType.chooseUser() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:40
+|-- SignUpAccountType.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:41
+
+
+Test Step: Email and Password
+|-- SignUpEmail.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:44
+|-- SignUpEmail.fillEmail(adrian.pothuaud+auto.1771473069306@paymium.com) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:45
+|-- SignUpEmail.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:46
+|-- SignUpPassword.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:47
+|-- SignUpPassword.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:48
+|-- SignUpPassword.fillPasswordConfirmation(********) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:49
+|-- SignUpPassword.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:50
+|-- GeneralConditionsSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:51
+|-- GeneralConditionsSheet.accept() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:52
+
+
+Test Step: Email verification
+|-- SignUpEmailVerification.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:55
+|-- SignUpEmailVerification.fillCode(********) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:56
+|-- Shortcuts.handleAccessCodeAndBiometricsIfRequired() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:57
+    |-- CreatePinCode.waitForScreen(20000)
+    |-- CreatePinCode.create()
+    |-- CreateAccessCode.waitForScreen(20000)
+    |-- CreateAccessCode.fillCode(********)
+    |-- ConfirmPinCode.waitForScreen(20000)
+    |-- ConfirmPinCode.fillCode(********)
+    |-- EnableBiometrics.waitForScreen(20000)
+
+
+Test Step: Full Name, Address, Phone Number
+|-- SignUpFullName.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:60
+|-- SignUpFullName.fillFirstName(Jean) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:61
+|-- SignUpFullName.fillLastName(Jacques) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:62
+|-- SignUpFullName.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:63
+|-- SignUpAddress.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:64
+|-- SignUpAddress.fillAddress(Boulevard de Sébastopol, 75001 Paris, France) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:65
+    |-- AddressField.select(Boulevard de Sébastopol, 75001 Paris, France)
+|-- SignUpAddress.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:66
+|-- SignUpPhoneNumber.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:67
+|-- SignUpPhoneNumber.fillNumber(0614820811) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:68
+|-- SignUpPhoneNumber.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:69
+|-- SignUpPhoneNumberConfirmation.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:70
+|-- SignUpPhoneNumberConfirmation.fillCode(********) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:71
+|-- SignUpAccountActivated.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:72
+|-- SignUpAccountActivated.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:73
+|-- LetsGetToKnowEachOther.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:74
+|-- LetsGetToKnowEachOther.start() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:75
+
+
+Test Step: Compliance Questions
+|-- ProfessionQuestion.waitForQuestion() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:78
+|-- ProfessionQuestion.answer(Ingénieur / Développeur / Analyste technique) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:79
+    |-- SwipeUtils.magicSwipe({"to":"~Ingénieur / Développeur / Analyste technique"})
+        |-- [magicSwipe] Searching for element: ~Ingénieur / Développeur / Analyste technique
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Starting bidirectional search with priority (down first, max 5 iterations)
+        |-- [magicSwipe] Phase 1: searching undefined
+        |-- [magicSwipe] Element found in phase 1 (iteration 1, swipe 1)
+|-- ProfessionQuestion.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:80
+|-- ActivitySectorQuestion.waitForQuestion() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:81
+|-- ActivitySectorQuestion.answer(Fintech / Crypto-actifs / NFT / Blockchain) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:82
+    |-- SwipeUtils.magicSwipe({"to":"~Fintech / Crypto-actifs / NFT / Blockchain"})
+        |-- [magicSwipe] Searching for element: ~Fintech / Crypto-actifs / NFT / Blockchain
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+|-- ActivitySectorQuestion.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:83
+|-- CryptoKnowledgeLevelQuestion.waitForQuestion() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:84
+|-- CryptoKnowledgeLevelQuestion.answer(Intermédiaire) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:85
+    |-- SwipeUtils.magicSwipe({"to":"~Intermédiaire"})
+        |-- [magicSwipe] Searching for element: ~Intermédiaire
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+|-- CryptoKnowledgeLevelQuestion.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:86
+|-- ProjectedAnnualInvestmentAmountQuestion.waitForQuestion() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:87
+|-- ProjectedAnnualInvestmentAmountQuestion.answer(0 € - 10 000 €) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:88
+    |-- SwipeUtils.magicSwipe({"to":"~0 € - 10 000 €"})
+        |-- [magicSwipe] Searching for element: ~0 € - 10 000 €
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+|-- ProjectedAnnualInvestmentAmountQuestion.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:89
+|-- AnnualGrowthUserQuestion.waitForQuestion() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:90
+|-- AnnualGrowthUserQuestion.answer(45 001 € - 60 000 €) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:91
+    |-- SwipeUtils.magicSwipe({"to":"~45 001 € - 60 000 €"})
+        |-- [magicSwipe] Searching for element: ~45 001 € - 60 000 €
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+|-- AnnualGrowthUserQuestion.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:92
+|-- HeritageQuestion.waitForQuestion() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:93
+|-- HeritageQuestion.answer(200 001 € - 500 000 €) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:94
+    |-- SwipeUtils.magicSwipe({"to":"~200 001 € - 500 000 €"})
+        |-- [magicSwipe] Searching for element: ~200 001 € - 500 000 €
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+|-- HeritageQuestion.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:95
+|-- FundsOriginQuestion.waitForQuestion() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:96
+|-- FundsOriginQuestion.answer(Revenus) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:97
+    |-- SwipeUtils.magicSwipe({"to":"~Revenus"})
+        |-- [magicSwipe] Searching for element: ~Revenus
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+|-- FundsOriginQuestion.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:98
+|-- PaymiumUsagesQuestion.waitForQuestion() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:99
+|-- PaymiumUsagesQuestion.answer(["Achat / Vente occasionnels","Conserver des cryptos sur Paymium"]) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:100
+    |-- SwipeUtils.magicSwipe({"to":"~Achat / Vente occasionnels"})
+        |-- [magicSwipe] Searching for element: ~Achat / Vente occasionnels
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+    |-- SwipeUtils.magicSwipe({"to":"~Conserver des cryptos sur Paymium"})
+        |-- [magicSwipe] Searching for element: ~Conserver des cryptos sur Paymium
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+|-- PaymiumUsagesQuestion.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:104
+|-- CapitalLossRiskAcceptanceQuestion.waitForQuestion() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:105
+|-- CapitalLossRiskAcceptanceQuestion.answer(Oui) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:106
+    |-- SwipeUtils.magicSwipe({"to":"~Oui"})
+        |-- [magicSwipe] Searching for element: ~Oui
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+|-- CapitalLossRiskAcceptanceQuestion.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:107
+|-- DeclarationOnHonorSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:108
+|-- DeclarationOnHonorSheet.confirm() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:109
+|-- PoliticalExposureQuestion.waitForQuestion() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:110
+|-- PoliticalExposureQuestion.answer(Non) paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:111
+|-- PoliticalExposureQuestion.continue() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:112
+
+
+Test Step: KYC
+|-- VerifyYourIdentity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:115
+|-- VerifyYourIdentity.start() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:116
+|-- KYC.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:117
+|-- KYC.start() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:118
+|-- ChromeScreen.waitForSreen() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:119
+|-- ChromeScreen.close() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:120
+|-- Shortcuts.handleAccessCodeAndBiometricsOnceLoggedIn() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:122
+    |-- EnterPinCode.waitForScreen(30000)
+    |-- EnterPinCode.fillCode(********)
+    |-- FingerprintSheet.waitForSheet(30000)
+|-- KYC.waitForSuccess() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:123
+
+
+Test Step: Go to Dashboard
+|-- KYC.goToDashboard() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:126
+|-- DashboardScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/onboarding/onboarding-b2c.spec.ts:127

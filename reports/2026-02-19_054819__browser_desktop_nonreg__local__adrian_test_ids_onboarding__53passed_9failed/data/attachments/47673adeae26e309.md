@@ -1,0 +1,201 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - generic [ref=e48]:
+          - button [ref=e49] [cursor=pointer]:
+            - img [ref=e50]
+          - button "FR" [ref=e53] [cursor=pointer]:
+            - generic [ref=e54]: FR
+            - img [ref=e55]
+          - button [ref=e57] [cursor=pointer]:
+            - img [ref=e60]
+          - button [ref=e63] [cursor=pointer]:
+            - img [ref=e64]
+          - button [ref=e67] [cursor=pointer]:
+            - img [ref=e68]
+          - button [ref=e71] [cursor=pointer]:
+            - img [ref=e72]
+      - generic [ref=e76]:
+        - navigation [ref=e77]:
+          - generic [ref=e78]:
+            - generic [ref=e81]:
+              - img [ref=e83]
+              - textbox "Chercher" [ref=e86]
+            - generic [ref=e87]:
+              - link "Tableau de bord" [ref=e88] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e89]
+                - generic [ref=e92]: Tableau de bord
+              - link "Portefeuille" [ref=e93] [cursor=pointer]:
+                - /url: /wallet
+                - img [ref=e94]
+                - generic [ref=e98]: Portefeuille
+              - link "Achat / vente" [ref=e99] [cursor=pointer]:
+                - /url: /swap
+                - img [ref=e100]
+                - generic [ref=e103]: Achat / vente
+              - link "Dépôt / retrait" [ref=e104] [cursor=pointer]:
+                - /url: /deposit/EUR
+                - img [ref=e105]
+                - generic [ref=e108]: Dépôt / retrait
+              - link "Achat récurrent" [ref=e109] [cursor=pointer]:
+                - /url: /recurrent
+                - img [ref=e110]
+                - generic [ref=e115]: Achat récurrent
+              - link "Mode expert" [ref=e116] [cursor=pointer]:
+                - /url: /trade/BTC/EUR
+                - img [ref=e117]
+                - generic [ref=e119]: Mode expert
+              - link "Parrainage" [ref=e120] [cursor=pointer]:
+                - /url: /referral
+                - img [ref=e121]
+                - generic [ref=e126]: Parrainage
+              - link "Plan Bitcoin Famille" [ref=e127] [cursor=pointer]:
+                - /url: /family
+                - img [ref=e128]
+                - generic [ref=e133]: Plan Bitcoin Famille
+              - link "Historique" [ref=e134] [cursor=pointer]:
+                - /url: /history
+                - img [ref=e135]
+                - generic [ref=e140]: Historique
+        - generic [ref=e141]:
+          - generic [ref=e143]:
+            - generic [ref=e144]: Transfert
+            - generic [ref=e145]:
+              - tablist [ref=e147]:
+                - generic [ref=e148]:
+                  - tab "Déposer" [selected] [ref=e150] [cursor=pointer]:
+                    - generic [ref=e151]: Déposer
+                  - tab "Retirer" [ref=e152] [cursor=pointer]:
+                    - generic [ref=e153]: Retirer
+                  - tab "Transfert interne" [ref=e154] [cursor=pointer]:
+                    - generic [ref=e155]: Transfert interne
+                  - tab "Envoyer par email" [ref=e156] [cursor=pointer]:
+                    - generic [ref=e157]: Envoyer par email
+              - tabpanel "Déposer" [ref=e158]:
+                - generic [ref=e160]:
+                  - generic [ref=e161]:
+                    - generic [ref=e163]:
+                      - generic [ref=e165]: Choisissez une devise
+                      - button "Choisissez une devise" [ref=e167] [cursor=pointer]:
+                        - textbox [ref=e169]: EUR
+                        - generic [ref=e171]:
+                          - img [ref=e172]
+                          - generic [ref=e177]: Euro
+                        - img [ref=e178]
+                    - generic [ref=e181]:
+                      - alert [ref=e182]:
+                        - generic [ref=e183]: Déposez uniquement des Euros depuis un compte bancaire à votre nom.
+                      - tablist [ref=e186]:
+                        - generic [ref=e187]:
+                          - tab "IBAN de dépôt" [ref=e189] [cursor=pointer]:
+                            - generic [ref=e190]: IBAN de dépôt
+                          - tab "Dépôt facile (open-banking)" [selected] [ref=e191] [cursor=pointer]:
+                            - generic [ref=e192]: Dépôt facile (open-banking)
+                      - tabpanel "Dépôt facile (open-banking)" [ref=e193]:
+                        - form [ref=e195]:
+                          - generic [ref=e196]: Connectez-vous directement à l'interface de votre banque et exécutez vos virements sans avoir à quitter Paymium. Un service sécurisé par Powens.
+                          - generic [ref=e198]:
+                            - generic [ref=e200]: Montant
+                            - generic [ref=e201]:
+                              - textbox "Montant" [ref=e202]: "20"
+                              - generic [ref=e205]: €
+                          - generic [ref=e207]:
+                            - generic [ref=e209]: Type de virement
+                            - button "Type de virement" [ref=e211] [cursor=pointer]:
+                              - textbox [ref=e213]: instant
+                              - generic [ref=e215]: Virement SEPA instantané
+                              - img [ref=e216]
+                          - alert [ref=e218]:
+                            - img [ref=e220]
+                            - generic [ref=e225]: Une erreur s'est produite, veuillez réessayer.
+                          - button "Envoyer" [ref=e226] [cursor=pointer]:
+                            - generic [ref=e227]: Envoyer
+                  - generic [ref=e228]:
+                    - generic [ref=e229]:
+                      - generic [ref=e230]: Limites
+                      - generic [ref=e231]:
+                        - generic [ref=e232]: Limite de dépôt quotidienne
+                        - generic [ref=e233]: 100 000,00 €
+                      - generic [ref=e234]:
+                        - generic [ref=e235]: Limite de dépôt mensuelle
+                        - generic [ref=e236]: 500 000,00 €
+                    - generic [ref=e237]:
+                      - generic [ref=e238]:
+                        - img [ref=e239]
+                        - generic [ref=e241]: Informations dépôt Euro
+                        - button "Masquer" [ref=e242] [cursor=pointer]:
+                          - generic [ref=e243]: Masquer
+                      - generic [ref=e246]:
+                        - generic [ref=e247]: Vous pouvez déposer des euros sur votre compte Paymium en effectuant un virement bancaire.
+                        - list [ref=e248]:
+                          - generic [ref=e252]: Seul le virement SEPA est accepté. Les virement SWIFT seront automatiquement rejetés.
+                          - generic [ref=e256]: Les dépôts sont généralement crédités sous 1 à 2 jours ouvrés.
+                          - generic [ref=e260]:
+                            - text: Il peut vous être demandé d'envoyer un ou plusieurs justificatifs de l'origine des fonds. Pour plus d'informations,
+                            - link "cliquez ici" [ref=e261] [cursor=pointer]:
+                              - /url: https://www.paymium.com/aide-articles/y-a-t-il-un-plafond-de-depot-par-virement-sur-paymium
+                              - generic [ref=e263]: cliquez ici
+                            - text: .
+          - contentinfo [ref=e264]:
+            - generic [ref=e265]:
+              - generic [ref=e266]: Copyright © 2026
+              - link "Paymium" [ref=e268] [cursor=pointer]:
+                - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+              - generic [ref=e269]: 6.15.0
+              - link "Statut" [ref=e271] [cursor=pointer]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e273] [cursor=pointer]:
+                - /url: ""
+  - generic:
+    - generic:
+      - generic:
+        - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e274]':
+          - generic [ref=e275]:
+            - generic [ref=e276]:
+              - button "Fermer le widget sans consentement" [ref=e277] [cursor=pointer]:
+                - generic [ref=e278]: Continuer sans accepter
+              - generic [ref=e280]:
+                - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e283]:
+                  - generic [ref=e284]: Des cookies pour
+                  - generic [ref=e285]: vos bitcoins !
+                - generic [ref=e286]:
+                  - paragraph [ref=e287]:
+                    - text: Parce que
+                    - strong [ref=e288]: stacker des sats ça donne faim
+                    - text: ", nous vous proposons une pause cookie ! 🍪"
+                  - paragraph [ref=e289]:
+                    - text: Avec votre accord, Paymium aimerait utiliser des
+                    - strong [ref=e290]: cookies
+                    - text: placés par nous et/ou par nos partenaires sur notre site.
+                  - paragraph [ref=e291]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+                  - paragraph [ref=e292]:
+                    - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                    - strong [ref=e293]: Vous choisissez ceux qui vous plaisent
+                    - text: ", comme pour le trading !"
+                  - paragraph [ref=e294]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+                - paragraph [ref=e296]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+              - button "Consentements certifiés par Axeptio" [ref=e299]:
+                - generic [ref=e300]: Consentements certifiés par
+                - img "Axeptio" [ref=e304]
+            - generic [ref=e308]:
+              - button "Je choisis les cookies à configurer" [ref=e309] [cursor=pointer]: Je choisis
+              - button "Accepter les cookies" [ref=e310] [cursor=pointer]: OK pour moi
+          - generic [ref=e311]:
+            - text: Axeptio consent
+            - checkbox [ref=e312]
+          - generic [ref=e313]:
+            - paragraph [ref=e314]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+            - paragraph [ref=e315]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+        - button "Fermer le widget sans consentement" [ref=e316] [cursor=pointer]:
+          - img [ref=e320]
+```
