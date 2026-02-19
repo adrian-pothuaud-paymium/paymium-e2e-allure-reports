@@ -1,0 +1,22 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#selectFrom')
+    - locator resolved to <button disabled role="button" tabindex="-1" type="button" id="selectFrom" aria-disabled="true" class="css-g5y9jx r-12vffkv color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] border-color-[var(--components--input-primary-disabled-border)] background-color-[var(--components--input-primary-disabled-background)] border-radius-[8px] padding-top-[var(--space-md)] padding-bottom-[var(--space-md)] padding-left-[var(--space-xl)] padding-right-[var(--space-xl)] justif…>…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms
+
+    at ContentSelect.select (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/ContentSelect.ts:22:24)
+    at Swap.selectFromCurrency (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/swap/index.ts:66:35)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/trading/swap-cryptos.spec.ts:70:26

@@ -1,0 +1,21 @@
+.........Console Logs.........
+
+
+
+Test Step: Open App and go to Sign In
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/trading/buy-ETH-trading-account.spec.ts:18
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/trading/buy-ETH-trading-account.spec.ts:19
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément non affiché: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+            |-- Élément non affiché: //android.widget.Button[@text="Accepter les cookies"]
+    |-- UpdateScreen.waitForScreen(20000)
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément non affiché: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+            |-- Élément non affiché: //android.widget.Button[@text="Accepter les cookies"]
+    |-- WelcomeScreen.waitForScreen(20000)

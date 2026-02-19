@@ -1,0 +1,22 @@
+[pageerror] XMLHttpRequest cannot load https: /account.staging-paymium.com/cdn-cgi/rum? due to access control checks.
+[pageerror] Unhandled Promise Rejection: AxiosError: Network Error
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('TriggerOrder')
+    - locator resolved to <button disabled role="button" tabindex="-1" type="button" id="swap.trigger" aria-disabled="true" aria-labelledby="«r2k»" data-testid="TriggerOrder" class="css-g5y9jx r-12vffkv justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-colo…>…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is not enabled
+     - retrying click action
+       - waiting 500ms
+
+    at Swap.triggerOrder (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/swap/index.ts:150:35)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/trading/buy-cryptos.spec.ts:107:26

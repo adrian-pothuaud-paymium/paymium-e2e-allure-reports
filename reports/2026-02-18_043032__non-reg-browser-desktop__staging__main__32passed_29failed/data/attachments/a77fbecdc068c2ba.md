@@ -1,0 +1,214 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic:
+    - generic:
+      - generic:
+        - link:
+          - /url: /dashboard
+          - generic:
+            - img
+        - generic:
+          - button:
+            - img
+          - button:
+            - generic: FR
+            - img
+          - button:
+            - generic:
+              - generic:
+                - img
+          - button:
+            - img
+          - button:
+            - img
+          - button:
+            - img
+      - generic:
+        - navigation:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - textbox:
+                    - /placeholder: Chercher
+            - generic:
+              - link:
+                - /url: /dashboard
+                - img
+                - generic: Tableau de bord
+              - link:
+                - /url: /wallet
+                - img
+                - generic: Portefeuille
+              - link:
+                - /url: /swap
+                - img
+                - generic: Achat / vente
+              - link:
+                - /url: /deposit/EUR
+                - img
+                - generic: Dépôt / retrait
+              - link:
+                - /url: /recurrent
+                - img
+                - generic: Achat récurrent
+              - link:
+                - /url: /trade/BTC/EUR
+                - img
+                - generic: Mode expert
+              - link:
+                - /url: /referral
+                - img
+                - generic: Parrainage
+              - link:
+                - /url: /family
+                - img
+                - generic: Plan Bitcoin Famille
+              - link:
+                - /url: /history
+                - img
+                - generic: Historique
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - banner:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic: Pour débloquer toutes les fonctionnalités, veuillez télécharger une preuve d'adresse valide émise au cours des 3 derniers mois.
+                  - button:
+                    - generic: Envoyer vos documents
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading [level=2]: Tickets
+                      - button:
+                        - generic: Créer un nouveau ticket
+                    - generic:
+                      - checkbox [checked]:
+                        - generic:
+                          - checkbox [checked]
+                        - generic:
+                          - img
+                        - generic: Répondu
+                      - checkbox [checked]:
+                        - generic:
+                          - checkbox [checked]
+                        - generic:
+                          - img
+                        - generic: Fermé
+                      - checkbox [checked]:
+                        - generic:
+                          - checkbox [checked]
+                        - generic:
+                          - img
+                        - generic: En attente
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Titre
+                            - generic:
+                              - generic:
+                                - img
+                                - img
+                        - generic:
+                          - generic:
+                            - generic: Statut
+                            - generic:
+                              - generic:
+                                - img
+                                - img
+                    - generic: Aucune donnée
+          - contentinfo:
+            - generic:
+              - generic: Copyright © 2026
+              - generic:
+                - link:
+                  - /url: https://sandbox-paymium.webflow.io/
+                  - text: Paymium
+              - generic: 6.14.1
+              - generic:
+                - link:
+                  - /url: /status
+                  - text: Statut
+              - generic:
+                - link:
+                  - /url: ""
+                  - text: Gérer vos cookies
+  - dialog "Créer un nouveau ticket" [ref=e6]:
+    - generic [ref=e7]:
+      - generic:
+        - generic:
+          - generic:
+            - generic: Créer un nouveau ticket
+          - button:
+            - img
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - form:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Titre
+                    - generic:
+                      - textbox: Problème de connexion - 1771388118694
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: Catégorie
+                      - generic:
+                        - button [active]:
+                          - generic:
+                            - textbox
+                          - img
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Description
+                    - generic:
+                      - textbox
+                - button [disabled]:
+                  - generic: Créer
+      - list [ref=e8]:
+        - generic [ref=e10]:
+          - listitem [ref=e12] [cursor=pointer]:
+            - generic [ref=e14]: Trading
+          - listitem [ref=e16] [cursor=pointer]:
+            - generic [ref=e18]: Euro entrants
+          - listitem [ref=e20] [cursor=pointer]:
+            - generic [ref=e22]: Euro sortants
+          - listitem [ref=e24] [cursor=pointer]:
+            - generic [ref=e26]: BTC sortants/BTC entrants
+          - listitem [ref=e28] [cursor=pointer]:
+            - generic [ref=e30]: KYC
+          - listitem [ref=e32] [cursor=pointer]:
+            - generic [ref=e34]: Modification du profil
+          - listitem [ref=e36] [cursor=pointer]:
+            - generic [ref=e38]: Autres
+          - listitem [ref=e40] [cursor=pointer]:
+            - generic [ref=e42]: CB et bouton marchand
+          - listitem [ref=e44] [cursor=pointer]:
+            - generic [ref=e46]: BCH, forks et Liquid Network
+          - listitem [ref=e48] [cursor=pointer]:
+            - generic [ref=e50]: Future version Paymium
+          - listitem [ref=e52] [cursor=pointer]:
+            - generic [ref=e54]: Rapport de bug
+          - listitem [ref=e56] [cursor=pointer]:
+            - generic [ref=e58]: National Architect1
+          - listitem [ref=e60] [cursor=pointer]:
+            - generic [ref=e62]: Internal Marketing Agent2
+          - listitem [ref=e64] [cursor=pointer]:
+            - generic [ref=e66]: Sales Agent3
+          - listitem [ref=e68] [cursor=pointer]:
+            - generic [ref=e70]: District Government Officer1
+```

@@ -1,0 +1,3 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load http: /paymium.local:3000/assets/config.json due to access control checks.
+[pageerror] SyntaxError: Unexpected token '<'

@@ -1,44 +1,79 @@
 {
+<<<<<<< HEAD
   "lastUpdated": "2026-02-19T05:28:51.309Z",
+=======
+  "lastUpdated": "2026-02-19T06:50:30.328Z",
+>>>>>>> 18434b90 (chore: reset repo history - remove Playwright trace zips to fit GitHub 2GiB limit)
   "entries": [
     {
       "date": "2026-02-18",
       "totals": {
         "runs": 53,
+<<<<<<< HEAD
         "passed": 1076,
         "failed": 732
+=======
+        "passed": 1062,
+        "failed": 744
+>>>>>>> 18434b90 (chore: reset repo history - remove Playwright trace zips to fit GitHub 2GiB limit)
       },
       "platforms": {
         "android": {
           "runs": 5,
+<<<<<<< HEAD
           "passed": 0,
           "failed": 0
         },
         "browser": {
           "runs": 48,
           "passed": 1076,
+=======
+          "passed": 34,
+          "failed": 12
+        },
+        "browser": {
+          "runs": 48,
+          "passed": 1028,
+>>>>>>> 18434b90 (chore: reset repo history - remove Playwright trace zips to fit GitHub 2GiB limit)
           "failed": 732
         }
       },
       "environments": {
         "sandbox": {
           "runs": 14,
+<<<<<<< HEAD
           "passed": 164,
           "failed": 117
         },
         "local": {
           "runs": 16,
           "passed": 552,
+=======
+          "passed": 189,
+          "failed": 129
+        },
+        "local": {
+          "runs": 16,
+          "passed": 536,
+>>>>>>> 18434b90 (chore: reset repo history - remove Playwright trace zips to fit GitHub 2GiB limit)
           "failed": 432
         },
         "flux": {
           "runs": 15,
+<<<<<<< HEAD
           "passed": 235,
+=======
+          "passed": 220,
+>>>>>>> 18434b90 (chore: reset repo history - remove Playwright trace zips to fit GitHub 2GiB limit)
           "failed": 88
         },
         "staging": {
           "runs": 8,
+<<<<<<< HEAD
           "passed": 125,
+=======
+          "passed": 117,
+>>>>>>> 18434b90 (chore: reset repo history - remove Playwright trace zips to fit GitHub 2GiB limit)
           "failed": 95
         }
       }
@@ -46,6 +81,7 @@
     {
       "date": "2026-02-19",
       "totals": {
+<<<<<<< HEAD
         "runs": 25,
         "passed": 425,
         "failed": 334
@@ -82,6 +118,44 @@
           "runs": 4,
           "passed": 0,
           "failed": 12
+=======
+        "runs": 33,
+        "passed": 690,
+        "failed": 474
+      },
+      "platforms": {
+        "android": {
+          "runs": 6,
+          "passed": 54,
+          "failed": 21
+        },
+        "browser": {
+          "runs": 27,
+          "passed": 636,
+          "failed": 453
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 8,
+          "passed": 130,
+          "failed": 66
+        },
+        "local": {
+          "runs": 11,
+          "passed": 340,
+          "failed": 326
+        },
+        "staging": {
+          "runs": 2,
+          "passed": 60,
+          "failed": 61
+        },
+        "flux": {
+          "runs": 12,
+          "passed": 160,
+          "failed": 21
+>>>>>>> 18434b90 (chore: reset repo history - remove Playwright trace zips to fit GitHub 2GiB limit)
         }
       }
     }

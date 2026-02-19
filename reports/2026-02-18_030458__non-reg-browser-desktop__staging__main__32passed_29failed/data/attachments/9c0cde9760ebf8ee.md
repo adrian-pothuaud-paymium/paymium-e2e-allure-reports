@@ -1,0 +1,43 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e8]:
+  - generic [ref=e9]:
+    - link [ref=e11] [cursor=pointer]:
+      - /url: https://www.paymium.com/
+      - img [ref=e13]
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - button "FR" [ref=e51] [cursor=pointer]:
+          - generic [ref=e52]: FR
+          - img [ref=e53]
+        - button [ref=e55] [cursor=pointer]:
+          - img [ref=e58]
+        - button [ref=e62] [cursor=pointer]:
+          - img [ref=e63]
+      - button "Se connecter" [ref=e66] [cursor=pointer]:
+        - generic [ref=e67]: Se connecter
+  - generic [ref=e68]:
+    - navigation
+    - generic [ref=e69]:
+      - form [ref=e73]:
+        - generic [ref=e78]:
+          - generic [ref=e79]:
+            - img [ref=e80]
+            - generic [ref=e134]: Vérifiez votre adresse e-mail
+            - generic [ref=e135]: Un email vous a été envoyé pour confirmer votre compte. Renseignez le code que vous avez reçu pour continuer.
+            - textbox [active] [ref=e146]
+          - generic [ref=e147]:
+            - generic [ref=e148]: Vous n'avez pas reçu d'email ?
+            - link "Renvoyer" [ref=e149] [cursor=pointer]
+      - contentinfo [ref=e150]:
+        - generic [ref=e151]:
+          - generic [ref=e152]: Copyright © 2026
+          - link "Paymium" [ref=e154] [cursor=pointer]:
+            - /url: https://sandbox-paymium.webflow.io/
+          - generic [ref=e155]: 6.14.1
+          - link "Statut" [ref=e157] [cursor=pointer]:
+            - /url: /status
+          - link "Gérer vos cookies" [ref=e159] [cursor=pointer]:
+            - /url: ""
+```

@@ -1,0 +1,15 @@
+[pageerror] XMLHttpRequest cannot load https: /account.staging-paymium.com/cdn-cgi/rum? due to access control checks.
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected pattern: /^Transfert - Déposer - Paymium$/
+Received string:  "Tableau de bord - Paymium"
+Timeout: 10000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 10000ms
+    12 × unexpected value "Tableau de bord - Paymium"
+
+    at DepositEUR.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:17:29)
+    at DepositEUR.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/AccountPage.ts:32:5)
+    at DepositEUR.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/deposit/EUR/index.ts:39:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/transfers/deposit.spec.ts:63:3

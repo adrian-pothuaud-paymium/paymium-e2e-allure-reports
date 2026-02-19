@@ -1,0 +1,14 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /^(.*)webview\.powens\.com\/fr\/payment\/connector(.*)$/
+Received string:  "http://paymium.local:3000/deposit/EUR"
+Timeout: 30000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 30000ms
+    34 × unexpected value "http://paymium.local:3000/deposit/EUR"
+
+    at PowensConnector.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/BasePage.ts:16:29)
+    at PowensConnector.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/webview.powens.com/payment/connector.ts:31:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/transfers/deposit.spec.ts:38:58

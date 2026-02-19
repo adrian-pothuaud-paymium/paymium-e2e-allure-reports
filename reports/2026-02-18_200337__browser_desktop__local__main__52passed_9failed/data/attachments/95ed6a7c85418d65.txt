@@ -1,0 +1,17 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Submit button was not activated within 10 seconds
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByRole('button', { name: 'Fermer' })
+Expected: visible
+Error: strict mode violation: getByRole('button', { name: 'Fermer' }) resolved to 2 elements:
+    1) <button class="sc-fbkiRW eEMnRS ax-discardButton" aria-label="Fermer le widget sans consentement">…</button> aka getByTestId('widget-container').getByRole('button', { name: 'Fermer le widget sans' })
+    2) <button tabindex="0" role="button" aria-hidden="false" id="axeptio_main_button" class="sc-hKgJUU dAvqTA" title="Fermer le widget sans consentement" aria-label="Fermer le widget sans consentement">…</button> aka getByTitle('Fermer le widget sans')
+
+Call log:
+  - Expect "toBeVisible" with timeout 10000ms
+  - waiting for getByRole('button', { name: 'Fermer' })
+
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/support/support-tickets.spec.ts:93:67
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/support/support-tickets.spec.ts:87:3

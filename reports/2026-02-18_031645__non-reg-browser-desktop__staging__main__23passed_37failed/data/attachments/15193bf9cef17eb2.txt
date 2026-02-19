@@ -1,0 +1,3 @@
+Go to sign in
+GET /api/user request sent
+GET /api/user response received

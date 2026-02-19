@@ -1,0 +1,7 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByText('Vous avez chargé tous les') to be visible
+
+    at BeneficialOwnersDocumentsModal.waitSuccess (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/dashboard/_components/BeneficialOwnersDocumentsModal.ts:52:60)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/onboarding/complete-flows.spec.ts:374:77

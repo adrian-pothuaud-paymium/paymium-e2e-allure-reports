@@ -1,0 +1,8 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Nom du wallet' }) to be visible
+
+    at UnhostedWalletFormSheet.waitForLocators (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:29:22)
+    at UnhostedWalletFormSheet.waitForSheet (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/wallet/UnhostedWalletFormSheet.ts:22:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/wallet/unhosted-wallets.spec.ts:29:52

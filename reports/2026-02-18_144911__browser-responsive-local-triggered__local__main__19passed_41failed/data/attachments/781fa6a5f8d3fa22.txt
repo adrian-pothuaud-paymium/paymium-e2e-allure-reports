@@ -1,0 +1,36 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Montant en €' })
+    - locator resolved to <input rows="1" value="" dir="auto" id="amount" type="text" autocorrect="on" autocomplete="on" spellcheck="true" inputmode="decimal" data-testid="dcaAmount" autocapitalize="sentences" virtualkeyboardpolicy="auto" class="css-11aywtz r-6taxm2 color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] border-color-[var(--components--input-primary-default-border)] background-color-[var(--components--input-primary-default-background)] border-radius-[8px] padding-top-[var…/>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    16 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is not stable
+  - retrying click action
+    - waiting 500ms
+
+    at slowType (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_actions.ts:4:17)
+    at DCAFormSheet.fillAmount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/recurrent/DCAFormSheet.ts:30:19)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/investment/dca.spec.ts:48:45
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/investment/dca.spec.ts:44:3

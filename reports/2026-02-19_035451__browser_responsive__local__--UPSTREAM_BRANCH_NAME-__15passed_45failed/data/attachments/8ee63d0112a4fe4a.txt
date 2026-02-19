@@ -1,0 +1,15 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] Unhandled Promise Rejection: TypeError: Load failed
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected: "Se connecter - Paymium"
+Received: "Paymium"
+Timeout:  10000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 10000ms
+    13 × unexpected value "Paymium"
+
+    at SignIn.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:17:29)
+    at SignIn.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:82:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/authentication/sign-in.spec.ts:24:3

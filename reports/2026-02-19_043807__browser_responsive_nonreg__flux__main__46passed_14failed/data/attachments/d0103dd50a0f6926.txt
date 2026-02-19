@@ -1,0 +1,31 @@
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('btc-trigger')
+    - locator resolved to <button tabindex="0" role="button" type="button" data-testid="btc-trigger" class="css-g5y9jx r-1loqt21 r-1otgn73 flex-direction-[row] justify-content-[space-between] padding-top-[var(--space-xl)] padding-bottom-[var(--space-xl)] padding-left-[var(--space-xl)] padding-right-[var(--space-xl)] md:padding-top-[var(--space-3xl)] md:padding-bottom-[var(--space-3xl)] md:padding-left-[var(--space-3xl)] md:padding-right-[var(--space-3xl)]">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div data-testid="sumPurchased-line" class="css-g5y9jx border-style-[solid] border-width-[0px] align-items-[stretch] background-color-[rgba(0,-0,-0,-0)] display-[flex] flex-basis-[auto] flex-direction-[row] flex-shrink-[0] list-style-[none] margin-top-[0px] margin-bottom-[0px] margin-left-[0px] margin-right-[0px] min-height-[0px] min-width-[0px] padding-top-[0px] padding-bottom-[0px] padding-right-[0px] padding-left-[0px] position-[relative] text-decoration-[none] z-index-[0] justify-content-[space…>…</div> from <div>…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div data-testid="sumPurchased-line" class="css-g5y9jx border-style-[solid] border-width-[0px] align-items-[stretch] background-color-[rgba(0,-0,-0,-0)] display-[flex] flex-basis-[auto] flex-direction-[row] flex-shrink-[0] list-style-[none] margin-top-[0px] margin-bottom-[0px] margin-left-[0px] margin-right-[0px] min-height-[0px] min-width-[0px] padding-top-[0px] padding-bottom-[0px] padding-right-[0px] padding-left-[0px] position-[relative] text-decoration-[none] z-index-[0] justify-content-[space…>…</div> from <div>…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    17 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div data-testid="sumPurchased-line" class="css-g5y9jx border-style-[solid] border-width-[0px] align-items-[stretch] background-color-[rgba(0,-0,-0,-0)] display-[flex] flex-basis-[auto] flex-direction-[row] flex-shrink-[0] list-style-[none] margin-top-[0px] margin-bottom-[0px] margin-left-[0px] margin-right-[0px] min-height-[0px] min-width-[0px] padding-top-[0px] padding-bottom-[0px] padding-right-[0px] padding-left-[0px] position-[relative] text-decoration-[none] z-index-[0] justify-content-[space…>…</div> from <div>…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+    at DCA.openBTCRows (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/recurrent/index.ts:62:34)
+    at DCA.triggerBTCRowsIfNeeded (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/recurrent/index.ts:92:18)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/investment/dca.spec.ts:129:5
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/investment/dca.spec.ts:128:3

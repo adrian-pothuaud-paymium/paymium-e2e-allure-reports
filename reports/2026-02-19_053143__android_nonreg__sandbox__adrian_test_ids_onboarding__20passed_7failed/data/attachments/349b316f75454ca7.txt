@@ -1,0 +1,144 @@
+.........Console Logs.........
+
+
+
+Test Step: Open App and go to Sign In
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:26
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:27
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément non affiché: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+            |-- Élément non affiché: //android.widget.Button[@text="Accepter les cookies"]
+    |-- UpdateScreen.waitForScreen(20000)
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément trouvé: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+    |-- AxeptioCookies.acceptCookies()
+        |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+            |-- Clic sur le premier élément existant parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément existant trouvé: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+
+
+Test Step: Sign in with test account
+|-- Shortcuts.authenticate() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:30
+    |-- SignIn.fillEmail(adrianpothuaud@gmail.com)
+    |-- SignIn.fillPassword(********)
+    |-- SignIn.submit()
+    |-- SignIn.waitFor2FA()
+    |-- SignIn.fill2FA(********)
+    |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired(********)
+        |-- CreatePinCode.waitForScreen(20000)
+        |-- CreatePinCode.create()
+        |-- CreateAccessCode.waitForScreen(20000)
+        |-- CreateAccessCode.fillCode(********)
+        |-- ConfirmPinCode.waitForScreen(20000)
+        |-- ConfirmPinCode.fillCode(********)
+        |-- EnableBiometrics.waitForScreen(20000)
+    |-- DashboardScreen.waitForScreen()
+
+
+Test Step: Go to DCA
+|-- DashboardScreen.goToDCA() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:33
+    |-- SwipeUtils.magicSwipe({"to":"android=new UiSelector().descriptionStartsWith(\"Plan d'achat récurrent\")"})
+        |-- [magicSwipe] Searching for element: android=new UiSelector().descriptionStartsWith("Plan d'achat récurrent")
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+|-- DCAScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:34
+
+
+Test Step: Go to DCA Form
+|-- DCAScreen.getNumberOfBTCDCA() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:37
+    |-- Extracted number of BTC DCA from content-desc: 1
+|-- DCAScreen.create() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:38
+|-- CreateDCASheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:39
+
+
+Test Step: Validate DCA form
+|-- CreateDCASheet.fillAmount(-10) paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:42
+|-- Assert.text(Doit être un nombre positif) paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:43
+|-- CreateDCASheet.fillAmount(0) paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:44
+|-- Assert.text(Doit être un nombre positif) paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:45
+|-- CreateDCASheet.fillAmount(1000000000) paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:46
+|-- Assert.text(Montant trop élevé) paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:47
+
+
+Test Step: Fill DCA form
+|-- CreateDCASheet.fillLabel(E2E 1771472817799) paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:52
+|-- CreateDCASheet.selectCurrency(Bitcoin) paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:53
+    |-- ContentSelect.select(Bitcoin)
+        |-- SwipeUtils.magicSwipe({"from":"android=new UiSelector().resourceId(\"content-select\")","to":"//*[@resource-id=\"content-select\"]//*[contains(@content-desc, \"Bitcoin\")]"})
+            |-- [magicSwipe] Searching for element: //*[@resource-id="content-select"]//*[contains(@content-desc, "Bitcoin")]
+            |-- [magicSwipe] Element already visible, no swipe needed
+|-- CreateDCASheet.fillAmount(5) paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:54
+|-- CreateDCASheet.selectFrequency(Mensuelle) paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:55
+    |-- ContentSelect.select(Mensuelle)
+        |-- SwipeUtils.magicSwipe({"from":"android=new UiSelector().resourceId(\"content-select\")","to":"//*[@resource-id=\"content-select\"]//*[contains(@content-desc, \"Mensuelle\")]"})
+            |-- [magicSwipe] Searching for element: //*[@resource-id="content-select"]//*[contains(@content-desc, "Mensuelle")]
+            |-- [magicSwipe] Element already visible, no swipe needed
+
+
+Test Step: DCA Overview
+|-- CreateDCASheet.overview() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:58
+|-- CreateDCAOverviewSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:59
+
+
+Test Step: Back and forth
+|-- CreateDCAOverviewSheet.goBack() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:62
+|-- CreateDCASheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:63
+|-- CreateDCASheet.overview() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:64
+|-- CreateDCAOverviewSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:65
+
+
+Test Step: Check DCA overview values
+|-- CreateDCAOverviewSheet.getLabelTxtValue() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:68
+|-- CreateDCAOverviewSheet.getAmountInEURValue() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:70
+|-- CreateDCAOverviewSheet.getCurrencyValue() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:72
+|-- CreateDCAOverviewSheet.getFrequencyValue() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:74
+
+
+Test Step: Launch DCA
+|-- CreateDCAOverviewSheet.launchDCA() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:78
+
+
+Test Step: Check DCA is created and displayed in DCA list
+|-- DCAScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:81
+|-- DCAScreen.getNumberOfBTCDCA() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:82
+    |-- Extracted number of BTC DCA from content-desc: 2
+
+
+Test Step: Open created DCA
+|-- DCAScreen.openBTCRows() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:86
+|-- DCAScreen.openBTCDCARowByLabel(E2E 1771472817799) paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:87
+    |-- DCAScreen.getBTCRowElements()
+|-- DCADetailsSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:88
+
+
+Test Step: Edit DCA
+|-- DCADetailsSheet.modifyDCA() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:91
+|-- DCAEditSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:92
+|-- DCAEditSheet.fillAmount(10) paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:93
+|-- DCAEditSheet.update() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:94
+|-- DCADetailsSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:95
+|-- DCADetailsSheet.getAmountInEURValue() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:96
+
+
+Test Step: Pause DCA
+|-- DCADetailsSheet.stopDCA() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:100
+
+
+Test Step: Resume DCA
+|-- DCADetailsSheet.resumeDCA() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:104
+
+
+Test Step: Stop/Delete DCA
+|-- DCADetailsSheet.deleteDCA() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:108
+|-- DCAScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:109
+|-- DCAScreen.getNumberOfBTCDCA() paymium-e2e-united/tests/wdio-android/tests/investment/dca.spec.ts:110
+    |-- Extracted number of BTC DCA from content-desc: 1

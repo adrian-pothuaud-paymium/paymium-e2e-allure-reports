@@ -1,0 +1,8 @@
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('expertMode.tradeForm.buyMode') to be visible
+
+    at TradeForm.waitForLocators (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:29:22)
+    at TradeForm.waitForComponent (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/trade/BTC/EUR/TradeForm.ts:43:17)
+    at ExpertMode.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/trade/BTC/EUR/index.ts:27:26)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/trading/expert-mode.spec.ts:22:3

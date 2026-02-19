@@ -1,0 +1,7 @@
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('marketSearch').getByRole('link', { name: /Dépôt \/ retrait|Deposit \/ withdraw/ })
+
+    at MainNavigation.goto (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/MainNavigation.ts:61:34)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/wallet/crypto-address.spec.ts:25:41
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/wallet/crypto-address.spec.ts:23:3

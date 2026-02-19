@@ -1,0 +1,105 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - button [ref=e49] [cursor=pointer]:
+        - img [ref=e51]
+    - generic [ref=e52]:
+      - navigation
+      - generic [ref=e53]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: Transfert
+          - generic [ref=e57]:
+            - tablist [ref=e59]:
+              - generic [ref=e60]:
+                - tab "Déposer" [selected] [ref=e62] [cursor=pointer]:
+                  - generic [ref=e63]: Déposer
+                - tab "Retirer" [ref=e64] [cursor=pointer]:
+                  - generic [ref=e65]: Retirer
+                - tab "Transfert interne" [ref=e66] [cursor=pointer]:
+                  - generic [ref=e67]: Transfert interne
+                - tab "Envoyer par email" [ref=e68] [cursor=pointer]:
+                  - generic [ref=e69]: Envoyer par email
+            - tabpanel "Déposer" [ref=e70]:
+              - generic [ref=e72]:
+                - generic [ref=e73]:
+                  - generic [ref=e75]:
+                    - generic [ref=e77]: Choisissez une devise
+                    - button "Choisissez une devise" [ref=e79] [cursor=pointer]:
+                      - textbox [ref=e81]: EUR
+                      - generic [ref=e83]:
+                        - img [ref=e84]
+                        - generic [ref=e89]: Euro
+                      - img [ref=e90]
+                  - generic [ref=e93]:
+                    - alert [ref=e94]:
+                      - generic [ref=e95]: Déposez uniquement des Euros depuis un compte bancaire à votre nom.
+                    - tablist [ref=e98]:
+                      - generic [ref=e99]:
+                        - tab "IBAN de dépôt" [ref=e101] [cursor=pointer]:
+                          - generic [ref=e102]: IBAN de dépôt
+                        - tab "Dépôt facile (open-banking)" [selected] [ref=e103] [cursor=pointer]:
+                          - generic [ref=e104]: Dépôt facile (open-banking)
+                    - tabpanel "Dépôt facile (open-banking)" [ref=e105]:
+                      - form [ref=e107]:
+                        - generic [ref=e108]: Connectez-vous directement à l'interface de votre banque et exécutez vos virements sans avoir à quitter Paymium. Un service sécurisé par Powens.
+                        - generic [ref=e110]:
+                          - generic [ref=e112]: Montant
+                          - generic [ref=e113]:
+                            - textbox "Montant" [ref=e114]: "20"
+                            - generic [ref=e117]: €
+                        - generic [ref=e119]:
+                          - generic [ref=e121]: Type de virement
+                          - button "Type de virement" [ref=e123] [cursor=pointer]:
+                            - textbox [ref=e125]: instant
+                            - generic [ref=e127]: Virement SEPA instantané
+                            - img [ref=e128]
+                        - alert [ref=e130]:
+                          - img [ref=e132]
+                          - generic [ref=e137]: Une erreur s'est produite, veuillez réessayer.
+                        - button "Envoyer" [ref=e138] [cursor=pointer]:
+                          - generic [ref=e139]: Envoyer
+                - generic [ref=e140]:
+                  - generic [ref=e141]:
+                    - generic [ref=e142]: Limites
+                    - generic [ref=e143]:
+                      - generic [ref=e144]: Limite de dépôt quotidienne
+                      - generic [ref=e145]: 100 000,00 €
+                    - generic [ref=e146]:
+                      - generic [ref=e147]: Limite de dépôt mensuelle
+                      - generic [ref=e148]: 500 000,00 €
+                  - generic [ref=e149]:
+                    - generic [ref=e150]:
+                      - img [ref=e151]
+                      - generic [ref=e153]: Informations dépôt Euro
+                      - button "Masquer" [ref=e154] [cursor=pointer]:
+                        - generic [ref=e155]: Masquer
+                    - generic [ref=e158]:
+                      - generic [ref=e159]: Vous pouvez déposer des euros sur votre compte Paymium en effectuant un virement bancaire.
+                      - list [ref=e160]:
+                        - generic [ref=e164]: Seul le virement SEPA est accepté. Les virement SWIFT seront automatiquement rejetés.
+                        - generic [ref=e168]: Les dépôts sont généralement crédités sous 1 à 2 jours ouvrés.
+                        - generic [ref=e172]:
+                          - text: Il peut vous être demandé d'envoyer un ou plusieurs justificatifs de l'origine des fonds. Pour plus d'informations,
+                          - link "cliquez ici" [ref=e173] [cursor=pointer]:
+                            - /url: https://www.paymium.com/aide-articles/y-a-t-il-un-plafond-de-depot-par-virement-sur-paymium
+                            - generic [ref=e175]: cliquez ici
+                          - text: .
+        - contentinfo [ref=e176]:
+          - generic [ref=e177]:
+            - generic [ref=e178]: Copyright © 2026
+            - link "Paymium" [ref=e180]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e181]: 6.14.1
+            - link "Statut" [ref=e183]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e185]:
+              - /url: ""
+```
