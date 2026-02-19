@@ -10,6 +10,7 @@ on:
 # Queue deployments: let the running one finish, pending ones wait in order
 concurrency:
   group: pages
+  cancel-in-progress: false
 
 permissions:
   contents: read
