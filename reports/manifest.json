@@ -1,5 +1,19 @@
 [
   {
+    "folder": "2026-02-19_074831__android_nonreg__sandbox__adrian_test_ids_onboarding__0passed_12failed",
+    "timestamp": "2026-02-19_074831",
+    "environment": "sandbox",
+    "branch": "adrian_test_ids_onboarding",
+    "e2eBranch": "main",
+    "job": "android_nonreg",
+    "total": 12,
+    "passed": 0,
+    "failed": 12,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37843",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/203241"
+  }
+,
+  {
     "folder": "2026-02-19_065344__browser_responsive_nonreg__local__adrian_test_ids_onboarding__22passed_39failed",
     "timestamp": "2026-02-19_065344",
     "environment": "local",

@@ -1,0 +1,50 @@
+.........Console Logs.........
+
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:20
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:21
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément trouvé: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+    |-- AxeptioCookies.acceptCookies()
+        |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+            |-- Clic sur le premier élément existant parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément existant trouvé: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+    |-- UpdateScreen.waitForScreen(20000)
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément non affiché: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+            |-- Élément non affiché: //android.widget.Button[@text="Accepter les cookies"]
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+|-- Shortcuts.authenticate() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:22
+    |-- SignIn.fillEmail(adrianpothuaud@gmail.com)
+    |-- SignIn.fillPassword(********)
+    |-- SignIn.submit()
+    |-- SignIn.waitFor2FA()
+    |-- SignIn.fill2FA(********)
+    |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired(********)
+        |-- CreatePinCode.waitForScreen(20000)
+        |-- CreatePinCode.create()
+        |-- CreateAccessCode.waitForScreen(20000)
+        |-- CreateAccessCode.fillCode(********)
+        |-- ConfirmPinCode.waitForScreen(20000)
+        |-- ConfirmPinCode.fillCode(********)
+        |-- EnableBiometrics.waitForScreen(20000)
+    |-- DashboardScreen.waitForScreen()
+|-- SendByEmailCurrencies.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:24
+|-- SendByEmailCurrencies.selectCurrency(Bitcoin) paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:25
+|-- SendByEmail.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:26
+|-- SendByEmail.enterEmail(adrianpothuaud+2@gmail.com) paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:27
+|-- SendByEmail.enterAmount(0.0001) paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:28
+|-- SendByEmail.confirmTransfer() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:29
+|-- SecurityAlertSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:30
+|-- SecurityAlertSheet.acknowledge() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:31
+|-- SecurityAlertSheet.validate() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:32
+|-- SecurityCodeSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:33
+|-- SecurityCodeSheet.enterCode(********) paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:39
+|-- ValidatedTransferSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:40
