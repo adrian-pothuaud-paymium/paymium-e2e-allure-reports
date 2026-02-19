@@ -1,0 +1,21 @@
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+PUT /user failed Request failed with status code 500
+Attempt 1 to create test user failed: Request failed with status code 500
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+PUT /user failed Request failed with status code 500
+Attempt 2 to create test user failed: Request failed with status code 500
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 500
+GET /users/confirmation failed Request failed with status code 422
+Attempt 3 to create test user failed: Request failed with status code 422
+Error: Failed to create test user after 3 attempts
+    at createTestUser (/builds/crypto-platform/paymium-e2e-united/packages/paymium-api/src/createTestUserSafeRetries.ts:34:9)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/account/change-password.spec.ts:22:23
