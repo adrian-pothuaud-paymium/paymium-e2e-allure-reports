@@ -1,0 +1,175 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic:
+    - generic:
+      - generic:
+        - link:
+          - /url: /dashboard
+          - generic:
+            - img
+        - generic:
+          - button:
+            - img
+          - button:
+            - generic: FR
+            - img
+          - button:
+            - generic:
+              - generic:
+                - img
+          - button:
+            - img
+          - button:
+            - img
+          - button:
+            - img
+      - generic:
+        - navigation:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - textbox:
+                    - /placeholder: Chercher
+            - generic:
+              - link:
+                - /url: /dashboard
+                - img
+                - generic: Tableau de bord
+              - link:
+                - /url: /wallet
+                - img
+                - generic: Portefeuille
+              - link:
+                - /url: /swap
+                - img
+                - generic: Achat / vente
+              - link:
+                - /url: /deposit/EUR
+                - img
+                - generic: Dépôt / retrait
+              - link:
+                - /url: /recurrent
+                - img
+                - generic: Achat récurrent
+              - link:
+                - /url: /trade/BTC/EUR
+                - img
+                - generic: Mode expert
+              - link:
+                - /url: /referral
+                - img
+                - generic: Parrainage
+              - link:
+                - /url: /family
+                - img
+                - generic: Plan Bitcoin Famille
+              - link:
+                - /url: /history
+                - img
+                - generic: Historique
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic: Achat récurrent
+                - button:
+                  - generic: En savoir plus
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                    - generic: Créez votre plan d'achat
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: Sélectionnez la cryptomonnaie de votre choix.
+                    - generic:
+                      - generic:
+                        - generic: Entrez le montant (min 5€) et la fréquence d'achat. Une fois activé, vos prochains dépôts euro seront automatiquement crédités sur votre compte de trading.
+                    - generic:
+                      - generic:
+                        - generic: Annulez ou mettez en pause le plan d'achat à tout moment.
+                - generic:
+                  - button:
+                    - generic: Créer un plan d'achat
+              - generic:
+                - generic:
+                  - img
+                - generic: Rien à signaler ici ...
+                - generic: Vous n'avez pas encore créé de plan d'achat récurrent.
+          - contentinfo:
+            - generic:
+              - generic: Copyright © 2026
+              - generic:
+                - link:
+                  - /url: https://sandbox-paymium.webflow.io/
+                  - text: Paymium
+              - generic: 6.14.1
+              - generic:
+                - link:
+                  - /url: /status
+                  - text: Statut
+              - generic:
+                - link:
+                  - /url: ""
+                  - text: Gérer vos cookies
+  - dialog "Créer un plan d'achat" [ref=e8]:
+    - form [ref=e10]:
+      - generic [ref=e12]:
+        - generic [ref=e14]: Créer un plan d'achat
+        - button "Close" [ref=e15] [cursor=pointer]:
+          - img [ref=e16]
+      - generic [ref=e22]:
+        - generic [ref=e24]:
+          - generic [ref=e26]: Libellé
+          - textbox "Libellé" [ref=e28]: paymiumXPlaywright__1771474040444
+        - button "Devise" [ref=e29] [cursor=pointer]:
+          - generic [ref=e31]:
+            - generic [ref=e33]: Devise
+            - button "Devise" [ref=e35]:
+              - textbox [ref=e37]: BTC
+              - generic [ref=e40]:
+                - img [ref=e41]
+                - generic [ref=e46]: Bitcoin
+              - img [ref=e47]
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]: Montant en €
+            - generic [ref=e52]: Solde
+            - generic [ref=e53]: 0,00 €
+          - 'button "5 Montant trop élevé (max : 0)" [ref=e54] [cursor=pointer]':
+            - generic [ref=e56]:
+              - textbox "Montant en €" [active] [ref=e58]: "5"
+              - generic [ref=e59]: "Montant trop élevé (max : 0)"
+        - button "Fréquence" [ref=e60] [cursor=pointer]:
+          - generic [ref=e62]:
+            - generic [ref=e64]: Fréquence
+            - button "Hebdomadaire" [ref=e66]:
+              - textbox [ref=e68]: weekly
+              - generic [ref=e70]: Hebdomadaire
+              - img [ref=e71]
+        - generic [ref=e73]:
+          - generic [ref=e74]: À partir de quand
+          - generic [ref=e77] [cursor=pointer]:
+            - generic [ref=e78]:
+              - textbox "dd" [ref=e79]: "19"
+              - generic [ref=e80]: /
+              - textbox "mm" [ref=e81]: "02"
+              - generic [ref=e82]: /
+              - textbox "yyyy" [ref=e83]: "2026"
+            - img [ref=e85]
+        - generic [ref=e88]:
+          - generic [ref=e90]: Transférer ces achats automatiquement vers (optionnel)
+          - button "Transférer ces achats automatiquement vers (optionnel)" [ref=e92] [cursor=pointer]:
+            - textbox [ref=e94]: undefined
+            - img [ref=e95]
+        - button "Vue d'ensemble" [disabled]:
+          - img [ref=e97]
+          - generic: Vue d'ensemble
+```
