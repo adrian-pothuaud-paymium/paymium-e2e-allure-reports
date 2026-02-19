@@ -1,0 +1,97 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e51]
+      - generic [ref=e52]:
+        - navigation
+        - generic [ref=e53]:
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - generic [ref=e58]:
+                - generic [ref=e61]: Erreur 500
+                - generic [ref=e62]: Quelque chose a mal tourné
+              - generic [ref=e63]: "Une erreur inattendue s’est produite ou vous n’avez peut-être pas la permission de consulter cette page. Les liens suivants peuvent vous aider à reprendre votre navigation :"
+              - generic [ref=e64]: "TypeError: Importing a module script failed."
+            - generic [ref=e65]:
+              - button "Retourner en arrière" [ref=e66] [cursor=pointer]:
+                - img [ref=e67]
+                - generic [ref=e69]: Retourner en arrière
+              - button "Aller sur Paymium.com" [ref=e70] [cursor=pointer]:
+                - generic [ref=e71]: Aller sur Paymium.com
+            - generic [ref=e72]:
+              - generic [ref=e73]:
+                - generic [ref=e74]:
+                  - link "Documentation" [ref=e75] [cursor=pointer]
+                  - img [ref=e76]
+                - generic [ref=e78]: Plongez pour tout apprendre sur le produit.
+              - generic [ref=e79]:
+                - generic [ref=e80]:
+                  - link "Notre blog" [ref=e81] [cursor=pointer]
+                  - img [ref=e82]
+                - generic [ref=e84]: Lisez les derniers articles sur notre blog.
+              - generic [ref=e85]:
+                - generic [ref=e86]:
+                  - link "Contacter le support" [ref=e87] [cursor=pointer]
+                  - img [ref=e88]
+                - generic [ref=e90]: Notre équipe sympathique est là pour vous aider.
+          - contentinfo [ref=e91]:
+            - generic [ref=e92]:
+              - generic [ref=e93]: Copyright © 2026
+              - link "Paymium" [ref=e95]:
+                - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+              - generic [ref=e96]: 6.15.0
+              - link "Statut" [ref=e98]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e100]:
+                - /url: ""
+  - generic [ref=e101]:
+    - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e102]':
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - button "Fermer le widget sans consentement" [ref=e105] [cursor=pointer]:
+            - generic [ref=e106]: Continuer sans accepter
+          - generic [ref=e108]:
+            - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e111]:
+              - generic [ref=e112]: Des cookies pour
+              - generic [ref=e113]: vos bitcoins !
+            - generic [ref=e114]:
+              - paragraph [ref=e115]:
+                - text: Parce que
+                - strong [ref=e116]: stacker des sats ça donne faim
+                - text: ", nous vous proposons une pause cookie ! 🍪"
+              - paragraph [ref=e117]:
+                - text: Avec votre accord, Paymium aimerait utiliser des
+                - strong [ref=e118]: cookies
+                - text: placés par nous et/ou par nos partenaires sur notre site.
+              - paragraph [ref=e119]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+              - paragraph [ref=e120]:
+                - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                - strong [ref=e121]: Vous choisissez ceux qui vous plaisent
+                - text: ", comme pour le trading !"
+              - paragraph [ref=e122]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+            - paragraph [ref=e124]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+          - button "Consentements certifiés par Axeptio" [ref=e127]:
+            - generic [ref=e128]: Consentements certifiés par
+            - img "Axeptio" [ref=e132]
+        - generic [ref=e136]:
+          - button "Je choisis les cookies à configurer" [ref=e137] [cursor=pointer]: Je choisis
+          - button "Accepter les cookies" [ref=e138] [cursor=pointer]: OK pour moi
+      - generic [ref=e139]:
+        - text: Axeptio consent
+        - checkbox [ref=e140]
+      - generic [ref=e141]:
+        - paragraph [ref=e142]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+        - paragraph [ref=e143]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+    - button "Fermer le widget sans consentement" [ref=e144] [cursor=pointer]:
+      - img [ref=e148]
+```

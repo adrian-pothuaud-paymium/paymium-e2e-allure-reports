@@ -1,0 +1,10 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Submit button was not activated within 10 seconds
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('content-select').getByRole('listitem').first() to be visible
+
+    at ContentSelect.select (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/ContentSelect.ts:25:52)
+    at FamilyCreate.selectCivility (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/family/create/index.ts:75:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/investment/family-plan.spec.ts:57:3
