@@ -1,0 +1,8 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByText('Faisons connaissance') to be visible
+
+    at GetToKnowEachOtherNamesSheet.waitForLocators (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:29:22)
+    at GetToKnowEachOtherNamesSheet.waitForSheet (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/dashboard/_components/GetToKnowEachOtherNamesSheet.ts:35:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/onboarding/complete-flows.spec.ts:229:71

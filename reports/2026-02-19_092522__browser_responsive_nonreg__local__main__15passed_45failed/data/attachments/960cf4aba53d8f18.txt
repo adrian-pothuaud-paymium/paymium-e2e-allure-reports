@@ -1,0 +1,58 @@
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/currencies due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/general_settings due to access control checks.
+Submit button was not activated within 10 seconds
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/users/sign_in due to access control checks.
+Login attempt 1 failed: page.waitForResponse: Timeout 10000ms exceeded while waiting for event "response"
+    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:118:23)
+    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:152:9)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/authentication/sign-in.spec.ts:110:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts',
+      line: 118,
+      column: 23,
+      function: 'SignIn.submit'
+    },
+    category: 'pw:api',
+    title: 'Wait for event "response"',
+    apiName: 'page.waitForResponse',
+    params: { info: [Object] },
+    group: undefined,
+    stepId: 'pw:api@61',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@61',
+      _title: 'Wait for event "response"',
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1771488147919,
+    error: {
+      message: 'TimeoutError: page.waitForResponse: Timeout 10000ms exceeded while waiting for event "response"',
+      stack: 'TimeoutError: page.waitForResponse: Timeout 10000ms exceeded while waiting for event "response"\n' +
+        '    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:118:23)\n' +
+        '    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:152:9)\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/authentication/sign-in.spec.ts:110:3',
+      cause: undefined
+    }
+  }
+}
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/currencies due to access control checks.
+TimeoutError: locator.clear: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Email' })
+
+    at SignIn.fill (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:52:27)
+    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:158:20)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/authentication/sign-in.spec.ts:110:3
