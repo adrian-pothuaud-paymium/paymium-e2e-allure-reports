@@ -1,0 +1,210 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e51]
+      - generic [ref=e52]:
+        - navigation
+        - generic [ref=e53]:
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - generic [ref=e58]: Bienvenue Elmore
+              - generic [ref=e59]: Suivez, planifiez et gérez vos actifs.
+            - generic [ref=e61]:
+              - generic [ref=e62]:
+                - generic [ref=e63]:
+                  - img [ref=e65]
+                  - generic [ref=e68]: 2/4
+                - generic [ref=e69]:
+                  - generic [ref=e70]: Vérification de votre compte
+                  - generic [ref=e71]: Compléter votre profil
+              - generic [ref=e72]:
+                - generic [ref=e73]:
+                  - img [ref=e75]
+                  - generic [ref=e78]:
+                    - generic [ref=e79]: Vérification d'identité
+                    - generic [ref=e80]: Munissez vous d’une carte d’identité ou d’un passeport.
+                - generic [ref=e82]:
+                  - img [ref=e84]
+                  - generic [ref=e87]:
+                    - generic [ref=e88]: Identification de votre société
+                    - generic [ref=e89]: Statuts, K-BIS, et justificatif de domiciliation
+                - generic [ref=e92] [cursor=pointer]:
+                  - img [ref=e94]
+                  - generic [ref=e96]:
+                    - generic [ref=e97]: Données financières
+                    - generic [ref=e98]: RIB, justificatif d’activité
+                - generic [ref=e101] [cursor=pointer]:
+                  - img [ref=e103]
+                  - generic [ref=e105]:
+                    - generic [ref=e106]: Bénéficiaires effectifs
+                    - generic [ref=e107]: Pièces d’identité et justificatifs de domicile
+            - generic [ref=e109] [cursor=pointer]:
+              - generic [ref=e110]:
+                - generic [ref=e111]: Complétez votre profil investisseur
+                - generic [ref=e112]: Environ 2 min
+              - img [ref=e113]
+            - button
+            - button
+            - generic [ref=e116]:
+              - generic [ref=e117]:
+                - generic [ref=e118]: Votre portefeuille est vide
+                - generic [ref=e119]: Vous n'avez pas encore d'argent ou de crypto sur votre compte. Commencez par ajouter des fonds ou acheter vos premiers actifs.
+              - generic [ref=e120]:
+                - button "Commencer à acheter" [ref=e121] [cursor=pointer]:
+                  - img [ref=e122]
+                  - generic [ref=e123]: Commencer à acheter
+                - button "Déposer" [ref=e124] [cursor=pointer]:
+                  - img [ref=e125]
+                  - generic [ref=e128]: Déposer
+            - generic [ref=e129]: Le marché
+            - list [ref=e130]:
+              - listitem [ref=e131] [cursor=pointer]:
+                - generic [ref=e132]:
+                  - img [ref=e133]
+                  - generic [ref=e137]:
+                    - generic [ref=e138]: Bitcoin
+                    - generic [ref=e139]: BTC
+                - generic [ref=e140]:
+                  - generic [ref=e142]: 99 700,00 €
+                  - generic [ref=e145]:
+                    - img [ref=e146]
+                    - generic [ref=e148]: 0,6 %
+              - separator [ref=e149]
+              - listitem [ref=e150] [cursor=pointer]:
+                - generic [ref=e151]:
+                  - img [ref=e152]
+                  - generic [ref=e162]:
+                    - generic [ref=e163]: Ethereum
+                    - generic [ref=e164]: ETH
+                - generic [ref=e165]:
+                  - generic [ref=e167]: 1 680,83 €
+                  - generic [ref=e170]:
+                    - img [ref=e171]
+                    - generic [ref=e173]: 0,2 %
+              - separator [ref=e174]
+              - listitem [ref=e175] [cursor=pointer]:
+                - generic [ref=e176]:
+                  - img [ref=e177]
+                  - generic [ref=e181]:
+                    - generic [ref=e182]: USDC
+                    - generic [ref=e183]: USDC
+                - generic [ref=e184]:
+                  - generic [ref=e186]: 0,84 €
+                  - generic [ref=e189]:
+                    - img [ref=e190]
+                    - generic [ref=e192]: 0,28 %
+              - separator [ref=e193]
+              - listitem [ref=e194] [cursor=pointer]:
+                - generic [ref=e195]:
+                  - img [ref=e196]
+                  - generic [ref=e201]:
+                    - generic [ref=e202]: Euro CoinVertible
+                    - generic [ref=e203]: EURCV
+                - generic [ref=e204]:
+                  - generic [ref=e206]: 1,00 €
+                  - generic [ref=e208]: "-"
+              - separator [ref=e209]
+              - listitem [ref=e210] [cursor=pointer]:
+                - generic [ref=e211]:
+                  - img [ref=e212]
+                  - generic [ref=e216]:
+                    - generic [ref=e217]: Litecoin
+                    - generic [ref=e218]: LTC
+                - generic [ref=e219]:
+                  - generic [ref=e221]: 45,23 €
+                  - generic [ref=e224]:
+                    - img [ref=e225]
+                    - generic [ref=e227]: 0,64 %
+              - separator [ref=e228]
+              - listitem [ref=e229] [cursor=pointer]:
+                - generic [ref=e230]:
+                  - img [ref=e231]
+                  - generic [ref=e235]:
+                    - generic [ref=e236]: Bitcoin Cash
+                    - generic [ref=e237]: BCH
+                - generic [ref=e238]:
+                  - generic [ref=e240]: 476,53 €
+                  - generic [ref=e243]:
+                    - img [ref=e244]
+                    - generic [ref=e246]: 0,18 %
+              - separator [ref=e247]
+              - listitem [ref=e248] [cursor=pointer]:
+                - generic [ref=e249]:
+                  - img [ref=e250]
+                  - generic [ref=e258]:
+                    - generic [ref=e259]: Ethereum Classic
+                    - generic [ref=e260]: ETC
+                - generic [ref=e261]:
+                  - generic [ref=e263]: 7,16 €
+                  - generic [ref=e266]:
+                    - img [ref=e267]
+                    - generic [ref=e269]: 1,21 %
+              - separator [ref=e270]
+              - listitem [ref=e271] [cursor=pointer]:
+                - generic [ref=e272]:
+                  - img [ref=e273]
+                  - generic [ref=e277]:
+                    - generic [ref=e278]: Basic Attention Token
+                    - generic [ref=e279]: BAT
+                - generic [ref=e280]:
+                  - generic [ref=e282]: 0,10 €
+                  - generic [ref=e285]:
+                    - img [ref=e286]
+                    - generic [ref=e288]: 2,26 %
+              - separator [ref=e289]
+              - listitem [ref=e290] [cursor=pointer]:
+                - generic [ref=e291]:
+                  - img [ref=e292]
+                  - generic [ref=e296]:
+                    - generic [ref=e297]: Bcio
+                    - generic [ref=e298]: BCIO
+                - generic [ref=e299]:
+                  - generic [ref=e301]: 0,03 €
+                  - generic [ref=e303]: "-"
+          - contentinfo [ref=e304]:
+            - generic [ref=e305]:
+              - generic [ref=e306]: Copyright © 2026
+              - link "Paymium" [ref=e308]:
+                - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+              - generic [ref=e309]: 6.15.0
+              - link "Statut" [ref=e311]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e313]:
+                - /url: ""
+  - dialog [ref=e315]:
+    - generic [ref=e329]:
+      - generic [ref=e330]:
+        - generic [ref=e331]:
+          - img [ref=e333]
+          - generic [ref=e336]:
+            - generic [ref=e337]: Vérification de votre identité
+            - generic [ref=e338]: "Durée : 2 minutes"
+        - generic [ref=e339]:
+          - generic [ref=e343]: Munissez-vous de votre passeport, carte nationale d'identité ou titre de séjour en cours de validité. Veuillez vous assurer que vos noms et prénoms soient corrects.
+          - generic [ref=e347]: La vérification d'identité est effectuée sur votre téléphone via notre partenaire IDNow. Scannez le QR code ci-dessous avec votre appareil photo et laissez-vous guider.
+          - generic [ref=e351]: Une fois votre identité vérifiée, vous serez invité à procéder à une signature électronique.
+        - generic [ref=e353]:
+          - img [ref=e355]
+          - generic [ref=e358]:
+            - generic [ref=e359]:
+              - generic [ref=e360]: Nom
+              - generic [ref=e361]: Schroeder
+            - generic [ref=e362]:
+              - generic [ref=e363]: Prénom
+              - generic [ref=e364]: Elmore
+          - button [ref=e365] [cursor=pointer]:
+            - img [ref=e366]
+      - alert [ref=e371]:
+        - img [ref=e373]
+        - generic [ref=e376]: Votre vérification d'identité a été validée. Votre compte sera approuvé par nos équipes prochainement.
+```
