@@ -1,0 +1,7 @@
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Rester sur le navigateur' }) to be visible
+
+    at DiscoverMobileApp.waitForLocators (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:29:22)
+    at DiscoverMobileApp.waitForScreen (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/DiscoverMobileApp.ts:15:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/authentication/reset-password.spec.ts:22:27

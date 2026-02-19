@@ -1,0 +1,8 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('responsiveMenuTrigger')
+
+    at ResponsiveMenu.open (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/ResponsiveMenu.ts:47:24)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/investment/dca.spec.ts:29:48
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/investment/dca.spec.ts:27:3

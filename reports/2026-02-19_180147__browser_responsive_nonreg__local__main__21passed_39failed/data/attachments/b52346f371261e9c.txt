@@ -1,0 +1,12 @@
+POST /users failed Request failed with status code 429
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('dialog').getByText('Créer un nouveau ticket') to be visible
+
+    at SupportTicketFormSheet.waitForLocators (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:29:22)
+    at SupportTicketFormSheet.waitForBaseSheet (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BaseSheet.ts:11:17)
+    at SupportTicketFormSheet.waitForSheet (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/help/tickets/SupportTicketFormSheet.ts:25:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:51:46
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:49:3

@@ -1,0 +1,8 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: /Ordre limite|Ordre au marché/ }).first()
+
+    at ContentSelect.select (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/ContentSelect.ts:22:24)
+    at TradeForm.switchTo (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/trade/BTC/EUR/TradeForm.ts:57:29)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/trading/expert-mode.spec.ts:43:45
