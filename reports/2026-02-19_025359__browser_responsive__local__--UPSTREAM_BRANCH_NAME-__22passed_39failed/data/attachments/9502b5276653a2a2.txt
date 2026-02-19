@@ -1,3 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] Unhandled Promise Rejection: AxiosError: Network Error
-[pageerror] SyntaxError: Unexpected token '<'

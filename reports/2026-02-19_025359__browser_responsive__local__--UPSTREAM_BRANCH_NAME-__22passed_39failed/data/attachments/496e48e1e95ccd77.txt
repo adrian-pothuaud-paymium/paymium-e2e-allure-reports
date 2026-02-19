@@ -1,4 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-Submit button was not activated within 10 seconds
-[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user/user_balance_histories?period=month due to access control checks.
-[pageerror] SyntaxError: Unexpected token '<'
