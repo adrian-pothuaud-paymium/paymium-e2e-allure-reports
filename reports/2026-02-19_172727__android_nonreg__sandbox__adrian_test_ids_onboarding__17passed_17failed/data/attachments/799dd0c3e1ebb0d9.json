@@ -1,0 +1,4 @@
+{
+  "using": "-android uiautomator",
+  "value": "new UiSelector().textMatches(\"Confirmer le code PIN|Re-enter your PIN|Saisissez de nouveau votre code\")"
+}

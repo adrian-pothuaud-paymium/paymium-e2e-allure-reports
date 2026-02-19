@@ -1,0 +1,4 @@
+{
+  "using": "-android uiautomator",
+  "value": "new UiSelector().textContains(\"Votre ordre a été créé avec succès et votre compte sera crédité dans quelques secondes.\")"
+}

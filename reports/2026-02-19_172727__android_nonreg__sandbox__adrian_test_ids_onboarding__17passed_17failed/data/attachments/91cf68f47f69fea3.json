@@ -1,0 +1,4 @@
+{
+  "using": "-android uiautomator",
+  "value": "new UiSelector().textContains(\"Le montant doit être supérieur à 0\")"
+}

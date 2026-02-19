@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.view.ViewGroup[@content-desc=\"Achat récurrent, Épargnez sereinement en programmant vos achats\"]"
+}

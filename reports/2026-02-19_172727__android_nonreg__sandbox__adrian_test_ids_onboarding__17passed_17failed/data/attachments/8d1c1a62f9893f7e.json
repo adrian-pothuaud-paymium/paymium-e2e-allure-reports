@@ -1,0 +1,4 @@
+{
+  "using": "-android uiautomator",
+  "value": "new UiSelector().resourceId(\"com.android.settings:id/show_all\")"
+}

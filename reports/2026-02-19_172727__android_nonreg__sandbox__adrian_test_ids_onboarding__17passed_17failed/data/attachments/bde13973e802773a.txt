@@ -1,0 +1,110 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] L'Utilisateur peut changer sont mot de passe depuis son Profil
+
+
+Test Step: To Change Password screen
+|-- Shortcuts.waitForSessionRestartAppAndAuthenticate(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:26
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+    |-- Shortcuts.restartApp()
+        |-- Shortcuts.waitForSession()
+            |-- Appium session is ready.
+    |-- Shortcuts.openAppAndGoToSignIn()
+        |-- AxeptioCookies.waitForSheet(20000)
+            |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+                |-- Élément trouvé: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+        |-- AxeptioCookies.acceptCookies()
+            |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                |-- Clic sur le premier élément existant parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+                |-- Élément existant trouvé: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+        |-- UpdateScreen.waitForScreen(20000)
+        |-- AxeptioCookies.waitForSheet(20000)
+            |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+                |-- Élément non affiché: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+                |-- Élément non affiché: //android.widget.Button[@text="Accepter les cookies"]
+        |-- WelcomeScreen.waitForScreen(20000)
+        |-- WelcomeScreen.goTo(sign-in)
+        |-- SignIn.waitForScreen(20000)
+    |-- Shortcuts.authenticate(********)
+        |-- SignIn.fillEmail(adrian.pothuaud+auto.1771512306438@paymium.com)
+        |-- SignIn.fillPassword(********)
+        |-- SignIn.submit()
+        |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired(********)
+            |-- CreatePinCode.waitForScreen(20000)
+            |-- CreatePinCode.create()
+            |-- CreateAccessCode.waitForScreen(20000)
+            |-- CreateAccessCode.fillCode(********)
+            |-- ConfirmPinCode.waitForScreen(20000)
+            |-- ConfirmPinCode.fillCode(********)
+            |-- EnableBiometrics.waitForScreen(20000)
+        |-- DashboardScreen.waitForScreen()
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:28
+|-- MyAccount.goToProfile() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:29
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:30
+|-- Profile.goToAccountSecurity() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:31
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:32
+|-- ProfileSecurity.goToChangePassword() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:33
+|-- ChangePassword.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:34
+
+
+Test Step: Etat initial du formulaire
+
+
+Test Step: Validation des erreurs de formulaire
+|-- ChangePassword.fillActualPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:43
+|-- ChangePassword.fillNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:44
+|-- ChangePassword.fillConfirmNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:45
+|-- ChangePassword.fillActualPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:48
+|-- ChangePassword.fillNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:49
+|-- ChangePassword.fillConfirmNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:50
+|-- ChangePassword.fillActualPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:53
+|-- ChangePassword.fillNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:54
+|-- ChangePassword.fillConfirmNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:55
+|-- ChangePassword.fillActualPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:78
+|-- ChangePassword.fillNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:79
+|-- ChangePassword.fillConfirmNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:80
+|-- Assert.text(Les mots de passe doivent correspondre) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:81
+
+
+Test Step: Mauvais mot de passe actuel
+|-- ChangePassword.fillActualPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:85
+|-- ChangePassword.fillNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:86
+|-- ChangePassword.fillConfirmNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:87
+|-- ChangePassword.confirmChange() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:88
+|-- Assert.text(La validation a échoué) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:89
+|-- ChangePassword.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:90
+
+
+Test Step: Changement de mot de passe réussi
+|-- ChangePassword.fillActualPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:93
+|-- ChangePassword.fillNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:94
+|-- ChangePassword.fillConfirmNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:95
+|-- ChangePassword.confirmChange() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:96
+|-- SignIn.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:97
+
+
+Test Step: Connexion avec l'ancien mot de passe
+|-- SignIn.fillEmail(adrian.pothuaud+auto.1771512306438@paymium.com) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:100
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:101
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:102
+|-- Assert.text(Identifiant et/ou mot de passe invalides) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:103
+
+
+Test Step: Connexion avec le nouveau mot de passe
+|-- SignIn.fillEmail(adrian.pothuaud+auto.1771512306438@paymium.com) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:106
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:107
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:108
+|-- Shortcuts.handleAccessCodeAndBiometricsIfRequired() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:109
+    |-- CreatePinCode.waitForScreen(20000)
+    |-- CreatePinCode.create()
+    |-- CreateAccessCode.waitForScreen(20000)
+    |-- CreateAccessCode.fillCode(********)
+    |-- ConfirmPinCode.waitForScreen(20000)
+    |-- ConfirmPinCode.fillCode(********)
+    |-- EnableBiometrics.waitForScreen(20000)
+|-- DashboardScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password.spec.ts:110

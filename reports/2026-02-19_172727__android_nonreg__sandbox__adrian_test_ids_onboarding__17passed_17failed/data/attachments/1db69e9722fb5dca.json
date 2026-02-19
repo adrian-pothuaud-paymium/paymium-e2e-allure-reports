@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.widget.TextView[@text=\"Votre ordre a été créé avec succès et votre compte sera crédité dans quelques secondes.\"]"
+}

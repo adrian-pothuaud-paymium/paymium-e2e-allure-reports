@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.widget.TextView[@resource-id=\"android:id/summary\" and @text=\"Appuyer pour configurer une empreinte digitale\"]"
+}

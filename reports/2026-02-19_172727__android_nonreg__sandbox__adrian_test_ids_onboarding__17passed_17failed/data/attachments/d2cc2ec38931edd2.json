@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.view.ViewGroup[@content-desc=\"Mode expert, Échangez sur le marché comme un professionnel\"]"
+}

@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.widget.TextView[@resource-id=\"questionLabel\" and @text=\"Le montant que vous souhaitez investir provient majoritairement de...\"]"
+}

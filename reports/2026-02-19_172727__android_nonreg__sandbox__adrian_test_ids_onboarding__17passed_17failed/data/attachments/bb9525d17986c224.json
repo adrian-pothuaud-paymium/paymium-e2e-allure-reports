@@ -1,0 +1,4 @@
+{
+  "using": "-android uiautomator",
+  "value": "new UiSelector().text(\"Créer un plan d'achat\")"
+}

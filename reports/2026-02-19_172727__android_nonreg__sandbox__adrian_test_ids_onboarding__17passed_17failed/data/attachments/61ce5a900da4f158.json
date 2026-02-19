@@ -1,0 +1,16 @@
+{
+  "script": "<script> [13 bytes]",
+  "args": [
+    {
+      "command": "am",
+      "args": [
+        "start",
+        "-W",
+        "-a",
+        "android.intent.action.VIEW",
+        "-d",
+        "https://account.sandbox-paymium.com/page/reset-password/eHy6K3buZpARzyGzGpGD"
+      ]
+    }
+  ]
+}
