@@ -1,0 +1,119 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e51]
+      - generic [ref=e52]:
+        - navigation
+        - generic [ref=e53]:
+          - generic [ref=e55]:
+            - generic [ref=e57]: Achat récurrent
+            - generic [ref=e58]:
+              - generic [ref=e59]:
+                - generic [ref=e60]:
+                  - img [ref=e62]
+                  - generic [ref=e64]: Créez votre plan d'achat
+                - generic [ref=e65]:
+                  - generic [ref=e69]: Sélectionnez la cryptomonnaie de votre choix.
+                  - generic [ref=e73]: Entrez le montant (min 5€) et la fréquence d'achat. Une fois activé, vos prochains dépôts euro seront automatiquement crédités sur votre compte de trading.
+                  - generic [ref=e77]: Annulez ou mettez en pause le plan d'achat à tout moment.
+              - button "Créer un plan d'achat" [ref=e79] [cursor=pointer]:
+                - generic [ref=e80]: Créer un plan d'achat
+            - generic [ref=e83]:
+              - button "Bitcoin (1)" [ref=e84] [cursor=pointer]:
+                - generic [ref=e85]:
+                  - generic [ref=e86]:
+                    - img [ref=e87]
+                    - generic [ref=e92]: Bitcoin
+                  - generic [ref=e93]: (1)
+                - img [ref=e96]
+              - generic:
+                - generic:
+                  - generic:
+                    - separator
+                    - button "paymiumXPlaywright__1771474373346_Updated Depuis 19/02/2026 Désactivé le 19/02/2026 En pause 5,00 € Hebdomadaire":
+                      - generic [ref=e98] [cursor=pointer]:
+                        - generic:
+                          - generic:
+                            - img [ref=e100]
+                            - generic:
+                              - generic: paymiumXPlaywright__1771474373346_Updated
+                              - generic:
+                                - generic [ref=e105]: Depuis
+                                - generic [ref=e106]: 19/02/2026
+                              - generic:
+                                - generic [ref=e107]: Désactivé le
+                                - generic [ref=e108]: 19/02/2026
+                          - generic:
+                            - generic [ref=e110]: En pause
+                            - generic [ref=e111]:
+                              - generic [ref=e112]: 5,00 €
+                              - generic [ref=e113]: Hebdomadaire
+          - contentinfo [ref=e114]:
+            - generic [ref=e115]:
+              - generic [ref=e116]: Copyright © 2026
+              - link "Paymium" [ref=e118]:
+                - /url: https://sandbox-paymium.webflow.io/
+              - generic [ref=e119]: 6.14.1
+              - link "Statut" [ref=e121]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e123]:
+                - /url: ""
+  - dialog [ref=e125]:
+    - form [ref=e134]:
+      - generic [ref=e138]: Créer un plan d'achat
+      - generic [ref=e142]:
+        - generic [ref=e144]:
+          - generic [ref=e146]: Libellé
+          - textbox "Libellé" [ref=e148]: paymiumXPlaywright__1771474426450
+        - button "Devise" [ref=e149] [cursor=pointer]:
+          - generic [ref=e151]:
+            - generic [ref=e153]: Devise
+            - button "Devise" [ref=e155]:
+              - textbox [ref=e157]: BTC
+              - generic [ref=e159]:
+                - img [ref=e160]
+                - generic [ref=e165]: Bitcoin
+              - img [ref=e166]
+        - generic [ref=e168]:
+          - generic [ref=e169]:
+            - generic [ref=e170]: Montant en €
+            - generic [ref=e171]: Solde
+            - generic [ref=e172]: 452,69 €
+          - button "000000100" [ref=e173] [cursor=pointer]:
+            - textbox "Montant en €" [active] [ref=e177]: "000000100"
+        - button "Fréquence" [ref=e178] [cursor=pointer]:
+          - generic [ref=e180]:
+            - generic [ref=e182]: Fréquence
+            - button "Hebdomadaire" [ref=e184]:
+              - textbox [ref=e186]: weekly
+              - generic [ref=e188]: Hebdomadaire
+              - img [ref=e189]
+        - generic [ref=e191]:
+          - generic [ref=e192]: À partir de quand
+          - generic [ref=e195] [cursor=pointer]:
+            - generic [ref=e196]:
+              - textbox "dd" [ref=e197]: "19"
+              - generic [ref=e198]: /
+              - textbox "mm" [ref=e199]: "02"
+              - generic [ref=e200]: /
+              - textbox "yyyy" [ref=e201]: "2026"
+            - img [ref=e203]
+        - generic [ref=e206]:
+          - generic [ref=e208]: Transférer ces achats automatiquement vers (optionnel)
+          - button "Transférer ces achats automatiquement vers (optionnel)" [ref=e210] [cursor=pointer]:
+            - textbox [ref=e212]: undefined
+            - img [ref=e213]
+        - button "Vue d'ensemble" [ref=e215] [cursor=pointer]:
+          - img [ref=e216]
+          - generic [ref=e219]: Vue d'ensemble
+```

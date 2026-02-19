@@ -1,0 +1,13 @@
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByText('Montant trop élevé')
+Expected: visible
+Timeout: 10000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 10000ms
+  - waiting for getByText('Montant trop élevé')
+
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/investment/dca.spec.ts:59:56
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/investment/dca.spec.ts:57:3
