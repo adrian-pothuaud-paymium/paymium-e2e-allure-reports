@@ -1,0 +1,15 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /^(.*)\/dashboard$/
+Received string:  "http://paymium.local:3000/sign-up/email-sent?email=adrian.pothuaud%2Bauto.1771472585755%40paymium.com"
+Timeout: 20000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 20000ms
+    24 × unexpected value "http://paymium.local:3000/sign-up/email-sent?email=adrian.pothuaud%2Bauto.1771472585755%40paymium.com"
+
+    at Dashboard.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/BasePage.ts:16:29)
+    at Dashboard.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/AccountPage.ts:35:17)
+    at Dashboard.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/dashboard/index.ts:28:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/onboarding/complete-flows.spec.ts:222:31
