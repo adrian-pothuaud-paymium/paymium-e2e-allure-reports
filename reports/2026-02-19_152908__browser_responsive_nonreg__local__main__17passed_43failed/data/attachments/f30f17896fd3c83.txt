@@ -1,0 +1,29 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('listitem').filter({ hasText: 'Acheter / Vendre' })
+    - locator resolved to <li href="/swap" tabindex="0" role="listitem" class="css-g5y9jx r-1loqt21 r-1otgn73 border-style-[solid] border-width-[0px] align-items-[center] background-color-[rgba(0,-0,-0,-0)] display-[flex] flex-basis-[auto] flex-direction-[row] flex-shrink-[0] list-style-[none] margin-top-[0px] margin-bottom-[0px] margin-left-[0px] margin-right-[0px] min-height-[0px] min-width-[0px] padding-top-[var(--space-md)] padding-bottom-[var(--space-md)] padding-right-[var(--space-xl)] padding-left-[var(--space-xl)] …>…</li>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not stable
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not stable
+    - retrying click action
+      - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is not stable
+  16 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+    at ResponsiveMenu.goTo (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/ResponsiveMenu.ts:74:30)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:32:46
