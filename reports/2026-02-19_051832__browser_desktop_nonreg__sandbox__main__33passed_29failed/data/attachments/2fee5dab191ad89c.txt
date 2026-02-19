@@ -1,0 +1,15 @@
+Sign-up attempt 1 failed. Retrying...
+Sign-up attempt 2 failed. Retrying...
+Sign-up attempt 3 failed. Retrying...
+Sign-up attempt 4 failed. Retrying...
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#company_registration_date')
+    - locator resolved to <div id="company_registration_date" class="   _fb-_md_10037 _ai-stretch _fs-1 _dsp-flex _fb-auto _bxs-border-box _pos-relative _mih-0px _miw-0px _fd-column _fg-0">…</div>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+
+    at DatePicker.open (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/DatePicker.ts:60:24)
+    at DatePicker.pickDate (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/DatePicker.ts:64:16)
+    at CompanyIdentificationInformationModal.pickRegistrationDate (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/dashboard/_components/CompanyIdentificationInformationModal.ts:24:46)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/onboarding/complete-flows.spec.ts:268:70
