@@ -1,5 +1,44 @@
 [
   {
+    "folder": "2026-02-19_025451__browser_responsive__local__--UPSTREAM_BRANCH_NAME-__23passed_38failed",
+    "timestamp": "2026-02-19_025451",
+    "environment": "local",
+    "branch": "${UPSTREAM_BRANCH_NAME}",
+    "job": "browser_responsive",
+    "total": 61,
+    "passed": 23,
+    "failed": 38,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37810",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/202986"
+  }
+,
+  {
+    "folder": "2026-02-19_025359__browser_responsive__local__--UPSTREAM_BRANCH_NAME-__22passed_39failed",
+    "timestamp": "2026-02-19_025359",
+    "environment": "local",
+    "branch": "${UPSTREAM_BRANCH_NAME}",
+    "job": "browser_responsive",
+    "total": 61,
+    "passed": 22,
+    "failed": 39,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37814",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/203021"
+  }
+,
+  {
+    "folder": "2026-02-19_024220__android_sanity__sandbox__adrian_test_ids_onboarding__0passed",
+    "timestamp": "2026-02-19_024220",
+    "environment": "sandbox",
+    "branch": "adrian_test_ids_onboarding",
+    "job": "android_sanity",
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37823",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/203060"
+  }
+,
+  {
     "folder": "2026-02-19_021842__browser_desktop__local__--UPSTREAM_BRANCH_NAME-__53passed_9failed",
     "timestamp": "2026-02-19_021842",
     "environment": "local",
