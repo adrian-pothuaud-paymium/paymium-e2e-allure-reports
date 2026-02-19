@@ -1,0 +1,125 @@
+Go to sign in
+GET /api/user request sent
+GET /api/user response received
+Response body: {
+  type: 'about:blank',
+  title: 'Unauthenticated',
+  status: 401,
+  detail: 'You must be logged in to access this page.',
+  instance: 'auth_failure_unauthenticated'
+}
+Go to sign up
+Fill email
+Fill password
+Fill email code
+Fill first and last name
+GET /api/user request sent
+GET /api/user response received
+Response body: {
+  name: 'SB-U02804992',
+  type: null,
+  civility: 'MR',
+  first_name: null,
+  last_name: null,
+  address: null,
+  city: null,
+  zip_code: null,
+  hosted_by_third_party: false,
+  email: 'adrian.pothuaud+auto.1771503060673@paymium.com',
+  citizenship_code: null,
+  country_code: null,
+  birth_date: null,
+  birth_place: null,
+  time_zone: null,
+  locale: 'fr',
+  state: 'unidentified',
+  meta_state: 'confirmed',
+  terms_of_service_accepted: true,
+  locked: false,
+  telephone: null,
+  created_at: '2026-02-19 12:17:11 UTC',
+  updated_at: '2026-02-19 12:18:05 UTC',
+  confirmed_at: '2026-02-19 12:18:05 UTC',
+  require_ga_otp: false,
+  require_yk_otp: false,
+  not_a_ppe: true,
+  subscribe_newsletter: false,
+  id: 247611,
+  daily_deposit_limit: 100000,
+  monthly_deposit_limit: 500000,
+  customer_knowledge_filled: false,
+  read_only: false,
+  has_hedge_fund_users: false,
+  beta_access: false,
+  using_pooled_fiat_account: null,
+  use_bcio_for_fees: true,
+  tin: null,
+  family_parent_id: null,
+  channel: '99d3248bcc9c35fff1e2454dacc001ce6ba60baf5632568a636420737088d3db',
+  btc_address: null,
+  yubikeys: [],
+  bank_account: null,
+  pending_bank_account: null,
+  phone_numbers: [],
+  remote_cash_account: null,
+  remote_cash_account_request: null
+}
+Fill address
+Fill phone
+Fill phone code
+Go to compliance
+Submit compliance last question
+Continue PPE
+Start KYC
+Go to dashboard
+GET /api/user request sent
+GET /api/user response received
+Response body: {
+  name: 'SB-U02804992',
+  type: null,
+  civility: 'MR',
+  first_name: 'Dorothy',
+  last_name: 'Kiehn',
+  address: 'Boulevard de Sébastopol',
+  city: 'Paris',
+  zip_code: '75001',
+  hosted_by_third_party: false,
+  email: 'adrian.pothuaud+auto.1771503060673@paymium.com',
+  citizenship_code: null,
+  country_code: 'FRA',
+  birth_date: null,
+  birth_place: null,
+  time_zone: null,
+  locale: 'fr',
+  state: 'unidentified',
+  meta_state: 'phone_approved',
+  terms_of_service_accepted: true,
+  locked: false,
+  telephone: '+33614882372',
+  created_at: '2026-02-19 12:17:11 UTC',
+  updated_at: '2026-02-19 12:18:21 UTC',
+  confirmed_at: '2026-02-19 12:18:05 UTC',
+  require_ga_otp: false,
+  require_yk_otp: false,
+  not_a_ppe: true,
+  subscribe_newsletter: false,
+  id: 247611,
+  daily_deposit_limit: 100000,
+  monthly_deposit_limit: 500000,
+  customer_knowledge_filled: true,
+  read_only: false,
+  has_hedge_fund_users: false,
+  beta_access: false,
+  using_pooled_fiat_account: false,
+  use_bcio_for_fees: true,
+  tin: null,
+  family_parent_id: null,
+  channel: '99d3248bcc9c35fff1e2454dacc001ce6ba60baf5632568a636420737088d3db',
+  btc_address: null,
+  yubikeys: [],
+  bank_account: null,
+  pending_bank_account: null,
+  phone_numbers: [ { telephone: '+33614882372', pin_tries: 1, state: 'approved' } ],
+  remote_cash_account: null,
+  remote_cash_account_request: null
+}
