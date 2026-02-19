@@ -1,0 +1,7 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('profile-menu-trade-link')
+
+    at ResponsiveMenu.goTo (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/ResponsiveMenu.ts:65:33)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/trading/expert-mode.spec.ts:21:46
