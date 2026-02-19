@@ -1,0 +1,10 @@
+TIMESTAMP=2026-02-19_062553
+ENVIRONMENT=sandbox
+BRANCH=adrian_test_ids_onboarding
+E2E_BRANCH=main
+JOB=android_nonreg
+TOTAL=1
+PASSED=0
+FAILED=1
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37832
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/203152
