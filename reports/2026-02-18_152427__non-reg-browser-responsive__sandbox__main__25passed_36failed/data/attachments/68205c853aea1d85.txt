@@ -1,3 +1,0 @@
-Waiting for 1 seconds before retrying...
-TOTP for 2FA activation: 4IZEZD4ZQKPFHUOOPAS3H57DJWDX2WTS
-

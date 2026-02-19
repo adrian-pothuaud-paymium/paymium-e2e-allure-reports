@@ -1,2 +1,0 @@
-Login attempt 1 failed
-Submit button was not activated within 10 seconds

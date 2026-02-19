@@ -1,2 +1,0 @@
-SyntaxError: Unexpected end of JSON input
-    at Page.<anonymous> (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/onboarding/complete-flows.spec.ts:31:28)

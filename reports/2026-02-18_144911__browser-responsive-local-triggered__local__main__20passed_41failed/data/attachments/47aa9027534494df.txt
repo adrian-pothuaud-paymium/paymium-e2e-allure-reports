@@ -1,8 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-TimeoutError: locator.click: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByRole('listitem').filter({ hasText: /USDC/ }).first()
-
-    at ContentSelect.select (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/ContentSelect.ts:45:25)
-    at Swap.selectFromCurrency (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/swap/index.ts:66:5)
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/trading/swap-cryptos.spec.ts:98:3

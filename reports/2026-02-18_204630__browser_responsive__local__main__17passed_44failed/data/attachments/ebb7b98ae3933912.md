@@ -1,6 +1,0 @@
-# Page snapshot
-
-```yaml
-- progressbar [ref=e9]:
-  - img [ref=e11]
-```

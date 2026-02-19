@@ -1,9 +1,0 @@
-TIMESTAMP=2026-02-18_160322
-ENVIRONMENT=sandbox
-BRANCH=main
-JOB=sanity-browser
-TOTAL=7
-PASSED=7
-FAILED=0
-PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/37784
-JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/202750
