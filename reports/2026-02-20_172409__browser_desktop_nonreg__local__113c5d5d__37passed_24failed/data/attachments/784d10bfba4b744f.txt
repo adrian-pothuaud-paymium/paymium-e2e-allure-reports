@@ -1,0 +1,16 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByRole('heading', { name: 'Prénom(s) et nom de famille.' })
+Expected: visible
+Timeout: 20000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 20000ms
+  - waiting for getByRole('heading', { name: 'Prénom(s) et nom de famille.' })
+
+    at Onboarding.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/BasePage.ts:21:30)
+    at Onboarding.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/AccountPage.ts:35:5)
+    at Onboarding.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/onboarding/index.ts:17:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/authentication/sign-in.spec.ts:159:3

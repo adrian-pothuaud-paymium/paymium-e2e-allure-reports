@@ -1,4 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-Error: navItem not implemented
-    at MainNavigation.goto (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/MainNavigation.ts:79:13)
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/trading/swap-cryptos.spec.ts:20:39

@@ -1,7 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-TimeoutError: locator.waitFor: Timeout 25000ms exceeded.
-Call log:
-  - waiting for getByRole('button', { name: 'Accepter les cookies' }) to be visible
-
-    at SignIn.acceptCookies (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:34:36)
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_setup/authAndCookies.setup.ts:131:31
