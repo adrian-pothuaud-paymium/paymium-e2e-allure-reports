@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@resource-id=\"content-select\"]//*[contains(@content-desc, \"Autres\")]"
+}

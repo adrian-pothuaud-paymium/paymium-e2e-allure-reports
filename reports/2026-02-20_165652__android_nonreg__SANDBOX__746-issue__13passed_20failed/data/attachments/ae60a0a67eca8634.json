@@ -1,0 +1,4 @@
+{
+  "using": "-android uiautomator",
+  "value": "new UiSelector().textContains(\"Identifiant et/ou mot de passe invalides\")"
+}

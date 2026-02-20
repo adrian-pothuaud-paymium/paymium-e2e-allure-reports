@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.view.ViewGroup[@resource-id=\"confirmByCodeContainer\"]//android.widget.EditText"
+}

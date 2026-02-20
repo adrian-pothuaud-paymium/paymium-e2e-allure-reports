@@ -1,0 +1,1 @@
+stale element reference: WebDriverError: The element 'By.xpath: //android.widget.Button[@content-desc="Continuer"]' is not linked to the same object in DOM anymore when running "element/00000000-0000-000e-ffff-ffff00000418/click" with method "POST"

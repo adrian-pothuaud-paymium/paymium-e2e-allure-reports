@@ -1,0 +1,8 @@
+{
+  "script": "<script> [13 bytes]",
+  "args": [
+    {
+      "command": "getprop ro.build.version.release"
+    }
+  ]
+}

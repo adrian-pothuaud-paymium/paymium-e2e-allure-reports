@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.view.ViewGroup[@resource-id=\"ContainerListAddress\"]//android.view.ViewGroup[@content-desc=\"Boulevard de Sébastopol, 75001 Paris, France\"]"
+}

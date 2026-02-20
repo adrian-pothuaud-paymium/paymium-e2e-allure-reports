@@ -1,0 +1,1 @@
+stale element reference: WebDriverError: androidx.test.uiautomator.StaleObjectException when running "element/00000000-0000-0012-ffff-ffff000011c2/click" with method "POST"

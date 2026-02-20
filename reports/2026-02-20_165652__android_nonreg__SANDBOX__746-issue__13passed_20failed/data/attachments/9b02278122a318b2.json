@@ -1,0 +1,4 @@
+{
+  "using": "-android uiautomator",
+  "value": "new UiSelector().resourceId(\"com.android.settings:id/title\").textMatches(\"(?i).*confirmer.*code.*pin.*|.*re-enter.*pin.*|.*saisissez.*code.*\")"
+}

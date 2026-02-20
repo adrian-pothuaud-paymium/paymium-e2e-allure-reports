@@ -1,0 +1,1 @@
+stale element reference: WebDriverError: Cached elements 'By.xpath: //android.widget.TextView[@text="Envoyer par email"]' do not exist in DOM anymore when running "element/00000000-0000-000e-ffff-ffff000004b3/name" with method "GET"

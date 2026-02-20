@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.widget.Button[@resource-id=\"internalTransfer.fromSelect\"]//android.widget.Button"
+}

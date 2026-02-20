@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.widget.Button[@resource-id=\"emailTransfer.currency\"]//android.widget.Button"
+}
