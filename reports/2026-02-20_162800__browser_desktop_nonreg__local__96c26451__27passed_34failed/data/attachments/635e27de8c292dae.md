@@ -1,0 +1,108 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e11] [cursor=pointer]:
+        - /url: https://www.paymium.com/
+        - img [ref=e13]
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - button "FR" [ref=e51] [cursor=pointer]:
+            - generic [ref=e52]: FR
+            - img [ref=e53]
+          - button [ref=e55] [cursor=pointer]:
+            - img [ref=e58]
+          - button [ref=e61] [cursor=pointer]:
+            - img [ref=e62]
+        - button "Se connecter" [active] [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]: Se connecter
+    - generic [ref=e67]:
+      - navigation
+      - generic [ref=e68]:
+        - generic [ref=e70]:
+          - generic [ref=e72]:
+            - generic [ref=e75]:
+              - img [ref=e76]
+              - generic [ref=e107]:
+                - generic [ref=e108]: Diversifiez votre patrimoine en achetant du bitcoin et d'autres crypto-monnaies.
+                - generic [ref=e109]: Bénéficiez d'une large gamme de services pour les particuliers et les professionnels.
+                - generic [ref=e110]: Achetez, vendez ou conservez vos crypto-monnaies.
+                - generic [ref=e111]: Acceptez les paiements en crypto ou diversifiez les investissements de votre entreprise.
+            - generic [ref=e112]:
+              - button [ref=e113] [cursor=pointer]
+              - button [ref=e114] [cursor=pointer]
+              - button [ref=e115] [cursor=pointer]
+          - form [ref=e117]:
+            - generic [ref=e122]:
+              - generic [ref=e123]:
+                - generic [ref=e124]:
+                  - generic [ref=e125]: S'inscrire
+                  - generic [ref=e126]: Type de compte
+                  - generic [ref=e127]:
+                    - radio "Particulier" [ref=e128] [cursor=pointer]:
+                      - generic [ref=e131]: Particulier
+                    - radio "Professionnel" [ref=e132] [cursor=pointer]:
+                      - generic [ref=e135]: Professionnel
+                - button "Vous avez un code de parrainage ?" [ref=e136] [cursor=pointer]:
+                  - generic [ref=e137]: Vous avez un code de parrainage ?
+              - button "S'inscrire" [disabled]:
+                - generic: S'inscrire
+              - generic [ref=e139]:
+                - generic [ref=e140]: Vous avez déjà un compte ?
+                - link "Se connecter" [ref=e141] [cursor=pointer]:
+                  - /url: /sign-in
+        - contentinfo [ref=e142]:
+          - generic [ref=e143]:
+            - generic [ref=e144]: Copyright © 2026
+            - link "Paymium" [ref=e146] [cursor=pointer]:
+              - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+            - generic [ref=e147]: 6.15.0
+            - link "Statut" [ref=e149] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e151] [cursor=pointer]:
+              - /url: ""
+  - generic:
+    - generic:
+      - generic:
+        - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e152]':
+          - generic [ref=e153]:
+            - generic [ref=e154]:
+              - button "Fermer le widget sans consentement" [ref=e155] [cursor=pointer]:
+                - generic [ref=e156]: Continuer sans accepter
+              - generic [ref=e158]:
+                - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e161]:
+                  - generic [ref=e162]: Des cookies pour
+                  - generic [ref=e163]: vos bitcoins !
+                - generic [ref=e164]:
+                  - paragraph [ref=e165]:
+                    - text: Parce que
+                    - strong [ref=e166]: stacker des sats ça donne faim
+                    - text: ", nous vous proposons une pause cookie ! 🍪"
+                  - paragraph [ref=e167]:
+                    - text: Avec votre accord, Paymium aimerait utiliser des
+                    - strong [ref=e168]: cookies
+                    - text: placés par nous et/ou par nos partenaires sur notre site.
+                  - paragraph [ref=e169]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+                  - paragraph [ref=e170]:
+                    - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                    - strong [ref=e171]: Vous choisissez ceux qui vous plaisent
+                    - text: ", comme pour le trading !"
+                  - paragraph [ref=e172]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+                - paragraph [ref=e174]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+              - button "Consentements certifiés par Axeptio" [ref=e177]:
+                - generic [ref=e178]: Consentements certifiés par
+                - img "Axeptio" [ref=e182]
+            - generic [ref=e186]:
+              - button "Je choisis les cookies à configurer" [ref=e187] [cursor=pointer]: Je choisis
+              - button "Accepter les cookies" [ref=e188] [cursor=pointer]: OK pour moi
+          - generic [ref=e189]:
+            - text: Axeptio consent
+            - checkbox [ref=e190]
+          - generic [ref=e191]:
+            - paragraph [ref=e192]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+            - paragraph [ref=e193]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+        - button "Fermer le widget sans consentement" [ref=e194] [cursor=pointer]:
+          - img [ref=e198]
+```
