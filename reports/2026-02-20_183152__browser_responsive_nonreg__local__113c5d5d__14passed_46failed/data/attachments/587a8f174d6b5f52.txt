@@ -1,0 +1,16 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected pattern: /^Portefeuille - Paymium$/
+Received string:  "Paymium"
+Timeout: 20000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 20000ms
+    24 × unexpected value "Paymium"
+
+    at Wallet.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:17:29)
+    at Wallet.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/AccountPage.ts:32:5)
+    at Wallet.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/wallet/index.ts:31:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:25:3

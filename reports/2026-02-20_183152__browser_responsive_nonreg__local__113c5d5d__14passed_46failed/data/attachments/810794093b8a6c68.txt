@@ -1,0 +1,9 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('listitem').filter({ hasText: /M./ }).first()
+
+    at ContentSelect.select (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/ContentSelect.ts:45:25)
+    at FamilyCreate.selectCivility (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/family/create/index.ts:75:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/investment/family-plan.spec.ts:57:3
