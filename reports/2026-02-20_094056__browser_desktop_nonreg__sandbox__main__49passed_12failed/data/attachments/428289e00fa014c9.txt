@@ -1,0 +1,7 @@
+TimeoutError: locator.waitFor: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('iframe[name="wp-cl-custom-html-iframe"]') to be visible
+    2 × locator resolved to hidden <iframe border="0" scrolling="no" frameborder="0" allow="payment" class="wp-cl-iframe" allowpaymentrequest="" allowtransparency="yes" title="Pages de paiement" id="wp-cl-custom-html-iframe" name="wp-cl-custom-html-iframe"></iframe>
+
+    at WorldPayCardFormFrame.waitForModal (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/swap/WorldPayCardFormFrame.ts:51:22)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/trading/buy-cryptos.spec.ts:176:43

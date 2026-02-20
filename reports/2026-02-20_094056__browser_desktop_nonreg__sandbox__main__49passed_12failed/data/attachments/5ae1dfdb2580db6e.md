@@ -1,0 +1,296 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic:
+    - generic:
+      - generic:
+        - link:
+          - /url: /dashboard
+          - generic:
+            - img
+        - generic:
+          - button:
+            - img
+          - button:
+            - generic: FR
+            - img
+          - button:
+            - generic:
+              - generic:
+                - img
+          - button:
+            - img
+          - button:
+            - img
+          - button:
+            - img
+      - generic:
+        - navigation:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - textbox:
+                    - /placeholder: Chercher
+            - generic:
+              - link:
+                - /url: /dashboard
+                - img
+                - generic: Tableau de bord
+              - link:
+                - /url: /wallet
+                - img
+                - generic: Portefeuille
+              - link:
+                - /url: /swap
+                - img
+                - generic: Achat / vente
+              - link:
+                - /url: /deposit/EUR
+                - img
+                - generic: Dépôt / retrait
+              - link:
+                - /url: /recurrent
+                - img
+                - generic: Achat récurrent
+              - link:
+                - /url: /trade/BTC/EUR
+                - img
+                - generic: Mode expert
+              - link:
+                - /url: /referral
+                - img
+                - generic: Parrainage
+              - link:
+                - /url: /family
+                - img
+                - generic: Plan Bitcoin Famille
+              - link:
+                - /url: /history
+                - img
+                - generic: Historique
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - form:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: De
+                          - generic:
+                            - generic:
+                              - button:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - textbox:
+                                        - /placeholder: "ex : 123.45"
+                                        - text: "25"
+                                      - generic:
+                                        - generic:
+                                          - button:
+                                            - generic: Max
+                            - button:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - button:
+                                      - generic:
+                                        - textbox: EUR
+                                      - generic:
+                                        - generic:
+                                          - img
+                                          - generic:
+                                            - generic: Euro
+                                      - img
+                        - generic:
+                          - generic:
+                            - generic: Payer avec
+                          - generic:
+                            - button:
+                              - generic:
+                                - generic:
+                                  - generic: Compte de trading
+                                  - generic: 35 772,48 €
+                                - generic:
+                                  - button:
+                                    - link: Approvisionner le compte
+                            - button:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic: Carte bancaire
+                                    - generic: 5555********4444
+                                    - generic:
+                                      - img
+                                      - img
+                                  - generic: Transaction sécurisée via Worldpay
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - button:
+                                            - link: Changer de carte
+                                - generic:
+                                  - img
+                      - button:
+                        - button:
+                          - img
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: À
+                              - generic: (estimation)
+                          - generic:
+                            - generic:
+                              - button:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - textbox:
+                                        - /placeholder: "ex : 123.45"
+                                        - text: "0.01437070"
+                            - button:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - button:
+                                      - generic:
+                                        - textbox: ETH
+                                      - generic:
+                                        - generic:
+                                          - img
+                                          - generic:
+                                            - generic: Ethereum
+                                      - img
+                          - generic:
+                            - generic: "Solde:"
+                            - generic: 2,60998229 ETH
+                      - generic:
+                        - button:
+                          - generic: Convertir
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: Récapitulatif
+                          - generic:
+                            - generic: "Acheter pour ce montant :"
+                            - generic:
+                              - generic: 0,01437070 ETH
+                          - generic:
+                            - generic: Prix
+                            - generic:
+                              - generic:
+                                - generic: 1 739,65
+                                - generic: € / ETH
+                          - generic:
+                            - generic: Montant
+                            - generic:
+                              - generic: 25,00 €
+          - contentinfo:
+            - generic:
+              - generic: Copyright © 2026
+              - generic:
+                - link:
+                  - /url: https://sandbox-paymium.webflow.io/
+                  - text: Paymium
+              - generic: 6.14.1
+              - generic:
+                - link:
+                  - /url: /status
+                  - text: Statut
+              - generic:
+                - link:
+                  - /url: ""
+                  - text: Gérer vos cookies
+  - dialog [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e11]:
+        - generic [ref=e13]: Paiement par carte
+        - button "Close" [ref=e14] [cursor=pointer]:
+          - img [ref=e15]
+      - generic [ref=e21]:
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e25]: Montant
+            - generic [ref=e26]: 25,00 €
+          - generic [ref=e27]:
+            - generic [ref=e28]: "Montant reçu estimé :"
+            - generic [ref=e29]: 0,01437070 ETH
+          - generic [ref=e30]:
+            - generic [ref=e31]: Prix
+            - generic [ref=e32]: 1 739,65 €
+        - generic [ref=e36]:
+          - generic [ref=e37]: Vous avez 09:59 pour compléter votre achat.
+          - iframe [active] [ref=e40]:
+            - main [ref=f3e3]:
+              - generic [ref=f3e4]: Mode test – Ceci n’est pas une transaction réelle.
+              - generic [ref=f3e5]:
+                - generic "Détails du paiement" [ref=f3e6]:
+                  - generic [ref=f3e8]:
+                    - img "VISA" [ref=f3e9]
+                    - img "Mastercard" [ref=f3e10]
+                    - img "Maestro" [ref=f3e11]
+                    - img "AMEX" [ref=f3e12]
+                    - img "Diners" [ref=f3e13]
+                    - img "JCB" [ref=f3e14]
+                  - generic [ref=f3e16]:
+                    - text: Détails du paiement
+                    - generic [ref=f3e17]:
+                      - emphasis [ref=f3e18]: "*"
+                      - generic [ref=f3e19]: Indique les champs obligatoires
+                  - generic [ref=f3e20]:
+                    - generic [ref=f3e21]:
+                      - paragraph [ref=f3e22]:
+                        - generic [ref=f3e23]:
+                          - text: Numéro de carte
+                          - emphasis [ref=f3e24]: "*"
+                          - text:  
+                        - textbox "Numéro de carte *" [active] [ref=f3e25]:
+                          - /placeholder: ""
+                      - paragraph [ref=f3e26]:
+                        - generic [ref=f3e27]:
+                          - text: Titulaire de la carte
+                          - emphasis [ref=f3e28]: "*"
+                          - text:  
+                        - textbox "Titulaire de la carte *" [ref=f3e29]:
+                          - /placeholder: ""
+                    - generic [ref=f3e30]:
+                      - group "Date d’expiration" [ref=f3e31]:
+                        - generic [ref=f3e32]: Date d’expiration
+                        - paragraph [ref=f3e33]:
+                          - generic [ref=f3e34]:
+                            - text: Date d’expiration
+                            - emphasis [ref=f3e35]: "*"
+                            - text:  
+                          - generic [ref=f3e36]: Mois
+                          - generic [ref=f3e37]: Année
+                          - generic [ref=f3e38]:
+                            - textbox "Date d’expiration *  " [ref=f3e39]:
+                              - /placeholder: MM
+                            - text: /
+                            - textbox "AA" [ref=f3e40]
+                      - paragraph [ref=f3e41]:
+                        - generic [ref=f3e42]: Code de sécurité  
+                        - generic [ref=f3e43]:
+                          - generic [ref=f3e44]:
+                            - textbox "Code de sécurité" [ref=f3e45]:
+                              - /placeholder: ""
+                            - img "Code de sécurité" [ref=f3e46]
+                          - generic [ref=f3e47]: 3 chiffres au dos de la carte ou 4 chiffres sur le devant de la carte
+                    - generic:
+                      - generic:  
+                    - generic [ref=f3e49]:
+                      - checkbox "Mémoriser les informations de paiement" [ref=f3e50]
+                      - text: Mémoriser les informations de paiement
+                    - generic [ref=f3e51]:
+                      - button "Effectuer le paiement" [disabled] [ref=f3e53]
+                      - button "Annuler" [ref=f3e54] [cursor=pointer]
+                - text:        
+```
