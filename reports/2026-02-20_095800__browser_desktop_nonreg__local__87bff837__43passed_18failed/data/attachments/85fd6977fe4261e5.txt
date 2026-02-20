@@ -1,0 +1,11 @@
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 502
+GET /users/confirmation failed Request failed with status code 502
+Attempt 1 to create test user failed: Request failed with status code 502
+POST /users failed Request failed with status code 502
+GET /users/confirmation failed Request failed with status code 502
+Attempt 2 to create test user failed: Request failed with status code 502
+POST /users failed Request failed with status code 502
+GET /users/confirmation failed Request failed with status code 502
+Attempt 3 to create test user failed: Request failed with status code 502
