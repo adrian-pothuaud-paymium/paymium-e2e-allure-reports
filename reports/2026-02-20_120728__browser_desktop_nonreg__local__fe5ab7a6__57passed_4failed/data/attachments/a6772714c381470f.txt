@@ -1,0 +1,7 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('button').filter({ hasText: /Compte de trading/ }) to be visible
+
+    at Swap.swap (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/swap/index.ts:138:40)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/trading/sell-cryptos.spec.ts:41:3
