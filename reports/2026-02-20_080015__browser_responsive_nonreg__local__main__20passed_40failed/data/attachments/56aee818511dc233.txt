@@ -1,0 +1,35 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#selectTo')
+    - locator resolved to <button tabindex="0" role="button" id="selectTo" type="button" class="css-g5y9jx r-1loqt21 r-1otgn73 color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] border-color-[var(--components--input-primary-default-border)] background-color-[var(--components--input-primary-default-background)] border-radius-[8px] padding-top-[var(--space-md)] padding-bottom-[var(--space-md)] padding-left-[var(--space-xl)] padding-right-[var(--space-xl)] justify-content-[space-between]…>…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is not stable
+  17 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+
+    at ContentSelect.select (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/ContentSelect.ts:22:24)
+    at Swap.selectToCurrency (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/swap/index.ts:145:33)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/trading/swap-cryptos.spec.ts:99:26

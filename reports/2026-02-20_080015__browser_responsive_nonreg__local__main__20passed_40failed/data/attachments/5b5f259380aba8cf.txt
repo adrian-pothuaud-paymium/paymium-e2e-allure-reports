@@ -1,0 +1,10 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] Unhandled Promise Rejection: AxiosError: Network Error
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('content-select').getByRole('listitem').first() to be visible
+
+    at ContentSelect.select (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/ContentSelect.ts:25:52)
+    at Swap.selectToCurrency (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/swap/index.ts:145:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/trading/buy-cryptos.spec.ts:156:3
