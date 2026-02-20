@@ -1,18 +1,22 @@
-# Prune old Allure reports (>10 days) to keep the repo lean.
+# Prune old Allure reports to keep the repo under GitHub Pages 10GB limit.
 # Keeps allure-history/ (trend data) and all non-report files intact.
-# Runs nightly + manual trigger. Squashes history to 1 commit after cleanup.
+# Runs every 6 hours + manual trigger. Squashes history to 1 commit after cleanup.
 name: Prune old reports
 
 on:
   schedule:
-    # Every day at 03:00 UTC
-    - cron: "0 3 * * *"
+    # Every 6 hours (midnight, 6am, noon, 6pm UTC)
+    - cron: "0 0,6,12,18 * * *"
   workflow_dispatch:
     inputs:
       retention_days:
         description: "Delete reports older than N days"
         required: false
-        default: "10"
+        default: "5"
+      max_reports_per_key:
+        description: "Max reports to keep per env+job combo"
+        required: false
+        default: "3"
       dry_run:
         description: "Dry run (only list, don't delete)"
         required: false
@@ -31,6 +35,9 @@ permissions:
 jobs:
   prune:
     runs-on: ubuntu-latest
+    outputs:
+      deleted: ${{ steps.prune.outputs.deleted }}
+      freed_mb: ${{ steps.prune.outputs.freed_mb }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -57,17 +64,20 @@ jobs:
         run: |
           set -e
 
-          RETENTION_DAYS="${{ github.event.inputs.retention_days || '10' }}"
+          RETENTION_DAYS="${{ github.event.inputs.retention_days || '5' }}"
+          MAX_PER_KEY="${{ github.event.inputs.max_reports_per_key || '3' }}"
           DRY_RUN="${{ github.event.inputs.dry_run || 'false' }}"
+          MAX_TOTAL_SIZE_MB=6000
           CUTOFF_DATE=$(date -u -d "-${RETENTION_DAYS} days" +"%Y-%m-%d" 2>/dev/null || date -u -v-${RETENTION_DAYS}d +"%Y-%m-%d")
 
           echo "Retention: ${RETENTION_DAYS} days"
-          echo "Cutoff date: ${CUTOFF_DATE} (reports before this will be deleted)"
+          echo "Max per key: ${MAX_PER_KEY}"
+          echo "Max total size: ${MAX_TOTAL_SIZE_MB}MB"
+          echo "Cutoff date: ${CUTOFF_DATE}"
           echo "Dry run: ${DRY_RUN}"
           echo ""
 
           DELETED=0
-          KEPT=0
           FREED_MB=0
 
           if [ ! -d "reports" ]; then
@@ -76,41 +86,90 @@ jobs:
             exit 0
           fi
 
+          # ── Pass 1: Age-based pruning ──────────────────────────────────
+          echo "=== Pass 1: Age-based pruning (older than ${CUTOFF_DATE}) ==="
           for report_dir in reports/*/; do
             [ -d "${report_dir}" ] || continue
             dir_name=$(basename "${report_dir}")
-
-            # Extract date from folder name (format: YYYY-MM-DD_HHMMSS__...)
             REPORT_DATE=$(echo "${dir_name}" | grep -oE '^[0-9]{4}-[0-9]{2}-[0-9]{2}' || true)
 
             if [ -z "${REPORT_DATE}" ]; then
               echo "  SKIP (no date): ${dir_name}"
-              KEPT=$((KEPT + 1))
               continue
             fi
 
             if [ "${REPORT_DATE}" \< "${CUTOFF_DATE}" ]; then
               SIZE_MB=$(du -sm "${report_dir}" 2>/dev/null | cut -f1)
               if [ "${DRY_RUN}" = "true" ]; then
-                echo "  [DRY RUN] Would delete: ${dir_name} (${SIZE_MB}MB, from ${REPORT_DATE})"
+                echo "  [DRY RUN] Would delete: ${dir_name} (${SIZE_MB}MB)"
               else
-                echo "  DELETE: ${dir_name} (${SIZE_MB}MB, from ${REPORT_DATE})"
+                echo "  DELETE: ${dir_name} (${SIZE_MB}MB)"
                 rm -rf "${report_dir}"
               fi
               DELETED=$((DELETED + 1))
               FREED_MB=$((FREED_MB + SIZE_MB))
-            else
-              echo "  KEEP: ${dir_name} (from ${REPORT_DATE})"
-              KEPT=$((KEPT + 1))
             fi
           done
+
+          # ── Pass 2: Per-key pruning (keep MAX_PER_KEY per env+job) ─────
+          echo ""
+          echo "=== Pass 2: Per-key pruning (max ${MAX_PER_KEY} per env+job) ==="
+          for key in $(ls -d reports/*/ 2>/dev/null | while read -r d; do
+            basename "$d" | awk -F'__' '{if(NF>=3) print $2"__"$3}'
+          done | sort -u); do
+            [ -z "${key}" ] && continue
+            MATCHING=$(ls -d reports/*/ 2>/dev/null | while read -r d; do
+              bn=$(basename "$d")
+              k=$(echo "$bn" | awk -F'__' '{if(NF>=3) print $2"__"$3}')
+              [ "$k" = "${key}" ] && echo "$d"
+            done | sort)
+            COUNT=$(echo "${MATCHING}" | grep -c . 2>/dev/null || echo 0)
+            if [ "${COUNT}" -gt "${MAX_PER_KEY}" ]; then
+              TO_REMOVE=$((COUNT - MAX_PER_KEY))
+              echo "  Key '${key}': ${COUNT} reports, removing ${TO_REMOVE} oldest"
+              echo "${MATCHING}" | head -n "${TO_REMOVE}" | while read -r old_dir; do
+                [ -d "${old_dir}" ] || continue
+                SIZE_MB=$(du -sm "${old_dir}" 2>/dev/null | cut -f1)
+                if [ "${DRY_RUN}" = "true" ]; then
+                  echo "    [DRY RUN] Would delete: $(basename "${old_dir}") (${SIZE_MB}MB)"
+                else
+                  echo "    DELETE: $(basename "${old_dir}") (${SIZE_MB}MB)"
+                  rm -rf "${old_dir}"
+                fi
+                DELETED=$((DELETED + 1))
+                FREED_MB=$((FREED_MB + SIZE_MB))
+              done
+            fi
+          done
+
+          # ── Pass 3: Global size cap (emergency: oldest first) ──────────
+          echo ""
+          echo "=== Pass 3: Global size cap (max ${MAX_TOTAL_SIZE_MB}MB) ==="
+          if [ "${DRY_RUN}" != "true" ]; then
+            CURRENT_SIZE_MB=$(du -sm reports/ 2>/dev/null | cut -f1)
+            echo "  Current size: ${CURRENT_SIZE_MB}MB"
+            if [ "${CURRENT_SIZE_MB:-0}" -gt "${MAX_TOTAL_SIZE_MB}" ]; then
+              echo "  Over budget — removing oldest reports..."
+              for old_dir in $(ls -dtr reports/*/ 2>/dev/null); do
+                [ -d "${old_dir}" ] || continue
+                CURRENT_SIZE_MB=$(du -sm reports/ 2>/dev/null | cut -f1)
+                [ "${CURRENT_SIZE_MB}" -le "${MAX_TOTAL_SIZE_MB}" ] && break
+                SIZE_MB=$(du -sm "${old_dir}" 2>/dev/null | cut -f1)
+                echo "    DELETE: $(basename "${old_dir}") (${SIZE_MB}MB)"
+                rm -rf "${old_dir}"
+                DELETED=$((DELETED + 1))
+                FREED_MB=$((FREED_MB + SIZE_MB))
+              done
+            else
+              echo "  Size OK (${CURRENT_SIZE_MB}MB <= ${MAX_TOTAL_SIZE_MB}MB)"
+            fi
+          fi
 
           echo ""
           echo "========================================"
           echo "  Pruning summary"
           echo "========================================"
           echo "  Deleted : ${DELETED} reports (~${FREED_MB}MB)"
-          echo "  Kept    : ${KEPT} reports"
           echo "  Cutoff  : ${CUTOFF_DATE}"
           echo "========================================"
 
@@ -162,11 +221,10 @@ jobs:
           FINAL_SIZE=$(du -sh . --exclude=.git 2>/dev/null | cut -f1 || du -sh . | cut -f1)
           echo "Repo content size after squash: ${FINAL_SIZE}"
 
-  # Re-deploy pages after prune (the push triggers deploy-pages.yml,
-  # but force-push might not — so we do it explicitly here)
+  # Re-deploy pages after prune (force-push doesn't trigger deploy-pages.yml)
   deploy-after-prune:
     needs: prune
-    if: needs.prune.outputs.deleted != '0' && github.event.inputs.dry_run != 'true'
+    if: ${{ needs.prune.outputs.deleted != '0' && github.event.inputs.dry_run != 'true' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
