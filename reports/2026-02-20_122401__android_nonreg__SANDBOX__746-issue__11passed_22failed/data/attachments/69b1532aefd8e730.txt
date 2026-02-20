@@ -1,0 +1,1 @@
+stale element reference: WebDriverError: The element 'By.xpath: //android.view.ViewGroup[@content-desc="Changer le mot de passe"]' does not exist in DOM anymore when running "element/00000000-0000-000e-ffff-ffff000008a3/click" with method "POST"

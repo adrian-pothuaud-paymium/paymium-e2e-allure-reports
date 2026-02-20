@@ -1,0 +1,39 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur peut activer et désactiver la biométrie avec succès
+|-- Shortcuts.prepareForBiometrics() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics.spec.ts:30
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+    |-- Shortcuts.setupPinCodeRetries()
+        |-- Shortcuts.setupPinCode()
+            |-- Shortcuts.waitForSession()
+                |-- Appium session is ready.
+            |-- Shortcuts.resetAndroidUiState()
+            |-- AndroidSettingsHomeScreen.open()
+            |-- AndroidSettingsHomeScreen.waitForScreen()
+        |-- Shortcuts.setupPinCode()
+            |-- Shortcuts.waitForSession()
+                |-- Appium session is ready.
+            |-- Shortcuts.resetAndroidUiState()
+            |-- AndroidSettingsHomeScreen.open()
+            |-- AndroidSettingsHomeScreen.waitForScreen()
+        |-- Shortcuts.setupPinCode()
+            |-- Shortcuts.waitForSession()
+                |-- Appium session is ready.
+            |-- Shortcuts.resetAndroidUiState()
+            |-- AndroidSettingsHomeScreen.open()
+            |-- AndroidSettingsHomeScreen.waitForScreen()
+        |-- Shortcuts.setupPinCode()
+            |-- Shortcuts.waitForSession()
+                |-- Appium session is ready.
+            |-- Shortcuts.resetAndroidUiState()
+            |-- AndroidSettingsHomeScreen.open()
+            |-- AndroidSettingsHomeScreen.waitForScreen()
+        |-- Shortcuts.setupPinCode()
+            |-- Shortcuts.waitForSession()
+                |-- Appium session is ready.
+            |-- Shortcuts.resetAndroidUiState()
+            |-- AndroidSettingsHomeScreen.open()
+            |-- AndroidSettingsHomeScreen.waitForScreen()

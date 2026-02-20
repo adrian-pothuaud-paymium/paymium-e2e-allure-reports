@@ -1,0 +1,1 @@
+stale element reference: WebDriverError: The element 'By.xpath: //android.widget.TextView[@text="Informations sur l'achat"]' is not linked to the same object in DOM anymore when running "element/00000000-0000-0014-ffff-ffff000006f3/name" with method "GET"

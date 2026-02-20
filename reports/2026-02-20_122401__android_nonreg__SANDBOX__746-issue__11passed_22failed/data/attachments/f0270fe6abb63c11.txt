@@ -1,0 +1,38 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] @sanity Un utilisateur peut naviguer vers les principales sections du site via la navigation mobile
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/navigation/bottom-tabs.spec.ts:21
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/navigation/bottom-tabs.spec.ts:22
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément non affiché: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+            |-- Élément non affiché: //android.widget.Button[@text="Accepter les cookies"]
+    |-- UpdateScreen.waitForScreen(20000)
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément non affiché: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+            |-- Élément non affiché: //android.widget.Button[@text="Accepter les cookies"]
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+|-- Shortcuts.authenticate() paymium-e2e-united/tests/wdio-android/tests/navigation/bottom-tabs.spec.ts:23
+    |-- SignIn.fillEmail(adrianpothuaud@gmail.com)
+    |-- SignIn.fillPassword(********)
+    |-- SignIn.submit()
+    |-- SignIn.waitFor2FA()
+    |-- SignIn.fill2FA(********)
+    |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired(********)
+        |-- CreatePinCode.waitForScreen(20000)
+        |-- CreatePinCode.create()
+        |-- CreateAccessCode.waitForScreen(20000)
+        |-- CreateAccessCode.fillCode(********)
+        |-- ConfirmPinCode.waitForScreen(20000)
+        |-- ConfirmPinCode.fillCode(********)
+        |-- EnableBiometrics.waitForScreen(20000)
+    |-- DashboardScreen.waitForScreen()

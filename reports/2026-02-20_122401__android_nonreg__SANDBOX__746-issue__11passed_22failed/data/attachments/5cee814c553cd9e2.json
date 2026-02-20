@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.widget.TextView[@text=\"Copiez l'adresse ou scannez le code QR à l'aide d'une application compatible.\"]"
+}

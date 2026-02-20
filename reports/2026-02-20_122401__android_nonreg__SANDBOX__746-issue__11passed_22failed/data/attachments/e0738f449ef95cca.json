@@ -1,0 +1,16 @@
+{
+  "script": "<script> [13 bytes]",
+  "args": [
+    {
+      "command": "am",
+      "args": [
+        "start",
+        "-a",
+        "android.settings.SETTINGS",
+        "-c",
+        "android.intent.category.DEFAULT",
+        "--activity-clear-top"
+      ]
+    }
+  ]
+}

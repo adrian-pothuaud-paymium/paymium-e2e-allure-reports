@@ -1,0 +1,56 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur peut acheter de l'USDC via le compte de trading avec succès
+
+
+Test Step: Open App and go to Sign In
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/trading/buy-USDC-trading-account.spec.ts:18
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/trading/buy-USDC-trading-account.spec.ts:19
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément trouvé: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+    |-- AxeptioCookies.acceptCookies()
+        |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+            |-- Clic sur le premier élément existant parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément existant trouvé: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+    |-- UpdateScreen.waitForScreen(20000)
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément non affiché: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+            |-- Élément non affiché: //android.widget.Button[@text="Accepter les cookies"]
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+
+
+Test Step: Sign in with test account
+|-- Shortcuts.authenticate() paymium-e2e-united/tests/wdio-android/tests/trading/buy-USDC-trading-account.spec.ts:22
+    |-- SignIn.fillEmail(adrianpothuaud@gmail.com)
+    |-- SignIn.fillPassword(********)
+    |-- SignIn.submit()
+    |-- SignIn.waitFor2FA()
+    |-- SignIn.fill2FA(********)
+    |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired(********)
+        |-- CreatePinCode.waitForScreen(20000)
+        |-- CreatePinCode.create()
+        |-- CreateAccessCode.waitForScreen(20000)
+        |-- CreateAccessCode.fillCode(********)
+        |-- ConfirmPinCode.waitForScreen(20000)
+        |-- ConfirmPinCode.fillCode(********)
+        |-- EnableBiometrics.waitForScreen(20000)
+    |-- DashboardScreen.waitForScreen()
+
+
+Test Step: Go to Buy screen
+|-- DashboardScreen.goToBuy() paymium-e2e-united/tests/wdio-android/tests/trading/buy-USDC-trading-account.spec.ts:25
+    |-- SwipeUtils.magicSwipe({"to":"//android.widget.Button[@content-desc=\"Acheter\"]"})
+        |-- [magicSwipe] Searching for element: //android.widget.Button[@content-desc="Acheter"]
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+|-- BuySell.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/trading/buy-USDC-trading-account.spec.ts:26

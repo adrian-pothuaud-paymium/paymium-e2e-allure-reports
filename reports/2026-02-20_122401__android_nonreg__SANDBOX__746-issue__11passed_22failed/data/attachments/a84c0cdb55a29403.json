@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.widget.TextView[@text=\"TOTP:\"]/following-sibling::android.view.ViewGroup/android.widget.TextView"
+}

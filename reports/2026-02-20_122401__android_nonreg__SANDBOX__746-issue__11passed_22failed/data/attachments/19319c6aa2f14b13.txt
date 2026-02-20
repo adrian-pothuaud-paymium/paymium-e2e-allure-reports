@@ -1,0 +1,47 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] @sanity Un utilisateur peut se connecter et se déconnecter - flow complet
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:29
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:30
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément non affiché: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+            |-- Élément non affiché: //android.widget.Button[@text="Accepter les cookies"]
+    |-- UpdateScreen.waitForScreen(20000)
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément non affiché: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+            |-- Élément non affiché: //android.widget.Button[@text="Accepter les cookies"]
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+|-- SignIn.goToResetPassword() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:33
+|-- ResetPassword.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:34
+|-- SignIn.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:36
+|-- SignIn.goToSignUp() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:39
+|-- SignUpAccountType.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:40
+|-- SignIn.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:42
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:49
+|-- SignIn.fillEmail(invalid-email) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:52
+|-- SignIn.fillEmail(invalid@email) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:54
+|-- SignIn.fillEmail(invalid.email) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:56
+|-- SignIn.fillCredentials(********, ********) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:60
+    |-- SignIn.fillEmail(blablablablablabla+unregistered@paymium.com)
+    |-- SignIn.fillPassword(********)
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:61
+|-- SignIn.fillCredentials(********, ********) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:66
+    |-- SignIn.fillEmail(adrian.pothuaud+auto.1771578781689@paymium.com)
+    |-- SignIn.fillPassword(********)
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:67
+|-- SignIn.fillCredentials(********, ********) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:72
+    |-- SignIn.fillEmail(adrianpothuaud@gmail.com)
+    |-- SignIn.fillPassword(********)
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:73
+|-- SignIn.waitFor2FA() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:74
+|-- SignIn.fill2FA(********) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in-out.spec.ts:76

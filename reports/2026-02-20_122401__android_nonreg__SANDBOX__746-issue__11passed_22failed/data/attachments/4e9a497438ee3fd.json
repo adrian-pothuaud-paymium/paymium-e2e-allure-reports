@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.widget.Button[@content-desc=\"Créer un plan d'achat\"]"
+}

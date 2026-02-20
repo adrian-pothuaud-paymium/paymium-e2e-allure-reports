@@ -1,0 +1,1 @@
+unknown error: WebDriverError: An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details when running "element" with method "POST"

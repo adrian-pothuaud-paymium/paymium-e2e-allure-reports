@@ -1,0 +1,4 @@
+{
+  "using": "-android uiautomator",
+  "value": "new UiSelector().textContains(\"Un mail vous a été envoyé\")"
+}
