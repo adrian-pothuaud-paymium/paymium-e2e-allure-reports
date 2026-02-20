@@ -1,0 +1,25 @@
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+POST /users failed Request failed with status code 429
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /^(.*)\/profile\/security$/
+Received string:  "http://paymium.local:3000/sign-in?redirect=%2Fprofile%2Fsecurity"
+Timeout: 20000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 20000ms
+    24 × unexpected value "http://paymium.local:3000/sign-in?redirect=%2Fprofile%2Fsecurity"
+
+    at ProfileSecurity.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/BasePage.ts:16:29)
+    at ProfileSecurity.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/AccountPage.ts:35:17)
+    at ProfileSecurity.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/profile/security.ts:30:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/account/change-password.spec.ts:83:40
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/account/change-password.spec.ts:70:3
