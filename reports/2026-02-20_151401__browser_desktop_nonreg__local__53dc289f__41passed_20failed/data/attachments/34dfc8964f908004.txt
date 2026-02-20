@@ -1,0 +1,12 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: locator.waitFor: Error: strict mode violation: getByRole('dialog') resolved to 2 elements:
+    1) <div id="1" role="dialog" class="css-g5y9jx" aria-labelledby="«r1»-title" aria-describedby="«r1»-description">…</div> aka locator('[id="1"]')
+    2) <div tabindex="-1" role="dialog" aria-modal="false" data-lenis-prevent="true" data-testid="widget-container" aria-labelledby="main-dialog-aria-label" class="sc-fHYyUA jFrSgS ax-widget-container" aria-describedby="main-dialog-aria-description">…</div> aka getByTestId('widget-container')
+
+Call log:
+  - waiting for getByRole('dialog') to be visible
+
+    at AreYouStillHereModal.waitForLocators (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/BasePage.ts:29:22)
+    at AreYouStillHereModal.waitForBaseModal (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/BaseModal.ts:15:5)
+    at AreYouStillHereModal.waitForModal (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/AreYouStillHereModal.ts:11:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/authentication/session-timeout.spec.ts:30:3
