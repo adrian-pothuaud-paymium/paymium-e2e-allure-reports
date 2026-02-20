@@ -1,0 +1,3 @@
+TypeError: _CurrenciesList.CurrenciesList is not a constructor
+    at Dashboard (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/dashboard/index.ts:27:27)
+    at Object.account (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_fixtures.ts:154:21)
