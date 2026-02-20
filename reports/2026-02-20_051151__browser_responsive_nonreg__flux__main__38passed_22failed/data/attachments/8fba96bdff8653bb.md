@@ -1,0 +1,139 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - button [ref=e49] [cursor=pointer]:
+        - img [ref=e51]
+    - generic [ref=e52]:
+      - navigation
+      - generic [ref=e53]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: Transfert
+          - generic [ref=e57]:
+            - tablist [ref=e59]:
+              - generic [ref=e60]:
+                - tab "Déposer" [ref=e62] [cursor=pointer]:
+                  - generic [ref=e63]: Déposer
+                - tab "Retirer" [selected] [ref=e64] [cursor=pointer]:
+                  - generic [ref=e65]: Retirer
+                - tab "Transfert interne" [ref=e66] [cursor=pointer]:
+                  - generic [ref=e67]: Transfert interne
+                - tab "Envoyer par email" [ref=e68] [cursor=pointer]:
+                  - generic [ref=e69]: Envoyer par email
+            - tabpanel "Retirer" [ref=e70]:
+              - form [ref=e73]:
+                - generic [ref=e74]:
+                  - generic [ref=e75]:
+                    - generic [ref=e76]: Retrait
+                    - generic [ref=e77]:
+                      - generic [ref=e79]:
+                        - generic [ref=e81]: Devise
+                        - button "Devise" [ref=e83] [cursor=pointer]:
+                          - textbox [ref=e85]: BTC
+                          - generic [ref=e87]:
+                            - img [ref=e88]
+                            - generic [ref=e93]: Bitcoin
+                          - img [ref=e94]
+                      - alert [ref=e96]:
+                        - generic [ref=e97]: Retirer uniquement des BTC vers des adresses du réseau Bitcoin. Les retraits vers des adresses générées sur d'autres réseaux pourraient entraîner la perte de vos fonds.
+                      - generic [ref=e98]:
+                        - button "Adresse de retrait" [ref=e99] [cursor=pointer]:
+                          - generic [ref=e101]:
+                            - generic [ref=e103]: Adresse de retrait
+                            - button "Adresse de retrait" [ref=e105]:
+                              - textbox [ref=e107]: undefined
+                              - img [ref=e110]
+                        - button "Gérer les adresses" [ref=e112] [cursor=pointer]
+                      - generic [ref=e114]:
+                        - generic [ref=e115]:
+                          - generic [ref=e116]: Montant du retrait
+                          - generic [ref=e117]:
+                            - generic [ref=e118]: Solde
+                            - generic [ref=e120]: 0,44466659 BTC
+                        - button "Max" [ref=e122] [cursor=pointer]:
+                          - generic [ref=e125]:
+                            - textbox "Montant du retrait Solde 0,44466659 BTC" [ref=e126]
+                            - button "Max" [ref=e130]:
+                              - generic [ref=e131]: Max
+                        - generic [ref=e132]:
+                          - button "25%" [ref=e133] [cursor=pointer]:
+                            - generic [ref=e134]: 25%
+                          - button "50%" [ref=e135] [cursor=pointer]:
+                            - generic [ref=e136]: 50%
+                          - button "75%" [ref=e137] [cursor=pointer]:
+                            - generic [ref=e138]: 75%
+                          - button "100%" [ref=e139] [cursor=pointer]:
+                            - generic [ref=e140]: 100%
+                      - button "Commentaire" [ref=e141] [cursor=pointer]:
+                        - generic [ref=e143]:
+                          - generic [ref=e145]: Commentaire
+                          - textbox "Commentaire" [ref=e147]
+                      - button "Retrait rapide Moins de 10 min. - payant" [ref=e151] [cursor=pointer]:
+                        - textbox [ref=e153]: "true"
+                        - generic [ref=e155]:
+                          - generic [ref=e156]: Retrait rapide
+                          - generic [ref=e157]: Moins de 10 min. - payant
+                        - img [ref=e158]
+                      - generic [ref=e160]:
+                        - generic [ref=e161]:
+                          - generic [ref=e162]: Retrait minimum
+                          - generic [ref=e163]: 0,00025000 BTC
+                        - generic [ref=e164]:
+                          - generic [ref=e165]: Frais
+                          - generic [ref=e166]: 0,00005000 BTC
+                      - button "Retirer" [disabled]:
+                        - generic: Retirer
+                  - generic [ref=e167]:
+                    - generic [ref=e168]:
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: Bitcoin disponible
+                        - generic [ref=e171]:
+                          - img [ref=e172]
+                          - generic [ref=e175]: BTC
+                      - generic [ref=e176]:
+                        - generic [ref=e177]: Montant total
+                        - generic [ref=e178]: 0,45456659 BTC
+                      - generic [ref=e179]:
+                        - generic [ref=e180]: Montant verrouillé
+                        - generic [ref=e181]: 0,00990000 BTC
+                      - separator [ref=e182]
+                      - generic [ref=e183]:
+                        - generic [ref=e184]: Disponible à retirer
+                        - generic [ref=e185]: 0,44466659 BTC
+                    - generic [ref=e186]:
+                      - generic [ref=e187]:
+                        - img [ref=e188]
+                        - generic [ref=e190]: Informations retrait BTC
+                        - button "Masquer" [ref=e191] [cursor=pointer]:
+                          - generic [ref=e192]: Masquer
+                      - list [ref=e196]:
+                        - generic [ref=e197]: "Les transferts de bitcoins sont traités exclusivement sur la blockchain Bitcoin. Pour effectuer votre transfert :"
+                        - listitem [ref=e198]:
+                          - generic [ref=e200]: "1"
+                          - generic [ref=e201]: Remplissez le formulaire.
+                        - listitem [ref=e202]:
+                          - generic [ref=e204]: "2"
+                          - generic [ref=e205]: Autorisez le transfert en renseignant le code à 6 chiffres qui vous sera envoyé à votre email.
+                        - listitem [ref=e206]:
+                          - generic [ref=e208]: "3"
+                          - generic [ref=e209]: Généralement, les transferts sont exécutés en quelques minutes. Au-delà de 24h, veuillez contacter notre service support client.
+                        - listitem [ref=e210]:
+                          - generic [ref=e211]: Dans certains cas, notre équipe peut vous demander des informations complémentaires par mesure de sécurité.
+        - contentinfo [ref=e212]:
+          - generic [ref=e213]:
+            - generic [ref=e214]: Copyright © 2026
+            - link "Paymium" [ref=e216]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e217]: 6.14.1
+            - link "Statut" [ref=e219]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e221]:
+              - /url: ""
+```

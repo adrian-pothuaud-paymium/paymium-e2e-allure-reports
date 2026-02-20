@@ -1,0 +1,15 @@
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByRole('textbox', { name: 'Montant Commentaire' })
+Expected: visible
+Timeout: 20000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 20000ms
+  - waiting for getByRole('textbox', { name: 'Montant Commentaire' })
+
+    at Transfer.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:21:30)
+    at Transfer.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/AccountPage.ts:32:5)
+    at Transfer.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/transfer/index.ts:24:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/transfers/internal-transfer.spec.ts:23:3
