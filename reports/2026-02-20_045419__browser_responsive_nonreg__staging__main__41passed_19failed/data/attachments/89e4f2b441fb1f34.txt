@@ -1,0 +1,2 @@
+POST /users failed Request failed with status code 429
+[pageerror] XMLHttpRequest cannot load https: /account.staging-paymium.com/cdn-cgi/rum? due to access control checks.

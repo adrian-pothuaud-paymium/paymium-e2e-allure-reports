@@ -1,0 +1,12 @@
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByText(/Compte verrouillé/)
+Expected: visible
+Timeout: 10000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 10000ms
+  - waiting for getByText(/Compte verrouillé/)
+
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/authentication/sign-in.spec.ts:111:53
