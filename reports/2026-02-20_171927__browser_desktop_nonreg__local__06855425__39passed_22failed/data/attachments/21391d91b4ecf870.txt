@@ -1,0 +1,11 @@
+Go to sign in
+GET /api/user request sent
+GET /api/user response received
+Response body: {
+  type: 'about:blank',
+  title: 'Unauthenticated',
+  status: 401,
+  detail: 'You must be logged in to access this page.',
+  instance: 'auth_failure_unauthenticated'
+}
+Go to sign up

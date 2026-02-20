@@ -1,0 +1,9 @@
+GET /users/confirmation failed Request failed with status code 422
+Attempt 1 to create test user failed: Request failed with status code 422
+GET /users/confirmation failed Request failed with status code 422
+Attempt 2 to create test user failed: Request failed with status code 422
+GET /users/confirmation failed Request failed with status code 422
+Attempt 3 to create test user failed: Request failed with status code 422
+Error: Failed to create test user after 3 attempts
+    at createTestUser (/builds/crypto-platform/paymium-e2e-united/packages/paymium-api/src/createTestUserSafeRetries.ts:34:9)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/support/support-tickets.spec.ts:26:23

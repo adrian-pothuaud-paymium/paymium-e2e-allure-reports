@@ -1,0 +1,16 @@
+launch_status failed=21 1771608170000000000
+launch_status broken=1 1771608170000000000
+launch_status passed=39 1771608170000000000
+launch_status skipped=1 1771608170000000000
+launch_status unknown=0 1771608170000000000
+launch_time duration=4046105 1771608170000000000
+launch_time min_duration=2 1771608170000000000
+launch_time max_duration=663168 1771608170000000000
+launch_time sum_duration=2844339 1771608170000000000
+launch_time start=1771603915997 1771608170000000000
+launch_time stop=1771607962102 1771608170000000000
+launch_problems élément_non_visible_—_à_investiguer=4 1771608170000000000
+launch_problems timeout_global_du_test=1 1771608170000000000
+launch_problems click_impossible_(timeout)=17 1771608170000000000
+launch_retries retries=111 1771608170000000000
+launch_retries run=62 1771608170000000000
