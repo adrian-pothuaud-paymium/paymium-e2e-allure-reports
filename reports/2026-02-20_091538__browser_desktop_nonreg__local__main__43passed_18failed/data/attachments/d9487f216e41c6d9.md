@@ -1,0 +1,271 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic:
+      - generic:
+        - generic:
+          - link:
+            - /url: /dashboard
+            - generic:
+              - img
+          - generic:
+            - button:
+              - img
+            - button:
+              - generic: FR
+              - img
+            - button:
+              - generic:
+                - generic:
+                  - img
+            - button:
+              - img
+            - button:
+              - img
+            - button:
+              - img
+        - generic:
+          - navigation:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                    - textbox:
+                      - /placeholder: Chercher
+              - generic:
+                - link:
+                  - /url: /dashboard
+                  - img
+                  - generic: Tableau de bord
+                - link:
+                  - /url: /wallet
+                  - img
+                  - generic: Portefeuille
+                - link:
+                  - /url: /swap
+                  - img
+                  - generic: Achat / vente
+                - link:
+                  - /url: /deposit/EUR
+                  - img
+                  - generic: Dépôt / retrait
+                - link:
+                  - /url: /recurrent
+                  - img
+                  - generic: Achat récurrent
+                - link:
+                  - /url: /trade/BTC/EUR
+                  - img
+                  - generic: Mode expert
+                - link:
+                  - /url: /referral
+                  - img
+                  - generic: Parrainage
+                - link:
+                  - /url: /family
+                  - img
+                  - generic: Plan Bitcoin Famille
+                - link:
+                  - /url: /history
+                  - img
+                  - generic: Historique
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - form:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: De
+                            - generic:
+                              - generic:
+                                - button:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - textbox:
+                                          - /placeholder: "ex : 123.45"
+                                          - text: "25"
+                                        - generic:
+                                          - generic:
+                                            - button:
+                                              - generic: Max
+                              - button:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - button:
+                                        - generic:
+                                          - textbox: EUR
+                                        - generic:
+                                          - generic:
+                                            - img
+                                            - generic:
+                                              - generic: Euro
+                                        - img
+                          - generic:
+                            - generic:
+                              - generic: Payer avec
+                            - generic:
+                              - button:
+                                - generic:
+                                  - generic:
+                                    - generic: Compte de trading
+                                    - generic: 416,75 €
+                                  - generic:
+                                    - button:
+                                      - link: Approvisionner le compte
+                              - button:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: Carte bancaire
+                                      - generic: 5555********4444
+                                      - generic:
+                                        - img
+                                        - img
+                                    - generic: Transaction sécurisée via Worldpay
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - button:
+                                              - link: Changer de carte
+                                  - generic:
+                                    - img
+                        - button:
+                          - button:
+                            - img
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: À
+                                - generic: (estimation)
+                            - generic:
+                              - generic:
+                                - button:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - textbox:
+                                          - /placeholder: "ex : 123.45"
+                                          - text: "0.00024082"
+                              - button:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - button:
+                                        - generic:
+                                          - textbox: BTC
+                                        - generic:
+                                          - generic:
+                                            - img
+                                            - generic:
+                                              - generic: Bitcoin
+                                        - img
+                            - generic:
+                              - generic: "Solde:"
+                              - generic: 0,44574780 BTC
+                        - generic:
+                          - button:
+                            - generic: Convertir
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: Récapitulatif
+                            - generic:
+                              - generic: "Acheter pour ce montant :"
+                              - generic:
+                                - generic: 0,00024082 BTC
+                            - generic:
+                              - generic: Prix
+                              - generic:
+                                - generic:
+                                  - generic: 103 810,50
+                                  - generic: € / BTC
+                            - generic:
+                              - generic: Montant
+                              - generic:
+                                - generic: 25,00 €
+            - contentinfo:
+              - generic:
+                - generic: Copyright © 2026
+                - generic:
+                  - link:
+                    - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+                    - text: Paymium
+                - generic: 6.15.0
+                - generic:
+                  - link:
+                    - /url: /status
+                    - text: Statut
+                - generic:
+                  - link:
+                    - /url: ""
+                    - text: Gérer vos cookies
+    - dialog [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e11]:
+          - generic [ref=e13]: Paiement par carte
+          - button "Close" [ref=e14] [cursor=pointer]:
+            - img [ref=e15]
+        - generic [ref=e21]:
+          - generic [ref=e23]:
+            - generic [ref=e24]:
+              - generic [ref=e25]: Montant
+              - generic [ref=e26]: 25,00 €
+            - generic [ref=e27]:
+              - generic [ref=e28]: "Montant reçu estimé :"
+              - generic [ref=e29]: 0,00024082 BTC
+            - generic [ref=e30]:
+              - generic [ref=e31]: Prix
+              - generic [ref=e32]: 103 810,50 €
+          - alert [ref=e36]:
+            - generic [ref=e37]: Le paiement a échoué. Veuillez réessayer.
+  - dialog [ref=e38]:
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - button [ref=e41] [cursor=pointer]:
+          - generic [ref=e42]: Continuer sans accepter
+        - generic [ref=e44]:
+          - heading [level=1] [ref=e47]:
+            - generic [ref=e48]: Des cookies pour
+            - generic [ref=e49]: vos bitcoins !
+          - generic [ref=e50]:
+            - paragraph [ref=e51]:
+              - text: Parce que
+              - strong [ref=e52]: stacker des sats ça donne faim
+              - text: ", nous vous proposons une pause cookie ! 🍪"
+            - paragraph [ref=e53]:
+              - text: Avec votre accord, Paymium aimerait utiliser des
+              - strong [ref=e54]: cookies
+              - text: placés par nous et/ou par nos partenaires sur notre site.
+            - paragraph [ref=e55]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+            - paragraph [ref=e56]:
+              - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+              - strong [ref=e57]: Vous choisissez ceux qui vous plaisent
+              - text: ", comme pour le trading !"
+            - paragraph [ref=e58]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+          - paragraph [ref=e60]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+        - button [ref=e63]:
+          - generic [ref=e64]: Consentements certifiés par
+          - img [ref=e68]
+      - generic [ref=e72]:
+        - button [ref=e73] [cursor=pointer]: Je choisis
+        - button [ref=e74] [cursor=pointer]: OK pour moi
+    - generic [ref=e75]:
+      - text: Axeptio consent
+      - checkbox [ref=e76]
+    - generic [ref=e77]:
+      - paragraph [ref=e78]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+      - paragraph [ref=e79]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+  - button [ref=e80] [cursor=pointer]:
+    - img [ref=e84]
+```
