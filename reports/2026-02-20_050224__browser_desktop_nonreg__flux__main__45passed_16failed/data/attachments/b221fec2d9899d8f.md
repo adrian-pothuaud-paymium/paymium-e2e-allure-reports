@@ -1,0 +1,158 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+        - button "FR" [ref=e53] [cursor=pointer]:
+          - generic [ref=e54]: FR
+          - img [ref=e55]
+        - button [ref=e57] [cursor=pointer]:
+          - img [ref=e60]
+        - button [ref=e64] [cursor=pointer]:
+          - img [ref=e65]
+        - button [ref=e68] [cursor=pointer]:
+          - img [ref=e69]
+        - button [ref=e72] [cursor=pointer]:
+          - img [ref=e73]
+    - generic [ref=e77]:
+      - navigation [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e82]:
+            - img [ref=e84]
+            - textbox "Chercher" [ref=e87]
+          - generic [ref=e88]:
+            - link "Tableau de bord" [ref=e89] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e90]
+              - generic [ref=e93]: Tableau de bord
+            - link "Portefeuille" [ref=e94] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e95]
+              - generic [ref=e99]: Portefeuille
+            - link "Achat / vente" [ref=e100] [cursor=pointer]:
+              - /url: /swap
+              - img [ref=e101]
+              - generic [ref=e104]: Achat / vente
+            - link "Dépôt / retrait" [ref=e105] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e106]
+              - generic [ref=e109]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e110] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e111]
+              - generic [ref=e116]: Achat récurrent
+            - link "Mode expert" [ref=e117] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e118]
+              - generic [ref=e120]: Mode expert
+            - link "Parrainage" [ref=e121] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e122]
+              - generic [ref=e127]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e128] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e129]
+              - generic [ref=e134]: Plan Bitcoin Famille
+            - link "Historique" [ref=e135] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e136]
+              - generic [ref=e141]: Historique
+      - generic [ref=e142]:
+        - generic [ref=e144]:
+          - generic [ref=e145]: Transfert
+          - generic [ref=e146]:
+            - tablist [ref=e148]:
+              - generic [ref=e149]:
+                - tab "Déposer" [selected] [ref=e151] [cursor=pointer]:
+                  - generic [ref=e152]: Déposer
+                - tab "Retirer" [ref=e153] [cursor=pointer]:
+                  - generic [ref=e154]: Retirer
+                - tab "Transfert interne" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]: Transfert interne
+                - tab "Envoyer par email" [ref=e157] [cursor=pointer]:
+                  - generic [ref=e158]: Envoyer par email
+            - tabpanel "Déposer" [ref=e159]:
+              - generic [ref=e161]:
+                - generic [ref=e162]:
+                  - generic [ref=e164]:
+                    - generic [ref=e166]: Choisissez une devise
+                    - button "Choisissez une devise" [ref=e168] [cursor=pointer]:
+                      - textbox [ref=e170]: EUR
+                      - generic [ref=e172]:
+                        - img [ref=e173]
+                        - generic [ref=e178]: Euro
+                      - img [ref=e179]
+                  - generic [ref=e182]:
+                    - alert [ref=e183]:
+                      - generic [ref=e184]: Déposez uniquement des Euros depuis un compte bancaire à votre nom.
+                    - tablist [ref=e187]:
+                      - generic [ref=e188]:
+                        - tab "IBAN de dépôt" [ref=e190] [cursor=pointer]:
+                          - generic [ref=e191]: IBAN de dépôt
+                        - tab "Dépôt facile (open-banking)" [selected] [ref=e192] [cursor=pointer]:
+                          - generic [ref=e193]: Dépôt facile (open-banking)
+                    - tabpanel "Dépôt facile (open-banking)" [ref=e194]:
+                      - form [ref=e196]:
+                        - generic [ref=e197]: Connectez-vous directement à l'interface de votre banque et exécutez vos virements sans avoir à quitter Paymium. Un service sécurisé par Powens.
+                        - generic [ref=e199]:
+                          - generic [ref=e201]: Montant
+                          - generic [ref=e202]:
+                            - textbox "Montant" [ref=e203]: "20"
+                            - generic [ref=e206]: €
+                        - generic [ref=e208]:
+                          - generic [ref=e210]: Type de virement
+                          - button "Type de virement" [ref=e212] [cursor=pointer]:
+                            - textbox [ref=e214]: instant
+                            - generic [ref=e216]: Virement SEPA instantané
+                            - img [ref=e217]
+                        - alert [ref=e219]:
+                          - img [ref=e221]
+                          - generic [ref=e226]: Une erreur s'est produite, veuillez réessayer.
+                        - button "Envoyer" [ref=e227] [cursor=pointer]:
+                          - generic [ref=e228]: Envoyer
+                - generic [ref=e229]:
+                  - generic [ref=e230]:
+                    - generic [ref=e231]: Limites
+                    - generic [ref=e232]:
+                      - generic [ref=e233]: Limite de dépôt quotidienne
+                      - generic [ref=e234]: 100 000,00 €
+                    - generic [ref=e235]:
+                      - generic [ref=e236]: Limite de dépôt mensuelle
+                      - generic [ref=e237]: 500 000,00 €
+                  - generic [ref=e238]:
+                    - generic [ref=e239]:
+                      - img [ref=e240]
+                      - generic [ref=e242]: Informations dépôt Euro
+                      - button "Masquer" [ref=e243] [cursor=pointer]:
+                        - generic [ref=e244]: Masquer
+                    - generic [ref=e247]:
+                      - generic [ref=e248]: Vous pouvez déposer des euros sur votre compte Paymium en effectuant un virement bancaire.
+                      - list [ref=e249]:
+                        - generic [ref=e253]: Seul le virement SEPA est accepté. Les virement SWIFT seront automatiquement rejetés.
+                        - generic [ref=e257]: Les dépôts sont généralement crédités sous 1 à 2 jours ouvrés.
+                        - generic [ref=e261]:
+                          - text: Il peut vous être demandé d'envoyer un ou plusieurs justificatifs de l'origine des fonds. Pour plus d'informations,
+                          - link "cliquez ici" [ref=e262] [cursor=pointer]:
+                            - /url: https://www.paymium.com/aide-articles/y-a-t-il-un-plafond-de-depot-par-virement-sur-paymium
+                            - generic [ref=e264]: cliquez ici
+                          - text: .
+        - contentinfo [ref=e265]:
+          - generic [ref=e266]:
+            - generic [ref=e267]: Copyright © 2026
+            - link "Paymium" [ref=e269] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e270]: 6.14.1
+            - link "Statut" [ref=e272] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e274] [cursor=pointer]:
+              - /url: ""
+```
