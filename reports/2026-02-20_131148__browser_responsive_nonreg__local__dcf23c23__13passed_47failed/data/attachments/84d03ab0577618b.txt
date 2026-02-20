@@ -1,0 +1,30 @@
+POST /users failed Request failed with status code 429
+[pageerror] SyntaxError: Unexpected token '<'
+Login attempt 1 failed: Error: Submit button is disabled
+    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:148:17)
+    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:18:3)
+    at loginAsNewPhoneApprovedUser (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:44:3)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/transfers/withdraw.notApproved.spec.ts:18:3
+    at /builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/playwright@1.58.2/node_modules/playwright/lib/worker/testInfo.js:320:11
+    at TimeoutManager.withRunnable (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/playwright@1.58.2/node_modules/playwright/lib/worker/timeoutManager.js:67:14)
+    at TestInfoImpl._runWithTimeout (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/playwright@1.58.2/node_modules/playwright/lib/worker/testInfo.js:318:7)
+    at FixtureRunner.resolveParametersAndRunFunction (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/playwright@1.58.2/node_modules/playwright/lib/worker/fixtureRunner.js:232:5)
+    at /builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/playwright@1.58.2/node_modules/playwright/lib/worker/workerMain.js:479:11
+    at TestInfoImpl._runAsStep (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/playwright@1.58.2/node_modules/playwright/lib/worker/testInfo.js:309:7)
+    at WorkerMain._runEachHooksForSuites (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/playwright@1.58.2/node_modules/playwright/lib/worker/workerMain.js:478:9)
+    at /builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/playwright@1.58.2/node_modules/playwright/lib/worker/workerMain.js:315:9
+    at TestInfoImpl._runAsStep (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/playwright@1.58.2/node_modules/playwright/lib/worker/testInfo.js:309:7)
+    at /builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/playwright@1.58.2/node_modules/playwright/lib/worker/workerMain.js:311:7
+    at WorkerMain._runTest (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/playwright@1.58.2/node_modules/playwright/lib/worker/workerMain.js:296:5)
+    at WorkerMain.runTestGroup (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/playwright@1.58.2/node_modules/playwright/lib/worker/workerMain.js:196:11)
+    at process.<anonymous> (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/playwright@1.58.2/node_modules/playwright/lib/common/process.js:72:22)
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.clear: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Email' })
+
+    at SignIn.fill (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:52:27)
+    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:156:20)
+    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:18:3)
+    at loginAsNewPhoneApprovedUser (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:44:3)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/transfers/withdraw.notApproved.spec.ts:18:3
