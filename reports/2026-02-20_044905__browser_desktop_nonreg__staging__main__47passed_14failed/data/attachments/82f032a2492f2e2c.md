@@ -1,0 +1,140 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+        - button "FR" [ref=e53] [cursor=pointer]:
+          - generic [ref=e54]: FR
+          - img [ref=e55]
+        - button [ref=e57] [cursor=pointer]:
+          - img [ref=e60]
+        - button [ref=e64] [cursor=pointer]:
+          - img [ref=e65]
+        - button [ref=e68] [cursor=pointer]:
+          - img [ref=e69]
+        - button [ref=e72] [cursor=pointer]:
+          - img [ref=e73]
+    - generic [ref=e77]:
+      - navigation [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e82]:
+            - img [ref=e84]
+            - textbox "Chercher" [ref=e87]
+          - generic [ref=e88]:
+            - link "Tableau de bord" [ref=e89] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e90]
+              - generic [ref=e93]: Tableau de bord
+            - link "Portefeuille" [ref=e94] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e95]
+              - generic [ref=e99]: Portefeuille
+            - link "Achat / vente" [ref=e100] [cursor=pointer]:
+              - /url: /swap
+              - img [ref=e101]
+              - generic [ref=e104]: Achat / vente
+            - link "Dépôt / retrait" [ref=e105] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e106]
+              - generic [ref=e109]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e110] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e111]
+              - generic [ref=e116]: Achat récurrent
+            - link "Mode expert" [ref=e117] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e118]
+              - generic [ref=e120]: Mode expert
+            - link "Parrainage" [ref=e121] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e122]
+              - generic [ref=e127]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e128] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e129]
+              - generic [ref=e134]: Plan Bitcoin Famille
+            - link "Historique" [ref=e135] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e136]
+              - generic [ref=e141]: Historique
+      - generic [ref=e142]:
+        - form [ref=e146]:
+          - generic [ref=e147]:
+            - generic [ref=e148]:
+              - generic [ref=e150]:
+                - generic [ref=e151]: De
+                - generic [ref=e152]:
+                  - button "0.001 Max" [ref=e154] [cursor=pointer]:
+                    - generic [ref=e157]:
+                      - 'textbox "ex : 123.45" [ref=e158]': "0.001"
+                      - button "Max" [ref=e161]:
+                        - generic [ref=e162]: Max
+                  - button "Euro" [ref=e163] [cursor=pointer]:
+                    - button "Euro" [ref=e167]:
+                      - textbox [ref=e169]: EUR
+                      - generic [ref=e172]:
+                        - img [ref=e173]
+                        - generic [ref=e178]: Euro
+                      - img [ref=e179]
+                - generic [ref=e181]:
+                  - generic [ref=e182]: "Solde:"
+                  - generic [ref=e183]: 20,78 €
+              - button [ref=e184] [cursor=pointer]:
+                - button [ref=e185]:
+                  - img [ref=e186]
+              - generic [ref=e190]:
+                - generic [ref=e192]:
+                  - generic [ref=e193]: À
+                  - generic [ref=e194]: (estimation)
+                - generic [ref=e195]:
+                  - button "0.001162" [ref=e197] [cursor=pointer]:
+                    - 'textbox "ex : 123.45" [ref=e201]': "0.001162"
+                  - button "USDC" [ref=e202] [cursor=pointer]:
+                    - button "USDC" [ref=e206]:
+                      - textbox [ref=e208]: USDC
+                      - generic [ref=e211]:
+                        - img [ref=e212]
+                        - generic [ref=e217]: USDC
+                      - img [ref=e218]
+                - generic [ref=e220]:
+                  - generic [ref=e221]: "Solde:"
+                  - generic [ref=e222]: 0,978992 USDC
+              - button "Convertir" [ref=e224] [cursor=pointer]:
+                - generic [ref=e225]: Convertir
+            - generic [ref=e228]:
+              - generic [ref=e229]: Récapitulatif
+              - generic [ref=e231]:
+                - generic [ref=e232]: "Acheter pour ce montant :"
+                - generic [ref=e234]: 0,001162 USDC
+              - generic [ref=e235]:
+                - generic [ref=e236]: Prix
+                - generic [ref=e238]:
+                  - generic [ref=e239]: 0,86
+                  - generic [ref=e240]: € / USDC
+              - generic [ref=e242]:
+                - generic [ref=e243]: Frais
+                - generic [ref=e245]: 0,000010 USDC
+              - generic [ref=e247]:
+                - generic [ref=e248]: Montant
+                - generic [ref=e250]: 0,00 €
+          - button
+        - contentinfo [ref=e251]:
+          - generic [ref=e252]:
+            - generic [ref=e253]: Copyright © 2026
+            - link "Paymium" [ref=e255] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e256]: 6.14.1
+            - link "Statut" [ref=e258] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e260] [cursor=pointer]:
+              - /url: ""
+```

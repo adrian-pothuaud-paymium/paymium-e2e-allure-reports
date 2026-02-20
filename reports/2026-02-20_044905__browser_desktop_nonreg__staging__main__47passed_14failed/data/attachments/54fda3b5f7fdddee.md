@@ -1,0 +1,170 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - main [ref=e4]:
+    - generic [ref=e5]:
+      - button [ref=e6] [cursor=pointer]:
+        - img [ref=e8]
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - paragraph [ref=e17]:
+            - generic [ref=e19]: "1"
+            - generic [ref=e20]: Choix de l'établissement
+          - paragraph [ref=e21]: Sélectionnez celui que vous souhaitez utiliser
+        - paragraph [ref=e23]:
+          - generic [ref=e25]: "2"
+          - generic [ref=e26]: Authentification
+        - paragraph [ref=e28]:
+          - generic [ref=e30]: "3"
+          - generic [ref=e31]: Redirection
+      - generic [ref=e33]:
+        - img [ref=e35]
+        - paragraph [ref=e37]: Powens est agréé en qualité d’établissement de paiement par l’Autorité de Contrôle Prudentiel et de Résolution (ACPR), sous le numéro CIB 16948.
+        - paragraph [ref=e38]: Version 4.61.4
+    - generic [ref=e39]:
+      - button "Fermer" [ref=e41] [cursor=pointer]:
+        - img [ref=e43]
+        - generic [ref=e46]: Fermer
+      - generic [ref=e49]:
+        - generic [ref=e51]:
+          - generic [ref=e53] [cursor=pointer]:
+            - generic [ref=e54]:
+              - paragraph [ref=e55]:
+                - generic [ref=e56]: Montant
+                - generic [ref=e57]: 20,00 €
+              - paragraph [ref=e58]:
+                - generic [ref=e59]: Bénéficiaire
+                - generic [ref=e60]: ADRIANB2CDEFAULT TEST
+            - paragraph [ref=e62]: Voir plus
+          - generic [ref=e63]:
+            - heading "Choisissez votre établissement" [level=1] [ref=e64]
+            - generic [ref=e65]:
+              - generic [ref=e66]:
+                - img [ref=e68]
+                - textbox "Rechercher" [active] [ref=e70]
+              - generic [ref=e76]:
+                - generic [ref=e77]:
+                  - generic:
+                    - heading "Choisissez le pays de votre établissement" [level=1]
+                    - generic:
+                      - generic:
+                        - img
+                      - textbox "Rechercher" [ref=e79]
+                  - list:
+                    - button "France":
+                      - generic [ref=e81] [cursor=pointer]: France
+                      - generic [ref=e82] [cursor=pointer]:
+                        - img
+                  - list:
+                    - paragraph: Autres pays
+                    - listitem:
+                      - img [ref=e85] [cursor=pointer]
+                      - generic [ref=e91] [cursor=pointer]: Tous pays
+                    - button "Mayotte":
+                      - generic [ref=e93] [cursor=pointer]: Mayotte
+                    - button "Réunion":
+                      - generic [ref=e95] [cursor=pointer]: Réunion
+                - button "Fermer" [ref=e96] [cursor=pointer]
+        - main [ref=e97]:
+          - list [ref=e100]:
+            - generic [ref=e101]:
+              - button "AXA Banque AXA Banque" [ref=e102] [cursor=pointer]:
+                - generic [ref=e104]:
+                  - img "AXA Banque" [ref=e107]
+                  - generic [ref=e108]: AXA Banque
+              - button "Banque BCP Banque BCP" [ref=e109] [cursor=pointer]:
+                - generic [ref=e111]:
+                  - img "Banque BCP" [ref=e114]
+                  - generic [ref=e115]: Banque BCP
+              - button "Banque Populaire Banque Populaire" [ref=e116] [cursor=pointer]:
+                - generic [ref=e118]:
+                  - img "Banque Populaire" [ref=e121]
+                  - generic [ref=e122]: Banque Populaire
+              - button "Banque Transatlantique Banque Transatlantique" [ref=e123] [cursor=pointer]:
+                - generic [ref=e125]:
+                  - img "Banque Transatlantique" [ref=e128]
+                  - generic [ref=e129]: Banque Transatlantique
+              - button "BNP Paribas BNP Paribas" [ref=e130] [cursor=pointer]:
+                - generic [ref=e132]:
+                  - img "BNP Paribas" [ref=e135]
+                  - generic [ref=e136]: BNP Paribas
+              - button "BoursoBank BoursoBank" [ref=e137] [cursor=pointer]:
+                - generic [ref=e139]:
+                  - img "BoursoBank" [ref=e142]
+                  - generic [ref=e143]: BoursoBank
+              - button "BRED BRED" [ref=e144] [cursor=pointer]:
+                - generic [ref=e146]:
+                  - img "BRED" [ref=e149]
+                  - generic [ref=e150]: BRED
+              - button "Caisse d'Épargne Particuliers Caisse d'Épargne Particuliers" [ref=e151] [cursor=pointer]:
+                - generic [ref=e153]:
+                  - img "Caisse d'Épargne Particuliers" [ref=e156]
+                  - generic [ref=e157]: Caisse d'Épargne Particuliers
+              - button "Caisse d'Épargne Professionnels Caisse d'Épargne Professionnels" [ref=e158] [cursor=pointer]:
+                - generic [ref=e160]:
+                  - img "Caisse d'Épargne Professionnels" [ref=e163]
+                  - generic [ref=e164]: Caisse d'Épargne Professionnels
+              - button "CIC CIC" [ref=e165] [cursor=pointer]:
+                - generic [ref=e167]:
+                  - img "CIC" [ref=e170]
+                  - generic [ref=e171]: CIC
+              - button "Connecteur de test Connecteur de test" [ref=e172] [cursor=pointer]:
+                - generic [ref=e174]:
+                  - img "Connecteur de test" [ref=e177]
+                  - generic [ref=e178]: Connecteur de test
+              - button "Crédit Agricole Crédit Agricole" [ref=e179] [cursor=pointer]:
+                - generic [ref=e181]:
+                  - img "Crédit Agricole" [ref=e184]
+                  - generic [ref=e185]: Crédit Agricole
+              - button "Crédit Coopératif Crédit Coopératif" [ref=e186] [cursor=pointer]:
+                - generic [ref=e188]:
+                  - img "Crédit Coopératif" [ref=e191]
+                  - generic [ref=e192]: Crédit Coopératif
+              - button "Crédit Maritime Crédit Maritime" [ref=e193] [cursor=pointer]:
+                - generic [ref=e195]:
+                  - img "Crédit Maritime" [ref=e198]
+                  - generic [ref=e199]: Crédit Maritime
+              - button "Crédit Mutuel Crédit Mutuel" [ref=e200] [cursor=pointer]:
+                - generic [ref=e202]:
+                  - img "Crédit Mutuel" [ref=e205]
+                  - generic [ref=e206]: Crédit Mutuel
+              - button "Crédit Mutuel de Bretagne Crédit Mutuel de Bretagne" [ref=e207] [cursor=pointer]:
+                - generic [ref=e209]:
+                  - img "Crédit Mutuel de Bretagne" [ref=e212]
+                  - generic [ref=e213]: Crédit Mutuel de Bretagne
+              - button "Crédit Mutuel du Sud Ouest Crédit Mutuel du Sud Ouest" [ref=e214] [cursor=pointer]:
+                - generic [ref=e216]:
+                  - img "Crédit Mutuel du Sud Ouest" [ref=e219]
+                  - generic [ref=e220]: Crédit Mutuel du Sud Ouest
+              - button "Fortuneo Fortuneo" [ref=e221] [cursor=pointer]:
+                - generic [ref=e223]:
+                  - img "Fortuneo" [ref=e226]
+                  - generic [ref=e227]: Fortuneo
+              - button "Hello bank! Hello bank!" [ref=e228] [cursor=pointer]:
+                - generic [ref=e230]:
+                  - img "Hello bank!" [ref=e233]
+                  - generic [ref=e234]: Hello bank!
+              - button "La Banque Postale La Banque Postale" [ref=e235] [cursor=pointer]:
+                - generic [ref=e237]:
+                  - img "La Banque Postale" [ref=e240]
+                  - generic [ref=e241]: La Banque Postale
+              - button "LCL LCL" [ref=e242] [cursor=pointer]:
+                - generic [ref=e244]:
+                  - img "LCL" [ref=e247]
+                  - generic [ref=e248]: LCL
+              - button "Société Générale Société Générale" [ref=e249] [cursor=pointer]:
+                - generic [ref=e251]:
+                  - img "Société Générale" [ref=e254]
+                  - generic [ref=e255]: Société Générale
+          - paragraph [ref=e257]:
+            - generic [ref=e258]: En continuant, vous acceptez les CGU et la
+            - generic [ref=e259]:
+              - link "politique de confidentialité" [ref=e261] [cursor=pointer]:
+                - /url: https://www.powens.com/fr/politique-de-confidentialite/
+              - text: de Powens.
+  - contentinfo [ref=e262]:
+    - generic [ref=e263]: Cet environnement est disponible à des fins de test uniquement.
+    - button [ref=e264] [cursor=pointer]:
+      - img [ref=e266]
+```
