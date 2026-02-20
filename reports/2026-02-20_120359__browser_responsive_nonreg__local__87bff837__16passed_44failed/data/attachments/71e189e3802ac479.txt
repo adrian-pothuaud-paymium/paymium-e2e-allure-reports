@@ -1,0 +1,14 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /^(.*)\/sign-in(.*)$/
+Received string:  "http://paymium.local:3000/dashboard"
+Timeout: 10000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 10000ms
+    14 × unexpected value "http://paymium.local:3000/dashboard"
+
+    at SignIn.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:16:29)
+    at SignIn.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:82:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/authentication/sign-out.spec.ts:27:29
