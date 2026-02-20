@@ -1,0 +1,7 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Authentification à deux' }) to be visible
+
+    at SignIn.waitFor2FA (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:91:30)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/authentication/sign-in.spec.ts:148:29
