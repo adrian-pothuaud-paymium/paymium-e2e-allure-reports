@@ -1,0 +1,402 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Login attempt 1 failed: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Se connecter' })
+    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rd»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - performing click action
+    - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    16 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+
+    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:113:29)
+    at SignIn.loginRetries (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:130:9)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:34:5
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:29:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts',
+      line: 113,
+      column: 29,
+      function: 'SignIn.submit'
+    },
+    category: 'pw:api',
+    title: "Click getByRole('button', { name: 'Se connecter' })",
+    apiName: 'locator.click',
+    params: {
+      selector: 'internal:role=button[name="Se connecter"i]',
+      strict: true,
+      timeout: 10000
+    },
+    group: undefined,
+    stepId: 'pw:api@59',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@59',
+      _title: "Click getByRole('button', { name: 'Se connecter' })",
+      _parentStep: [TestStepInfoImpl],
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1771605666692,
+    error: {
+      message: 'TimeoutError: locator.click: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('button', { name: 'Se connecter' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rd»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    - waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m    - done scrolling\x1B[22m\n' +
+        '\x1B[2m    - performing click action\x1B[22m\n' +
+        '\x1B[2m    - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m  - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m    - done scrolling\x1B[22m\n' +
+        '\x1B[2m    - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m  - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    16 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m       - done scrolling\x1B[22m\n' +
+        '\x1B[2m       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n' +
+        '\x1B[2m    - waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m    - done scrolling\x1B[22m\n',
+      stack: 'TimeoutError: locator.click: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('button', { name: 'Se connecter' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rd»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    - waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m    - done scrolling\x1B[22m\n' +
+        '\x1B[2m    - performing click action\x1B[22m\n' +
+        '\x1B[2m    - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m  - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m    - done scrolling\x1B[22m\n' +
+        '\x1B[2m    - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m  - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    16 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m       - done scrolling\x1B[22m\n' +
+        '\x1B[2m       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n' +
+        '\x1B[2m    - waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m    - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m    - done scrolling\x1B[22m\n' +
+        '\n' +
+        '    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:113:29)\n' +
+        '    at SignIn.loginRetries (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:130:9)\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:34:5\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:29:3',
+      cause: undefined
+    }
+  }
+}
+[pageerror] SyntaxError: Unexpected token '<'
+Login attempt 2 failed: locator.clear: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Email' })
+
+    at SignIn.fill (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:52:27)
+    at SignIn.loginRetries (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:126:20)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:34:5
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:29:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts',
+      line: 52,
+      column: 27,
+      function: 'SignIn.fill'
+    },
+    category: 'pw:api',
+    title: "Clear getByRole('textbox', { name: 'Email' })",
+    apiName: 'locator.clear',
+    params: {
+      selector: 'internal:role=textbox[name="Email"i]',
+      value: '',
+      strict: true,
+      timeout: 10000
+    },
+    group: undefined,
+    stepId: 'pw:api@62',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@62',
+      _title: "Clear getByRole('textbox', { name: 'Email' })",
+      _parentStep: [TestStepInfoImpl],
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1771605679339,
+    error: {
+      message: 'TimeoutError: locator.clear: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('textbox', { name: 'Email' })\x1B[22m\n",
+      stack: 'TimeoutError: locator.clear: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('textbox', { name: 'Email' })\x1B[22m\n" +
+        '\n' +
+        '    at SignIn.fill (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:52:27)\n' +
+        '    at SignIn.loginRetries (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:126:20)\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:34:5\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:29:3',
+      cause: undefined
+    }
+  }
+}
+[pageerror] SyntaxError: Unexpected token '<'
+Login attempt 3 failed: locator.clear: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Email' })
+
+    at SignIn.fill (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:52:27)
+    at SignIn.loginRetries (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:126:20)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:34:5
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:29:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts',
+      line: 52,
+      column: 27,
+      function: 'SignIn.fill'
+    },
+    category: 'pw:api',
+    title: "Clear getByRole('textbox', { name: 'Email' })",
+    apiName: 'locator.clear',
+    params: {
+      selector: 'internal:role=textbox[name="Email"i]',
+      value: '',
+      strict: true,
+      timeout: 10000
+    },
+    group: undefined,
+    stepId: 'pw:api@65',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@65',
+      _title: "Clear getByRole('textbox', { name: 'Email' })",
+      _parentStep: [TestStepInfoImpl],
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1771605691668,
+    error: {
+      message: 'TimeoutError: locator.clear: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('textbox', { name: 'Email' })\x1B[22m\n",
+      stack: 'TimeoutError: locator.clear: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('textbox', { name: 'Email' })\x1B[22m\n" +
+        '\n' +
+        '    at SignIn.fill (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:52:27)\n' +
+        '    at SignIn.loginRetries (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:126:20)\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:34:5\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:29:3',
+      cause: undefined
+    }
+  }
+}
+[pageerror] SyntaxError: Unexpected token '<'
+Login attempt 4 failed: locator.clear: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Email' })
+
+    at SignIn.fill (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:52:27)
+    at SignIn.loginRetries (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:126:20)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:34:5
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:29:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts',
+      line: 52,
+      column: 27,
+      function: 'SignIn.fill'
+    },
+    category: 'pw:api',
+    title: "Clear getByRole('textbox', { name: 'Email' })",
+    apiName: 'locator.clear',
+    params: {
+      selector: 'internal:role=textbox[name="Email"i]',
+      value: '',
+      strict: true,
+      timeout: 10000
+    },
+    group: undefined,
+    stepId: 'pw:api@68',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@68',
+      _title: "Clear getByRole('textbox', { name: 'Email' })",
+      _parentStep: [TestStepInfoImpl],
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1771605704181,
+    error: {
+      message: 'TimeoutError: locator.clear: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('textbox', { name: 'Email' })\x1B[22m\n",
+      stack: 'TimeoutError: locator.clear: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('textbox', { name: 'Email' })\x1B[22m\n" +
+        '\n' +
+        '    at SignIn.fill (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:52:27)\n' +
+        '    at SignIn.loginRetries (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:126:20)\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:34:5\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:29:3',
+      cause: undefined
+    }
+  }
+}
+[pageerror] SyntaxError: Unexpected token '<'
+Login attempt 5 failed: locator.clear: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Email' })
+
+    at SignIn.fill (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:52:27)
+    at SignIn.loginRetries (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:126:20)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:34:5
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:29:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts',
+      line: 52,
+      column: 27,
+      function: 'SignIn.fill'
+    },
+    category: 'pw:api',
+    title: "Clear getByRole('textbox', { name: 'Email' })",
+    apiName: 'locator.clear',
+    params: {
+      selector: 'internal:role=textbox[name="Email"i]',
+      value: '',
+      strict: true,
+      timeout: 10000
+    },
+    group: undefined,
+    stepId: 'pw:api@71',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@71',
+      _title: "Clear getByRole('textbox', { name: 'Email' })",
+      _parentStep: [TestStepInfoImpl],
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1771605716428,
+    error: {
+      message: 'TimeoutError: locator.clear: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('textbox', { name: 'Email' })\x1B[22m\n",
+      stack: 'TimeoutError: locator.clear: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('textbox', { name: 'Email' })\x1B[22m\n" +
+        '\n' +
+        '    at SignIn.fill (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:52:27)\n' +
+        '    at SignIn.loginRetries (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:126:20)\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:34:5\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:29:3',
+      cause: undefined
+    }
+  }
+}
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /^(.*)\/dashboard$/
+Received string:  "http://paymium.local:3000/sign-in"
+Timeout: 20000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 20000ms
+    23 × unexpected value "http://paymium.local:3000/sign-in"
+
+    at Dashboard.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:16:29)
+    at Dashboard.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/AccountPage.ts:32:17)
+    at Dashboard.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/dashboard/index.ts:35:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:38:33
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:29:3
