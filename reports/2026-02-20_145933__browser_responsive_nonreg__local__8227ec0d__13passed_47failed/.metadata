@@ -1,0 +1,10 @@
+TIMESTAMP=2026-02-20_145933
+ENVIRONMENT=local
+BRANCH=8227ec0d
+E2E_BRANCH=main
+JOB=browser_responsive_nonreg
+TOTAL=60
+PASSED=13
+FAILED=47
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/38030
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/204815
