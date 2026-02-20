@@ -1,2 +1,0 @@
-TimeoutError: page.waitForResponse: Timeout 120000ms exceeded while waiting for event "response"
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/transfers/withdraw.spec.ts:67:14

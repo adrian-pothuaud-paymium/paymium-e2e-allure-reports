@@ -1,2 +1,0 @@
-[pageerror] XMLHttpRequest cannot load https: /account.staging-paymium.com/cdn-cgi/rum? due to access control checks.
-[pageerror] Unhandled Promise Rejection: AxiosError: Network Error

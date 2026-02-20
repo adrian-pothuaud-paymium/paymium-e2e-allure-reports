@@ -1,7 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-TimeoutError: locator.click: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByTestId('expertMode.tradeForm.sellMode')
-
-    at TradeForm.switchTo (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/trade/BTC/EUR/TradeForm.ts:60:38)
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/trading/expert-mode.spec.ts:56:45

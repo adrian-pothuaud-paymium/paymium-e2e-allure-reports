@@ -1,9 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] SyntaxError: Unexpected token '<'
-TimeoutError: locator.waitFor: Timeout 150000ms exceeded.
-Call log:
-  - waiting for getByText('Paiement par carte effectué') to be visible
-
-    at Swap.waitForCardPaymentSuccess (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/swap/index.ts:166:8)
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/trading/buy-cryptos.spec.ts:181:26

@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//android.widget.TextView[@resource-id=\"questionLabel\" and @text=\"Quel est votre niveau de connaissance des crypto-actifs ?\"]"
-}

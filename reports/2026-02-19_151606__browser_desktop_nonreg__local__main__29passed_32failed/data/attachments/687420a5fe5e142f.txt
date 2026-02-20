@@ -1,8 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByText(/^Boulevard de Sébastopol, 75001 Paris, France$/) to be visible
-
-    at AddressField.select (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/AddressField.ts:19:28)
-    at GetToKnowEachOtherAddressModal.fillAddress (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/dashboard/_components/GetToKnowEachOtherAddressModal.ts:24:5)
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/onboarding/complete-flows.spec.ts:236:3

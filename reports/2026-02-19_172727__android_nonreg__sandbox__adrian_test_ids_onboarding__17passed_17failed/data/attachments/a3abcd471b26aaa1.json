@@ -1,4 +1,0 @@
-{
-  "using": "-android uiautomator",
-  "value": "new UiSelector().resourceId(\"com.android.settings:id/lock_none\")"
-}

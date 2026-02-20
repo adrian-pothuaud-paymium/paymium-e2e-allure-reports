@@ -1,9 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByRole('listitem').filter({ hasText: /🇫🇷 France/ }).first() to be visible
-
-    at SearchableContentSelect.searchAndSelect (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/SearchableContentSelect.ts:17:28)
-    at SignUpCorporate.selectCountry (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/sign-up/corporate.ts:34:5)
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/onboarding/complete-flows.spec.ts:205:5
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/onboarding/complete-flows.spec.ts:202:3

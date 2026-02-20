@@ -1,4 +1,0 @@
-{
-  "using": "-android uiautomator",
-  "value": "new UiSelector().textContains(\"Si votre compte est trouvé, vous allez recevoir un email contenant les instructions pour créer un nouveau mot de passe\")"
-}

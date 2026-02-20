@@ -1,8 +1,0 @@
-Starting: Intent { act=android.intent.action.VIEW dat=https://account.sandbox-paymium.com/... }
-Warning: Activity not started, intent has been delivered to currently running top-most instance.
-Status: ok
-LaunchState: UNKNOWN (0)
-Activity: com.paymium.mobile2/.MainActivity
-TotalTime: 0
-WaitTime: 24
-Complete

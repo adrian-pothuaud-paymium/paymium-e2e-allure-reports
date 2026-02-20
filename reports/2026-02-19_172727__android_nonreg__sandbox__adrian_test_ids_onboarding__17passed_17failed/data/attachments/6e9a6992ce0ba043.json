@@ -1,4 +1,0 @@
-{
-  "using": "-android uiautomator",
-  "value": "new UiSelector().description(\"Posez le doigt sur le lecteur\")"
-}

@@ -1,4 +1,0 @@
-{
-  "using": "-android uiautomator",
-  "value": "new UiSelector().resourceId(\"wp-cl-custom-html-iframe\")"
-}

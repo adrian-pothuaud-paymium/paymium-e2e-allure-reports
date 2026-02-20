@@ -1,3 +1,0 @@
-TimeoutError: page.waitForResponse: Timeout 30000ms exceeded while waiting for event "response"
-    at openWithdrawShortcut (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/transfers/withdraw.spec.ts:24:14)
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/transfers/withdraw.spec.ts:34:3

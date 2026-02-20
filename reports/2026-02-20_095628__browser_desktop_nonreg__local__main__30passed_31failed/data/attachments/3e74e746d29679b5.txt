@@ -1,6 +1,0 @@
-AxiosError: Request failed with status code 404
-    at settle (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/axios@1.13.5/node_modules/axios/lib/core/settle.js:19:12)
-    at BrotliDecompress.handleStreamEnd (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/axios@1.13.5/node_modules/axios/lib/adapters/http.js:798:11)
-    at Axios.request (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/axios@1.13.5/node_modules/axios/lib/core/Axios.js:46:41)
-    at deleteBTCWithdrawalAddress (/builds/crypto-platform/paymium-e2e-united/packages/paymium-api/src/deleteBTCWithdrawalAddress.ts:22:20)
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/_clean/cleanTestAccount.clean.ts:52:5

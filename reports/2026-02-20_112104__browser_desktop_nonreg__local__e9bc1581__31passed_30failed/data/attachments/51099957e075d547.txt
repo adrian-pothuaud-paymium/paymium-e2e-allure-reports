@@ -1,7 +1,0 @@
-Found 6 BTC withdrawal addresses to delete.
-Deleted BTC withdrawal address with ID: 91832
-Deleted BTC withdrawal address with ID: 91831
-Deleted BTC withdrawal address with ID: 91830
-Deleted BTC withdrawal address with ID: 91829
-Deleted BTC withdrawal address with ID: 91828
-Deleted BTC withdrawal address with ID: 91827

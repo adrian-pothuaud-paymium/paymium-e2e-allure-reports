@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//android.view.ViewGroup[@resource-id=\"menu\" and contains(@content-desc, \"Paymium x WDIO (Android) - Ticket de support - 1771513370478\")]"
-}

@@ -1,4 +1,0 @@
-{
-  "using": "-android uiautomator",
-  "value": "new UiSelector().textContains(\"Les mots de passe doivent correspondre\")"
-}

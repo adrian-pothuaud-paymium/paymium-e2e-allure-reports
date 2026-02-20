@@ -1,7 +1,0 @@
-TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByText('Vérification de votre identité') to be detached
-    24 × locator resolved to visible <div dir="auto" class="css-146c3p1 color-[var(--colors-text-primary)] font-family-[var(--font-family)] font-size-[24px] line-height-[var(--font-line-height-xl)] font-weight-[800] align-self-[stretch]">Vérification de votre identité</div>
-
-    at GetToKnowEachOtherKYCSheet.waitDetachedAfterSuccess (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/dashboard/_components/GetToKnowEachOtherKYCSheet.ts:37:22)
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/onboarding/complete-flows.spec.ts:257:69

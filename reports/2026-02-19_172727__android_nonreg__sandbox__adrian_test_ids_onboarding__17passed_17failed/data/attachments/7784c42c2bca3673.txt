@@ -1,1 +1,0 @@
-stale element reference: WebDriverError: Cached elements 'By.AndroidUiAutomator: new UiSelector().resourceId("modifySaving")' do not exist in DOM anymore when running "element/00000000-0000-0014-ffff-ffff000007ba/name" with method "GET"

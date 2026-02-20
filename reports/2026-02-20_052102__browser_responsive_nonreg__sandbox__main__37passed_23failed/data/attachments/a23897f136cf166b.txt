@@ -1,2 +1,0 @@
-OAuth tokens refreshed and saved automatically
-Code récupéré dans l'email : 689993

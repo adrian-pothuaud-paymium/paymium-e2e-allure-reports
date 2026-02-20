@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Empreinte digitale\"]"
-}

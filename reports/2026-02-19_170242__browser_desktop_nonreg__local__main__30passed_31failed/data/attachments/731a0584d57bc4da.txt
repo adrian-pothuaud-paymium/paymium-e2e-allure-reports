@@ -1,2 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-POST /users failed Request failed with status code 500

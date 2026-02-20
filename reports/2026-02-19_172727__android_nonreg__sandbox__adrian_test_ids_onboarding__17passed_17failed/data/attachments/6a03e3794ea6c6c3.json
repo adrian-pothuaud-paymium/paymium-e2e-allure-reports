@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//android.view.ViewGroup[@content-desc=\"Envoi par email, Envoyez des crypto-monnaies ou des liquidités gratuitement à quelqu’un\"]"
-}

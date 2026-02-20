@@ -1,9 +1,0 @@
-[pageerror] XMLHttpRequest cannot load https: /account.staging-paymium.com/cdn-cgi/rum? due to access control checks.
-TimeoutError: locator.click: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByRole('listitem').filter({ hasText: /BTC sortants \/ BTC entrants/ }).first()
-
-    at ContentSelect.select (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/ContentSelect.ts:45:25)
-    at SupportTicketFormSheet.selectCategory (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/help/tickets/SupportTicketFormSheet.ts:38:5)
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:53:5
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/support/support-tickets.spec.ts:49:3

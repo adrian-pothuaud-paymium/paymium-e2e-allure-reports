@@ -1,7 +1,0 @@
-[pageerror] Unhandled Promise Rejection: AxiosError: Network Error
-TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByTestId('toast-success')
-
-    at Toasts.ensureAndCloseToast (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/Toasts.ts:15:33)
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/trading/buy-cryptos.spec.ts:108:33
