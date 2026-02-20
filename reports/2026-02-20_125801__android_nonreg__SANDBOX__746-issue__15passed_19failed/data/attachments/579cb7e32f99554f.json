@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.widget.Switch[@content-desc=\"Second facteur d'authentification (2FA)\"]"
+}

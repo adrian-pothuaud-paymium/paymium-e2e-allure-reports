@@ -1,0 +1,1 @@
+stale element reference: WebDriverError: The element 'By.xpath: //android.widget.Button[@content-desc="Achat / vente"]' is not linked to the same object in DOM anymore when running "element/00000000-0000-000d-ffff-ffff00000a02/name" with method "GET"

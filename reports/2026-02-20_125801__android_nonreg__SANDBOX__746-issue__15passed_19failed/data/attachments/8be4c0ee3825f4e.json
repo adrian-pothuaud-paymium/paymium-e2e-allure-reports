@@ -1,0 +1,4 @@
+{
+  "using": "-android uiautomator",
+  "value": "new UiSelector().text(\"Votre vérification d'identité a été validée. Votre compte sera approuvé par nos équipes prochainement.\")"
+}

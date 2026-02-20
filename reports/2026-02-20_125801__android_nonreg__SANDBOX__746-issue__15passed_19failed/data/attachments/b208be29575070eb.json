@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.widget.TextView[@text=\"Devise\"]/following-sibling::android.widget.TextView"
+}

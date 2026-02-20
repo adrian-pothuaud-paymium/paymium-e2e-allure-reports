@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.widget.TextView[@resource-id=\"questionLabel\" and @text=\"Quelle(s) utilisation(s) ferez-vous de votre compte Paymium ?\"]"
+}

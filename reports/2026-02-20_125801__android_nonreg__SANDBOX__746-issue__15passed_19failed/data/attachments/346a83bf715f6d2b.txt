@@ -1,0 +1,56 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur peut vendre du BTC en ordre limite avec succès
+
+
+Test Step: Open App and go to Sign In
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/trading/expert-mode-sell-limit.spec.ts:17
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/trading/expert-mode-sell-limit.spec.ts:18
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément non affiché: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+            |-- Élément non affiché: //android.widget.Button[@text="Accepter les cookies"]
+    |-- UpdateScreen.waitForScreen(20000)
+    |-- AxeptioCookies.waitForSheet(20000)
+        |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+            |-- Attente du premier élément affiché parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément trouvé: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+    |-- AxeptioCookies.acceptCookies()
+        |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+            |-- Clic sur le premier élément existant parmi: ["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"]
+            |-- Élément existant trouvé: android=new UiSelector().resourceId("axeptio_btn_acceptAll")
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+
+
+Test Step: Sign in with test account
+|-- Shortcuts.authenticate() paymium-e2e-united/tests/wdio-android/tests/trading/expert-mode-sell-limit.spec.ts:21
+    |-- SignIn.fillEmail(adrianpothuaud@gmail.com)
+    |-- SignIn.fillPassword(********)
+    |-- SignIn.submit()
+    |-- SignIn.waitFor2FA()
+    |-- SignIn.fill2FA(********)
+    |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired(********)
+        |-- CreatePinCode.waitForScreen(20000)
+        |-- CreatePinCode.create()
+        |-- CreateAccessCode.waitForScreen(20000)
+        |-- CreateAccessCode.fillCode(********)
+        |-- ConfirmPinCode.waitForScreen(20000)
+        |-- ConfirmPinCode.fillCode(********)
+        |-- EnableBiometrics.waitForScreen(20000)
+    |-- DashboardScreen.waitForScreen()
+
+
+Test Step: Go to Expert Mode
+|-- ExpertScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/trading/expert-mode-sell-limit.spec.ts:25
+|-- ExpertScreen.chooseSell() paymium-e2e-united/tests/wdio-android/tests/trading/expert-mode-sell-limit.spec.ts:30
+|-- ExpertBuySellSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/trading/expert-mode-sell-limit.spec.ts:31
+|-- ExpertBuySellSheet.fillPrice(22648.21) paymium-e2e-united/tests/wdio-android/tests/trading/expert-mode-sell-limit.spec.ts:32
+|-- ExpertBuySellSheet.fillAmount(0.003717) paymium-e2e-united/tests/wdio-android/tests/trading/expert-mode-sell-limit.spec.ts:33
+|-- ExpertBuySellSheet.trigger() paymium-e2e-united/tests/wdio-android/tests/trading/expert-mode-sell-limit.spec.ts:34

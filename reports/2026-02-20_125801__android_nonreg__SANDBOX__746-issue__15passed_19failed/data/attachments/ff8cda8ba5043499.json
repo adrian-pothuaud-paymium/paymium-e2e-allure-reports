@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.view.ViewGroup[@content-desc=\"Acheter, Achetez des crypto-monnaies avec des liquidités\"]"
+}
