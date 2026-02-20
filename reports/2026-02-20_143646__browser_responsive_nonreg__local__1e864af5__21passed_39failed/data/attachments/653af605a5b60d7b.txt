@@ -1,0 +1,10 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Sign-up attempt 1 failed. Retrying...
+Sign-up attempt 2 failed. Retrying...
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#code') to be visible
+
+    at GetToKnowEachOtherPhoneNumberSheet.waitForLocators (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:29:22)
+    at GetToKnowEachOtherPhoneNumberSheet.waitForPhoneOTP (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/dashboard/_components/GetToKnowEachOtherPhoneNumberSheet.ts:40:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/onboarding/complete-flows.spec.ts:250:77

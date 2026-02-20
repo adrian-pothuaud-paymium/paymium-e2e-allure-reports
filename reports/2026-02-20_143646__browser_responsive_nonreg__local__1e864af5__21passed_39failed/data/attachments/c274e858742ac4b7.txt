@@ -1,0 +1,14 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] SyntaxError: Unexpected token '<'
+Error: locator.waitFor: Error: strict mode violation: getByRole('dialog') resolved to 2 elements:
+    1) <div role="dialog" aria-modal="true" class="css-g5y9jx">…</div> aka getByRole('dialog').filter({ hasText: 'Paiement par carteMontant0,00' })
+    2) <div tabindex="-1" role="dialog" aria-modal="false" data-lenis-prevent="true" data-testid="widget-container" aria-labelledby="main-dialog-aria-label" class="sc-fHYyUA jFrSgS ax-widget-container" aria-describedby="main-dialog-aria-description">…</div> aka getByTestId('widget-container')
+
+Call log:
+  - waiting for getByRole('dialog') to be visible
+    5 × locator resolved to hidden <div tabindex="-1" role="dialog" aria-modal="false" data-lenis-prevent="true" data-testid="widget-container" aria-labelledby="main-dialog-aria-label" class="sc-fHYyUA jFrSgS ax-widget-container" aria-describedby="main-dialog-aria-description">…</div>
+
+    at Swap.waitForCardDialog (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/swap/index.ts:158:41)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/trading/buy-cryptos.spec.ts:133:26
