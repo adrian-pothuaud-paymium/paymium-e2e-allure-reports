@@ -1,0 +1,13 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByText(/Identifiant et\/ou mot de passe invalides/)
+Expected: visible
+Timeout: 10000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 10000ms
+  - waiting for getByText(/Identifiant et\/ou mot de passe invalides/)
+
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/authentication/sign-in.spec.ts:88:77
