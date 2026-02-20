@@ -1,0 +1,13 @@
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /^(.*)webview\.powens\.com\/fr\/payment\/connector(.*)$/
+Received string:  "https://account.sandbox-paymium.com/deposit/EUR"
+Timeout: 30000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 30000ms
+    33 × unexpected value "https://account.sandbox-paymium.com/deposit/EUR"
+
+    at PowensConnector.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:16:29)
+    at PowensConnector.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/webview.powens.com/payment/connector.ts:31:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/transfers/deposit.spec.ts:39:58

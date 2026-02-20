@@ -1,0 +1,54 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e8]:
+  - generic [ref=e9]:
+    - link [ref=e11] [cursor=pointer]:
+      - /url: https://www.paymium.com/
+      - img [ref=e13]
+    - button [ref=e50] [cursor=pointer]:
+      - img [ref=e52]
+  - generic [ref=e53]:
+    - navigation
+    - generic [ref=e54]:
+      - form [ref=e58]:
+        - generic [ref=e60]:
+          - generic [ref=e61]:
+            - button [ref=e63] [cursor=pointer]:
+              - img [ref=e64]
+            - tablist [ref=e67]:
+              - tab [selected] [ref=e68]
+              - tab [ref=e70]
+              - tab [ref=e71]
+              - tab [ref=e72]
+              - tab [ref=e73]
+          - generic [ref=e76]:
+            - generic [ref=e78]:
+              - generic [ref=e79]:
+                - generic [ref=e80]: Votre société
+                - generic [ref=e81]: Cette étape permet l'identification de votre société.
+              - generic [ref=e83]:
+                - generic [ref=e85]: Nom de la société
+                - textbox "Nom de la société" [ref=e87]: Rosenbaum, Pouros and Bailey
+              - generic [ref=e89]:
+                - generic [ref=e91]: Pays de la société
+                - button "Pays de la société" [active] [ref=e93] [cursor=pointer]:
+                  - textbox [ref=e95]: FRA
+                  - generic [ref=e96]: 🇫🇷 France
+                  - img [ref=e97]
+              - generic [ref=e100]:
+                - generic [ref=e102]: Numéro SIREN
+                - textbox "Numéro SIREN" [ref=e104]
+            - button "Continuer" [disabled]:
+              - generic: Continuer
+      - contentinfo [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e107]: Copyright © 2026
+          - link "Paymium" [ref=e109]:
+            - /url: https://sandbox-paymium.webflow.io/
+          - generic [ref=e110]: 6.14.1
+          - link "Statut" [ref=e112]:
+            - /url: /status
+          - link "Gérer vos cookies" [ref=e114]:
+            - /url: ""
+```
