@@ -1,0 +1,151 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+        - button "FR" [ref=e53] [cursor=pointer]:
+          - generic [ref=e54]: FR
+          - img [ref=e55]
+        - button [ref=e57] [cursor=pointer]:
+          - img [ref=e60]
+        - button [ref=e64] [cursor=pointer]:
+          - img [ref=e65]
+        - button [ref=e68] [cursor=pointer]:
+          - img [ref=e69]
+        - button [ref=e72] [cursor=pointer]:
+          - img [ref=e73]
+    - generic [ref=e77]:
+      - navigation [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e82]:
+            - img [ref=e84]
+            - textbox "Chercher" [ref=e87]
+          - generic [ref=e88]:
+            - link "Tableau de bord" [ref=e89] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e90]
+              - generic [ref=e93]: Tableau de bord
+            - link "Portefeuille" [ref=e94] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e95]
+              - generic [ref=e99]: Portefeuille
+            - link "Achat / vente" [ref=e100] [cursor=pointer]:
+              - /url: /swap
+              - img [ref=e101]
+              - generic [ref=e104]: Achat / vente
+            - link "Dépôt / retrait" [ref=e105] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e106]
+              - generic [ref=e109]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e110] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e111]
+              - generic [ref=e116]: Achat récurrent
+            - link "Mode expert" [ref=e117] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e118]
+              - generic [ref=e120]: Mode expert
+            - link "Parrainage" [ref=e121] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e122]
+              - generic [ref=e127]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e128] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e129]
+              - generic [ref=e134]: Plan Bitcoin Famille
+            - link "Historique" [ref=e135] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e136]
+              - generic [ref=e141]: Historique
+      - generic [ref=e142]:
+        - generic [ref=e144]:
+          - generic [ref=e145]: Transfert
+          - generic [ref=e146]:
+            - tablist [ref=e148]:
+              - generic [ref=e149]:
+                - tab "Déposer" [ref=e151] [cursor=pointer]:
+                  - generic [ref=e152]: Déposer
+                - tab "Retirer" [selected] [ref=e153] [cursor=pointer]:
+                  - generic [ref=e154]: Retirer
+                - tab "Transfert interne" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]: Transfert interne
+                - tab "Envoyer par email" [ref=e157] [cursor=pointer]:
+                  - generic [ref=e158]: Envoyer par email
+            - tabpanel "Retirer" [ref=e159]:
+              - form [ref=e162]:
+                - generic [ref=e163]:
+                  - generic [ref=e164]:
+                    - generic [ref=e165]: Retrait
+                    - generic [ref=e166]:
+                      - generic [ref=e168]:
+                        - generic [ref=e170]: Devise
+                        - button "Devise" [ref=e172] [cursor=pointer]:
+                          - textbox [ref=e174]: BTC
+                          - generic [ref=e177]:
+                            - img [ref=e178]
+                            - generic [ref=e183]: Bitcoin
+                          - img [ref=e184]
+                      - alert [ref=e186]:
+                        - generic [ref=e187]: Retirer uniquement des BTC vers des adresses du réseau Bitcoin. Les retraits vers des adresses générées sur d'autres réseaux pourraient entraîner la perte de vos fonds.
+                      - generic [ref=e188]:
+                        - img [ref=e190]
+                        - generic [ref=e193]: Aucune adresse de retrait Bitcoin trouvée.
+                        - generic [ref=e194]: Vous devez ajouter une adresse de retrait pour retirer des cryptomonnaies depuis Paymium.
+                        - button "Ajouter adresse - Bitcoin" [ref=e195] [cursor=pointer]:
+                          - generic [ref=e196]: Ajouter adresse - Bitcoin
+                  - generic [ref=e197]:
+                    - generic [ref=e198]:
+                      - generic [ref=e199]:
+                        - generic [ref=e200]: Bitcoin disponible
+                        - generic [ref=e201]:
+                          - img [ref=e202]
+                          - generic [ref=e205]: BTC
+                      - generic [ref=e206]:
+                        - generic [ref=e207]: Montant total
+                        - generic [ref=e208]: 0,32564709 BTC
+                      - generic [ref=e209]:
+                        - generic [ref=e210]: Montant verrouillé
+                        - generic [ref=e211]: 0,00013413 BTC
+                      - separator [ref=e212]
+                      - generic [ref=e213]:
+                        - generic [ref=e214]: Disponible à retirer
+                        - generic [ref=e215]: 0,32551296 BTC
+                    - generic [ref=e216]:
+                      - generic [ref=e217]:
+                        - img [ref=e218]
+                        - generic [ref=e220]: Informations retrait BTC
+                        - button "Masquer" [ref=e221] [cursor=pointer]:
+                          - generic [ref=e222]: Masquer
+                      - list [ref=e226]:
+                        - generic [ref=e227]: "Les transferts de bitcoins sont traités exclusivement sur la blockchain Bitcoin. Pour effectuer votre transfert :"
+                        - listitem [ref=e228]:
+                          - generic [ref=e230]: "1"
+                          - generic [ref=e231]: Remplissez le formulaire.
+                        - listitem [ref=e232]:
+                          - generic [ref=e234]: "2"
+                          - generic [ref=e235]: Autorisez le transfert en renseignant le code à 6 chiffres qui vous sera envoyé à votre email.
+                        - listitem [ref=e236]:
+                          - generic [ref=e238]: "3"
+                          - generic [ref=e239]: Généralement, les transferts sont exécutés en quelques minutes. Au-delà de 24h, veuillez contacter notre service support client.
+                        - listitem [ref=e240]:
+                          - generic [ref=e241]: Dans certains cas, notre équipe peut vous demander des informations complémentaires par mesure de sécurité.
+        - contentinfo [ref=e242]:
+          - generic [ref=e243]:
+            - generic [ref=e244]: Copyright © 2026
+            - link "Paymium" [ref=e246] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e247]: 6.14.1
+            - link "Statut" [ref=e249] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e251] [cursor=pointer]:
+              - /url: ""
+```

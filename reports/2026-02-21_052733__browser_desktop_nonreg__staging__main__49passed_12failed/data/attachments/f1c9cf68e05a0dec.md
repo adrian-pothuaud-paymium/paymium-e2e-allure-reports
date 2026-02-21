@@ -1,0 +1,150 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - generic [ref=e48]:
+          - button [ref=e49] [cursor=pointer]:
+            - img [ref=e50]
+          - button "FR" [ref=e53] [cursor=pointer]:
+            - generic [ref=e54]: FR
+            - img [ref=e55]
+          - button [ref=e57] [cursor=pointer]:
+            - img [ref=e60]
+          - button [ref=e64] [cursor=pointer]:
+            - img [ref=e65]
+          - button [ref=e68] [cursor=pointer]:
+            - img [ref=e69]
+          - button [ref=e73] [cursor=pointer]:
+            - img [ref=e74]
+      - generic [ref=e78]:
+        - navigation [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e83]:
+              - img [ref=e85]
+              - textbox "Chercher" [ref=e88]
+            - generic [ref=e89]:
+              - link "Tableau de bord" [ref=e90] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e91]
+                - generic [ref=e94]: Tableau de bord
+              - link "Portefeuille" [ref=e95] [cursor=pointer]:
+                - /url: /wallet
+                - img [ref=e96]
+                - generic [ref=e100]: Portefeuille
+              - link "Achat / vente" [ref=e101] [cursor=pointer]:
+                - /url: /swap
+                - img [ref=e102]
+                - generic [ref=e105]: Achat / vente
+              - link "Dépôt / retrait" [ref=e106] [cursor=pointer]:
+                - /url: /deposit/EUR
+                - img [ref=e107]
+                - generic [ref=e110]: Dépôt / retrait
+              - link "Achat récurrent" [ref=e111] [cursor=pointer]:
+                - /url: /recurrent
+                - img [ref=e112]
+                - generic [ref=e117]: Achat récurrent
+              - link "Mode expert" [ref=e118] [cursor=pointer]:
+                - /url: /trade/BTC/EUR
+                - img [ref=e119]
+                - generic [ref=e121]: Mode expert
+              - link "Parrainage" [ref=e122] [cursor=pointer]:
+                - /url: /referral
+                - img [ref=e123]
+                - generic [ref=e128]: Parrainage
+              - link "Plan Bitcoin Famille" [ref=e129] [cursor=pointer]:
+                - /url: /family
+                - img [ref=e130]
+                - generic [ref=e135]: Plan Bitcoin Famille
+              - link "Historique" [ref=e136] [cursor=pointer]:
+                - /url: /history
+                - img [ref=e137]
+                - generic [ref=e142]: Historique
+        - generic [ref=e143]:
+          - generic [ref=e146]:
+            - heading "Problème de connexion - 1771650695714 - En attente Fermer" [level=2] [ref=e147]:
+              - generic [ref=e148]:
+                - button [ref=e149] [cursor=pointer]:
+                  - img [ref=e150]
+                - generic [ref=e152]:
+                  - text: Problème de connexion - 1771650695714
+                  - generic [ref=e153]: "- En attente"
+              - button "Fermer" [ref=e154] [cursor=pointer]:
+                - generic [ref=e155]: Fermer
+            - generic [ref=e156]:
+              - generic [ref=e157]:
+                - generic [ref=e158]:
+                  - generic [ref=e159]: Description
+                  - generic [ref=e160]: Je n'arrive pas à me connecter à mon compte.
+                - generic [ref=e161]:
+                  - generic [ref=e162]: Commentaires
+                  - generic [ref=e163]:
+                    - generic [ref=e164]: Pouvez-vous m'aider à résoudre ce problème ?
+                    - generic [ref=e165]: Gonzalo - 21/02/2026 06:11
+              - form [ref=e166]:
+                - generic [ref=e167]: Ajouter un commentaire
+                - generic [ref=e169]:
+                  - generic [ref=e171]: Commentaires
+                  - textbox "Commentaires" [ref=e173]
+                - button "Créer" [ref=e175] [cursor=pointer]:
+                  - generic [ref=e176]: Créer
+          - contentinfo [ref=e177]:
+            - generic [ref=e178]:
+              - generic [ref=e179]: Copyright © 2026
+              - link "Paymium" [ref=e181] [cursor=pointer]:
+                - /url: https://sandbox-paymium.webflow.io/
+              - generic [ref=e182]: 6.14.1
+              - link "Statut" [ref=e184] [cursor=pointer]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e186] [cursor=pointer]:
+                - /url: ""
+  - generic:
+    - generic:
+      - generic:
+        - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e187]':
+          - generic [ref=e188]:
+            - generic [ref=e189]:
+              - button "Fermer le widget sans consentement" [ref=e190] [cursor=pointer]:
+                - generic [ref=e191]: Continuer sans accepter
+              - generic [ref=e193]:
+                - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e196]:
+                  - generic [ref=e197]: Des cookies pour
+                  - generic [ref=e198]: vos bitcoins !
+                - generic [ref=e199]:
+                  - paragraph [ref=e200]:
+                    - text: Parce que
+                    - strong [ref=e201]: stacker des sats ça donne faim
+                    - text: ", nous vous proposons une pause cookie ! 🍪"
+                  - paragraph [ref=e202]:
+                    - text: Avec votre accord, Paymium aimerait utiliser des
+                    - strong [ref=e203]: cookies
+                    - text: placés par nous et/ou par nos partenaires sur notre site.
+                  - paragraph [ref=e204]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+                  - paragraph [ref=e205]:
+                    - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                    - strong [ref=e206]: Vous choisissez ceux qui vous plaisent
+                    - text: ", comme pour le trading !"
+                  - paragraph [ref=e207]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+                - paragraph [ref=e209]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+              - button "Consentements certifiés par Axeptio" [ref=e212]:
+                - generic [ref=e213]: Consentements certifiés par
+                - img "Axeptio" [ref=e217]
+            - generic [ref=e221]:
+              - button "Je choisis les cookies à configurer" [ref=e222] [cursor=pointer]: Je choisis
+              - button "Accepter les cookies" [ref=e223] [cursor=pointer]: OK pour moi
+          - generic [ref=e224]:
+            - text: Axeptio consent
+            - checkbox [ref=e225]
+          - generic [ref=e226]:
+            - paragraph [ref=e227]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+            - paragraph [ref=e228]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+        - button "Fermer le widget sans consentement" [ref=e229] [cursor=pointer]:
+          - img [ref=e233]
+```
