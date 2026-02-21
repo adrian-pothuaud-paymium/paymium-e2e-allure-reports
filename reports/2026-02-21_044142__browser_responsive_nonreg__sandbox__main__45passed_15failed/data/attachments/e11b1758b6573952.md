@@ -1,0 +1,71 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - button [ref=e49] [cursor=pointer]:
+        - img [ref=e51]
+    - generic [ref=e52]:
+      - navigation
+      - generic [ref=e53]:
+        - generic [ref=e55]:
+          - banner [ref=e57]:
+            - generic [ref=e58]:
+              - img [ref=e60]
+              - generic [ref=e62]: Votre transfert interne est en cours de traitement.
+            - link "Voir l'historique" [ref=e63] [cursor=pointer]:
+              - /url: /history?type=history-internalTransfer
+              - generic [ref=e64]: Voir l'historique
+          - generic [ref=e66]:
+            - tablist [ref=e69]:
+              - generic [ref=e70]:
+                - tab "Mes actifs" [ref=e72] [cursor=pointer]:
+                  - generic [ref=e73]: Mes actifs
+                - tab "Mes portefeuilles non-hébergés" [selected] [ref=e74] [cursor=pointer]:
+                  - generic [ref=e75]: Mes portefeuilles non-hébergés
+            - tabpanel "Mes portefeuilles non-hébergés" [ref=e76]:
+              - generic [ref=e77]:
+                - button "Créer un nouveau wallet non-hébergé" [active] [ref=e79] [cursor=pointer]:
+                  - generic [ref=e80]: Créer un nouveau wallet non-hébergé
+                - generic [ref=e81]:
+                  - generic [ref=e82]:
+                    - generic [ref=e83]:
+                      - generic [ref=e86] [cursor=pointer]:
+                        - generic [ref=e87]: Libellé
+                        - generic [ref=e89]:
+                          - img [ref=e90]
+                          - img [ref=e92]
+                      - generic [ref=e95] [cursor=pointer]:
+                        - generic [ref=e96]: Commentaire
+                        - generic [ref=e98]:
+                          - img [ref=e99]
+                          - img [ref=e101]
+                      - generic [ref=e104] [cursor=pointer]:
+                        - generic [ref=e105]: Cadeau ?
+                        - generic [ref=e107]:
+                          - img [ref=e108]
+                          - img [ref=e110]
+                    - generic [ref=e113] [cursor=pointer]:
+                      - img [ref=e115]
+                      - generic [ref=e120]: test 2
+                    - generic [ref=e124] [cursor=pointer]:
+                      - img [ref=e126]
+                      - generic [ref=e131]: test
+                  - button
+        - contentinfo [ref=e134]:
+          - generic [ref=e135]:
+            - generic [ref=e136]: Copyright © 2026
+            - link "Paymium" [ref=e138]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e139]: 6.14.1
+            - link "Statut" [ref=e141]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e143]:
+              - /url: ""
+```

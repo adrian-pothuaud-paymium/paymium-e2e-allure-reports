@@ -1,0 +1,46 @@
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/users/sign_in due to access control checks.
+Login attempt 1 failed: page.waitForResponse: Timeout 10000ms exceeded while waiting for event "response"
+    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:116:23)
+    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:150:9)
+    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:19:3)
+    at loginAsNewPhoneApprovedUser (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:45:3)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/investment/family-plan.spec.ts:38:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts',
+      line: 116,
+      column: 23,
+      function: 'SignIn.submit'
+    },
+    category: 'pw:api',
+    title: 'Wait for event "response"',
+    apiName: 'page.waitForResponse',
+    params: { info: [Object] },
+    group: undefined,
+    stepId: 'pw:api@52',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@52',
+      _title: 'Wait for event "response"',
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1771646988437,
+    error: {
+      message: 'TimeoutError: page.waitForResponse: Timeout 10000ms exceeded while waiting for event "response"',
+      stack: 'TimeoutError: page.waitForResponse: Timeout 10000ms exceeded while waiting for event "response"\n' +
+        '    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:116:23)\n' +
+        '    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:150:9)\n' +
+        '    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:19:3)\n' +
+        '    at loginAsNewPhoneApprovedUser (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:45:3)\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/investment/family-plan.spec.ts:38:3',
+      cause: undefined
+    }
+  }
+}

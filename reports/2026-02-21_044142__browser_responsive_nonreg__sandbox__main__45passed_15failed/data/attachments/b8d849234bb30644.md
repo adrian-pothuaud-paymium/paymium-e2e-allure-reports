@@ -1,0 +1,97 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - button [ref=e49] [cursor=pointer]:
+        - img [ref=e51]
+    - generic [ref=e52]:
+      - navigation
+      - generic [ref=e53]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: Transfert
+          - generic [ref=e57]:
+            - tablist [ref=e59]:
+              - generic [ref=e60]:
+                - tab "Déposer" [ref=e62] [cursor=pointer]:
+                  - generic [ref=e63]: Déposer
+                - tab "Retirer" [ref=e64] [cursor=pointer]:
+                  - generic [ref=e65]: Retirer
+                - tab "Transfert interne" [ref=e66] [cursor=pointer]:
+                  - generic [ref=e67]: Transfert interne
+                - tab "Envoyer par email" [selected] [ref=e68] [cursor=pointer]:
+                  - generic [ref=e69]: Envoyer par email
+            - tabpanel "Envoyer par email" [ref=e70]:
+              - generic [ref=e71]:
+                - banner [ref=e73]:
+                  - generic [ref=e74]:
+                    - img [ref=e76]
+                    - generic [ref=e78]: Votre transfert interne est en cours de traitement.
+                  - link "Voir l'historique" [ref=e79] [cursor=pointer]:
+                    - /url: /history?type=history-internalTransfer
+                    - generic [ref=e80]: Voir l'historique
+                - form [ref=e82]:
+                  - paragraph [ref=e83]:
+                    - generic [ref=e84]: 46 291,00 €
+                    - text: disponible sur votre compte.
+                    - link "Approvisionnez votre compte en EUR." [ref=e85] [cursor=pointer]:
+                      - /url: /deposit/EUR
+                      - generic [ref=e87]: Approvisionnez votre compte en EUR.
+                  - generic [ref=e88]:
+                    - button "Envoyer" [ref=e90] [cursor=pointer]:
+                      - generic [ref=e92]:
+                        - generic [ref=e94]: Envoyer
+                        - button "Envoyer" [active] [ref=e96]:
+                          - textbox [ref=e98]: EUR
+                          - generic [ref=e100]:
+                            - img [ref=e101]
+                            - generic [ref=e106]: Euro
+                          - img [ref=e107]
+                    - generic [ref=e110]:
+                      - button "Montant à envoyer Max" [ref=e111] [cursor=pointer]:
+                        - generic [ref=e113]:
+                          - generic [ref=e115]: Montant à envoyer
+                          - generic [ref=e116]:
+                            - textbox "Montant à envoyer" [ref=e117]:
+                              - /placeholder: "ex : 123.45"
+                            - button "Max" [ref=e121]:
+                              - generic [ref=e122]: Max
+                      - generic [ref=e123]:
+                        - generic [ref=e124]: "Solde:"
+                        - generic [ref=e125]: 46 291,00 €
+                  - generic [ref=e126]:
+                    - button "Adresse e-mail du destinataire" [ref=e128] [cursor=pointer]:
+                      - generic [ref=e130]:
+                        - generic [ref=e132]: Adresse e-mail du destinataire
+                        - textbox "Adresse e-mail du destinataire" [ref=e134]:
+                          - /placeholder: destinataire@exemple.fr
+                    - button "Commentaire" [ref=e136] [cursor=pointer]:
+                      - generic [ref=e138]:
+                        - generic [ref=e140]: Commentaire
+                        - textbox "Commentaire" [ref=e142]:
+                          - /placeholder: Message pour le destinataire...
+                  - button "Confirmer" [disabled]:
+                    - generic: Confirmer
+                  - generic [ref=e143]:
+                    - generic [ref=e144]:
+                      - text: "Pour effectuer votre transfert :"
+                      - generic [ref=e145]: 1- Remplir le formulaire ci-dessus,
+                      - generic [ref=e146]: 2- Autoriser le transfert en cliquant sur le lien de confirmation qui vous sera envoyé à adrianpothuaud@gmail.com.
+                    - generic [ref=e147]: Si le destinataire est un utilisateur enregistré, il sera crédité immédiatement. Sinon, il dispose de 30 jours pour finaliser son inscription afin de recevoir le montant sur son compte. Vous serez re-crédité si le destinataire ne finalise pas l’inscription à temps.
+        - contentinfo [ref=e148]:
+          - generic [ref=e149]:
+            - generic [ref=e150]: Copyright © 2026
+            - link "Paymium" [ref=e152]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e153]: 6.14.1
+            - link "Statut" [ref=e155]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e157]:
+              - /url: ""
+```

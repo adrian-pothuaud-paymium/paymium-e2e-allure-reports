@@ -1,0 +1,92 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - button [ref=e49] [cursor=pointer]:
+        - img [ref=e51]
+    - generic [ref=e52]:
+      - navigation
+      - generic [ref=e53]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: Transfert
+          - generic [ref=e57]:
+            - tablist [ref=e59]:
+              - generic [ref=e60]:
+                - tab "Déposer" [ref=e62] [cursor=pointer]:
+                  - generic [ref=e63]: Déposer
+                - tab "Retirer" [ref=e64] [cursor=pointer]:
+                  - generic [ref=e65]: Retirer
+                - tab "Transfert interne" [active] [selected] [ref=e66] [cursor=pointer]:
+                  - generic [ref=e67]: Transfert interne
+                - tab "Envoyer par email" [ref=e68] [cursor=pointer]:
+                  - generic [ref=e69]: Envoyer par email
+            - tabpanel "Transfert interne" [ref=e70]:
+              - generic [ref=e71]:
+                - banner [ref=e73]:
+                  - generic [ref=e74]:
+                    - img [ref=e76]
+                    - generic [ref=e78]: Votre transfert interne est en cours de traitement.
+                  - link "Voir l'historique" [ref=e79] [cursor=pointer]:
+                    - /url: /history?type=history-internalTransfer
+                    - generic [ref=e80]: Voir l'historique
+                - form [ref=e82]:
+                  - generic [ref=e83]:
+                    - button "De" [ref=e85] [cursor=pointer]:
+                      - generic [ref=e87]:
+                        - generic [ref=e89]: De
+                        - button "De" [ref=e91]:
+                          - textbox [ref=e93]: cash
+                          - generic [ref=e94]:
+                            - generic [ref=e95]: Compte de dépôt
+                            - generic [ref=e97]: 46 291,00 €
+                          - img [ref=e98]
+                    - img [ref=e101]
+                    - button "À" [ref=e104] [cursor=pointer]:
+                      - generic [ref=e106]:
+                        - generic [ref=e108]: À
+                        - button "À" [ref=e110]:
+                          - textbox [ref=e112]: trading
+                          - generic [ref=e113]:
+                            - generic [ref=e114]: Compte de trading
+                            - generic [ref=e116]: 29 146,12 €
+                          - img [ref=e117]
+                  - generic [ref=e119]:
+                    - generic [ref=e121]:
+                      - generic [ref=e122]:
+                        - generic [ref=e123]: Montant
+                        - generic [ref=e124]:
+                          - generic [ref=e125]: Solde
+                          - generic [ref=e126]: 46 291,00 €
+                      - button "Max" [ref=e127] [cursor=pointer]:
+                        - generic [ref=e130]:
+                          - textbox "Montant" [ref=e131]
+                          - button "Max" [ref=e135]:
+                            - generic [ref=e136]: Max
+                    - button "Commentaire" [ref=e138] [cursor=pointer]:
+                      - generic [ref=e140]:
+                        - generic [ref=e142]: Commentaire
+                        - textbox "Commentaire" [ref=e144]
+                  - generic [ref=e145]:
+                    - generic [ref=e146]: • Votre compte de trading vous permet d'acheter et de vendre des crypto-monnaies.
+                    - generic [ref=e147]: • Votre compte de dépôt vous permet d'envoyer et de recevoir des virements depuis votre compte bancaire.
+                    - generic [ref=e148]: Les transferts internes entre vos comptes en euros sont gratuits et instantanés.
+                  - button "Transférer" [disabled]:
+                    - generic: Transférer
+        - contentinfo [ref=e149]:
+          - generic [ref=e150]:
+            - generic [ref=e151]: Copyright © 2026
+            - link "Paymium" [ref=e153]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e154]: 6.14.1
+            - link "Statut" [ref=e156]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e158]:
+              - /url: ""
+```

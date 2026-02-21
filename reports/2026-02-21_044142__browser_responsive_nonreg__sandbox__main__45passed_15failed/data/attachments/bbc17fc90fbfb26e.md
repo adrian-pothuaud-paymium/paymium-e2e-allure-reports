@@ -1,0 +1,159 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e51]
+      - generic [ref=e52]:
+        - navigation
+        - generic [ref=e53]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Transfert
+            - generic [ref=e57]:
+              - tablist [ref=e59]:
+                - generic [ref=e60]:
+                  - tab "Déposer" [ref=e62] [cursor=pointer]:
+                    - generic [ref=e63]: Déposer
+                  - tab "Retirer" [selected] [ref=e64] [cursor=pointer]:
+                    - generic [ref=e65]: Retirer
+                  - tab "Transfert interne" [ref=e66] [cursor=pointer]:
+                    - generic [ref=e67]: Transfert interne
+                  - tab "Envoyer par email" [ref=e68] [cursor=pointer]:
+                    - generic [ref=e69]: Envoyer par email
+              - tabpanel "Retirer" [ref=e70]:
+                - generic [ref=e71]:
+                  - banner [ref=e73]:
+                    - generic [ref=e74]:
+                      - img [ref=e76]
+                      - generic [ref=e78]: Votre transfert interne est en cours de traitement.
+                    - link "Voir l'historique" [ref=e79] [cursor=pointer]:
+                      - /url: /history?type=history-internalTransfer
+                      - generic [ref=e80]: Voir l'historique
+                  - form [ref=e82]:
+                    - generic [ref=e83]:
+                      - generic [ref=e84]:
+                        - generic [ref=e85]: Retrait
+                        - generic [ref=e86]:
+                          - generic [ref=e88]:
+                            - generic [ref=e90]: Devise
+                            - button "Devise" [ref=e92] [cursor=pointer]:
+                              - textbox [ref=e94]: BTC
+                              - generic [ref=e96]:
+                                - img [ref=e97]
+                                - generic [ref=e102]: Bitcoin
+                              - img [ref=e103]
+                          - alert [ref=e105]:
+                            - generic [ref=e106]: Retirer uniquement des BTC vers des adresses du réseau Bitcoin. Les retraits vers des adresses générées sur d'autres réseaux pourraient entraîner la perte de vos fonds.
+                          - generic [ref=e107]:
+                            - button "Adresse de retrait" [ref=e108] [cursor=pointer]:
+                              - generic [ref=e110]:
+                                - generic [ref=e112]: Adresse de retrait
+                                - button "Adresse de retrait" [ref=e114]:
+                                  - textbox [ref=e116]: undefined
+                                  - img [ref=e119]
+                            - button "Gérer les adresses" [ref=e121] [cursor=pointer]
+                          - generic [ref=e123]:
+                            - generic [ref=e124]:
+                              - generic [ref=e125]: Montant du retrait
+                              - generic [ref=e126]:
+                                - generic [ref=e127]: Solde
+                                - generic [ref=e129]: 0,43386258 BTC
+                            - button "Max" [ref=e131] [cursor=pointer]:
+                              - generic [ref=e134]:
+                                - textbox "Montant du retrait Solde 0,43386258 BTC" [ref=e135]
+                                - button "Max" [ref=e139]:
+                                  - generic [ref=e140]: Max
+                            - generic [ref=e141]:
+                              - button "25%" [ref=e142] [cursor=pointer]:
+                                - generic [ref=e143]: 25%
+                              - button "50%" [ref=e144] [cursor=pointer]:
+                                - generic [ref=e145]: 50%
+                              - button "75%" [ref=e146] [cursor=pointer]:
+                                - generic [ref=e147]: 75%
+                              - button "100%" [ref=e148] [cursor=pointer]:
+                                - generic [ref=e149]: 100%
+                          - button "Commentaire" [ref=e150] [cursor=pointer]:
+                            - generic [ref=e152]:
+                              - generic [ref=e154]: Commentaire
+                              - textbox "Commentaire" [ref=e156]
+                          - button "Retrait rapide Moins de 10 min. - payant" [ref=e160] [cursor=pointer]:
+                            - textbox [ref=e162]: "true"
+                            - generic [ref=e164]:
+                              - generic [ref=e165]: Retrait rapide
+                              - generic [ref=e166]: Moins de 10 min. - payant
+                            - img [ref=e167]
+                          - generic [ref=e169]:
+                            - generic [ref=e170]:
+                              - generic [ref=e171]: Retrait minimum
+                              - generic [ref=e172]: 0,00025000 BTC
+                            - generic [ref=e173]:
+                              - generic [ref=e174]: Frais
+                              - generic [ref=e175]: 0,00005000 BTC
+                          - button "Retirer" [disabled]:
+                            - generic: Retirer
+                      - generic [ref=e176]:
+                        - generic [ref=e177]:
+                          - generic [ref=e178]:
+                            - generic [ref=e179]: Bitcoin disponible
+                            - generic [ref=e180]:
+                              - img [ref=e181]
+                              - generic [ref=e184]: BTC
+                          - generic [ref=e185]:
+                            - generic [ref=e186]: Montant total
+                            - generic [ref=e187]: 0,44376260 BTC
+                          - generic [ref=e188]:
+                            - generic [ref=e189]: Montant verrouillé
+                            - generic [ref=e190]: 0,00990002 BTC
+                          - separator [ref=e191]
+                          - generic [ref=e192]:
+                            - generic [ref=e193]: Disponible à retirer
+                            - generic [ref=e194]: 0,43386258 BTC
+                        - generic [ref=e195]:
+                          - generic [ref=e196]:
+                            - img [ref=e197]
+                            - generic [ref=e199]: Informations retrait BTC
+                            - button "Masquer" [ref=e200] [cursor=pointer]:
+                              - generic [ref=e201]: Masquer
+                          - list [ref=e205]:
+                            - generic [ref=e206]: "Les transferts de bitcoins sont traités exclusivement sur la blockchain Bitcoin. Pour effectuer votre transfert :"
+                            - listitem [ref=e207]:
+                              - generic [ref=e209]: "1"
+                              - generic [ref=e210]: Remplissez le formulaire.
+                            - listitem [ref=e211]:
+                              - generic [ref=e213]: "2"
+                              - generic [ref=e214]: Autorisez le transfert en renseignant le code à 6 chiffres qui vous sera envoyé à votre email.
+                            - listitem [ref=e215]:
+                              - generic [ref=e217]: "3"
+                              - generic [ref=e218]: Généralement, les transferts sont exécutés en quelques minutes. Au-delà de 24h, veuillez contacter notre service support client.
+                            - listitem [ref=e219]:
+                              - generic [ref=e220]: Dans certains cas, notre équipe peut vous demander des informations complémentaires par mesure de sécurité.
+          - contentinfo [ref=e221]:
+            - generic [ref=e222]:
+              - generic [ref=e223]: Copyright © 2026
+              - link "Paymium" [ref=e225]:
+                - /url: https://sandbox-paymium.webflow.io/
+              - generic [ref=e226]: 6.14.1
+              - link "Statut" [ref=e228]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e230]:
+                - /url: ""
+  - dialog [ref=e232]:
+    - generic [ref=e242]:
+      - generic [ref=e245]: Mes portefeuilles non-hébergés
+      - listitem [ref=e247] [cursor=pointer]:
+        - generic [ref=e250]:
+          - generic [ref=e251]: test 2
+          - generic [ref=e252]: tb1q3vuq0dqf8whskdccqvhx9xhkg9gfj35vchyf8z
+      - listitem [ref=e254] [cursor=pointer]:
+        - generic [ref=e257]:
+          - generic [ref=e258]: test
+          - generic [ref=e259]: tb1qt67d0560harywvljnjumjfcecu6p6ls2m95dl7
+```
