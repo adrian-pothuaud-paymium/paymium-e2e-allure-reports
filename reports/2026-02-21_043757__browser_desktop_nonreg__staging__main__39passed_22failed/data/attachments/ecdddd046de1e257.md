@@ -1,0 +1,195 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+        - button "FR" [ref=e53] [cursor=pointer]:
+          - generic [ref=e54]: FR
+          - img [ref=e55]
+        - button [ref=e57] [cursor=pointer]:
+          - img [ref=e60]
+        - button [ref=e64] [cursor=pointer]:
+          - img [ref=e65]
+        - button [ref=e68] [cursor=pointer]:
+          - img [ref=e69]
+        - button [ref=e72] [cursor=pointer]:
+          - img [ref=e73]
+    - generic [ref=e77]:
+      - navigation [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e82]:
+            - img [ref=e84]
+            - textbox "Chercher" [ref=e87]
+          - generic [ref=e88]:
+            - link "Tableau de bord" [ref=e89] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e90]
+              - generic [ref=e93]: Tableau de bord
+            - link "Portefeuille" [ref=e94] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e95]
+              - generic [ref=e99]: Portefeuille
+            - link "Achat / vente" [ref=e100] [cursor=pointer]:
+              - /url: /swap
+              - img [ref=e101]
+              - generic [ref=e104]: Achat / vente
+            - link "Dépôt / retrait" [ref=e105] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e106]
+              - generic [ref=e109]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e110] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e111]
+              - generic [ref=e116]: Achat récurrent
+            - link "Mode expert" [ref=e117] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e118]
+              - generic [ref=e120]: Mode expert
+            - link "Parrainage" [ref=e121] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e122]
+              - generic [ref=e127]: Parrainage
+            - link "Plan Bitcoin Famille" [active] [ref=e128] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e129]
+              - generic [ref=e134]: Plan Bitcoin Famille
+            - link "Historique" [ref=e135] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e136]
+              - generic [ref=e141]: Historique
+      - generic [ref=e142]:
+        - generic [ref=e145]:
+          - generic [ref=e146]:
+            - generic [ref=e147]: Plan Bitcoin Famille
+            - link "En savoir plus" [ref=e148] [cursor=pointer]:
+              - /url: /family/moreInfo
+          - generic [ref=e149]:
+            - tablist [ref=e151]:
+              - generic [ref=e152]:
+                - tab "Enfants" [selected] [ref=e154] [cursor=pointer]:
+                  - generic [ref=e155]: Enfants
+                - tab "Transferts" [ref=e156] [cursor=pointer]:
+                  - generic [ref=e157]: Transferts
+                - tab "Historique" [ref=e158] [cursor=pointer]:
+                  - generic [ref=e159]: Historique
+            - tabpanel "Enfants" [ref=e161]:
+              - generic [ref=e163]:
+                - generic [ref=e166] [cursor=pointer]:
+                  - generic [ref=e167]:
+                    - img [ref=e169]
+                    - generic [ref=e172]: Tara Tata
+                  - generic [ref=e173]:
+                    - generic [ref=e174]: 38,05 €
+                    - generic [ref=e175]:
+                      - generic [ref=e176]: ≈
+                      - generic [ref=e177]: 0,00050000 BTC
+                - separator [ref=e178]
+                - generic [ref=e181] [cursor=pointer]:
+                  - generic [ref=e182]:
+                    - img [ref=e184]
+                    - generic [ref=e186]: Abigayle Denesik
+                  - button "Téléversez des documents" [ref=e187]:
+                    - generic [ref=e188]: Téléversez des documents
+                - separator [ref=e189]
+                - generic [ref=e192] [cursor=pointer]:
+                  - generic [ref=e193]:
+                    - img [ref=e195]
+                    - generic [ref=e197]: Jennyfer Murphy
+                  - button "Téléversez des documents" [ref=e198]:
+                    - generic [ref=e199]: Téléversez des documents
+                - separator [ref=e200]
+                - generic [ref=e203] [cursor=pointer]:
+                  - generic [ref=e204]:
+                    - img [ref=e206]
+                    - generic [ref=e208]: Marc Bartoletti
+                  - button "Téléversez des documents" [ref=e209]:
+                    - generic [ref=e210]: Téléversez des documents
+                - separator [ref=e211]
+                - generic [ref=e214] [cursor=pointer]:
+                  - generic [ref=e215]:
+                    - img [ref=e217]
+                    - generic [ref=e219]: Cindy Herman
+                  - button "Téléversez des documents" [ref=e220]:
+                    - generic [ref=e221]: Téléversez des documents
+                - separator [ref=e222]
+                - generic [ref=e225] [cursor=pointer]:
+                  - generic [ref=e226]:
+                    - img [ref=e228]
+                    - generic [ref=e230]: Jaiden Bogan-Anderson
+                  - button "Téléversez des documents" [ref=e231]:
+                    - generic [ref=e232]: Téléversez des documents
+                - separator [ref=e233]
+                - generic [ref=e236] [cursor=pointer]:
+                  - generic [ref=e237]:
+                    - img [ref=e239]
+                    - generic [ref=e241]: Rylan Grimes
+                  - button "Téléversez des documents" [ref=e242]:
+                    - generic [ref=e243]: Téléversez des documents
+                - separator [ref=e244]
+                - generic [ref=e247] [cursor=pointer]:
+                  - generic [ref=e248]:
+                    - img [ref=e250]
+                    - generic [ref=e252]: Desmond Kerluke
+                  - button "Téléversez des documents" [ref=e253]:
+                    - generic [ref=e254]: Téléversez des documents
+                - separator [ref=e255]
+                - generic [ref=e258] [cursor=pointer]:
+                  - generic [ref=e259]:
+                    - img [ref=e261]
+                    - generic [ref=e263]: Madonna Corwin
+                  - button "Téléversez des documents" [ref=e264]:
+                    - generic [ref=e265]: Téléversez des documents
+                - separator [ref=e266]
+                - generic [ref=e268]:
+                  - button "Le compte de Yesenia est en cours de vérification." [ref=e269] [cursor=pointer]:
+                    - generic [ref=e271]:
+                      - img [ref=e273]
+                      - generic [ref=e278]: Le compte de Yesenia est en cours de vérification.
+                    - img [ref=e280]
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: Le Plan Bitcoin Famille pour votre enfant est actuellement en cours de vérification, nous vous remercions pour votre patience.
+                          - generic: Vous recevrez une notification par email dès que la vérification sera terminée et le compte activé.
+                          - generic: Cette opération peut prendre jusqu'à 2 jours ouvrés.
+                - separator [ref=e282]
+                - generic [ref=e284]:
+                  - button "Le compte de Cyrus est en cours de vérification." [ref=e285] [cursor=pointer]:
+                    - generic [ref=e287]:
+                      - img [ref=e289]
+                      - generic [ref=e294]: Le compte de Cyrus est en cours de vérification.
+                    - img [ref=e296]
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: Le Plan Bitcoin Famille pour votre enfant est actuellement en cours de vérification, nous vous remercions pour votre patience.
+                          - generic: Vous recevrez une notification par email dès que la vérification sera terminée et le compte activé.
+                          - generic: Cette opération peut prendre jusqu'à 2 jours ouvrés.
+              - generic [ref=e298]:
+                - img [ref=e300]
+                - generic [ref=e305]: Ouvrir un compte pour un nouvel enfant
+                - link "Nouveau compte" [ref=e306] [cursor=pointer]:
+                  - /url: /family/create
+                  - generic [ref=e307]: Nouveau compte
+        - contentinfo [ref=e308]:
+          - generic [ref=e309]:
+            - generic [ref=e310]: Copyright © 2026
+            - link "Paymium" [ref=e312] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e313]: 6.14.1
+            - link "Statut" [ref=e315] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e317] [cursor=pointer]:
+              - /url: ""
+```

@@ -1,0 +1,10 @@
+Error: locator.click: Error: strict mode violation: getByTestId('toast-success').getByRole('button', { name: 'Close' }) resolved to 2 elements:
+    1) <button tabindex="0" role="button" type="button" aria-label="Close" class="css-g5y9jx r-1loqt21 r-1otgn73">…</button> aka locator('[id="21"]').getByRole('button', { name: 'Close' })
+    2) <button tabindex="0" role="button" type="button" aria-label="Close" class="css-g5y9jx r-1loqt21 r-1otgn73">…</button> aka locator('[id="23"]').getByRole('button', { name: 'Close' })
+
+Call log:
+  - waiting for getByTestId('toast-success').getByRole('button', { name: 'Close' })
+
+    at Toasts.ensureAndCloseToast (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/Toasts.ts:17:35)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/support/support-tickets.spec.ts:74:5
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/support/support-tickets.spec.ts:72:3

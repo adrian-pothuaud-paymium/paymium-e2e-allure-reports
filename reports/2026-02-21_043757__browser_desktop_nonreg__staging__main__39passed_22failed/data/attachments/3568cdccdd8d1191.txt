@@ -1,0 +1,13 @@
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected: "Paymium"
+Received: "Paymium Staging"
+Timeout:  30000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 30000ms
+    33 × unexpected value "Paymium Staging"
+
+    at PowensConnector.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/BasePage.ts:17:29)
+    at PowensConnector.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/webview.powens.com/payment/connector.ts:31:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/transfers/deposit.spec.ts:38:3
