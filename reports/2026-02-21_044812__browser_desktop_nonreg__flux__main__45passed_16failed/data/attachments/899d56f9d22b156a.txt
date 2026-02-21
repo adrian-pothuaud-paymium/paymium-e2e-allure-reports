@@ -1,0 +1,15 @@
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected pattern: /^Parrainage - Paymium$/
+Received string:  "100400.0 BTC/EUR - Paymium"
+Timeout: 20000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 20000ms
+    10 × unexpected value "100400.0 BTC/EUR - Paymium"
+
+    at ReferralPage.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/BasePage.ts:17:29)
+    at ReferralPage.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/AccountPage.ts:35:5)
+    at ReferralPage.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/referral/index.ts:11:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/navigation/navbar.spec.ts:56:5
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/navigation/navbar.spec.ts:54:3

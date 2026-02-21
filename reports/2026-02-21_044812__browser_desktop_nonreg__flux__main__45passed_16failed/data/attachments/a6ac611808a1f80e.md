@@ -1,0 +1,95 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button "Acheter" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+          - generic [ref=e52]: Acheter
+        - button [ref=e53] [cursor=pointer]:
+          - img [ref=e54]
+        - button "FR" [ref=e57] [cursor=pointer]:
+          - generic [ref=e58]: FR
+          - img [ref=e59]
+        - button [ref=e61] [cursor=pointer]:
+          - img [ref=e64]
+        - button [ref=e68] [cursor=pointer]:
+          - img [ref=e69]
+        - button [ref=e72] [cursor=pointer]:
+          - img [ref=e73]
+        - button [ref=e77] [cursor=pointer]:
+          - img [ref=e78]
+    - generic [ref=e82]:
+      - navigation [ref=e83]:
+        - generic [ref=e84]:
+          - generic [ref=e87]:
+            - img [ref=e89]
+            - textbox "Chercher" [ref=e92]
+          - generic [ref=e93]:
+            - link "Tableau de bord" [ref=e94] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e95]
+              - generic [ref=e98]: Tableau de bord
+            - link "Portefeuille" [ref=e99] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e100]
+              - generic [ref=e104]: Portefeuille
+            - link "Dépôt / retrait" [ref=e105] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e106]
+              - generic [ref=e109]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e110] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e111]
+              - generic [ref=e116]: Achat récurrent
+            - link "Mode expert" [ref=e117] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e118]
+              - generic [ref=e120]: Mode expert
+            - link "Parrainage" [ref=e121] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e122]
+              - generic [ref=e127]: Parrainage
+            - link "Plan Bitcoin Famille" [active] [ref=e128] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e129]
+              - generic [ref=e134]: Plan Bitcoin Famille
+            - link "Historique" [ref=e135] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e136]
+              - generic [ref=e141]: Historique
+      - generic [ref=e142]:
+        - generic [ref=e145]:
+          - generic [ref=e146]:
+            - generic [ref=e147]: Plan Bitcoin Famille
+            - link "En savoir plus" [ref=e148] [cursor=pointer]:
+              - /url: /family/moreInfo
+          - generic [ref=e149]:
+            - tablist [ref=e151]:
+              - generic [ref=e152]:
+                - tab "Enfants" [selected] [ref=e154] [cursor=pointer]:
+                  - generic [ref=e155]: Enfants
+                - tab "Transferts" [ref=e156] [cursor=pointer]:
+                  - generic [ref=e157]: Transferts
+                - tab "Historique" [ref=e158] [cursor=pointer]:
+                  - generic [ref=e159]: Historique
+            - progressbar [ref=e160]:
+              - img [ref=e162]
+        - contentinfo [ref=e165]:
+          - generic [ref=e166]:
+            - generic [ref=e167]: Copyright © 2026
+            - link "Paymium" [ref=e169] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e170]: 6.15.0
+            - link "Statut" [ref=e172] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e174] [cursor=pointer]:
+              - /url: ""
+```
