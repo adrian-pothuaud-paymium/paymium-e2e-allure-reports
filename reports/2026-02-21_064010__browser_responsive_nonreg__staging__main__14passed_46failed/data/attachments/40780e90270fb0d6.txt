@@ -1,0 +1,7 @@
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('listitem').filter({ hasText: 'Achat récurrent' })
+
+    at ResponsiveMenu.goTo (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/ResponsiveMenu.ts:82:26)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/investment/dca.spec.ts:31:5
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/investment/dca.spec.ts:28:3
