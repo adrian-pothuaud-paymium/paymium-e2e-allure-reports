@@ -1,0 +1,11 @@
+Error: locator.waitFor: Error: strict mode violation: getByRole('dialog') resolved to 2 elements:
+    1) <div role="dialog" aria-modal="true" class="css-g5y9jx r-1p0dtai r-1d2f490 r-1xcajam r-zchlnj r-ipm5af r-1niwhzg">…</div> aka getByRole('dialog').first()
+    2) <div role="dialog" aria-modal="true" class="css-g5y9jx">…</div> aka locator('[id="2"]').getByRole('dialog')
+
+Call log:
+  - waiting for getByRole('dialog') to be visible
+
+    at AreYouStillHereSheet.waitForLocators (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:29:22)
+    at AreYouStillHereSheet.waitForBaseSheet (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BaseSheet.ts:11:17)
+    at AreYouStillHereSheet.waitForSheet (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/AreYouStillHereSheet.ts:11:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/authentication/session-timeout.spec.ts:30:46

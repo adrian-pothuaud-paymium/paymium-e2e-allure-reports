@@ -1,0 +1,635 @@
+Login attempt 1 failed: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Se connecter' })
+    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:113:29)
+    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:150:9)
+    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:19:3)
+    at logInAsAdrian (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:35:3)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:22:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts',
+      line: 113,
+      column: 29,
+      function: 'SignIn.submit'
+    },
+    category: 'pw:api',
+    title: "Click getByRole('button', { name: 'Se connecter' })",
+    apiName: 'locator.click',
+    params: {
+      selector: 'internal:role=button[name="Se connecter"i]',
+      strict: true,
+      timeout: 10000
+    },
+    group: undefined,
+    stepId: 'pw:api@61',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@61',
+      _title: "Click getByRole('button', { name: 'Se connecter' })",
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1771653578709,
+    error: {
+      message: 'TimeoutError: locator.click: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('button', { name: 'Se connecter' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    18 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m       - done scrolling\x1B[22m\n' +
+        '\x1B[2m       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n',
+      stack: 'TimeoutError: locator.click: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('button', { name: 'Se connecter' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    18 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m       - done scrolling\x1B[22m\n' +
+        '\x1B[2m       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n' +
+        '\n' +
+        '    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:113:29)\n' +
+        '    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:150:9)\n' +
+        '    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:19:3)\n' +
+        '    at logInAsAdrian (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:35:3)\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:22:3',
+      cause: undefined
+    }
+  }
+}
+Login attempt 2 failed: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Se connecter' })
+    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:113:29)
+    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:150:9)
+    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:19:3)
+    at logInAsAdrian (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:35:3)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:22:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts',
+      line: 113,
+      column: 29,
+      function: 'SignIn.submit'
+    },
+    category: 'pw:api',
+    title: "Click getByRole('button', { name: 'Se connecter' })",
+    apiName: 'locator.click',
+    params: {
+      selector: 'internal:role=button[name="Se connecter"i]',
+      strict: true,
+      timeout: 10000
+    },
+    group: undefined,
+    stepId: 'pw:api@71',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@71',
+      _title: "Click getByRole('button', { name: 'Se connecter' })",
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1771653591396,
+    error: {
+      message: 'TimeoutError: locator.click: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('button', { name: 'Se connecter' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    18 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m       - done scrolling\x1B[22m\n' +
+        '\x1B[2m       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n',
+      stack: 'TimeoutError: locator.click: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('button', { name: 'Se connecter' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    18 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m       - done scrolling\x1B[22m\n' +
+        '\x1B[2m       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n' +
+        '\n' +
+        '    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:113:29)\n' +
+        '    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:150:9)\n' +
+        '    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:19:3)\n' +
+        '    at logInAsAdrian (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:35:3)\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:22:3',
+      cause: undefined
+    }
+  }
+}
+Login attempt 3 failed: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Se connecter' })
+    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:113:29)
+    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:150:9)
+    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:19:3)
+    at logInAsAdrian (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:35:3)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:22:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts',
+      line: 113,
+      column: 29,
+      function: 'SignIn.submit'
+    },
+    category: 'pw:api',
+    title: "Click getByRole('button', { name: 'Se connecter' })",
+    apiName: 'locator.click',
+    params: {
+      selector: 'internal:role=button[name="Se connecter"i]',
+      strict: true,
+      timeout: 10000
+    },
+    group: undefined,
+    stepId: 'pw:api@81',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@81',
+      _title: "Click getByRole('button', { name: 'Se connecter' })",
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1771653603959,
+    error: {
+      message: 'TimeoutError: locator.click: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('button', { name: 'Se connecter' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    18 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m       - done scrolling\x1B[22m\n' +
+        '\x1B[2m       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n',
+      stack: 'TimeoutError: locator.click: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('button', { name: 'Se connecter' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    18 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m       - done scrolling\x1B[22m\n' +
+        '\x1B[2m       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n' +
+        '\n' +
+        '    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:113:29)\n' +
+        '    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:150:9)\n' +
+        '    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:19:3)\n' +
+        '    at logInAsAdrian (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:35:3)\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:22:3',
+      cause: undefined
+    }
+  }
+}
+Login attempt 4 failed: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Se connecter' })
+    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:113:29)
+    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:150:9)
+    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:19:3)
+    at logInAsAdrian (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:35:3)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:22:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts',
+      line: 113,
+      column: 29,
+      function: 'SignIn.submit'
+    },
+    category: 'pw:api',
+    title: "Click getByRole('button', { name: 'Se connecter' })",
+    apiName: 'locator.click',
+    params: {
+      selector: 'internal:role=button[name="Se connecter"i]',
+      strict: true,
+      timeout: 10000
+    },
+    group: undefined,
+    stepId: 'pw:api@91',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@91',
+      _title: "Click getByRole('button', { name: 'Se connecter' })",
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1771653616556,
+    error: {
+      message: 'TimeoutError: locator.click: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('button', { name: 'Se connecter' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    18 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m       - done scrolling\x1B[22m\n' +
+        '\x1B[2m       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n',
+      stack: 'TimeoutError: locator.click: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('button', { name: 'Se connecter' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    18 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m       - done scrolling\x1B[22m\n' +
+        '\x1B[2m       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n' +
+        '\n' +
+        '    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:113:29)\n' +
+        '    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:150:9)\n' +
+        '    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:19:3)\n' +
+        '    at logInAsAdrian (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:35:3)\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:22:3',
+      cause: undefined
+    }
+  }
+}
+Login attempt 5 failed: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Se connecter' })
+    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    18 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:113:29)
+    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:150:9)
+    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:19:3)
+    at logInAsAdrian (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:35:3)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:22:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts',
+      line: 113,
+      column: 29,
+      function: 'SignIn.submit'
+    },
+    category: 'pw:api',
+    title: "Click getByRole('button', { name: 'Se connecter' })",
+    apiName: 'locator.click',
+    params: {
+      selector: 'internal:role=button[name="Se connecter"i]',
+      strict: true,
+      timeout: 10000
+    },
+    group: undefined,
+    stepId: 'pw:api@101',
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@101',
+      _title: "Click getByRole('button', { name: 'Se connecter' })",
+      _parentStep: undefined,
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1771653629068,
+    error: {
+      message: 'TimeoutError: locator.click: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('button', { name: 'Se connecter' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    18 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m       - done scrolling\x1B[22m\n' +
+        '\x1B[2m       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n',
+      stack: 'TimeoutError: locator.click: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('button', { name: 'Se connecter' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <button id="submit" tabindex="0" role="button" type="button" aria-labelledby="«rb»" data-testid="login.signinbutton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components--a…>…</button>\x1B[22m\n' +
+        '\x1B[2m  - attempting click action\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m    - waiting 20ms\x1B[22m\n' +
+        '\x1B[2m    2 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m      - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m      - done scrolling\x1B[22m\n' +
+        '\x1B[2m      - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m    - retrying click action\x1B[22m\n' +
+        '\x1B[2m      - waiting 100ms\x1B[22m\n' +
+        '\x1B[2m    18 × waiting for element to be visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - element is visible, enabled and stable\x1B[22m\n' +
+        '\x1B[2m       - scrolling into view if needed\x1B[22m\n' +
+        '\x1B[2m       - done scrolling\x1B[22m\n' +
+        '\x1B[2m       - <div class="needsclick"></div> from <div data-nosnippet="" id="axeptio_overlay" class="axeptio_mount" data-project-id="66d9b297fede9a4cae0fdd4a">…</div> subtree intercepts pointer events\x1B[22m\n' +
+        '\x1B[2m     - retrying click action\x1B[22m\n' +
+        '\x1B[2m       - waiting 500ms\x1B[22m\n' +
+        '\n' +
+        '    at SignIn.submit (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:113:29)\n' +
+        '    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:150:9)\n' +
+        '    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:19:3)\n' +
+        '    at logInAsAdrian (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:35:3)\n' +
+        '    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:22:3',
+      cause: undefined
+    }
+  }
+}
+Error: Login failed after maximum retry attempts
+    at SignIn.submitSafe (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-in/index.ts:159:11)
+    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:19:3)
+    at logInAsAdrian (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_shortcuts.ts:35:3)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:22:3

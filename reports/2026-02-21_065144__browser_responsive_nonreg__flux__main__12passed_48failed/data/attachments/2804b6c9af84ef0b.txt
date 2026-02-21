@@ -1,0 +1,14 @@
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected pattern: /^Tableau de bord - Paymium$/
+Received string:  "Paymium"
+Timeout: 20000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 20000ms
+    23 × unexpected value "Paymium"
+
+    at Dashboard.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:17:29)
+    at Dashboard.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/AccountPage.ts:32:5)
+    at Dashboard.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/dashboard/index.ts:35:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/trading/swap-cryptos.spec.ts:19:3
