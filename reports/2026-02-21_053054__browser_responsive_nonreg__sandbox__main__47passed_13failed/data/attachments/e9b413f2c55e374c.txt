@@ -1,0 +1,18 @@
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('listitem').filter({ hasText: 'Historique' })
+    - locator resolved to <li tabindex="0" href="/history" role="listitem" class="css-g5y9jx r-1loqt21 r-1otgn73 border-style-[solid] border-width-[0px] align-items-[center] background-color-[rgba(0,-0,-0,-0)] display-[flex] flex-basis-[auto] flex-direction-[row] flex-shrink-[0] list-style-[none] margin-top-[0px] margin-bottom-[0px] margin-left-[0px] margin-right-[0px] min-height-[0px] min-width-[0px] padding-top-[var(--space-md)] padding-bottom-[var(--space-md)] padding-right-[var(--space-xl)] padding-left-[var(--space-xl…>…</li>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - element is outside of the viewport
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is not stable
+  - retrying click action
+    - waiting 20ms
+
+    at ResponsiveMenu.goTo (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/ResponsiveMenu.ts:88:30)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:48:3

@@ -1,0 +1,9 @@
+[pageerror] XMLHttpRequest cannot load https: /account.sandbox-paymium.com/assets/config.json due to access control checks.
+[pageerror] Unhandled Promise Rejection: AxiosError: Network Error
+[pageerror] Permission policy 'Fullscreen' check failed for document with origin 'https: /hpp-sandbox.worldpay.com'.
+[pageerror] Permission policy 'Camera' check failed for document with origin 'https: /hpp-sandbox.worldpay.com'.
+[pageerror] Permission policy 'Microphone' check failed for document with origin 'https: /hpp-sandbox.worldpay.com'.
+[pageerror] Not allowed to call enumerateDevices.
+[pageerror] Permission policy 'Camera' check failed for document with origin 'https: /hpp-sandbox.worldpay.com'.
+[pageerror] Permission policy 'Microphone' check failed for document with origin 'https: /hpp-sandbox.worldpay.com'.
+[pageerror] Not allowed to call enumerateDevices.

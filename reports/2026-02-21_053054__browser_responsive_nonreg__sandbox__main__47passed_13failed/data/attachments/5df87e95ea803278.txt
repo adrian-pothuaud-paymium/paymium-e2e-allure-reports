@@ -1,0 +1,14 @@
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected pattern: /^Historique - Paymium$/
+Received string:  "100400.0 BTC/EUR - Paymium"
+Timeout: 20000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 20000ms
+    10 × unexpected value "100400.0 BTC/EUR - Paymium"
+
+    at History.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:17:29)
+    at History.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/AccountPage.ts:32:5)
+    at History.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/history/index.ts:9:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/navigation/responsive.spec.ts:49:3
