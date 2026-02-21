@@ -1,0 +1,7 @@
+Login attempt 1 failed
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('family.children.newAccount')
+
+    at FamilyEmptyState.createFamily (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/family/empty.ts:29:35)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/investment/family-plan.spec.ts:52:28
