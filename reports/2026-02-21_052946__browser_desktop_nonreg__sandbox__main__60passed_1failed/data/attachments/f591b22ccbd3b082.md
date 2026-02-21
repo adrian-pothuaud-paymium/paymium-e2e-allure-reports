@@ -1,0 +1,163 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+        - button "FR" [ref=e53] [cursor=pointer]:
+          - generic [ref=e54]: FR
+          - img [ref=e55]
+        - button [ref=e57] [cursor=pointer]:
+          - img [ref=e60]
+        - button [ref=e64] [cursor=pointer]:
+          - img [ref=e65]
+        - button [ref=e68] [cursor=pointer]:
+          - img [ref=e69]
+        - button [ref=e73] [cursor=pointer]:
+          - img [ref=e74]
+    - generic [ref=e78]:
+      - navigation [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e83]:
+            - img [ref=e85]
+            - textbox "Chercher" [ref=e88]
+          - generic [ref=e89]:
+            - link "Tableau de bord" [ref=e90] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e91]
+              - generic [ref=e94]: Tableau de bord
+            - link "Portefeuille" [ref=e95] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e96]
+              - generic [ref=e100]: Portefeuille
+            - link "Achat / vente" [ref=e101] [cursor=pointer]:
+              - /url: /swap
+              - img [ref=e102]
+              - generic [ref=e105]: Achat / vente
+            - link "Dépôt / retrait" [ref=e106] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e107]
+              - generic [ref=e110]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e111] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e112]
+              - generic [ref=e117]: Achat récurrent
+            - link "Mode expert" [ref=e118] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e119]
+              - generic [ref=e121]: Mode expert
+            - link "Parrainage" [ref=e122] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e123]
+              - generic [ref=e128]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e129] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e130]
+              - generic [ref=e135]: Plan Bitcoin Famille
+            - link "Historique" [ref=e136] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e137]
+              - generic [ref=e142]: Historique
+      - generic [ref=e143]:
+        - generic [ref=e146]:
+          - generic [ref=e148]: Plan Bitcoin Famille
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - img [ref=e152]
+              - generic [ref=e157]: Pourquoi ouvrir un Plan Bitcoin Famille ?
+            - generic [ref=e158]:
+              - generic [ref=e161]: Épargne à long terme
+              - generic [ref=e162]: Constituez un patrimoine durable pour vos enfants, fondé notamment sur Bitcoin, un actif reconnu pour sa rareté et sa résistance à l'inflation. Toutes les cryptomonnaies proposées par Paymium sont incluses dans le Plan Bitcoin Famille.
+            - generic [ref=e163]:
+              - generic [ref=e166]: Transmission simplifiée
+              - generic [ref=e167]: Épargnez et transmettez facilement des cryptomonnaies à vos enfants, de manière sécurisée et réglementée.
+            - generic [ref=e168]:
+              - generic [ref=e171]: Sécurité renforcée
+              - generic [ref=e172]: Avec Paymium, première plateforme française d'échange Bitcoin, vos actifs sont protégés par des normes de sécurité strictes et conformes à la réglementation française.
+          - generic [ref=e173]:
+            - generic [ref=e174]: Comment ça fonctionne ?
+            - generic [ref=e175]: Création facile du compte de votre enfant
+            - generic [ref=e179]: Ajoutez les informations de l’enfant (nom, prénom, date de naissance).
+            - generic [ref=e183]: Téléversez un document officiel pour vérifier son identité.
+            - generic [ref=e184]: Gestion des fonds
+            - generic [ref=e188]: Vous pouvez transférer des crypto-monnaies de manière ponctuelle ou régulière.
+            - generic [ref=e192]: Visualisez l'historique des transactions en toute transparence.
+            - generic [ref=e193]: Accès à la majorité
+            - generic [ref=e197]: Vous pouvez transférer des crypto-monnaies de manière ponctuelle ou régulière.
+            - generic [ref=e201]: À 18 ans, l'enfant peut prendre le contrôle de son compte sous réserve qu'il effectue des vérifications supplémentaires.
+          - generic [ref=e202]:
+            - generic [ref=e203]:
+              - img [ref=e205]
+              - generic [ref=e208]: Sécurité et protection
+            - generic [ref=e209]:
+              - generic [ref=e212]: "Protection avancée :"
+              - generic [ref=e213]: Toutes les transactions sont sécurisées via des protocoles de chiffrement de pointe.
+            - generic [ref=e214]:
+              - generic [ref=e217]: "Vérification rigoureuse :"
+              - generic [ref=e218]: Seuls les parents ou tuteurs légaux peuvent ouvrir un compte.
+            - generic [ref=e219]:
+              - generic [ref=e222]: "Support dédié :"
+              - generic [ref=e223]: Une équipe disponible pour répondre à toutes vos questions.
+          - generic [ref=e224]: Foire Aux Questions
+          - generic [ref=e225]:
+            - generic [ref=e226]:
+              - button "Y a-t-il des frais pour ouvrir un Plan Bitcoin Famille ?" [ref=e227] [cursor=pointer]:
+                - generic [ref=e228]: Y a-t-il des frais pour ouvrir un Plan Bitcoin Famille ?
+                - img [ref=e230]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - text: Non, l’ouverture d’un compte est gratuite. Des frais peuvent s’appliquer aux transactions suivant notre
+                      - link "grille tarifaire" [ref=e232] [cursor=pointer]:
+                        - /url: https://www.paymium.com/a-propos/les-tarifs
+                      - text: .
+            - separator [ref=e233]
+            - generic [ref=e234]:
+              - button "Puis-je modifier les informations du compte après sa création ?" [ref=e235] [cursor=pointer]:
+                - generic [ref=e236]: Puis-je modifier les informations du compte après sa création ?
+                - img [ref=e238]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: Oui, vous pouvez mettre à jour certaines informations via votre tableau de bord.
+            - separator [ref=e240]
+            - generic [ref=e241]:
+              - button "Que se passe-t'il si je perds l'accès au compte ?" [ref=e242] [cursor=pointer]:
+                - generic [ref=e243]: Que se passe-t'il si je perds l'accès au compte ?
+                - img [ref=e245]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: Notre équipe de support vous aidera à récupérer l'accès en toute sécurité.
+          - generic [ref=e247]:
+            - generic [ref=e248]:
+              - generic [ref=e249]: Prêt à commencer ?
+              - generic [ref=e250]: Transmettez du Bitcoin et d'autres cryptomonnaies à vos enfants pour constituer une épargne à long terme, accessible dès leur majorité.
+              - generic [ref=e251]:
+                - text: Pour plus d'informations,
+                - link "Contactez-nous" [ref=e252] [cursor=pointer]:
+                  - /url: /help/tickets
+                - text: .
+            - link "Ouvrir un Plan Bitcoin Famille" [ref=e253] [cursor=pointer]:
+              - /url: /family/create
+              - generic [ref=e254]: Ouvrir un Plan Bitcoin Famille
+        - contentinfo [ref=e255]:
+          - generic [ref=e256]:
+            - generic [ref=e257]: Copyright © 2026
+            - link "Paymium" [ref=e259] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e260]: 6.14.1
+            - link "Statut" [ref=e262] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e264] [cursor=pointer]:
+              - /url: ""
+```
