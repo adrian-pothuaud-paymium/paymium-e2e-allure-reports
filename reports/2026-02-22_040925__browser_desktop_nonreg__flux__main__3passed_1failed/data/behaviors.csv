@@ -1,0 +1,6 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"0","","0","","0","57","","0"
+"0","⚙️ Nettoyage et préparatifs","0","Configuration des fichiers de session pour Playwright","1","0","Authentification de l'utilisateur avec 2FA","0"
+"0","⚙️ Nettoyage et préparatifs","1","Nettoyage du compte de test (DCA, withdrawal addresses, etc.)","0","0","Suppression des adresses de retrait BTC enregistrées","0"
+"0","⚙️ Nettoyage et préparatifs","0","Nettoyage du compte de test (DCA, withdrawal addresses, etc.)","1","0","Suppression des DCA actifs","0"
+"0","⚙️ Nettoyage et préparatifs","0","Configuration des fichiers de session pour Playwright","1","0","Acceptation des cookies","0"
