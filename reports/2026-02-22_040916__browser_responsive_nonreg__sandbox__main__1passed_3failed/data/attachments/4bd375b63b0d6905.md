@@ -1,0 +1,47 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - progressbar [ref=e8]:
+    - img [ref=e10]
+  - generic [ref=e13]:
+    - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e14]':
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - button "Fermer le widget sans consentement" [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: Continuer sans accepter
+          - generic [ref=e20]:
+            - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e23]:
+              - generic [ref=e24]: Des cookies pour
+              - generic [ref=e25]: vos bitcoins !
+            - generic [ref=e26]:
+              - paragraph [ref=e27]:
+                - text: Parce que
+                - strong [ref=e28]: stacker des sats ça donne faim
+                - text: ", nous vous proposons une pause cookie ! 🍪"
+              - paragraph [ref=e29]:
+                - text: Avec votre accord, Paymium aimerait utiliser des
+                - strong [ref=e30]: cookies
+                - text: placés par nous et/ou par nos partenaires sur notre site.
+              - paragraph [ref=e31]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+              - paragraph [ref=e32]:
+                - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                - strong [ref=e33]: Vous choisissez ceux qui vous plaisent
+                - text: ", comme pour le trading !"
+              - paragraph [ref=e34]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+            - paragraph [ref=e36]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+          - button "Consentements certifiés par Axeptio" [ref=e39]:
+            - generic [ref=e40]: Consentements certifiés par
+            - img "Axeptio" [ref=e44]
+        - generic [ref=e48]:
+          - button "Je choisis les cookies à configurer" [ref=e49] [cursor=pointer]: Je choisis
+          - button "Accepter les cookies" [ref=e50] [cursor=pointer]: OK pour moi
+      - generic [ref=e51]:
+        - text: Axeptio consent
+        - checkbox [ref=e52]
+      - generic [ref=e53]:
+        - paragraph [ref=e54]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+        - paragraph [ref=e55]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+    - button "Fermer le widget sans consentement" [ref=e56] [cursor=pointer]:
+      - img [ref=e60]
+```

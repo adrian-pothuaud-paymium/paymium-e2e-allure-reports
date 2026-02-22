@@ -1,0 +1,7 @@
+AxiosError: Request failed with status code 500
+    at settle (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/axios@1.13.5/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/axios@1.13.5/node_modules/axios/lib/adapters/http.js:798:11)
+    at Axios.request (/builds/crypto-platform/paymium-e2e-united/node_modules/.pnpm/axios@1.13.5/node_modules/axios/lib/core/Axios.js:46:41)
+    at signIn (/builds/crypto-platform/paymium-e2e-united/packages/paymium-api/src/signIn.ts:16:26)
+    at deleteDCA (/builds/crypto-platform/paymium-e2e-united/packages/paymium-api/src/deleteDCA.ts:19:7)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/_clean/cleanTestAccount.clean.ts:29:5
