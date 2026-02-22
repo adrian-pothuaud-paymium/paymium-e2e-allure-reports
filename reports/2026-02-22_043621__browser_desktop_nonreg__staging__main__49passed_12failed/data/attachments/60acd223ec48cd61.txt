@@ -1,0 +1,7 @@
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('listitem').filter({ hasText: /Bcio/ }).first()
+
+    at ContentSelect.select (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/_components/ContentSelect.ts:45:25)
+    at DepositEUR.selectCurrency (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/deposit/DepositTemplate.ts:18:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/transfers/deposit.spec.ts:62:3

@@ -1,0 +1,6 @@
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Gérer les adresses' })
+
+    at WithdrawBTC.manageAddresses (/builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/pages/account.paymium.com/withdraw/BTC/index.ts:73:36)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-desktop/tests/transfers/withdraw.spec.ts:71:34
