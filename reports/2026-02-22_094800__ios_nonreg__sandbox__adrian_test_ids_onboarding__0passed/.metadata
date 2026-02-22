@@ -1,0 +1,10 @@
+TIMESTAMP=2026-02-22_094800
+ENVIRONMENT=sandbox
+BRANCH=adrian_test_ids_onboarding
+E2E_BRANCH=main
+JOB=ios_nonreg
+TOTAL=0
+PASSED=0
+FAILED=0
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/38089
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/205401
