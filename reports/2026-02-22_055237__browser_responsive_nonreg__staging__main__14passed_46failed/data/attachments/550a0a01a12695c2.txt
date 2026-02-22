@@ -1,0 +1,13 @@
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /^(.*)\/sign-up\/corporate$/
+Received string:  "https://account.staging-paymium.com/sign-up"
+Timeout: 10000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 10000ms
+    14 × unexpected value "https://account.staging-paymium.com/sign-up"
+
+    at SignUpCorporate.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/_components/BasePage.ts:16:29)
+    at SignUpCorporate.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/pages/account.paymium.com/sign-up/corporate.ts:38:17)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright-responsive/tests/onboarding/complete-flows.spec.ts:174:39
