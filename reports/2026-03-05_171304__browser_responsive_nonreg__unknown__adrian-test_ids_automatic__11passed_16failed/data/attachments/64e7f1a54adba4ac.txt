@@ -1,0 +1,8 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] Fetch API cannot load http: /paymium.local:3000/ due to access control checks.
+[pageerror] SyntaxError: Unexpected token '<'
+Error: locator.evaluate: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('main, [role=\'main\']').first()
+
+
