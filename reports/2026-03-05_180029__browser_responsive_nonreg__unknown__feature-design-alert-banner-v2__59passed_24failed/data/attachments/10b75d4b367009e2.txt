@@ -1,4 +1,0 @@
-verifyPhoneNumber failed Request failed with status code 500
-Failed to verify phone number: 500 Internal Server Error
-Attempt 1 to create test user failed: Request failed with status code 500
-[pageerror] SyntaxError: Unexpected token '<'
