@@ -1,0 +1,56 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e11] [cursor=pointer]:
+        - /url: https://www.paymium.com/
+        - img [ref=e13]
+      - button [ref=e50] [cursor=pointer]:
+        - img [ref=e52]
+    - generic [ref=e54]:
+      - navigation
+      - generic [ref=e55]:
+        - form [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e61]: Se connecter à Paymium
+            - generic [ref=e62]:
+              - generic [ref=e64]:
+                - generic [ref=e66]: Email
+                - textbox "Email" [ref=e68]: adrian.pothuaud+auto.primary@paymium.com
+              - generic [ref=e69]:
+                - generic [ref=e71]:
+                  - generic [ref=e73]: Mot de passe
+                  - generic [ref=e74]:
+                    - textbox "Mot de passe" [active] [ref=e75]: Password123!
+                    - button [ref=e78] [cursor=pointer]:
+                      - img [ref=e79]
+                - link "Mot de passe oublié ?" [ref=e81] [cursor=pointer]:
+                  - /url: /reset-password
+            - button "Se connecter" [ref=e82] [cursor=pointer]:
+              - generic [ref=e83]: Se connecter
+            - button "S'inscrire" [ref=e84] [cursor=pointer]:
+              - generic [ref=e85]: S'inscrire
+        - contentinfo [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: Copyright © 2026
+            - link "Paymium" [ref=e89] [cursor=pointer]:
+              - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+            - generic [ref=e90]: 6.16.0
+            - link "Statut" [ref=e91] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e92] [cursor=pointer]
+  - generic:
+    - generic:
+      - generic:
+        - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options"':
+          - generic [ref=e93]:
+            - text: Axeptio consent
+            - checkbox [ref=e94]
+          - generic [ref=e95]:
+            - paragraph [ref=e96]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+            - paragraph [ref=e97]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+        - button "Gérez vos préférences en matière de cookies et données personnelles" [ref=e98] [cursor=pointer]:
+          - img [ref=e102]
+```

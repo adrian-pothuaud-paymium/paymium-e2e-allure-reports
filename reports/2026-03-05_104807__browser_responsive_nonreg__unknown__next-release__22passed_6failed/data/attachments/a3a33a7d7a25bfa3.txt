@@ -1,0 +1,6 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] Fetch API cannot load https: /client.axept.io/66d9b297fede9a4cae0fdd4a.json?r=0 due to access control checks.

@@ -1,0 +1,19 @@
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/currencies due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user/tracking/consent due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/general_settings due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/users/sign_in due to access control checks.
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByText(/Identifiant et\/ou mot de passe invalides/)
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 15000ms
+  - waiting for getByText(/Identifiant et\/ou mot de passe invalides/)
+
+

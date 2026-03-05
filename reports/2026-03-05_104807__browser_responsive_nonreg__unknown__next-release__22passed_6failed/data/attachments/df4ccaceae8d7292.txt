@@ -1,0 +1,2 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/users/sign_in due to access control checks.
