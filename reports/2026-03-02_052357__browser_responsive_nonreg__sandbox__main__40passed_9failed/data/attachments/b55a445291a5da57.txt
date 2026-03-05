@@ -1,9 +1,0 @@
-POST /users failed Request failed with status code 429
-Failed to create test user: 429 Too Many Requests
-TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByRole('list').getByRole('textbox') to be visible
-
-    at SearchableContentSelect.searchAndSelect (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/_components/SearchableContentSelect.ts:15:28)
-    at FamilyCreate.selecNationality (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/family/create/index.ts:79:5)
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/investment/family-plan.spec.ts:44:3
