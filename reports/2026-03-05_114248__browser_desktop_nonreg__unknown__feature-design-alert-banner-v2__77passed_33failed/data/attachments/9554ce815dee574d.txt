@@ -1,0 +1,9 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(received).toPassAxe(expected)
+
+Expected: No violations
+Received: 2 violations
+
+Violations: button-name(1), nested-interactive(1)
+
