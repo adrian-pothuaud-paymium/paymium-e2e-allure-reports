@@ -1,0 +1,10 @@
+TIMESTAMP=2026-03-05_171813
+ENVIRONMENT=unknown
+BRANCH=feature/design-alert-banner-v2
+E2E_BRANCH=main
+JOB=browser_desktop_nonreg
+TOTAL=82
+PASSED=71
+FAILED=11
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39071
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/225099
