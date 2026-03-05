@@ -1,0 +1,51 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Le formulaire de connexion affiche les messages d'erreur appropriés en cas de données invalides
+
+
+📌 Test Step: Ouverture de l'application jusqu'a l'ecran de connexion
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:15
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:16
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- AxeptioCookies.acceptCookies()
+                |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+
+
+📌 Test Step: formulaire vide
+|-- Assert.emptyFields(["android=new UiSelector().resourceId(\"login.email\")","android=new UiSelector().resourceId(\"login.password\")"]) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:20
+    |-- Assert.emptyField(android=new UiSelector().resourceId("login.email"), 10000)
+        |-- Assert empty field: "android=new UiSelector().resourceId("login.email")"
+    |-- Assert.emptyField(android=new UiSelector().resourceId("login.password"), 10000)
+        |-- Assert empty field: "android=new UiSelector().resourceId("login.password")"
+
+
+📌 Test Step: email invalide
+|-- SignIn.fillEmail(invalid-email) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:25
+|-- SignIn.fillEmail(invalid@email) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:27
+|-- SignIn.fillEmail(invalid.email) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:29
+
+
+📌 Test Step: email valide mais mdp manquant
+|-- SignIn.fillEmail(valid@email.com) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:34
+
+
+📌 Test Step: mdp mais pas email
+|-- SignIn.fillEmail() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:39
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:40

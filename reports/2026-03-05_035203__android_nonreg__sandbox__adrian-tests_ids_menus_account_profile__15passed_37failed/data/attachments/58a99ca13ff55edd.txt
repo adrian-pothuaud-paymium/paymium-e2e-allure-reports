@@ -1,0 +1,100 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur peut activer et désactiver l'authentification à deux facteurs avec succès
+
+
+📌 Test Step: Create test user
+Attempting to create test user (attempt 1 of 20)...
+Creating test user in environment sandbox with state phoneApproved - attempt 1/20
+Sending GET /users/confirmation request to verify email
+Sending PUT /user request to update user information
+Sending POST /phone_numbers request to add phone number
+Sending POST /phone_numbers/verify request to verify phone number
+
+
+📌 Test Step: Open App and go to Sign In
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:28
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:29
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+
+
+📌 Test Step: Sign in with test account
+|-- Shortcuts.authenticate(********) paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:33
+    |-- SignIn.fillEmail(adrian.pothuaud+auto.1772672131864@paymium.com)
+    |-- SignIn.fillPassword(********)
+    |-- SignIn.submit()
+    |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired()
+        |-- Shortcuts.handlePinCodeIfRequired(********)
+            |-- CreatePinCode.waitForScreen(20000)
+            |-- CreatePinCode.create()
+            |-- CreateAccessCode.waitForScreen(20000)
+            |-- CreateAccessCode.fillCode(********)
+            |-- ConfirmPinCode.waitForScreen(20000)
+            |-- ConfirmPinCode.fillCode(********)
+        |-- Shortcuts.handleBiometricsIfRequired(20000)
+            |-- EnableBiometrics.waitForScreen(20000)
+            |-- Écran biométrie non affiché (différés par l'app), l'InterruptHandler le gérera
+    |-- DashboardScreen.waitForScreen()
+
+
+📌 Test Step: Go to 2FA activation screen
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:38
+|-- MyAccount.goToProfile() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:39
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:40
+|-- Profile.goToAccountSecurity() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:41
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:42
+|-- ProfileSecurity.toggleTwoFactorAuth() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:43
+|-- TwoFactorActivationSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:44
+|-- TwoFactorActivationSheet.getTotpCode() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:45
+
+
+📌 Test Step: Activate 2FA with invalid code
+|-- TwoFactorActivationSheet.fill(000000) paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:48
+|-- TwoFactorActivationSheet.activate() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:49
+|-- TwoFactorActivationSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:50
+
+
+📌 Test Step: Activate 2FA with valid code
+|-- TwoFactorActivationSheet.fill(903944) paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:54
+|-- TwoFactorActivationSheet.activate() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:55
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:57
+
+
+📌 Test Step: Sign out and sign in again to check 2FA is required
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:62
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:64
+|-- MyAccount.signOut() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:65
+    |-- Utils.magicSwipeAndClick(["//android.widget.Button[@content-desc=\"Se déconnecter\"]"])
+        |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["//android.widget.Button[@content-desc=\"Se déconnecter\"]"]})
+            |-- [magicSwipe] Searching for element: [//android.widget.Button[@content-desc="Se déconnecter"]]
+            |-- [magicSwipe] Using auto-detected scrollable element
+            |-- [magicSwipe] Found visible element: //android.widget.Button[@content-desc="Se déconnecter"]
+            |-- [magicSwipe] Element already visible, no swipe needed
+        |-- Utils.clickFirstExisting(["//android.widget.Button[@content-desc=\"Se déconnecter\"]"])
+            |-- Clic sur le premier élément existant parmi: 1 sélecteurs
+|-- SignIn.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:66
+|-- SignIn.fillAsTestAccount({"credentials":"******** (hidden for security)","environment":"sandbox","accountType":"individual","userNumber":"SB-U10132028","state":"phoneApproved"}) paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:67
+    |-- SignIn.fillCredentials(********, ********)
+        |-- SignIn.fillEmail(adrian.pothuaud+auto.1772672131864@paymium.com)
+        |-- SignIn.fillPassword(********)
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:68
+|-- SignIn.waitFor2FA() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:69
+[InterruptHandler] échec de SignIn.waitFor2FA → element ("android=new UiSelector().resourceId("2FA")") still not displayed after 10000ms. Tentative de gestion d'interruption...
+[InterruptHandler] tryDismissInterrupts appelé (erreur=element ("android=new UiSelector().resourceId("2FA")") still not displayed after 10000ms)

@@ -1,0 +1,305 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic:
+    - generic:
+      - generic:
+        - link:
+          - /url: /dashboard
+          - generic:
+            - img
+        - generic:
+          - button:
+            - img
+            - generic: Acheter
+          - button:
+            - img
+          - button:
+            - generic: FR
+            - img
+          - button:
+            - generic:
+              - generic:
+                - img
+          - button:
+            - img
+          - button:
+            - img
+          - button:
+            - img
+      - generic:
+        - navigation:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - textbox:
+                    - /placeholder: Chercher
+            - generic:
+              - link:
+                - /url: /dashboard
+                - img
+                - generic: Tableau de bord
+              - link:
+                - /url: /wallet
+                - img
+                - generic: Portefeuille
+              - link:
+                - /url: /deposit/EUR
+                - img
+                - generic: Dépôt / retrait
+              - link:
+                - /url: /recurrent
+                - img
+                - generic: Achat récurrent
+              - link:
+                - /url: /trade/BTC/EUR
+                - img
+                - generic: Mode expert
+              - link:
+                - /url: /referral
+                - img
+                - generic: Parrainage
+              - link:
+                - /url: /family
+                - img
+                - generic: Plan Bitcoin Famille
+              - link:
+                - /url: /history
+                - img
+                - generic: Historique
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Bienvenue ADRIAN
+                  - generic: Suivez, planifiez et gérez vos actifs.
+                - generic:
+                  - generic:
+                    - generic: Valeur de mon portefeuille
+                    - generic:
+                      - generic: ≈
+                      - generic: 132 114,66 €
+                  - generic:
+                    - generic:
+                      - tablist:
+                        - generic:
+                          - tab [selected]:
+                            - generic: Solde
+                          - tab:
+                            - generic: Allocation
+                    - tabpanel:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: 1D
+                          - generic:
+                            - generic: 1W
+                          - generic:
+                            - generic: 1M
+                          - generic:
+                            - generic: 3M
+                          - generic:
+                            - generic: 1Y
+                          - generic:
+                            - generic: ALL
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: 176 905,24€
+                            - generic:
+                              - img
+                              - generic: 141 596,49€
+                  - generic:
+                    - button:
+                      - img
+                      - generic: Acheter
+                    - button:
+                      - img
+                      - generic: Vendre
+                    - button:
+                      - generic: Déposer
+                    - button:
+                      - generic: Retirer
+                - generic: Le marché
+                - list:
+                  - listitem:
+                    - generic:
+                      - generic:
+                        - generic: Nom
+                        - generic:
+                          - img
+                          - img
+                      - generic:
+                        - generic: Prix
+                        - generic:
+                          - img
+                          - img
+                      - generic:
+                        - generic: 24h
+                        - generic:
+                          - img
+                          - img
+                  - separator
+                  - listitem:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic: Bitcoin
+                        - generic: BTC
+                    - generic:
+                      - generic: 99 500,00 €
+                    - generic:
+                      - generic: "-"
+                    - generic:
+                      - button:
+                        - generic: Acheter
+                  - separator
+                  - listitem:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic: Ethereum
+                        - generic: ETH
+                    - generic:
+                      - generic: 1 847,20 €
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: 0,74 %
+                    - generic:
+                      - button:
+                        - generic: Acheter
+                  - separator
+                  - listitem:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic: USDC
+                        - generic: USDC
+                    - generic:
+                      - generic: 0,85 €
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: 0,02 %
+                    - generic:
+                      - button:
+                        - generic: Acheter
+                  - separator
+                  - listitem:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic: Euro CoinVertible
+                        - generic: EURCV
+                    - generic:
+                      - generic: 1,00 €
+                    - generic:
+                      - generic: "-"
+                    - generic:
+                      - button:
+                        - generic: Acheter
+                  - separator
+                  - listitem:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic: Litecoin
+                        - generic: LTC
+                    - generic:
+                      - generic: 48,81 €
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: 0,42 %
+                    - generic:
+                      - button:
+                        - generic: Acheter
+                  - separator
+                  - listitem:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic: Bitcoin Cash
+                        - generic: BCH
+                    - generic:
+                      - generic: 403,21 €
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: 0,23 %
+                    - generic:
+                      - button:
+                        - generic: Acheter
+                  - separator
+                  - listitem:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic: Ethereum Classic
+                        - generic: ETC
+                    - generic:
+                      - generic: 7,58 €
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: 0,03 %
+                    - generic:
+                      - button:
+                        - generic: Acheter
+                  - separator
+                  - listitem:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic: Basic Attention Token
+                        - generic: BAT
+                    - generic:
+                      - generic: 0,08 €
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic: 0,03 %
+                  - separator
+                  - listitem:
+                    - generic:
+                      - img
+                      - generic:
+                        - generic: Bcio
+                        - generic: BCIO
+                    - generic:
+                      - generic: 0,03 €
+                    - generic:
+                      - generic: "-"
+          - contentinfo:
+            - generic:
+              - generic: Copyright © 2026
+              - link:
+                - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+                - text: Paymium
+              - generic: 6.15.0
+              - link:
+                - /url: /status
+                - text: Statut
+              - link: Gérer vos cookies
+  - dialog [ref=e8]:
+    - generic [ref=e10]:
+      - button "Close" [ref=e12] [cursor=pointer]:
+        - img [ref=e13]
+      - generic [ref=e17]:
+        - progressbar [ref=e18]:
+          - img [ref=e20]
+        - generic [ref=e23]: Initialisation
+```

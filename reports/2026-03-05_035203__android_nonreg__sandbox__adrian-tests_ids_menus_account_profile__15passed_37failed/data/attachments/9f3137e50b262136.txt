@@ -1,0 +1,94 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur peut changer son mot de passe avec succès
+Attempting to create test user (attempt 1 of 20)...
+Creating test user in environment sandbox with state phoneApproved - attempt 1/20
+Sending GET /users/confirmation request to verify email
+Sending PUT /user request to update user information
+Sending POST /phone_numbers request to add phone number
+Sending POST /phone_numbers/verify request to verify phone number
+
+
+📌 Test Step: To Change Password screen
+|-- Shortcuts.waitForSessionRestartAppAndAuthenticate(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:24
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+    |-- Shortcuts.restartApp()
+    |-- Shortcuts.openAppAndGoToSignIn()
+        |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+            |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+                |-- AxeptioCookies.waitForSheet(20000)
+                    |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                        |-- Attente du premier élément affiché parmi: 2 sélecteurs
+                |-- AxeptioCookies.acceptCookies()
+                    |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                        |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+            |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+                |-- UpdateScreen.waitForScreen(20000)
+            |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+                |-- AxeptioCookies.waitForSheet(20000)
+                    |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                        |-- Attente du premier élément affiché parmi: 2 sélecteurs
+                |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+        |-- WelcomeScreen.waitForScreen(20000)
+        |-- WelcomeScreen.goTo(sign-in)
+        |-- SignIn.waitForScreen(20000)
+    |-- Shortcuts.authenticate(********)
+        |-- SignIn.fillEmail(adrian.pothuaud+auto.1772667008940@paymium.com)
+        |-- SignIn.fillPassword(********)
+        |-- SignIn.submit()
+        |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired()
+            |-- Shortcuts.handlePinCodeIfRequired(********)
+                |-- CreatePinCode.waitForScreen(20000)
+                |-- CreatePinCode.create()
+                |-- CreateAccessCode.waitForScreen(20000)
+                |-- CreateAccessCode.fillCode(********)
+                |-- ConfirmPinCode.waitForScreen(20000)
+                |-- ConfirmPinCode.fillCode(********)
+            |-- Shortcuts.handleBiometricsIfRequired(20000)
+                |-- EnableBiometrics.waitForScreen(20000)
+                |-- Écran biométrie non affiché (différés par l'app), l'InterruptHandler le gérera
+        |-- DashboardScreen.waitForScreen()
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:26
+|-- MyAccount.goToProfile() paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:27
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:28
+|-- Profile.goToAccountSecurity() paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:29
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:30
+|-- ProfileSecurity.goToChangePassword() paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:31
+|-- ChangePassword.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:32
+
+
+📌 Test Step: Changement de mot de passe réussi
+|-- ChangePassword.fillActualPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:36
+|-- ChangePassword.fillNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:37
+|-- ChangePassword.fillConfirmNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:38
+|-- ChangePassword.confirmChange() paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:39
+|-- SignIn.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:40
+
+
+📌 Test Step: Connexion avec l'ancien mot de passe
+|-- SignIn.fillEmail(adrian.pothuaud+auto.1772667008940@paymium.com) paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:44
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:45
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:46
+|-- Assert.text(Identifiant et/ou mot de passe invalides) paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:47
+    |-- Assert text: "Identifiant et/ou mot de passe invalides"
+
+
+📌 Test Step: Connexion avec le nouveau mot de passe
+|-- SignIn.fillEmail(adrian.pothuaud+auto.1772667008940@paymium.com) paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:51
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:52
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:53
+|-- Shortcuts.handleAccessCodeAndBiometricsIfRequired() paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:54
+    |-- Shortcuts.handlePinCodeIfRequired(********)
+        |-- CreatePinCode.waitForScreen(20000)
+        |-- CreatePinCode.create()
+        |-- CreateAccessCode.waitForScreen(20000)
+        |-- CreateAccessCode.fillCode(********)
+        |-- ConfirmPinCode.waitForScreen(20000)
+        |-- ConfirmPinCode.fillCode(********)
+    |-- Shortcuts.handleBiometricsIfRequired(20000)
+        |-- EnableBiometrics.waitForScreen(20000)
+        |-- Écran biométrie non affiché (différés par l'app), l'InterruptHandler le gérera
+|-- DashboardScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password/nominal-flow.spec.ts:55

@@ -1,0 +1,164 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button "Acheter" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+          - generic [ref=e52]: Acheter
+        - button [ref=e53] [cursor=pointer]:
+          - img [ref=e54]
+        - button "FR" [ref=e57] [cursor=pointer]:
+          - generic [ref=e58]: FR
+          - img [ref=e59]
+        - button [ref=e61] [cursor=pointer]:
+          - img [ref=e64]
+        - button [ref=e68] [cursor=pointer]:
+          - img [ref=e69]
+        - button [ref=e72] [cursor=pointer]:
+          - img [ref=e73]
+        - button [ref=e77] [cursor=pointer]:
+          - img [ref=e78]
+    - generic [ref=e82]:
+      - navigation [ref=e83]:
+        - generic [ref=e84]:
+          - generic [ref=e87]:
+            - img [ref=e89]
+            - textbox "Chercher" [ref=e92]
+          - generic [ref=e93]:
+            - link "Tableau de bord" [ref=e94] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e95]
+              - generic [ref=e98]: Tableau de bord
+            - link "Portefeuille" [ref=e99] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e100]
+              - generic [ref=e104]: Portefeuille
+            - link "Dépôt / retrait" [ref=e105] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e106]
+              - generic [ref=e109]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e110] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e111]
+              - generic [ref=e116]: Achat récurrent
+            - link "Mode expert" [ref=e117] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e118]
+              - generic [ref=e120]: Mode expert
+            - link "Parrainage" [ref=e121] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e122]
+              - generic [ref=e127]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e128] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e129]
+              - generic [ref=e134]: Plan Bitcoin Famille
+            - link "Historique" [ref=e135] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e136]
+              - generic [ref=e141]: Historique
+      - generic [ref=e142]:
+        - generic [ref=e144]:
+          - generic [ref=e145]: Transfert
+          - generic [ref=e146]:
+            - tablist [ref=e148]:
+              - generic [ref=e149]:
+                - tab "Déposer" [ref=e151] [cursor=pointer]:
+                  - generic [ref=e152]: Déposer
+                - tab "Retirer" [selected] [ref=e153] [cursor=pointer]:
+                  - generic [ref=e154]: Retirer
+                - tab "Transfert interne" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]: Transfert interne
+                - tab "Envoyer par email" [ref=e157] [cursor=pointer]:
+                  - generic [ref=e158]: Envoyer par email
+            - tabpanel "Retirer" [ref=e159]:
+              - generic [ref=e160]:
+                - banner [ref=e162]:
+                  - generic [ref=e163]:
+                    - img [ref=e165]
+                    - generic [ref=e167]: Votre transfert interne est en cours de traitement.
+                  - link "Voir l'historique" [ref=e168] [cursor=pointer]:
+                    - /url: /history?type=history-internalTransfer
+                    - generic [ref=e169]: Voir l'historique
+                - generic [ref=e171]:
+                  - generic [ref=e172]:
+                    - generic [ref=e173]: Retrait
+                    - generic [ref=e174]:
+                      - generic [ref=e176]:
+                        - generic [ref=e178]: Devise
+                        - button "Devise" [ref=e180] [cursor=pointer]:
+                          - textbox [ref=e182]: EUR
+                          - generic [ref=e184]:
+                            - img [ref=e185]
+                            - generic [ref=e190]: Euro
+                          - img [ref=e191]
+                      - form [ref=e194]:
+                        - generic [ref=e196]:
+                          - generic [ref=e198]: Compte bancaire de destination
+                          - button "Compte bancaire de destination" [ref=e200] [cursor=pointer]:
+                            - textbox [ref=e202]: "54642"
+                            - generic [ref=e204]: test staging user - BE57******331135 - Paynovate
+                            - img [ref=e205]
+                        - generic [ref=e208]:
+                          - generic [ref=e209]: Nous ne pouvons pas vérifier si le nom du bénéficiaire est correct. Si vous poursuivez, vous pourriez transférer au mauvais bénéficiaire.
+                          - form [ref=e210]:
+                            - generic [ref=e211]:
+                              - generic [ref=e213]:
+                                - generic [ref=e215]: Modifier le nom du titulaire du compte
+                                - textbox "Modifier le nom du titulaire du compte" [ref=e217]:
+                                  - /placeholder: ADRIAN POTHUAUD
+                              - button "Modifier" [disabled]:
+                                - generic: Modifier
+                          - button "Poursuivre quand même" [ref=e218] [cursor=pointer]:
+                            - generic [ref=e219]: Poursuivre quand même
+                        - generic [ref=e220]:
+                          - generic [ref=e222]:
+                            - generic [ref=e223]:
+                              - generic [ref=e224]: Montant
+                              - generic [ref=e226]:
+                                - generic [ref=e227]: "Solde :"
+                                - generic [ref=e228]: 46 197,00 €
+                            - generic [ref=e229]:
+                              - textbox "Montant" [ref=e230]
+                              - button "Max" [ref=e233] [cursor=pointer]:
+                                - generic [ref=e234]: Max
+                          - generic [ref=e236]:
+                            - generic [ref=e238]: Commentaire
+                            - textbox "Commentaire" [ref=e240]
+                          - generic [ref=e241]:
+                            - generic [ref=e242]:
+                              - generic [ref=e243]: "Frais :"
+                              - generic [ref=e244]: 0.99 €
+                            - generic [ref=e245]:
+                              - generic [ref=e246]: "Montant reçu estimé :"
+                              - generic [ref=e247]: 0.00 €
+                          - button "Retirer" [disabled]:
+                            - generic: Retirer
+                  - generic [ref=e249]:
+                    - generic [ref=e250]:
+                      - generic [ref=e251]: Euro disponible
+                      - generic [ref=e252]:
+                        - img [ref=e253]
+                        - generic [ref=e256]: EUR
+                    - separator [ref=e257]
+                    - generic [ref=e258]:
+                      - generic [ref=e259]: Disponible à retirer
+                      - generic [ref=e260]: 46 197,00 €
+        - contentinfo [ref=e261]:
+          - generic [ref=e262]:
+            - generic [ref=e263]: Copyright © 2026
+            - link "Paymium" [ref=e264] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e265]: 6.15.0
+            - link "Statut" [ref=e266] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e267] [cursor=pointer]
+```

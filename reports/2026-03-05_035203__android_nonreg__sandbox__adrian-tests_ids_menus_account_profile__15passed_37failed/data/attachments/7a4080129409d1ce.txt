@@ -1,0 +1,39 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur ne peut pas se connecter avec un email non enregistré
+
+
+📌 Test Step: Ouverture de l'application jusqu'a l'ecran de connexion
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/unregistered.spec.ts:18
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/unregistered.spec.ts:19
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- AxeptioCookies.acceptCookies()
+                |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+
+
+📌 Test Step: Remplir le formulaire avec un email non enregistré
+|-- SignIn.fillEmail(adrian.pothuaud+auto.primary+auto.1772668984236@paymium.com) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/unregistered.spec.ts:23
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/unregistered.spec.ts:24
+
+
+📌 Test Step: Vérifier le message d'erreur après soumission
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/unregistered.spec.ts:28
+|-- Assert.text(Identifiant et/ou mot de passe invalides) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/unregistered.spec.ts:29
+    |-- Assert text: "Identifiant et/ou mot de passe invalides"

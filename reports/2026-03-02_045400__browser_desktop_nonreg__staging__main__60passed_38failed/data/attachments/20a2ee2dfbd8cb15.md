@@ -1,0 +1,768 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - heading "BTC/EUR 76 100,00 € 24h 0,00 % 0,00 € Bas 0,00 € Haut 0,00 € Volume BTC 0,00033140" [level=1] [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - text: BTC/EUR
+            - generic [ref=e52]: 76 100,00 €
+          - generic [ref=e53]:
+            - generic [ref=e54]: 24h
+            - generic [ref=e56]:
+              - generic [ref=e57]: 0,00 %
+              - generic [ref=e59]: 0,00 €
+          - generic [ref=e60]:
+            - generic [ref=e61]: Bas
+            - generic [ref=e63]: 0,00 €
+          - generic [ref=e64]:
+            - generic [ref=e65]: Haut
+            - generic [ref=e67]: 0,00 €
+          - generic [ref=e68]:
+            - generic [ref=e69]: Volume BTC
+            - generic [ref=e70]: 0,00033140
+          - button [ref=e71] [cursor=pointer]:
+            - img [ref=e72]
+      - generic [ref=e75]:
+        - button [ref=e76] [cursor=pointer]:
+          - img [ref=e77]
+        - button "FR" [ref=e80] [cursor=pointer]:
+          - generic [ref=e81]: FR
+          - img [ref=e82]
+        - button [ref=e84] [cursor=pointer]:
+          - img [ref=e87]
+        - button [ref=e90] [cursor=pointer]:
+          - img [ref=e91]
+        - button [ref=e94] [cursor=pointer]:
+          - img [ref=e95]
+        - button [ref=e99] [cursor=pointer]:
+          - img [ref=e100]
+    - generic [ref=e104]:
+      - navigation [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e107] [cursor=pointer]:
+            - img [ref=e108]
+            - generic [ref=e111]: Chercher
+          - generic [ref=e112]:
+            - link "Tableau de bord" [ref=e113] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e114]
+              - generic [ref=e117]: Tableau de bord
+            - link "Portefeuille" [ref=e118] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e119]
+              - generic [ref=e123]: Portefeuille
+            - link "Achat / vente" [ref=e124] [cursor=pointer]:
+              - /url: /swap
+              - img [ref=e125]
+              - generic [ref=e128]: Achat / vente
+            - link "Dépôt / retrait" [ref=e129] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e130]
+              - generic [ref=e133]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e134] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e135]
+              - generic [ref=e140]: Achat récurrent
+            - link "Mode expert" [ref=e141] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e142]
+              - generic [ref=e144]: Mode expert
+            - link "Parrainage" [ref=e145] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e146]
+              - generic [ref=e151]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e152] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e153]
+              - generic [ref=e158]: Plan Bitcoin Famille
+            - link "Historique" [ref=e159] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e160]
+              - generic [ref=e165]: Historique
+      - generic [ref=e166]:
+        - generic [ref=e169]:
+          - generic [ref=e171]:
+            - tablist [ref=e174]:
+              - generic [ref=e175]:
+                - tab "Tendance" [selected] [ref=e177] [cursor=pointer]:
+                  - generic [ref=e178]: Tendance
+                - tab "Profondeur de marché" [ref=e179] [cursor=pointer]:
+                  - generic [ref=e180]: Profondeur de marché
+            - tabpanel "Tendance" [ref=e181]:
+              - iframe [ref=e184]:
+                - generic [active] [ref=f2e1]:
+                  - contentinfo:
+                    - paragraph: Tradingview est interactif et dispose de commandes à utiliser avec un lecteur d'écran. Voici une liste des commandes clavier disponibles pour interagir sur la plateforme
+                    - list:
+                      - listitem: Commencez à utiliser le mode de navigation au clavier. Appuyez sur le raccourci Alt + Z
+                      - listitem: Recherche rapide. Appuyez sur Ctrl + K
+                      - listitem: Changer de symbole. Commencez à taper le nom du symbole
+                      - listitem: Modifier l'intervalle. Taper chiffre ou virgule
+                      - listitem: Indicateurs, métriques et stratégies. Taper barre oblique
+                      - listitem: Charger la mise en page. Taper point
+                  - generic [ref=f2e2]:
+                    - toolbar [ref=f2e6]:
+                      - generic [ref=f2e10]:
+                        - button "1 jour" [ref=f2e13]:
+                          - generic [ref=f2e15]: D
+                        - button "Bougies" [ref=f2e20]:
+                          - img [ref=f2e22]:
+                            - img [ref=f2e23]
+                        - button "Indicateurs & Stratégies" [ref=f2e32]:
+                          - img [ref=f2e33]:
+                            - img [ref=f2e34]
+                          - generic [ref=f2e36]: Indicateurs
+                        - generic [ref=f2e40]:
+                          - 'button "Annuler créer {tool}" [ref=f2e41]':
+                            - img [ref=f2e42]:
+                              - img [ref=f2e43]
+                          - button [disabled] [ref=f2e45]:
+                            - img [ref=f2e46]:
+                              - img [ref=f2e47]
+                        - generic [ref=f2e52]:
+                          - button "Enregistrer tous les graphiques pour tous les symboles et intervalles de votre mise en page" [ref=f2e53]:
+                            - generic [ref=f2e55]:
+                              - generic [ref=f2e56]: Sauvegarder
+                              - generic [ref=f2e57]: Sauvegarder
+                          - button "Gérer les mises en page" [ref=f2e59]:
+                            - img [ref=f2e62]:
+                              - img [ref=f2e63]
+                        - generic [ref=f2e67]:
+                          - button "Recherche rapide" [ref=f2e68]:
+                            - img [ref=f2e69]:
+                              - img [ref=f2e70]
+                          - button "Paramètres du graphique" [ref=f2e72]:
+                            - img [ref=f2e73]:
+                              - img [ref=f2e74]
+                          - button "Mode plein écran" [ref=f2e78]:
+                            - img [ref=f2e79]:
+                              - img [ref=f2e80]
+                          - button "Faire une saisie d'écran" [ref=f2e82]:
+                            - img [ref=f2e84]:
+                              - img [ref=f2e85]
+                    - generic [ref=f2e88]:
+                      - toolbar [ref=f2e89]:
+                        - generic [ref=f2e93]:
+                          - generic [ref=f2e94]:
+                            - generic [ref=f2e97]:
+                              - button "Cross" [pressed] [ref=f2e99]:
+                                - img [ref=f2e101]:
+                                  - img [ref=f2e102]
+                              - button "Curseurs" [pressed] [ref=f2e106]:
+                                - img [ref=f2e107]:
+                                  - img [ref=f2e108]
+                            - generic [ref=f2e112]:
+                              - button "Droite de Tendance" [ref=f2e114]:
+                                - img [ref=f2e116]:
+                                  - img [ref=f2e117]
+                              - button "Outils de lignes de tendances" [ref=f2e121]:
+                                - img [ref=f2e122]:
+                                  - img [ref=f2e123]
+                            - generic [ref=f2e127]:
+                              - button "Retracement de Fibonacci" [ref=f2e129]:
+                                - img [ref=f2e131]:
+                                  - img [ref=f2e132]
+                              - button "Outils de Gann et Fibonacci" [ref=f2e139]:
+                                - img [ref=f2e140]:
+                                  - img [ref=f2e141]
+                            - generic [ref=f2e145]:
+                              - button "Figure en XABCD" [ref=f2e147]:
+                                - img [ref=f2e149]:
+                                  - img [ref=f2e150]
+                              - button "Motifs" [ref=f2e154]:
+                                - img [ref=f2e155]:
+                                  - img [ref=f2e156]
+                            - generic [ref=f2e160]:
+                              - button "Position Longue" [ref=f2e162]:
+                                - img [ref=f2e164]:
+                                  - img [ref=f2e165]
+                              - button "Outils de prédiction et de mesure" [ref=f2e168]:
+                                - img [ref=f2e169]:
+                                  - img [ref=f2e170]
+                            - generic [ref=f2e174]:
+                              - button "Pinceau" [ref=f2e176]:
+                                - img [ref=f2e178]:
+                                  - img [ref=f2e179]
+                              - button "Formes géométriques" [ref=f2e183]:
+                                - img [ref=f2e184]:
+                                  - img [ref=f2e185]
+                            - generic [ref=f2e189]:
+                              - button "Texte" [ref=f2e191]:
+                                - img [ref=f2e193]:
+                                  - img [ref=f2e194]
+                              - button "Outils d'annotation" [ref=f2e196]:
+                                - img [ref=f2e197]:
+                                  - img [ref=f2e198]
+                            - generic [ref=f2e201]:
+                              - button "Icône" [ref=f2e203]:
+                                - img [ref=f2e205]:
+                                  - img [ref=f2e206]
+                              - button "Icônes" [ref=f2e208]:
+                                - img [ref=f2e209]:
+                                  - img [ref=f2e210]
+                          - generic [ref=f2e212]:
+                            - button "Mesure" [ref=f2e213]:
+                              - img [ref=f2e215]:
+                                - img [ref=f2e216]
+                            - button "Grossissement" [ref=f2e218]:
+                              - img [ref=f2e220]:
+                                - img [ref=f2e221]
+                          - generic [ref=f2e226]:
+                            - generic [ref=f2e229]:
+                              - button "Le mode Aimant accroche les dessins placés près des barres de prix à la valeur OHLC la plus proche" [ref=f2e231]:
+                                - img [ref=f2e233]:
+                                  - img [ref=f2e234]
+                              - button "Aimants" [ref=f2e238]:
+                                - img [ref=f2e239]:
+                                  - img [ref=f2e240]
+                            - button "Rester en Mode Dessin" [ref=f2e242]:
+                              - img [ref=f2e244]:
+                                - img [ref=f2e245]
+                            - button "Verrouiller tous les Outils de Dessin" [ref=f2e247]:
+                              - img [ref=f2e249]:
+                                - img [ref=f2e250]
+                            - generic [ref=f2e253]:
+                              - button "Masquer tous les outils de dessin" [ref=f2e255]:
+                                - img [ref=f2e257]:
+                                  - img [ref=f2e258]
+                              - button "Masquer les options" [ref=f2e260]:
+                                - img [ref=f2e261]:
+                                  - img [ref=f2e262]
+                          - generic [ref=f2e266]:
+                            - button "Supprimer 0 dessin" [ref=f2e268]:
+                              - img [ref=f2e270]:
+                                - img [ref=f2e271]
+                            - button "Supprimer les options" [ref=f2e273]:
+                              - img [ref=f2e274]:
+                                - img [ref=f2e275]
+                          - button "Afficher l'arborescence des objets" [ref=f2e279]:
+                            - img [ref=f2e281]:
+                              - img [ref=f2e282]
+                      - button "Cacher la barre d'outils de dessin" [ref=f2e287]:
+                        - img [ref=f2e288]
+                    - 'region "Graphique #1" [ref=f2e295]':
+                      - generic [ref=f2e299]:
+                        - generic "Graphique pourBTC, 1 jour" [ref=f2e301]
+                        - generic:
+                          - generic:
+                            - toolbar:
+                              - generic:
+                                - generic [ref=f2e302]:
+                                  - generic "Changer le symbole" [ref=f2e303]:
+                                    - button "Changer le symbole" [ref=f2e304]: BTC/EUR
+                                  - text: ·
+                                  - generic "Changer l’intervalle" [ref=f2e305]:
+                                    - text: ·
+                                    - button "Changer l’intervalle" [ref=f2e306]: 1D
+                                  - text: ·
+                                  - generic [ref=f2e307]:
+                                    - text: ·
+                                    - generic [ref=f2e308]: Paymium
+                                  - text: · ·
+                                - generic:
+                                  - generic:
+                                    - button "Plus":
+                                      - generic:
+                                        - img
+                                - generic "Marché ouvert" [ref=f2e310]:
+                                  - img [ref=f2e312]
+                              - generic [ref=f2e315]:
+                                - generic [ref=f2e316]:
+                                  - generic [ref=f2e317]: O
+                                  - generic [ref=f2e318]: 0,00
+                                - generic [ref=f2e319]:
+                                  - generic [ref=f2e320]: H
+                                  - generic [ref=f2e321]: 0,00
+                                - generic [ref=f2e322]:
+                                  - generic [ref=f2e323]: B
+                                  - generic [ref=f2e324]: 0,00
+                                - generic [ref=f2e325]:
+                                  - generic [ref=f2e326]: C
+                                  - generic [ref=f2e327]: 76 100,00
+                                - generic [ref=f2e329]: 0,00 (0,00%)
+                          - generic:
+                            - button "Masquer la légende de l'indicateur" [ref=f2e330]:
+                              - img [ref=f2e332]
+                            - generic:
+                              - toolbar:
+                                - generic:
+                                  - generic [ref=f2e334]:
+                                    - generic [ref=f2e336]: Volume
+                                    - generic [ref=f2e338]: SMA
+                                  - generic:
+                                    - generic:
+                                      - button "Cacher":
+                                        - generic:
+                                          - img
+                                      - button "Configurations":
+                                        - generic:
+                                          - img
+                                      - button "Retirer":
+                                        - generic:
+                                          - img
+                                      - button "Plus":
+                                        - generic:
+                                          - img
+                                - generic "Volume" [ref=f2e342]: "0"
+                  - alert
+          - form [ref=e187]:
+            - generic [ref=e188]:
+              - button "Acheter" [ref=e189] [cursor=pointer]:
+                - generic [ref=e190]: Acheter
+              - button "Vendre" [ref=e191] [cursor=pointer]:
+                - generic [ref=e192]: Vendre
+            - button "Ordre au marché" [ref=e196] [cursor=pointer]:
+              - textbox [ref=e198]: market
+              - generic [ref=e200]: Ordre au marché
+              - img [ref=e201]
+            - generic [ref=e204]:
+              - generic [ref=e206]: Prix
+              - generic [ref=e207]:
+                - textbox "Prix" [disabled] [ref=e208]: 76 100
+                - generic [ref=e210]: EUR
+            - generic [ref=e212]:
+              - generic [ref=e214]: Montant
+              - generic [ref=e215]:
+                - textbox "Montant" [active] [ref=e216]:
+                  - /placeholder: "0.00000000"
+                  - text: "0.0001"
+                - generic [ref=e218]: BTC
+            - generic [ref=e220]:
+              - generic [ref=e222]: Total
+              - generic [ref=e223]:
+                - textbox "Total" [ref=e224]:
+                  - /placeholder: "0.00"
+                  - text: 7,61
+                - generic [ref=e226]: EUR
+              - generic [ref=e227]: "Montant trop élevé (max : 6.51)"
+            - generic [ref=e228]:
+              - button "25%" [ref=e229] [cursor=pointer]:
+                - generic [ref=e230]: 25%
+              - button "50%" [ref=e231] [cursor=pointer]:
+                - generic [ref=e232]: 50%
+              - button "75%" [ref=e233] [cursor=pointer]:
+                - generic [ref=e234]: 75%
+              - button "100%" [ref=e235] [cursor=pointer]:
+                - generic [ref=e236]: 100%
+            - list [ref=e237]:
+              - listitem [ref=e238]:
+                - generic [ref=e239]: Solde disponible
+                - generic [ref=e240]: 6,51 EUR
+              - separator [ref=e241]
+              - listitem [ref=e242]:
+                - generic [ref=e243]: Frais estimé
+                - generic [ref=e244]: 0,00000149 BTC
+            - generic [ref=e245] [cursor=pointer]:
+              - button "Acheter" [disabled]:
+                - generic: Acheter
+          - generic [ref=e248]:
+            - tablist [ref=e251]:
+              - generic [ref=e252]:
+                - tab "Mes ordres actifs" [selected] [ref=e254] [cursor=pointer]:
+                  - generic [ref=e255]: Mes ordres actifs
+                - tab "Ordres remplis" [ref=e256] [cursor=pointer]:
+                  - generic [ref=e257]: Ordres remplis
+            - tabpanel "Mes ordres actifs" [ref=e258]:
+              - generic [ref=e262]:
+                - generic [ref=e264]:
+                  - generic [ref=e265]:
+                    - generic [ref=e266]: Vendu
+                    - generic [ref=e267]: ordre limite
+                  - generic [ref=e268]:
+                    - generic [ref=e269]: Montant
+                    - generic [ref=e271]: 0,00010000 BTC
+                  - generic [ref=e272]:
+                    - generic [ref=e273]: Exécuté
+                    - generic [ref=e275]: 0,00000000 BTC
+                  - generic [ref=e276]:
+                    - generic [ref=e277]: Restant
+                    - generic [ref=e279]: 0,00010000 BTC
+                  - generic [ref=e280]:
+                    - generic [ref=e281]: Prix
+                    - generic [ref=e283]: 256 000,00 €
+                  - generic [ref=e284]:
+                    - generic [ref=e285]: Coût
+                    - generic [ref=e286]: "-"
+                  - generic [ref=e287]:
+                    - generic [ref=e288]: Frais
+                    - generic [ref=e289]: "-"
+                  - generic [ref=e290]:
+                    - generic [ref=e291]:
+                      - generic [ref=e292]: 28/02/2026 05:49
+                      - generic [ref=e293]: créé
+                    - button [ref=e294] [cursor=pointer]:
+                      - img [ref=e295]
+                - generic [ref=e301]:
+                  - generic [ref=e302]:
+                    - generic [ref=e303]: Acheté
+                    - generic [ref=e304]: ordre limite
+                  - generic [ref=e305]:
+                    - generic [ref=e306]: Montant
+                    - generic [ref=e308]: 0,00010000 BTC
+                  - generic [ref=e309]:
+                    - generic [ref=e310]: Exécuté
+                    - generic [ref=e312]: 0,00000000 BTC
+                  - generic [ref=e313]:
+                    - generic [ref=e314]: Restant
+                    - generic [ref=e316]: 0,00010000 BTC
+                  - generic [ref=e317]:
+                    - generic [ref=e318]: Prix
+                    - generic [ref=e320]: 50 000,00 €
+                  - generic [ref=e321]:
+                    - generic [ref=e322]: Coût
+                    - generic [ref=e324]: 5,00 €
+                  - generic [ref=e325]:
+                    - generic [ref=e326]: Frais
+                    - generic [ref=e327]: "-"
+                  - generic [ref=e328]:
+                    - generic [ref=e329]:
+                      - generic [ref=e330]: 28/02/2026 05:51
+                      - generic [ref=e331]: créé
+                    - button [ref=e332] [cursor=pointer]:
+                      - img [ref=e333]
+                - generic [ref=e339]:
+                  - generic [ref=e340]:
+                    - generic [ref=e341]: Acheté
+                    - generic [ref=e342]: ordre limite
+                  - generic [ref=e343]:
+                    - generic [ref=e344]: Montant
+                    - generic [ref=e346]: 0,00010000 BTC
+                  - generic [ref=e347]:
+                    - generic [ref=e348]: Exécuté
+                    - generic [ref=e350]: 0,00000000 BTC
+                  - generic [ref=e351]:
+                    - generic [ref=e352]: Restant
+                    - generic [ref=e354]: 0,00010000 BTC
+                  - generic [ref=e355]:
+                    - generic [ref=e356]: Prix
+                    - generic [ref=e358]: 50 000,00 €
+                  - generic [ref=e359]:
+                    - generic [ref=e360]: Coût
+                    - generic [ref=e362]: 5,00 €
+                  - generic [ref=e363]:
+                    - generic [ref=e364]: Frais
+                    - generic [ref=e365]: "-"
+                  - generic [ref=e366]:
+                    - generic [ref=e367]:
+                      - generic [ref=e368]: 28/02/2026 05:52
+                      - generic [ref=e369]: créé
+                    - button [ref=e370] [cursor=pointer]:
+                      - img [ref=e371]
+                - generic [ref=e377]:
+                  - generic [ref=e378]:
+                    - generic [ref=e379]: Vendu
+                    - generic [ref=e380]: ordre limite
+                  - generic [ref=e381]:
+                    - generic [ref=e382]: Montant
+                    - generic [ref=e384]: 0,00010000 BTC
+                  - generic [ref=e385]:
+                    - generic [ref=e386]: Exécuté
+                    - generic [ref=e388]: 0,00000000 BTC
+                  - generic [ref=e389]:
+                    - generic [ref=e390]: Restant
+                    - generic [ref=e392]: 0,00010000 BTC
+                  - generic [ref=e393]:
+                    - generic [ref=e394]: Prix
+                    - generic [ref=e396]: 256 000,00 €
+                  - generic [ref=e397]:
+                    - generic [ref=e398]: Coût
+                    - generic [ref=e399]: "-"
+                  - generic [ref=e400]:
+                    - generic [ref=e401]: Frais
+                    - generic [ref=e402]: "-"
+                  - generic [ref=e403]:
+                    - generic [ref=e404]:
+                      - generic [ref=e405]: 01/03/2026 05:24
+                      - generic [ref=e406]: créé
+                    - button [ref=e407] [cursor=pointer]:
+                      - img [ref=e408]
+                - generic [ref=e414]:
+                  - generic [ref=e415]:
+                    - generic [ref=e416]: Acheté
+                    - generic [ref=e417]: ordre limite
+                  - generic [ref=e418]:
+                    - generic [ref=e419]: Montant
+                    - generic [ref=e421]: 0,00010000 BTC
+                  - generic [ref=e422]:
+                    - generic [ref=e423]: Exécuté
+                    - generic [ref=e425]: 0,00000000 BTC
+                  - generic [ref=e426]:
+                    - generic [ref=e427]: Restant
+                    - generic [ref=e429]: 0,00010000 BTC
+                  - generic [ref=e430]:
+                    - generic [ref=e431]: Prix
+                    - generic [ref=e433]: 50 000,00 €
+                  - generic [ref=e434]:
+                    - generic [ref=e435]: Coût
+                    - generic [ref=e437]: 5,00 €
+                  - generic [ref=e438]:
+                    - generic [ref=e439]: Frais
+                    - generic [ref=e440]: "-"
+                  - generic [ref=e441]:
+                    - generic [ref=e442]:
+                      - generic [ref=e443]: 01/03/2026 05:24
+                      - generic [ref=e444]: créé
+                    - button [ref=e445] [cursor=pointer]:
+                      - img [ref=e446]
+                - generic [ref=e452]:
+                  - generic [ref=e453]:
+                    - generic [ref=e454]: Acheté
+                    - generic [ref=e455]: ordre limite
+                  - generic [ref=e456]:
+                    - generic [ref=e457]: Montant
+                    - generic [ref=e459]: 0,00010000 BTC
+                  - generic [ref=e460]:
+                    - generic [ref=e461]: Exécuté
+                    - generic [ref=e463]: 0,00000000 BTC
+                  - generic [ref=e464]:
+                    - generic [ref=e465]: Restant
+                    - generic [ref=e467]: 0,00010000 BTC
+                  - generic [ref=e468]:
+                    - generic [ref=e469]: Prix
+                    - generic [ref=e471]: 56 000,00 €
+                  - generic [ref=e472]:
+                    - generic [ref=e473]: Coût
+                    - generic [ref=e475]: 5,60 €
+                  - generic [ref=e476]:
+                    - generic [ref=e477]: Frais
+                    - generic [ref=e478]: "-"
+                  - generic [ref=e479]:
+                    - generic [ref=e480]:
+                      - generic [ref=e481]: 01/03/2026 05:44
+                      - generic [ref=e482]: créé
+                    - button [ref=e483] [cursor=pointer]:
+                      - img [ref=e484]
+                - generic [ref=e490]:
+                  - generic [ref=e491]:
+                    - generic [ref=e492]: Acheté
+                    - generic [ref=e493]: ordre limite
+                  - generic [ref=e494]:
+                    - generic [ref=e495]: Montant
+                    - generic [ref=e497]: 0,00010000 BTC
+                  - generic [ref=e498]:
+                    - generic [ref=e499]: Exécuté
+                    - generic [ref=e501]: 0,00000000 BTC
+                  - generic [ref=e502]:
+                    - generic [ref=e503]: Restant
+                    - generic [ref=e505]: 0,00010000 BTC
+                  - generic [ref=e506]:
+                    - generic [ref=e507]: Prix
+                    - generic [ref=e509]: 56 000,00 €
+                  - generic [ref=e510]:
+                    - generic [ref=e511]: Coût
+                    - generic [ref=e513]: 5,60 €
+                  - generic [ref=e514]:
+                    - generic [ref=e515]: Frais
+                    - generic [ref=e516]: "-"
+                  - generic [ref=e517]:
+                    - generic [ref=e518]:
+                      - generic [ref=e519]: 02/03/2026 05:19
+                      - generic [ref=e520]: créé
+                    - button [ref=e521] [cursor=pointer]:
+                      - img [ref=e522]
+          - generic [ref=e528]:
+            - tablist [ref=e531]:
+              - generic [ref=e532]:
+                - tab "Carnet d'ordres" [selected] [ref=e534] [cursor=pointer]:
+                  - generic [ref=e535]: Carnet d'ordres
+                - tab "Derniers échanges" [ref=e536] [cursor=pointer]:
+                  - generic [ref=e537]: Derniers échanges
+            - tabpanel "Carnet d'ordres" [ref=e538]:
+              - generic [ref=e539]:
+                - generic [ref=e540]:
+                  - generic [ref=e541]: Prix
+                  - generic [ref=e542]: Montant
+                  - generic [ref=e543]: Total
+                - generic [ref=e544]:
+                  - button "78 000,00 1,91000000 148 980,00 77 900,00 3,62000000 281 998,00 77 800,00 3,42000000 266 076,00 77 700,00 3,22000000 250 194,00 77 600,00 3,02000000 234 352,00 77 500,00 2,82000000 218 550,00 77 400,00 2,62000000 202 788,00 77 300,00 2,42000000 187 066,00 77 200,00 2,22000000 171 384,00 77 100,00 2,02000000 155 742,00 77 000,00 1,82000000 140 140,00 76 900,00 1,62000000 124 578,00 76 800,00 1,42000000 109 056,00 76 700,00 1,22000000 93 574,00 76 600,00 2,04000000 156 264,00 76 500,00 1,64000000 125 459,99 76 400,00 1,55000000 118 420,00 76 300,00 1,05000000 80 115,00 76 200,00 0,55000000 41 910,00 76 100,00 0,03249650 2 472,98" [ref=e547] [cursor=pointer]:
+                    - generic [ref=e549]:
+                      - generic [ref=e552]:
+                        - generic [ref=e554]: 78 000,00
+                        - generic [ref=e555]: 1,91000000
+                        - generic [ref=e556]: 148 980,00
+                      - generic [ref=e559]:
+                        - generic [ref=e561]: 77 900,00
+                        - generic [ref=e562]: 3,62000000
+                        - generic [ref=e563]: 281 998,00
+                      - generic [ref=e566]:
+                        - generic [ref=e568]: 77 800,00
+                        - generic [ref=e569]: 3,42000000
+                        - generic [ref=e570]: 266 076,00
+                      - generic [ref=e573]:
+                        - generic [ref=e575]: 77 700,00
+                        - generic [ref=e576]: 3,22000000
+                        - generic [ref=e577]: 250 194,00
+                      - generic [ref=e580]:
+                        - generic [ref=e582]: 77 600,00
+                        - generic [ref=e583]: 3,02000000
+                        - generic [ref=e584]: 234 352,00
+                      - generic [ref=e587]:
+                        - generic [ref=e589]: 77 500,00
+                        - generic [ref=e590]: 2,82000000
+                        - generic [ref=e591]: 218 550,00
+                      - generic [ref=e594]:
+                        - generic [ref=e596]: 77 400,00
+                        - generic [ref=e597]: 2,62000000
+                        - generic [ref=e598]: 202 788,00
+                      - generic [ref=e601]:
+                        - generic [ref=e603]: 77 300,00
+                        - generic [ref=e604]: 2,42000000
+                        - generic [ref=e605]: 187 066,00
+                      - generic [ref=e608]:
+                        - generic [ref=e610]: 77 200,00
+                        - generic [ref=e611]: 2,22000000
+                        - generic [ref=e612]: 171 384,00
+                      - generic [ref=e615]:
+                        - generic [ref=e617]: 77 100,00
+                        - generic [ref=e618]: 2,02000000
+                        - generic [ref=e619]: 155 742,00
+                      - generic [ref=e622]:
+                        - generic [ref=e624]: 77 000,00
+                        - generic [ref=e625]: 1,82000000
+                        - generic [ref=e626]: 140 140,00
+                      - generic [ref=e629]:
+                        - generic [ref=e631]: 76 900,00
+                        - generic [ref=e632]: 1,62000000
+                        - generic [ref=e633]: 124 578,00
+                      - generic [ref=e636]:
+                        - generic [ref=e638]: 76 800,00
+                        - generic [ref=e639]: 1,42000000
+                        - generic [ref=e640]: 109 056,00
+                      - generic [ref=e643]:
+                        - generic [ref=e645]: 76 700,00
+                        - generic [ref=e646]: 1,22000000
+                        - generic [ref=e647]: 93 574,00
+                      - generic [ref=e650]:
+                        - generic [ref=e652]: 76 600,00
+                        - generic [ref=e653]: 2,04000000
+                        - generic [ref=e654]: 156 264,00
+                      - generic [ref=e657]:
+                        - generic [ref=e659]: 76 500,00
+                        - generic [ref=e660]: 1,64000000
+                        - generic [ref=e661]: 125 459,99
+                      - generic [ref=e664]:
+                        - generic [ref=e666]: 76 400,00
+                        - generic [ref=e667]: 1,55000000
+                        - generic [ref=e668]: 118 420,00
+                      - generic [ref=e671]:
+                        - generic [ref=e673]: 76 300,00
+                        - generic [ref=e674]: 1,05000000
+                        - generic [ref=e675]: 80 115,00
+                      - generic [ref=e678]:
+                        - generic [ref=e680]: 76 200,00
+                        - generic [ref=e681]: 0,55000000
+                        - generic [ref=e682]: 41 910,00
+                      - generic [ref=e685]:
+                        - generic [ref=e687]: 76 100,00
+                        - generic [ref=e688]: 0,03249650
+                        - generic [ref=e689]: 2 472,98
+                  - generic [ref=e690]:
+                    - generic [ref=e691]:
+                      - generic [ref=e692]: Prix médian
+                      - generic [ref=e693]: 76 000,00 €
+                    - generic [ref=e694]:
+                      - generic [ref=e695]: Écart
+                      - generic [ref=e696]:
+                        - generic [ref=e697]: 200,00 €
+                        - text: (0,26 %)
+                  - button "75 900,00 0,04307066 3 269,06 75 800,00 0,22000000 16 676,00 75 700,00 0,42000000 31 794,00 75 600,00 0,62000000 46 872,00 75 500,00 0,82000000 61 909,99 75 400,00 1,02000000 76 908,00 75 300,00 1,22000000 91 866,00 75 200,00 1,42000000 106 784,00 75 100,00 1,62000000 121 662,00 75 000,00 1,82000000 136 500,00 74 900,00 1,01000000 75 649,00 74 800,00 1,11000000 83 028,00 74 700,00 1,21000000 90 387,00 74 600,00 1,31000000 97 726,00 74 500,00 1,41000000 105 045,00 74 400,00 1,51000000 112 344,00 74 300,00 1,61000000 119 623,00 74 200,00 1,71000000 126 882,00 74 100,00 1,81000000 134 121,00 74 000,00 1,91000000 141 340,00" [ref=e700] [cursor=pointer]:
+                    - generic [ref=e702]:
+                      - generic [ref=e705]:
+                        - generic [ref=e707]: 75 900,00
+                        - generic [ref=e708]: 0,04307066
+                        - generic [ref=e709]: 3 269,06
+                      - generic [ref=e712]:
+                        - generic [ref=e714]: 75 800,00
+                        - generic [ref=e715]: 0,22000000
+                        - generic [ref=e716]: 16 676,00
+                      - generic [ref=e719]:
+                        - generic [ref=e721]: 75 700,00
+                        - generic [ref=e722]: 0,42000000
+                        - generic [ref=e723]: 31 794,00
+                      - generic [ref=e726]:
+                        - generic [ref=e728]: 75 600,00
+                        - generic [ref=e729]: 0,62000000
+                        - generic [ref=e730]: 46 872,00
+                      - generic [ref=e733]:
+                        - generic [ref=e735]: 75 500,00
+                        - generic [ref=e736]: 0,82000000
+                        - generic [ref=e737]: 61 909,99
+                      - generic [ref=e740]:
+                        - generic [ref=e742]: 75 400,00
+                        - generic [ref=e743]: 1,02000000
+                        - generic [ref=e744]: 76 908,00
+                      - generic [ref=e747]:
+                        - generic [ref=e749]: 75 300,00
+                        - generic [ref=e750]: 1,22000000
+                        - generic [ref=e751]: 91 866,00
+                      - generic [ref=e754]:
+                        - generic [ref=e756]: 75 200,00
+                        - generic [ref=e757]: 1,42000000
+                        - generic [ref=e758]: 106 784,00
+                      - generic [ref=e761]:
+                        - generic [ref=e763]: 75 100,00
+                        - generic [ref=e764]: 1,62000000
+                        - generic [ref=e765]: 121 662,00
+                      - generic [ref=e768]:
+                        - generic [ref=e770]: 75 000,00
+                        - generic [ref=e771]: 1,82000000
+                        - generic [ref=e772]: 136 500,00
+                      - generic [ref=e775]:
+                        - generic [ref=e777]: 74 900,00
+                        - generic [ref=e778]: 1,01000000
+                        - generic [ref=e779]: 75 649,00
+                      - generic [ref=e782]:
+                        - generic [ref=e784]: 74 800,00
+                        - generic [ref=e785]: 1,11000000
+                        - generic [ref=e786]: 83 028,00
+                      - generic [ref=e789]:
+                        - generic [ref=e791]: 74 700,00
+                        - generic [ref=e792]: 1,21000000
+                        - generic [ref=e793]: 90 387,00
+                      - generic [ref=e796]:
+                        - generic [ref=e798]: 74 600,00
+                        - generic [ref=e799]: 1,31000000
+                        - generic [ref=e800]: 97 726,00
+                      - generic [ref=e803]:
+                        - generic [ref=e805]: 74 500,00
+                        - generic [ref=e806]: 1,41000000
+                        - generic [ref=e807]: 105 045,00
+                      - generic [ref=e810]:
+                        - generic [ref=e812]: 74 400,00
+                        - generic [ref=e813]: 1,51000000
+                        - generic [ref=e814]: 112 344,00
+                      - generic [ref=e817]:
+                        - generic [ref=e819]: 74 300,00
+                        - generic [ref=e820]: 1,61000000
+                        - generic [ref=e821]: 119 623,00
+                      - generic [ref=e824]:
+                        - generic [ref=e826]: 74 200,00
+                        - generic [ref=e827]: 1,71000000
+                        - generic [ref=e828]: 126 882,00
+                      - generic [ref=e831]:
+                        - generic [ref=e833]: 74 100,00
+                        - generic [ref=e834]: 1,81000000
+                        - generic [ref=e835]: 134 121,00
+                      - generic [ref=e838]:
+                        - generic [ref=e840]: 74 000,00
+                        - generic [ref=e841]: 1,91000000
+                        - generic [ref=e842]: 141 340,00
+        - contentinfo [ref=e843]:
+          - generic [ref=e844]:
+            - generic [ref=e845]: Copyright © 2026
+            - link "Paymium" [ref=e847] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e848]: 6.15.0
+            - link "Statut" [ref=e850] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e852] [cursor=pointer]:
+              - /url: ""
+```

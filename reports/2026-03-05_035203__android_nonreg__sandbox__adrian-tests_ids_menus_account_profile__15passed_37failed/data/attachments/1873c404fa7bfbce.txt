@@ -1,0 +1,54 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur non approuvé est redirigé vers la page d'onboarding incomplète après connexion
+Attempting to create test user (attempt 1 of 20)...
+Creating test user in environment sandbox with state verified - attempt 1/20
+Sending GET /users/confirmation request to verify email
+
+
+📌 Test Step: Ouverture de l'application jusqu'a l'ecran de connexion
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/resume-onboarding.spec.ts:18
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/resume-onboarding.spec.ts:19
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- AxeptioCookies.acceptCookies()
+                |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+
+
+📌 Test Step: Remplir le formulaire avec les bons identifiants
+|-- SignIn.fillEmail(adrian.pothuaud+auto.1772670197307@paymium.com) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/resume-onboarding.spec.ts:23
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/resume-onboarding.spec.ts:24
+
+
+📌 Test Step: Vérifier l'apparition du dashboard après soumission
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/resume-onboarding.spec.ts:28
+|-- Shortcuts.handlePinCodeIfRequired() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/resume-onboarding.spec.ts:29
+    |-- CreatePinCode.waitForScreen(20000)
+    |-- CreatePinCode.create()
+    |-- CreateAccessCode.waitForScreen(20000)
+    |-- CreateAccessCode.fillCode(********)
+    |-- ConfirmPinCode.waitForScreen(20000)
+    |-- ConfirmPinCode.fillCode(********)
+|-- Shortcuts.handleBiometricsIfRequired() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/resume-onboarding.spec.ts:30
+    |-- EnableBiometrics.waitForScreen(20000)
+    |-- Écran biométrie non affiché (différés par l'app), l'InterruptHandler le gérera
+|-- SignUpFullName.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/resume-onboarding.spec.ts:31
+[InterruptHandler] échec de SignUpFullName.waitForScreen → element ("android=new UiSelector().textContains("Prénom(s) et nom de famille.")") still not existing after 10000ms. Tentative de gestion d'interruption...
+[InterruptHandler] tryDismissInterrupts appelé (erreur=element ("android=new UiSelector().textContains("Prénom(s) et nom de famille.")") still not existing after 10000ms)
+[InterruptHandler] Aucune perturbation interruptible détectée (raison : erreur=element ("android=new UiSelector().textContains("Prénom(s) et nom de famille.")") still not existing after 10000ms)

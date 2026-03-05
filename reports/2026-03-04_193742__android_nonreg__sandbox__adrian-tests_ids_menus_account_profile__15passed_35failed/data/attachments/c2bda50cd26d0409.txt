@@ -1,0 +1,38 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur peut réinitialiser son mot de passe avec succès via le lien envoyé par email
+
+
+📌 Test Step: Ouverture de l'application jusqu'a l'ecran de connexion
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/unregistered.spec.ts:21
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/unregistered.spec.ts:22
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- AxeptioCookies.acceptCookies()
+                |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+
+
+📌 Test Step: Acces au reset password
+|-- SignIn.goToResetPassword() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/unregistered.spec.ts:26
+|-- ResetPassword.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/unregistered.spec.ts:27
+
+
+📌 Test Step: Etape email
+|-- ResetPassword.fillEmail(adrian.pothuaud+auto.primary+auto.1772639130072@paymium.com) paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/unregistered.spec.ts:31
+|-- ResetPassword.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/unregistered.spec.ts:33

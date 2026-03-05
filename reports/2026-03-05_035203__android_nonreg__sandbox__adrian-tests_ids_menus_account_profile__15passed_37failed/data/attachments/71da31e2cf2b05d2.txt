@@ -1,0 +1,30 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur peut déposer des cryptomonnaies sur son compte avec succès
+
+
+📌 Test Step: Open app and authenticate
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/transfers/crypto-deposit.spec.ts:18
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/transfers/crypto-deposit.spec.ts:19
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+|-- Shortcuts.authenticate() paymium-e2e-united/tests/wdio-android/tests/transfers/crypto-deposit.spec.ts:20
+[InterruptHandler] échec de Shortcuts.authenticate → Cannot destructure property 'testAccount' of 'params' as it is undefined.. Tentative de gestion d'interruption...
+[InterruptHandler] tryDismissInterrupts appelé (erreur=Cannot destructure property 'testAccount' of 'params' as it is undefined.)
+[InterruptHandler] Aucune perturbation interruptible détectée (raison : erreur=Cannot destructure property 'testAccount' of 'params' as it is undefined.)

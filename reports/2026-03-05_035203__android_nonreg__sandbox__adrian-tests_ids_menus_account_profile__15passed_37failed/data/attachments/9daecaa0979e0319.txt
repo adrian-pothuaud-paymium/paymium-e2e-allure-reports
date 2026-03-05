@@ -1,0 +1,118 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur est vérouillé après plusieurs tentatives de connexion infructueuses
+Attempting to create test user (attempt 1 of 20)...
+Creating test user in environment sandbox with state phoneApproved - attempt 1/20
+Sending GET /users/confirmation request to verify email
+Sending PUT /user request to update user information
+Sending POST /phone_numbers request to add phone number
+Sending POST /phone_numbers/verify request to verify phone number
+
+
+📌 Test Step: Ouverture de l'app
+|-- Shortcuts.waitForSessionRestartAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:19
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+    |-- Shortcuts.restartApp()
+    |-- Shortcuts.openAppAndGoToSignIn()
+        |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+            |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+                |-- AxeptioCookies.waitForSheet(20000)
+                    |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                        |-- Attente du premier élément affiché parmi: 2 sélecteurs
+                |-- AxeptioCookies.acceptCookies()
+                    |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                        |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+            |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+                |-- UpdateScreen.waitForScreen(20000)
+            |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+                |-- AxeptioCookies.waitForSheet(20000)
+                    |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                        |-- Attente du premier élément affiché parmi: 2 sélecteurs
+                |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+        |-- WelcomeScreen.waitForScreen(20000)
+        |-- WelcomeScreen.goTo(sign-in)
+        |-- SignIn.waitForScreen(20000)
+
+
+📌 Test Step: Première tentative
+|-- SignIn.fillEmail(adrian.pothuaud+auto.1772668869552@paymium.com) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:23
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:24
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:25
+|-- SignIn.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:27
+|-- Assert.text(Identifiant et/ou mot de passe invalides) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:28
+    |-- Assert text: "Identifiant et/ou mot de passe invalides"
+|-- Assert.text(5 tentatives max) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:29
+    |-- Assert text: "5 tentatives max"
+
+
+📌 Test Step: Deuxième tentative
+|-- Shortcuts.relaunchApp() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:33
+|-- Shortcuts.handleUpdateScreenIfPresent() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:34
+    |-- UpdateScreen.waitForScreen(20000)
+|-- SignIn.fillEmail(adrian.pothuaud+auto.1772668869552@paymium.com) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:35
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:36
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:37
+|-- SignIn.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:39
+|-- Assert.text(Identifiant et/ou mot de passe invalides) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:40
+    |-- Assert text: "Identifiant et/ou mot de passe invalides"
+|-- Assert.text(5 tentatives max) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:41
+    |-- Assert text: "5 tentatives max"
+
+
+📌 Test Step: Troisième tentative
+|-- Shortcuts.relaunchApp() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:45
+|-- Shortcuts.handleUpdateScreenIfPresent() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:46
+    |-- UpdateScreen.waitForScreen(20000)
+|-- SignIn.fillEmail(adrian.pothuaud+auto.1772668869552@paymium.com) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:47
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:48
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:49
+|-- SignIn.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:51
+|-- Assert.text(Identifiant et/ou mot de passe invalides) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:52
+    |-- Assert text: "Identifiant et/ou mot de passe invalides"
+|-- Assert.text(5 tentatives max) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:53
+    |-- Assert text: "5 tentatives max"
+
+
+📌 Test Step: Quatrième tentative
+|-- Shortcuts.relaunchApp() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:57
+|-- Shortcuts.handleUpdateScreenIfPresent() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:58
+    |-- UpdateScreen.waitForScreen(20000)
+|-- SignIn.fillEmail(adrian.pothuaud+auto.1772668869552@paymium.com) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:59
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:60
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:61
+|-- SignIn.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:63
+|-- Assert.text(Identifiant et/ou mot de passe invalides) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:64
+    |-- Assert text: "Identifiant et/ou mot de passe invalides"
+|-- Assert.text(5 tentatives max) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:65
+    |-- Assert text: "5 tentatives max"
+
+
+📌 Test Step: Cinquième tentative
+|-- Shortcuts.relaunchApp() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:69
+|-- Shortcuts.handleUpdateScreenIfPresent() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:70
+    |-- UpdateScreen.waitForScreen(20000)
+|-- SignIn.fillEmail(adrian.pothuaud+auto.1772668869552@paymium.com) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:71
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:72
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:73
+|-- SignIn.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:75
+|-- Assert.text(Identifiant et/ou mot de passe invalides) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:76
+    |-- Assert text: "Identifiant et/ou mot de passe invalides"
+|-- Assert.text(5 tentatives max) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:77
+    |-- Assert text: "5 tentatives max"
+
+
+📌 Test Step: On réessaie une dernière fois avec le bon mot de passe
+|-- Shortcuts.relaunchApp() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:81
+|-- Shortcuts.handleUpdateScreenIfPresent() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:82
+    |-- UpdateScreen.waitForScreen(20000)
+|-- SignIn.fillEmail(adrian.pothuaud+auto.1772668869552@paymium.com) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:83
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:84
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:85
+|-- SignIn.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:87
+|-- Assert.text(Compte verrouillé) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:88
+    |-- Assert text: "Compte verrouillé"
+|-- Assert.text(Un mail vous a été envoyé) paymium-e2e-united/tests/wdio-android/tests/authentication/locked-account/nominal.spec.ts:89
+    |-- Assert text: "Un mail vous a été envoyé"

@@ -1,0 +1,17 @@
+[pageerror] XMLHttpRequest cannot load https: /account.staging-paymium.com/cdn-cgi/rum? due to access control checks.
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected pattern: /^Plan Bitcoin Famille - Paymium$/
+Received string:  "Se connecter - Paymium"
+Timeout: 30000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 30000ms
+    5 × unexpected value "Paymium"
+    - unexpected value "Se déconnecter - Paymium"
+    25 × unexpected value "Se connecter - Paymium"
+
+    at FamilyCreate.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/_components/BasePage.ts:19:29)
+    at FamilyCreate.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/_components/AccountPage.ts:51:5)
+    at FamilyCreate.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/family/create/index.ts:83:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/investment/family-plan.spec.ts:40:3

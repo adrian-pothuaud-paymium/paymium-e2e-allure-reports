@@ -1,0 +1,10 @@
+POST /users failed Request failed with status code 429
+Attempt 1 to create test user failed: Request failed with status code 429
+[pageerror] XMLHttpRequest cannot load https: /account.staging-paymium.com/cdn-cgi/rum? due to access control checks.
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('list').getByRole('textbox') to be visible
+
+    at SearchableContentSelect.searchAndSelect (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/_components/SearchableContentSelect.ts:15:28)
+    at FamilyCreate.selecNationality (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/family/create/index.ts:83:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/investment/family-plan.spec.ts:41:3

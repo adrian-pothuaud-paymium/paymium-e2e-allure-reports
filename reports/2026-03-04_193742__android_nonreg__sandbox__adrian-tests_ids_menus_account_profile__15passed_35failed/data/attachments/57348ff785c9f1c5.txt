@@ -1,0 +1,80 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Le formulaire de changement de mot de passe affiche les messages d'erreur appropriés en cas de données invalides
+Attempting to create test user (attempt 1 of 20)...
+Creating test user in environment sandbox with state phoneApproved - attempt 1/20
+Sending GET /users/confirmation request to verify email
+Sending PUT /user request to update user information
+Sending POST /phone_numbers request to add phone number
+Sending POST /phone_numbers/verify request to verify phone number
+
+
+📌 Test Step: To Change Password screen
+|-- Shortcuts.waitForSessionRestartAppAndAuthenticate(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:23
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+    |-- Shortcuts.restartApp()
+    |-- Shortcuts.openAppAndGoToSignIn()
+        |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+            |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+                |-- AxeptioCookies.waitForSheet(20000)
+                    |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                        |-- Attente du premier élément affiché parmi: 2 sélecteurs
+                |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+            |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+                |-- UpdateScreen.waitForScreen(20000)
+            |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+                |-- AxeptioCookies.waitForSheet(20000)
+                    |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                        |-- Attente du premier élément affiché parmi: 2 sélecteurs
+                |-- AxeptioCookies.acceptCookies()
+                    |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                        |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+        |-- WelcomeScreen.waitForScreen(20000)
+        |-- WelcomeScreen.goTo(sign-in)
+        |-- SignIn.waitForScreen(20000)
+    |-- Shortcuts.authenticate(********)
+        |-- SignIn.fillEmail(adrian.pothuaud+auto.1772636353680@paymium.com)
+        |-- SignIn.fillPassword(********)
+        |-- SignIn.submit()
+        |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired()
+            |-- Shortcuts.handlePinCodeIfRequired(********)
+                |-- CreatePinCode.waitForScreen(20000)
+                |-- CreatePinCode.create()
+                |-- CreateAccessCode.waitForScreen(20000)
+                |-- CreateAccessCode.fillCode(********)
+                |-- ConfirmPinCode.waitForScreen(20000)
+                |-- ConfirmPinCode.fillCode(********)
+            |-- Shortcuts.handleBiometricsIfRequired(20000)
+                |-- EnableBiometrics.waitForScreen(20000)
+                |-- Écran biométrie non affiché (différés par l'app), l'InterruptHandler le gérera
+        |-- DashboardScreen.waitForScreen()
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:25
+|-- MyAccount.goToProfile() paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:26
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:27
+|-- Profile.goToAccountSecurity() paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:28
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:29
+|-- ProfileSecurity.goToChangePassword() paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:30
+|-- ChangePassword.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:31
+
+
+📌 Test Step: Etat initial du formulaire
+
+
+📌 Test Step: Validation des erreurs de formulaire
+|-- ChangePassword.fillActualPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:42
+|-- ChangePassword.fillNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:43
+|-- ChangePassword.fillConfirmNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:44
+|-- ChangePassword.fillActualPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:47
+|-- ChangePassword.fillNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:48
+|-- ChangePassword.fillConfirmNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:49
+|-- ChangePassword.fillActualPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:52
+|-- ChangePassword.fillNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:53
+|-- ChangePassword.fillConfirmNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:54
+|-- ChangePassword.fillActualPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:57
+|-- ChangePassword.fillNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:58
+|-- ChangePassword.fillConfirmNewPassword(********) paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:59
+|-- Assert.text(Les mots de passe doivent correspondre) paymium-e2e-united/tests/wdio-android/tests/account/change-password/form-validations.spec.ts:60
+    |-- Assert text: "Les mots de passe doivent correspondre"

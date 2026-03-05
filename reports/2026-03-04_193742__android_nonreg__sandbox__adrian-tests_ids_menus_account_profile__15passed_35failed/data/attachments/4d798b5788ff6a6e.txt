@@ -1,0 +1,38 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Le formulaire de réinitialisation du mot de passe affiche les messages d'erreur appropriés en cas de données invalides
+
+
+📌 Test Step: Ouverture de l'application jusqu'a l'ecran de connexion
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/form-validations.spec.ts:16
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/form-validations.spec.ts:17
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+
+
+📌 Test Step: Acces au reset password
+|-- SignIn.goToResetPassword() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/form-validations.spec.ts:21
+|-- ResetPassword.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/form-validations.spec.ts:22
+
+
+📌 Test Step: Validation du formulaire de reset password - etape email
+|-- ResetPassword.getEmailFieldAttributes() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/form-validations.spec.ts:31
+|-- ResetPassword.fillEmail(invalid-email) paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/form-validations.spec.ts:37
+|-- ResetPassword.fillEmail(invalid@email) paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/form-validations.spec.ts:39
+|-- ResetPassword.fillEmail(invalid.email) paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/form-validations.spec.ts:41

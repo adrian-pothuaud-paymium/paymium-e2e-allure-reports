@@ -1,0 +1,103 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur ne peut pas configurer la biometrie avec un code PIN incorrect
+
+
+📌 Test Step: Connexion à l'application
+Attempting to create test user (attempt 1 of 20)...
+Creating test user in environment sandbox with state phoneApproved - attempt 1/20
+Sending GET /users/confirmation request to verify email
+Sending PUT /user request to update user information
+Sending POST /phone_numbers request to add phone number
+Sending POST /phone_numbers/verify request to verify phone number
+|-- Shortcuts.setupPinCodeRetries() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/bad-pin-code-at-setup.spec.ts:20
+    |-- Shortcuts.setupPinCode()
+        |-- Shortcuts.waitForSession()
+            |-- Appium session is ready.
+        |-- Shortcuts.resetAndroidUiState()
+        |-- AndroidSettingsHomeScreen.open()
+        |-- AndroidSettingsHomeScreen.waitForScreen()
+        |-- AndroidSettingsHomeScreen.goToSecuritySettings()
+            |-- Utils.magicSwipeAndClick(["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"])
+                |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"]})
+                    |-- [magicSwipe] Searching for element: [android=new UiSelector().text("Sécurité"), android=new UiSelector().text("Security"), android=new UiSelector().text("Security & Privacy"), android=new UiSelector().text("Sécurité et confidentialité")]
+                    |-- [magicSwipe] Using auto-detected scrollable element
+                    |-- [magicSwipe] Starting unidirectional search (down, max 10 swipes)
+                    |-- [magicSwipe] Found visible element: android=new UiSelector().text("Sécurité et confidentialité")
+                    |-- [magicSwipe] Element found after 2 swipes
+                |-- Utils.clickFirstExisting(["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"])
+                    |-- Clic sur le premier élément existant parmi: 4 sélecteurs
+        |-- AndroidSettingsSecurityAndPrivacyScreen.waitForScreen()
+        |-- AndroidSettingsSecurityAndPrivacyScreen.goToDeviceLock()
+            |-- Utils.magicSwipeAndClick(["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"])
+                |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"]})
+                    |-- [magicSwipe] Searching for element: [//android.widget.TextView[@resource-id="android:id/title" and @text="Déverrouillage de l'appareil"], //android.widget.TextView[@resource-id="android:id/title" and @text="Device unlock"]]
+                    |-- [magicSwipe] Using auto-detected scrollable element
+                    |-- [magicSwipe] Starting unidirectional search (down, max 10 swipes)
+                    |-- [magicSwipe] Found visible element: //android.widget.TextView[@resource-id="android:id/title" and @text="Déverrouillage de l'appareil"]
+                    |-- [magicSwipe] Element found after 1 swipes
+                |-- Utils.clickFirstExisting(["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+        |-- AndroidSettingsDeviceUnlockScreen.waitForScreen()
+        |-- AndroidSettingsDeviceUnlockScreen.goToScreenLock()
+            |-- Utils.magicSwipeAndClick(["android=new UiSelector().text(\"Déverrouillage de l'écran\")","android=new UiSelector().text(\"Déverrouillage de l’écran\")","android=new UiSelector().text(\"Verrouillage de l'écran\")","android=new UiSelector().text(\"Verrouillage de l’écran\")","android=new UiSelector().text(\"Screen lock\")"])
+                |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["android=new UiSelector().text(\"Déverrouillage de l'écran\")","android=new UiSelector().text(\"Déverrouillage de l’écran\")","android=new UiSelector().text(\"Verrouillage de l'écran\")","android=new UiSelector().text(\"Verrouillage de l’écran\")","android=new UiSelector().text(\"Screen lock\")"]})
+                    |-- [magicSwipe] Searching for element: [android=new UiSelector().text("Déverrouillage de l'écran"), android=new UiSelector().text("Déverrouillage de l’écran"), android=new UiSelector().text("Verrouillage de l'écran"), android=new UiSelector().text("Verrouillage de l’écran"), android=new UiSelector().text("Screen lock")]
+                    |-- [magicSwipe] Using auto-detected scrollable element
+                    |-- [magicSwipe] Found visible element: android=new UiSelector().text("Déverrouillage de l'écran")
+                    |-- [magicSwipe] Element already visible, no swipe needed
+                |-- Utils.clickFirstExisting(["android=new UiSelector().text(\"Déverrouillage de l'écran\")","android=new UiSelector().text(\"Déverrouillage de l’écran\")","android=new UiSelector().text(\"Verrouillage de l'écran\")","android=new UiSelector().text(\"Verrouillage de l’écran\")","android=new UiSelector().text(\"Screen lock\")"])
+                    |-- Clic sur le premier élément existant parmi: 5 sélecteurs
+        |-- AndroidUnlockPinCodeScreen.unlock()
+            |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"com.android.settings:id/suc_layout_title\")","android=new UiSelector().textMatches(\"Confirmer le code PIN|Re-enter your PIN|Saisissez de nouveau votre code\")","android=new UiSelector().resourceId(\"com.android.settings:id/title\").textMatches(\"(?i).*confirmer.*code.*pin.*|.*re-enter.*pin.*|.*saisissez.*code.*\")"])
+                |-- Attente du premier élément affiché parmi: 3 sélecteurs
+        |-- AndroidSettingsChooseScreenLockMethodScreen.waitForScreen()
+        |-- AndroidSettingsChooseScreenLockMethodScreen.chooseCodeLock()
+        |-- AndroidSettingsScreenLockDefineCodeScreen.waitForScreen()
+        |-- AndroidSettingsScreenLockDefineCodeScreen.enterCode(********)
+        |-- AndroidSettingsScreenLockDefineCodeScreen.goToNextStep()
+        |-- AndroidSettingsScreenLockConfirmCodeScreen.waitForScreen()
+        |-- AndroidSettingsScreenLockConfirmCodeScreen.enterCode(********)
+        |-- AndroidSettingsScreenLockConfirmCodeScreen.confirm()
+        |-- AndroidSettingsScreenLockWhatToShowScreen.waitForScreen()
+        |-- AndroidSettingsScreenLockWhatToShowScreen.chooseShowAll()
+        |-- AndroidSettingsScreenLockWhatToShowScreen.confirm()
+        |-- AndroidSettingsDeviceUnlockScreen.waitForScreen()
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/bad-pin-code-at-setup.spec.ts:21
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/bad-pin-code-at-setup.spec.ts:22
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- AxeptioCookies.acceptCookies()
+                |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+|-- SignIn.fillCredentials(********, ********) paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/bad-pin-code-at-setup.spec.ts:23
+    |-- SignIn.fillEmail(adrian.pothuaud+auto.1772638710535@paymium.com)
+    |-- SignIn.fillPassword(********)
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/bad-pin-code-at-setup.spec.ts:24
+
+
+📌 Test Step: Saisie du code pin de référence
+|-- CreatePinCode.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/bad-pin-code-at-setup.spec.ts:28
+|-- CreatePinCode.create() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/bad-pin-code-at-setup.spec.ts:29
+|-- CreateAccessCode.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/bad-pin-code-at-setup.spec.ts:30
+|-- CreateAccessCode.fillCode(********) paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/bad-pin-code-at-setup.spec.ts:31
+|-- ConfirmPinCode.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/bad-pin-code-at-setup.spec.ts:32
+
+
+📌 Test Step: Saisie du code pin incorrect pour la première fois
+|-- ConfirmPinCode.fillCode(********) paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/bad-pin-code-at-setup.spec.ts:36

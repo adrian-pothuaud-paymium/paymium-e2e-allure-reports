@@ -1,0 +1,95 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e11] [cursor=pointer]:
+          - /url: https://www.paymium.com/
+          - img [ref=e13]
+        - button [ref=e50] [cursor=pointer]:
+          - img [ref=e52]
+      - generic [ref=e54]:
+        - navigation
+        - generic [ref=e55]:
+          - form [ref=e59]:
+            - generic [ref=e60]:
+              - generic [ref=e61]: Se connecter à Paymium
+              - generic [ref=e62]:
+                - generic [ref=e64]:
+                  - generic [ref=e66]: Email
+                  - textbox "Email" [ref=e68]
+                - generic [ref=e69]:
+                  - generic [ref=e71]:
+                    - generic [ref=e73]: Mot de passe
+                    - generic [ref=e74]:
+                      - textbox "Mot de passe" [ref=e75]
+                      - button [ref=e78] [cursor=pointer]:
+                        - img [ref=e79]
+                  - link "Mot de passe oublié ?" [ref=e81] [cursor=pointer]:
+                    - /url: /reset-password
+              - button "Se connecter" [disabled]:
+                - generic: Se connecter
+              - button "S'inscrire" [ref=e82] [cursor=pointer]:
+                - generic [ref=e83]: S'inscrire
+          - contentinfo [ref=e84]:
+            - generic [ref=e85]:
+              - generic [ref=e86]: Copyright © 2026
+              - link "Paymium" [ref=e87] [cursor=pointer]:
+                - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+              - generic [ref=e88]: 6.15.0
+              - link "Statut" [ref=e89] [cursor=pointer]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e90] [cursor=pointer]
+    - banner [ref=e93]:
+      - 'generic "Toast warning : Avertissement" [ref=e94]':
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - img [ref=e98]
+            - generic [ref=e100]:
+              - generic [ref=e101]: Avertissement
+              - generic [ref=e102]: Votre session a expiré
+          - button "Close" [ref=e103] [cursor=pointer]:
+            - img [ref=e104]
+  - generic [ref=e108]:
+    - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e109]':
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - button "Fermer le widget sans consentement" [ref=e112] [cursor=pointer]:
+            - generic [ref=e113]: Continuer sans accepter
+          - generic [ref=e115]:
+            - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e118]:
+              - generic [ref=e119]: Des cookies pour
+              - generic [ref=e120]: vos bitcoins !
+            - generic [ref=e121]:
+              - paragraph [ref=e122]:
+                - text: Parce que
+                - strong [ref=e123]: stacker des sats ça donne faim
+                - text: ", nous vous proposons une pause cookie ! 🍪"
+              - paragraph [ref=e124]:
+                - text: Avec votre accord, Paymium aimerait utiliser des
+                - strong [ref=e125]: cookies
+                - text: placés par nous et/ou par nos partenaires sur notre site.
+              - paragraph [ref=e126]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+              - paragraph [ref=e127]:
+                - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                - strong [ref=e128]: Vous choisissez ceux qui vous plaisent
+                - text: ", comme pour le trading !"
+              - paragraph [ref=e129]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+            - paragraph [ref=e131]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+          - button "Consentements certifiés par Axeptio" [ref=e134]:
+            - generic [ref=e135]: Consentements certifiés par
+            - img "Axeptio" [ref=e139]
+        - generic [ref=e143]:
+          - button "Je choisis les cookies à configurer" [ref=e144] [cursor=pointer]: Je choisis
+          - button "Accepter les cookies" [ref=e145] [cursor=pointer]: OK pour moi
+      - generic [ref=e146]:
+        - text: Axeptio consent
+        - checkbox [ref=e147]
+      - generic [ref=e148]:
+        - paragraph [ref=e149]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+        - paragraph [ref=e150]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+    - button "Fermer le widget sans consentement" [ref=e151] [cursor=pointer]:
+      - img [ref=e155]
+```

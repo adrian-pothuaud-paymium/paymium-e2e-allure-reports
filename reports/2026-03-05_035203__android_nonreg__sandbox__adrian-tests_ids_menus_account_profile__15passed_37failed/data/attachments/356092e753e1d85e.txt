@@ -1,0 +1,48 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur peut se connecter avec des identifiants valides et sans 2FA
+
+
+📌 Test Step: Ouverture de l'application jusqu'a l'ecran de connexion
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/nominal.spec.ts:20
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/nominal.spec.ts:21
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- AxeptioCookies.acceptCookies()
+                |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+
+
+📌 Test Step: Remplir le formulaire avec les bons identifiants
+|-- SignIn.fillEmail(adrian.pothuaud+auto.primary@paymium.com) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/nominal.spec.ts:25
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/nominal.spec.ts:26
+
+
+📌 Test Step: Vérifier l'apparition du dashboard après soumission
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/nominal.spec.ts:30
+|-- Shortcuts.handlePinCodeIfRequired() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/nominal.spec.ts:31
+    |-- CreatePinCode.waitForScreen(20000)
+    |-- CreatePinCode.create()
+    |-- CreateAccessCode.waitForScreen(20000)
+    |-- CreateAccessCode.fillCode(********)
+    |-- ConfirmPinCode.waitForScreen(20000)
+    |-- ConfirmPinCode.fillCode(********)
+|-- Shortcuts.handleBiometricsIfRequired() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/nominal.spec.ts:32
+    |-- EnableBiometrics.waitForScreen(20000)
+    |-- Écran biométrie non affiché (différés par l'app), l'InterruptHandler le gérera
+|-- DashboardScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/nominal.spec.ts:33

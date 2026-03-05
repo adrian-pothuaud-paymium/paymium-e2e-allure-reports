@@ -1,0 +1,3 @@
+[pageerror] Fetch API cannot load https: /account-flux.sandbox-paymium.com/ due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/currencies due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.

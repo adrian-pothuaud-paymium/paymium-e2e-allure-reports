@@ -1,0 +1,170 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+        - button "FR" [ref=e53] [cursor=pointer]:
+          - generic [ref=e54]: FR
+          - img [ref=e55]
+        - button [ref=e57] [cursor=pointer]:
+          - img [ref=e60]
+        - button [ref=e63] [cursor=pointer]:
+          - img [ref=e64]
+        - button [ref=e67] [cursor=pointer]:
+          - img [ref=e68]
+        - button [ref=e72] [cursor=pointer]:
+          - img [ref=e73]
+    - generic [ref=e77]:
+      - navigation [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e82]:
+            - img [ref=e84]
+            - textbox "Chercher" [ref=e87]
+          - generic [ref=e88]:
+            - link "Tableau de bord" [ref=e89] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e90]
+              - generic [ref=e93]: Tableau de bord
+            - link "Portefeuille" [ref=e94] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e95]
+              - generic [ref=e99]: Portefeuille
+            - link "Achat / vente" [ref=e100] [cursor=pointer]:
+              - /url: /swap
+              - img [ref=e101]
+              - generic [ref=e104]: Achat / vente
+            - link "Dépôt / retrait" [ref=e105] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e106]
+              - generic [ref=e109]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e110] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e111]
+              - generic [ref=e116]: Achat récurrent
+            - link "Mode expert" [ref=e117] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e118]
+              - generic [ref=e120]: Mode expert
+            - link "Parrainage" [ref=e121] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e122]
+              - generic [ref=e127]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e128] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e129]
+              - generic [ref=e134]: Plan Bitcoin Famille
+            - link "Historique" [ref=e135] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e136]
+              - generic [ref=e141]: Historique
+      - generic [ref=e142]:
+        - generic [ref=e144]:
+          - banner [ref=e146]:
+            - generic [ref=e147]:
+              - img [ref=e149]
+              - generic [ref=e151]: Votre transfert interne est en cours de traitement.
+            - link "Voir l'historique" [ref=e152] [cursor=pointer]:
+              - /url: /history?type=history-internalTransfer
+              - generic [ref=e153]: Voir l'historique
+          - form [ref=e155]:
+            - generic [ref=e156]:
+              - generic [ref=e157]:
+                - generic [ref=e158]:
+                  - generic [ref=e159]:
+                    - generic [ref=e160]: De
+                    - generic [ref=e161]:
+                      - button "Max" [ref=e163] [cursor=pointer]:
+                        - generic [ref=e166]:
+                          - 'textbox "ex : 123.45" [ref=e167]'
+                          - button "Max" [ref=e170]:
+                            - generic [ref=e171]: Max
+                      - button "Euro" [ref=e172] [cursor=pointer]:
+                        - button "Euro" [ref=e176]:
+                          - textbox [ref=e178]: EUR
+                          - generic [ref=e180]:
+                            - img [ref=e181]
+                            - generic [ref=e186]: Euro
+                          - img [ref=e187]
+                    - generic [ref=e189]:
+                      - generic [ref=e190]: "Solde:"
+                      - generic [ref=e191]: 2,76 €
+                  - generic [ref=e192]:
+                    - generic [ref=e194]: Payer avec
+                    - generic [ref=e195]:
+                      - button "Compte de trading 2,76 € Approvisionner le compte" [ref=e196] [cursor=pointer]:
+                        - generic [ref=e197]:
+                          - generic [ref=e198]:
+                            - generic [ref=e199]: Compte de trading
+                            - generic [ref=e200]: 2,76 €
+                          - button "Approvisionner le compte" [ref=e202]:
+                            - link "Approvisionner le compte" [ref=e203]
+                          - img [ref=e205]
+                      - button "Carte bancaire Nouvelle CB Transaction sécurisée via Worldpay" [ref=e207] [cursor=pointer]:
+                        - generic [ref=e209]:
+                          - generic [ref=e210]:
+                            - generic [ref=e211]: Carte bancaire
+                            - generic [ref=e212]: Nouvelle CB
+                            - generic [ref=e213]:
+                              - img [ref=e214]
+                              - img [ref=e221]
+                          - generic [ref=e226]: Transaction sécurisée via Worldpay
+                - button [ref=e227] [cursor=pointer]:
+                  - button [ref=e228]:
+                    - img [ref=e229]
+                - generic [ref=e233]:
+                  - generic [ref=e235]:
+                    - generic [ref=e236]: À
+                    - generic [ref=e237]: (estimation)
+                  - generic [ref=e238]:
+                    - button [ref=e240] [cursor=pointer]:
+                      - 'textbox "ex : 123.45" [ref=e244]'
+                    - button "Bitcoin" [ref=e245] [cursor=pointer]:
+                      - button "Bitcoin" [ref=e249]:
+                        - textbox [ref=e251]: BTC
+                        - generic [ref=e253]:
+                          - img [ref=e254]
+                          - generic [ref=e259]: Bitcoin
+                        - img [ref=e260]
+                  - generic [ref=e262]:
+                    - generic [ref=e263]: "Solde:"
+                    - generic [ref=e264]: 0,32210870 BTC
+                - generic [ref=e265] [cursor=pointer]:
+                  - button "Convertir" [disabled]:
+                    - generic: Convertir
+              - generic [ref=e268]:
+                - generic [ref=e269]: Récapitulatif
+                - generic [ref=e271]:
+                  - generic [ref=e272]: "Acheter pour ce montant :"
+                  - generic [ref=e274]: 0,00000000 BTC
+                - generic [ref=e275]:
+                  - generic [ref=e276]: Prix
+                  - generic [ref=e278]:
+                    - generic [ref=e279]: 76 100,00
+                    - generic [ref=e280]: € / BTC
+                - generic [ref=e282]:
+                  - generic [ref=e283]: Frais
+                  - generic [ref=e285]: 0,00000000 BTC
+                - generic [ref=e287]:
+                  - generic [ref=e288]: Montant
+                  - generic [ref=e290]: 0,00 €
+            - button
+        - contentinfo [ref=e291]:
+          - generic [ref=e292]:
+            - generic [ref=e293]: Copyright © 2026
+            - link "Paymium" [ref=e295] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e296]: 6.15.0
+            - link "Statut" [ref=e298] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e300] [cursor=pointer]:
+              - /url: ""
+```

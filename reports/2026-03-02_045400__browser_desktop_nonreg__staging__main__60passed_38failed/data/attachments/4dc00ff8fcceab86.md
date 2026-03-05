@@ -1,0 +1,60 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button "FR" [ref=e49] [cursor=pointer]:
+          - generic [ref=e50]: FR
+          - img [ref=e51]
+        - button [ref=e53] [cursor=pointer]:
+          - img [ref=e56]
+        - button [ref=e59] [cursor=pointer]:
+          - img [ref=e60]
+        - button [ref=e63] [cursor=pointer]:
+          - img [ref=e64]
+    - generic [ref=e68]:
+      - navigation
+      - generic [ref=e69]:
+        - form [ref=e71]:
+          - generic [ref=e73]:
+            - tablist [ref=e75]:
+              - tab [ref=e76]
+              - tab [ref=e78]
+              - tab [ref=e80]
+              - tab [ref=e82]
+              - tab [selected] [ref=e84]
+            - form [ref=e89]:
+              - generic [ref=e90]:
+                - generic [ref=e91]: Votre téléphone
+                - generic [ref=e92]: Saisissez votre numéro de téléphone, nous vous enverrons un code de confirmation.
+              - generic [ref=e94]:
+                - generic [ref=e97]:
+                  - generic [ref=e100]:
+                    - generic [ref=e102]: Indicatif
+                    - button "Indicatif" [ref=e104] [cursor=pointer]:
+                      - textbox [ref=e106]: FRA
+                      - generic [ref=e107]: 🇫🇷 +33
+                      - img [ref=e108]
+                  - generic [ref=e111]:
+                    - generic [ref=e113]: Téléphone
+                    - textbox "Téléphone" [ref=e115]
+                - button "Continuer" [disabled]:
+                  - generic: Continuer
+        - contentinfo [ref=e116]:
+          - generic [ref=e117]:
+            - generic [ref=e118]: Copyright © 2026
+            - link "Paymium" [ref=e120] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e121]: 6.15.0
+            - link "Statut" [ref=e123] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e125] [cursor=pointer]:
+              - /url: ""
+```

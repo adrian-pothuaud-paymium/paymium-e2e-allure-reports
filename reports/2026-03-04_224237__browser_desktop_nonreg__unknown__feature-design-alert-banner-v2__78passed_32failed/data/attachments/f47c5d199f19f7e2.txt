@@ -1,0 +1,9 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: locator.waitFor: Error: strict mode violation: getByTestId('toast-success') resolved to 2 elements:
+    1) <div data-testid="toast-success" aria-label="Toast success : Succès" class="css-g5y9jx border-style-[solid] border-width-[0px] align-items-[flex-start] background-color-[rgba(0,-0,-0,-0)] display-[flex] flex-basis-[auto] flex-direction-[column] flex-shrink-[0] list-style-[none] margin-top-[0px] margin-bottom-[0px] margin-left-[0px] margin-right-[0px] min-height-[0px] min-width-[0px] padding-top-[0px] padding-bottom-[0px] padding-right-[0px] padding-left-[0px] position-[relative] text-decoration-[no…>…</div> aka getByRole('banner').filter({ hasText: 'SuccèsVotre plan d\'achat récurrent est maintenant actif.' }).getByTestId('toast-success')
+    2) <div data-testid="toast-success" aria-label="Toast success : Succès" class="css-g5y9jx border-style-[solid] border-width-[0px] align-items-[flex-start] background-color-[rgba(0,-0,-0,-0)] display-[flex] flex-basis-[auto] flex-direction-[column] flex-shrink-[0] list-style-[none] margin-top-[0px] margin-bottom-[0px] margin-left-[0px] margin-right-[0px] min-height-[0px] min-width-[0px] padding-top-[0px] padding-bottom-[0px] padding-right-[0px] padding-left-[0px] position-[relative] text-decoration-[no…>…</div> aka getByRole('banner').filter({ hasText: 'SuccèsVotre plan d\'achat récurrent est maintenant modifié' }).getByTestId('toast-success')
+
+Call log:
+  - waiting for getByTestId('toast-success')
+
+

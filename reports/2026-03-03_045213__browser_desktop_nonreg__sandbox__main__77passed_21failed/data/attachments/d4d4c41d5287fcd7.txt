@@ -1,0 +1,7 @@
+Attempting to create test user (attempt 1 of 3)...
+Sending POST /users request to create test user
+Sending GET /users/confirmation request to verify email
+Sending PUT /user request to update user information
+Sending POST /phone_numbers request to add phone number
+Sending POST /phone_numbers/verify request to verify phone number
+TOTP for 2FA activation: I5KNH7XT5E3LNISRTTEODUDK5X5JVEFQ

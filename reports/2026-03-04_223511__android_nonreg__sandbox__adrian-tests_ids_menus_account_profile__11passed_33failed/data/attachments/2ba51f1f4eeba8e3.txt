@@ -1,0 +1,219 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur peut activer et désactiver la biométrie avec succès
+Attempting to create test user (attempt 1 of 20)...
+Creating test user in environment sandbox with state phoneApproved - attempt 1/20
+Sending GET /users/confirmation request to verify email
+Sending PUT /user request to update user information
+Sending POST /phone_numbers request to add phone number
+Sending POST /phone_numbers/verify request to verify phone number
+
+
+📌 Test Step: Ouverture de l'application
+|-- Shortcuts.prepareForBiometrics() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:30
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+    |-- Shortcuts.setupPinCodeRetries()
+        |-- Shortcuts.setupPinCode()
+            |-- Shortcuts.waitForSession()
+                |-- Appium session is ready.
+            |-- Shortcuts.resetAndroidUiState()
+            |-- AndroidSettingsHomeScreen.open()
+            |-- AndroidSettingsHomeScreen.waitForScreen()
+            |-- AndroidSettingsHomeScreen.goToSecuritySettings()
+                |-- Utils.magicSwipeAndClick(["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"])
+                    |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"]})
+                        |-- [magicSwipe] Searching for element: [android=new UiSelector().text("Sécurité"), android=new UiSelector().text("Security"), android=new UiSelector().text("Security & Privacy"), android=new UiSelector().text("Sécurité et confidentialité")]
+                        |-- [magicSwipe] Using auto-detected scrollable element
+                        |-- [magicSwipe] Starting unidirectional search (down, max 10 swipes)
+                        |-- [magicSwipe] Found visible element: android=new UiSelector().text("Sécurité et confidentialité")
+                        |-- [magicSwipe] Element found after 2 swipes
+                    |-- Utils.clickFirstExisting(["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"])
+                        |-- Clic sur le premier élément existant parmi: 4 sélecteurs
+            |-- AndroidSettingsSecurityAndPrivacyScreen.waitForScreen()
+            |-- AndroidSettingsSecurityAndPrivacyScreen.goToDeviceLock()
+                |-- Utils.magicSwipeAndClick(["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"])
+                    |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"]})
+                        |-- [magicSwipe] Searching for element: [//android.widget.TextView[@resource-id="android:id/title" and @text="Déverrouillage de l'appareil"], //android.widget.TextView[@resource-id="android:id/title" and @text="Device unlock"]]
+                        |-- [magicSwipe] Using auto-detected scrollable element
+                        |-- [magicSwipe] Starting unidirectional search (down, max 10 swipes)
+                        |-- [magicSwipe] Found visible element: //android.widget.TextView[@resource-id="android:id/title" and @text="Déverrouillage de l'appareil"]
+                        |-- [magicSwipe] Element found after 1 swipes
+                    |-- Utils.clickFirstExisting(["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"])
+                        |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+            |-- AndroidSettingsDeviceUnlockScreen.waitForScreen()
+            |-- AndroidSettingsDeviceUnlockScreen.goToScreenLock()
+                |-- Utils.magicSwipeAndClick(["android=new UiSelector().text(\"Déverrouillage de l'écran\")","android=new UiSelector().text(\"Déverrouillage de l’écran\")","android=new UiSelector().text(\"Verrouillage de l'écran\")","android=new UiSelector().text(\"Verrouillage de l’écran\")","android=new UiSelector().text(\"Screen lock\")"])
+                    |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["android=new UiSelector().text(\"Déverrouillage de l'écran\")","android=new UiSelector().text(\"Déverrouillage de l’écran\")","android=new UiSelector().text(\"Verrouillage de l'écran\")","android=new UiSelector().text(\"Verrouillage de l’écran\")","android=new UiSelector().text(\"Screen lock\")"]})
+                        |-- [magicSwipe] Searching for element: [android=new UiSelector().text("Déverrouillage de l'écran"), android=new UiSelector().text("Déverrouillage de l’écran"), android=new UiSelector().text("Verrouillage de l'écran"), android=new UiSelector().text("Verrouillage de l’écran"), android=new UiSelector().text("Screen lock")]
+                        |-- [magicSwipe] Using auto-detected scrollable element
+                        |-- [magicSwipe] Found visible element: android=new UiSelector().text("Déverrouillage de l'écran")
+                        |-- [magicSwipe] Element already visible, no swipe needed
+                    |-- Utils.clickFirstExisting(["android=new UiSelector().text(\"Déverrouillage de l'écran\")","android=new UiSelector().text(\"Déverrouillage de l’écran\")","android=new UiSelector().text(\"Verrouillage de l'écran\")","android=new UiSelector().text(\"Verrouillage de l’écran\")","android=new UiSelector().text(\"Screen lock\")"])
+                        |-- Clic sur le premier élément existant parmi: 5 sélecteurs
+            |-- AndroidUnlockPinCodeScreen.unlock()
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"com.android.settings:id/suc_layout_title\")","android=new UiSelector().textMatches(\"Confirmer le code PIN|Re-enter your PIN|Saisissez de nouveau votre code\")","android=new UiSelector().resourceId(\"com.android.settings:id/title\").textMatches(\"(?i).*confirmer.*code.*pin.*|.*re-enter.*pin.*|.*saisissez.*code.*\")"])
+                    |-- Attente du premier élément affiché parmi: 3 sélecteurs
+            |-- AndroidSettingsChooseScreenLockMethodScreen.waitForScreen()
+            |-- AndroidSettingsChooseScreenLockMethodScreen.chooseCodeLock()
+            |-- AndroidSettingsScreenLockDefineCodeScreen.waitForScreen()
+            |-- AndroidSettingsScreenLockDefineCodeScreen.enterCode(********)
+            |-- AndroidSettingsScreenLockDefineCodeScreen.goToNextStep()
+            |-- AndroidSettingsScreenLockConfirmCodeScreen.waitForScreen()
+            |-- AndroidSettingsScreenLockConfirmCodeScreen.enterCode(********)
+            |-- AndroidSettingsScreenLockConfirmCodeScreen.confirm()
+            |-- AndroidSettingsScreenLockWhatToShowScreen.waitForScreen()
+            |-- AndroidSettingsScreenLockWhatToShowScreen.chooseShowAll()
+            |-- AndroidSettingsScreenLockWhatToShowScreen.confirm()
+            |-- AndroidSettingsDeviceUnlockScreen.waitForScreen()
+    |-- Shortcuts.setupFingerprintRetries()
+        |-- Shortcuts.setupFingerprint()
+            |-- Shortcuts.resetAndroidUiState()
+            |-- AndroidSettingsHomeScreen.open()
+            |-- AndroidSettingsHomeScreen.waitForScreen()
+            |-- AndroidSettingsHomeScreen.goToSecuritySettings()
+                |-- Utils.magicSwipeAndClick(["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"])
+                    |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"]})
+                        |-- [magicSwipe] Searching for element: [android=new UiSelector().text("Sécurité"), android=new UiSelector().text("Security"), android=new UiSelector().text("Security & Privacy"), android=new UiSelector().text("Sécurité et confidentialité")]
+                        |-- [magicSwipe] Using auto-detected scrollable element
+                        |-- [magicSwipe] Starting unidirectional search (down, max 10 swipes)
+                        |-- [magicSwipe] Found visible element: android=new UiSelector().text("Sécurité et confidentialité")
+                        |-- [magicSwipe] Element found after 2 swipes
+                    |-- Utils.clickFirstExisting(["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"])
+                        |-- Clic sur le premier élément existant parmi: 4 sélecteurs
+            |-- AndroidSettingsSecurityAndPrivacyScreen.waitForScreen()
+            |-- AndroidSettingsSecurityAndPrivacyScreen.goToDeviceLock()
+                |-- Utils.magicSwipeAndClick(["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"])
+                    |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"]})
+                        |-- [magicSwipe] Searching for element: [//android.widget.TextView[@resource-id="android:id/title" and @text="Déverrouillage de l'appareil"], //android.widget.TextView[@resource-id="android:id/title" and @text="Device unlock"]]
+                        |-- [magicSwipe] Using auto-detected scrollable element
+                        |-- [magicSwipe] Starting unidirectional search (down, max 10 swipes)
+                        |-- [magicSwipe] Found visible element: //android.widget.TextView[@resource-id="android:id/title" and @text="Déverrouillage de l'appareil"]
+                        |-- [magicSwipe] Element found after 1 swipes
+                    |-- Utils.clickFirstExisting(["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"])
+                        |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+            |-- AndroidSettingsDeviceUnlockScreen.waitForScreen()
+            |-- AndroidSettingsDeviceUnlockScreen.goToFingerprint()
+                |-- Utils.magicSwipeAndClick(["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Empreinte digitale\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage par empreinte digitale et reconnaissance faciale\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Pixel Imprint\"]","//android.widget.TextView[@resource-id=\"android:id/summary\" and @text=\"Empreinte digitale ajoutée\"]","//android.widget.TextView[@resource-id=\"android:id/summary\" and @text=\"Appuyer pour configurer une empreinte digitale\"]"])
+                    |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Empreinte digitale\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage par empreinte digitale et reconnaissance faciale\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Pixel Imprint\"]","//android.widget.TextView[@resource-id=\"android:id/summary\" and @text=\"Empreinte digitale ajoutée\"]","//android.widget.TextView[@resource-id=\"android:id/summary\" and @text=\"Appuyer pour configurer une empreinte digitale\"]"]})
+                        |-- [magicSwipe] Searching for element: [//android.widget.TextView[@resource-id="android:id/title" and @text="Empreinte digitale"], //android.widget.TextView[@resource-id="android:id/title" and @text="Déverrouillage par empreinte digitale et reconnaissance faciale"], //android.widget.TextView[@resource-id="android:id/title" and @text="Pixel Imprint"], //android.widget.TextView[@resource-id="android:id/summary" and @text="Empreinte digitale ajoutée"], //android.widget.TextView[@resource-id="android:id/summary" and @text="Appuyer pour configurer une empreinte digitale"]]
+                        |-- [magicSwipe] Using auto-detected scrollable element
+                        |-- [magicSwipe] Found visible element: //android.widget.TextView[@resource-id="android:id/summary" and @text="Appuyer pour configurer une empreinte digitale"]
+                        |-- [magicSwipe] Element already visible, no swipe needed
+                    |-- Utils.clickFirstExisting(["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Empreinte digitale\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage par empreinte digitale et reconnaissance faciale\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Pixel Imprint\"]","//android.widget.TextView[@resource-id=\"android:id/summary\" and @text=\"Empreinte digitale ajoutée\"]","//android.widget.TextView[@resource-id=\"android:id/summary\" and @text=\"Appuyer pour configurer une empreinte digitale\"]"])
+                        |-- Clic sur le premier élément existant parmi: 5 sélecteurs
+            |-- AndroidUnlockPinCodeScreen.unlock()
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"com.android.settings:id/suc_layout_title\")","android=new UiSelector().textMatches(\"Confirmer le code PIN|Re-enter your PIN|Saisissez de nouveau votre code\")","android=new UiSelector().resourceId(\"com.android.settings:id/title\").textMatches(\"(?i).*confirmer.*code.*pin.*|.*re-enter.*pin.*|.*saisissez.*code.*\")"])
+                    |-- Attente du premier élément affiché parmi: 3 sélecteurs
+                |-- Utils.setValueFirstExisting(["android=new UiSelector().resourceId(\"com.android.settings:id/password_entry\")","//android.widget.EditText[@content-desc=\"Champ du code\"]","//android.widget.EditText[@content-desc=\"Code\"]","//android.widget.EditText"], 1234)
+                    |-- Saisie de la valeur dans le premier élément existant parmi: 4 sélecteurs
+            |-- AndroidPixelImprintScreen.waitForScreen(5000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().textContains(\"Ajouter une empreinte\")","android=new UiSelector().textContains(\"Doigt 1\")","android=new UiSelector().textContains(\"Utilisez votre empreinte digitale\")","android=new UiSelector().textContains(\"Ajouter\")"], 5000)
+                    |-- Attente du premier élément affiché parmi: 4 sélecteurs
+            |-- AndroidPixelImprintScreen.isAtLeastOneFingerprint()
+            |-- AndroidPixelImprintScreen.addFingerprint()
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().textContains(\"Ajouter une empreinte\")","android=new UiSelector().textContains(\"Ajouter\")"], 5000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- AndroidConfigurePixelImprintScreen.waitForScreen()
+            |-- AndroidConfigurePixelImprintScreen.scrollAndAccept()
+            |-- PutFingerOnSensorScreen.waitForScreen()
+            |-- RaiseAndPutBackFingerOnSensorScreen.waitForScreen()
+            |-- FingerprintAddedScreen.waitForScreen()
+            |-- FingerprintAddedScreen.ok()
+            |-- AndroidSettingsDeviceUnlockScreen.waitForScreen()
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:31
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:32
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- AxeptioCookies.acceptCookies()
+                |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+
+
+📌 Test Step: Should offer to enable biometrics after sign in
+|-- SignIn.fillCredentials(********, ********) paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:37
+    |-- SignIn.fillEmail(adrian.pothuaud+auto.1772651283168@paymium.com)
+    |-- SignIn.fillPassword(********)
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:38
+|-- CreatePinCode.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:39
+|-- CreatePinCode.create() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:40
+|-- CreateAccessCode.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:41
+|-- CreateAccessCode.fillCode(********) paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:42
+|-- ConfirmPinCode.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:43
+|-- ConfirmPinCode.fillCode(********) paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:44
+|-- EnableBiometrics.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:45
+
+
+📌 Test Step: Should be skippable to enable biometrics after sign in
+|-- EnableBiometrics.skipBiometrics() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:50
+|-- DashboardScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:51
+
+
+📌 Test Step: Should allow enabling biometrics from user settings
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:57
+|-- MyAccount.goToProfile() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:58
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:59
+|-- Profile.goToAccountSecurity() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:60
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:61
+|-- ProfileSecurity.toggleBiometrics() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:62
+|-- FingerprintSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:63
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:65
+
+
+📌 Test Step: Should ask for biometrics while opening the app after closing it
+|-- Shortcuts.relaunchApp() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:70
+|-- FingerprintSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:71
+|-- Shortcuts.handleUpdateScreenIfPresent() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:73
+    |-- UpdateScreen.waitForScreen(20000)
+|-- DashboardScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:74
+
+
+📌 Test Step: Should allow disabling biometrics from user settings
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:80
+|-- MyAccount.goToProfile() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:81
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:82
+|-- Profile.goToAccountSecurity() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:83
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:84
+|-- ProfileSecurity.toggleBiometrics(false) paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:85
+
+
+📌 Test Step: Should not go through biometrics while opening the app after closing it when disabled but it should ask for pin code
+|-- Shortcuts.relaunchApp() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:90
+|-- EnterPinCode.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:91
+|-- EnterPinCode.fillCode(********) paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:92
+|-- Shortcuts.handleUpdateScreenIfPresent() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:93
+    |-- UpdateScreen.waitForScreen(20000)
+|-- DashboardScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:94
+
+
+📌 Test Step: Should allow updating pin code from user settings
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:100
+|-- MyAccount.goToProfile() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:101
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:102
+|-- Profile.goToAccountSecurity() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:103
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:104
+|-- ProfileSecurity.goToModifyCode() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:105
+|-- EnterOldPinCode.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:106
+|-- EnterOldPinCode.fillCode(********) paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:107
+|-- EnterNewPinCode.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:108
+|-- EnterNewPinCode.fillCode(********) paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:109
+|-- ConfirmPinCode.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:110
+|-- ConfirmPinCode.fillCode(********) paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:111
+|-- EnableBiometrics.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:112
+|-- EnableBiometrics.skipBiometrics() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:113
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/biometrics/back-and-forth.spec.ts:114

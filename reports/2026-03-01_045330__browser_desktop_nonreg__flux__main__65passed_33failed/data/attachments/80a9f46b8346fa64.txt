@@ -1,0 +1,5 @@
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('dialog').last().locator('#company_registration_date') to be visible
+
+

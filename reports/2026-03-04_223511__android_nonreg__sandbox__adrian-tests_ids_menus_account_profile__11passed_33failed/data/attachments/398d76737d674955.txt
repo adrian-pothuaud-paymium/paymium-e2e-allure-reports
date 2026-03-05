@@ -1,0 +1,76 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur peut activer et désactiver l'authentification à deux facteurs avec succès
+
+
+📌 Test Step: Create test user
+Attempting to create test user (attempt 1 of 20)...
+Creating test user in environment sandbox with state phoneApproved - attempt 1/20
+Sending GET /users/confirmation request to verify email
+Sending PUT /user request to update user information
+Sending POST /phone_numbers request to add phone number
+Sending POST /phone_numbers/verify request to verify phone number
+
+
+📌 Test Step: Open App and go to Sign In
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/bad-code-at-login.spec.ts:27
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/bad-code-at-login.spec.ts:28
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- AxeptioCookies.acceptCookies()
+                |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+    |-- WelcomeScreen.waitForScreen(20000)
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+
+
+📌 Test Step: Sign in with test account
+|-- Shortcuts.authenticate(********) paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/bad-code-at-login.spec.ts:32
+    |-- SignIn.fillEmail(adrian.pothuaud+auto.1772654113678@paymium.com)
+    |-- SignIn.fillPassword(********)
+    |-- SignIn.submit()
+    |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired()
+        |-- Shortcuts.handlePinCodeIfRequired(********)
+            |-- CreatePinCode.waitForScreen(20000)
+            |-- CreatePinCode.create()
+            |-- CreateAccessCode.waitForScreen(20000)
+            |-- CreateAccessCode.fillCode(********)
+            |-- ConfirmPinCode.waitForScreen(20000)
+            |-- ConfirmPinCode.fillCode(********)
+        |-- Shortcuts.handleBiometricsIfRequired(20000)
+            |-- EnableBiometrics.waitForScreen(20000)
+            |-- Écran biométrie non affiché (différés par l'app), l'InterruptHandler le gérera
+    |-- DashboardScreen.waitForScreen()
+
+
+📌 Test Step: Go to 2FA activation screen
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/bad-code-at-login.spec.ts:37
+|-- MyAccount.goToProfile() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/bad-code-at-login.spec.ts:38
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/bad-code-at-login.spec.ts:39
+|-- Profile.goToAccountSecurity() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/bad-code-at-login.spec.ts:40
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/bad-code-at-login.spec.ts:41
+|-- ProfileSecurity.toggleTwoFactorAuth() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/bad-code-at-login.spec.ts:42
+|-- TwoFactorActivationSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/bad-code-at-login.spec.ts:43
+|-- TwoFactorActivationSheet.getTotpCode() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/bad-code-at-login.spec.ts:44
+
+
+📌 Test Step: Activate 2FA with valid code
+|-- TwoFactorActivationSheet.fill(623667) paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/bad-code-at-login.spec.ts:49
+|-- TwoFactorActivationSheet.activate() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/bad-code-at-login.spec.ts:50
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/bad-code-at-login.spec.ts:52
+[InterruptHandler] échec de ProfileSecurity.waitForScreen → element ("//android.widget.TextView[@text="Sécurité"]") still not existing after 10000ms. Tentative de gestion d'interruption...
+[InterruptHandler] tryDismissInterrupts appelé (erreur=element ("//android.widget.TextView[@text="Sécurité"]") still not existing after 10000ms)
+[InterruptHandler] Aucune perturbation interruptible détectée (raison : erreur=element ("//android.widget.TextView[@text="Sécurité"]") still not existing after 10000ms)

@@ -1,0 +1,10 @@
+POST /users failed Request failed with status code 429
+Attempt 1 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 2 to create test user failed: Request failed with status code 429
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('marketSearch').getByRole('link', { name: /Plan Bitcoin Famille|Bitcoin Family Plan/ })
+
+    at MainNavigation.goto (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/_components/MainNavigation.ts:71:25)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/investment/family-plan.spec.ts:26:39
