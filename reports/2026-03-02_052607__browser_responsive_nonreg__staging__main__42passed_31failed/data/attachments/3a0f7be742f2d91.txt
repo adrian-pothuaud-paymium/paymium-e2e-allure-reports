@@ -1,6 +1,0 @@
-[pageerror] XMLHttpRequest cannot load https: /account.staging-paymium.com/cdn-cgi/rum? due to access control checks.
-TimeoutError: locator.click: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByTestId('profile')
-
-
