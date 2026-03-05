@@ -1,0 +1,9 @@
+createAPIToken response 201 {
+  uuid: '73ac9e8d-9a1d-45d6-abf9-2601f6626afe',
+  token: '7ea6c7b8b15f823fa7bb6f2e6704fabb73c10f816f4e99622778a8e013fa8731',
+  scopes: 'activity trade devices deposit',
+  label: 'Playwright 1772703293698',
+  allowed_ips: '',
+  created_at: 1772703295,
+  secret: '289fefe4828c4cd1aeb69981e9b216bfb4d7a8452264985fcd4c32c0410d34eb'
+}
