@@ -1,0 +1,43 @@
+POST /users failed Request failed with status code 429
+Attempt 1 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 2 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 3 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 4 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 404
+Attempt 5 to create test user failed: Request failed with status code 404
+POST /users failed Request failed with status code 429
+Attempt 6 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 7 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 8 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 9 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 10 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 11 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 12 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 13 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 14 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 15 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 16 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 17 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 18 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 19 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 20 to create test user failed: Request failed with status code 429
+Error: Failed to create test user after 20 attempts
+    at createTestUserWithHandlerOnRetry (/builds/crypto-platform/paymium-e2e-united/packages/paymium-api/src/createTestUserWithHandlerOnRetry.ts:48:9)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/authentication/two-factor/back-and-forth.spec.ts:16:23
