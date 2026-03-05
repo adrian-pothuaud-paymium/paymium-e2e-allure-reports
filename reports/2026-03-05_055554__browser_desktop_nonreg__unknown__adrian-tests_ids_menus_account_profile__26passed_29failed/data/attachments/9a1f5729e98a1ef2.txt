@@ -1,3 +1,0 @@
-Request POST /api/user/swaps with body: {"swapping_pair":"BTC/USDC","side":"buy","price":73765.92155,"amount":0.00001355}
-Response status code: 503
-Response body: {"type":"about:blank","title":"Swap unavailable","status":503,"detail":"Swap feature is temporarily unavailable. Please try again later","instance":"swap_feature_unavailable"}

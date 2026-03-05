@@ -1,0 +1,10 @@
+TIMESTAMP=2026-03-05_093756
+ENVIRONMENT=unknown
+BRANCH=feature/fixInputFocus
+E2E_BRANCH=main
+JOB=browser_desktop_nonreg
+TOTAL=110
+PASSED=77
+FAILED=33
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39036
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/224384
