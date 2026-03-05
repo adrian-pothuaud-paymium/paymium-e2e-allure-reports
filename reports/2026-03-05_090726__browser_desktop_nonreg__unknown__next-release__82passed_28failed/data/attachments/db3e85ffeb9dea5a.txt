@@ -1,0 +1,3 @@
+Request POST /api/user/card_payments with body: {"amount":"25","purchase_details":[{"amount":"0.01311207","currency_code":"ETH","price":"1878.64"}]}
+Response status code: 503
+Response body: {"type":"about:blank","title":"Swap server side prerequisites","status":503,"detail":"Can not perform this swap, prerequisites are not met. Please try again later","instance":"swap_prerequisites_not_met"}
