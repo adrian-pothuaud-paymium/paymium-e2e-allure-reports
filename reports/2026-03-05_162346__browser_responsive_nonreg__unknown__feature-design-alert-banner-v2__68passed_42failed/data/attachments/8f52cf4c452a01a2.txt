@@ -1,0 +1,46 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user/tracking/consent due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/general_settings due to access control checks.
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/currencies due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/general_settings due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/currencies due to access control checks.
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/general_settings due to access control checks.
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/currencies due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/general_settings due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/currencies due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'

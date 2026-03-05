@@ -1,0 +1,12 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /^(.*)\/sign-in(.*)$/
+Received string:  "https://account.sandbox-paymium.com/deposit/EUR/wire-deposit?state=8174382f-61f4-4aa8-8de1-436cbb92c32f&id_payment=2360&payment_state=done"
+Timeout: 30000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 30000ms
+    33 × unexpected value "https://account.sandbox-paymium.com/deposit/EUR/wire-deposit?state=8174382f-61f4-4aa8-8de1-436cbb92c32f&id_payment=2360&payment_state=done"
+
+
