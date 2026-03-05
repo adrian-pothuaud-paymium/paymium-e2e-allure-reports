@@ -1,0 +1,11 @@
+POST /users failed Request failed with status code 429
+Attempt 1 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 404
+Attempt 2 to create test user failed: Request failed with status code 404
+POST /users failed Request failed with status code 429
+Attempt 3 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 4 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 5 to create test user failed: Request failed with status code 429
+[pageerror] SyntaxError: Unexpected token '<'
