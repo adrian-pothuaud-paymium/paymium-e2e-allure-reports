@@ -1,0 +1,17 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected: "Se connecter - Paymium"
+Received: "Paymium"
+Timeout:  30000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 30000ms
+    32 × unexpected value "Paymium"
+
+    at SignIn.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/_components/BasePage.ts:20:29)
+    at SignIn.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/sign-in/index.ts:83:5)
+    at openAppToSignIn (/builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/_shortcuts.ts:24:3)
+    at loginAsTestAccount (/builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/_shortcuts.ts:28:3)
+    at logInAsAdrian (/builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/_shortcuts.ts:49:3)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/trading/accessibility.spec.ts:14:3

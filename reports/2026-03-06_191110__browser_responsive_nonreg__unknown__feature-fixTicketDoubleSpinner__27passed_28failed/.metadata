@@ -1,0 +1,10 @@
+TIMESTAMP=2026-03-06_191110
+ENVIRONMENT=unknown
+BRANCH=feature/fixTicketDoubleSpinner
+E2E_BRANCH=main
+JOB=browser_responsive_nonreg
+TOTAL=55
+PASSED=27
+FAILED=28
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39158
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/226536
