@@ -1,0 +1,9 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('market.buy')
+    - locator resolved to <button tabindex="0" role="button" type="button" aria-labelledby="_r_1v_" data-testid="market.buy" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--colors-success-primary)] background-color-[var(--colors-success-primary)] gap-[8px] height-[32px] paddi…>…</button>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+
+
