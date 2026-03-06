@@ -1,0 +1,33 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('iframe[name="wp-cl-custom-html-iframe"]').contentFrame().getByRole('button', { name: /Annuler/ })
+    - locator resolved to <a role="button" id="cancelButton" draggable="false" class="button btn-cancel" href="/app/hpp/159-1/payment/cancel/confirm;jsessionid=51d86f67-1bee-4d4d-81f3-6a454d871c8c.os" data-cancel-url="/app/hpp/159-1/payment/cancel;jsessionid=51d86f67-1bee-4d4d-81f3-6a454d871c8c.os">↵        Annuler↵    </a>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - element is outside of the viewport
+  - retrying click action
+    - waiting for element to be visible, enabled and stable
+    - element is not stable
+  - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - element is outside of the viewport
+    - retrying click action
+      - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - element is outside of the viewport
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+
+

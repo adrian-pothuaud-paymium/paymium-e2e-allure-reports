@@ -1,0 +1,8 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(received).toPassAxe(expected)
+
+Expected: No violations
+Received: 1 violations
+
+Violations: button-name(1)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/authentication/sign-in/axe-scan-errors.spec.ts:23:28
