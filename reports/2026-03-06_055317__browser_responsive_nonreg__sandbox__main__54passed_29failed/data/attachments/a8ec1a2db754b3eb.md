@@ -1,0 +1,61 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - button [ref=e49] [cursor=pointer]:
+        - img [ref=e51]
+    - generic [ref=e53]:
+      - navigation
+      - generic [ref=e54]:
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]: Tickets
+            - button "Créer un nouveau ticket" [active] [ref=e59] [cursor=pointer]:
+              - img [ref=e60]
+              - generic [ref=e62]: Créer un nouveau ticket
+          - generic [ref=e63]:
+            - tablist [ref=e66]:
+              - generic [ref=e67]:
+                - tab "Tous" [selected] [ref=e69] [cursor=pointer]:
+                  - generic [ref=e70]: Tous
+                  - generic [ref=e72]: "1"
+                - tab "Répondu" [ref=e73] [cursor=pointer]:
+                  - generic [ref=e74]: Répondu
+                  - generic [ref=e76]: "0"
+                - tab "Fermé" [ref=e77] [cursor=pointer]:
+                  - generic [ref=e78]: Fermé
+                  - generic [ref=e80]: "0"
+                - tab "En attente" [ref=e81] [cursor=pointer]:
+                  - generic [ref=e82]: En attente
+                  - generic [ref=e84]: "1"
+            - list [ref=e85]:
+              - listitem [ref=e86]:
+                - generic [ref=e87]:
+                  - generic [ref=e88] [cursor=pointer]: Titre
+                  - img [ref=e90]
+                - generic [ref=e92]:
+                  - generic [ref=e93] [cursor=pointer]: Statut
+                  - img [ref=e95]
+              - separator [ref=e97]
+              - listitem [ref=e98] [cursor=pointer]:
+                - generic [ref=e99]:
+                  - generic [ref=e100]: Problème de connexion - 1772774040046
+                  - generic [ref=e101]: Je n'arrive pas à me connecter à mon compte.
+                - generic [ref=e104]: En attente
+        - contentinfo [ref=e105]:
+          - generic [ref=e106]:
+            - generic [ref=e107]: Copyright © 2026
+            - link "Paymium" [ref=e108] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e109]: 6.15.0
+            - link "Statut" [ref=e110] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e111] [cursor=pointer]
+```
