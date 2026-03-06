@@ -1,0 +1,14 @@
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected pattern: /^Plan Bitcoin Famille - Paymium$/
+Received string:  "Paymium"
+Timeout: 30000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 30000ms
+    31 × unexpected value "Paymium"
+
+    at FamilyCreate.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/_components/BasePage.ts:20:29)
+    at FamilyCreate.waitForAccountPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/_components/AccountPage.ts:51:5)
+    at FamilyCreate.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/family/create/index.ts:87:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/investment/family-plan.spec.ts:37:3

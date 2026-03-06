@@ -1,0 +1,8 @@
+Attempting to create test user (attempt 1 of 20)...
+Creating test user in environment flux with state phoneApproved - attempt 1/20
+Sending GET /users/confirmation request to verify email
+Sending PUT /user request to update user information
+Sending POST /phone_numbers request to add phone number
+Sending POST /phone_numbers/verify request to verify phone number
+TOTP for 2FA activation: 5C76BKXZI4F7JOXSRMOS6EXY7EWTPVYG
+
