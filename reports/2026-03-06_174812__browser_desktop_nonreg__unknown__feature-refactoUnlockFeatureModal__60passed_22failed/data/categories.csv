@@ -1,0 +1,7 @@
+"BROKEN","CATEGORY","FAILED","PASSED","SKIPPED","UNKNOWN"
+"0","Product defects","10","0","0","0"
+"0","Attente d'élément non satisfaite","4","0","0","0"
+"0","Élément non visible — à investiguer","4","0","0","0"
+"0","Click impossible (timeout)","2","0","0","0"
+"0","Sélecteur ambigu (strict mode)","2","0","0","0"
+"0","Réponse API non reçue à temps","1","0","0","0"

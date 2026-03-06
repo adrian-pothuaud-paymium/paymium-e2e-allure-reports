@@ -1,0 +1,187 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - generic [ref=e48]:
+          - button "Acheter" [ref=e49] [cursor=pointer]:
+            - img [ref=e50]
+            - generic [ref=e52]: Acheter
+          - button [ref=e53] [cursor=pointer]:
+            - img [ref=e54]
+          - button "FR" [ref=e57] [cursor=pointer]:
+            - generic [ref=e58]: FR
+            - img [ref=e59]
+          - button [ref=e61] [cursor=pointer]:
+            - img [ref=e64]
+          - button [ref=e66] [cursor=pointer]:
+            - img [ref=e67]
+          - button [ref=e70] [cursor=pointer]:
+            - img [ref=e71]
+          - button [ref=e74] [cursor=pointer]:
+            - img [ref=e75]
+      - generic [ref=e77]:
+        - navigation [ref=e78]:
+          - generic [ref=e79]:
+            - generic [ref=e82]:
+              - img [ref=e84]
+              - textbox "Chercher" [ref=e86]
+            - generic [ref=e87]:
+              - link "Tableau de bord" [ref=e88] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e89]
+                - generic [ref=e91]: Tableau de bord
+              - link "Portefeuille" [ref=e92] [cursor=pointer]:
+                - /url: /wallet
+                - img [ref=e93]
+                - generic [ref=e95]: Portefeuille
+              - link "Dépôt / retrait" [ref=e96] [cursor=pointer]:
+                - /url: /deposit/EUR
+                - img [ref=e97]
+                - generic [ref=e99]: Dépôt / retrait
+              - link "Achat récurrent" [ref=e100] [cursor=pointer]:
+                - /url: /recurrent
+                - img [ref=e101]
+                - generic [ref=e103]: Achat récurrent
+              - link "Mode expert" [ref=e104] [cursor=pointer]:
+                - /url: /trade/BTC/EUR
+                - img [ref=e105]
+                - generic [ref=e107]: Mode expert
+              - link "Parrainage" [ref=e108] [cursor=pointer]:
+                - /url: /referral
+                - img [ref=e109]
+                - generic [ref=e111]: Parrainage
+              - link "Plan Bitcoin Famille" [ref=e112] [cursor=pointer]:
+                - /url: /family
+                - img [ref=e113]
+                - generic [ref=e115]: Plan Bitcoin Famille
+              - link "Historique" [ref=e116] [cursor=pointer]:
+                - /url: /history
+                - img [ref=e117]
+                - generic [ref=e119]: Historique
+        - generic [ref=e120]:
+          - generic [ref=e122]:
+            - tablist [ref=e124]:
+              - generic [ref=e125]:
+                - tab "Paramètres" [ref=e127] [cursor=pointer]:
+                  - generic [ref=e128]: Paramètres
+                - tab "Sécurité du compte" [ref=e129] [cursor=pointer]:
+                  - generic [ref=e130]: Sécurité du compte
+                - tab "Identification et documents" [ref=e131] [cursor=pointer]:
+                  - generic [ref=e132]: Identification et documents
+                - tab "Vos comptes bancaires enregistrés" [selected] [ref=e133] [cursor=pointer]:
+                  - generic [ref=e134]: Vos comptes bancaires enregistrés
+                - tab "Solution de paiement" [ref=e135] [cursor=pointer]:
+                  - generic [ref=e136]: Solution de paiement
+            - generic [ref=e137]:
+              - banner [ref=e139]:
+                - generic [ref=e140]:
+                  - img [ref=e142]
+                  - generic [ref=e144]: Votre transfert interne est en cours de traitement.
+                - link "Voir l'historique" [ref=e145] [cursor=pointer]:
+                  - /url: /history?type=history-internalTransfer
+                  - generic [ref=e146]: Voir l'historique
+              - generic [ref=e147]:
+                - button "Ajouter" [ref=e148] [cursor=pointer]:
+                  - img [ref=e149]
+                  - generic [ref=e151]: Ajouter
+                - generic [ref=e152]:
+                  - generic [ref=e153]: Par défaut
+                  - generic [ref=e154]:
+                    - generic [ref=e155]:
+                      - generic [ref=e156]:
+                        - generic [ref=e157]: Libellé
+                        - generic [ref=e158]:
+                          - generic [ref=e159]: test staging user
+                          - button [ref=e160] [cursor=pointer]:
+                            - img [ref=e161]
+                      - generic [ref=e163]:
+                        - generic [ref=e164]: IBAN
+                        - generic [ref=e165]: BE57******331135
+                    - generic [ref=e166]:
+                      - generic [ref=e167]:
+                        - generic [ref=e168]: BIC
+                        - generic [ref=e169]: PAYV*******
+                      - generic [ref=e170]:
+                        - generic [ref=e171]: Nom de la banque
+                        - generic [ref=e172]: Paynovate
+                - generic [ref=e173]:
+                  - generic [ref=e174]: En cours de revue
+                  - generic [ref=e175]:
+                    - generic [ref=e176]:
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: Libellé
+                        - generic [ref=e179]:
+                          - generic [ref=e180]: Playwright 1772100799619
+                          - button [ref=e181] [cursor=pointer]:
+                            - img [ref=e182]
+                      - generic [ref=e184]:
+                        - generic [ref=e185]: IBAN
+                        - generic [ref=e186]: NO80*****285328
+                    - generic [ref=e187]:
+                      - generic [ref=e188]:
+                        - generic [ref=e189]: BIC
+                        - generic [ref=e190]: DABA*******
+                      - generic [ref=e191]:
+                        - generic [ref=e192]: Nom de la banque
+                        - generic [ref=e193]: Danske Bank
+                - generic [ref=e194]: 2 / 3
+          - contentinfo [ref=e195]:
+            - generic [ref=e196]:
+              - generic [ref=e197]: Copyright © 2026
+              - link "Paymium" [ref=e198] [cursor=pointer]:
+                - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+              - generic [ref=e199]: 6.15.0
+              - link "Statut" [ref=e200] [cursor=pointer]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e201] [cursor=pointer]
+  - generic:
+    - generic:
+      - generic:
+        - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e202]':
+          - generic [ref=e203]:
+            - generic [ref=e204]:
+              - button "Fermer le widget sans consentement" [ref=e205] [cursor=pointer]:
+                - generic [ref=e206]: Continuer sans accepter
+              - generic [ref=e208]:
+                - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e211]:
+                  - generic [ref=e212]: Des cookies pour
+                  - generic [ref=e213]: vos bitcoins !
+                - generic [ref=e214]:
+                  - paragraph [ref=e215]:
+                    - text: Parce que
+                    - strong [ref=e216]: stacker des sats ça donne faim
+                    - text: ", nous vous proposons une pause cookie ! 🍪"
+                  - paragraph [ref=e217]:
+                    - text: Avec votre accord, Paymium aimerait utiliser des
+                    - strong [ref=e218]: cookies
+                    - text: placés par nous et/ou par nos partenaires sur notre site.
+                  - paragraph [ref=e219]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+                  - paragraph [ref=e220]:
+                    - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                    - strong [ref=e221]: Vous choisissez ceux qui vous plaisent
+                    - text: ", comme pour le trading !"
+                  - paragraph [ref=e222]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+                - paragraph [ref=e224]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+              - button "Consentements certifiés par Axeptio" [ref=e227]:
+                - generic [ref=e228]: Consentements certifiés par
+                - img "Axeptio" [ref=e232]
+            - generic [ref=e236]:
+              - button "Je choisis les cookies à configurer" [ref=e237] [cursor=pointer]: Je choisis
+              - button "Accepter les cookies" [ref=e238] [cursor=pointer]: OK pour moi
+          - generic [ref=e239]:
+            - text: Axeptio consent
+            - checkbox [ref=e240]
+          - generic [ref=e241]:
+            - paragraph [ref=e242]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+            - paragraph [ref=e243]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+        - button "Fermer le widget sans consentement" [ref=e244] [cursor=pointer]:
+          - img [ref=e248]
+```
