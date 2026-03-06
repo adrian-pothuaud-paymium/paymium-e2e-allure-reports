@@ -1,0 +1,25 @@
+POST /users failed Request failed with status code 500
+Attempt 1 to create test user failed: Request failed with status code 500
+POST /users failed Request failed with status code 429
+Attempt 2 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 3 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 4 to create test user failed: Request failed with status code 429
+addPhoneNumber failed Request failed with status code 500
+Failed to add phone number: 500 Internal Server Error
+Attempt 5 to create test user failed: Request failed with status code 500
+POST /users failed Request failed with status code 429
+Attempt 6 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 7 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 8 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 9 to create test user failed: Request failed with status code 429
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('dialog').last().locator('#code') to be visible
+
+
