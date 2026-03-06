@@ -1,2 +1,0 @@
-Error: API /api/user/wire_deposit_requests returned 500 Internal Server Error: {"type":"about:blank","title":"Internal Server Error","status":500}
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/deposit/EUR/index.ts:48:15
