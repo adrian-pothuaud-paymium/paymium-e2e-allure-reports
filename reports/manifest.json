@@ -1,5 +1,19 @@
 [
   {
+    "folder": "2026-03-06_173131__browser_responsive_nonreg__unknown__adrian-test_ids_automatic__13passed_14failed",
+    "timestamp": "2026-03-06_173131",
+    "environment": "unknown",
+    "branch": "adrian/test_ids_automatic",
+    "e2eBranch": "main",
+    "job": "browser_responsive_nonreg",
+    "total": 27,
+    "passed": 13,
+    "failed": 14,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39148",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/226298"
+  }
+,
+  {
     "folder": "2026-03-06_165057__browser_responsive_nonreg__unknown__adrian-test_ids_automatic__28passed_54failed",
     "timestamp": "2026-03-06_165057",
     "environment": "unknown",
@@ -53,20 +67,6 @@
     "failed": 10,
     "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39140",
     "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/226130"
-  }
-,
-  {
-    "folder": "2026-03-06_152732__browser_responsive_nonreg__unknown__adrian-test_ids_automatic__17passed_10failed",
-    "timestamp": "2026-03-06_152732",
-    "environment": "unknown",
-    "branch": "adrian/test_ids_automatic",
-    "e2eBranch": "main",
-    "job": "browser_responsive_nonreg",
-    "total": 27,
-    "passed": 17,
-    "failed": 10,
-    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39137",
-    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/226049"
   }
 ,
   {
