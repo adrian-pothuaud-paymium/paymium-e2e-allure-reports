@@ -1,0 +1,8 @@
+POST /users failed Request failed with status code 429
+Attempt 1 to create test user failed: Request failed with status code 429
+verifyPhoneNumber failed Request failed with status code 500
+Failed to verify phone number: 500 Internal Server Error
+Attempt 2 to create test user failed: Request failed with status code 500
+POST /users failed Request failed with status code 429
+Attempt 3 to create test user failed: Request failed with status code 429
+[pageerror] SyntaxError: Unexpected token '<'

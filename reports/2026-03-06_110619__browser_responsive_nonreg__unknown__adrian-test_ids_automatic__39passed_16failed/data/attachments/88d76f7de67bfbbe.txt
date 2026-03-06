@@ -1,0 +1,14 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Acheter' }).first()
+    - locator resolved to <button tabindex="0" role="button" id="emptyBuy" type="button" aria-labelledby="emptyBuy" data-testid="emptyBuyButton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[var(--components-…>…</button>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+  - element was detached from the DOM, retrying
+    - locator resolved to <button href="/swap" tabindex="0" role="button" type="button" id="buyAction" aria-labelledby="buyAction" data-testid="buyActionButton" class="css-g5y9jx r-1loqt21 r-1otgn73 justify-content-[center] align-items-[center] flex-direction-[row] display-[flex] border-top-left-radius-[7px] border-top-right-radius-[7px] border-bottom-left-radius-[7px] border-bottom-right-radius-[7px] border-width-[2px] border-style-[solid] border-color-[var(--components--action-primary-default-background)] background-color-[v…>…</button>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+
+
