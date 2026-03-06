@@ -1,0 +1,129 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button "Acheter" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+          - generic [ref=e52]: Acheter
+        - button [ref=e53] [cursor=pointer]:
+          - img [ref=e54]
+        - button "FR" [ref=e57] [cursor=pointer]:
+          - generic [ref=e58]: FR
+          - img [ref=e59]
+        - button [ref=e61] [cursor=pointer]:
+          - img [ref=e64]
+        - button [ref=e66] [cursor=pointer]:
+          - img [ref=e67]
+        - button [ref=e70] [cursor=pointer]:
+          - img [ref=e71]
+        - button [ref=e74] [cursor=pointer]:
+          - img [ref=e75]
+    - generic [ref=e77]:
+      - navigation [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e82]:
+            - img [ref=e84]
+            - textbox "Chercher" [ref=e86]
+          - generic [ref=e87]:
+            - link "Tableau de bord" [ref=e88] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e89]
+              - generic [ref=e91]: Tableau de bord
+            - link "Portefeuille" [ref=e92] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e93]
+              - generic [ref=e95]: Portefeuille
+            - link "Dépôt / retrait" [ref=e96] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e97]
+              - generic [ref=e99]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e100] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e101]
+              - generic [ref=e103]: Achat récurrent
+            - link "Mode expert" [ref=e104] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e105]
+              - generic [ref=e107]: Mode expert
+            - link "Parrainage" [ref=e108] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e109]
+              - generic [ref=e111]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e112] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e113]
+              - generic [ref=e115]: Plan Bitcoin Famille
+            - link "Historique" [ref=e116] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e117]
+              - generic [ref=e119]: Historique
+      - generic [ref=e120]:
+        - generic [ref=e122]:
+          - generic [ref=e123]: Transfert
+          - generic [ref=e124]:
+            - tablist [ref=e126]:
+              - generic [ref=e127]:
+                - tab "Déposer" [selected] [ref=e129] [cursor=pointer]:
+                  - generic [ref=e130]: Déposer
+                - tab "Retirer" [ref=e131] [cursor=pointer]:
+                  - generic [ref=e132]: Retirer
+                - tab "Transfert interne" [ref=e133] [cursor=pointer]:
+                  - generic [ref=e134]: Transfert interne
+                - tab "Envoyer par email" [ref=e135] [cursor=pointer]:
+                  - generic [ref=e136]: Envoyer par email
+            - tabpanel "Déposer" [ref=e137]:
+              - generic [ref=e138]:
+                - banner [ref=e140]:
+                  - generic [ref=e141]:
+                    - img [ref=e143]
+                    - generic [ref=e145]: Votre transfert interne est en cours de traitement.
+                  - link "Voir l'historique" [ref=e146] [cursor=pointer]:
+                    - /url: /history?type=history-internalTransfer
+                    - generic [ref=e147]: Voir l'historique
+                - generic [ref=e148]:
+                  - generic [ref=e149]:
+                    - generic [ref=e151]:
+                      - generic [ref=e153]: Choisissez une devise
+                      - button "Choisissez une devise" [ref=e155] [cursor=pointer]:
+                        - textbox [ref=e157]: BTC
+                        - generic [ref=e159]:
+                          - img [ref=e160]
+                          - generic [ref=e165]: Bitcoin
+                        - img [ref=e166]
+                    - generic [ref=e170]:
+                      - alert [ref=e171]:
+                        - img [ref=e173]
+                        - generic [ref=e175]: Attention ! Seulement les dépôts de BTC sur la blockchain Bitcoin seront acceptés.
+                      - generic [ref=e176]: Copiez l'adresse ou scannez le code QR à l'aide d'une application compatible.
+                      - generic [ref=e181]:
+                        - link [ref=e184] [cursor=pointer]:
+                          - /url: https://blockchair.com/bitcoin/address/n1uxe1AgTga5ToLzy7F4yWEsN1T5up2Boj?from=paymium
+                          - img [ref=e185]
+                        - textbox [ref=e187]: n1uxe1AgTga5ToLzy7F4yWEsN1T5up2Boj
+                        - button [ref=e190] [cursor=pointer]:
+                          - img [ref=e191]
+                  - generic [ref=e194]:
+                    - generic [ref=e195]:
+                      - img [ref=e196]
+                      - generic [ref=e198]: Informations dépôt Bitcoin
+                      - button "Masquer" [ref=e199] [cursor=pointer]:
+                        - generic [ref=e200]: Masquer
+                    - generic [ref=e203]: Les dépôts en BTC sont automatiquement crédités après 3 confirmations sur la blockchain Bitcoin. Veillez à ne déposer que des bitcoins sur l'adresse ci-contre. Tout autre dépôt de crypto-monnaie ne sera pas accepté.
+        - contentinfo [ref=e204]:
+          - generic [ref=e205]:
+            - generic [ref=e206]: Copyright © 2026
+            - link "Paymium" [ref=e207] [cursor=pointer]:
+              - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+            - generic [ref=e208]: 6.15.0
+            - link "Statut" [ref=e209] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e210] [cursor=pointer]
+```
