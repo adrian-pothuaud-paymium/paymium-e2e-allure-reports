@@ -1,9 +1,0 @@
-[pageerror] XMLHttpRequest cannot load https: /account.staging-paymium.com/cdn-cgi/rum? due to access control checks.
-Error: locator.evaluate: Error: strict mode violation: getByRole('dialog') resolved to 2 elements:
-    1) <div role="dialog" aria-modal="true" class="css-g5y9jx r-1p0dtai r-1d2f490 r-1xcajam r-zchlnj r-ipm5af r-1niwhzg">…</div> aka getByRole('dialog').first()
-    2) <div role="dialog" aria-modal="true" class="css-g5y9jx">…</div> aka getByRole('dialog').nth(1)
-
-Call log:
-  - waiting for getByRole('dialog')
-
-

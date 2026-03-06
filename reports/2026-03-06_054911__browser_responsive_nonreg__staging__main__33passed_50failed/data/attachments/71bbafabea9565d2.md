@@ -1,0 +1,88 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e51]
+      - generic [ref=e52]:
+        - navigation
+        - generic [ref=e53]:
+          - generic [ref=e55]:
+            - tablist [ref=e57]:
+              - generic [ref=e58]:
+                - tab "Paramètres" [ref=e60] [cursor=pointer]:
+                  - generic [ref=e61]: Paramètres
+                - tab "Sécurité du compte" [selected] [ref=e62] [cursor=pointer]:
+                  - generic [ref=e63]: Sécurité du compte
+                - tab "Identification et documents" [ref=e64] [cursor=pointer]:
+                  - generic [ref=e65]: Identification et documents
+                - tab "Vos comptes bancaires enregistrés" [ref=e66] [cursor=pointer]:
+                  - generic [ref=e67]: Vos comptes bancaires enregistrés
+                - tab "Solution de paiement" [ref=e68] [cursor=pointer]:
+                  - generic [ref=e69]: Solution de paiement
+            - generic [ref=e70]:
+              - generic [ref=e72]: Niveau de sécurité
+              - generic [ref=e77]:
+                - button "Changer le mot de passe Modifier votre mot de passe renforce la sécurité de votre compte en protégeant vos fonds contre les accès non autorisés." [ref=e78] [cursor=pointer]:
+                  - button "Changer le mot de passe Modifier votre mot de passe renforce la sécurité de votre compte en protégeant vos fonds contre les accès non autorisés." [ref=e79]:
+                    - generic [ref=e80]:
+                      - img [ref=e82]
+                      - generic [ref=e109]:
+                        - generic [ref=e110]: Changer le mot de passe
+                        - generic [ref=e111]: Modifier votre mot de passe renforce la sécurité de votre compte en protégeant vos fonds contre les accès non autorisés.
+                - generic [ref=e113]:
+                  - generic [ref=e114]:
+                    - img [ref=e116]
+                    - generic [ref=e153]:
+                      - generic [ref=e154]: Renforcer la sécurité de votre compte
+                      - generic [ref=e155]: En augmentant la sécurité de votre compte, vous protégez vos biens et données confidentielles des tentatives de piratage et des accès non autorisés.
+                  - button "Second facteur d'authentification (2FA) Désactivé Protégez vos actifs et vos informations personnelles avec une double couche de sécurité facile à activer." [ref=e156] [cursor=pointer]:
+                    - generic [ref=e157]:
+                      - generic [ref=e158]:
+                        - generic [ref=e159]: Second facteur d'authentification (2FA)
+                        - generic [ref=e161]: Désactivé
+                      - generic [ref=e162]: Protégez vos actifs et vos informations personnelles avec une double couche de sécurité facile à activer.
+                  - generic [ref=e164] [cursor=pointer]:
+                    - generic [ref=e165]:
+                      - generic [ref=e166]: Code Yubikey
+                      - generic [ref=e168]: Désactivé
+                    - generic [ref=e169]: La YubiKey protège contre les piratages, les hameçonnages et autres attaques en ligne en exigeant une validation physique du dispositif en plus de votre mot de passe.
+          - contentinfo [ref=e170]:
+            - generic [ref=e171]:
+              - generic [ref=e172]: Copyright © 2026
+              - link "Paymium" [ref=e174]:
+                - /url: https://sandbox-paymium.webflow.io/
+              - generic [ref=e175]: 6.15.0
+              - link "Statut" [ref=e177]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e179]:
+                - /url: ""
+  - dialog [ref=e181]:
+    - generic [ref=e195]:
+      - generic [ref=e198]: Second facteur d'authentification (2FA)
+      - generic [ref=e199]: Scannez ce code à l'aide de votre application 2FA mobile puis entrez le code généré par l'application.
+      - generic [ref=e203]:
+        - generic [ref=e204]: "TOTP:"
+        - generic [ref=e206] [cursor=pointer]: Q26YSDWU2M3HYJ3AVHJS5KKJYVFZEBJV
+      - form [ref=e207]:
+        - generic [ref=e208]:
+          - generic [ref=e209]: Code 2FA
+          - generic [ref=e211]:
+            - generic [ref=e212]: "4"
+            - generic [ref=e213]: "1"
+            - generic [ref=e214]: "5"
+            - generic [ref=e215]: "2"
+            - generic [ref=e216]: "1"
+            - generic [ref=e217]: "7"
+            - textbox [active] [ref=e218]: "415217"
+          - button "Activer" [ref=e219] [cursor=pointer]:
+            - generic [ref=e220]: Activer
+```

@@ -1,0 +1,8 @@
+Attempting to create test user (attempt 1 of 20)...
+Creating test user in environment staging with state phoneApproved - attempt 1/20
+Sending GET /users/confirmation request to verify email
+Sending PUT /user request to update user information
+Sending POST /phone_numbers request to add phone number
+Sending POST /phone_numbers/verify request to verify phone number
+TOTP for 2FA activation: TVFW6YOHFG33YJYXNJJN62VKE6H4WQMU
+

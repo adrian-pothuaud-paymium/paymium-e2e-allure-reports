@@ -1,1 +1,0 @@
-[pageerror] SyntaxError: Unexpected token ')'. Expected an opening '{' at the start of a function body.
