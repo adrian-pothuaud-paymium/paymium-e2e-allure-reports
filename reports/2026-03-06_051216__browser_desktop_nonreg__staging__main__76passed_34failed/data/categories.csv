@@ -1,0 +1,5 @@
+"BROKEN","CATEGORY","FAILED","PASSED","SKIPPED","UNKNOWN"
+"0","Attente d'élément non satisfaite","31","0","0","0"
+"0","Saisie de texte impossible","1","0","0","0"
+"0","Product defects","1","0","0","0"
+"1","Timeout global du test","0","0","0","0"

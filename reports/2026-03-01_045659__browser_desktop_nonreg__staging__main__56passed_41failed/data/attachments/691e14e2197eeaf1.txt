@@ -1,5 +1,0 @@
-TimeoutError: locator.click: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByTestId('content-select').getByRole('listitem').filter({ hasText: /Blockchain.io et future version Paymium/ }).first()
-
-

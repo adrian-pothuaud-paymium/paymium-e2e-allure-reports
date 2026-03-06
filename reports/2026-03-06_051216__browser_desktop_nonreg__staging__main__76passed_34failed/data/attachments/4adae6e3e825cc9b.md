@@ -1,0 +1,103 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+        - button "FR" [ref=e53] [cursor=pointer]:
+          - generic [ref=e54]: FR
+          - img [ref=e55]
+        - button [ref=e57] [cursor=pointer]:
+          - img [ref=e60]
+        - button [ref=e63] [cursor=pointer]:
+          - img [ref=e64]
+        - button [ref=e67] [cursor=pointer]:
+          - img [ref=e68]
+        - button [ref=e72] [cursor=pointer]:
+          - img [ref=e73]
+    - generic [ref=e77]:
+      - navigation [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e82]:
+            - img [ref=e84]
+            - textbox "Chercher" [ref=e87]
+          - generic [ref=e88]:
+            - link "Tableau de bord" [ref=e89] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e90]
+              - generic [ref=e93]: Tableau de bord
+            - link "Portefeuille" [ref=e94] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e95]
+              - generic [ref=e99]: Portefeuille
+            - link "Achat / vente" [ref=e100] [cursor=pointer]:
+              - /url: /swap
+              - img [ref=e101]
+              - generic [ref=e104]: Achat / vente
+            - link "Dépôt / retrait" [ref=e105] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e106]
+              - generic [ref=e109]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e110] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e111]
+              - generic [ref=e116]: Achat récurrent
+            - link "Mode expert" [ref=e117] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e118]
+              - generic [ref=e120]: Mode expert
+            - link "Parrainage" [ref=e121] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e122]
+              - generic [ref=e127]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e128] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e129]
+              - generic [ref=e134]: Plan Bitcoin Famille
+            - link "Historique" [ref=e135] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e136]
+              - generic [ref=e141]: Historique
+      - generic [ref=e142]:
+        - generic [ref=e145]:
+          - heading "Problème de connexion - 1772771053808 - En attente Fermer" [level=2] [ref=e146]:
+            - generic [ref=e147]:
+              - button [ref=e148] [cursor=pointer]:
+                - img [ref=e149]
+              - generic [ref=e151]:
+                - text: Problème de connexion - 1772771053808
+                - generic [ref=e152]: "- En attente"
+            - button "Fermer" [ref=e153] [cursor=pointer]:
+              - generic [ref=e154]: Fermer
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - generic [ref=e157]:
+                - generic [ref=e158]: Description
+                - generic [ref=e159]: Je n'arrive pas à me connecter à mon compte.
+              - generic [ref=e161]: Commentaires
+            - form [ref=e162]:
+              - generic [ref=e163]: Ajouter un commentaire
+              - generic [ref=e165]:
+                - generic [ref=e167]: Commentaires
+                - textbox "Commentaires" [ref=e169]
+              - button "Créer" [disabled]:
+                - generic: Créer
+        - contentinfo [ref=e171]:
+          - generic [ref=e172]:
+            - generic [ref=e173]: Copyright © 2026
+            - link "Paymium" [ref=e175] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e176]: 6.15.0
+            - link "Statut" [ref=e178] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e180] [cursor=pointer]:
+              - /url: ""
+```
