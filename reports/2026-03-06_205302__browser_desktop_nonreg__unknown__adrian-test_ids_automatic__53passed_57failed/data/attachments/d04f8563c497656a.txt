@@ -1,0 +1,10 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: locator.click: Element is outside of the viewport
+Call log:
+  - waiting for getByTestId('toast-success').getByRole('button', { name: 'Close' })
+    - locator resolved to <button tabindex="0" role="button" type="button" id="closeToast" aria-label="Close" data-testid="closeToastCloseButton" class="css-g5y9jx r-1loqt21 r-1otgn73">…</button>
+  - attempting click action
+    - scrolling into view if needed
+    - done scrolling
+
+

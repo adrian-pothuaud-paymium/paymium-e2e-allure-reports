@@ -1,0 +1,8 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#inputCopy') to be visible
+
+
