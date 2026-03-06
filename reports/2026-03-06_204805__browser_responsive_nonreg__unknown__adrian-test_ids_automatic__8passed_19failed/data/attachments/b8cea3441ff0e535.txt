@@ -1,0 +1,21 @@
+POST /users failed Request failed with status code 429
+Attempt 1 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 2 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 3 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 4 to create test user failed: Request failed with status code 429
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByRole('dialog').last().getByRole('button', { name: 'Réouvrir' })
+Expected: visible
+Timeout: 10000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 10000ms
+  - waiting for getByRole('dialog').last().getByRole('button', { name: 'Réouvrir' })
+
+

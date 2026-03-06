@@ -1,3 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-Error: API /api/user/card_payments returned 503 Service Unavailable: {"type":"about:blank","title":"Swap server side prerequisites","status":503,"detail":"Can not perform this swap, prerequisites are not met. Please try again later","instance":"swap_prerequisites_not_met"}
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/_components/AppV2PreviewView.ts:61:15
