@@ -1,0 +1,1773 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic:
+    - generic:
+      - generic:
+        - link:
+          - /url: /dashboard
+          - generic:
+            - img
+        - generic:
+          - button:
+            - img
+            - generic: Acheter
+          - button:
+            - img
+          - button:
+            - generic: FR
+            - img
+          - button:
+            - generic:
+              - generic:
+                - img
+          - button:
+            - img
+          - button:
+            - img
+          - button:
+            - img
+      - generic:
+        - navigation:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - textbox:
+                    - /placeholder: Chercher
+            - generic:
+              - link:
+                - /url: /dashboard
+                - img
+                - generic: Tableau de bord
+              - link:
+                - /url: /wallet
+                - img
+                - generic: Portefeuille
+              - link:
+                - /url: /deposit/EUR
+                - img
+                - generic: Dépôt / retrait
+              - link:
+                - /url: /recurrent
+                - img
+                - generic: Achat récurrent
+              - link:
+                - /url: /trade/BTC/EUR
+                - img
+                - generic: Mode expert
+              - link:
+                - /url: /referral
+                - img
+                - generic: Parrainage
+              - link:
+                - /url: /family
+                - img
+                - generic: Plan Bitcoin Famille
+              - link:
+                - /url: /history
+                - img
+                - generic: Historique
+        - generic:
+          - generic:
+            - generic:
+              - generic: Transfert
+              - generic:
+                - generic:
+                  - tablist:
+                    - generic:
+                      - tab:
+                        - generic: Déposer
+                      - tab [selected]:
+                        - generic: Retirer
+                      - tab:
+                        - generic: Transfert interne
+                      - tab:
+                        - generic: Envoyer par email
+                - tabpanel:
+                  - generic:
+                    - generic:
+                      - banner:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic: Votre transfert interne est en cours de traitement.
+                        - link:
+                          - /url: /history?type=history-internalTransfer
+                          - generic: Voir l'historique
+                    - generic:
+                      - form:
+                        - generic:
+                          - generic:
+                            - generic: Retrait
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic: Devise
+                                  - generic:
+                                    - button:
+                                      - generic:
+                                        - textbox: BTC
+                                      - generic:
+                                        - generic:
+                                          - img
+                                          - generic:
+                                            - generic: Bitcoin
+                                      - img
+                              - alert:
+                                - generic: Retirer uniquement des BTC vers des adresses du réseau Bitcoin. Les retraits vers des adresses générées sur d'autres réseaux pourraient entraîner la perte de vos fonds.
+                              - generic:
+                                - button:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic: Adresse de retrait
+                                      - generic:
+                                        - button:
+                                          - generic:
+                                            - textbox: undefined
+                                          - img
+                                - button: Gérer les adresses
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic: Montant du retrait
+                                    - generic:
+                                      - generic: Solde
+                                      - generic: 0,16825163 BTC
+                                  - generic:
+                                    - button:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - textbox
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - button:
+                                                    - generic: Max
+                                  - generic:
+                                    - button:
+                                      - generic: 25%
+                                    - button:
+                                      - generic: 50%
+                                    - button:
+                                      - generic: 75%
+                                    - button:
+                                      - generic: 100%
+                              - button:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: Commentaire
+                                    - generic:
+                                      - textbox
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - button:
+                                      - generic:
+                                        - textbox: "true"
+                                      - generic:
+                                        - generic:
+                                          - generic: Retrait rapide
+                                          - generic: Moins de 10 min. - payant
+                                      - img
+                              - generic:
+                                - generic:
+                                  - generic: Retrait minimum
+                                  - generic: 0,00025000 BTC
+                                - generic:
+                                  - generic: Frais
+                                  - generic: 0,00005000 BTC
+                              - button [disabled]:
+                                - generic: Retirer
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Bitcoin disponible
+                                - generic:
+                                  - img
+                                  - generic: BTC
+                              - generic:
+                                - generic: Montant total
+                                - generic: 0,17805163 BTC
+                              - generic:
+                                - generic: Montant verrouillé
+                                - generic: 0,00980000 BTC
+                              - separator
+                              - generic:
+                                - generic: Disponible à retirer
+                                - generic: 0,16825163 BTC
+                            - generic:
+                              - generic:
+                                - img
+                                - generic: Informations retrait BTC
+                                - button:
+                                  - generic: Masquer
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - list:
+                                      - generic: "Les transferts de bitcoins sont traités exclusivement sur la blockchain Bitcoin. Pour effectuer votre transfert :"
+                                      - listitem:
+                                        - generic:
+                                          - generic: "1"
+                                        - generic: Remplissez le formulaire.
+                                      - listitem:
+                                        - generic:
+                                          - generic: "2"
+                                        - generic: Autorisez le transfert en renseignant le code à 6 chiffres qui vous sera envoyé à votre email.
+                                      - listitem:
+                                        - generic:
+                                          - generic: "3"
+                                        - generic: Généralement, les transferts sont exécutés en quelques minutes. Au-delà de 24h, veuillez contacter notre service support client.
+                                      - listitem:
+                                        - generic: Dans certains cas, notre équipe peut vous demander des informations complémentaires par mesure de sécurité.
+          - contentinfo:
+            - generic:
+              - generic: Copyright © 2026
+              - link:
+                - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+                - text: Paymium
+              - generic: 6.16.0
+              - link:
+                - /url: /status
+                - text: Statut
+              - link: Gérer vos cookies
+  - dialog "Adresses de retrait - Bitcoin" [ref=e8]:
+    - generic [ref=e10]:
+      - generic [ref=e12]:
+        - generic [ref=e14]: Adresses de retrait - Bitcoin
+        - button "Close" [active] [ref=e15] [cursor=pointer]:
+          - img [ref=e16]
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - generic [ref=e23]: Adresses personnelles
+            - generic [ref=e24]:
+              - generic [ref=e25]:
+                - generic [ref=e26]:
+                  - generic [ref=e27]: Paymium x Playwright 3/6/2026 4:36:45 AM
+                  - generic [ref=e28]: tb1qht3nqudhjc3ehuav8sukms6f529z5tkqqtw3rv
+                - generic [ref=e29]:
+                  - button [ref=e30] [cursor=pointer]:
+                    - img [ref=e31]
+                  - button [ref=e33] [cursor=pointer]:
+                    - img [ref=e34]
+              - alert [ref=e36]:
+                - img [ref=e38]
+                - generic [ref=e40]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e41] [cursor=pointer]:
+                  - generic [ref=e42]: Confirmer
+            - separator [ref=e43]
+            - generic [ref=e44]:
+              - generic [ref=e45]:
+                - generic [ref=e46]:
+                  - generic [ref=e47]: Paymium x Playwright 3/6/2026 4:35:16 AM
+                  - generic [ref=e48]: tb1q096eaytn50t7w45qc6q647p0g5qg8nykawsx7s
+                - generic [ref=e49]:
+                  - button [ref=e50] [cursor=pointer]:
+                    - img [ref=e51]
+                  - button [ref=e53] [cursor=pointer]:
+                    - img [ref=e54]
+              - alert [ref=e56]:
+                - img [ref=e58]
+                - generic [ref=e60]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e61] [cursor=pointer]:
+                  - generic [ref=e62]: Confirmer
+            - separator [ref=e63]
+            - generic [ref=e64]:
+              - generic [ref=e65]:
+                - generic [ref=e66]:
+                  - generic [ref=e67]: Paymium x Playwright 3/6/2026 4:25:05 AM
+                  - generic [ref=e68]: tb1q8aflsjegnx4xk694nljpvhpxuf2wzerflyf828
+                - generic [ref=e69]:
+                  - button [ref=e70] [cursor=pointer]:
+                    - img [ref=e71]
+                  - button [ref=e73] [cursor=pointer]:
+                    - img [ref=e74]
+              - alert [ref=e76]:
+                - img [ref=e78]
+                - generic [ref=e80]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e81] [cursor=pointer]:
+                  - generic [ref=e82]: Confirmer
+            - separator [ref=e83]
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - generic [ref=e86]:
+                  - generic [ref=e87]: Paymium x Playwright 3/6/2026 4:24:06 AM
+                  - generic [ref=e88]: tb1qrdcmm8y3z3gt7qzl4q8wj6zkw4ntlktfx78hzk
+                - generic [ref=e89]:
+                  - button [ref=e90] [cursor=pointer]:
+                    - img [ref=e91]
+                  - button [ref=e93] [cursor=pointer]:
+                    - img [ref=e94]
+              - alert [ref=e96]:
+                - img [ref=e98]
+                - generic [ref=e100]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e101] [cursor=pointer]:
+                  - generic [ref=e102]: Confirmer
+            - separator [ref=e103]
+            - generic [ref=e104]:
+              - generic [ref=e105]:
+                - generic [ref=e106]:
+                  - generic [ref=e107]: Paymium x Playwright 3/5/2026 6:29:21 PM
+                  - generic [ref=e108]: tb1q6lq62a7petfjr7ng4mev4qhd0f0fugewmwsw8a
+                - generic [ref=e109]:
+                  - button [ref=e110] [cursor=pointer]:
+                    - img [ref=e111]
+                  - button [ref=e113] [cursor=pointer]:
+                    - img [ref=e114]
+              - alert [ref=e116]:
+                - img [ref=e118]
+                - generic [ref=e120]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e121] [cursor=pointer]:
+                  - generic [ref=e122]: Confirmer
+            - separator [ref=e123]
+            - generic [ref=e124]:
+              - generic [ref=e125]:
+                - generic [ref=e126]:
+                  - generic [ref=e127]: Paymium x Playwright 3/5/2026 6:28:16 PM
+                  - generic [ref=e128]: tb1qnj3mmyls72anccr5ajgfq7wcgucrr89qlaa0q9
+                - generic [ref=e129]:
+                  - button [ref=e130] [cursor=pointer]:
+                    - img [ref=e131]
+                  - button [ref=e133] [cursor=pointer]:
+                    - img [ref=e134]
+              - alert [ref=e136]:
+                - img [ref=e138]
+                - generic [ref=e140]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e141] [cursor=pointer]:
+                  - generic [ref=e142]: Confirmer
+            - separator [ref=e143]
+            - generic [ref=e144]:
+              - generic [ref=e145]:
+                - generic [ref=e146]:
+                  - generic [ref=e147]: Paymium x Playwright 3/5/2026 5:59:20 PM
+                  - generic [ref=e148]: tb1qqlhlzvrew094729ess5w0vshkepc83qdymntd0
+                - generic [ref=e149]:
+                  - button [ref=e150] [cursor=pointer]:
+                    - img [ref=e151]
+                  - button [ref=e153] [cursor=pointer]:
+                    - img [ref=e154]
+              - alert [ref=e156]:
+                - img [ref=e158]
+                - generic [ref=e160]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e161] [cursor=pointer]:
+                  - generic [ref=e162]: Confirmer
+            - separator [ref=e163]
+            - generic [ref=e164]:
+              - generic [ref=e165]:
+                - generic [ref=e166]:
+                  - generic [ref=e167]: Paymium x Playwright 3/5/2026 5:39:29 PM
+                  - generic [ref=e168]: tb1q23y5qtjf7cae4kxujz2hu9w9w4fng3p5n4ldez
+                - generic [ref=e169]:
+                  - button [ref=e170] [cursor=pointer]:
+                    - img [ref=e171]
+                  - button [ref=e173] [cursor=pointer]:
+                    - img [ref=e174]
+              - alert [ref=e176]:
+                - img [ref=e178]
+                - generic [ref=e180]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e181] [cursor=pointer]:
+                  - generic [ref=e182]: Confirmer
+            - separator [ref=e183]
+            - generic [ref=e184]:
+              - generic [ref=e185]:
+                - generic [ref=e186]:
+                  - generic [ref=e187]: Paymium x Playwright 3/5/2026 5:38:03 PM
+                  - generic [ref=e188]: tb1qknjr5yjtluknuvg8jp4p6ngawx2lfp3ru0ryuk
+                - generic [ref=e189]:
+                  - button [ref=e190] [cursor=pointer]:
+                    - img [ref=e191]
+                  - button [ref=e193] [cursor=pointer]:
+                    - img [ref=e194]
+              - alert [ref=e196]:
+                - img [ref=e198]
+                - generic [ref=e200]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e201] [cursor=pointer]:
+                  - generic [ref=e202]: Confirmer
+            - separator [ref=e203]
+            - generic [ref=e204]:
+              - generic [ref=e205]:
+                - generic [ref=e206]:
+                  - generic [ref=e207]: Paymium x Playwright 3/5/2026 5:12:19 PM
+                  - generic [ref=e208]: tb1qpvel6up0qaqe4nvkmjnacznl7xgcd5kjmnwm7y
+                - generic [ref=e209]:
+                  - button [ref=e210] [cursor=pointer]:
+                    - img [ref=e211]
+                  - button [ref=e213] [cursor=pointer]:
+                    - img [ref=e214]
+              - alert [ref=e216]:
+                - img [ref=e218]
+                - generic [ref=e220]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e221] [cursor=pointer]:
+                  - generic [ref=e222]: Confirmer
+            - separator [ref=e223]
+            - generic [ref=e224]:
+              - generic [ref=e225]:
+                - generic [ref=e226]:
+                  - generic [ref=e227]: Paymium x Playwright 3/5/2026 5:10:57 PM
+                  - generic [ref=e228]: tb1q4ey82ry3t336nmfzfsp7hvtgdd92l6ux2psvrh
+                - generic [ref=e229]:
+                  - button [ref=e230] [cursor=pointer]:
+                    - img [ref=e231]
+                  - button [ref=e233] [cursor=pointer]:
+                    - img [ref=e234]
+              - alert [ref=e236]:
+                - img [ref=e238]
+                - generic [ref=e240]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e241] [cursor=pointer]:
+                  - generic [ref=e242]: Confirmer
+            - separator [ref=e243]
+            - generic [ref=e244]:
+              - generic [ref=e245]:
+                - generic [ref=e246]:
+                  - generic [ref=e247]: Paymium x Playwright 3/5/2026 4:38:00 PM
+                  - generic [ref=e248]: tb1qvxx69u6upp7fhelpxu8jdmr2l2sjz6sntzzc4w
+                - generic [ref=e249]:
+                  - button [ref=e250] [cursor=pointer]:
+                    - img [ref=e251]
+                  - button [ref=e253] [cursor=pointer]:
+                    - img [ref=e254]
+              - alert [ref=e256]:
+                - img [ref=e258]
+                - generic [ref=e260]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e261] [cursor=pointer]:
+                  - generic [ref=e262]: Confirmer
+            - separator [ref=e263]
+            - generic [ref=e264]:
+              - generic [ref=e265]:
+                - generic [ref=e266]:
+                  - generic [ref=e267]: Paymium x Playwright 3/5/2026 4:36:52 PM
+                  - generic [ref=e268]: tb1q2pj6gqnjv3jp59s3w9zxv8d7qmken4dm8l86vr
+                - generic [ref=e269]:
+                  - button [ref=e270] [cursor=pointer]:
+                    - img [ref=e271]
+                  - button [ref=e273] [cursor=pointer]:
+                    - img [ref=e274]
+              - alert [ref=e276]:
+                - img [ref=e278]
+                - generic [ref=e280]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e281] [cursor=pointer]:
+                  - generic [ref=e282]: Confirmer
+            - separator [ref=e283]
+            - generic [ref=e284]:
+              - generic [ref=e285]:
+                - generic [ref=e286]:
+                  - generic [ref=e287]: Paymium x Playwright 3/5/2026 3:49:11 PM
+                  - generic [ref=e288]: tb1q68amguqjptylv8kpwjt55a2xtcwyt8e0p8zvtc
+                - generic [ref=e289]:
+                  - button [ref=e290] [cursor=pointer]:
+                    - img [ref=e291]
+                  - button [ref=e293] [cursor=pointer]:
+                    - img [ref=e294]
+              - alert [ref=e296]:
+                - img [ref=e298]
+                - generic [ref=e300]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e301] [cursor=pointer]:
+                  - generic [ref=e302]: Confirmer
+            - separator [ref=e303]
+            - generic [ref=e304]:
+              - generic [ref=e305]:
+                - generic [ref=e306]:
+                  - generic [ref=e307]: Paymium x Playwright 3/5/2026 3:47:58 PM
+                  - generic [ref=e308]: tb1qksvwssac0rq29q3erm0f4szv2l8cnk8l6c6a8j
+                - generic [ref=e309]:
+                  - button [ref=e310] [cursor=pointer]:
+                    - img [ref=e311]
+                  - button [ref=e313] [cursor=pointer]:
+                    - img [ref=e314]
+              - alert [ref=e316]:
+                - img [ref=e318]
+                - generic [ref=e320]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e321] [cursor=pointer]:
+                  - generic [ref=e322]: Confirmer
+            - separator [ref=e323]
+            - generic [ref=e324]:
+              - generic [ref=e325]:
+                - generic [ref=e326]:
+                  - generic [ref=e327]: Paymium x Playwright 3/5/2026 3:09:22 PM
+                  - generic [ref=e328]: tb1qsjxgkk06jg97yq4sxa50w6dw9e7enyht7a95d4
+                - generic [ref=e329]:
+                  - button [ref=e330] [cursor=pointer]:
+                    - img [ref=e331]
+                  - button [ref=e333] [cursor=pointer]:
+                    - img [ref=e334]
+              - alert [ref=e336]:
+                - img [ref=e338]
+                - generic [ref=e340]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e341] [cursor=pointer]:
+                  - generic [ref=e342]: Confirmer
+            - separator [ref=e343]
+            - generic [ref=e344]:
+              - generic [ref=e345]:
+                - generic [ref=e346]:
+                  - generic [ref=e347]: Paymium x Playwright 3/5/2026 7:21:20 AM
+                  - generic [ref=e348]: tb1q072mpxdq56agc5vce5u2hrqnhzkwfr0dyg8fxm
+                - generic [ref=e349]:
+                  - button [ref=e350] [cursor=pointer]:
+                    - img [ref=e351]
+                  - button [ref=e353] [cursor=pointer]:
+                    - img [ref=e354]
+              - alert [ref=e356]:
+                - img [ref=e358]
+                - generic [ref=e360]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e361] [cursor=pointer]:
+                  - generic [ref=e362]: Confirmer
+            - separator [ref=e363]
+            - generic [ref=e364]:
+              - generic [ref=e365]:
+                - generic [ref=e366]:
+                  - generic [ref=e367]: Paymium x Playwright 3/5/2026 5:47:21 AM
+                  - generic [ref=e368]: tb1q67p7vzm0cqcn003s7se4vkp2w3rwqrs8zvedg0
+                - generic [ref=e369]:
+                  - button [ref=e370] [cursor=pointer]:
+                    - img [ref=e371]
+                  - button [ref=e373] [cursor=pointer]:
+                    - img [ref=e374]
+              - alert [ref=e376]:
+                - img [ref=e378]
+                - generic [ref=e380]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e381] [cursor=pointer]:
+                  - generic [ref=e382]: Confirmer
+            - separator [ref=e383]
+            - generic [ref=e384]:
+              - generic [ref=e385]:
+                - generic [ref=e386]:
+                  - generic [ref=e387]: Paymium x Playwright 3/5/2026 5:46:01 AM
+                  - generic [ref=e388]: tb1qcg7y4ac3g5tvp5qpq0wezavq74kp84nqkt35d5
+                - generic [ref=e389]:
+                  - button [ref=e390] [cursor=pointer]:
+                    - img [ref=e391]
+                  - button [ref=e393] [cursor=pointer]:
+                    - img [ref=e394]
+              - alert [ref=e396]:
+                - img [ref=e398]
+                - generic [ref=e400]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e401] [cursor=pointer]:
+                  - generic [ref=e402]: Confirmer
+            - separator [ref=e403]
+            - generic [ref=e404]:
+              - generic [ref=e405]:
+                - generic [ref=e406]:
+                  - generic [ref=e407]: Paymium x Playwright 3/5/2026 4:46:34 AM
+                  - generic [ref=e408]: tb1qm79nlk29xy5xy94x9n7narfukz3lutxhfe3aev
+                - generic [ref=e409]:
+                  - button [ref=e410] [cursor=pointer]:
+                    - img [ref=e411]
+                  - button [ref=e413] [cursor=pointer]:
+                    - img [ref=e414]
+              - alert [ref=e416]:
+                - img [ref=e418]
+                - generic [ref=e420]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e421] [cursor=pointer]:
+                  - generic [ref=e422]: Confirmer
+            - separator [ref=e423]
+            - generic [ref=e424]:
+              - generic [ref=e425]:
+                - generic [ref=e426]:
+                  - generic [ref=e427]: Paymium x Playwright 3/5/2026 4:44:50 AM
+                  - generic [ref=e428]: tb1qegzgn2rnu7wqx5u529mctnac356uw9lg7f9cm8
+                - generic [ref=e429]:
+                  - button [ref=e430] [cursor=pointer]:
+                    - img [ref=e431]
+                  - button [ref=e433] [cursor=pointer]:
+                    - img [ref=e434]
+              - alert [ref=e436]:
+                - img [ref=e438]
+                - generic [ref=e440]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e441] [cursor=pointer]:
+                  - generic [ref=e442]: Confirmer
+            - separator [ref=e443]
+            - generic [ref=e445]:
+              - generic [ref=e446]:
+                - generic [ref=e447]: Paymium x Playwright 3/5/2026 4:34:43 AM
+                - generic [ref=e448]: tb1qsc07y7nq5fmm8496q7d69u8ex79pq8au2gpqw9
+              - generic [ref=e449]:
+                - button [ref=e450] [cursor=pointer]:
+                  - img [ref=e451]
+                - button [ref=e453] [cursor=pointer]:
+                  - img [ref=e454]
+            - separator [ref=e456]
+            - generic [ref=e457]:
+              - generic [ref=e458]:
+                - generic [ref=e459]:
+                  - generic [ref=e460]: Paymium x Playwright 3/4/2026 11:08:33 PM
+                  - generic [ref=e461]: tb1q963slk550dkfx7rpy3h5wpcq7l3j8l9rf4y89e
+                - generic [ref=e462]:
+                  - button [ref=e463] [cursor=pointer]:
+                    - img [ref=e464]
+                  - button [ref=e466] [cursor=pointer]:
+                    - img [ref=e467]
+              - alert [ref=e469]:
+                - img [ref=e471]
+                - generic [ref=e473]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e474] [cursor=pointer]:
+                  - generic [ref=e475]: Confirmer
+            - separator [ref=e476]
+            - generic [ref=e477]:
+              - generic [ref=e478]:
+                - generic [ref=e479]:
+                  - generic [ref=e480]: Paymium x Playwright 3/4/2026 10:39:47 PM
+                  - generic [ref=e481]: tb1qvy728fkv7r5f3ej0cnu0fdsqzdzuyc6lugngz0
+                - generic [ref=e482]:
+                  - button [ref=e483] [cursor=pointer]:
+                    - img [ref=e484]
+                  - button [ref=e486] [cursor=pointer]:
+                    - img [ref=e487]
+              - alert [ref=e489]:
+                - img [ref=e491]
+                - generic [ref=e493]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e494] [cursor=pointer]:
+                  - generic [ref=e495]: Confirmer
+            - separator [ref=e496]
+            - generic [ref=e497]:
+              - generic [ref=e498]:
+                - generic [ref=e499]:
+                  - generic [ref=e500]: Paymium x Playwright 3/4/2026 10:38:44 PM
+                  - generic [ref=e501]: tb1q6k6uqxxvhutpufc8a5uy5rffd5hzmlqkzsjmp2
+                - generic [ref=e502]:
+                  - button [ref=e503] [cursor=pointer]:
+                    - img [ref=e504]
+                  - button [ref=e506] [cursor=pointer]:
+                    - img [ref=e507]
+              - alert [ref=e509]:
+                - img [ref=e511]
+                - generic [ref=e513]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e514] [cursor=pointer]:
+                  - generic [ref=e515]: Confirmer
+            - separator [ref=e516]
+            - generic [ref=e517]:
+              - generic [ref=e518]:
+                - generic [ref=e519]:
+                  - generic [ref=e520]: Paymium x Playwright 3/4/2026 10:05:10 PM
+                  - generic [ref=e521]: tb1qy93lw42csf6zxdyadpj5lk0ks8ewpewlm5neuu
+                - generic [ref=e522]:
+                  - button [ref=e523] [cursor=pointer]:
+                    - img [ref=e524]
+                  - button [ref=e526] [cursor=pointer]:
+                    - img [ref=e527]
+              - alert [ref=e529]:
+                - img [ref=e531]
+                - generic [ref=e533]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e534] [cursor=pointer]:
+                  - generic [ref=e535]: Confirmer
+            - separator [ref=e536]
+            - generic [ref=e537]:
+              - generic [ref=e538]:
+                - generic [ref=e539]:
+                  - generic [ref=e540]: Paymium x Playwright 3/4/2026 10:04:16 PM
+                  - generic [ref=e541]: tb1qdanj64gmdur2ltfa4nddfzzkyj9j6cysdv3p2y
+                - generic [ref=e542]:
+                  - button [ref=e543] [cursor=pointer]:
+                    - img [ref=e544]
+                  - button [ref=e546] [cursor=pointer]:
+                    - img [ref=e547]
+              - alert [ref=e549]:
+                - img [ref=e551]
+                - generic [ref=e553]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e554] [cursor=pointer]:
+                  - generic [ref=e555]: Confirmer
+            - separator [ref=e556]
+            - generic [ref=e557]:
+              - generic [ref=e558]:
+                - generic [ref=e559]:
+                  - generic [ref=e560]: Paymium x Playwright 3/4/2026 9:34:37 PM
+                  - generic [ref=e561]: tb1qph8xshhwmwkkztuh27s2j9fc29f3g0chsvcnpd
+                - generic [ref=e562]:
+                  - button [ref=e563] [cursor=pointer]:
+                    - img [ref=e564]
+                  - button [ref=e566] [cursor=pointer]:
+                    - img [ref=e567]
+              - alert [ref=e569]:
+                - img [ref=e571]
+                - generic [ref=e573]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e574] [cursor=pointer]:
+                  - generic [ref=e575]: Confirmer
+            - separator [ref=e576]
+            - generic [ref=e577]:
+              - generic [ref=e578]:
+                - generic [ref=e579]:
+                  - generic [ref=e580]: Paymium x Playwright 3/4/2026 9:33:25 PM
+                  - generic [ref=e581]: tb1qfxc3k7c2qyk3m6de37ufd4ag346sjg3lzk7w2u
+                - generic [ref=e582]:
+                  - button [ref=e583] [cursor=pointer]:
+                    - img [ref=e584]
+                  - button [ref=e586] [cursor=pointer]:
+                    - img [ref=e587]
+              - alert [ref=e589]:
+                - img [ref=e591]
+                - generic [ref=e593]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e594] [cursor=pointer]:
+                  - generic [ref=e595]: Confirmer
+            - separator [ref=e596]
+            - generic [ref=e597]:
+              - generic [ref=e598]:
+                - generic [ref=e599]:
+                  - generic [ref=e600]: Paymium x Playwright 3/4/2026 9:23:10 PM
+                  - generic [ref=e601]: tb1q4p8lnlyq3nyq2k2sa9tgdat3f8vx4uq29acu7a
+                - generic [ref=e602]:
+                  - button [ref=e603] [cursor=pointer]:
+                    - img [ref=e604]
+                  - button [ref=e606] [cursor=pointer]:
+                    - img [ref=e607]
+              - alert [ref=e609]:
+                - img [ref=e611]
+                - generic [ref=e613]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e614] [cursor=pointer]:
+                  - generic [ref=e615]: Confirmer
+            - separator [ref=e616]
+            - generic [ref=e617]:
+              - generic [ref=e618]:
+                - generic [ref=e619]:
+                  - generic [ref=e620]: Paymium x Playwright 3/4/2026 9:21:27 PM
+                  - generic [ref=e621]: tb1qgcdxk78mekz6f767mr2xt6u3w06lhtuf5p2pc6
+                - generic [ref=e622]:
+                  - button [ref=e623] [cursor=pointer]:
+                    - img [ref=e624]
+                  - button [ref=e626] [cursor=pointer]:
+                    - img [ref=e627]
+              - alert [ref=e629]:
+                - img [ref=e631]
+                - generic [ref=e633]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e634] [cursor=pointer]:
+                  - generic [ref=e635]: Confirmer
+            - separator [ref=e636]
+            - generic [ref=e637]:
+              - generic [ref=e638]:
+                - generic [ref=e639]:
+                  - generic [ref=e640]: Paymium x Playwright 3/4/2026 8:18:44 PM
+                  - generic [ref=e641]: tb1qxwd0mwfuakxqe4ewz80hzy2x57lpnfjvq5h43n
+                - generic [ref=e642]:
+                  - button [ref=e643] [cursor=pointer]:
+                    - img [ref=e644]
+                  - button [ref=e646] [cursor=pointer]:
+                    - img [ref=e647]
+              - alert [ref=e649]:
+                - img [ref=e651]
+                - generic [ref=e653]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e654] [cursor=pointer]:
+                  - generic [ref=e655]: Confirmer
+            - separator [ref=e656]
+            - generic [ref=e657]:
+              - generic [ref=e658]:
+                - generic [ref=e659]:
+                  - generic [ref=e660]: Paymium x Playwright 3/4/2026 8:17:53 PM
+                  - generic [ref=e661]: tb1qg8t83ppuypvdwjdm8cnwqpyr92qd376u6dp6q7
+                - generic [ref=e662]:
+                  - button [ref=e663] [cursor=pointer]:
+                    - img [ref=e664]
+                  - button [ref=e666] [cursor=pointer]:
+                    - img [ref=e667]
+              - alert [ref=e669]:
+                - img [ref=e671]
+                - generic [ref=e673]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e674] [cursor=pointer]:
+                  - generic [ref=e675]: Confirmer
+            - separator [ref=e676]
+            - generic [ref=e677]:
+              - generic [ref=e678]:
+                - generic [ref=e679]:
+                  - generic [ref=e680]: Paymium x Playwright 3/4/2026 7:48:36 PM
+                  - generic [ref=e681]: tb1qh5wpwtauvzq7snd2qylu7m86a2ndzu8zhals0u
+                - generic [ref=e682]:
+                  - button [ref=e683] [cursor=pointer]:
+                    - img [ref=e684]
+                  - button [ref=e686] [cursor=pointer]:
+                    - img [ref=e687]
+              - alert [ref=e689]:
+                - img [ref=e691]
+                - generic [ref=e693]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e694] [cursor=pointer]:
+                  - generic [ref=e695]: Confirmer
+            - separator [ref=e696]
+            - generic [ref=e697]:
+              - generic [ref=e698]:
+                - generic [ref=e699]:
+                  - generic [ref=e700]: Paymium x Playwright 3/4/2026 7:47:42 PM
+                  - generic [ref=e701]: tb1qztmuu43m2x0taujtgwcw793knz0u0zjr757t8v
+                - generic [ref=e702]:
+                  - button [ref=e703] [cursor=pointer]:
+                    - img [ref=e704]
+                  - button [ref=e706] [cursor=pointer]:
+                    - img [ref=e707]
+              - alert [ref=e709]:
+                - img [ref=e711]
+                - generic [ref=e713]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e714] [cursor=pointer]:
+                  - generic [ref=e715]: Confirmer
+            - separator [ref=e716]
+            - generic [ref=e717]:
+              - generic [ref=e718]:
+                - generic [ref=e719]:
+                  - generic [ref=e720]: Paymium x Playwright 3/4/2026 7:16:30 PM
+                  - generic [ref=e721]: tb1q4lz3nefrmn9nue33px9q0asn7t93a9fcapckyr
+                - generic [ref=e722]:
+                  - button [ref=e723] [cursor=pointer]:
+                    - img [ref=e724]
+                  - button [ref=e726] [cursor=pointer]:
+                    - img [ref=e727]
+              - alert [ref=e729]:
+                - img [ref=e731]
+                - generic [ref=e733]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e734] [cursor=pointer]:
+                  - generic [ref=e735]: Confirmer
+            - separator [ref=e736]
+            - generic [ref=e737]:
+              - generic [ref=e738]:
+                - generic [ref=e739]:
+                  - generic [ref=e740]: Paymium x Playwright 3/4/2026 7:14:37 PM
+                  - generic [ref=e741]: tb1qss8ruqlfr63zc09zlyadwcctc4v3e8f6lxsh7x
+                - generic [ref=e742]:
+                  - button [ref=e743] [cursor=pointer]:
+                    - img [ref=e744]
+                  - button [ref=e746] [cursor=pointer]:
+                    - img [ref=e747]
+              - alert [ref=e749]:
+                - img [ref=e751]
+                - generic [ref=e753]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e754] [cursor=pointer]:
+                  - generic [ref=e755]: Confirmer
+            - separator [ref=e756]
+            - generic [ref=e757]:
+              - generic [ref=e758]:
+                - generic [ref=e759]:
+                  - generic [ref=e760]: Paymium x Playwright 3/4/2026 6:44:24 PM
+                  - generic [ref=e761]: tb1qwcmpgg8j0j62xg7nchr7lh30ltzp9mcmthsl6u
+                - generic [ref=e762]:
+                  - button [ref=e763] [cursor=pointer]:
+                    - img [ref=e764]
+                  - button [ref=e766] [cursor=pointer]:
+                    - img [ref=e767]
+              - alert [ref=e769]:
+                - img [ref=e771]
+                - generic [ref=e773]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e774] [cursor=pointer]:
+                  - generic [ref=e775]: Confirmer
+            - separator [ref=e776]
+            - generic [ref=e777]:
+              - generic [ref=e778]:
+                - generic [ref=e779]:
+                  - generic [ref=e780]: Paymium x Playwright 3/4/2026 6:42:00 PM
+                  - generic [ref=e781]: tb1qj7f68y3u4msa9ugw0xjnwzlkdrpja7xhakh6a7
+                - generic [ref=e782]:
+                  - button [ref=e783] [cursor=pointer]:
+                    - img [ref=e784]
+                  - button [ref=e786] [cursor=pointer]:
+                    - img [ref=e787]
+              - alert [ref=e789]:
+                - img [ref=e791]
+                - generic [ref=e793]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e794] [cursor=pointer]:
+                  - generic [ref=e795]: Confirmer
+            - separator [ref=e796]
+            - generic [ref=e797]:
+              - generic [ref=e798]:
+                - generic [ref=e799]:
+                  - generic [ref=e800]: Paymium x Playwright 3/4/2026 5:51:48 PM
+                  - generic [ref=e801]: tb1q0qhj5eggw8pggfnvqw9whc7d4zjze9a97lcx9p
+                - generic [ref=e802]:
+                  - button [ref=e803] [cursor=pointer]:
+                    - img [ref=e804]
+                  - button [ref=e806] [cursor=pointer]:
+                    - img [ref=e807]
+              - alert [ref=e809]:
+                - img [ref=e811]
+                - generic [ref=e813]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e814] [cursor=pointer]:
+                  - generic [ref=e815]: Confirmer
+            - separator [ref=e816]
+            - generic [ref=e817]:
+              - generic [ref=e818]:
+                - generic [ref=e819]:
+                  - generic [ref=e820]: Paymium x Playwright 3/4/2026 5:50:33 PM
+                  - generic [ref=e821]: tb1qfum3ky6kgr6dd456e2aervkdccmuskrzuayl2n
+                - generic [ref=e822]:
+                  - button [ref=e823] [cursor=pointer]:
+                    - img [ref=e824]
+                  - button [ref=e826] [cursor=pointer]:
+                    - img [ref=e827]
+              - alert [ref=e829]:
+                - img [ref=e831]
+                - generic [ref=e833]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e834] [cursor=pointer]:
+                  - generic [ref=e835]: Confirmer
+            - separator [ref=e836]
+            - generic [ref=e837]:
+              - generic [ref=e838]:
+                - generic [ref=e839]:
+                  - generic [ref=e840]: Paymium x Playwright 3/4/2026 5:20:57 PM
+                  - generic [ref=e841]: tb1qppnky32f0f0vsqe7kr754ymu32eh4dwadlsysq
+                - generic [ref=e842]:
+                  - button [ref=e843] [cursor=pointer]:
+                    - img [ref=e844]
+                  - button [ref=e846] [cursor=pointer]:
+                    - img [ref=e847]
+              - alert [ref=e849]:
+                - img [ref=e851]
+                - generic [ref=e853]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e854] [cursor=pointer]:
+                  - generic [ref=e855]: Confirmer
+            - separator [ref=e856]
+            - generic [ref=e857]:
+              - generic [ref=e858]:
+                - generic [ref=e859]:
+                  - generic [ref=e860]: Paymium x Playwright 3/4/2026 5:18:11 PM
+                  - generic [ref=e861]: tb1qnedl0xyc7yarzf000fqctv9ehz5yt9wn3mvzhx
+                - generic [ref=e862]:
+                  - button [ref=e863] [cursor=pointer]:
+                    - img [ref=e864]
+                  - button [ref=e866] [cursor=pointer]:
+                    - img [ref=e867]
+              - alert [ref=e869]:
+                - img [ref=e871]
+                - generic [ref=e873]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e874] [cursor=pointer]:
+                  - generic [ref=e875]: Confirmer
+            - separator [ref=e876]
+            - generic [ref=e877]:
+              - generic [ref=e878]:
+                - generic [ref=e879]:
+                  - generic [ref=e880]: Paymium x Playwright 3/4/2026 4:07:08 PM
+                  - generic [ref=e881]: tb1qqr544nsp4xsgdaqw5p8m4xj7eh6t0zt4gdvuwx
+                - generic [ref=e882]:
+                  - button [ref=e883] [cursor=pointer]:
+                    - img [ref=e884]
+                  - button [ref=e886] [cursor=pointer]:
+                    - img [ref=e887]
+              - alert [ref=e889]:
+                - img [ref=e891]
+                - generic [ref=e893]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e894] [cursor=pointer]:
+                  - generic [ref=e895]: Confirmer
+            - separator [ref=e896]
+            - generic [ref=e897]:
+              - generic [ref=e898]:
+                - generic [ref=e899]:
+                  - generic [ref=e900]: Paymium x Playwright 3/4/2026 4:06:15 PM
+                  - generic [ref=e901]: tb1q2twv6f3k3s7x0lm5wwfwjdxnnlpwhg2nhasx8h
+                - generic [ref=e902]:
+                  - button [ref=e903] [cursor=pointer]:
+                    - img [ref=e904]
+                  - button [ref=e906] [cursor=pointer]:
+                    - img [ref=e907]
+              - alert [ref=e909]:
+                - img [ref=e911]
+                - generic [ref=e913]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e914] [cursor=pointer]:
+                  - generic [ref=e915]: Confirmer
+            - separator [ref=e916]
+            - generic [ref=e917]:
+              - generic [ref=e918]:
+                - generic [ref=e919]:
+                  - generic [ref=e920]: Paymium x Playwright 3/4/2026 3:21:55 PM
+                  - generic [ref=e921]: tb1qr8kx7uztqj0q0874tzs2f34px20lcg46fevyfh
+                - generic [ref=e922]:
+                  - button [ref=e923] [cursor=pointer]:
+                    - img [ref=e924]
+                  - button [ref=e926] [cursor=pointer]:
+                    - img [ref=e927]
+              - alert [ref=e929]:
+                - img [ref=e931]
+                - generic [ref=e933]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e934] [cursor=pointer]:
+                  - generic [ref=e935]: Confirmer
+            - separator [ref=e936]
+            - generic [ref=e937]:
+              - generic [ref=e938]:
+                - generic [ref=e939]:
+                  - generic [ref=e940]: Paymium x Playwright 3/4/2026 3:21:04 PM
+                  - generic [ref=e941]: tb1qgrw2fghqz4nez0p4g7vzaw3603weatc3j535ky
+                - generic [ref=e942]:
+                  - button [ref=e943] [cursor=pointer]:
+                    - img [ref=e944]
+                  - button [ref=e946] [cursor=pointer]:
+                    - img [ref=e947]
+              - alert [ref=e949]:
+                - img [ref=e951]
+                - generic [ref=e953]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e954] [cursor=pointer]:
+                  - generic [ref=e955]: Confirmer
+            - separator [ref=e956]
+            - generic [ref=e957]:
+              - generic [ref=e958]:
+                - generic [ref=e959]:
+                  - generic [ref=e960]: Paymium x Playwright 3/4/2026 2:40:34 PM
+                  - generic [ref=e961]: tb1qcu3r6d2l5sxaj44a7k7j8tjd3ygh0atxctlh2d
+                - generic [ref=e962]:
+                  - button [ref=e963] [cursor=pointer]:
+                    - img [ref=e964]
+                  - button [ref=e966] [cursor=pointer]:
+                    - img [ref=e967]
+              - alert [ref=e969]:
+                - img [ref=e971]
+                - generic [ref=e973]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e974] [cursor=pointer]:
+                  - generic [ref=e975]: Confirmer
+            - separator [ref=e976]
+            - generic [ref=e977]:
+              - generic [ref=e978]:
+                - generic [ref=e979]:
+                  - generic [ref=e980]: Paymium x Playwright 3/4/2026 2:39:35 PM
+                  - generic [ref=e981]: tb1q92tpmw86aavdh22xt3xmx7kas3w2z96rv8fxdr
+                - generic [ref=e982]:
+                  - button [ref=e983] [cursor=pointer]:
+                    - img [ref=e984]
+                  - button [ref=e986] [cursor=pointer]:
+                    - img [ref=e987]
+              - alert [ref=e989]:
+                - img [ref=e991]
+                - generic [ref=e993]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e994] [cursor=pointer]:
+                  - generic [ref=e995]: Confirmer
+            - separator [ref=e996]
+            - generic [ref=e998]:
+              - generic [ref=e999]:
+                - generic [ref=e1000]: Paymium x Playwright 3/4/2026 2:16:10 PM
+                - generic [ref=e1001]: tb1qws83d38eqgud55scmsjq4zekm94neztrgkpws4
+              - generic [ref=e1002]:
+                - button [ref=e1003] [cursor=pointer]:
+                  - img [ref=e1004]
+                - button [ref=e1006] [cursor=pointer]:
+                  - img [ref=e1007]
+            - separator [ref=e1009]
+            - generic [ref=e1010]:
+              - generic [ref=e1011]:
+                - generic [ref=e1012]:
+                  - generic [ref=e1013]: Paymium x Playwright 3/4/2026 1:21:43 PM
+                  - generic [ref=e1014]: tb1qnedgq0sm8maynr2ny2c08l0ta4s3ayu0whj373
+                - generic [ref=e1015]:
+                  - button [ref=e1016] [cursor=pointer]:
+                    - img [ref=e1017]
+                  - button [ref=e1019] [cursor=pointer]:
+                    - img [ref=e1020]
+              - alert [ref=e1022]:
+                - img [ref=e1024]
+                - generic [ref=e1026]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1027] [cursor=pointer]:
+                  - generic [ref=e1028]: Confirmer
+            - separator [ref=e1029]
+            - generic [ref=e1030]:
+              - generic [ref=e1031]:
+                - generic [ref=e1032]:
+                  - generic [ref=e1033]: Paymium x Playwright 3/4/2026 1:19:05 PM
+                  - generic [ref=e1034]: tb1q4fr54ha2nyj7ytlhnsnk82nvxxtdlw7sk8tmej
+                - generic [ref=e1035]:
+                  - button [ref=e1036] [cursor=pointer]:
+                    - img [ref=e1037]
+                  - button [ref=e1039] [cursor=pointer]:
+                    - img [ref=e1040]
+              - alert [ref=e1042]:
+                - img [ref=e1044]
+                - generic [ref=e1046]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1047] [cursor=pointer]:
+                  - generic [ref=e1048]: Confirmer
+            - separator [ref=e1049]
+            - generic [ref=e1050]:
+              - generic [ref=e1051]:
+                - generic [ref=e1052]:
+                  - generic [ref=e1053]: Paymium x Playwright 3/4/2026 12:32:40 PM
+                  - generic [ref=e1054]: tb1qnnzd7rm0j8tfwjxgw7x8vznrrud8kxyxfnacr8
+                - generic [ref=e1055]:
+                  - button [ref=e1056] [cursor=pointer]:
+                    - img [ref=e1057]
+                  - button [ref=e1059] [cursor=pointer]:
+                    - img [ref=e1060]
+              - alert [ref=e1062]:
+                - img [ref=e1064]
+                - generic [ref=e1066]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1067] [cursor=pointer]:
+                  - generic [ref=e1068]: Confirmer
+            - separator [ref=e1069]
+            - generic [ref=e1070]:
+              - generic [ref=e1071]:
+                - generic [ref=e1072]:
+                  - generic [ref=e1073]: Paymium x Playwright 3/4/2026 12:30:55 PM
+                  - generic [ref=e1074]: tb1qsqhsp5rkdjdc5hsnecspwjpgsg4regt3y9w45x
+                - generic [ref=e1075]:
+                  - button [ref=e1076] [cursor=pointer]:
+                    - img [ref=e1077]
+                  - button [ref=e1079] [cursor=pointer]:
+                    - img [ref=e1080]
+              - alert [ref=e1082]:
+                - img [ref=e1084]
+                - generic [ref=e1086]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1087] [cursor=pointer]:
+                  - generic [ref=e1088]: Confirmer
+            - separator [ref=e1089]
+            - generic [ref=e1090]:
+              - generic [ref=e1091]:
+                - generic [ref=e1092]:
+                  - generic [ref=e1093]: Paymium x Playwright 3/4/2026 12:01:08 PM
+                  - generic [ref=e1094]: tb1qaepp8ggdmhn55xy4ynft0e5rc2qeuc6zspe2u4
+                - generic [ref=e1095]:
+                  - button [ref=e1096] [cursor=pointer]:
+                    - img [ref=e1097]
+                  - button [ref=e1099] [cursor=pointer]:
+                    - img [ref=e1100]
+              - alert [ref=e1102]:
+                - img [ref=e1104]
+                - generic [ref=e1106]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1107] [cursor=pointer]:
+                  - generic [ref=e1108]: Confirmer
+            - separator [ref=e1109]
+            - generic [ref=e1110]:
+              - generic [ref=e1111]:
+                - generic [ref=e1112]:
+                  - generic [ref=e1113]: Paymium x Playwright 3/4/2026 11:58:43 AM
+                  - generic [ref=e1114]: tb1qy9lfyclmmy2depsxrl9my2dhc4z2thfmcwy8an
+                - generic [ref=e1115]:
+                  - button [ref=e1116] [cursor=pointer]:
+                    - img [ref=e1117]
+                  - button [ref=e1119] [cursor=pointer]:
+                    - img [ref=e1120]
+              - alert [ref=e1122]:
+                - img [ref=e1124]
+                - generic [ref=e1126]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1127] [cursor=pointer]:
+                  - generic [ref=e1128]: Confirmer
+            - separator [ref=e1129]
+            - generic [ref=e1130]:
+              - generic [ref=e1131]:
+                - generic [ref=e1132]:
+                  - generic [ref=e1133]: Paymium x Playwright 3/4/2026 11:18:15 AM
+                  - generic [ref=e1134]: tb1qzup4fdfphpwj446r5sl7mm4eylqa70z6x2f503
+                - generic [ref=e1135]:
+                  - button [ref=e1136] [cursor=pointer]:
+                    - img [ref=e1137]
+                  - button [ref=e1139] [cursor=pointer]:
+                    - img [ref=e1140]
+              - alert [ref=e1142]:
+                - img [ref=e1144]
+                - generic [ref=e1146]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1147] [cursor=pointer]:
+                  - generic [ref=e1148]: Confirmer
+            - separator [ref=e1149]
+            - generic [ref=e1150]:
+              - generic [ref=e1151]:
+                - generic [ref=e1152]:
+                  - generic [ref=e1153]: Paymium x Playwright 3/4/2026 11:16:31 AM
+                  - generic [ref=e1154]: tb1q9awz7tw3thxv7526mqpaltvvgdwve0xmgg0n74
+                - generic [ref=e1155]:
+                  - button [ref=e1156] [cursor=pointer]:
+                    - img [ref=e1157]
+                  - button [ref=e1159] [cursor=pointer]:
+                    - img [ref=e1160]
+              - alert [ref=e1162]:
+                - img [ref=e1164]
+                - generic [ref=e1166]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1167] [cursor=pointer]:
+                  - generic [ref=e1168]: Confirmer
+            - separator [ref=e1169]
+            - generic [ref=e1170]:
+              - generic [ref=e1171]:
+                - generic [ref=e1172]:
+                  - generic [ref=e1173]: Paymium x Playwright 3/4/2026 10:49:50 AM
+                  - generic [ref=e1174]: tb1qd3yke6zx3w8jmnclyw3lhf6ezt7ganjfgwt04l
+                - generic [ref=e1175]:
+                  - button [ref=e1176] [cursor=pointer]:
+                    - img [ref=e1177]
+                  - button [ref=e1179] [cursor=pointer]:
+                    - img [ref=e1180]
+              - alert [ref=e1182]:
+                - img [ref=e1184]
+                - generic [ref=e1186]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1187] [cursor=pointer]:
+                  - generic [ref=e1188]: Confirmer
+            - separator [ref=e1189]
+            - generic [ref=e1190]:
+              - generic [ref=e1191]:
+                - generic [ref=e1192]:
+                  - generic [ref=e1193]: Paymium x Playwright 3/4/2026 10:48:17 AM
+                  - generic [ref=e1194]: tb1qqdhda57r5rvgdq9nlfwrezvymkaeedce4fhryk
+                - generic [ref=e1195]:
+                  - button [ref=e1196] [cursor=pointer]:
+                    - img [ref=e1197]
+                  - button [ref=e1199] [cursor=pointer]:
+                    - img [ref=e1200]
+              - alert [ref=e1202]:
+                - img [ref=e1204]
+                - generic [ref=e1206]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1207] [cursor=pointer]:
+                  - generic [ref=e1208]: Confirmer
+            - separator [ref=e1209]
+            - generic [ref=e1210]:
+              - generic [ref=e1211]:
+                - generic [ref=e1212]:
+                  - generic [ref=e1213]: Paymium x Playwright 3/4/2026 9:54:53 AM
+                  - generic [ref=e1214]: tb1qtjv4us0yp5dkeg6l2c7dszpqlj3427atj8zqxj
+                - generic [ref=e1215]:
+                  - button [ref=e1216] [cursor=pointer]:
+                    - img [ref=e1217]
+                  - button [ref=e1219] [cursor=pointer]:
+                    - img [ref=e1220]
+              - alert [ref=e1222]:
+                - img [ref=e1224]
+                - generic [ref=e1226]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1227] [cursor=pointer]:
+                  - generic [ref=e1228]: Confirmer
+            - separator [ref=e1229]
+            - generic [ref=e1230]:
+              - generic [ref=e1231]:
+                - generic [ref=e1232]:
+                  - generic [ref=e1233]: Paymium x Playwright 3/4/2026 9:52:05 AM
+                  - generic [ref=e1234]: tb1q7z29y0vrwe3vg6nc42pvjxr7tlmpzvw3l09nkz
+                - generic [ref=e1235]:
+                  - button [ref=e1236] [cursor=pointer]:
+                    - img [ref=e1237]
+                  - button [ref=e1239] [cursor=pointer]:
+                    - img [ref=e1240]
+              - alert [ref=e1242]:
+                - img [ref=e1244]
+                - generic [ref=e1246]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1247] [cursor=pointer]:
+                  - generic [ref=e1248]: Confirmer
+            - separator [ref=e1249]
+            - generic [ref=e1250]:
+              - generic [ref=e1251]:
+                - generic [ref=e1252]:
+                  - generic [ref=e1253]: Paymium x Playwright 3/4/2026 8:58:39 AM
+                  - generic [ref=e1254]: tb1qms009lv383ycq0upc339jlcd5anp5scnjly3mj
+                - generic [ref=e1255]:
+                  - button [ref=e1256] [cursor=pointer]:
+                    - img [ref=e1257]
+                  - button [ref=e1259] [cursor=pointer]:
+                    - img [ref=e1260]
+              - alert [ref=e1262]:
+                - img [ref=e1264]
+                - generic [ref=e1266]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1267] [cursor=pointer]:
+                  - generic [ref=e1268]: Confirmer
+            - separator [ref=e1269]
+            - generic [ref=e1270]:
+              - generic [ref=e1271]:
+                - generic [ref=e1272]:
+                  - generic [ref=e1273]: Paymium x Playwright 3/4/2026 8:57:42 AM
+                  - generic [ref=e1274]: tb1qlz384ydcyrfy53ueuvqw3n6nn9p7trg7duqfep
+                - generic [ref=e1275]:
+                  - button [ref=e1276] [cursor=pointer]:
+                    - img [ref=e1277]
+                  - button [ref=e1279] [cursor=pointer]:
+                    - img [ref=e1280]
+              - alert [ref=e1282]:
+                - img [ref=e1284]
+                - generic [ref=e1286]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1287] [cursor=pointer]:
+                  - generic [ref=e1288]: Confirmer
+            - separator [ref=e1289]
+            - generic [ref=e1290]:
+              - generic [ref=e1291]:
+                - generic [ref=e1292]:
+                  - generic [ref=e1293]: Paymium x Playwright 3/4/2026 8:27:41 AM
+                  - generic [ref=e1294]: tb1qck3fy64204040llzl79hkc4gdlvk8ddhreplgw
+                - generic [ref=e1295]:
+                  - button [ref=e1296] [cursor=pointer]:
+                    - img [ref=e1297]
+                  - button [ref=e1299] [cursor=pointer]:
+                    - img [ref=e1300]
+              - alert [ref=e1302]:
+                - img [ref=e1304]
+                - generic [ref=e1306]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1307] [cursor=pointer]:
+                  - generic [ref=e1308]: Confirmer
+            - separator [ref=e1309]
+            - generic [ref=e1310]:
+              - generic [ref=e1311]:
+                - generic [ref=e1312]:
+                  - generic [ref=e1313]: Paymium x Playwright 3/4/2026 8:26:39 AM
+                  - generic [ref=e1314]: tb1qccc84j9pzw5r7vw78g3v7w6xnmwjd87vq77u64
+                - generic [ref=e1315]:
+                  - button [ref=e1316] [cursor=pointer]:
+                    - img [ref=e1317]
+                  - button [ref=e1319] [cursor=pointer]:
+                    - img [ref=e1320]
+              - alert [ref=e1322]:
+                - img [ref=e1324]
+                - generic [ref=e1326]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1327] [cursor=pointer]:
+                  - generic [ref=e1328]: Confirmer
+            - separator [ref=e1329]
+            - generic [ref=e1330]:
+              - generic [ref=e1331]:
+                - generic [ref=e1332]:
+                  - generic [ref=e1333]: Paymium x Playwright 3/4/2026 6:06:53 AM
+                  - generic [ref=e1334]: tb1qu8xm665907fdqyxv53yzfwhyh8lj4pp5f86dck
+                - generic [ref=e1335]:
+                  - button [ref=e1336] [cursor=pointer]:
+                    - img [ref=e1337]
+                  - button [ref=e1339] [cursor=pointer]:
+                    - img [ref=e1340]
+              - alert [ref=e1342]:
+                - img [ref=e1344]
+                - generic [ref=e1346]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1347] [cursor=pointer]:
+                  - generic [ref=e1348]: Confirmer
+            - separator [ref=e1349]
+            - generic [ref=e1350]:
+              - generic [ref=e1351]:
+                - generic [ref=e1352]:
+                  - generic [ref=e1353]: Paymium x Playwright 3/4/2026 6:06:04 AM
+                  - generic [ref=e1354]: tb1qr4w8n4c9dv36ngvgfs0vhvu0ptq58l7cv8t34a
+                - generic [ref=e1355]:
+                  - button [ref=e1356] [cursor=pointer]:
+                    - img [ref=e1357]
+                  - button [ref=e1359] [cursor=pointer]:
+                    - img [ref=e1360]
+              - alert [ref=e1362]:
+                - img [ref=e1364]
+                - generic [ref=e1366]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1367] [cursor=pointer]:
+                  - generic [ref=e1368]: Confirmer
+            - separator [ref=e1369]
+            - generic [ref=e1370]:
+              - generic [ref=e1371]:
+                - generic [ref=e1372]:
+                  - generic [ref=e1373]: Paymium x Playwright 3/4/2026 5:38:32 AM
+                  - generic [ref=e1374]: tb1q07jp40wl434swnrpdap57lzr8cy4k0qvmds7fa
+                - generic [ref=e1375]:
+                  - button [ref=e1376] [cursor=pointer]:
+                    - img [ref=e1377]
+                  - button [ref=e1379] [cursor=pointer]:
+                    - img [ref=e1380]
+              - alert [ref=e1382]:
+                - img [ref=e1384]
+                - generic [ref=e1386]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1387] [cursor=pointer]:
+                  - generic [ref=e1388]: Confirmer
+            - separator [ref=e1389]
+            - generic [ref=e1390]:
+              - generic [ref=e1391]:
+                - generic [ref=e1392]:
+                  - generic [ref=e1393]: Paymium x Playwright 3/4/2026 5:37:37 AM
+                  - generic [ref=e1394]: tb1qcx4y5qyrlt9wc9lt692teu9hw782ucpnv2j2nu
+                - generic [ref=e1395]:
+                  - button [ref=e1396] [cursor=pointer]:
+                    - img [ref=e1397]
+                  - button [ref=e1399] [cursor=pointer]:
+                    - img [ref=e1400]
+              - alert [ref=e1402]:
+                - img [ref=e1404]
+                - generic [ref=e1406]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1407] [cursor=pointer]:
+                  - generic [ref=e1408]: Confirmer
+            - separator [ref=e1409]
+            - generic [ref=e1410]:
+              - generic [ref=e1411]:
+                - generic [ref=e1412]:
+                  - generic [ref=e1413]: Paymium x Playwright 3/4/2026 4:39:20 AM
+                  - generic [ref=e1414]: tb1qrrje83n7nkm8s3euegkefua64uz5p5fvt3zrwt
+                - generic [ref=e1415]:
+                  - button [ref=e1416] [cursor=pointer]:
+                    - img [ref=e1417]
+                  - button [ref=e1419] [cursor=pointer]:
+                    - img [ref=e1420]
+              - alert [ref=e1422]:
+                - img [ref=e1424]
+                - generic [ref=e1426]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1427] [cursor=pointer]:
+                  - generic [ref=e1428]: Confirmer
+            - separator [ref=e1429]
+            - generic [ref=e1430]:
+              - generic [ref=e1431]:
+                - generic [ref=e1432]:
+                  - generic [ref=e1433]: Paymium x Playwright 3/4/2026 4:35:49 AM
+                  - generic [ref=e1434]: tb1q5wcd6ggmmvh56hkuyvu3gfgu2anz2nezelnvjy
+                - generic [ref=e1435]:
+                  - button [ref=e1436] [cursor=pointer]:
+                    - img [ref=e1437]
+                  - button [ref=e1439] [cursor=pointer]:
+                    - img [ref=e1440]
+              - alert [ref=e1442]:
+                - img [ref=e1444]
+                - generic [ref=e1446]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1447] [cursor=pointer]:
+                  - generic [ref=e1448]: Confirmer
+            - separator [ref=e1449]
+            - generic [ref=e1450]:
+              - generic [ref=e1451]:
+                - generic [ref=e1452]:
+                  - generic [ref=e1453]: Paymium x Playwright 3/4/2026 4:32:49 AM
+                  - generic [ref=e1454]: tb1qrhpx2t484pkyjpn0840kt2dage5szxqza26u3y
+                - generic [ref=e1455]:
+                  - button [ref=e1456] [cursor=pointer]:
+                    - img [ref=e1457]
+                  - button [ref=e1459] [cursor=pointer]:
+                    - img [ref=e1460]
+              - alert [ref=e1462]:
+                - img [ref=e1464]
+                - generic [ref=e1466]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1467] [cursor=pointer]:
+                  - generic [ref=e1468]: Confirmer
+            - separator [ref=e1469]
+            - generic [ref=e1470]:
+              - generic [ref=e1471]:
+                - generic [ref=e1472]:
+                  - generic [ref=e1473]: Paymium x Playwright 3/4/2026 4:30:56 AM
+                  - generic [ref=e1474]: tb1qcs9jv8qzpqvy2smpm9mxuc75hxakwtt03fv304
+                - generic [ref=e1475]:
+                  - button [ref=e1476] [cursor=pointer]:
+                    - img [ref=e1477]
+                  - button [ref=e1479] [cursor=pointer]:
+                    - img [ref=e1480]
+              - alert [ref=e1482]:
+                - img [ref=e1484]
+                - generic [ref=e1486]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1487] [cursor=pointer]:
+                  - generic [ref=e1488]: Confirmer
+            - separator [ref=e1489]
+            - generic [ref=e1490]:
+              - generic [ref=e1491]:
+                - generic [ref=e1492]:
+                  - generic [ref=e1493]: Paymium x Playwright 3/3/2026 3:55:06 PM
+                  - generic [ref=e1494]: tb1q4qla0k9f2qqmfg7a3rxw0sanxd6huu07hxgl9s
+                - generic [ref=e1495]:
+                  - button [ref=e1496] [cursor=pointer]:
+                    - img [ref=e1497]
+                  - button [ref=e1499] [cursor=pointer]:
+                    - img [ref=e1500]
+              - alert [ref=e1502]:
+                - img [ref=e1504]
+                - generic [ref=e1506]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1507] [cursor=pointer]:
+                  - generic [ref=e1508]: Confirmer
+            - separator [ref=e1509]
+            - generic [ref=e1510]:
+              - generic [ref=e1511]:
+                - generic [ref=e1512]:
+                  - generic [ref=e1513]: Paymium x Playwright 3/3/2026 3:54:12 PM
+                  - generic [ref=e1514]: tb1q3ztyyrepc8m7cx358qc5s249zzy7vsc2h967fl
+                - generic [ref=e1515]:
+                  - button [ref=e1516] [cursor=pointer]:
+                    - img [ref=e1517]
+                  - button [ref=e1519] [cursor=pointer]:
+                    - img [ref=e1520]
+              - alert [ref=e1522]:
+                - img [ref=e1524]
+                - generic [ref=e1526]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1527] [cursor=pointer]:
+                  - generic [ref=e1528]: Confirmer
+            - separator [ref=e1529]
+            - generic [ref=e1530]:
+              - generic [ref=e1531]:
+                - generic [ref=e1532]:
+                  - generic [ref=e1533]: Paymium x Playwright 3/3/2026 2:56:36 PM
+                  - generic [ref=e1534]: tb1qhyw4ame0z3m4009mvpj65jvvdgfjwquvndzdq2
+                - generic [ref=e1535]:
+                  - button [ref=e1536] [cursor=pointer]:
+                    - img [ref=e1537]
+                  - button [ref=e1539] [cursor=pointer]:
+                    - img [ref=e1540]
+              - alert [ref=e1542]:
+                - img [ref=e1544]
+                - generic [ref=e1546]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1547] [cursor=pointer]:
+                  - generic [ref=e1548]: Confirmer
+            - separator [ref=e1549]
+            - generic [ref=e1550]:
+              - generic [ref=e1551]:
+                - generic [ref=e1552]:
+                  - generic [ref=e1553]: Paymium x Playwright 3/3/2026 2:55:23 PM
+                  - generic [ref=e1554]: tb1qmnhpqtsnta86lp028p450k89hm3apnynlnxer0
+                - generic [ref=e1555]:
+                  - button [ref=e1556] [cursor=pointer]:
+                    - img [ref=e1557]
+                  - button [ref=e1559] [cursor=pointer]:
+                    - img [ref=e1560]
+              - alert [ref=e1562]:
+                - img [ref=e1564]
+                - generic [ref=e1566]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1567] [cursor=pointer]:
+                  - generic [ref=e1568]: Confirmer
+            - separator [ref=e1569]
+            - generic [ref=e1571]:
+              - generic [ref=e1572]:
+                - generic [ref=e1573]: Paymium x Playwright 3/3/2026 1:55:52 PM
+                - generic [ref=e1574]: tb1qugfu32j3yej44gu06wf0pj8d92m348xg4vud3c
+              - generic [ref=e1575]:
+                - button [ref=e1576] [cursor=pointer]:
+                  - img [ref=e1577]
+                - button [ref=e1579] [cursor=pointer]:
+                  - img [ref=e1580]
+            - separator [ref=e1582]
+            - generic [ref=e1583]:
+              - generic [ref=e1584]:
+                - generic [ref=e1585]:
+                  - generic [ref=e1586]: Paymium x Playwright 3/3/2026 12:38:06 PM
+                  - generic [ref=e1587]: tb1qy36zqmvw8shsvzc6ttrujsk2jzuyqkh6lnhxcc
+                - generic [ref=e1588]:
+                  - button [ref=e1589] [cursor=pointer]:
+                    - img [ref=e1590]
+                  - button [ref=e1592] [cursor=pointer]:
+                    - img [ref=e1593]
+              - alert [ref=e1595]:
+                - img [ref=e1597]
+                - generic [ref=e1599]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1600] [cursor=pointer]:
+                  - generic [ref=e1601]: Confirmer
+            - separator [ref=e1602]
+            - generic [ref=e1603]:
+              - generic [ref=e1604]:
+                - generic [ref=e1605]:
+                  - generic [ref=e1606]: Paymium x Playwright 3/3/2026 12:37:07 PM
+                  - generic [ref=e1607]: tb1q70x5udfygycx3sgkxnf9g3jvpj2z8meqqe66cf
+                - generic [ref=e1608]:
+                  - button [ref=e1609] [cursor=pointer]:
+                    - img [ref=e1610]
+                  - button [ref=e1612] [cursor=pointer]:
+                    - img [ref=e1613]
+              - alert [ref=e1615]:
+                - img [ref=e1617]
+                - generic [ref=e1619]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1620] [cursor=pointer]:
+                  - generic [ref=e1621]: Confirmer
+            - separator [ref=e1622]
+            - generic [ref=e1623]:
+              - generic [ref=e1624]:
+                - generic [ref=e1625]:
+                  - generic [ref=e1626]: Paymium x Playwright 3/3/2026 11:58:12 AM
+                  - generic [ref=e1627]: tb1q70nwgjge6hhpe6x4u4els98zkf4uxakufk672u
+                - generic [ref=e1628]:
+                  - button [ref=e1629] [cursor=pointer]:
+                    - img [ref=e1630]
+                  - button [ref=e1632] [cursor=pointer]:
+                    - img [ref=e1633]
+              - alert [ref=e1635]:
+                - img [ref=e1637]
+                - generic [ref=e1639]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1640] [cursor=pointer]:
+                  - generic [ref=e1641]: Confirmer
+            - separator [ref=e1642]
+            - generic [ref=e1643]:
+              - generic [ref=e1644]:
+                - generic [ref=e1645]:
+                  - generic [ref=e1646]: Paymium x Playwright 3/3/2026 11:57:10 AM
+                  - generic [ref=e1647]: tb1q5m7tzr96ykmedsaknnuqcyspy4j35tsweh0294
+                - generic [ref=e1648]:
+                  - button [ref=e1649] [cursor=pointer]:
+                    - img [ref=e1650]
+                  - button [ref=e1652] [cursor=pointer]:
+                    - img [ref=e1653]
+              - alert [ref=e1655]:
+                - img [ref=e1657]
+                - generic [ref=e1659]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1660] [cursor=pointer]:
+                  - generic [ref=e1661]: Confirmer
+            - separator [ref=e1662]
+            - generic [ref=e1663]:
+              - generic [ref=e1664]:
+                - generic [ref=e1665]:
+                  - generic [ref=e1666]: Paymium x Playwright 3/3/2026 10:42:03 AM
+                  - generic [ref=e1667]: tb1q6pzfjjcazdh8ctyug4rqd6pt7d3hpak9a43uvz
+                - generic [ref=e1668]:
+                  - button [ref=e1669] [cursor=pointer]:
+                    - img [ref=e1670]
+                  - button [ref=e1672] [cursor=pointer]:
+                    - img [ref=e1673]
+              - alert [ref=e1675]:
+                - img [ref=e1677]
+                - generic [ref=e1679]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1680] [cursor=pointer]:
+                  - generic [ref=e1681]: Confirmer
+            - separator [ref=e1682]
+            - generic [ref=e1683]:
+              - generic [ref=e1684]:
+                - generic [ref=e1685]:
+                  - generic [ref=e1686]: Paymium x Playwright 3/3/2026 10:41:05 AM
+                  - generic [ref=e1687]: tb1qfqehd7zka7ppcm5ddeamj2pnhdeknkzzxaqyhz
+                - generic [ref=e1688]:
+                  - button [ref=e1689] [cursor=pointer]:
+                    - img [ref=e1690]
+                  - button [ref=e1692] [cursor=pointer]:
+                    - img [ref=e1693]
+              - alert [ref=e1695]:
+                - img [ref=e1697]
+                - generic [ref=e1699]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1700] [cursor=pointer]:
+                  - generic [ref=e1701]: Confirmer
+            - separator [ref=e1702]
+            - generic [ref=e1704]:
+              - generic [ref=e1705]:
+                - generic [ref=e1706]: Paymium x Playwright 3/3/2026 9:32:49 AM
+                - generic [ref=e1707]: tb1q6u7cg27mkyerxl5a6qa5j52h38qeqgdpl08t59
+              - generic [ref=e1708]:
+                - button [ref=e1709] [cursor=pointer]:
+                  - img [ref=e1710]
+                - button [ref=e1712] [cursor=pointer]:
+                  - img [ref=e1713]
+            - separator [ref=e1715]
+            - generic [ref=e1716]:
+              - generic [ref=e1717]:
+                - generic [ref=e1718]:
+                  - generic [ref=e1719]: Paymium x Playwright 3/2/2026 4:41:55 PM
+                  - generic [ref=e1720]: tb1qvs9a3766gecdqfukehkccjvg4kl2c057hr2ext
+                - generic [ref=e1721]:
+                  - button [ref=e1722] [cursor=pointer]:
+                    - img [ref=e1723]
+                  - button [ref=e1725] [cursor=pointer]:
+                    - img [ref=e1726]
+              - alert [ref=e1728]:
+                - img [ref=e1730]
+                - generic [ref=e1732]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1733] [cursor=pointer]:
+                  - generic [ref=e1734]: Confirmer
+            - separator [ref=e1735]
+            - generic [ref=e1736]:
+              - generic [ref=e1737]:
+                - generic [ref=e1738]:
+                  - generic [ref=e1739]: Paymium x Playwright 3/2/2026 4:40:57 PM
+                  - generic [ref=e1740]: tb1qjyhjf7nxj2nqpjyw7z43vwugpfdtjfv4hymdcr
+                - generic [ref=e1741]:
+                  - button [ref=e1742] [cursor=pointer]:
+                    - img [ref=e1743]
+                  - button [ref=e1745] [cursor=pointer]:
+                    - img [ref=e1746]
+              - alert [ref=e1748]:
+                - img [ref=e1750]
+                - generic [ref=e1752]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1753] [cursor=pointer]:
+                  - generic [ref=e1754]: Confirmer
+            - separator [ref=e1755]
+            - generic [ref=e1756]:
+              - generic [ref=e1757]:
+                - generic [ref=e1758]:
+                  - generic [ref=e1759]: Paymium x Playwright 3/2/2026 11:44:32 AM
+                  - generic [ref=e1760]: tb1q3wrsddhcu36cx6fx9prrwqyr47ywspz9z84m5j
+                - generic [ref=e1761]:
+                  - button [ref=e1762] [cursor=pointer]:
+                    - img [ref=e1763]
+                  - button [ref=e1765] [cursor=pointer]:
+                    - img [ref=e1766]
+              - alert [ref=e1768]:
+                - img [ref=e1770]
+                - generic [ref=e1772]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1773] [cursor=pointer]:
+                  - generic [ref=e1774]: Confirmer
+            - separator [ref=e1775]
+            - generic [ref=e1776]:
+              - generic [ref=e1777]:
+                - generic [ref=e1778]:
+                  - generic [ref=e1779]: Paymium x Playwright 3/2/2026 11:43:21 AM
+                  - generic [ref=e1780]: tb1qelk8kgawn70ysy9s6t2f9fat2esgk3nadgqh4f
+                - generic [ref=e1781]:
+                  - button [ref=e1782] [cursor=pointer]:
+                    - img [ref=e1783]
+                  - button [ref=e1785] [cursor=pointer]:
+                    - img [ref=e1786]
+              - alert [ref=e1788]:
+                - img [ref=e1790]
+                - generic [ref=e1792]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1793] [cursor=pointer]:
+                  - generic [ref=e1794]: Confirmer
+            - separator [ref=e1795]
+            - generic [ref=e1796]:
+              - generic [ref=e1797]:
+                - generic [ref=e1798]:
+                  - generic [ref=e1799]: Paymium x Playwright 3/2/2026 10:01:29 AM
+                  - generic [ref=e1800]: tb1qwwlgpjy3d05t7ztcsj79fza9y5krv7j90m4qja
+                - generic [ref=e1801]:
+                  - button [ref=e1802] [cursor=pointer]:
+                    - img [ref=e1803]
+                  - button [ref=e1805] [cursor=pointer]:
+                    - img [ref=e1806]
+              - alert [ref=e1808]:
+                - img [ref=e1810]
+                - generic [ref=e1812]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1813] [cursor=pointer]:
+                  - generic [ref=e1814]: Confirmer
+            - separator [ref=e1815]
+            - generic [ref=e1816]:
+              - generic [ref=e1817]:
+                - generic [ref=e1818]:
+                  - generic [ref=e1819]: Paymium x Playwright 3/2/2026 8:42:09 AM
+                  - generic [ref=e1820]: tb1qm5d3ffe6je2gtyhej9mscxc4za6fjs08gfcxxk
+                - generic [ref=e1821]:
+                  - button [ref=e1822] [cursor=pointer]:
+                    - img [ref=e1823]
+                  - button [ref=e1825] [cursor=pointer]:
+                    - img [ref=e1826]
+              - alert [ref=e1828]:
+                - img [ref=e1830]
+                - generic [ref=e1832]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1833] [cursor=pointer]:
+                  - generic [ref=e1834]: Confirmer
+            - separator [ref=e1835]
+            - generic [ref=e1836]:
+              - generic [ref=e1837]:
+                - generic [ref=e1838]:
+                  - generic [ref=e1839]: Paymium x Playwright 3/2/2026 8:10:39 AM
+                  - generic [ref=e1840]: tb1q0lxwz35mwlyh6pjlsvxa2vynz9gpa8m5h28mgy
+                - generic [ref=e1841]:
+                  - button [ref=e1842] [cursor=pointer]:
+                    - img [ref=e1843]
+                  - button [ref=e1845] [cursor=pointer]:
+                    - img [ref=e1846]
+              - alert [ref=e1848]:
+                - img [ref=e1850]
+                - generic [ref=e1852]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1853] [cursor=pointer]:
+                  - generic [ref=e1854]: Confirmer
+            - separator [ref=e1855]
+            - generic [ref=e1856]:
+              - generic [ref=e1857]:
+                - generic [ref=e1858]:
+                  - generic [ref=e1859]: Paymium x Playwright 3/2/2026 8:09:32 AM
+                  - generic [ref=e1860]: tb1qqyu9t2zaclt9qz5mu2mlrzcmt69x4gp97djgup
+                - generic [ref=e1861]:
+                  - button [ref=e1862] [cursor=pointer]:
+                    - img [ref=e1863]
+                  - button [ref=e1865] [cursor=pointer]:
+                    - img [ref=e1866]
+              - alert [ref=e1868]:
+                - img [ref=e1870]
+                - generic [ref=e1872]: Merci de confirmer cette adresse de retrait afin de pouvoir l'utiliser. Vous pouvez également la supprimer.
+                - button "Confirmer" [ref=e1873] [cursor=pointer]:
+                  - generic [ref=e1874]: Confirmer
+            - separator [ref=e1875]
+            - generic [ref=e1877]:
+              - generic [ref=e1878]:
+                - generic [ref=e1879]: Paymium x Playwright 3/2/2026 5:24:53 AM
+                - generic [ref=e1880]: tb1qke05rdak8f69jzhqyz5h95fv0easkxwepfhs3u
+              - generic [ref=e1881]:
+                - button [ref=e1882] [cursor=pointer]:
+                  - img [ref=e1883]
+                - button [ref=e1885] [cursor=pointer]:
+                  - img [ref=e1886]
+            - separator [ref=e1888]
+            - generic [ref=e1890]:
+              - generic [ref=e1891]:
+                - generic [ref=e1892]: Paymium x Playwright 3/2/2026 4:30:37 AM
+                - generic [ref=e1893]: tb1q3n6wqgh6e4mlr4dcyd6eyhw02hcpqsfenl49qp
+              - generic [ref=e1894]:
+                - button [ref=e1895] [cursor=pointer]:
+                  - img [ref=e1896]
+                - button [ref=e1898] [cursor=pointer]:
+                  - img [ref=e1899]
+            - separator [ref=e1901]
+            - generic [ref=e1903]:
+              - generic [ref=e1904]:
+                - generic [ref=e1905]: Paymium x Playwright 3/2/2026 4:28:44 AM
+                - generic [ref=e1906]: tb1qezq00f9uzuqc7yk0cn3lxn4yc7kjswf3nx2uwd
+              - generic [ref=e1907]:
+                - button [ref=e1908] [cursor=pointer]:
+                  - img [ref=e1909]
+                - button [ref=e1911] [cursor=pointer]:
+                  - img [ref=e1912]
+          - generic [ref=e1914]:
+            - separator [ref=e1915]
+            - generic [ref=e1916]: Mes portefeuilles non-hébergés
+            - generic [ref=e1917]:
+              - generic [ref=e1920]:
+                - generic [ref=e1921]: test 2
+                - generic [ref=e1922]: tb1q3vuq0dqf8whskdccqvhx9xhkg9gfj35vchyf8z
+              - generic [ref=e1925]:
+                - generic [ref=e1926]: test
+                - generic [ref=e1927]: tb1qt67d0560harywvljnjumjfcecu6p6ls2m95dl7
+        - button "Ajouter adresse de retrait" [ref=e1928] [cursor=pointer]:
+          - generic [ref=e1929]: Ajouter adresse de retrait
+```

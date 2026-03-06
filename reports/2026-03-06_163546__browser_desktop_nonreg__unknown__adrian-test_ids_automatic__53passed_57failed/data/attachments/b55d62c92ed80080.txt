@@ -1,6 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByRole('dialog').last().getByText('Détails de l\'achat récurrent') to be visible
-
-
