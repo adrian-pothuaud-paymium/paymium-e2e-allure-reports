@@ -1,7 +1,0 @@
-PUT /user failed Request failed with status code 500
-Failed to update user information: 500 Internal Server Error
-Attempt 1 to create test user failed: Request failed with status code 500
-Attempt 2 to create test user failed: Request failed with status code 500
-Attempt 3 to create test user failed: Request failed with status code 500
-Error: Failed to create test user after 3 attempts
-

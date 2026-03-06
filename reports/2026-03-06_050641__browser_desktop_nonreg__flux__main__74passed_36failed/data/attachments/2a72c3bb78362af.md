@@ -1,0 +1,65 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e8]:
+  - generic [ref=e9]:
+    - link [ref=e11] [cursor=pointer]:
+      - /url: https://www.paymium.com/
+      - img [ref=e13]
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - button "FR" [ref=e51] [cursor=pointer]:
+          - generic [ref=e52]: FR
+          - img [ref=e53]
+        - button [ref=e55] [cursor=pointer]:
+          - img [ref=e58]
+        - button [ref=e61] [cursor=pointer]:
+          - img [ref=e62]
+      - button "Se connecter" [ref=e65] [cursor=pointer]:
+        - generic [ref=e66]: Se connecter
+  - generic [ref=e67]:
+    - navigation
+    - generic [ref=e68]:
+      - form [ref=e72]:
+        - generic [ref=e74]:
+          - tablist [ref=e77]:
+            - tab [selected] [ref=e78]
+            - tab [ref=e80]
+            - tab [ref=e81]
+            - tab [ref=e82]
+            - tab [ref=e83]
+          - generic [ref=e84]:
+            - button [ref=e87] [cursor=pointer]:
+              - img [ref=e88]
+            - generic [ref=e90]:
+              - generic [ref=e92]:
+                - generic [ref=e93]:
+                  - generic [ref=e94]: Votre email
+                  - generic [ref=e95]: Nous vous enverrons les informations importantes sur votre compte.
+                - generic [ref=e97]:
+                  - generic [ref=e99]: Email
+                  - textbox "Email" [ref=e101]:
+                    - /placeholder: email@email.com
+                - generic [ref=e102]:
+                  - checkbox "J'accepte les Conditions Générales d'Utilisation de Paymium." [ref=e103] [cursor=pointer]:
+                    - checkbox [ref=e105]
+                    - generic [ref=e107]:
+                      - text: J'accepte les
+                      - link "Conditions Générales d'Utilisation de Paymium" [ref=e108]:
+                        - /url: https://paymium-public-files.s3.fr-par.scw.cloud/CGU/CGU_Paymium.pdf
+                      - text: .
+                  - checkbox "Je souhaite recevoir les analyses de marché réalisées par Paymium." [ref=e109] [cursor=pointer]:
+                    - checkbox [ref=e111]
+                    - generic [ref=e113]: Je souhaite recevoir les analyses de marché réalisées par Paymium.
+              - button "Continuer" [disabled]:
+                - generic: Continuer
+      - contentinfo [ref=e114]:
+        - generic [ref=e115]:
+          - generic [ref=e116]: Copyright © 2026
+          - link "Paymium" [ref=e117] [cursor=pointer]:
+            - /url: https://sandbox-paymium.webflow.io/
+          - generic [ref=e118]: 6.16.0
+          - link "Statut" [ref=e119] [cursor=pointer]:
+            - /url: /status
+          - link "Gérer vos cookies" [ref=e120] [cursor=pointer]
+```

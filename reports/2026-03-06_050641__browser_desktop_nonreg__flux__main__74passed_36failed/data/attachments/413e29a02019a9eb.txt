@@ -1,0 +1,11 @@
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /^(.*)\/sign-in(.*)$/
+Received string:  "https://account-flux.sandbox-paymium.com/dashboard"
+Timeout: 30000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 30000ms
+    31 × unexpected value "https://account-flux.sandbox-paymium.com/dashboard"
+
+

@@ -1,0 +1,257 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic:
+    - generic:
+      - generic:
+        - link:
+          - /url: /dashboard
+          - generic:
+            - img
+        - generic:
+          - button:
+            - img
+            - generic: Acheter
+          - button:
+            - img
+          - button:
+            - generic: FR
+            - img
+          - button:
+            - generic:
+              - generic:
+                - img
+          - button:
+            - img
+          - button:
+            - img
+          - button:
+            - img
+      - generic:
+        - navigation:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - textbox:
+                    - /placeholder: Chercher
+            - generic:
+              - link:
+                - /url: /dashboard
+                - img
+                - generic: Tableau de bord
+              - link:
+                - /url: /wallet
+                - img
+                - generic: Portefeuille
+              - link:
+                - /url: /deposit/EUR
+                - img
+                - generic: Dépôt / retrait
+              - link:
+                - /url: /recurrent
+                - img
+                - generic: Achat récurrent
+              - link:
+                - /url: /trade/BTC/EUR
+                - img
+                - generic: Mode expert
+              - link:
+                - /url: /referral
+                - img
+                - generic: Parrainage
+              - link:
+                - /url: /family
+                - img
+                - generic: Plan Bitcoin Famille
+              - link:
+                - /url: /history
+                - img
+                - generic: Historique
+        - generic:
+          - generic:
+            - generic:
+              - generic: Transfert
+              - generic:
+                - generic:
+                  - tablist:
+                    - generic:
+                      - tab:
+                        - generic: Déposer
+                      - tab [selected]:
+                        - generic: Retirer
+                      - tab:
+                        - generic: Transfert interne
+                      - tab:
+                        - generic: Envoyer par email
+                - tabpanel:
+                  - generic:
+                    - generic:
+                      - banner:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic: Votre transfert interne est en cours de traitement.
+                        - link:
+                          - /url: /history?type=history-internalTransfer
+                          - generic: Voir l'historique
+                    - generic:
+                      - form:
+                        - generic:
+                          - generic:
+                            - generic: Retrait
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic: Devise
+                                  - generic:
+                                    - button:
+                                      - generic:
+                                        - textbox: BTC
+                                      - generic:
+                                        - generic:
+                                          - img
+                                          - generic:
+                                            - generic: Bitcoin
+                                      - img
+                              - alert:
+                                - generic: Retirer uniquement des BTC vers des adresses du réseau Bitcoin. Les retraits vers des adresses générées sur d'autres réseaux pourraient entraîner la perte de vos fonds.
+                              - generic:
+                                - button:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic: Adresse de retrait
+                                      - generic:
+                                        - button:
+                                          - generic:
+                                            - textbox: "92132"
+                                          - generic:
+                                            - generic:
+                                              - text: Paymium x Playwright 3/5/2026 4:34:43 AM
+                                              - generic: "- tb1qs...gpqw9"
+                                          - img
+                                - button: Gérer les adresses
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic: Montant du retrait
+                                    - generic:
+                                      - generic: Solde
+                                      - generic: 0,27225691 BTC
+                                  - generic:
+                                    - button:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - textbox
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - button:
+                                                    - generic: Max
+                                  - generic:
+                                    - button:
+                                      - generic: 25%
+                                    - button:
+                                      - generic: 50%
+                                    - button:
+                                      - generic: 75%
+                                    - button:
+                                      - generic: 100%
+                              - button:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: Commentaire
+                                    - generic:
+                                      - textbox
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - button:
+                                      - generic:
+                                        - textbox: "true"
+                                      - generic:
+                                        - generic:
+                                          - generic: Retrait rapide
+                                          - generic: Moins de 10 min. - payant
+                                      - img
+                              - generic:
+                                - generic:
+                                  - generic: Retrait minimum
+                                  - generic: 0,00025000 BTC
+                                - generic:
+                                  - generic: Frais
+                                  - generic: 0,00005000 BTC
+                              - button [disabled]:
+                                - generic: Retirer
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Bitcoin disponible
+                                - generic:
+                                  - img
+                                  - generic: BTC
+                              - generic:
+                                - generic: Montant total
+                                - generic: 0,28195691 BTC
+                              - generic:
+                                - generic: Montant verrouillé
+                                - generic: 0,00970000 BTC
+                              - separator
+                              - generic:
+                                - generic: Disponible à retirer
+                                - generic: 0,27225691 BTC
+                            - generic:
+                              - generic:
+                                - img
+                                - generic: Informations retrait BTC
+                                - button:
+                                  - generic: Masquer
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - list:
+                                      - generic: "Les transferts de bitcoins sont traités exclusivement sur la blockchain Bitcoin. Pour effectuer votre transfert :"
+                                      - listitem:
+                                        - generic:
+                                          - generic: "1"
+                                        - generic: Remplissez le formulaire.
+                                      - listitem:
+                                        - generic:
+                                          - generic: "2"
+                                        - generic: Autorisez le transfert en renseignant le code à 6 chiffres qui vous sera envoyé à votre email.
+                                      - listitem:
+                                        - generic:
+                                          - generic: "3"
+                                        - generic: Généralement, les transferts sont exécutés en quelques minutes. Au-delà de 24h, veuillez contacter notre service support client.
+                                      - listitem:
+                                        - generic: Dans certains cas, notre équipe peut vous demander des informations complémentaires par mesure de sécurité.
+          - contentinfo:
+            - generic:
+              - generic: Copyright © 2026
+              - link:
+                - /url: https://sandbox-paymium.webflow.io/
+                - text: Paymium
+              - generic: 6.16.0
+              - link:
+                - /url: /status
+                - text: Statut
+              - link: Gérer vos cookies
+  - dialog [ref=e8]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - img [ref=e12]
+        - generic [ref=e14]: Votre transfert a été validé.
+        - generic [ref=e15]: Votre transfert est en route vers sa destination. Il sera exécuté dans les meilleurs délais.
+      - generic [ref=e17]:
+        - button "Voir l'état du transfert" [ref=e18] [cursor=pointer]:
+          - generic [ref=e19]: Voir l'état du transfert
+        - button "Fermer" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Fermer
+```

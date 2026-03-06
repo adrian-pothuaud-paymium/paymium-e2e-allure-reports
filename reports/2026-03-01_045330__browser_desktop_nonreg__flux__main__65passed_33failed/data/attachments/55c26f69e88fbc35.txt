@@ -1,4 +1,0 @@
-Request POST /api/user/wire_deposit_requests with body: {"execution_date_type":"instant","amount":"1.00"}
-Response status code: 422
-Response body: {"type":"about:blank","title":"Validation failed","status":422,"detail":"The request is invalid","instance":"record_invalid","errors":[{"detail":"Le montant indiqué n'est pas valide (il doit être compris entre 10.0 € et 100000000.0 €)","parameter":"base"}]}
-Request POST /api/user/wire_deposit_requests with body: {"execution_date_type":"instant","amount":"20.00"}
