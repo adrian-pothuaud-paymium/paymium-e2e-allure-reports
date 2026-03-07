@@ -1,0 +1,35 @@
+[pageerror] Permission policy 'Camera' check failed for document with origin 'https: /hpp-sandbox.worldpay.com'.
+[pageerror] Permission policy 'Microphone' check failed for document with origin 'https: /hpp-sandbox.worldpay.com'.
+[pageerror] Not allowed to call enumerateDevices.
+[pageerror] Permission policy 'Camera' check failed for document with origin 'https: /hpp-sandbox.worldpay.com'.
+[pageerror] Permission policy 'Microphone' check failed for document with origin 'https: /hpp-sandbox.worldpay.com'.
+[pageerror] Not allowed to call enumerateDevices.
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('iframe[name="wp-cl-custom-html-iframe"]').contentFrame().getByRole('button', { name: /Annuler/ })
+    - locator resolved to <a role="button" id="cancelButton" draggable="false" class="button btn-cancel" href="/app/hpp/159-1/payment/cancel/confirm;jsessionid=70777e6a-5bea-4988-b531-eb2297a0d878.os" data-cancel-url="/app/hpp/159-1/payment/cancel;jsessionid=70777e6a-5bea-4988-b531-eb2297a0d878.os">↵        Annuler↵    </a>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - element is outside of the viewport
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - element is outside of the viewport
+    - retrying click action
+      - waiting 100ms
+    5 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - element is outside of the viewport
+    - retrying click action
+      - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+
+
