@@ -1,0 +1,11 @@
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /^(.*)\/dashboard$/
+Received string:  "https://account.staging-paymium.com/sign-in"
+Timeout: 30000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 30000ms
+    32 × unexpected value "https://account.staging-paymium.com/sign-in"
+
+

@@ -1,0 +1,11 @@
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected: "S'inscrire - Paymium"
+Received: "Paymium"
+Timeout:  30000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 30000ms
+    32 × unexpected value "Paymium"
+
+

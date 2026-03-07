@@ -1,0 +1,88 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - button [ref=e49] [cursor=pointer]:
+        - img [ref=e51]
+    - generic [ref=e52]:
+      - navigation
+      - generic [ref=e53]:
+        - form [ref=e57]:
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - generic [ref=e61]:
+                - generic [ref=e62]: De
+                - generic [ref=e63]:
+                  - button "Max" [ref=e65] [cursor=pointer]:
+                    - generic [ref=e68]:
+                      - 'textbox "ex : 123.45" [ref=e69]'
+                      - button "Max" [ref=e72]:
+                        - generic [ref=e73]: Max
+                  - button "Ethereum" [ref=e74] [cursor=pointer]:
+                    - button "Ethereum" [ref=e78]:
+                      - textbox [ref=e80]: ETH
+                      - generic [ref=e82]:
+                        - img [ref=e83]
+                        - generic [ref=e94]: Ethereum
+                      - img [ref=e95]
+                - generic [ref=e97]:
+                  - generic [ref=e98]: "Solde:"
+                  - generic [ref=e99]: 0,80536958 ETH
+              - button [ref=e100] [cursor=pointer]:
+                - button [ref=e101]:
+                  - img [ref=e102]
+              - generic [ref=e106]:
+                - generic [ref=e108]:
+                  - generic [ref=e109]: À
+                  - generic [ref=e110]: (estimation)
+                - generic [ref=e111]:
+                  - button "0.00" [ref=e113] [cursor=pointer]:
+                    - 'textbox "ex : 123.45" [ref=e117]': "0.00"
+                  - button "Euro" [ref=e118] [cursor=pointer]:
+                    - button "Euro" [ref=e122]:
+                      - textbox [ref=e124]: EUR
+                      - generic [ref=e126]:
+                        - img [ref=e127]
+                        - generic [ref=e132]: Euro
+                      - img [ref=e133]
+                - generic [ref=e135]:
+                  - generic [ref=e136]: "Solde:"
+                  - generic [ref=e137]: 9 792,82 €
+              - generic [ref=e138] [cursor=pointer]:
+                - button "Convertir" [disabled]:
+                  - generic: Convertir
+            - generic [ref=e141]:
+              - generic [ref=e142]: Récapitulatif
+              - generic [ref=e144]:
+                - generic [ref=e145]: "Montant reçu estimé :"
+                - generic [ref=e147]: 0,00 €
+              - generic [ref=e148]:
+                - generic [ref=e149]: Prix
+                - generic [ref=e151]:
+                  - generic [ref=e152]: 1 753,79
+                  - generic [ref=e153]: € / ETH
+              - generic [ref=e155]:
+                - generic [ref=e156]: Frais
+                - generic [ref=e158]: 0,00 €
+              - generic [ref=e160]:
+                - generic [ref=e161]: Montant
+                - generic [ref=e163]: 0,00000000 ETH
+          - button
+        - contentinfo [ref=e164]:
+          - generic [ref=e165]:
+            - generic [ref=e166]: Copyright © 2026
+            - link "Paymium" [ref=e168]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e169]: 6.15.0
+            - link "Statut" [ref=e171]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e173]:
+              - /url: ""
+```
