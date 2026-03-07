@@ -1,0 +1,17 @@
+launch_status failed=10 1772877444000000000
+launch_status broken=0 1772877444000000000
+launch_status passed=18 1772877444000000000
+launch_status skipped=0 1772877444000000000
+launch_status unknown=0 1772877444000000000
+launch_time duration=3131955 1772877444000000000
+launch_time min_duration=19126 1772877444000000000
+launch_time max_duration=548250 1772877444000000000
+launch_time sum_duration=3107631 1772877444000000000
+launch_time start=1772874106934 1772877444000000000
+launch_time stop=1772877238889 1772877444000000000
+launch_problems attente_d'élément_non_satisfaite=5 1772877444000000000
+launch_problems product_defects=1 1772877444000000000
+launch_problems élément_non_visible_—_à_investiguer=1 1772877444000000000
+launch_problems click_impossible_(timeout)=3 1772877444000000000
+launch_retries retries=23 1772877444000000000
+launch_retries run=28 1772877444000000000
