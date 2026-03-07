@@ -1,0 +1,6 @@
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('content-select') to be visible
+
+

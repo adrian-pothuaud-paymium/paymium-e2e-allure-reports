@@ -1,0 +1,12 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+Error: locator.evaluate: Error: strict mode violation: getByRole('dialog') resolved to 4 elements:
+    1) <div role="dialog" aria-modal="true" class="css-g5y9jx r-1p0dtai r-1d2f490 r-1xcajam r-zchlnj r-ipm5af r-1niwhzg">…</div> aka getByRole('dialog').first()
+    2) <div role="dialog" aria-modal="true" class="css-g5y9jx">…</div> aka getByTestId('swapFormModal').getByRole('dialog').filter({ hasText: 'AcheterVendreConvertirBitcoinBTC0€Solde disponible16 032,95 €4 010 €8 020 €12' })
+    3) <div role="dialog" data-testid="swap-buy-sell" class="css-g5y9jx border-style-[solid] border-width-[0px] align-items-[stretch] background-color-[rgba(0,-0,-0,-0)] display-[flex] flex-basis-[auto] flex-direction-[column] flex-shrink-[0] list-style-[none] margin-top-[0px] margin-bottom-[0px] margin-left-[0px] margin-right-[0px] min-height-[0px] min-width-[0px] padding-top-[0px] padding-bottom-[0px] padding-right-[0px] padding-left-[0px] position-[relative] text-decoration-[none] z-index-[0] align-sel…>…</div> aka getByTestId('swap-buy-sell')
+    4) <div tabindex="-1" role="dialog" aria-modal="false" data-lenis-prevent="true" data-testid="widget-container" aria-labelledby="main-dialog-aria-label" class="sc-fHYyUA jFrSgS ax-widget-container" aria-describedby="main-dialog-aria-description">…</div> aka getByTestId('widget-container')
+
+Call log:
+  - waiting for getByRole('dialog')
+
+
