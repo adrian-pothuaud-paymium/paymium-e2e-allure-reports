@@ -1,7 +1,0 @@
-TimeoutError: locator.pressSequentially: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByRole('textbox', { name: 'Email' })
-    - locator resolved to <input rows="1" value="" dir="auto" id="email" type="email" autocorrect="off" autocomplete="on" inputmode="email" spellcheck="false" autocapitalize="none" data-testid="login.email" virtualkeyboardpolicy="auto" class="css-11aywtz r-6taxm2 color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] border-color-[var(--components--input-primary-default-border)] background-color-[var(--components--input-primary-default-background)] border-radius-[8px] padding-top-[var(--…/>
-  - elementHandle.type("adrian.pothuaud+auto.1772599401243@paymium.com")
-
-
