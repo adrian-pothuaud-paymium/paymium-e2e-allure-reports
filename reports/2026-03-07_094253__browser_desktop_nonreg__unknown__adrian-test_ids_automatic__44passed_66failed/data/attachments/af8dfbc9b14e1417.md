@@ -1,0 +1,140 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - generic [ref=e48]:
+          - button "Acheter" [ref=e49] [cursor=pointer]:
+            - img [ref=e50]
+            - generic [ref=e52]: Acheter
+          - button [ref=e53] [cursor=pointer]:
+            - img [ref=e54]
+          - button "FR" [ref=e57] [cursor=pointer]:
+            - generic [ref=e58]: FR
+            - img [ref=e59]
+          - button [ref=e61] [cursor=pointer]:
+            - img [ref=e64]
+          - button [ref=e66] [cursor=pointer]:
+            - img [ref=e67]
+          - button [ref=e70] [cursor=pointer]:
+            - img [ref=e71]
+          - button [ref=e74] [cursor=pointer]:
+            - img [ref=e75]
+      - generic [ref=e77]:
+        - navigation [ref=e78]:
+          - generic [ref=e79]:
+            - generic [ref=e82]:
+              - img [ref=e84]
+              - textbox "Chercher" [ref=e86]
+            - generic [ref=e87]:
+              - link "Tableau de bord" [ref=e88] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e89]
+                - generic [ref=e91]: Tableau de bord
+              - link "Portefeuille" [ref=e92] [cursor=pointer]:
+                - /url: /wallet
+                - img [ref=e93]
+                - generic [ref=e95]: Portefeuille
+              - link "Dépôt / retrait" [ref=e96] [cursor=pointer]:
+                - /url: /deposit/EUR
+                - img [ref=e97]
+                - generic [ref=e99]: Dépôt / retrait
+              - link "Achat récurrent" [ref=e100] [cursor=pointer]:
+                - /url: /recurrent
+                - img [ref=e101]
+                - generic [ref=e103]: Achat récurrent
+              - link "Mode expert" [ref=e104] [cursor=pointer]:
+                - /url: /trade/BTC/EUR
+                - img [ref=e105]
+                - generic [ref=e107]: Mode expert
+              - link "Parrainage" [ref=e108] [cursor=pointer]:
+                - /url: /referral
+                - img [ref=e109]
+                - generic [ref=e111]: Parrainage
+              - link "Plan Bitcoin Famille" [ref=e112] [cursor=pointer]:
+                - /url: /family
+                - img [ref=e113]
+                - generic [ref=e115]: Plan Bitcoin Famille
+              - link "Historique" [ref=e116] [cursor=pointer]:
+                - /url: /history
+                - img [ref=e117]
+                - generic [ref=e119]: Historique
+        - generic [ref=e120]:
+          - generic [ref=e122]:
+            - tablist [ref=e124]:
+              - generic [ref=e125]:
+                - tab "Paramètres" [ref=e127] [cursor=pointer]:
+                  - generic [ref=e128]: Paramètres
+                - tab "Sécurité du compte" [ref=e129] [cursor=pointer]:
+                  - generic [ref=e130]: Sécurité du compte
+                - tab "Identification et documents" [ref=e131] [cursor=pointer]:
+                  - generic [ref=e132]: Identification et documents
+                - tab "Vos comptes bancaires enregistrés" [selected] [ref=e133] [cursor=pointer]:
+                  - generic [ref=e134]: Vos comptes bancaires enregistrés
+                - tab "Solution de paiement" [ref=e135] [cursor=pointer]:
+                  - generic [ref=e136]: Solution de paiement
+            - generic [ref=e139]:
+              - img [ref=e141]
+              - generic [ref=e191]: Aucun compte pour le moment
+              - generic [ref=e193]: Ajoutez un compte bancaire à votre nom pour pouvoir retirer des euros depuis Paymium.
+              - button "Ajouter un compte bancaire" [ref=e194] [cursor=pointer]:
+                - generic [ref=e195]: Ajouter un compte bancaire
+          - contentinfo [ref=e196]:
+            - generic [ref=e197]:
+              - generic [ref=e198]: Copyright © 2026
+              - link "Paymium" [ref=e199] [cursor=pointer]:
+                - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+              - generic [ref=e200]: 6.15.0
+              - link "Statut" [ref=e201] [cursor=pointer]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e202] [cursor=pointer]
+  - generic:
+    - generic:
+      - generic:
+        - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e203]':
+          - generic [ref=e204]:
+            - generic [ref=e205]:
+              - button "Fermer le widget sans consentement" [ref=e206] [cursor=pointer]:
+                - generic [ref=e207]: Continuer sans accepter
+              - generic [ref=e209]:
+                - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e212]:
+                  - generic [ref=e213]: Des cookies pour
+                  - generic [ref=e214]: vos bitcoins !
+                - generic [ref=e215]:
+                  - paragraph [ref=e216]:
+                    - text: Parce que
+                    - strong [ref=e217]: stacker des sats ça donne faim
+                    - text: ", nous vous proposons une pause cookie ! 🍪"
+                  - paragraph [ref=e218]:
+                    - text: Avec votre accord, Paymium aimerait utiliser des
+                    - strong [ref=e219]: cookies
+                    - text: placés par nous et/ou par nos partenaires sur notre site.
+                  - paragraph [ref=e220]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+                  - paragraph [ref=e221]:
+                    - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                    - strong [ref=e222]: Vous choisissez ceux qui vous plaisent
+                    - text: ", comme pour le trading !"
+                  - paragraph [ref=e223]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+                - paragraph [ref=e225]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+              - button "Consentements certifiés par Axeptio" [ref=e228]:
+                - generic [ref=e229]: Consentements certifiés par
+                - img "Axeptio" [ref=e233]
+            - generic [ref=e237]:
+              - button "Je choisis les cookies à configurer" [ref=e238] [cursor=pointer]: Je choisis
+              - button "Accepter les cookies" [ref=e239] [cursor=pointer]: OK pour moi
+          - generic [ref=e240]:
+            - text: Axeptio consent
+            - checkbox [ref=e241]
+          - generic [ref=e242]:
+            - paragraph [ref=e243]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+            - paragraph [ref=e244]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+        - button "Fermer le widget sans consentement" [ref=e245] [cursor=pointer]:
+          - img [ref=e249]
+```
