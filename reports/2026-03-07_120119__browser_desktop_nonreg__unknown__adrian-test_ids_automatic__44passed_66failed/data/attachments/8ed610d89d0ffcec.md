@@ -1,0 +1,230 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic:
+    - generic:
+      - generic:
+        - link:
+          - /url: /dashboard
+          - generic:
+            - img
+        - generic:
+          - button:
+            - img
+            - generic: Acheter
+          - button:
+            - img
+          - button:
+            - generic: FR
+            - img
+          - button:
+            - generic:
+              - generic:
+                - img
+          - button:
+            - img
+          - button:
+            - img
+          - button:
+            - img
+      - generic:
+        - navigation:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - textbox:
+                    - /placeholder: Chercher
+            - generic:
+              - link:
+                - /url: /dashboard
+                - img
+                - generic: Tableau de bord
+              - link:
+                - /url: /wallet
+                - img
+                - generic: Portefeuille
+              - link:
+                - /url: /deposit/EUR
+                - img
+                - generic: Dépôt / retrait
+              - link:
+                - /url: /recurrent
+                - img
+                - generic: Achat récurrent
+              - link:
+                - /url: /trade/BTC/EUR
+                - img
+                - generic: Mode expert
+              - link:
+                - /url: /referral
+                - img
+                - generic: Parrainage
+              - link:
+                - /url: /family
+                - img
+                - generic: Plan Bitcoin Famille
+              - link:
+                - /url: /history
+                - img
+                - generic: Historique
+        - generic:
+          - generic:
+            - generic:
+              - generic: Transfert
+              - generic:
+                - generic:
+                  - tablist:
+                    - generic:
+                      - tab [selected]:
+                        - generic: Déposer
+                      - tab:
+                        - generic: Retirer
+                      - tab:
+                        - generic: Transfert interne
+                      - tab:
+                        - generic: Envoyer par email
+                - tabpanel:
+                  - generic:
+                    - generic:
+                      - banner:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic: Votre transfert interne est en cours de traitement.
+                        - link:
+                          - /url: /history?type=history-internalTransfer
+                          - generic: Voir l'historique
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: Choisissez une devise
+                            - generic:
+                              - button [active]:
+                                - generic:
+                                  - textbox: EUR
+                                - generic:
+                                  - generic:
+                                    - img
+                                    - generic:
+                                      - generic: Euro
+                                - img
+                        - generic:
+                          - generic:
+                            - alert:
+                              - generic: Déposez uniquement des Euros depuis un compte bancaire à votre nom.
+                            - generic:
+                              - generic:
+                                - tablist:
+                                  - generic:
+                                    - tab [selected]:
+                                      - generic: IBAN de dépôt
+                                    - tab:
+                                      - generic: Dépôt facile (open-banking)
+                            - tabpanel:
+                              - generic:
+                                - alert:
+                                  - generic:
+                                    - img
+                                  - generic:
+                                    - text: Une erreur est survenue, nous vous invitons à
+                                    - link:
+                                      - /url: /help/tickets
+                                      - text: ouvrir un ticket de support
+                      - generic:
+                        - generic:
+                          - generic: Limites
+                          - generic:
+                            - generic: Limite de dépôt quotidienne
+                            - generic: 100 000,00 €
+                          - generic:
+                            - generic: Limite de dépôt mensuelle
+                            - generic: 500 000,00 €
+                        - generic:
+                          - generic:
+                            - img
+                            - generic: Informations dépôt Euro
+                            - button:
+                              - generic: Masquer
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Vous pouvez déposer des euros sur votre compte Paymium en effectuant un virement bancaire.
+                                - list:
+                                  - generic:
+                                    - generic:
+                                      - generic: Seul le virement SEPA est accepté. Les virement SWIFT seront automatiquement rejetés.
+                                  - generic:
+                                    - generic:
+                                      - generic: Les dépôts sont généralement crédités sous 1 à 2 jours ouvrés.
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - text: Il peut vous être demandé d'envoyer un ou plusieurs justificatifs de l'origine des fonds. Pour plus d'informations,
+                                        - link:
+                                          - /url: https://www.paymium.com/aide-articles/y-a-t-il-un-plafond-de-depot-par-virement-sur-paymium
+                                          - text: cliquez ici
+                                        - text: .
+          - contentinfo:
+            - generic:
+              - generic: Copyright © 2026
+              - link:
+                - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+                - text: Paymium
+              - generic: 6.15.0
+              - link:
+                - /url: /status
+                - text: Statut
+              - link: Gérer vos cookies
+  - list [ref=e5]:
+    - generic [ref=e7]:
+      - listitem [ref=e9] [cursor=pointer]:
+        - generic [ref=e11]:
+          - img [ref=e12]
+          - generic [ref=e17]: Bitcoin
+      - listitem [ref=e19] [cursor=pointer]:
+        - generic [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e27]: Euro
+      - listitem [ref=e29] [cursor=pointer]:
+        - generic [ref=e31]:
+          - img [ref=e32]
+          - generic [ref=e43]: Ethereum
+      - listitem [ref=e45] [cursor=pointer]:
+        - generic [ref=e47]:
+          - img [ref=e48]
+          - generic [ref=e53]: USDC
+      - listitem [ref=e55] [cursor=pointer]:
+        - generic [ref=e57]:
+          - img [ref=e58]
+          - generic [ref=e64]: Euro CoinVertible
+      - listitem [ref=e66] [cursor=pointer]:
+        - generic [ref=e68]:
+          - img [ref=e69]
+          - generic [ref=e74]: Litecoin
+      - listitem [ref=e76] [cursor=pointer]:
+        - generic [ref=e78]:
+          - img [ref=e79]
+          - generic [ref=e84]: Bitcoin Cash
+      - listitem [ref=e86] [cursor=pointer]:
+        - generic [ref=e88]:
+          - img [ref=e89]
+          - generic [ref=e98]: Ethereum Classic
+      - listitem [ref=e100] [cursor=pointer]:
+        - generic [ref=e102]:
+          - img [ref=e103]
+          - generic [ref=e108]: Bcio
+      - listitem [ref=e110] [cursor=pointer]:
+        - generic [ref=e112]:
+          - img [ref=e113]
+          - generic [ref=e117]: Ripple
+      - listitem [ref=e119] [cursor=pointer]:
+        - generic [ref=e121]:
+          - img [ref=e122]
+          - generic [ref=e126]: Solana
+```

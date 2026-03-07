@@ -1,9 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-Login attempt 1 failed
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] SyntaxError: Unexpected token '<'
-Error: locator.evaluate: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('main, [role=\'main\']').first()
-
-

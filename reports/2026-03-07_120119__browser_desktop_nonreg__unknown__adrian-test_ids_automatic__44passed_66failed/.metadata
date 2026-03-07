@@ -1,0 +1,10 @@
+TIMESTAMP=2026-03-07_120119
+ENVIRONMENT=unknown
+BRANCH=adrian/test_ids_automatic
+E2E_BRANCH=main
+JOB=browser_desktop_nonreg
+TOTAL=110
+PASSED=44
+FAILED=66
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39175
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/227050
