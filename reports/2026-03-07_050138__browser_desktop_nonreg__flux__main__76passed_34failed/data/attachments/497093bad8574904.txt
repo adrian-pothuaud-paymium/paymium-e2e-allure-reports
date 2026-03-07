@@ -1,0 +1,5 @@
+TimeoutError: locator.clear: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('input#price')
+
+
