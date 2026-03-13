@@ -1,0 +1,124 @@
+addPhoneNumber failed Request failed with status code 500
+Failed to add phone number: 500 Internal Server Error
+Attempt 1 to create test user failed: Request failed with status code 500
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+Login attempt 1 failed: locator.pressSequentially: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Email' })
+    - locator resolved to <input rows="1" value="" dir="auto" id="email" type="email" autocorrect="off" autocomplete="on" inputmode="email" spellcheck="false" autocapitalize="none" data-testid="login.email" virtualkeyboardpolicy="auto" class="css-11aywtz r-6taxm2 color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] background-color-[var(--components--input-primary-default-background)] border-radius-[var(--border-radius-md)] padding-top-[var(--space-md)] padding-bottom-[var(--space-md)]…/>
+  - elementHandle.type("adrian.pothuaud+auto.1773424985014@paymium.com")
+
+    at SignIn.fill (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/sign-in/index.ts:58:27)
+    at SignIn.loginRetries (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/sign-in/index.ts:127:9)
+    at _fixtures.test.step.box (/builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/authentication/locked-account/nominal.spec.ts:61:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/authentication/locked-account/nominal.spec.ts:58:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/sign-in/index.ts',
+      line: 58,
+      column: 27,
+      function: 'SignIn.fill'
+    },
+    category: 'pw:api',
+    title: `Type "adrian.pothuaud+auto.1773424985014@paymium.com" getByRole('textbox', { name: 'Email' })`,
+    apiName: 'locator.pressSequentially',
+    params: {
+      selector: 'internal:role=textbox[name="Email"i]',
+      text: 'adrian.pothuaud+auto.1773424985014@paymium.com',
+      strict: true,
+      timeout: 10000
+    },
+    group: undefined,
+    stepId: 'pw:api@133',
+    boxedStack: [],
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@133',
+      _title: `Type "adrian.pothuaud+auto.1773424985014@paymium.com" getByRole('textbox', { name: 'Email' })`,
+      _parentStep: [TestStepInfoImpl],
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1773425113064,
+    error: {
+      message: 'TimeoutError: locator.pressSequentially: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('textbox', { name: 'Email' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <input rows="1" value="" dir="auto" id="email" type="email" autocorrect="off" autocomplete="on" inputmode="email" spellcheck="false" autocapitalize="none" data-testid="login.email" virtualkeyboardpolicy="auto" class="css-11aywtz r-6taxm2 color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] background-color-[var(--components--input-primary-default-background)] border-radius-[var(--border-radius-md)] padding-top-[var(--space-md)] padding-bottom-[var(--space-md)]…/>\x1B[22m\n' +
+        '\x1B[2m  - elementHandle.type("adrian.pothuaud+auto.1773424985014@paymium.com")\x1B[22m\n',
+      stack: 'TimeoutError: locator.pressSequentially: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('textbox', { name: 'Email' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <input rows="1" value="" dir="auto" id="email" type="email" autocorrect="off" autocomplete="on" inputmode="email" spellcheck="false" autocapitalize="none" data-testid="login.email" virtualkeyboardpolicy="auto" class="css-11aywtz r-6taxm2 color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] background-color-[var(--components--input-primary-default-background)] border-radius-[var(--border-radius-md)] padding-top-[var(--space-md)] padding-bottom-[var(--space-md)]…/>\x1B[22m\n' +
+        '\x1B[2m  - elementHandle.type("adrian.pothuaud+auto.1773424985014@paymium.com")\x1B[22m\n' +
+        '\n',
+      cause: undefined
+    }
+  }
+}
+[pageerror] SyntaxError: Unexpected token '<'
+Login attempt 2 failed: locator.pressSequentially: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Email' })
+    - locator resolved to <input rows="1" value="" dir="auto" id="email" type="email" autocorrect="off" autocomplete="on" inputmode="email" spellcheck="false" autocapitalize="none" data-testid="login.email" virtualkeyboardpolicy="auto" class="css-11aywtz r-6taxm2 color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] background-color-[var(--components--input-primary-default-background)] border-radius-[var(--border-radius-md)] padding-top-[var(--space-md)] padding-bottom-[var(--space-md)]…/>
+  - elementHandle.type("adrian.pothuaud+auto.1773424985014@paymium.com")
+
+    at SignIn.fill (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/sign-in/index.ts:58:27)
+    at SignIn.loginRetries (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/sign-in/index.ts:127:9)
+    at _fixtures.test.step.box (/builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/authentication/locked-account/nominal.spec.ts:61:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/authentication/locked-account/nominal.spec.ts:58:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/sign-in/index.ts',
+      line: 58,
+      column: 27,
+      function: 'SignIn.fill'
+    },
+    category: 'pw:api',
+    title: `Type "adrian.pothuaud+auto.1773424985014@paymium.com" getByRole('textbox', { name: 'Email' })`,
+    apiName: 'locator.pressSequentially',
+    params: {
+      selector: 'internal:role=textbox[name="Email"i]',
+      text: 'adrian.pothuaud+auto.1773424985014@paymium.com',
+      strict: true,
+      timeout: 10000
+    },
+    group: undefined,
+    stepId: 'pw:api@137',
+    boxedStack: [],
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@137',
+      _title: `Type "adrian.pothuaud+auto.1773424985014@paymium.com" getByRole('textbox', { name: 'Email' })`,
+      _parentStep: [TestStepInfoImpl],
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1773425136284,
+    error: {
+      message: 'TimeoutError: locator.pressSequentially: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('textbox', { name: 'Email' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <input rows="1" value="" dir="auto" id="email" type="email" autocorrect="off" autocomplete="on" inputmode="email" spellcheck="false" autocapitalize="none" data-testid="login.email" virtualkeyboardpolicy="auto" class="css-11aywtz r-6taxm2 color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] background-color-[var(--components--input-primary-default-background)] border-radius-[var(--border-radius-md)] padding-top-[var(--space-md)] padding-bottom-[var(--space-md)]…/>\x1B[22m\n' +
+        '\x1B[2m  - elementHandle.type("adrian.pothuaud+auto.1773424985014@paymium.com")\x1B[22m\n',
+      stack: 'TimeoutError: locator.pressSequentially: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('textbox', { name: 'Email' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <input rows="1" value="" dir="auto" id="email" type="email" autocorrect="off" autocomplete="on" inputmode="email" spellcheck="false" autocapitalize="none" data-testid="login.email" virtualkeyboardpolicy="auto" class="css-11aywtz r-6taxm2 color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] background-color-[var(--components--input-primary-default-background)] border-radius-[var(--border-radius-md)] padding-top-[var(--space-md)] padding-bottom-[var(--space-md)]…/>\x1B[22m\n' +
+        '\x1B[2m  - elementHandle.type("adrian.pothuaud+auto.1773424985014@paymium.com")\x1B[22m\n' +
+        '\n',
+      cause: undefined
+    }
+  }
+}
+Test timeout of 210000ms exceeded.
+[pageerror] SyntaxError: Unexpected token '<'

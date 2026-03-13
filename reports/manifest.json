@@ -1,5 +1,19 @@
 [
   {
+    "folder": "2026-03-13_183411__browser_desktop_nonreg__unknown__feature-615-issue__81passed_25failed",
+    "timestamp": "2026-03-13_183411",
+    "environment": "unknown",
+    "branch": "feature/615-issue",
+    "e2eBranch": "main",
+    "job": "browser_desktop_nonreg",
+    "total": 106,
+    "passed": 81,
+    "failed": 25,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39666",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/236577"
+  }
+,
+  {
     "folder": "2026-03-13_162714__browser_responsive_nonreg__unknown__feature-improveTicketUI__38passed_15failed",
     "timestamp": "2026-03-13_162714",
     "environment": "unknown",
@@ -81,20 +95,6 @@
     "failed": 19,
     "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39617",
     "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/235667"
-  }
-,
-  {
-    "folder": "2026-03-13_124647__browser_desktop_nonreg__unknown__dependenciesCircular__83passed_23failed",
-    "timestamp": "2026-03-13_124647",
-    "environment": "unknown",
-    "branch": "dependenciesCircular",
-    "e2eBranch": "main",
-    "job": "browser_desktop_nonreg",
-    "total": 106,
-    "passed": 83,
-    "failed": 23,
-    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39642",
-    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/236188"
   }
 ,
   {
