@@ -1,0 +1,9 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: locator.click: Error: strict mode violation: getByRole('dialog').last().getByTestId('selectFrequency') resolved to 2 elements:
+    1) <button tabindex="0" role="button" type="button" id="selectFrequency" data-testid="selectFrequency" class="css-g5y9jx r-1loqt21 r-1otgn73 flex-grow-[1]">…</button> aka getByRole('button', { name: 'Fréquence' })
+    2) <button tabindex="0" role="button" type="button" id="selectFrequency" data-testid="selectFrequency" class="css-g5y9jx r-1loqt21 r-1otgn73 color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] border-color-[var(--components--input-primary-default-border)] background-color-[var(--components--input-primary-default-background)] border-radius-[var(--border-radius-md)] padding-top-[var(--space-md)] padding-bottom-[var(--space-md)] padding-left-[var(--space-xl)] paddin…>…</button> aka getByRole('button', { name: 'Fréquence' }).getByTestId('selectFrequency')
+
+Call log:
+  - waiting for getByRole('dialog').last().getByTestId('selectFrequency')
+
+
