@@ -1,3 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-Error: Slider did not reach target value
-

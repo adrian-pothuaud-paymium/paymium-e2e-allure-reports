@@ -1,0 +1,3 @@
+Request POST /api/user/swaps with body: {"swapping_pair":"ETH/USDC","side":"buy","price":2211.3244,"amount":0.00045221}
+Response status code: 422
+Response body: {"type":"about:blank","title":"Validation failed","status":422,"detail":"The request is invalid","instance":"record_invalid","errors":[{"detail":"doit-être supérieur à 0.0005 ETH","parameter":"amount"}]}
