@@ -1,0 +1,651 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - generic [ref=e48]:
+          - button "Acheter" [ref=e49] [cursor=pointer]:
+            - img [ref=e50]
+            - generic [ref=e52]: Acheter
+          - button [ref=e53] [cursor=pointer]:
+            - img [ref=e54]
+          - button "FR" [ref=e57] [cursor=pointer]:
+            - generic [ref=e58]: FR
+            - img [ref=e59]
+          - button [ref=e61] [cursor=pointer]:
+            - img [ref=e64]
+          - button [ref=e66] [cursor=pointer]:
+            - img [ref=e67]
+          - button [ref=e70] [cursor=pointer]:
+            - img [ref=e71]
+          - button [ref=e74] [cursor=pointer]:
+            - img [ref=e75]
+      - generic [ref=e77]:
+        - navigation [ref=e78]:
+          - generic [ref=e79]:
+            - generic [ref=e82]:
+              - img [ref=e84]
+              - textbox "Chercher" [ref=e86]
+            - generic [ref=e87]:
+              - link "Tableau de bord" [ref=e88] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e89]
+                - generic [ref=e91]: Tableau de bord
+              - link "Portefeuille" [ref=e92] [cursor=pointer]:
+                - /url: /wallet
+                - img [ref=e93]
+                - generic [ref=e95]: Portefeuille
+              - link "Dépôt / retrait" [ref=e96] [cursor=pointer]:
+                - /url: /deposit/EUR
+                - img [ref=e97]
+                - generic [ref=e99]: Dépôt / retrait
+              - link "Achat récurrent" [ref=e100] [cursor=pointer]:
+                - /url: /recurrent
+                - img [ref=e101]
+                - generic [ref=e103]: Achat récurrent
+              - link "Mode expert" [ref=e104] [cursor=pointer]:
+                - /url: /trade/BTC/EUR
+                - img [ref=e105]
+                - generic [ref=e107]: Mode expert
+              - link "Parrainage" [ref=e108] [cursor=pointer]:
+                - /url: /referral
+                - img [ref=e109]
+                - generic [ref=e111]: Parrainage
+              - link "Plan Bitcoin Famille" [ref=e112] [cursor=pointer]:
+                - /url: /family
+                - img [ref=e113]
+                - generic [ref=e115]: Plan Bitcoin Famille
+              - link "Historique" [ref=e116] [cursor=pointer]:
+                - /url: /history
+                - img [ref=e117]
+                - generic [ref=e119]: Historique
+        - generic [ref=e120]:
+          - generic [ref=e123]:
+            - link "Exporter" [ref=e125] [cursor=pointer]:
+              - /url: /export
+              - generic [ref=e126]: Exporter
+            - generic [ref=e131]:
+              - generic [ref=e134]:
+                - generic [ref=e135]:
+                  - button "Slide to left" [disabled]:
+                    - img [ref=e136]
+                - button "Slide to right" [ref=e139] [cursor=pointer]:
+                  - img [ref=e140]
+                - tablist [ref=e142]:
+                  - generic [ref=e143]:
+                    - tab "Ordres" [selected] [ref=e145] [cursor=pointer]:
+                      - generic [ref=e146]: Ordres
+                    - tab "Retraits" [ref=e147] [cursor=pointer]:
+                      - generic [ref=e148]: Retraits
+                    - tab "Dépôts" [ref=e149] [cursor=pointer]:
+                      - generic [ref=e150]: Dépôts
+                    - tab "Transfert interne" [ref=e151] [cursor=pointer]:
+                      - generic [ref=e152]: Transfert interne
+                    - tab "Bitcoin Famille" [ref=e153] [cursor=pointer]:
+                      - generic [ref=e154]: Bitcoin Famille
+                    - tab "Envoi par email" [ref=e155] [cursor=pointer]:
+                      - generic [ref=e156]: Envoi par email
+                    - tab "Courtage" [ref=e157] [cursor=pointer]:
+                      - generic [ref=e158]: Courtage
+                    - tab "Carte bancaire" [ref=e159] [cursor=pointer]:
+                      - generic [ref=e160]: Carte bancaire
+                    - tab "Solution de paiement" [ref=e161] [cursor=pointer]:
+                      - generic [ref=e162]: Solution de paiement
+                    - tab "Parrainage" [ref=e163] [cursor=pointer]:
+                      - generic [ref=e164]: Parrainage
+                    - tab "Autres" [ref=e165] [cursor=pointer]:
+                      - generic [ref=e166]: Autres
+              - tabpanel "Ordres" [ref=e167]:
+                - generic [ref=e169]:
+                  - generic [ref=e170]:
+                    - generic [ref=e172] [cursor=pointer]:
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: Vente
+                        - generic [ref=e175]: ordre limite
+                      - generic [ref=e176]:
+                        - generic [ref=e177]: Montant
+                        - generic [ref=e179]: 0,00010000 BTC
+                      - generic [ref=e180]:
+                        - generic [ref=e181]: Prix
+                        - generic [ref=e183]: 256 000,00 €
+                      - generic [ref=e184]:
+                        - generic [ref=e185]: Coût
+                        - generic [ref=e186]: "-"
+                      - generic [ref=e187]:
+                        - generic [ref=e188]: Frais
+                        - generic [ref=e189]: "-"
+                      - generic [ref=e190]:
+                        - generic [ref=e191]:
+                          - generic [ref=e192]: 19/12/2025 08:56
+                          - generic [ref=e193]: actif
+                        - button [ref=e194]:
+                          - img [ref=e195]
+                    - separator [ref=e197]
+                  - generic [ref=e198]:
+                    - generic [ref=e200] [cursor=pointer]:
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: Achat
+                        - generic [ref=e203]: ordre limite
+                      - generic [ref=e204]:
+                        - generic [ref=e205]: Montant
+                        - generic [ref=e207]: 0,00010000 BTC
+                      - generic [ref=e208]:
+                        - generic [ref=e209]: Prix
+                        - generic [ref=e211]: 56 000,00 €
+                      - generic [ref=e212]:
+                        - generic [ref=e213]: Coût
+                        - generic [ref=e215]: 5,60 €
+                      - generic [ref=e216]:
+                        - generic [ref=e217]: Frais
+                        - generic [ref=e218]: "-"
+                      - generic [ref=e219]:
+                        - generic [ref=e220]:
+                          - generic [ref=e221]: 19/12/2025 09:02
+                          - generic [ref=e222]: actif
+                        - button [ref=e223]:
+                          - img [ref=e224]
+                    - separator [ref=e226]
+                  - generic [ref=e227]:
+                    - generic [ref=e229] [cursor=pointer]:
+                      - generic [ref=e230]:
+                        - generic [ref=e231]: Vente
+                        - generic [ref=e232]: ordre limite
+                      - generic [ref=e233]:
+                        - generic [ref=e234]: Montant
+                        - generic [ref=e236]: 0,00010000 BTC
+                      - generic [ref=e237]:
+                        - generic [ref=e238]: Prix
+                        - generic [ref=e240]: 256 000,00 €
+                      - generic [ref=e241]:
+                        - generic [ref=e242]: Coût
+                        - generic [ref=e243]: "-"
+                      - generic [ref=e244]:
+                        - generic [ref=e245]: Frais
+                        - generic [ref=e246]: "-"
+                      - generic [ref=e247]:
+                        - generic [ref=e248]:
+                          - generic [ref=e249]: 19/12/2025 09:03
+                          - generic [ref=e250]: actif
+                        - button [ref=e251]:
+                          - img [ref=e252]
+                    - separator [ref=e254]
+                  - generic [ref=e255]:
+                    - generic [ref=e257] [cursor=pointer]:
+                      - generic [ref=e258]:
+                        - generic [ref=e259]: Achat
+                        - generic [ref=e260]: ordre limite
+                      - generic [ref=e261]:
+                        - generic [ref=e262]: Montant
+                        - generic [ref=e264]: 0,00010000 BTC
+                      - generic [ref=e265]:
+                        - generic [ref=e266]: Prix
+                        - generic [ref=e268]: 56 000,00 €
+                      - generic [ref=e269]:
+                        - generic [ref=e270]: Coût
+                        - generic [ref=e272]: 5,60 €
+                      - generic [ref=e273]:
+                        - generic [ref=e274]: Frais
+                        - generic [ref=e275]: "-"
+                      - generic [ref=e276]:
+                        - generic [ref=e277]:
+                          - generic [ref=e278]: 19/12/2025 09:44
+                          - generic [ref=e279]: actif
+                        - button [ref=e280]:
+                          - img [ref=e281]
+                    - separator [ref=e283]
+                  - generic [ref=e284]:
+                    - generic [ref=e286] [cursor=pointer]:
+                      - generic [ref=e287]:
+                        - generic [ref=e288]: Vente
+                        - generic [ref=e289]: ordre limite
+                      - generic [ref=e290]:
+                        - generic [ref=e291]: Montant
+                        - generic [ref=e293]: 0,00010000 BTC
+                      - generic [ref=e294]:
+                        - generic [ref=e295]: Prix
+                        - generic [ref=e297]: 256 000,00 €
+                      - generic [ref=e298]:
+                        - generic [ref=e299]: Coût
+                        - generic [ref=e300]: "-"
+                      - generic [ref=e301]:
+                        - generic [ref=e302]: Frais
+                        - generic [ref=e303]: "-"
+                      - generic [ref=e304]:
+                        - generic [ref=e305]:
+                          - generic [ref=e306]: 19/12/2025 09:45
+                          - generic [ref=e307]: actif
+                        - button [ref=e308]:
+                          - img [ref=e309]
+                    - separator [ref=e311]
+                  - generic [ref=e312]:
+                    - generic [ref=e314] [cursor=pointer]:
+                      - generic [ref=e315]:
+                        - generic [ref=e316]: Achat
+                        - generic [ref=e317]: ordre limite
+                      - generic [ref=e318]:
+                        - generic [ref=e319]: Montant
+                        - generic [ref=e321]: 0,00010000 BTC
+                      - generic [ref=e322]:
+                        - generic [ref=e323]: Prix
+                        - generic [ref=e325]: 56 000,00 €
+                      - generic [ref=e326]:
+                        - generic [ref=e327]: Coût
+                        - generic [ref=e329]: 5,60 €
+                      - generic [ref=e330]:
+                        - generic [ref=e331]: Frais
+                        - generic [ref=e332]: "-"
+                      - generic [ref=e333]:
+                        - generic [ref=e334]:
+                          - generic [ref=e335]: 19/12/2025 11:27
+                          - generic [ref=e336]: actif
+                        - button [ref=e337]:
+                          - img [ref=e338]
+                    - separator [ref=e340]
+                  - generic [ref=e341]:
+                    - generic [ref=e343] [cursor=pointer]:
+                      - generic [ref=e344]:
+                        - generic [ref=e345]: Vente
+                        - generic [ref=e346]: ordre limite
+                      - generic [ref=e347]:
+                        - generic [ref=e348]: Montant
+                        - generic [ref=e350]: 0,00010000 BTC
+                      - generic [ref=e351]:
+                        - generic [ref=e352]: Prix
+                        - generic [ref=e354]: 256 000,00 €
+                      - generic [ref=e355]:
+                        - generic [ref=e356]: Coût
+                        - generic [ref=e357]: "-"
+                      - generic [ref=e358]:
+                        - generic [ref=e359]: Frais
+                        - generic [ref=e360]: "-"
+                      - generic [ref=e361]:
+                        - generic [ref=e362]:
+                          - generic [ref=e363]: 19/12/2025 11:28
+                          - generic [ref=e364]: actif
+                        - button [ref=e365]:
+                          - img [ref=e366]
+                    - separator [ref=e368]
+                  - generic [ref=e369]:
+                    - generic [ref=e371] [cursor=pointer]:
+                      - generic [ref=e372]:
+                        - generic [ref=e373]: Achat
+                        - generic [ref=e374]: ordre limite
+                      - generic [ref=e375]:
+                        - generic [ref=e376]: Montant
+                        - generic [ref=e378]: 0,00010000 BTC
+                      - generic [ref=e379]:
+                        - generic [ref=e380]: Prix
+                        - generic [ref=e382]: 56 000,00 €
+                      - generic [ref=e383]:
+                        - generic [ref=e384]: Coût
+                        - generic [ref=e386]: 5,60 €
+                      - generic [ref=e387]:
+                        - generic [ref=e388]: Frais
+                        - generic [ref=e389]: "-"
+                      - generic [ref=e390]:
+                        - generic [ref=e391]:
+                          - generic [ref=e392]: 19/12/2025 12:07
+                          - generic [ref=e393]: actif
+                        - button [ref=e394]:
+                          - img [ref=e395]
+                    - separator [ref=e397]
+                  - generic [ref=e398]:
+                    - generic [ref=e400] [cursor=pointer]:
+                      - generic [ref=e401]:
+                        - generic [ref=e402]: Vente
+                        - generic [ref=e403]: ordre limite
+                      - generic [ref=e404]:
+                        - generic [ref=e405]: Montant
+                        - generic [ref=e407]: 0,00010000 BTC
+                      - generic [ref=e408]:
+                        - generic [ref=e409]: Prix
+                        - generic [ref=e411]: 256 000,00 €
+                      - generic [ref=e412]:
+                        - generic [ref=e413]: Coût
+                        - generic [ref=e414]: "-"
+                      - generic [ref=e415]:
+                        - generic [ref=e416]: Frais
+                        - generic [ref=e417]: "-"
+                      - generic [ref=e418]:
+                        - generic [ref=e419]:
+                          - generic [ref=e420]: 19/12/2025 12:08
+                          - generic [ref=e421]: actif
+                        - button [ref=e422]:
+                          - img [ref=e423]
+                    - separator [ref=e425]
+                  - generic [ref=e426]:
+                    - generic [ref=e428] [cursor=pointer]:
+                      - generic [ref=e429]:
+                        - generic [ref=e430]: Achat
+                        - generic [ref=e431]: ordre limite
+                      - generic [ref=e432]:
+                        - generic [ref=e433]: Montant
+                        - generic [ref=e435]: 0,00010000 BTC
+                      - generic [ref=e436]:
+                        - generic [ref=e437]: Prix
+                        - generic [ref=e439]: 56 000,00 €
+                      - generic [ref=e440]:
+                        - generic [ref=e441]: Coût
+                        - generic [ref=e443]: 5,60 €
+                      - generic [ref=e444]:
+                        - generic [ref=e445]: Frais
+                        - generic [ref=e446]: "-"
+                      - generic [ref=e447]:
+                        - generic [ref=e448]:
+                          - generic [ref=e449]: 19/12/2025 12:29
+                          - generic [ref=e450]: actif
+                        - button [ref=e451]:
+                          - img [ref=e452]
+                    - separator [ref=e454]
+                  - generic [ref=e455]:
+                    - generic [ref=e457] [cursor=pointer]:
+                      - generic [ref=e458]:
+                        - generic [ref=e459]: Vente
+                        - generic [ref=e460]: ordre limite
+                      - generic [ref=e461]:
+                        - generic [ref=e462]: Montant
+                        - generic [ref=e464]: 0,00010000 BTC
+                      - generic [ref=e465]:
+                        - generic [ref=e466]: Prix
+                        - generic [ref=e468]: 256 000,00 €
+                      - generic [ref=e469]:
+                        - generic [ref=e470]: Coût
+                        - generic [ref=e471]: "-"
+                      - generic [ref=e472]:
+                        - generic [ref=e473]: Frais
+                        - generic [ref=e474]: "-"
+                      - generic [ref=e475]:
+                        - generic [ref=e476]:
+                          - generic [ref=e477]: 19/12/2025 12:30
+                          - generic [ref=e478]: actif
+                        - button [ref=e479]:
+                          - img [ref=e480]
+                    - separator [ref=e482]
+                  - generic [ref=e483]:
+                    - generic [ref=e485] [cursor=pointer]:
+                      - generic [ref=e486]:
+                        - generic [ref=e487]: Achat
+                        - generic [ref=e488]: ordre limite
+                      - generic [ref=e489]:
+                        - generic [ref=e490]: Montant
+                        - generic [ref=e492]: 0,00010000 BTC
+                      - generic [ref=e493]:
+                        - generic [ref=e494]: Prix
+                        - generic [ref=e496]: 56 000,00 €
+                      - generic [ref=e497]:
+                        - generic [ref=e498]: Coût
+                        - generic [ref=e500]: 5,60 €
+                      - generic [ref=e501]:
+                        - generic [ref=e502]: Frais
+                        - generic [ref=e503]: "-"
+                      - generic [ref=e504]:
+                        - generic [ref=e505]:
+                          - generic [ref=e506]: 19/12/2025 13:22
+                          - generic [ref=e507]: actif
+                        - button [ref=e508]:
+                          - img [ref=e509]
+                    - separator [ref=e511]
+                  - generic [ref=e512]:
+                    - generic [ref=e514] [cursor=pointer]:
+                      - generic [ref=e515]:
+                        - generic [ref=e516]: Vente
+                        - generic [ref=e517]: ordre limite
+                      - generic [ref=e518]:
+                        - generic [ref=e519]: Montant
+                        - generic [ref=e521]: 0,00010000 BTC
+                      - generic [ref=e522]:
+                        - generic [ref=e523]: Prix
+                        - generic [ref=e525]: 256 000,00 €
+                      - generic [ref=e526]:
+                        - generic [ref=e527]: Coût
+                        - generic [ref=e528]: "-"
+                      - generic [ref=e529]:
+                        - generic [ref=e530]: Frais
+                        - generic [ref=e531]: "-"
+                      - generic [ref=e532]:
+                        - generic [ref=e533]:
+                          - generic [ref=e534]: 19/12/2025 13:23
+                          - generic [ref=e535]: actif
+                        - button [ref=e536]:
+                          - img [ref=e537]
+                    - separator [ref=e539]
+                  - generic [ref=e540]:
+                    - generic [ref=e542] [cursor=pointer]:
+                      - generic [ref=e543]:
+                        - generic [ref=e544]: Achat
+                        - generic [ref=e545]: ordre limite
+                      - generic [ref=e546]:
+                        - generic [ref=e547]: Montant
+                        - generic [ref=e549]: 0,00010000 BTC
+                      - generic [ref=e550]:
+                        - generic [ref=e551]: Prix
+                        - generic [ref=e553]: 56 000,00 €
+                      - generic [ref=e554]:
+                        - generic [ref=e555]: Coût
+                        - generic [ref=e557]: 5,60 €
+                      - generic [ref=e558]:
+                        - generic [ref=e559]: Frais
+                        - generic [ref=e560]: "-"
+                      - generic [ref=e561]:
+                        - generic [ref=e562]:
+                          - generic [ref=e563]: 20/12/2025 05:08
+                          - generic [ref=e564]: actif
+                        - button [ref=e565]:
+                          - img [ref=e566]
+                    - separator [ref=e568]
+                  - generic [ref=e569]:
+                    - generic [ref=e571] [cursor=pointer]:
+                      - generic [ref=e572]:
+                        - generic [ref=e573]: Vente
+                        - generic [ref=e574]: ordre limite
+                      - generic [ref=e575]:
+                        - generic [ref=e576]: Montant
+                        - generic [ref=e578]: 0,00010000 BTC
+                      - generic [ref=e579]:
+                        - generic [ref=e580]: Prix
+                        - generic [ref=e582]: 256 000,00 €
+                      - generic [ref=e583]:
+                        - generic [ref=e584]: Coût
+                        - generic [ref=e585]: "-"
+                      - generic [ref=e586]:
+                        - generic [ref=e587]: Frais
+                        - generic [ref=e588]: "-"
+                      - generic [ref=e589]:
+                        - generic [ref=e590]:
+                          - generic [ref=e591]: 20/12/2025 05:08
+                          - generic [ref=e592]: actif
+                        - button [ref=e593]:
+                          - img [ref=e594]
+                    - separator [ref=e596]
+                  - generic [ref=e597]:
+                    - generic [ref=e599] [cursor=pointer]:
+                      - generic [ref=e600]:
+                        - generic [ref=e601]: Achat
+                        - generic [ref=e602]: ordre limite
+                      - generic [ref=e603]:
+                        - generic [ref=e604]: Montant
+                        - generic [ref=e606]: 0,00010000 BTC
+                      - generic [ref=e607]:
+                        - generic [ref=e608]: Prix
+                        - generic [ref=e610]: 56 000,00 €
+                      - generic [ref=e611]:
+                        - generic [ref=e612]: Coût
+                        - generic [ref=e614]: 5,60 €
+                      - generic [ref=e615]:
+                        - generic [ref=e616]: Frais
+                        - generic [ref=e617]: "-"
+                      - generic [ref=e618]:
+                        - generic [ref=e619]:
+                          - generic [ref=e620]: 20/12/2025 05:10
+                          - generic [ref=e621]: actif
+                        - button [ref=e622]:
+                          - img [ref=e623]
+                    - separator [ref=e625]
+                  - generic [ref=e626]:
+                    - generic [ref=e628] [cursor=pointer]:
+                      - generic [ref=e629]:
+                        - generic [ref=e630]: Vente
+                        - generic [ref=e631]: ordre limite
+                      - generic [ref=e632]:
+                        - generic [ref=e633]: Montant
+                        - generic [ref=e635]: 0,00010000 BTC
+                      - generic [ref=e636]:
+                        - generic [ref=e637]: Prix
+                        - generic [ref=e639]: 256 000,00 €
+                      - generic [ref=e640]:
+                        - generic [ref=e641]: Coût
+                        - generic [ref=e642]: "-"
+                      - generic [ref=e643]:
+                        - generic [ref=e644]: Frais
+                        - generic [ref=e645]: "-"
+                      - generic [ref=e646]:
+                        - generic [ref=e647]:
+                          - generic [ref=e648]: 20/12/2025 05:11
+                          - generic [ref=e649]: actif
+                        - button [ref=e650]:
+                          - img [ref=e651]
+                    - separator [ref=e653]
+                  - generic [ref=e654]:
+                    - generic [ref=e656] [cursor=pointer]:
+                      - generic [ref=e657]:
+                        - generic [ref=e658]: Achat
+                        - generic [ref=e659]: ordre limite
+                      - generic [ref=e660]:
+                        - generic [ref=e661]: Montant
+                        - generic [ref=e663]: 0,00010000 BTC
+                      - generic [ref=e664]:
+                        - generic [ref=e665]: Prix
+                        - generic [ref=e667]: 56 000,00 €
+                      - generic [ref=e668]:
+                        - generic [ref=e669]: Coût
+                        - generic [ref=e671]: 5,60 €
+                      - generic [ref=e672]:
+                        - generic [ref=e673]: Frais
+                        - generic [ref=e674]: "-"
+                      - generic [ref=e675]:
+                        - generic [ref=e676]:
+                          - generic [ref=e677]: 21/12/2025 05:09
+                          - generic [ref=e678]: actif
+                        - button [ref=e679]:
+                          - img [ref=e680]
+                    - separator [ref=e682]
+                  - generic [ref=e683]:
+                    - generic [ref=e685] [cursor=pointer]:
+                      - generic [ref=e686]:
+                        - generic [ref=e687]: Vente
+                        - generic [ref=e688]: ordre limite
+                      - generic [ref=e689]:
+                        - generic [ref=e690]: Montant
+                        - generic [ref=e692]: 0,00010000 BTC
+                      - generic [ref=e693]:
+                        - generic [ref=e694]: Prix
+                        - generic [ref=e696]: 256 000,00 €
+                      - generic [ref=e697]:
+                        - generic [ref=e698]: Coût
+                        - generic [ref=e699]: "-"
+                      - generic [ref=e700]:
+                        - generic [ref=e701]: Frais
+                        - generic [ref=e702]: "-"
+                      - generic [ref=e703]:
+                        - generic [ref=e704]:
+                          - generic [ref=e705]: 21/12/2025 05:09
+                          - generic [ref=e706]: actif
+                        - button [ref=e707]:
+                          - img [ref=e708]
+                    - separator [ref=e710]
+                  - generic [ref=e713] [cursor=pointer]:
+                    - generic [ref=e714]:
+                      - generic [ref=e715]: Achat
+                      - generic [ref=e716]: ordre limite
+                    - generic [ref=e717]:
+                      - generic [ref=e718]: Montant
+                      - generic [ref=e720]: 0,00010000 BTC
+                    - generic [ref=e721]:
+                      - generic [ref=e722]: Prix
+                      - generic [ref=e724]: 56 000,00 €
+                    - generic [ref=e725]:
+                      - generic [ref=e726]: Coût
+                      - generic [ref=e728]: 5,60 €
+                    - generic [ref=e729]:
+                      - generic [ref=e730]: Frais
+                      - generic [ref=e731]: "-"
+                    - generic [ref=e732]:
+                      - generic [ref=e733]:
+                        - generic [ref=e734]: 22/12/2025 05:08
+                        - generic [ref=e735]: actif
+                      - button [ref=e736]:
+                        - img [ref=e737]
+                  - generic [ref=e741]:
+                    - button "<" [disabled]:
+                      - generic: <
+                    - button "1" [ref=e742] [cursor=pointer]:
+                      - generic [ref=e743]: "1"
+                    - button "2" [ref=e744] [cursor=pointer]:
+                      - generic [ref=e745]: "2"
+                    - button "3" [ref=e746] [cursor=pointer]:
+                      - generic [ref=e747]: "3"
+                    - button "..." [disabled]:
+                      - generic: ...
+                    - button "364" [ref=e748] [cursor=pointer]:
+                      - generic [ref=e749]: "364"
+                    - button ">" [ref=e750] [cursor=pointer]:
+                      - generic [ref=e751]: ">"
+          - contentinfo [ref=e752]:
+            - generic [ref=e753]:
+              - generic [ref=e754]: Copyright © 2026
+              - link "Paymium" [ref=e755] [cursor=pointer]:
+                - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+              - generic [ref=e756]: 6.15.0
+              - link "Statut" [ref=e757] [cursor=pointer]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e758] [cursor=pointer]
+  - generic:
+    - generic:
+      - generic:
+        - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e759]':
+          - generic [ref=e760]:
+            - generic [ref=e761]:
+              - button "Fermer le widget sans consentement" [ref=e762] [cursor=pointer]:
+                - generic [ref=e763]: Continuer sans accepter
+              - generic [ref=e765]:
+                - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e768]:
+                  - generic [ref=e769]: Des cookies pour
+                  - generic [ref=e770]: vos bitcoins !
+                - generic [ref=e771]:
+                  - paragraph [ref=e772]:
+                    - text: Parce que
+                    - strong [ref=e773]: stacker des sats ça donne faim
+                    - text: ", nous vous proposons une pause cookie ! 🍪"
+                  - paragraph [ref=e774]:
+                    - text: Avec votre accord, Paymium aimerait utiliser des
+                    - strong [ref=e775]: cookies
+                    - text: placés par nous et/ou par nos partenaires sur notre site.
+                  - paragraph [ref=e776]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+                  - paragraph [ref=e777]:
+                    - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                    - strong [ref=e778]: Vous choisissez ceux qui vous plaisent
+                    - text: ", comme pour le trading !"
+                  - paragraph [ref=e779]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+                - paragraph [ref=e781]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+              - button "Consentements certifiés par Axeptio" [ref=e784]:
+                - generic [ref=e785]: Consentements certifiés par
+                - img "Axeptio" [ref=e789]
+            - generic [ref=e793]:
+              - button "Je choisis les cookies à configurer" [ref=e794] [cursor=pointer]: Je choisis
+              - button "Accepter les cookies" [ref=e795] [cursor=pointer]: OK pour moi
+          - generic [ref=e796]:
+            - text: Axeptio consent
+            - checkbox [ref=e797]
+          - generic [ref=e798]:
+            - paragraph [ref=e799]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+            - paragraph [ref=e800]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+        - button "Fermer le widget sans consentement" [ref=e801] [cursor=pointer]:
+          - img [ref=e805]
+```

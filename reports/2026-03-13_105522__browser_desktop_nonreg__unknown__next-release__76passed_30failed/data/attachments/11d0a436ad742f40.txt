@@ -1,9 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] SyntaxError: Unexpected token '<'
-Error: expect(received).toPassAxe(expected)
-
-Expected: No violations
-Received: 3 violations
-
-Violations: aria-dialog-name(1), aria-progressbar-name(1), color-contrast(1)
-

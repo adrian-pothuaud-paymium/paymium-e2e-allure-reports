@@ -1,5 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-Login attempt 1 failed
-[pageerror] SyntaxError: Unexpected token '<'
-Error: API /api/user/swaps returned 503 Service Unavailable: {"type":"about:blank","title":"Swap unavailable","status":503,"detail":"Swap feature is temporarily unavailable. Please try again later","instance":"swap_feature_unavailable"}
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/_components/AppV2PreviewView.ts:39:15
