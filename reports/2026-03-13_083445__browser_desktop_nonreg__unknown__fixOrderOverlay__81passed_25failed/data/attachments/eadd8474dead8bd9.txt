@@ -1,0 +1,7 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Login attempt 1 failed
+[pageerror] SyntaxError: Unexpected token '<'
+Login attempt 2 failed
+[pageerror] SyntaxError: Unexpected token '<'
+Login attempt 3 failed
+[pageerror] SyntaxError: Unexpected token '<'

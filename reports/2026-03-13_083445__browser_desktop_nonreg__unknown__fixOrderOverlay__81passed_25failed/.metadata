@@ -1,0 +1,10 @@
+TIMESTAMP=2026-03-13_083445
+ENVIRONMENT=unknown
+BRANCH=fixOrderOverlay
+E2E_BRANCH=main
+JOB=browser_desktop_nonreg
+TOTAL=106
+PASSED=81
+FAILED=25
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39610
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/235529
