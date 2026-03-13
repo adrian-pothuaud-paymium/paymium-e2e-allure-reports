@@ -1,2 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-Test timeout of 120000ms exceeded.

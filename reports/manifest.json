@@ -1,5 +1,19 @@
 [
   {
+    "folder": "2026-03-13_103124__browser_desktop_nonreg__unknown__729-issue__81passed_25failed",
+    "timestamp": "2026-03-13_103124",
+    "environment": "unknown",
+    "branch": "729-issue",
+    "e2eBranch": "main",
+    "job": "browser_desktop_nonreg",
+    "total": 106,
+    "passed": 81,
+    "failed": 25,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39623",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/235780"
+  }
+,
+  {
     "folder": "2026-03-13_091808__browser_responsive_nonreg__unknown__feature-819-issue__36passed_17failed",
     "timestamp": "2026-03-13_091808",
     "environment": "unknown",
@@ -137,20 +151,6 @@
     "failed": 15,
     "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39604",
     "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/235333"
-  }
-,
-  {
-    "folder": "2026-03-12_193514__browser_desktop_nonreg__unknown__feature-fixBiometrieFreeze__81passed_25failed",
-    "timestamp": "2026-03-12_193514",
-    "environment": "unknown",
-    "branch": "feature/fixBiometrieFreeze",
-    "e2eBranch": "main",
-    "job": "browser_desktop_nonreg",
-    "total": 106,
-    "passed": 81,
-    "failed": 25,
-    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39604",
-    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/235332"
   }
 ,
   {

@@ -1,0 +1,12 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.fill: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Montant' })
+    - locator resolved to <input rows="1" value="" dir="auto" id="amount" type="text" autocorrect="on" autocomplete="on" spellcheck="true" inputmode="numeric" autocapitalize="sentences" virtualkeyboardpolicy="auto" class="css-11aywtz r-6taxm2 color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] border-color-[var(--components--input-primary-default-border)] background-color-[var(--components--input-primary-default-background)] border-radius-[8px] padding-top-[var(--space-md)] padding-bo…/>
+    - fill("0")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
+  - element was detached from the DOM, retrying
+
+

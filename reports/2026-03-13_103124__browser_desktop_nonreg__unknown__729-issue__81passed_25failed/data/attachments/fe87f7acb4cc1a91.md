@@ -1,0 +1,152 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - generic [ref=e48]:
+          - button "Acheter" [ref=e49] [cursor=pointer]:
+            - img [ref=e50]
+            - generic [ref=e52]: Acheter
+          - button [ref=e53] [cursor=pointer]:
+            - img [ref=e54]
+          - button "FR" [ref=e57] [cursor=pointer]:
+            - generic [ref=e58]: FR
+            - img [ref=e59]
+          - button [ref=e61] [cursor=pointer]:
+            - img [ref=e64]
+          - button [ref=e66] [cursor=pointer]:
+            - img [ref=e67]
+          - button [ref=e70] [cursor=pointer]:
+            - img [ref=e71]
+          - button [ref=e74] [cursor=pointer]:
+            - img [ref=e75]
+      - generic [ref=e77]:
+        - navigation [ref=e78]:
+          - generic [ref=e79]:
+            - generic [ref=e82]:
+              - img [ref=e84]
+              - textbox "Chercher" [ref=e86]
+            - generic [ref=e87]:
+              - link "Tableau de bord" [ref=e88] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e89]
+                - generic [ref=e91]: Tableau de bord
+              - link "Portefeuille" [ref=e92] [cursor=pointer]:
+                - /url: /wallet
+                - img [ref=e93]
+                - generic [ref=e95]: Portefeuille
+              - link "Dépôt / retrait" [ref=e96] [cursor=pointer]:
+                - /url: /deposit/EUR
+                - img [ref=e97]
+                - generic [ref=e99]: Dépôt / retrait
+              - link "Achat récurrent" [ref=e100] [cursor=pointer]:
+                - /url: /recurrent
+                - img [ref=e101]
+                - generic [ref=e103]: Achat récurrent
+              - link "Mode expert" [ref=e104] [cursor=pointer]:
+                - /url: /trade/BTC/EUR
+                - img [ref=e105]
+                - generic [ref=e107]: Mode expert
+              - link "Parrainage" [active] [ref=e108] [cursor=pointer]:
+                - /url: /referral
+                - img [ref=e109]
+                - generic [ref=e111]: Parrainage
+              - link "Plan Bitcoin Famille" [ref=e112] [cursor=pointer]:
+                - /url: /family
+                - img [ref=e113]
+                - generic [ref=e115]: Plan Bitcoin Famille
+              - link "Historique" [ref=e116] [cursor=pointer]:
+                - /url: /history
+                - img [ref=e117]
+                - generic [ref=e119]: Historique
+        - generic [ref=e120]:
+          - generic [ref=e123]:
+            - tablist [ref=e126]:
+              - generic [ref=e127]:
+                - tab "Parrainage" [selected] [ref=e129] [cursor=pointer]:
+                  - generic [ref=e130]: Parrainage
+                - tab "Code promo" [ref=e131] [cursor=pointer]:
+                  - generic [ref=e132]: Code promo
+            - tabpanel "Parrainage" [ref=e133]:
+              - generic [ref=e134]:
+                - generic [ref=e135]: Invitez vos proches
+                - generic [ref=e136]:
+                  - generic [ref=e137]:
+                    - generic [ref=e138]:
+                      - generic [ref=e139]: Parrainez vos amis et gagnez 30% de leurs commissions.
+                      - generic [ref=e140]: Partagez votre lien de parrainage à vos amis et gagnez 30% des commissions payées par vos filleuls sur leurs ordres “Taker” pendant les 6 mois suivant leur inscription.
+                    - generic [ref=e142]:
+                      - generic [ref=e143]:
+                        - generic [ref=e144]: Votre lien de parrainage
+                        - generic [ref=e145]: http://paymium.local:3000/sign-up?referral=8EXQ_xDxfy5mt3JCnpdC
+                      - button "Copier le lien" [ref=e146] [cursor=pointer]:
+                        - img [ref=e147]
+                        - generic [ref=e149]: Copier le lien
+                  - generic [ref=e150]:
+                    - generic [ref=e151]: Vos Invitations
+                    - generic [ref=e154]:
+                      - generic [ref=e155]:
+                        - generic [ref=e156]: Total des gains
+                        - generic [ref=e157]: 0,00 €
+                      - generic [ref=e158]:
+                        - generic [ref=e159]: Filleuls
+                        - generic [ref=e160]: "2"
+          - contentinfo [ref=e161]:
+            - generic [ref=e162]:
+              - generic [ref=e163]: Copyright © 2026
+              - link "Paymium" [ref=e164] [cursor=pointer]:
+                - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+              - generic [ref=e165]: 6.15.0
+              - link "Statut" [ref=e166] [cursor=pointer]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e167] [cursor=pointer]
+  - generic:
+    - generic:
+      - generic:
+        - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e168]':
+          - generic [ref=e169]:
+            - generic [ref=e170]:
+              - button "Fermer le widget sans consentement" [ref=e171] [cursor=pointer]:
+                - generic [ref=e172]: Continuer sans accepter
+              - generic [ref=e174]:
+                - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e177]:
+                  - generic [ref=e178]: Des cookies pour
+                  - generic [ref=e179]: vos bitcoins !
+                - generic [ref=e180]:
+                  - paragraph [ref=e181]:
+                    - text: Parce que
+                    - strong [ref=e182]: stacker des sats ça donne faim
+                    - text: ", nous vous proposons une pause cookie ! 🍪"
+                  - paragraph [ref=e183]:
+                    - text: Avec votre accord, Paymium aimerait utiliser des
+                    - strong [ref=e184]: cookies
+                    - text: placés par nous et/ou par nos partenaires sur notre site.
+                  - paragraph [ref=e185]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+                  - paragraph [ref=e186]:
+                    - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                    - strong [ref=e187]: Vous choisissez ceux qui vous plaisent
+                    - text: ", comme pour le trading !"
+                  - paragraph [ref=e188]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+                - paragraph [ref=e190]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+              - button "Consentements certifiés par Axeptio" [ref=e193]:
+                - generic [ref=e194]: Consentements certifiés par
+                - img "Axeptio" [ref=e198]
+            - generic [ref=e202]:
+              - button "Je choisis les cookies à configurer" [ref=e203] [cursor=pointer]: Je choisis
+              - button "Accepter les cookies" [ref=e204] [cursor=pointer]: OK pour moi
+          - generic [ref=e205]:
+            - text: Axeptio consent
+            - checkbox [ref=e206]
+          - generic [ref=e207]:
+            - paragraph [ref=e208]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+            - paragraph [ref=e209]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+        - button "Fermer le widget sans consentement" [ref=e210] [cursor=pointer]:
+          - img [ref=e214]
+```
