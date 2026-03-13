@@ -1,0 +1,75 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e11] [cursor=pointer]:
+        - /url: https://www.paymium.com/
+        - img [ref=e13]
+      - button [ref=e50] [cursor=pointer]:
+        - img [ref=e52]
+    - generic [ref=e54]:
+      - navigation
+      - generic [ref=e55]:
+        - generic [ref=e60]:
+          - generic [ref=e61]: Créer un nouveau mot de passe
+          - form [ref=e62]:
+            - generic [ref=e64]:
+              - generic [ref=e66]: Email
+              - textbox "Email" [ref=e68]: trololo+cestpartilesamis@paymium.test
+            - alert [ref=e69]:
+              - img [ref=e71]
+              - generic [ref=e74]: Network Error
+            - button "Envoyer le lien par email" [ref=e75] [cursor=pointer]:
+              - generic [ref=e76]: Envoyer le lien par email
+        - contentinfo [ref=e77]:
+          - generic [ref=e78]:
+            - generic [ref=e79]: Copyright © 2026
+            - link "Paymium" [ref=e80] [cursor=pointer]:
+              - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+            - generic [ref=e81]: 6.16.1
+            - link "Statut" [ref=e82] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e83] [cursor=pointer]
+  - generic [ref=e84]:
+    - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e85]':
+      - generic [ref=e86]:
+        - generic [ref=e87]:
+          - button "Fermer le widget sans consentement" [ref=e88] [cursor=pointer]:
+            - generic [ref=e89]: Continuer sans accepter
+          - generic [ref=e91]:
+            - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e94]:
+              - generic [ref=e95]: Des cookies pour
+              - generic [ref=e96]: vos bitcoins !
+            - generic [ref=e97]:
+              - paragraph [ref=e98]:
+                - text: Parce que
+                - strong [ref=e99]: stacker des sats ça donne faim
+                - text: ", nous vous proposons une pause cookie ! 🍪"
+              - paragraph [ref=e100]:
+                - text: Avec votre accord, Paymium aimerait utiliser des
+                - strong [ref=e101]: cookies
+                - text: placés par nous et/ou par nos partenaires sur notre site.
+              - paragraph [ref=e102]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+              - paragraph [ref=e103]:
+                - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                - strong [ref=e104]: Vous choisissez ceux qui vous plaisent
+                - text: ", comme pour le trading !"
+              - paragraph [ref=e105]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+            - paragraph [ref=e107]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+          - button "Consentements certifiés par Axeptio" [ref=e110]:
+            - generic [ref=e111]: Consentements certifiés par
+            - img "Axeptio" [ref=e115]
+        - generic [ref=e119]:
+          - button "Je choisis les cookies à configurer" [ref=e120] [cursor=pointer]: Je choisis
+          - button "Accepter les cookies" [ref=e121] [cursor=pointer]: OK pour moi
+      - generic [ref=e122]:
+        - text: Axeptio consent
+        - checkbox [ref=e123]
+      - generic [ref=e124]:
+        - paragraph [ref=e125]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+        - paragraph [ref=e126]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+    - button "Fermer le widget sans consentement" [ref=e127] [cursor=pointer]:
+      - img [ref=e131]
+```

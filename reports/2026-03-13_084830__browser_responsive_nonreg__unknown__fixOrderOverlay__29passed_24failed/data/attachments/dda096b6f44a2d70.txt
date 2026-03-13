@@ -1,7 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] Fetch API cannot load http: /paymium.local:3000/ due to access control checks.
-[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
-[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/currencies due to access control checks.

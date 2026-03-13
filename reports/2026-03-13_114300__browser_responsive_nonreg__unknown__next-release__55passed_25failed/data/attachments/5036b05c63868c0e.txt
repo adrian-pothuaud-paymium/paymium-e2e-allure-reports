@@ -1,0 +1,14 @@
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/currencies due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user/tracking/consent due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/general_settings due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/currencies due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/users/password due to access control checks.
+Error: Reset password request was not observed within 45s (attempt 1/10)
+    at ResetPassword.send (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/reset-password/index.ts:53:15)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/authentication/reset-password/unregistered.spec.ts:25:3
