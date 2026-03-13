@@ -1,9 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-TimeoutError: locator.waitFor: Timeout 120000ms exceeded.
-Call log:
-  - waiting for locator('#scroll').getByText('Plan Bitcoin Famille', { exact: true }) to be visible
-
-    at Family.waitForLocators (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/_components/BasePage.ts:34:22)
-    at Family.waitForBasePage (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/_components/BasePage.ts:21:16)
-    at Family.waitForPage (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/family/empty.ts:39:5)
-    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/investment/family-plan/presentation-guest.spec.ts:16:3
