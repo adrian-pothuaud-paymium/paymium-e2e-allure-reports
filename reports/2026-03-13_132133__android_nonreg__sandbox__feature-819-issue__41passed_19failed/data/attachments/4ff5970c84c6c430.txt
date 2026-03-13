@@ -1,0 +1,286 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur peut activer et désactiver l'authentification à deux facteurs avec succès
+[LOCALE] Locale forcée en fr-FR
+
+
+📌 Test Step: Create test user
+Attempting to create test user (attempt 1 of 20)...
+Creating test user in environment sandbox with state phoneApproved - attempt 1/20
+Sending GET /users/confirmation request to verify email
+Sending PUT /user request to update user information
+Sending POST /phone_numbers request to add phone number
+Sending POST /phone_numbers/verify request to verify phone number
+
+
+📌 Test Step: Open App and go to Sign In
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:29
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:30
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- AxeptioCookies.acceptCookies()
+                |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+    |-- WelcomeScreen.waitForScreen(20000)
+        |-- WelcomeScreen.waitForSelectors(["android=new UiSelector().resourceId(\"onboarding.login\")","android=new UiSelector().resourceId(\"onboarding.signup\")"], 20000)
+            |-- Waiting for selector 1/2: android=new UiSelector().resourceId("onboarding.login")
+            |-- Waiting for selector 2/2: android=new UiSelector().resourceId("onboarding.signup")
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+        |-- SignIn.waitForSelectors(["android=new UiSelector().resourceId(\"login.email\")","android=new UiSelector().resourceId(\"login.password\")","android=new UiSelector().textContains(\"Mot de passe oublié\")","android=new UiSelector().textContains(\"S'inscrire\")"], 20000)
+            |-- Waiting for selector 1/4: android=new UiSelector().resourceId("login.email")
+            |-- Waiting for selector 2/4: android=new UiSelector().resourceId("login.password")
+            |-- Waiting for selector 3/4: android=new UiSelector().textContains("Mot de passe oublié")
+            |-- Waiting for selector 4/4: android=new UiSelector().textContains("S'inscrire")
+
+
+📌 Test Step: Sign in with test account
+|-- Shortcuts.authenticate(********) paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:34
+    |-- SignIn.fillEmail(adrian.pothuaud+auto.1773397633735@paymium.com)
+    |-- SignIn.fillPassword(********)
+    |-- SignIn.submit()
+    |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired()
+        |-- Shortcuts.handlePinCodeIfRequired(********)
+            |-- CreatePinCode.waitForScreen(20000)
+                |-- CreatePinCode.waitForSelectors(["//android.widget.Button[@content-desc=\"Créer un code\"]"], 20000)
+                    |-- Waiting for selector 1/1: //android.widget.Button[@content-desc="Créer un code"]
+            |-- CreatePinCode.create()
+            |-- CreateAccessCode.waitForScreen(20000)
+                |-- CreateAccessCode.waitForSelectors(["//android.widget.TextView[@text=\"Créez votre code\"]","//android.widget.Button[@content-desc=\"0\"]","//android.widget.Button[@content-desc=\"1\"]"], 20000)
+                    |-- Waiting for selector 1/3: //android.widget.TextView[@text="Créez votre code"]
+                    |-- Waiting for selector 2/3: //android.widget.Button[@content-desc="0"]
+                    |-- Waiting for selector 3/3: //android.widget.Button[@content-desc="1"]
+            |-- CreateAccessCode.fillCode(********)
+            |-- ConfirmPinCode.waitForScreen(20000)
+                |-- ConfirmPinCode.waitForSelectors(["//android.widget.TextView[@text=\"Confirmez votre code\"]","//android.widget.Button[@content-desc=\"0\"]","//android.widget.Button[@content-desc=\"1\"]"], 20000)
+                    |-- Waiting for selector 1/3: //android.widget.TextView[@text="Confirmez votre code"]
+                    |-- Waiting for selector 2/3: //android.widget.Button[@content-desc="0"]
+                    |-- Waiting for selector 3/3: //android.widget.Button[@content-desc="1"]
+            |-- ConfirmPinCode.fillCode(********)
+        |-- Shortcuts.handleBiometricsIfRequired(20000)
+            |-- EnableBiometrics.waitForScreen(20000)
+                |-- EnableBiometrics.waitForSelectors(["//android.widget.TextView[@text=\"Déverrouillez instantanément via la biométrie\"]","//android.widget.Button[@content-desc=\"Activer la biométrie\"]","//android.widget.Button[@content-desc=\"Plus tard\"]"], 20000)
+                    |-- Waiting for selector 1/3: //android.widget.TextView[@text="Déverrouillez instantanément via la biométrie"]
+            |-- Écran biométrie non affiché (différés par l'app), l'InterruptHandler le gérera
+    |-- DashboardScreen.waitForScreen()
+        |-- DashboardScreen.waitForSelectors(["//android.widget.Button[@content-desc=\"Tableau de bord\"]","//android.widget.Button[@content-desc=\"Portefeuille\"]","//android.widget.Button[@content-desc=\"Achat / vente\"]","//android.widget.Button[@content-desc=\"Transfert\"]","android=new UiSelector().resourceId(\"button-header-account\")"], 10000)
+            |-- Waiting for selector 1/5: //android.widget.Button[@content-desc="Tableau de bord"]
+            |-- Waiting for selector 2/5: //android.widget.Button[@content-desc="Portefeuille"]
+            |-- Waiting for selector 3/5: //android.widget.Button[@content-desc="Achat / vente"]
+            |-- Waiting for selector 4/5: //android.widget.Button[@content-desc="Transfert"]
+            |-- Waiting for selector 5/5: android=new UiSelector().resourceId("button-header-account")
+
+
+📌 Test Step: Go to 2FA activation screen
+|-- UserMenu.open() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:38
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:39
+    |-- MyAccount.waitForSelectors(["android=new UiSelector().resourceId(\"myAccount\")"], 10000)
+        |-- Waiting for selector 1/1: android=new UiSelector().resourceId("myAccount")
+|-- MyAccount.goToProfile() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:40
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:41
+    |-- Profile.waitForSelectors(["//android.widget.TextView[@text=\"Profil\"]","//android.view.ViewGroup[@content-desc=\"Statut du compte\"]","//android.view.ViewGroup[@content-desc=\"Sécurité du compte\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Profil"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Statut du compte"]
+        |-- Waiting for selector 3/3: //android.view.ViewGroup[@content-desc="Sécurité du compte"]
+|-- Profile.goToAccountSecurity() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:42
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:43
+    |-- ProfileSecurity.waitForSelectors(["//android.widget.TextView[@text=\"Sécurité\"]","//android.view.ViewGroup[@content-desc=\"Changer le mot de passe\"]","//android.widget.Switch[@content-desc=\"Second facteur d'authentification (2FA)\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Sécurité"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Changer le mot de passe"]
+        |-- Waiting for selector 3/3: //android.widget.Switch[@content-desc="Second facteur d'authentification (2FA)"]
+|-- ProfileSecurity.toggleTwoFactorAuth() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:44
+|-- TwoFactorActivationSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:45
+    |-- Waiting for selector 1/2: android=new UiSelector().resourceId("totp_secret")
+    |-- Waiting for selector 2/2: android=new UiSelector().resourceId("code-input-hidden")
+|-- TwoFactorActivationSheet.getTotpCode() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:46
+
+
+📌 Test Step: Activate 2FA with valid code
+|-- TwoFactorActivationSheet.fill(470642) paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:51
+|-- TwoFactorActivationSheet.activate() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:52
+    |-- Utils.magicSwipeAndClick(["android=new UiSelector().description(\"Activer\")"])
+        |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["android=new UiSelector().description(\"Activer\")"]})
+            |-- [magicSwipe] Searching for element: [android=new UiSelector().description("Activer")]
+            |-- [magicSwipe] Using auto-detected scrollable element
+            |-- [magicSwipe] Found visible element: android=new UiSelector().description("Activer")
+            |-- [magicSwipe] Element already visible, no swipe needed
+        |-- Utils.clickFirstExisting(["android=new UiSelector().description(\"Activer\")"])
+            |-- Clic sur le premier élément existant parmi: 1 sélecteurs
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:54
+    |-- ProfileSecurity.waitForSelectors(["//android.widget.TextView[@text=\"Sécurité\"]","//android.view.ViewGroup[@content-desc=\"Changer le mot de passe\"]","//android.widget.Switch[@content-desc=\"Second facteur d'authentification (2FA)\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Sécurité"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Changer le mot de passe"]
+        |-- Waiting for selector 3/3: //android.widget.Switch[@content-desc="Second facteur d'authentification (2FA)"]
+
+
+📌 Test Step: Sign out and sign in again to check 2FA is required
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:59
+    |-- Profile.waitForSelectors(["//android.widget.TextView[@text=\"Profil\"]","//android.view.ViewGroup[@content-desc=\"Statut du compte\"]","//android.view.ViewGroup[@content-desc=\"Sécurité du compte\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Profil"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Statut du compte"]
+        |-- Waiting for selector 3/3: //android.view.ViewGroup[@content-desc="Sécurité du compte"]
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:61
+    |-- MyAccount.waitForSelectors(["android=new UiSelector().resourceId(\"myAccount\")"], 10000)
+        |-- Waiting for selector 1/1: android=new UiSelector().resourceId("myAccount")
+|-- MyAccount.signOut() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:62
+    |-- Utils.magicSwipeAndClick(["android=new UiSelector().description(\"Se déconnecter\")"])
+        |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["android=new UiSelector().description(\"Se déconnecter\")"]})
+            |-- [magicSwipe] Searching for element: [android=new UiSelector().description("Se déconnecter")]
+            |-- [magicSwipe] Using auto-detected scrollable element
+            |-- [magicSwipe] Found visible element: android=new UiSelector().description("Se déconnecter")
+            |-- [magicSwipe] Element already visible, no swipe needed
+        |-- Utils.clickFirstExisting(["android=new UiSelector().description(\"Se déconnecter\")"])
+            |-- Clic sur le premier élément existant parmi: 1 sélecteurs
+|-- SignIn.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:63
+    |-- SignIn.waitForSelectors(["android=new UiSelector().resourceId(\"login.email\")","android=new UiSelector().resourceId(\"login.password\")","android=new UiSelector().textContains(\"Mot de passe oublié\")","android=new UiSelector().textContains(\"S'inscrire\")"], 10000)
+        |-- Waiting for selector 1/4: android=new UiSelector().resourceId("login.email")
+        |-- Waiting for selector 2/4: android=new UiSelector().resourceId("login.password")
+        |-- Waiting for selector 3/4: android=new UiSelector().textContains("Mot de passe oublié")
+        |-- Waiting for selector 4/4: android=new UiSelector().textContains("S'inscrire")
+|-- SignIn.fillAsTestAccount({"credentials":"******** (hidden for security)","environment":"sandbox","accountType":"individual","userNumber":"SB-U70335532","state":"phoneApproved"}) paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:64
+    |-- SignIn.fillCredentials(********, ********)
+        |-- SignIn.fillEmail(adrian.pothuaud+auto.1773397633735@paymium.com)
+        |-- SignIn.fillPassword(********)
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:65
+|-- SignIn.waitFor2FA() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:66
+
+
+📌 Test Step: Fill 2FA with valid code
+|-- SignIn.fill2FA(********) paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:72
+|-- Shortcuts.handleAccessCodeAndBiometricsIfRequired() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:74
+    |-- Shortcuts.handlePinCodeIfRequired(********)
+        |-- CreatePinCode.waitForScreen(20000)
+            |-- CreatePinCode.waitForSelectors(["//android.widget.Button[@content-desc=\"Créer un code\"]"], 20000)
+                |-- Waiting for selector 1/1: //android.widget.Button[@content-desc="Créer un code"]
+        |-- CreatePinCode.create()
+        |-- CreateAccessCode.waitForScreen(20000)
+            |-- CreateAccessCode.waitForSelectors(["//android.widget.TextView[@text=\"Créez votre code\"]","//android.widget.Button[@content-desc=\"0\"]","//android.widget.Button[@content-desc=\"1\"]"], 20000)
+                |-- Waiting for selector 1/3: //android.widget.TextView[@text="Créez votre code"]
+                |-- Waiting for selector 2/3: //android.widget.Button[@content-desc="0"]
+                |-- Waiting for selector 3/3: //android.widget.Button[@content-desc="1"]
+        |-- CreateAccessCode.fillCode(********)
+        |-- ConfirmPinCode.waitForScreen(20000)
+            |-- ConfirmPinCode.waitForSelectors(["//android.widget.TextView[@text=\"Confirmez votre code\"]","//android.widget.Button[@content-desc=\"0\"]","//android.widget.Button[@content-desc=\"1\"]"], 20000)
+                |-- Waiting for selector 1/3: //android.widget.TextView[@text="Confirmez votre code"]
+                |-- Waiting for selector 2/3: //android.widget.Button[@content-desc="0"]
+                |-- Waiting for selector 3/3: //android.widget.Button[@content-desc="1"]
+        |-- ConfirmPinCode.fillCode(********)
+    |-- Shortcuts.handleBiometricsIfRequired(20000)
+        |-- EnableBiometrics.waitForScreen(20000)
+            |-- EnableBiometrics.waitForSelectors(["//android.widget.TextView[@text=\"Déverrouillez instantanément via la biométrie\"]","//android.widget.Button[@content-desc=\"Activer la biométrie\"]","//android.widget.Button[@content-desc=\"Plus tard\"]"], 20000)
+                |-- Waiting for selector 1/3: //android.widget.TextView[@text="Déverrouillez instantanément via la biométrie"]
+        |-- Écran biométrie non affiché (différés par l'app), l'InterruptHandler le gérera
+|-- DashboardScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:75
+    |-- DashboardScreen.waitForSelectors(["//android.widget.Button[@content-desc=\"Tableau de bord\"]","//android.widget.Button[@content-desc=\"Portefeuille\"]","//android.widget.Button[@content-desc=\"Achat / vente\"]","//android.widget.Button[@content-desc=\"Transfert\"]","android=new UiSelector().resourceId(\"button-header-account\")"], 10000)
+        |-- Waiting for selector 1/5: //android.widget.Button[@content-desc="Tableau de bord"]
+        |-- Waiting for selector 2/5: //android.widget.Button[@content-desc="Portefeuille"]
+        |-- Waiting for selector 3/5: //android.widget.Button[@content-desc="Achat / vente"]
+        |-- Waiting for selector 4/5: //android.widget.Button[@content-desc="Transfert"]
+        |-- Waiting for selector 5/5: android=new UiSelector().resourceId("button-header-account")
+
+
+📌 Test Step: Go to 2FA deactivation screen
+|-- UserMenu.open() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:79
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:80
+    |-- MyAccount.waitForSelectors(["android=new UiSelector().resourceId(\"myAccount\")"], 10000)
+        |-- Waiting for selector 1/1: android=new UiSelector().resourceId("myAccount")
+|-- MyAccount.goToProfile() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:81
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:82
+    |-- Profile.waitForSelectors(["//android.widget.TextView[@text=\"Profil\"]","//android.view.ViewGroup[@content-desc=\"Statut du compte\"]","//android.view.ViewGroup[@content-desc=\"Sécurité du compte\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Profil"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Statut du compte"]
+        |-- Waiting for selector 3/3: //android.view.ViewGroup[@content-desc="Sécurité du compte"]
+|-- Profile.goToAccountSecurity() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:83
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:84
+    |-- ProfileSecurity.waitForSelectors(["//android.widget.TextView[@text=\"Sécurité\"]","//android.view.ViewGroup[@content-desc=\"Changer le mot de passe\"]","//android.widget.Switch[@content-desc=\"Second facteur d'authentification (2FA)\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Sécurité"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Changer le mot de passe"]
+        |-- Waiting for selector 3/3: //android.widget.Switch[@content-desc="Second facteur d'authentification (2FA)"]
+|-- ProfileSecurity.toggleTwoFactorAuth() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:85
+|-- TwoFactorRemovalSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:86
+    |-- Waiting for selector 1/3: //android.widget.TextView[@text="Second facteur d'authentification (2FA)"]
+    |-- Waiting for selector 2/3: android=new UiSelector().resourceId("code-input-hidden")
+    |-- Waiting for selector 3/3: android=new UiSelector().description("Désactiver")
+
+
+📌 Test Step: Deactivate 2FA with valid code
+|-- TwoFactorRemovalSheet.fill(047670) paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:91
+|-- TwoFactorRemovalSheet.deactivate() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:92
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:93
+    |-- ProfileSecurity.waitForSelectors(["//android.widget.TextView[@text=\"Sécurité\"]","//android.view.ViewGroup[@content-desc=\"Changer le mot de passe\"]","//android.widget.Switch[@content-desc=\"Second facteur d'authentification (2FA)\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Sécurité"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Changer le mot de passe"]
+        |-- Waiting for selector 3/3: //android.widget.Switch[@content-desc="Second facteur d'authentification (2FA)"]
+
+
+📌 Test Step: Sign out and sign in again to check 2FA is not required anymore
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:98
+    |-- Profile.waitForSelectors(["//android.widget.TextView[@text=\"Profil\"]","//android.view.ViewGroup[@content-desc=\"Statut du compte\"]","//android.view.ViewGroup[@content-desc=\"Sécurité du compte\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Profil"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Statut du compte"]
+        |-- Waiting for selector 3/3: //android.view.ViewGroup[@content-desc="Sécurité du compte"]
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:100
+    |-- MyAccount.waitForSelectors(["android=new UiSelector().resourceId(\"myAccount\")"], 10000)
+        |-- Waiting for selector 1/1: android=new UiSelector().resourceId("myAccount")
+|-- MyAccount.signOut() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:101
+    |-- Utils.magicSwipeAndClick(["android=new UiSelector().description(\"Se déconnecter\")"])
+        |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["android=new UiSelector().description(\"Se déconnecter\")"]})
+            |-- [magicSwipe] Searching for element: [android=new UiSelector().description("Se déconnecter")]
+            |-- [magicSwipe] Using auto-detected scrollable element
+            |-- [magicSwipe] Found visible element: android=new UiSelector().description("Se déconnecter")
+            |-- [magicSwipe] Element already visible, no swipe needed
+        |-- Utils.clickFirstExisting(["android=new UiSelector().description(\"Se déconnecter\")"])
+            |-- Clic sur le premier élément existant parmi: 1 sélecteurs
+|-- SignIn.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:102
+    |-- SignIn.waitForSelectors(["android=new UiSelector().resourceId(\"login.email\")","android=new UiSelector().resourceId(\"login.password\")","android=new UiSelector().textContains(\"Mot de passe oublié\")","android=new UiSelector().textContains(\"S'inscrire\")"], 10000)
+        |-- Waiting for selector 1/4: android=new UiSelector().resourceId("login.email")
+        |-- Waiting for selector 2/4: android=new UiSelector().resourceId("login.password")
+        |-- Waiting for selector 3/4: android=new UiSelector().textContains("Mot de passe oublié")
+        |-- Waiting for selector 4/4: android=new UiSelector().textContains("S'inscrire")
+|-- SignIn.fillAsTestAccount({"credentials":"******** (hidden for security)","environment":"sandbox","accountType":"individual","userNumber":"SB-U70335532","state":"phoneApproved"}) paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:103
+    |-- SignIn.fillCredentials(********, ********)
+        |-- SignIn.fillEmail(adrian.pothuaud+auto.1773397633735@paymium.com)
+        |-- SignIn.fillPassword(********)
+|-- SignIn.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:104
+|-- Shortcuts.handleAccessCodeAndBiometricsIfRequired() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:105
+    |-- Shortcuts.handlePinCodeIfRequired(********)
+        |-- CreatePinCode.waitForScreen(20000)
+            |-- CreatePinCode.waitForSelectors(["//android.widget.Button[@content-desc=\"Créer un code\"]"], 20000)
+                |-- Waiting for selector 1/1: //android.widget.Button[@content-desc="Créer un code"]
+        |-- CreatePinCode.create()
+        |-- CreateAccessCode.waitForScreen(20000)
+            |-- CreateAccessCode.waitForSelectors(["//android.widget.TextView[@text=\"Créez votre code\"]","//android.widget.Button[@content-desc=\"0\"]","//android.widget.Button[@content-desc=\"1\"]"], 20000)
+                |-- Waiting for selector 1/3: //android.widget.TextView[@text="Créez votre code"]
+                |-- Waiting for selector 2/3: //android.widget.Button[@content-desc="0"]
+                |-- Waiting for selector 3/3: //android.widget.Button[@content-desc="1"]
+        |-- CreateAccessCode.fillCode(********)
+        |-- ConfirmPinCode.waitForScreen(20000)
+            |-- ConfirmPinCode.waitForSelectors(["//android.widget.TextView[@text=\"Confirmez votre code\"]","//android.widget.Button[@content-desc=\"0\"]","//android.widget.Button[@content-desc=\"1\"]"], 20000)
+                |-- Waiting for selector 1/3: //android.widget.TextView[@text="Confirmez votre code"]
+                |-- Waiting for selector 2/3: //android.widget.Button[@content-desc="0"]
+                |-- Waiting for selector 3/3: //android.widget.Button[@content-desc="1"]
+        |-- ConfirmPinCode.fillCode(********)
+    |-- Shortcuts.handleBiometricsIfRequired(20000)
+        |-- EnableBiometrics.waitForScreen(20000)
+            |-- EnableBiometrics.waitForSelectors(["//android.widget.TextView[@text=\"Déverrouillez instantanément via la biométrie\"]","//android.widget.Button[@content-desc=\"Activer la biométrie\"]","//android.widget.Button[@content-desc=\"Plus tard\"]"], 20000)
+                |-- Waiting for selector 1/3: //android.widget.TextView[@text="Déverrouillez instantanément via la biométrie"]
+        |-- Écran biométrie non affiché (différés par l'app), l'InterruptHandler le gérera
+|-- DashboardScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/two-factor/two-factor-auth.spec.ts:106
+    |-- DashboardScreen.waitForSelectors(["//android.widget.Button[@content-desc=\"Tableau de bord\"]","//android.widget.Button[@content-desc=\"Portefeuille\"]","//android.widget.Button[@content-desc=\"Achat / vente\"]","//android.widget.Button[@content-desc=\"Transfert\"]","android=new UiSelector().resourceId(\"button-header-account\")"], 10000)
+        |-- Waiting for selector 1/5: //android.widget.Button[@content-desc="Tableau de bord"]
+        |-- Waiting for selector 2/5: //android.widget.Button[@content-desc="Portefeuille"]
+        |-- Waiting for selector 3/5: //android.widget.Button[@content-desc="Achat / vente"]
+        |-- Waiting for selector 4/5: //android.widget.Button[@content-desc="Transfert"]
+        |-- Waiting for selector 5/5: android=new UiSelector().resourceId("button-header-account")

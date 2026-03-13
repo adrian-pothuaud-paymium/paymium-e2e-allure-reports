@@ -1,0 +1,160 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Configuration Pin Code et Empreinte Digitale dans les parametres Android
+[LOCALE] Locale forcée en fr-FR
+
+
+📌 Test Step: Préparer les paramètres Android
+|-- Shortcuts.setupPinCodeRetries() paymium-e2e-united/tests/wdio-android/tests/android-settings.spec.ts:16
+    |-- Shortcuts.setupPinCode()
+        |-- Shortcuts.waitForSession()
+            |-- Appium session is ready.
+        |-- Shortcuts.resetAndroidUiState()
+        |-- AndroidSettingsHomeScreen.open()
+        |-- AndroidSettingsHomeScreen.waitForScreen()
+            |-- AndroidSettingsHomeScreen.waitForSelectors(["android=new UiSelector().resourceId(\"com.android.settings:id/settings_homepage_container\")"], 10000)
+                |-- Waiting for selector 1/1: android=new UiSelector().resourceId("com.android.settings:id/settings_homepage_container")
+        |-- AndroidSettingsHomeScreen.goToSecuritySettings()
+            |-- Utils.magicSwipeAndClick(["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"])
+                |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"]})
+                    |-- [magicSwipe] Searching for element: [android=new UiSelector().text("Sécurité"), android=new UiSelector().text("Security"), android=new UiSelector().text("Security & Privacy"), android=new UiSelector().text("Sécurité et confidentialité")]
+                    |-- [magicSwipe] Using auto-detected scrollable element
+                    |-- [magicSwipe] Starting unidirectional search (down, max 10 swipes)
+                    |-- [magicSwipe] Found visible element: android=new UiSelector().text("Sécurité et confidentialité")
+                    |-- [magicSwipe] Element found after 2 swipes
+                |-- Utils.clickFirstExisting(["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"])
+                    |-- Clic sur le premier élément existant parmi: 4 sélecteurs
+        |-- AndroidSettingsSecurityAndPrivacyScreen.waitForScreen()
+            |-- AndroidSettingsSecurityAndPrivacyScreen.waitForSelectors(["android=new UiSelector().resourceId(\"com.android.permissioncontroller:id/content_parent\")"], 10000)
+                |-- Waiting for selector 1/1: android=new UiSelector().resourceId("com.android.permissioncontroller:id/content_parent")
+        |-- AndroidSettingsSecurityAndPrivacyScreen.goToDeviceLock()
+            |-- Utils.magicSwipeAndClick(["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"])
+                |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"]})
+                    |-- [magicSwipe] Searching for element: [//android.widget.TextView[@resource-id="android:id/title" and @text="Déverrouillage de l'appareil"], //android.widget.TextView[@resource-id="android:id/title" and @text="Device unlock"]]
+                    |-- [magicSwipe] Using auto-detected scrollable element
+                    |-- [magicSwipe] Starting unidirectional search (down, max 10 swipes)
+                    |-- [magicSwipe] Found visible element: //android.widget.TextView[@resource-id="android:id/title" and @text="Déverrouillage de l'appareil"]
+                    |-- [magicSwipe] Element found after 1 swipes
+                |-- Utils.clickFirstExisting(["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+        |-- AndroidSettingsDeviceUnlockScreen.waitForScreen()
+            |-- AndroidSettingsDeviceUnlockScreen.waitForSelectors(["android=new UiSelector().resourceId(\"com.android.permissioncontroller:id/content_parent\")"], 10000)
+                |-- Waiting for selector 1/1: android=new UiSelector().resourceId("com.android.permissioncontroller:id/content_parent")
+        |-- AndroidSettingsDeviceUnlockScreen.goToScreenLock()
+            |-- Utils.magicSwipeAndClick(["android=new UiSelector().text(\"Déverrouillage de l'écran\")","android=new UiSelector().text(\"Déverrouillage de l’écran\")","android=new UiSelector().text(\"Verrouillage de l'écran\")","android=new UiSelector().text(\"Verrouillage de l’écran\")","android=new UiSelector().text(\"Screen lock\")"])
+                |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["android=new UiSelector().text(\"Déverrouillage de l'écran\")","android=new UiSelector().text(\"Déverrouillage de l’écran\")","android=new UiSelector().text(\"Verrouillage de l'écran\")","android=new UiSelector().text(\"Verrouillage de l’écran\")","android=new UiSelector().text(\"Screen lock\")"]})
+                    |-- [magicSwipe] Searching for element: [android=new UiSelector().text("Déverrouillage de l'écran"), android=new UiSelector().text("Déverrouillage de l’écran"), android=new UiSelector().text("Verrouillage de l'écran"), android=new UiSelector().text("Verrouillage de l’écran"), android=new UiSelector().text("Screen lock")]
+                    |-- [magicSwipe] Using auto-detected scrollable element
+                    |-- [magicSwipe] Found visible element: android=new UiSelector().text("Déverrouillage de l'écran")
+                    |-- [magicSwipe] Element already visible, no swipe needed
+                |-- Utils.clickFirstExisting(["android=new UiSelector().text(\"Déverrouillage de l'écran\")","android=new UiSelector().text(\"Déverrouillage de l’écran\")","android=new UiSelector().text(\"Verrouillage de l'écran\")","android=new UiSelector().text(\"Verrouillage de l’écran\")","android=new UiSelector().text(\"Screen lock\")"])
+                    |-- Clic sur le premier élément existant parmi: 5 sélecteurs
+        |-- AndroidUnlockPinCodeScreen.unlock()
+            |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"com.android.settings:id/suc_layout_title\")","android=new UiSelector().textMatches(\"Confirmer le code PIN|Re-enter your PIN|Saisissez de nouveau votre code\")","android=new UiSelector().resourceId(\"com.android.settings:id/title\").textMatches(\"(?i).*confirmer.*code.*pin.*|.*re-enter.*pin.*|.*saisissez.*code.*\")"])
+                |-- Attente du premier élément affiché parmi: 3 sélecteurs
+        |-- AndroidSettingsChooseScreenLockMethodScreen.waitForScreen()
+            |-- AndroidSettingsChooseScreenLockMethodScreen.waitForSelectors(["android=new UiSelector().resourceId(\"com.android.settings:id/lock_none\")","android=new UiSelector().resourceId(\"com.android.settings:id/lock_pin\")"], 10000)
+                |-- Waiting for selector 1/2: android=new UiSelector().resourceId("com.android.settings:id/lock_none")
+                |-- Waiting for selector 2/2: android=new UiSelector().resourceId("com.android.settings:id/lock_pin")
+        |-- AndroidSettingsChooseScreenLockMethodScreen.chooseCodeLock()
+        |-- AndroidSettingsScreenLockDefineCodeScreen.waitForScreen()
+            |-- AndroidSettingsScreenLockDefineCodeScreen.waitForSelectors(["android=new UiSelector().text(\"Définissez un code\")","android=new UiSelector().resourceId(\"com.android.settings:id/password_entry\")"], 10000)
+                |-- Waiting for selector 1/2: android=new UiSelector().text("Définissez un code")
+                |-- Waiting for selector 2/2: android=new UiSelector().resourceId("com.android.settings:id/password_entry")
+        |-- AndroidSettingsScreenLockDefineCodeScreen.enterCode(********)
+        |-- AndroidSettingsScreenLockDefineCodeScreen.goToNextStep()
+        |-- AndroidSettingsScreenLockConfirmCodeScreen.waitForScreen()
+            |-- AndroidSettingsScreenLockConfirmCodeScreen.waitForSelectors(["android=new UiSelector().text(\"Saisissez de nouveau votre code\")","android=new UiSelector().resourceId(\"com.android.settings:id/password_entry\")"], 10000)
+                |-- Waiting for selector 1/2: android=new UiSelector().text("Saisissez de nouveau votre code")
+                |-- Waiting for selector 2/2: android=new UiSelector().resourceId("com.android.settings:id/password_entry")
+        |-- AndroidSettingsScreenLockConfirmCodeScreen.enterCode(********)
+        |-- AndroidSettingsScreenLockConfirmCodeScreen.confirm()
+        |-- AndroidSettingsScreenLockWhatToShowScreen.waitForScreen()
+            |-- AndroidSettingsScreenLockWhatToShowScreen.waitForSelectors(["android=new UiSelector().resourceId(\"com.android.settings:id/show_all\")","android=new UiSelector().resourceId(\"com.android.settings:id/redact_sensitive\")","android=new UiSelector().resourceId(\"com.android.settings:id/hide_all\")"], 10000)
+                |-- Waiting for selector 1/3: android=new UiSelector().resourceId("com.android.settings:id/show_all")
+                |-- Waiting for selector 2/3: android=new UiSelector().resourceId("com.android.settings:id/redact_sensitive")
+                |-- Waiting for selector 3/3: android=new UiSelector().resourceId("com.android.settings:id/hide_all")
+        |-- AndroidSettingsScreenLockWhatToShowScreen.chooseShowAll()
+        |-- AndroidSettingsScreenLockWhatToShowScreen.confirm()
+        |-- AndroidSettingsDeviceUnlockScreen.waitForScreen()
+            |-- AndroidSettingsDeviceUnlockScreen.waitForSelectors(["android=new UiSelector().resourceId(\"com.android.permissioncontroller:id/content_parent\")"], 10000)
+                |-- Waiting for selector 1/1: android=new UiSelector().resourceId("com.android.permissioncontroller:id/content_parent")
+
+
+📌 Test Step: Configurer l'empreinte digitale
+|-- Shortcuts.setupFingerprintRetries() paymium-e2e-united/tests/wdio-android/tests/android-settings.spec.ts:20
+    |-- Shortcuts.setupFingerprint()
+        |-- Shortcuts.resetAndroidUiState()
+        |-- AndroidSettingsHomeScreen.open()
+        |-- AndroidSettingsHomeScreen.waitForScreen()
+            |-- AndroidSettingsHomeScreen.waitForSelectors(["android=new UiSelector().resourceId(\"com.android.settings:id/settings_homepage_container\")"], 10000)
+                |-- Waiting for selector 1/1: android=new UiSelector().resourceId("com.android.settings:id/settings_homepage_container")
+        |-- AndroidSettingsHomeScreen.goToSecuritySettings()
+            |-- Utils.magicSwipeAndClick(["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"])
+                |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"]})
+                    |-- [magicSwipe] Searching for element: [android=new UiSelector().text("Sécurité"), android=new UiSelector().text("Security"), android=new UiSelector().text("Security & Privacy"), android=new UiSelector().text("Sécurité et confidentialité")]
+                    |-- [magicSwipe] Using auto-detected scrollable element
+                    |-- [magicSwipe] Starting unidirectional search (down, max 10 swipes)
+                    |-- [magicSwipe] Found visible element: android=new UiSelector().text("Sécurité et confidentialité")
+                    |-- [magicSwipe] Element found after 2 swipes
+                |-- Utils.clickFirstExisting(["android=new UiSelector().text(\"Sécurité\")","android=new UiSelector().text(\"Security\")","android=new UiSelector().text(\"Security & Privacy\")","android=new UiSelector().text(\"Sécurité et confidentialité\")"])
+                    |-- Clic sur le premier élément existant parmi: 4 sélecteurs
+        |-- AndroidSettingsSecurityAndPrivacyScreen.waitForScreen()
+            |-- AndroidSettingsSecurityAndPrivacyScreen.waitForSelectors(["android=new UiSelector().resourceId(\"com.android.permissioncontroller:id/content_parent\")"], 10000)
+                |-- Waiting for selector 1/1: android=new UiSelector().resourceId("com.android.permissioncontroller:id/content_parent")
+        |-- AndroidSettingsSecurityAndPrivacyScreen.goToDeviceLock()
+            |-- Utils.magicSwipeAndClick(["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"])
+                |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"]})
+                    |-- [magicSwipe] Searching for element: [//android.widget.TextView[@resource-id="android:id/title" and @text="Déverrouillage de l'appareil"], //android.widget.TextView[@resource-id="android:id/title" and @text="Device unlock"]]
+                    |-- [magicSwipe] Using auto-detected scrollable element
+                    |-- [magicSwipe] Starting unidirectional search (down, max 10 swipes)
+                    |-- [magicSwipe] Found visible element: //android.widget.TextView[@resource-id="android:id/title" and @text="Déverrouillage de l'appareil"]
+                    |-- [magicSwipe] Element found after 1 swipes
+                |-- Utils.clickFirstExisting(["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage de l'appareil\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Device unlock\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+        |-- AndroidSettingsDeviceUnlockScreen.waitForScreen()
+            |-- AndroidSettingsDeviceUnlockScreen.waitForSelectors(["android=new UiSelector().resourceId(\"com.android.permissioncontroller:id/content_parent\")"], 10000)
+                |-- Waiting for selector 1/1: android=new UiSelector().resourceId("com.android.permissioncontroller:id/content_parent")
+        |-- AndroidSettingsDeviceUnlockScreen.goToFingerprint()
+            |-- Utils.magicSwipeAndClick(["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Empreinte digitale\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage par empreinte digitale et reconnaissance faciale\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Pixel Imprint\"]","//android.widget.TextView[@resource-id=\"android:id/summary\" and @text=\"Empreinte digitale ajoutée\"]","//android.widget.TextView[@resource-id=\"android:id/summary\" and @text=\"Appuyer pour configurer une empreinte digitale\"]"])
+                |-- SwipeUtils.magicSwipe({"screenDirection":"down","toMultiple":["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Empreinte digitale\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage par empreinte digitale et reconnaissance faciale\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Pixel Imprint\"]","//android.widget.TextView[@resource-id=\"android:id/summary\" and @text=\"Empreinte digitale ajoutée\"]","//android.widget.TextView[@resource-id=\"android:id/summary\" and @text=\"Appuyer pour configurer une empreinte digitale\"]"]})
+                    |-- [magicSwipe] Searching for element: [//android.widget.TextView[@resource-id="android:id/title" and @text="Empreinte digitale"], //android.widget.TextView[@resource-id="android:id/title" and @text="Déverrouillage par empreinte digitale et reconnaissance faciale"], //android.widget.TextView[@resource-id="android:id/title" and @text="Pixel Imprint"], //android.widget.TextView[@resource-id="android:id/summary" and @text="Empreinte digitale ajoutée"], //android.widget.TextView[@resource-id="android:id/summary" and @text="Appuyer pour configurer une empreinte digitale"]]
+                    |-- [magicSwipe] Using auto-detected scrollable element
+                    |-- [magicSwipe] Found visible element: //android.widget.TextView[@resource-id="android:id/summary" and @text="Appuyer pour configurer une empreinte digitale"]
+                    |-- [magicSwipe] Element already visible, no swipe needed
+                |-- Utils.clickFirstExisting(["//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Empreinte digitale\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Déverrouillage par empreinte digitale et reconnaissance faciale\"]","//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Pixel Imprint\"]","//android.widget.TextView[@resource-id=\"android:id/summary\" and @text=\"Empreinte digitale ajoutée\"]","//android.widget.TextView[@resource-id=\"android:id/summary\" and @text=\"Appuyer pour configurer une empreinte digitale\"]"])
+                    |-- Clic sur le premier élément existant parmi: 5 sélecteurs
+        |-- AndroidUnlockPinCodeScreen.unlock()
+            |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"com.android.settings:id/suc_layout_title\")","android=new UiSelector().textMatches(\"Confirmer le code PIN|Re-enter your PIN|Saisissez de nouveau votre code\")","android=new UiSelector().resourceId(\"com.android.settings:id/title\").textMatches(\"(?i).*confirmer.*code.*pin.*|.*re-enter.*pin.*|.*saisissez.*code.*\")"])
+                |-- Attente du premier élément affiché parmi: 3 sélecteurs
+            |-- Utils.setValueFirstExisting(["android=new UiSelector().resourceId(\"com.android.settings:id/password_entry\")","//android.widget.EditText[@content-desc=\"Champ du code\"]","//android.widget.EditText[@content-desc=\"Code\"]","//android.widget.EditText"], 1234)
+                |-- Saisie de la valeur dans le premier élément existant parmi: 4 sélecteurs
+        |-- AndroidPixelImprintScreen.waitForScreen(5000)
+            |-- Utils.waitFirstDisplayed(["android=new UiSelector().textContains(\"Ajouter une empreinte\")","android=new UiSelector().textContains(\"Doigt 1\")","android=new UiSelector().textContains(\"Utilisez votre empreinte digitale\")","android=new UiSelector().textContains(\"Ajouter\")"], 5000)
+                |-- Attente du premier élément affiché parmi: 4 sélecteurs
+        |-- AndroidPixelImprintScreen.isAtLeastOneFingerprint()
+        |-- AndroidPixelImprintScreen.addFingerprint()
+            |-- Utils.waitFirstDisplayed(["android=new UiSelector().textContains(\"Ajouter une empreinte\")","android=new UiSelector().textContains(\"Ajouter\")"], 5000)
+                |-- Attente du premier élément affiché parmi: 2 sélecteurs
+        |-- AndroidConfigurePixelImprintScreen.waitForScreen()
+            |-- AndroidConfigurePixelImprintScreen.waitForSelectors(["//android.widget.TextView[@content-desc=\"Configurez Pixel Imprint\"]","//android.widget.Button[@text=\"PLUS\"]"], 10000)
+                |-- Waiting for selector 1/2: //android.widget.TextView[@content-desc="Configurez Pixel Imprint"]
+                |-- Waiting for selector 2/2: //android.widget.Button[@text="PLUS"]
+        |-- AndroidConfigurePixelImprintScreen.scrollAndAccept()
+        |-- PutFingerOnSensorScreen.waitForScreen()
+            |-- PutFingerOnSensorScreen.waitForSelectors(["android=new UiSelector().description(\"Posez le doigt sur le lecteur\")"], 10000)
+                |-- Waiting for selector 1/1: android=new UiSelector().description("Posez le doigt sur le lecteur")
+        |-- RaiseAndPutBackFingerOnSensorScreen.waitForScreen()
+            |-- RaiseAndPutBackFingerOnSensorScreen.waitForSelectors(["android=new UiSelector().description(\"Levez le doigt, puis reposez-le\")"], 10000)
+                |-- Waiting for selector 1/1: android=new UiSelector().description("Levez le doigt, puis reposez-le")
+        |-- FingerprintAddedScreen.waitForScreen()
+            |-- FingerprintAddedScreen.waitForSelectors(["android=new UiSelector().textContains(\"Empreinte digitale ajoutée\")","//android.widget.Button[@text=\"AJOUTER UNE EMPREINTE\"]","//android.widget.Button[@text=\"OK\"]"], 10000)
+                |-- Waiting for selector 1/3: android=new UiSelector().textContains("Empreinte digitale ajoutée")
+                |-- Waiting for selector 2/3: //android.widget.Button[@text="AJOUTER UNE EMPREINTE"]
+                |-- Waiting for selector 3/3: //android.widget.Button[@text="OK"]
+        |-- FingerprintAddedScreen.ok()
+        |-- AndroidSettingsDeviceUnlockScreen.waitForScreen()
+            |-- AndroidSettingsDeviceUnlockScreen.waitForSelectors(["android=new UiSelector().resourceId(\"com.android.permissioncontroller:id/content_parent\")"], 10000)
+                |-- Waiting for selector 1/1: android=new UiSelector().resourceId("com.android.permissioncontroller:id/content_parent")

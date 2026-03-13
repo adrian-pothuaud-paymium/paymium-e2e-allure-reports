@@ -1,0 +1,67 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur peut réinitialiser son mot de passe avec succès via le lien envoyé par email
+[LOCALE] Locale forcée en fr-FR
+Attempting to create test user (attempt 1 of 20)...
+Creating test user in environment sandbox with state phoneApproved - attempt 1/20
+Sending GET /users/confirmation request to verify email
+Sending PUT /user request to update user information
+Sending POST /phone_numbers request to add phone number
+Sending POST /phone_numbers/verify request to verify phone number
+
+
+📌 Test Step: Ouverture de l'application jusqu'a l'ecran de connexion
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/nominal.spec.ts:27
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/nominal.spec.ts:28
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- AxeptioCookies.acceptCookies()
+                |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+    |-- WelcomeScreen.waitForScreen(20000)
+        |-- WelcomeScreen.waitForSelectors(["android=new UiSelector().resourceId(\"onboarding.login\")","android=new UiSelector().resourceId(\"onboarding.signup\")"], 20000)
+            |-- Waiting for selector 1/2: android=new UiSelector().resourceId("onboarding.login")
+            |-- Waiting for selector 2/2: android=new UiSelector().resourceId("onboarding.signup")
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+        |-- SignIn.waitForSelectors(["android=new UiSelector().resourceId(\"login.email\")","android=new UiSelector().resourceId(\"login.password\")","android=new UiSelector().textContains(\"Mot de passe oublié\")","android=new UiSelector().textContains(\"S'inscrire\")"], 20000)
+            |-- Waiting for selector 1/4: android=new UiSelector().resourceId("login.email")
+            |-- Waiting for selector 2/4: android=new UiSelector().resourceId("login.password")
+            |-- Waiting for selector 3/4: android=new UiSelector().textContains("Mot de passe oublié")
+            |-- Waiting for selector 4/4: android=new UiSelector().textContains("S'inscrire")
+
+
+📌 Test Step: Acces au reset password
+|-- SignIn.goToResetPassword() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/nominal.spec.ts:32
+|-- ResetPassword.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/nominal.spec.ts:33
+    |-- ResetPassword.waitForSelectors(["android=new UiSelector().resourceId(\"emailField\")"], 10000)
+        |-- Waiting for selector 1/1: android=new UiSelector().resourceId("emailField")
+
+
+📌 Test Step: Etape email
+|-- ResetPassword.fillEmail(adrian.pothuaud+auto.1773394863840@paymium.com) paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/nominal.spec.ts:37
+|-- ResetPassword.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/nominal.spec.ts:39
+
+
+📌 Test Step: Ouverture du lien de reinitialisation
+|-- Shortcuts.useDeepLink(https://account.sandbox-paymium.com/reset-password/321654-SB-U51103426) paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/nominal.spec.ts:53
+    |-- Opening deep link: https://account.sandbox-paymium.com/reset-password/321654-SB-U51103426
+|-- CreateNewPassword.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/nominal.spec.ts:54
+    |-- CreateNewPassword.waitForSelectors(["android=new UiSelector().textContains(\"Créer un nouveau mot de passe\")","android=new UiSelector().resourceId(\"password\")","android=new UiSelector().resourceId(\"passwordConfirmation\")","android=new UiSelector().resourceId(\"submit\")"], 10000)
+        |-- Waiting for selector 1/4: android=new UiSelector().textContains("Créer un nouveau mot de passe")
+        |-- Waiting for selector 2/4: android=new UiSelector().resourceId("password")
+[InterruptHandler] échec de CreateNewPassword.waitForScreen → element ("android=new UiSelector().resourceId("password")") still not existing after 10000ms. Tentative de gestion d'interruption...
+[InterruptHandler] tryDismissInterrupts appelé (erreur=element ("android=new UiSelector().resourceId("password")") still not existing after 10000ms)
+[InterruptHandler] Aucune perturbation interruptible détectée (raison : erreur=element ("android=new UiSelector().resourceId("password")") still not existing after 10000ms)

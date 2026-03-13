@@ -1,0 +1,95 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur peut envoyer des cryptomonnaies à un destinataire via son adresse email avec succès
+[LOCALE] Locale forcée en fr-FR
+
+
+📌 Test Step: Open app and authenticate
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:21
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:22
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+    |-- WelcomeScreen.waitForScreen(20000)
+        |-- WelcomeScreen.waitForSelectors(["android=new UiSelector().resourceId(\"onboarding.login\")","android=new UiSelector().resourceId(\"onboarding.signup\")"], 20000)
+            |-- Waiting for selector 1/2: android=new UiSelector().resourceId("onboarding.login")
+            |-- Waiting for selector 2/2: android=new UiSelector().resourceId("onboarding.signup")
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+        |-- SignIn.waitForSelectors(["android=new UiSelector().resourceId(\"login.email\")","android=new UiSelector().resourceId(\"login.password\")","android=new UiSelector().textContains(\"Mot de passe oublié\")","android=new UiSelector().textContains(\"S'inscrire\")"], 20000)
+            |-- Waiting for selector 1/4: android=new UiSelector().resourceId("login.email")
+            |-- Waiting for selector 2/4: android=new UiSelector().resourceId("login.password")
+            |-- Waiting for selector 3/4: android=new UiSelector().textContains("Mot de passe oublié")
+            |-- Waiting for selector 4/4: android=new UiSelector().textContains("S'inscrire")
+|-- Shortcuts.authenticate() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:23
+    |-- SignIn.fillEmail(adrian.pothuaud+auto.primary@paymium.com)
+    |-- SignIn.fillPassword(********)
+    |-- SignIn.submit()
+    |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired()
+        |-- Shortcuts.handlePinCodeIfRequired(********)
+            |-- CreatePinCode.waitForScreen(20000)
+                |-- CreatePinCode.waitForSelectors(["//android.widget.Button[@content-desc=\"Créer un code\"]"], 20000)
+                    |-- Waiting for selector 1/1: //android.widget.Button[@content-desc="Créer un code"]
+            |-- CreatePinCode.create()
+            |-- CreateAccessCode.waitForScreen(20000)
+                |-- CreateAccessCode.waitForSelectors(["//android.widget.TextView[@text=\"Créez votre code\"]","//android.widget.Button[@content-desc=\"0\"]","//android.widget.Button[@content-desc=\"1\"]"], 20000)
+                    |-- Waiting for selector 1/3: //android.widget.TextView[@text="Créez votre code"]
+                    |-- Waiting for selector 2/3: //android.widget.Button[@content-desc="0"]
+                    |-- Waiting for selector 3/3: //android.widget.Button[@content-desc="1"]
+            |-- CreateAccessCode.fillCode(********)
+            |-- ConfirmPinCode.waitForScreen(20000)
+                |-- ConfirmPinCode.waitForSelectors(["//android.widget.TextView[@text=\"Confirmez votre code\"]","//android.widget.Button[@content-desc=\"0\"]","//android.widget.Button[@content-desc=\"1\"]"], 20000)
+                    |-- Waiting for selector 1/3: //android.widget.TextView[@text="Confirmez votre code"]
+                    |-- Waiting for selector 2/3: //android.widget.Button[@content-desc="0"]
+                    |-- Waiting for selector 3/3: //android.widget.Button[@content-desc="1"]
+            |-- ConfirmPinCode.fillCode(********)
+        |-- Shortcuts.handleBiometricsIfRequired(20000)
+            |-- EnableBiometrics.waitForScreen(20000)
+                |-- EnableBiometrics.waitForSelectors(["//android.widget.TextView[@text=\"Déverrouillez instantanément via la biométrie\"]","//android.widget.Button[@content-desc=\"Activer la biométrie\"]","//android.widget.Button[@content-desc=\"Plus tard\"]"], 20000)
+                    |-- Waiting for selector 1/3: //android.widget.TextView[@text="Déverrouillez instantanément via la biométrie"]
+            |-- Écran biométrie non affiché (différés par l'app), l'InterruptHandler le gérera
+    |-- DashboardScreen.waitForScreen()
+        |-- DashboardScreen.waitForSelectors(["//android.widget.Button[@content-desc=\"Tableau de bord\"]","//android.widget.Button[@content-desc=\"Portefeuille\"]","//android.widget.Button[@content-desc=\"Achat / vente\"]","//android.widget.Button[@content-desc=\"Transfert\"]","android=new UiSelector().resourceId(\"button-header-account\")"], 10000)
+            |-- Waiting for selector 1/5: //android.widget.Button[@content-desc="Tableau de bord"]
+            |-- Waiting for selector 2/5: //android.widget.Button[@content-desc="Portefeuille"]
+            |-- Waiting for selector 3/5: //android.widget.Button[@content-desc="Achat / vente"]
+            |-- Waiting for selector 4/5: //android.widget.Button[@content-desc="Transfert"]
+            |-- Waiting for selector 5/5: android=new UiSelector().resourceId("button-header-account")
+
+
+📌 Test Step: Create and validate BTC email transfer
+|-- SendByEmailCurrencies.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:28
+    |-- SendByEmailCurrencies.waitForSelectors(["//android.widget.TextView[@text=\"Envoyer par email\"]","android=new UiSelector().resourceId(\"sendByEmail.BTC\")"], 10000)
+        |-- Waiting for selector 1/2: //android.widget.TextView[@text="Envoyer par email"]
+        |-- Waiting for selector 2/2: android=new UiSelector().resourceId("sendByEmail.BTC")
+|-- SendByEmailCurrencies.selectCurrency(Bitcoin) paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:29
+|-- SendByEmail.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:30
+    |-- SendByEmail.waitForSelectors(["//android.widget.TextView[@text=\"Envoyer par email\"]","//android.widget.Button[@resource-id=\"emailTransfer.currency\"]//android.widget.Button","//android.widget.EditText[@resource-id=\"emailTransfer.amount\"]","//android.widget.EditText[@resource-id=\"emailTransfer.receiverEmailAddress\"]"], 10000)
+        |-- Waiting for selector 1/4: //android.widget.TextView[@text="Envoyer par email"]
+        |-- Waiting for selector 2/4: //android.widget.Button[@resource-id="emailTransfer.currency"]//android.widget.Button
+        |-- Waiting for selector 3/4: //android.widget.EditText[@resource-id="emailTransfer.amount"]
+        |-- Waiting for selector 4/4: //android.widget.EditText[@resource-id="emailTransfer.receiverEmailAddress"]
+|-- SendByEmail.enterEmail(adrianpothuaud+2@gmail.com) paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:31
+|-- SendByEmail.enterAmount(0.0001) paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:32
+|-- SendByEmail.confirmTransfer() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:33
+|-- SecurityAlertSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:34
+    |-- Waiting for selector 1/3: //android.widget.TextView[@text="Avertissement de sécurité"]
+    |-- Waiting for selector 2/3: android=new UiSelector().resourceId("checkConfirmSecurityWarning")
+    |-- Waiting for selector 3/3: //android.widget.CheckBox[@content-desc="Ne plus me montrer les avertissements sécurité"]
+|-- SecurityAlertSheet.acknowledge() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:35
+|-- SecurityAlertSheet.validate() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:36
+|-- SecurityCodeSheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/transfers/send-by-email.spec.ts:37
+    |-- Waiting for selector 1/2: //android.widget.TextView[@text="Insérez votre code"]
+    |-- Waiting for selector 2/2: //android.widget.EditText

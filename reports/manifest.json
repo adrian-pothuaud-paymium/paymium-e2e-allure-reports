@@ -1,5 +1,19 @@
 [
   {
+    "folder": "2026-03-13_132133__android_nonreg__sandbox__feature-819-issue__41passed_19failed",
+    "timestamp": "2026-03-13_132133",
+    "environment": "sandbox",
+    "branch": "feature/819-issue",
+    "e2eBranch": "main",
+    "job": "android_nonreg",
+    "total": 60,
+    "passed": 41,
+    "failed": 19,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39617",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/235667"
+  }
+,
+  {
     "folder": "2026-03-13_131435__browser_responsive_nonreg__unknown__modifyChangelog__50passed_30failed",
     "timestamp": "2026-03-13_131435",
     "environment": "unknown",
@@ -137,20 +151,6 @@
     "failed": 10,
     "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39584",
     "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/235003"
-  }
-,
-  {
-    "folder": "2026-03-12_201525__android_nonreg__sandbox__next-release__11passed_5failed",
-    "timestamp": "2026-03-12_201525",
-    "environment": "sandbox",
-    "branch": "next-release",
-    "e2eBranch": "main",
-    "job": "android_nonreg",
-    "total": 16,
-    "passed": 11,
-    "failed": 5,
-    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39589",
-    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/235062"
   }
 ,
   {

@@ -1,0 +1,60 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Le formulaire de connexion affiche les messages d'erreur appropriés en cas de données invalides
+[LOCALE] Locale forcée en fr-FR
+
+
+📌 Test Step: Ouverture de l'application jusqu'a l'ecran de connexion
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:16
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:17
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- AxeptioCookies.acceptCookies()
+                |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+    |-- WelcomeScreen.waitForScreen(20000)
+        |-- WelcomeScreen.waitForSelectors(["android=new UiSelector().resourceId(\"onboarding.login\")","android=new UiSelector().resourceId(\"onboarding.signup\")"], 20000)
+            |-- Waiting for selector 1/2: android=new UiSelector().resourceId("onboarding.login")
+            |-- Waiting for selector 2/2: android=new UiSelector().resourceId("onboarding.signup")
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+        |-- SignIn.waitForSelectors(["android=new UiSelector().resourceId(\"login.email\")","android=new UiSelector().resourceId(\"login.password\")","android=new UiSelector().textContains(\"Mot de passe oublié\")","android=new UiSelector().textContains(\"S'inscrire\")"], 20000)
+            |-- Waiting for selector 1/4: android=new UiSelector().resourceId("login.email")
+            |-- Waiting for selector 2/4: android=new UiSelector().resourceId("login.password")
+            |-- Waiting for selector 3/4: android=new UiSelector().textContains("Mot de passe oublié")
+            |-- Waiting for selector 4/4: android=new UiSelector().textContains("S'inscrire")
+
+
+📌 Test Step: formulaire vide
+|-- Assert.emptyFields(["android=new UiSelector().resourceId(\"login.email\")","android=new UiSelector().resourceId(\"login.password\")"]) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:21
+    |-- Assert.emptyField(android=new UiSelector().resourceId("login.email"), 10000)
+        |-- Assert empty field: "android=new UiSelector().resourceId("login.email")"
+    |-- Assert.emptyField(android=new UiSelector().resourceId("login.password"), 10000)
+        |-- Assert empty field: "android=new UiSelector().resourceId("login.password")"
+
+
+📌 Test Step: email invalide
+|-- SignIn.fillEmail(invalid-email) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:26
+|-- SignIn.fillEmail(invalid@email) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:28
+|-- SignIn.fillEmail(invalid.email) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:30
+
+
+📌 Test Step: email valide mais mdp manquant
+|-- SignIn.fillEmail(valid@email.com) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:35
+
+
+📌 Test Step: mdp mais pas email
+|-- SignIn.fillEmail() paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:40
+|-- SignIn.fillPassword(********) paymium-e2e-united/tests/wdio-android/tests/authentication/sign-in/form-validations.spec.ts:41

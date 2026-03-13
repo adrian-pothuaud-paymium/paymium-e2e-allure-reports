@@ -1,0 +1,49 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Le formulaire de réinitialisation du mot de passe affiche un message de succès même si l'email n'est pas enregistré (obfuscation)
+[LOCALE] Locale forcée en fr-FR
+
+
+📌 Test Step: Ouverture de l'application jusqu'a l'ecran de connexion
+|-- Shortcuts.restartApp() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/unregistered.spec.ts:22
+|-- Shortcuts.openAppAndGoToSignIn() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/unregistered.spec.ts:23
+    |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+        |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+            |-- UpdateScreen.waitForScreen(20000)
+        |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+            |-- AxeptioCookies.waitForSheet(20000)
+                |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                    |-- Attente du premier élément affiché parmi: 2 sélecteurs
+            |-- AxeptioCookies.acceptCookies()
+                |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                    |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+    |-- WelcomeScreen.waitForScreen(20000)
+        |-- WelcomeScreen.waitForSelectors(["android=new UiSelector().resourceId(\"onboarding.login\")","android=new UiSelector().resourceId(\"onboarding.signup\")"], 20000)
+            |-- Waiting for selector 1/2: android=new UiSelector().resourceId("onboarding.login")
+            |-- Waiting for selector 2/2: android=new UiSelector().resourceId("onboarding.signup")
+    |-- WelcomeScreen.goTo(sign-in)
+    |-- SignIn.waitForScreen(20000)
+        |-- SignIn.waitForSelectors(["android=new UiSelector().resourceId(\"login.email\")","android=new UiSelector().resourceId(\"login.password\")","android=new UiSelector().textContains(\"Mot de passe oublié\")","android=new UiSelector().textContains(\"S'inscrire\")"], 20000)
+            |-- Waiting for selector 1/4: android=new UiSelector().resourceId("login.email")
+            |-- Waiting for selector 2/4: android=new UiSelector().resourceId("login.password")
+            |-- Waiting for selector 3/4: android=new UiSelector().textContains("Mot de passe oublié")
+            |-- Waiting for selector 4/4: android=new UiSelector().textContains("S'inscrire")
+
+
+📌 Test Step: Acces au reset password
+|-- SignIn.goToResetPassword() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/unregistered.spec.ts:27
+|-- ResetPassword.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/unregistered.spec.ts:28
+    |-- ResetPassword.waitForSelectors(["android=new UiSelector().resourceId(\"emailField\")"], 10000)
+        |-- Waiting for selector 1/1: android=new UiSelector().resourceId("emailField")
+
+
+📌 Test Step: Etape email
+|-- ResetPassword.fillEmail(adrian.pothuaud+auto.primary+auto.1773393176394@paymium.com) paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/unregistered.spec.ts:32
+|-- ResetPassword.submit() paymium-e2e-united/tests/wdio-android/tests/authentication/reset-password/unregistered.spec.ts:34
