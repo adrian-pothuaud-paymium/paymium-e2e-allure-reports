@@ -1,0 +1,175 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Un utilisateur peut naviguer vers les principales sections du site via le menu utilisateur
+[LOCALE] Locale forcée en fr-FR
+
+
+📌 Test Step: Open app and authenticate
+|-- Shortcuts.waitForSessionRestartAppAndAuthenticate() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:21
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+    |-- Shortcuts.restartApp()
+    |-- Shortcuts.openAppAndGoToSignIn()
+        |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+            |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+                |-- AxeptioCookies.waitForSheet(20000)
+                    |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                        |-- Attente du premier élément affiché parmi: 2 sélecteurs
+                |-- AxeptioCookies.acceptCookies()
+                    |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                        |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+            |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+                |-- UpdateScreen.waitForScreen(20000)
+            |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+                |-- AxeptioCookies.waitForSheet(20000)
+                    |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                        |-- Attente du premier élément affiché parmi: 2 sélecteurs
+                |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+        |-- WelcomeScreen.waitForScreen(20000)
+            |-- WelcomeScreen.waitForSelectors(["android=new UiSelector().resourceId(\"onboarding.login\")","android=new UiSelector().resourceId(\"onboarding.signup\")"], 20000)
+                |-- Waiting for selector 1/2: android=new UiSelector().resourceId("onboarding.login")
+                |-- Waiting for selector 2/2: android=new UiSelector().resourceId("onboarding.signup")
+        |-- WelcomeScreen.goTo(sign-in)
+        |-- SignIn.waitForScreen(20000)
+            |-- SignIn.waitForSelectors(["android=new UiSelector().resourceId(\"login.email\")","android=new UiSelector().resourceId(\"login.password\")","android=new UiSelector().textContains(\"Mot de passe oublié\")","android=new UiSelector().textContains(\"S'inscrire\")"], 20000)
+                |-- Waiting for selector 1/4: android=new UiSelector().resourceId("login.email")
+                |-- Waiting for selector 2/4: android=new UiSelector().resourceId("login.password")
+                |-- Waiting for selector 3/4: android=new UiSelector().textContains("Mot de passe oublié")
+                |-- Waiting for selector 4/4: android=new UiSelector().textContains("S'inscrire")
+    |-- Shortcuts.authenticate(********)
+        |-- SignIn.fillEmail(adrian.pothuaud+auto.primary@paymium.com)
+        |-- SignIn.fillPassword(********)
+        |-- SignIn.submit()
+        |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired()
+            |-- Shortcuts.handlePinCodeIfRequired(********)
+                |-- CreatePinCode.waitForScreen(20000)
+                    |-- CreatePinCode.waitForSelectors(["//android.widget.Button[@content-desc=\"Créer un code\"]"], 20000)
+                        |-- Waiting for selector 1/1: //android.widget.Button[@content-desc="Créer un code"]
+                |-- CreatePinCode.create()
+                |-- CreateAccessCode.waitForScreen(20000)
+                    |-- CreateAccessCode.waitForSelectors(["//android.widget.TextView[@text=\"Créez votre code\"]","//android.widget.Button[@content-desc=\"0\"]","//android.widget.Button[@content-desc=\"1\"]"], 20000)
+                        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Créez votre code"]
+                        |-- Waiting for selector 2/3: //android.widget.Button[@content-desc="0"]
+                        |-- Waiting for selector 3/3: //android.widget.Button[@content-desc="1"]
+                |-- CreateAccessCode.fillCode(********)
+                |-- ConfirmPinCode.waitForScreen(20000)
+                    |-- ConfirmPinCode.waitForSelectors(["//android.widget.TextView[@text=\"Confirmez votre code\"]","//android.widget.Button[@content-desc=\"0\"]","//android.widget.Button[@content-desc=\"1\"]"], 20000)
+                        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Confirmez votre code"]
+                        |-- Waiting for selector 2/3: //android.widget.Button[@content-desc="0"]
+                        |-- Waiting for selector 3/3: //android.widget.Button[@content-desc="1"]
+                |-- ConfirmPinCode.fillCode(********)
+            |-- Shortcuts.handleBiometricsIfRequired(20000)
+                |-- EnableBiometrics.waitForScreen(20000)
+                    |-- EnableBiometrics.waitForSelectors(["//android.widget.TextView[@text=\"Déverrouillez instantanément via la biométrie\"]","//android.widget.Button[@content-desc=\"Activer la biométrie\"]","//android.widget.Button[@content-desc=\"Plus tard\"]"], 20000)
+                        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Déverrouillez instantanément via la biométrie"]
+                |-- Écran biométrie non affiché (différés par l'app), l'InterruptHandler le gérera
+        |-- DashboardScreen.waitForScreen()
+            |-- DashboardScreen.waitForSelectors(["//android.widget.Button[@content-desc=\"Tableau de bord\"]","//android.widget.Button[@content-desc=\"Portefeuille\"]","//android.widget.Button[@content-desc=\"Achat / vente\"]","//android.widget.Button[@content-desc=\"Transfert\"]","android=new UiSelector().resourceId(\"button-header-account\")"], 10000)
+                |-- Waiting for selector 1/5: //android.widget.Button[@content-desc="Tableau de bord"]
+                |-- Waiting for selector 2/5: //android.widget.Button[@content-desc="Portefeuille"]
+                |-- Waiting for selector 3/5: //android.widget.Button[@content-desc="Achat / vente"]
+                |-- Waiting for selector 4/5: //android.widget.Button[@content-desc="Transfert"]
+                |-- Waiting for selector 5/5: android=new UiSelector().resourceId("button-header-account")
+
+
+📌 Test Step: Navigate user menu account sections
+|-- UserMenu.open() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:25
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:26
+    |-- MyAccount.waitForSelectors(["android=new UiSelector().resourceId(\"myAccount\")"], 10000)
+        |-- Waiting for selector 1/1: android=new UiSelector().resourceId("myAccount")
+|-- MyAccount.goToProfile() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:27
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:28
+    |-- Profile.waitForSelectors(["//android.widget.TextView[@text=\"Profil\"]","//android.view.ViewGroup[@content-desc=\"Statut du compte\"]","//android.view.ViewGroup[@content-desc=\"Sécurité du compte\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Profil"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Statut du compte"]
+        |-- Waiting for selector 3/3: //android.view.ViewGroup[@content-desc="Sécurité du compte"]
+|-- Profile.goToAccountStatus() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:29
+|-- AccountStatus.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:30
+    |-- AccountStatus.waitForSelectors(["//android.widget.TextView[@text=\"Statut du compte\"]","//android.widget.TextView[@text=\"Nom de famille\"]","//android.widget.TextView[@text=\"Prénom\"]","//android.widget.TextView[@text=\"Numéro de compte\"]"], 10000)
+        |-- Waiting for selector 1/4: //android.widget.TextView[@text="Statut du compte"]
+        |-- Waiting for selector 2/4: //android.widget.TextView[@text="Nom de famille"]
+        |-- Waiting for selector 3/4: //android.widget.TextView[@text="Prénom"]
+        |-- Waiting for selector 4/4: //android.widget.TextView[@text="Numéro de compte"]
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:32
+    |-- Profile.waitForSelectors(["//android.widget.TextView[@text=\"Profil\"]","//android.view.ViewGroup[@content-desc=\"Statut du compte\"]","//android.view.ViewGroup[@content-desc=\"Sécurité du compte\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Profil"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Statut du compte"]
+        |-- Waiting for selector 3/3: //android.view.ViewGroup[@content-desc="Sécurité du compte"]
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:34
+    |-- MyAccount.waitForSelectors(["android=new UiSelector().resourceId(\"myAccount\")"], 10000)
+        |-- Waiting for selector 1/1: android=new UiSelector().resourceId("myAccount")
+|-- DashboardScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:36
+    |-- DashboardScreen.waitForSelectors(["//android.widget.Button[@content-desc=\"Tableau de bord\"]","//android.widget.Button[@content-desc=\"Portefeuille\"]","//android.widget.Button[@content-desc=\"Achat / vente\"]","//android.widget.Button[@content-desc=\"Transfert\"]","android=new UiSelector().resourceId(\"button-header-account\")"], 10000)
+        |-- Waiting for selector 1/5: //android.widget.Button[@content-desc="Tableau de bord"]
+        |-- Waiting for selector 2/5: //android.widget.Button[@content-desc="Portefeuille"]
+        |-- Waiting for selector 3/5: //android.widget.Button[@content-desc="Achat / vente"]
+        |-- Waiting for selector 4/5: //android.widget.Button[@content-desc="Transfert"]
+        |-- Waiting for selector 5/5: android=new UiSelector().resourceId("button-header-account")
+|-- UserMenu.open() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:37
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:38
+    |-- MyAccount.waitForSelectors(["android=new UiSelector().resourceId(\"myAccount\")"], 10000)
+        |-- Waiting for selector 1/1: android=new UiSelector().resourceId("myAccount")
+|-- MyAccount.goToProfile() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:39
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:40
+    |-- Profile.waitForSelectors(["//android.widget.TextView[@text=\"Profil\"]","//android.view.ViewGroup[@content-desc=\"Statut du compte\"]","//android.view.ViewGroup[@content-desc=\"Sécurité du compte\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Profil"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Statut du compte"]
+        |-- Waiting for selector 3/3: //android.view.ViewGroup[@content-desc="Sécurité du compte"]
+|-- Profile.goToAccountSecurity() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:41
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:42
+    |-- ProfileSecurity.waitForSelectors(["//android.widget.TextView[@text=\"Sécurité\"]","//android.view.ViewGroup[@content-desc=\"Changer le mot de passe\"]","//android.widget.Switch[@content-desc=\"Second facteur d'authentification (2FA)\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Sécurité"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Changer le mot de passe"]
+        |-- Waiting for selector 3/3: //android.widget.Switch[@content-desc="Second facteur d'authentification (2FA)"]
+|-- ProfileSecurity.goToChangePassword() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:43
+|-- ChangePassword.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:44
+    |-- ChangePassword.waitForSelectors(["//android.widget.TextView[@text=\"Changer le mot de passe\"]","//android.widget.EditText[@resource-id=\"current_password\"]","//android.widget.EditText[@resource-id=\"newPassword\"]","//android.widget.EditText[@resource-id=\"confirmPassword\"]","//android.widget.Button[@content-desc=\"Confirmer\"]"], 10000)
+        |-- Waiting for selector 1/5: //android.widget.TextView[@text="Changer le mot de passe"]
+        |-- Waiting for selector 2/5: //android.widget.EditText[@resource-id="current_password"]
+        |-- Waiting for selector 3/5: //android.widget.EditText[@resource-id="newPassword"]
+        |-- Waiting for selector 4/5: //android.widget.EditText[@resource-id="confirmPassword"]
+        |-- Waiting for selector 5/5: //android.widget.Button[@content-desc="Confirmer"]
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:46
+    |-- ProfileSecurity.waitForSelectors(["//android.widget.TextView[@text=\"Sécurité\"]","//android.view.ViewGroup[@content-desc=\"Changer le mot de passe\"]","//android.widget.Switch[@content-desc=\"Second facteur d'authentification (2FA)\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Sécurité"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Changer le mot de passe"]
+        |-- Waiting for selector 3/3: //android.widget.Switch[@content-desc="Second facteur d'authentification (2FA)"]
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:48
+    |-- Profile.waitForSelectors(["//android.widget.TextView[@text=\"Profil\"]","//android.view.ViewGroup[@content-desc=\"Statut du compte\"]","//android.view.ViewGroup[@content-desc=\"Sécurité du compte\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Profil"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Statut du compte"]
+        |-- Waiting for selector 3/3: //android.view.ViewGroup[@content-desc="Sécurité du compte"]
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:50
+    |-- MyAccount.waitForSelectors(["android=new UiSelector().resourceId(\"myAccount\")"], 10000)
+        |-- Waiting for selector 1/1: android=new UiSelector().resourceId("myAccount")
+|-- DashboardScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:52
+    |-- DashboardScreen.waitForSelectors(["//android.widget.Button[@content-desc=\"Tableau de bord\"]","//android.widget.Button[@content-desc=\"Portefeuille\"]","//android.widget.Button[@content-desc=\"Achat / vente\"]","//android.widget.Button[@content-desc=\"Transfert\"]","android=new UiSelector().resourceId(\"button-header-account\")"], 10000)
+        |-- Waiting for selector 1/5: //android.widget.Button[@content-desc="Tableau de bord"]
+        |-- Waiting for selector 2/5: //android.widget.Button[@content-desc="Portefeuille"]
+        |-- Waiting for selector 3/5: //android.widget.Button[@content-desc="Achat / vente"]
+        |-- Waiting for selector 4/5: //android.widget.Button[@content-desc="Transfert"]
+        |-- Waiting for selector 5/5: android=new UiSelector().resourceId("button-header-account")
+|-- UserMenu.open() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:53
+|-- MyAccount.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:54
+    |-- MyAccount.waitForSelectors(["android=new UiSelector().resourceId(\"myAccount\")"], 10000)
+        |-- Waiting for selector 1/1: android=new UiSelector().resourceId("myAccount")
+|-- MyAccount.goToProfile() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:55
+|-- Profile.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:56
+    |-- Profile.waitForSelectors(["//android.widget.TextView[@text=\"Profil\"]","//android.view.ViewGroup[@content-desc=\"Statut du compte\"]","//android.view.ViewGroup[@content-desc=\"Sécurité du compte\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Profil"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Statut du compte"]
+        |-- Waiting for selector 3/3: //android.view.ViewGroup[@content-desc="Sécurité du compte"]
+|-- Profile.goToAccountSecurity() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:57
+|-- ProfileSecurity.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:58
+    |-- ProfileSecurity.waitForSelectors(["//android.widget.TextView[@text=\"Sécurité\"]","//android.view.ViewGroup[@content-desc=\"Changer le mot de passe\"]","//android.widget.Switch[@content-desc=\"Second facteur d'authentification (2FA)\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Sécurité"]
+        |-- Waiting for selector 2/3: //android.view.ViewGroup[@content-desc="Changer le mot de passe"]
+        |-- Waiting for selector 3/3: //android.widget.Switch[@content-desc="Second facteur d'authentification (2FA)"]
+|-- ProfileSecurity.goToModifyCode() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:59
+|-- PreviousAccessCode.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/user-menu.spec.ts:60
+    |-- PreviousAccessCode.waitForSelectors(["//android.widget.TextView[@text=\"Entrez votre ancien code\"]","//android.widget.Button[@content-desc=\"0\"]","//android.widget.Button[@content-desc=\"1\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Entrez votre ancien code"]
+        |-- Waiting for selector 2/3: //android.widget.Button[@content-desc="0"]
+        |-- Waiting for selector 3/3: //android.widget.Button[@content-desc="1"]

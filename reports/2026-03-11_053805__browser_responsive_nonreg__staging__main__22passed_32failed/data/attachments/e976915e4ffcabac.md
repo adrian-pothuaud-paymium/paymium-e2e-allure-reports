@@ -1,0 +1,109 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - button [ref=e49] [cursor=pointer]:
+        - img [ref=e51]
+    - generic [ref=e52]:
+      - navigation
+      - generic [ref=e53]:
+        - form [ref=e57]:
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - generic [ref=e60]:
+                - generic [ref=e61]:
+                  - generic [ref=e62]: De
+                  - generic [ref=e63]:
+                    - button "Max" [ref=e65] [cursor=pointer]:
+                      - generic [ref=e68]:
+                        - 'textbox "ex : 123.45" [ref=e69]'
+                        - button "Max" [ref=e72]:
+                          - generic [ref=e73]: Max
+                    - button "Euro" [ref=e74] [cursor=pointer]:
+                      - button "Euro" [ref=e78]:
+                        - textbox [ref=e80]: EUR
+                        - generic [ref=e82]:
+                          - img [ref=e83]
+                          - generic [ref=e88]: Euro
+                        - img [ref=e89]
+                  - generic [ref=e91]:
+                    - generic [ref=e92]: "Solde:"
+                    - generic [ref=e93]: 9 779,38 €
+                - generic [ref=e94]:
+                  - generic [ref=e96]: Payer avec
+                  - generic [ref=e97]:
+                    - button "Compte de trading 9 779,38 € Approvisionner le compte" [ref=e98] [cursor=pointer]:
+                      - generic [ref=e99]:
+                        - generic [ref=e100]:
+                          - generic [ref=e101]: Compte de trading
+                          - generic [ref=e102]: 9 779,38 €
+                        - button "Approvisionner le compte" [ref=e104]:
+                          - link "Approvisionner le compte" [ref=e105]
+                        - img [ref=e107]
+                    - button "Carte bancaire Nouvelle CB Transaction sécurisée via Worldpay" [ref=e109] [cursor=pointer]:
+                      - generic [ref=e111]:
+                        - generic [ref=e112]:
+                          - generic [ref=e113]: Carte bancaire
+                          - generic [ref=e114]: Nouvelle CB
+                          - generic [ref=e115]:
+                            - img [ref=e116]
+                            - img [ref=e123]
+                        - generic [ref=e128]: Transaction sécurisée via Worldpay
+              - button [ref=e129] [cursor=pointer]:
+                - button [ref=e130]:
+                  - img [ref=e131]
+              - generic [ref=e135]:
+                - generic [ref=e137]:
+                  - generic [ref=e138]: À
+                  - generic [ref=e139]: (estimation)
+                - generic [ref=e140]:
+                  - button [ref=e142] [cursor=pointer]:
+                    - 'textbox "ex : 123.45" [ref=e146]'
+                  - button "Bitcoin" [ref=e147] [cursor=pointer]:
+                    - button "Bitcoin" [ref=e151]:
+                      - textbox [ref=e153]: BTC
+                      - generic [ref=e155]:
+                        - img [ref=e156]
+                        - generic [ref=e161]: Bitcoin
+                      - img [ref=e162]
+                - generic [ref=e164]:
+                  - generic [ref=e165]: "Solde:"
+                  - generic [ref=e166]: 0,27468694 BTC
+              - generic [ref=e167] [cursor=pointer]:
+                - button "Convertir" [disabled]:
+                  - generic: Convertir
+            - generic [ref=e170]:
+              - generic [ref=e171]: Récapitulatif
+              - generic [ref=e173]:
+                - generic [ref=e174]: "Acheter pour ce montant :"
+                - generic [ref=e176]: 0,00000000 BTC
+              - generic [ref=e177]:
+                - generic [ref=e178]: Prix
+                - generic [ref=e180]:
+                  - generic [ref=e181]: 76 100,00
+                  - generic [ref=e182]: € / BTC
+              - generic [ref=e184]:
+                - generic [ref=e185]: Frais
+                - generic [ref=e187]: 0,00000000 BTC
+              - generic [ref=e189]:
+                - generic [ref=e190]: Montant
+                - generic [ref=e192]: 0,00 €
+          - button
+        - contentinfo [ref=e193]:
+          - generic [ref=e194]:
+            - generic [ref=e195]: Copyright © 2026
+            - link "Paymium" [ref=e197]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e198]: 6.15.0
+            - link "Statut" [ref=e200]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e202]:
+              - /url: ""
+```

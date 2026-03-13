@@ -1,0 +1,602 @@
+{
+  "lastUpdated": "2026-03-13T05:04:57.745Z",
+  "entries": [
+    {
+      "date": "2026-02-19",
+      "totals": {
+        "runs": 67,
+        "passed": 1375,
+        "failed": 999
+      },
+      "platforms": {
+        "android": {
+          "runs": 12,
+          "passed": 54,
+          "failed": 54
+        },
+        "browser": {
+          "runs": 55,
+          "passed": 1321,
+          "failed": 945
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 16,
+          "passed": 208,
+          "failed": 144
+        },
+        "local": {
+          "runs": 23,
+          "passed": 713,
+          "failed": 691
+        },
+        "staging": {
+          "runs": 4,
+          "passed": 122,
+          "failed": 122
+        },
+        "flux": {
+          "runs": 24,
+          "passed": 332,
+          "failed": 42
+        }
+      }
+    },
+    {
+      "date": "2026-02-20",
+      "totals": {
+        "runs": 3,
+        "passed": 39,
+        "failed": 61
+      },
+      "platforms": {
+        "android": {
+          "runs": 3,
+          "passed": 39,
+          "failed": 61
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 3,
+          "passed": 39,
+          "failed": 61
+        }
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "totals": {
+        "runs": 6,
+        "passed": 212,
+        "failed": 151
+      },
+      "platforms": {
+        "browser": {
+          "runs": 6,
+          "passed": 212,
+          "failed": 151
+        }
+      },
+      "environments": {
+        "flux": {
+          "runs": 3,
+          "passed": 102,
+          "failed": 80
+        },
+        "staging": {
+          "runs": 2,
+          "passed": 63,
+          "failed": 58
+        },
+        "sandbox": {
+          "runs": 1,
+          "passed": 47,
+          "failed": 13
+        }
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "totals": {
+        "runs": 1,
+        "passed": 0,
+        "failed": 0
+      },
+      "platforms": {
+        "ios": {
+          "runs": 1,
+          "passed": 0,
+          "failed": 0
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 1,
+          "passed": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "date": "2026-02-23",
+      "totals": {
+        "runs": 2,
+        "passed": 24,
+        "failed": 7
+      },
+      "platforms": {
+        "android": {
+          "runs": 1,
+          "passed": 24,
+          "failed": 7
+        },
+        "ios": {
+          "runs": 1,
+          "passed": 0,
+          "failed": 0
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 2,
+          "passed": 24,
+          "failed": 7
+        }
+      }
+    },
+    {
+      "date": "2026-02-24",
+      "totals": {
+        "runs": 7,
+        "passed": 19,
+        "failed": 13
+      },
+      "platforms": {
+        "browser": {
+          "runs": 7,
+          "passed": 19,
+          "failed": 13
+        }
+      },
+      "environments": {
+        "local": {
+          "runs": 6,
+          "passed": 12,
+          "failed": 12
+        },
+        "sandbox": {
+          "runs": 1,
+          "passed": 7,
+          "failed": 1
+        }
+      }
+    },
+    {
+      "date": "2026-02-25",
+      "totals": {
+        "runs": 2,
+        "passed": 32,
+        "failed": 84
+      },
+      "platforms": {
+        "browser": {
+          "runs": 2,
+          "passed": 32,
+          "failed": 84
+        }
+      },
+      "environments": {
+        "flux": {
+          "runs": 1,
+          "passed": 17,
+          "failed": 41
+        },
+        "staging": {
+          "runs": 1,
+          "passed": 15,
+          "failed": 43
+        }
+      }
+    },
+    {
+      "date": "2026-02-26",
+      "totals": {
+        "runs": 3,
+        "passed": 5,
+        "failed": 23
+      },
+      "platforms": {
+        "android": {
+          "runs": 2,
+          "passed": 5,
+          "failed": 23
+        },
+        "browser": {
+          "runs": 1,
+          "passed": 0,
+          "failed": 0
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 2,
+          "passed": 5,
+          "failed": 23
+        },
+        "flux": {
+          "runs": 1,
+          "passed": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "date": "2026-02-27",
+      "totals": {
+        "runs": 2,
+        "passed": 13,
+        "failed": 24
+      },
+      "platforms": {
+        "android": {
+          "runs": 1,
+          "passed": 13,
+          "failed": 24
+        },
+        "browser": {
+          "runs": 1,
+          "passed": 0,
+          "failed": 0
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 1,
+          "passed": 13,
+          "failed": 24
+        },
+        "flux": {
+          "runs": 1,
+          "passed": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "totals": {
+        "runs": 2,
+        "passed": 121,
+        "failed": 74
+      },
+      "platforms": {
+        "browser": {
+          "runs": 2,
+          "passed": 121,
+          "failed": 74
+        }
+      },
+      "environments": {
+        "staging": {
+          "runs": 1,
+          "passed": 56,
+          "failed": 41
+        },
+        "flux": {
+          "runs": 1,
+          "passed": 65,
+          "failed": 33
+        }
+      }
+    },
+    {
+      "date": "2026-03-02",
+      "totals": {
+        "runs": 2,
+        "passed": 0,
+        "failed": 0
+      },
+      "platforms": {
+        "ios": {
+          "runs": 1,
+          "passed": 0,
+          "failed": 0
+        },
+        "android": {
+          "runs": 1,
+          "passed": 0,
+          "failed": 0
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 1,
+          "passed": 0,
+          "failed": 0
+        },
+        "staging": {
+          "runs": 1,
+          "passed": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "date": "2026-03-03",
+      "totals": {
+        "runs": 2,
+        "passed": 157,
+        "failed": 39
+      },
+      "platforms": {
+        "browser": {
+          "runs": 2,
+          "passed": 157,
+          "failed": 39
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 1,
+          "passed": 77,
+          "failed": 21
+        },
+        "staging": {
+          "runs": 1,
+          "passed": 80,
+          "failed": 18
+        }
+      }
+    },
+    {
+      "date": "2026-03-04",
+      "totals": {
+        "runs": 1,
+        "passed": 11,
+        "failed": 33
+      },
+      "platforms": {
+        "android": {
+          "runs": 1,
+          "passed": 11,
+          "failed": 33
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 1,
+          "passed": 11,
+          "failed": 33
+        }
+      }
+    },
+    {
+      "date": "2026-03-05",
+      "totals": {
+        "runs": 1,
+        "passed": 15,
+        "failed": 37
+      },
+      "platforms": {
+        "android": {
+          "runs": 1,
+          "passed": 15,
+          "failed": 37
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 1,
+          "passed": 15,
+          "failed": 37
+        }
+      }
+    },
+    {
+      "date": "2026-03-06",
+      "totals": {
+        "runs": 1,
+        "passed": 76,
+        "failed": 34
+      },
+      "platforms": {
+        "browser": {
+          "runs": 1,
+          "passed": 76,
+          "failed": 34
+        }
+      },
+      "environments": {
+        "staging": {
+          "runs": 1,
+          "passed": 76,
+          "failed": 34
+        }
+      }
+    },
+    {
+      "date": "2026-03-07",
+      "totals": {
+        "runs": 3,
+        "passed": 240,
+        "failed": 90
+      },
+      "platforms": {
+        "browser": {
+          "runs": 3,
+          "passed": 240,
+          "failed": 90
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 1,
+          "passed": 84,
+          "failed": 26
+        },
+        "staging": {
+          "runs": 1,
+          "passed": 80,
+          "failed": 30
+        },
+        "flux": {
+          "runs": 1,
+          "passed": 76,
+          "failed": 34
+        }
+      }
+    },
+    {
+      "date": "2026-03-08",
+      "totals": {
+        "runs": 1,
+        "passed": 53,
+        "failed": 30
+      },
+      "platforms": {
+        "browser": {
+          "runs": 1,
+          "passed": 53,
+          "failed": 30
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 1,
+          "passed": 53,
+          "failed": 30
+        }
+      }
+    },
+    {
+      "date": "2026-03-09",
+      "totals": {
+        "runs": 2,
+        "passed": 137,
+        "failed": 56
+      },
+      "platforms": {
+        "browser": {
+          "runs": 2,
+          "passed": 137,
+          "failed": 56
+        }
+      },
+      "environments": {
+        "flux": {
+          "runs": 2,
+          "passed": 137,
+          "failed": 56
+        }
+      }
+    },
+    {
+      "date": "2026-03-10",
+      "totals": {
+        "runs": 6,
+        "passed": 85,
+        "failed": 21
+      },
+      "platforms": {
+        "browser": {
+          "runs": 6,
+          "passed": 85,
+          "failed": 21
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 3,
+          "passed": 85,
+          "failed": 21
+        },
+        "staging": {
+          "runs": 2,
+          "passed": 0,
+          "failed": 0
+        },
+        "flux": {
+          "runs": 1,
+          "passed": 0,
+          "failed": 0
+        }
+      }
+    },
+    {
+      "date": "2026-03-11",
+      "totals": {
+        "runs": 3,
+        "passed": 112,
+        "failed": 50
+      },
+      "platforms": {
+        "browser": {
+          "runs": 3,
+          "passed": 112,
+          "failed": 50
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 1,
+          "passed": 44,
+          "failed": 10
+        },
+        "staging": {
+          "runs": 1,
+          "passed": 22,
+          "failed": 32
+        },
+        "flux": {
+          "runs": 1,
+          "passed": 46,
+          "failed": 8
+        }
+      }
+    },
+    {
+      "date": "2026-03-12",
+      "totals": {
+        "runs": 13,
+        "passed": 538,
+        "failed": 197
+      },
+      "platforms": {
+        "android": {
+          "runs": 4,
+          "passed": 65,
+          "failed": 31
+        },
+        "browser": {
+          "runs": 9,
+          "passed": 473,
+          "failed": 166
+        }
+      },
+      "environments": {
+        "sandbox": {
+          "runs": 4,
+          "passed": 108,
+          "failed": 42
+        },
+        "unknown": {
+          "runs": 6,
+          "passed": 369,
+          "failed": 135
+        },
+        "staging": {
+          "runs": 2,
+          "passed": 15,
+          "failed": 12
+        },
+        "flux": {
+          "runs": 1,
+          "passed": 46,
+          "failed": 8
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+Error: Reset password failed with status 500 (attempt 1/10)
+

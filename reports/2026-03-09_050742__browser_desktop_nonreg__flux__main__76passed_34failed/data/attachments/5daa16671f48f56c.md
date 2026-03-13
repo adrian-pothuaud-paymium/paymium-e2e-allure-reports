@@ -1,0 +1,144 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button "Acheter" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+          - generic [ref=e52]: Acheter
+        - button [ref=e53] [cursor=pointer]:
+          - img [ref=e54]
+        - button "FR" [ref=e57] [cursor=pointer]:
+          - generic [ref=e58]: FR
+          - img [ref=e59]
+        - button [ref=e61] [cursor=pointer]:
+          - img [ref=e64]
+        - button [ref=e67] [cursor=pointer]:
+          - img [ref=e68]
+        - button [ref=e71] [cursor=pointer]:
+          - img [ref=e72]
+        - button [ref=e75] [cursor=pointer]:
+          - img [ref=e76]
+    - generic [ref=e78]:
+      - navigation [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e83]:
+            - img [ref=e85]
+            - textbox "Chercher" [ref=e87]
+          - generic [ref=e88]:
+            - link "Tableau de bord" [ref=e89] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e90]
+              - generic [ref=e92]: Tableau de bord
+            - link "Portefeuille" [ref=e93] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e94]
+              - generic [ref=e96]: Portefeuille
+            - link "Dépôt / retrait" [ref=e97] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e98]
+              - generic [ref=e100]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e101] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e102]
+              - generic [ref=e104]: Achat récurrent
+            - link "Mode expert" [ref=e105] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e106]
+              - generic [ref=e108]: Mode expert
+            - link "Parrainage" [ref=e109] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e110]
+              - generic [ref=e112]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e113] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e114]
+              - generic [ref=e116]: Plan Bitcoin Famille
+            - link "Historique" [ref=e117] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e118]
+              - generic [ref=e120]: Historique
+      - generic [ref=e121]:
+        - generic [ref=e123]:
+          - tablist [ref=e125]:
+            - generic [ref=e126]:
+              - tab "Paramètres" [ref=e128] [cursor=pointer]:
+                - generic [ref=e129]: Paramètres
+              - tab "Sécurité du compte" [ref=e130] [cursor=pointer]:
+                - generic [ref=e131]: Sécurité du compte
+              - tab "Identification et documents" [ref=e132] [cursor=pointer]:
+                - generic [ref=e133]: Identification et documents
+              - tab "Vos comptes bancaires enregistrés" [selected] [ref=e134] [cursor=pointer]:
+                - generic [ref=e135]: Vos comptes bancaires enregistrés
+              - tab "Solution de paiement" [ref=e136] [cursor=pointer]:
+                - generic [ref=e137]: Solution de paiement
+          - generic [ref=e138]:
+            - banner [ref=e140]:
+              - generic [ref=e141]:
+                - img [ref=e143]
+                - generic [ref=e145]: Votre transfert interne est en cours de traitement.
+              - link "Voir l'historique" [ref=e146] [cursor=pointer]:
+                - /url: /history?type=history-internalTransfer
+                - generic [ref=e147]: Voir l'historique
+            - generic [ref=e148]:
+              - button "Ajouter" [ref=e149] [cursor=pointer]:
+                - img [ref=e150]
+                - generic [ref=e152]: Ajouter
+              - generic [ref=e153]:
+                - generic [ref=e154]: Par défaut
+                - generic [ref=e155]:
+                  - generic [ref=e156]:
+                    - generic [ref=e157]:
+                      - generic [ref=e158]: Libellé
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: test staging user
+                        - button [ref=e161] [cursor=pointer]:
+                          - img [ref=e162]
+                    - generic [ref=e164]:
+                      - generic [ref=e165]: IBAN
+                      - generic [ref=e166]: BE57******331135
+                  - generic [ref=e167]:
+                    - generic [ref=e168]:
+                      - generic [ref=e169]: BIC
+                      - generic [ref=e170]: PAYV*******
+                    - generic [ref=e171]:
+                      - generic [ref=e172]: Nom de la banque
+                      - generic [ref=e173]: Paynovate
+              - generic [ref=e174]:
+                - generic [ref=e175]: En cours de revue
+                - generic [ref=e176]:
+                  - generic [ref=e177]:
+                    - generic [ref=e178]:
+                      - generic [ref=e179]: Libellé
+                      - generic [ref=e180]:
+                        - generic [ref=e181]: Playwright 1772100799619
+                        - button [ref=e182] [cursor=pointer]:
+                          - img [ref=e183]
+                    - generic [ref=e185]:
+                      - generic [ref=e186]: IBAN
+                      - generic [ref=e187]: NO80*****285328
+                  - generic [ref=e188]:
+                    - generic [ref=e189]:
+                      - generic [ref=e190]: BIC
+                      - generic [ref=e191]: DABA*******
+                    - generic [ref=e192]:
+                      - generic [ref=e193]: Nom de la banque
+                      - generic [ref=e194]: Danske Bank
+              - generic [ref=e195]: 2 / 3
+        - contentinfo [ref=e196]:
+          - generic [ref=e197]:
+            - generic [ref=e198]: Copyright © 2026
+            - link "Paymium" [ref=e199] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e200]: 6.16.0
+            - link "Statut" [ref=e201] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e202] [cursor=pointer]
+```

@@ -1,0 +1,10 @@
+TIMESTAMP=2026-03-12_201525
+ENVIRONMENT=sandbox
+BRANCH=next-release
+E2E_BRANCH=main
+JOB=android_nonreg
+TOTAL=16
+PASSED=11
+FAILED=5
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39589
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/235062

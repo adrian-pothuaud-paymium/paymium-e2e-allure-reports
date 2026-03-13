@@ -1,0 +1,10 @@
+TIMESTAMP=2026-03-12_172906
+ENVIRONMENT=staging
+BRANCH=support/838-issue
+E2E_BRANCH=main
+JOB=android_nonreg
+TOTAL=0
+PASSED=0
+FAILED=0
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39580
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/234871

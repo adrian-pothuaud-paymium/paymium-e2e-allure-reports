@@ -1,0 +1,10 @@
+TIMESTAMP=2026-03-12_230031
+ENVIRONMENT=sandbox
+BRANCH=feature/fixBiometrieFreeze
+E2E_BRANCH=main
+JOB=android_nonreg
+TOTAL=45
+PASSED=29
+FAILED=16
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/39605
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/235372

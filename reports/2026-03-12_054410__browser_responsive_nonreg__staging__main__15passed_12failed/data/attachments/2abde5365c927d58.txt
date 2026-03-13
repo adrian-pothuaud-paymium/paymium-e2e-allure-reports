@@ -1,0 +1,13 @@
+POST /users failed Request failed with status code 429
+Attempt 1 to create test user failed: Request failed with status code 429
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected: "Se connecter - Paymium"
+Received: "Paymium"
+Timeout:  30000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 30000ms
+    34 × unexpected value "Paymium"
+
+

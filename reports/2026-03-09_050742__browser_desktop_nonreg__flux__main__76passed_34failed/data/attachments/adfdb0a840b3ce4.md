@@ -1,0 +1,278 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button "Acheter" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+          - generic [ref=e52]: Acheter
+        - button [ref=e53] [cursor=pointer]:
+          - img [ref=e54]
+        - button "FR" [ref=e57] [cursor=pointer]:
+          - generic [ref=e58]: FR
+          - img [ref=e59]
+        - button [ref=e61] [cursor=pointer]:
+          - img [ref=e64]
+        - button [ref=e66] [cursor=pointer]:
+          - img [ref=e67]
+        - button [ref=e70] [cursor=pointer]:
+          - img [ref=e71]
+        - button [ref=e74] [cursor=pointer]:
+          - img [ref=e75]
+    - generic [ref=e77]:
+      - navigation [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e82]:
+            - img [ref=e84]
+            - textbox "Chercher" [ref=e86]
+          - generic [ref=e87]:
+            - link "Tableau de bord" [ref=e88] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e89]
+              - generic [ref=e91]: Tableau de bord
+            - link "Portefeuille" [ref=e92] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e93]
+              - generic [ref=e95]: Portefeuille
+            - link "Dépôt / retrait" [ref=e96] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e97]
+              - generic [ref=e99]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e100] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e101]
+              - generic [ref=e103]: Achat récurrent
+            - link "Mode expert" [ref=e104] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e105]
+              - generic [ref=e107]: Mode expert
+            - link "Parrainage" [ref=e108] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e109]
+              - generic [ref=e111]: Parrainage
+            - link "Historique" [ref=e112] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e113]
+              - generic [ref=e115]: Historique
+      - generic [ref=e116]:
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - generic [ref=e121]: Bienvenue Israel
+            - generic [ref=e122]: Suivez, planifiez et gérez vos actifs.
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - generic [ref=e126]:
+                - generic [ref=e127]: Commencer avec Paymium
+                - generic [ref=e128]: Débloquer toutes les fonctionnalités
+              - button "Vérification en cours" [active] [ref=e129] [cursor=pointer]:
+                - generic [ref=e130]:
+                  - img [ref=e131]
+                  - generic [ref=e134]: Vérification en cours
+            - generic [ref=e135]:
+              - generic [ref=e136]:
+                - img [ref=e138]
+                - generic [ref=e141]:
+                  - generic [ref=e142]: Vérification d'identité
+                  - generic [ref=e143]: Munissez vous d’une carte d’identité ou d’un passeport.
+              - generic [ref=e145]:
+                - img [ref=e147]
+                - generic [ref=e149]:
+                  - generic [ref=e150]: Identification de votre société
+                  - generic [ref=e151]: Statuts, K-BIS, et justificatif de domiciliation
+              - generic [ref=e153]:
+                - img [ref=e155]
+                - generic [ref=e158]:
+                  - generic [ref=e159]: Données financières
+                  - generic [ref=e160]: RIB, justificatif d’activité
+              - generic [ref=e162]:
+                - img [ref=e164]
+                - generic [ref=e166]:
+                  - generic [ref=e167]: Bénéficiaires effectifs
+                  - generic [ref=e168]: Pièces d’identité et justificatifs de domicile
+          - generic [ref=e170]:
+            - img [ref=e172]
+            - generic [ref=e212]:
+              - generic [ref=e213]: Complétez votre profil investisseur
+              - generic [ref=e214]: Conformément à la réglementation, il vous suffit de 3 minutes pour fournir des informations supplémentaires, vérifier votre profil et commencer à acheter en toute sécurité et rapidement !
+            - button "Compléter" [ref=e215] [cursor=pointer]:
+              - generic [ref=e216]: Compléter
+          - button
+          - button
+          - generic [ref=e218]:
+            - generic [ref=e219]:
+              - generic [ref=e220]: Votre portefeuille est vide
+              - generic [ref=e221]: Vous n'avez pas encore d'argent ou de crypto sur votre compte. Commencez par ajouter des fonds ou acheter vos premiers actifs.
+            - generic [ref=e222]:
+              - button "Commencer à acheter" [ref=e223] [cursor=pointer]:
+                - img [ref=e224]
+                - generic [ref=e226]: Commencer à acheter
+              - button "Déposer" [ref=e227] [cursor=pointer]:
+                - img [ref=e228]
+                - generic [ref=e230]: Déposer
+          - generic [ref=e231]: Le marché
+          - list [ref=e232]:
+            - listitem [ref=e233]:
+              - generic [ref=e234]:
+                - generic [ref=e235] [cursor=pointer]:
+                  - generic [ref=e236]: Nom
+                  - generic [ref=e237]:
+                    - img [ref=e238]
+                    - img [ref=e240]
+                - generic [ref=e242] [cursor=pointer]:
+                  - generic [ref=e243]: Prix
+                  - generic [ref=e244]:
+                    - img [ref=e245]
+                    - img [ref=e247]
+                - generic [ref=e249] [cursor=pointer]:
+                  - generic [ref=e250]: 24h
+                  - generic [ref=e251]:
+                    - img [ref=e252]
+                    - img [ref=e254]
+            - separator [ref=e257]
+            - listitem [ref=e258] [cursor=pointer]:
+              - generic [ref=e259]:
+                - img [ref=e260]
+                - generic [ref=e264]:
+                  - generic [ref=e265]: Bitcoin
+                  - generic [ref=e266]: BTC
+              - generic [ref=e268]: 99 500,00 €
+              - generic [ref=e270]: "-"
+              - button "Acheter" [ref=e272]:
+                - generic [ref=e273]: Acheter
+            - separator [ref=e274]
+            - listitem [ref=e275] [cursor=pointer]:
+              - generic [ref=e276]:
+                - img [ref=e277]
+                - generic [ref=e287]:
+                  - generic [ref=e288]: Ethereum
+                  - generic [ref=e289]: ETH
+              - generic [ref=e291]: 1 773,93 €
+              - generic [ref=e295]:
+                - img [ref=e297]
+                - generic [ref=e299]: 0,62 %
+              - button "Acheter" [ref=e301]:
+                - generic [ref=e302]: Acheter
+            - separator [ref=e303]
+            - listitem [ref=e304] [cursor=pointer]:
+              - generic [ref=e305]:
+                - img [ref=e306]
+                - generic [ref=e310]:
+                  - generic [ref=e311]: USDC
+                  - generic [ref=e312]: USDC
+              - generic [ref=e314]: 0,86 €
+              - generic [ref=e316]: "-"
+              - button "Acheter" [ref=e318]:
+                - generic [ref=e319]: Acheter
+            - separator [ref=e320]
+            - listitem [ref=e321] [cursor=pointer]:
+              - generic [ref=e322]:
+                - img [ref=e323]
+                - generic [ref=e328]:
+                  - generic [ref=e329]: Euro CoinVertible
+                  - generic [ref=e330]: EURCV
+              - generic [ref=e332]: 1,00 €
+              - generic [ref=e334]: "-"
+              - button "Acheter" [ref=e336]:
+                - generic [ref=e337]: Acheter
+            - separator [ref=e338]
+            - listitem [ref=e339] [cursor=pointer]:
+              - generic [ref=e340]:
+                - img [ref=e341]
+                - generic [ref=e345]:
+                  - generic [ref=e346]: Litecoin
+                  - generic [ref=e347]: LTC
+              - generic [ref=e349]: 47,47 €
+              - generic [ref=e353]:
+                - img [ref=e355]
+                - generic [ref=e357]: 0,64 %
+              - button "Acheter" [ref=e359]:
+                - generic [ref=e360]: Acheter
+            - separator [ref=e361]
+            - listitem [ref=e362] [cursor=pointer]:
+              - generic [ref=e363]:
+                - img [ref=e364]
+                - generic [ref=e368]:
+                  - generic [ref=e369]: Bitcoin Cash
+                  - generic [ref=e370]: BCH
+              - generic [ref=e372]: 392,47 €
+              - generic [ref=e376]:
+                - img [ref=e378]
+                - generic [ref=e380]: 0,02 %
+              - button "Acheter" [ref=e382]:
+                - generic [ref=e383]: Acheter
+            - separator [ref=e384]
+            - listitem [ref=e385] [cursor=pointer]:
+              - generic [ref=e386]:
+                - img [ref=e387]
+                - generic [ref=e395]:
+                  - generic [ref=e396]: Ethereum Classic
+                  - generic [ref=e397]: ETC
+              - generic [ref=e399]: 7,35 €
+              - generic [ref=e403]:
+                - img [ref=e405]
+                - generic [ref=e407]: 0,96 %
+              - button "Acheter" [ref=e409]:
+                - generic [ref=e410]: Acheter
+            - separator [ref=e411]
+            - listitem [ref=e412] [cursor=pointer]:
+              - generic [ref=e413]:
+                - img [ref=e414]
+                - generic [ref=e418]:
+                  - generic [ref=e419]: Basic Attention Token
+                  - generic [ref=e420]: BAT
+              - generic [ref=e422]: 0,08 €
+              - generic [ref=e426]:
+                - img [ref=e428]
+                - generic [ref=e430]: 0,39 %
+            - separator [ref=e431]
+            - listitem [ref=e432] [cursor=pointer]:
+              - generic [ref=e433]:
+                - img [ref=e434]
+                - generic [ref=e438]:
+                  - generic [ref=e439]: Bcio
+                  - generic [ref=e440]: BCIO
+              - generic [ref=e442]: 0,03 €
+              - generic [ref=e444]: "-"
+            - separator [ref=e445]
+            - listitem [ref=e446] [cursor=pointer]:
+              - generic [ref=e447]:
+                - img [ref=e448]
+                - generic [ref=e451]:
+                  - generic [ref=e452]: Ripple
+                  - generic [ref=e453]: XRP
+              - generic [ref=e455]: 1,20 €
+              - generic [ref=e459]:
+                - img [ref=e461]
+                - generic [ref=e463]: 0,68 %
+              - button "Acheter" [ref=e465]:
+                - generic [ref=e466]: Acheter
+            - separator [ref=e467]
+            - listitem [ref=e468] [cursor=pointer]:
+              - generic [ref=e469]:
+                - img [ref=e470]
+                - generic [ref=e473]:
+                  - generic [ref=e474]: Solana
+                  - generic [ref=e475]: SOL
+              - generic [ref=e477]: 75,38 €
+              - generic [ref=e481]:
+                - img [ref=e483]
+                - generic [ref=e485]: 1,31 %
+              - button "Acheter" [ref=e487]:
+                - generic [ref=e488]: Acheter
+        - contentinfo [ref=e489]:
+          - generic [ref=e490]:
+            - generic [ref=e491]: Copyright © 2026
+            - link "Paymium" [ref=e492] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e493]: 6.16.0
+            - link "Statut" [ref=e494] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e495] [cursor=pointer]
+```

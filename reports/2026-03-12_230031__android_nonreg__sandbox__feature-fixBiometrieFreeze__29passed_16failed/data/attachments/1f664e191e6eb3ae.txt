@@ -1,0 +1,91 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] @sanity @demo Un utilisateur peut naviguer vers les principales sections du site via la navigation mobile
+[LOCALE] Locale forcée en fr-FR
+
+
+📌 Test Step: Open app and authenticate
+|-- Shortcuts.waitForSessionRestartAppAndAuthenticate() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/bottom-tabs.spec.ts:21
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+    |-- Shortcuts.restartApp()
+    |-- Shortcuts.openAppAndGoToSignIn()
+        |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+            |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+                |-- AxeptioCookies.waitForSheet(20000)
+                    |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                        |-- Attente du premier élément affiché parmi: 2 sélecteurs
+                |-- AxeptioCookies.acceptCookies()
+                    |-- Utils.clickFirstExisting(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"])
+                        |-- Clic sur le premier élément existant parmi: 2 sélecteurs
+            |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+                |-- UpdateScreen.waitForScreen(20000)
+            |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+                |-- AxeptioCookies.waitForSheet(20000)
+                    |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                        |-- Attente du premier élément affiché parmi: 2 sélecteurs
+                |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+        |-- WelcomeScreen.waitForScreen(20000)
+            |-- WelcomeScreen.waitForSelectors(["android=new UiSelector().resourceId(\"onboarding.login\")","android=new UiSelector().resourceId(\"onboarding.signup\")"], 20000)
+                |-- Waiting for selector 1/2: android=new UiSelector().resourceId("onboarding.login")
+                |-- Waiting for selector 2/2: android=new UiSelector().resourceId("onboarding.signup")
+        |-- WelcomeScreen.goTo(sign-in)
+        |-- SignIn.waitForScreen(20000)
+            |-- SignIn.waitForSelectors(["android=new UiSelector().resourceId(\"login.email\")","android=new UiSelector().resourceId(\"login.password\")","android=new UiSelector().textContains(\"Mot de passe oublié\")","android=new UiSelector().textContains(\"S'inscrire\")"], 20000)
+                |-- Waiting for selector 1/4: android=new UiSelector().resourceId("login.email")
+                |-- Waiting for selector 2/4: android=new UiSelector().resourceId("login.password")
+                |-- Waiting for selector 3/4: android=new UiSelector().textContains("Mot de passe oublié")
+                |-- Waiting for selector 4/4: android=new UiSelector().textContains("S'inscrire")
+    |-- Shortcuts.authenticate(********)
+        |-- SignIn.fillEmail(adrian.pothuaud+auto.primary@paymium.com)
+        |-- SignIn.fillPassword(********)
+        |-- SignIn.submit()
+        |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired()
+            |-- Shortcuts.handlePinCodeIfRequired(********)
+                |-- CreatePinCode.waitForScreen(20000)
+                    |-- CreatePinCode.waitForSelectors(["//android.widget.Button[@content-desc=\"Créer un code\"]"], 20000)
+                        |-- Waiting for selector 1/1: //android.widget.Button[@content-desc="Créer un code"]
+                |-- Écran pin code non affiché (différés par l'app), l'InterruptHandler les gérera
+            |-- Shortcuts.handleBiometricsIfRequired(20000)
+                |-- EnableBiometrics.waitForScreen(20000)
+                    |-- EnableBiometrics.waitForSelectors(["//android.widget.TextView[@text=\"Déverrouillez instantanément via la biométrie\"]","//android.widget.Button[@content-desc=\"Activer la biométrie\"]","//android.widget.Button[@content-desc=\"Plus tard\"]"], 20000)
+                        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Déverrouillez instantanément via la biométrie"]
+                |-- Écran biométrie non affiché (différés par l'app), l'InterruptHandler le gérera
+        |-- DashboardScreen.waitForScreen()
+            |-- DashboardScreen.waitForSelectors(["//android.widget.Button[@content-desc=\"Tableau de bord\"]","//android.widget.Button[@content-desc=\"Portefeuille\"]","//android.widget.Button[@content-desc=\"Achat / vente\"]","//android.widget.Button[@content-desc=\"Transfert\"]","android=new UiSelector().resourceId(\"button-header-account\")"], 10000)
+                |-- Waiting for selector 1/5: //android.widget.Button[@content-desc="Tableau de bord"]
+                |-- Waiting for selector 2/5: //android.widget.Button[@content-desc="Portefeuille"]
+                |-- Waiting for selector 3/5: //android.widget.Button[@content-desc="Achat / vente"]
+                |-- Waiting for selector 4/5: //android.widget.Button[@content-desc="Transfert"]
+                |-- Waiting for selector 5/5: android=new UiSelector().resourceId("button-header-account")
+
+
+📌 Test Step: Navigate through bottom tabs destinations
+|-- Wallet.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/bottom-tabs.spec.ts:26
+    |-- Wallet.waitForSelectors(["//android.widget.TextView[@text=\"Valeur de mon portefeuille\"]","//android.view.View[@content-desc=\"Solde\"]","//android.view.View[@content-desc=\"Allocation\"]"], 10000)
+        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Valeur de mon portefeuille"]
+        |-- Waiting for selector 2/3: //android.view.View[@content-desc="Solde"]
+        |-- Waiting for selector 3/3: //android.view.View[@content-desc="Allocation"]
+|-- DashboardScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/bottom-tabs.spec.ts:28
+    |-- DashboardScreen.waitForSelectors(["//android.widget.Button[@content-desc=\"Tableau de bord\"]","//android.widget.Button[@content-desc=\"Portefeuille\"]","//android.widget.Button[@content-desc=\"Achat / vente\"]","//android.widget.Button[@content-desc=\"Transfert\"]","android=new UiSelector().resourceId(\"button-header-account\")"], 10000)
+        |-- Waiting for selector 1/5: //android.widget.Button[@content-desc="Tableau de bord"]
+        |-- Waiting for selector 2/5: //android.widget.Button[@content-desc="Portefeuille"]
+        |-- Waiting for selector 3/5: //android.widget.Button[@content-desc="Achat / vente"]
+        |-- Waiting for selector 4/5: //android.widget.Button[@content-desc="Transfert"]
+        |-- Waiting for selector 5/5: android=new UiSelector().resourceId("button-header-account")
+|-- ExpertScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/bottom-tabs.spec.ts:40
+    |-- ExpertScreen.waitForSelectors(["android=new UiSelector().text(\"BTC/EUR\")","android=new UiSelector().resourceId(\"trend\")","android=new UiSelector().resourceId(\"depth\")","android=new UiSelector().resourceId(\"market.buy\")","android=new UiSelector().resourceId(\"market.sell\")"], 10000)
+        |-- Waiting for selector 1/5: android=new UiSelector().text("BTC/EUR")
+        |-- Waiting for selector 2/5: android=new UiSelector().resourceId("trend")
+        |-- Waiting for selector 3/5: android=new UiSelector().resourceId("depth")
+        |-- Waiting for selector 4/5: android=new UiSelector().resourceId("market.buy")
+        |-- Waiting for selector 5/5: android=new UiSelector().resourceId("market.sell")
+|-- DashboardScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/navigation/in-app/bottom-tabs.spec.ts:42
+    |-- DashboardScreen.waitForSelectors(["//android.widget.Button[@content-desc=\"Tableau de bord\"]","//android.widget.Button[@content-desc=\"Portefeuille\"]","//android.widget.Button[@content-desc=\"Achat / vente\"]","//android.widget.Button[@content-desc=\"Transfert\"]","android=new UiSelector().resourceId(\"button-header-account\")"], 10000)
+        |-- Waiting for selector 1/5: //android.widget.Button[@content-desc="Tableau de bord"]
+        |-- Waiting for selector 2/5: //android.widget.Button[@content-desc="Portefeuille"]
+        |-- Waiting for selector 3/5: //android.widget.Button[@content-desc="Achat / vente"]
+        |-- Waiting for selector 4/5: //android.widget.Button[@content-desc="Transfert"]
+        |-- Waiting for selector 5/5: android=new UiSelector().resourceId("button-header-account")

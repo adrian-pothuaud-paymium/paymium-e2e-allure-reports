@@ -1,0 +1,94 @@
+.........Console Logs.........
+
+
+
+[🧪 TEST] Le formulaire de création de DCA affiche les messages d'erreur appropriés en cas de données invalides
+[LOCALE] Locale forcée en fr-FR
+
+
+📌 Test Step: Open App authenticated
+|-- Shortcuts.waitForSessionRestartAppAndAuthenticate() paymium-e2e-united/tests/wdio-android/tests/investment/dca/create-form-validations.spec.ts:17
+    |-- Shortcuts.waitForSession()
+        |-- Appium session is ready.
+    |-- Shortcuts.restartApp()
+    |-- Shortcuts.openAppAndGoToSignIn()
+        |-- Shortcuts.handleBeforeWelcomeScreens(20000)
+            |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+                |-- AxeptioCookies.waitForSheet(20000)
+                    |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                        |-- Attente du premier élément affiché parmi: 2 sélecteurs
+                |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+            |-- Shortcuts.handleUpdateScreenIfPresent(20000)
+                |-- UpdateScreen.waitForScreen(20000)
+            |-- Shortcuts.handleAxeptioCookiesIfPresent(20000)
+                |-- AxeptioCookies.waitForSheet(20000)
+                    |-- Utils.waitFirstDisplayed(["android=new UiSelector().resourceId(\"axeptio_btn_acceptAll\")","//android.widget.Button[@text=\"Accepter les cookies\"]"], 10000)
+                        |-- Attente du premier élément affiché parmi: 2 sélecteurs
+                |-- Pas de popup de cookies Axeptio au lancement de l'app, continuer
+        |-- WelcomeScreen.waitForScreen(20000)
+            |-- WelcomeScreen.waitForSelectors(["android=new UiSelector().resourceId(\"onboarding.login\")","android=new UiSelector().resourceId(\"onboarding.signup\")"], 20000)
+                |-- Waiting for selector 1/2: android=new UiSelector().resourceId("onboarding.login")
+                |-- Waiting for selector 2/2: android=new UiSelector().resourceId("onboarding.signup")
+        |-- WelcomeScreen.goTo(sign-in)
+        |-- SignIn.waitForScreen(20000)
+            |-- SignIn.waitForSelectors(["android=new UiSelector().resourceId(\"login.email\")","android=new UiSelector().resourceId(\"login.password\")","android=new UiSelector().textContains(\"Mot de passe oublié\")","android=new UiSelector().textContains(\"S'inscrire\")"], 20000)
+                |-- Waiting for selector 1/4: android=new UiSelector().resourceId("login.email")
+                |-- Waiting for selector 2/4: android=new UiSelector().resourceId("login.password")
+                |-- Waiting for selector 3/4: android=new UiSelector().textContains("Mot de passe oublié")
+                |-- Waiting for selector 4/4: android=new UiSelector().textContains("S'inscrire")
+    |-- Shortcuts.authenticate(********)
+        |-- SignIn.fillEmail(adrian.pothuaud+auto.primary@paymium.com)
+        |-- SignIn.fillPassword(********)
+        |-- SignIn.submit()
+        |-- Shortcuts.handleAccessCodeAndBiometricsIfRequired()
+            |-- Shortcuts.handlePinCodeIfRequired(********)
+                |-- CreatePinCode.waitForScreen(20000)
+                    |-- CreatePinCode.waitForSelectors(["//android.widget.Button[@content-desc=\"Créer un code\"]"], 20000)
+                        |-- Waiting for selector 1/1: //android.widget.Button[@content-desc="Créer un code"]
+                |-- Écran pin code non affiché (différés par l'app), l'InterruptHandler les gérera
+            |-- Shortcuts.handleBiometricsIfRequired(20000)
+                |-- EnableBiometrics.waitForScreen(20000)
+                    |-- EnableBiometrics.waitForSelectors(["//android.widget.TextView[@text=\"Déverrouillez instantanément via la biométrie\"]","//android.widget.Button[@content-desc=\"Activer la biométrie\"]","//android.widget.Button[@content-desc=\"Plus tard\"]"], 20000)
+                        |-- Waiting for selector 1/3: //android.widget.TextView[@text="Déverrouillez instantanément via la biométrie"]
+                |-- Écran biométrie non affiché (différés par l'app), l'InterruptHandler le gérera
+        |-- DashboardScreen.waitForScreen()
+            |-- DashboardScreen.waitForSelectors(["//android.widget.Button[@content-desc=\"Tableau de bord\"]","//android.widget.Button[@content-desc=\"Portefeuille\"]","//android.widget.Button[@content-desc=\"Achat / vente\"]","//android.widget.Button[@content-desc=\"Transfert\"]","android=new UiSelector().resourceId(\"button-header-account\")"], 10000)
+                |-- Waiting for selector 1/5: //android.widget.Button[@content-desc="Tableau de bord"]
+                |-- Waiting for selector 2/5: //android.widget.Button[@content-desc="Portefeuille"]
+                |-- Waiting for selector 3/5: //android.widget.Button[@content-desc="Achat / vente"]
+                |-- Waiting for selector 4/5: //android.widget.Button[@content-desc="Transfert"]
+                |-- Waiting for selector 5/5: android=new UiSelector().resourceId("button-header-account")
+
+
+📌 Test Step: Go to DCA
+|-- DashboardScreen.goToDCA() paymium-e2e-united/tests/wdio-android/tests/investment/dca/create-form-validations.spec.ts:21
+    |-- SwipeUtils.magicSwipe({"to":"android=new UiSelector().descriptionStartsWith(\"Plan d'achat récurrent\")"})
+        |-- [magicSwipe] Searching for element: android=new UiSelector().descriptionStartsWith("Plan d'achat récurrent")
+        |-- [magicSwipe] Using auto-detected scrollable element
+        |-- [magicSwipe] Element already visible, no swipe needed
+|-- DCAScreen.waitForScreen() paymium-e2e-united/tests/wdio-android/tests/investment/dca/create-form-validations.spec.ts:22
+    |-- DCAScreen.waitForSelectors(["android=new UiSelector().resourceId(\"topbar.back\")","android=new UiSelector().text(\"Achat récurrent\")","//android.widget.Button[@content-desc=\"Créer un plan d'achat\"]"], 10000)
+        |-- Waiting for selector 1/3: android=new UiSelector().resourceId("topbar.back")
+        |-- Waiting for selector 2/3: android=new UiSelector().text("Achat récurrent")
+        |-- Waiting for selector 3/3: //android.widget.Button[@content-desc="Créer un plan d'achat"]
+
+
+📌 Test Step: Go to DCA Form
+|-- DCAScreen.create() paymium-e2e-united/tests/wdio-android/tests/investment/dca/create-form-validations.spec.ts:26
+|-- CreateDCASheet.waitForSheet() paymium-e2e-united/tests/wdio-android/tests/investment/dca/create-form-validations.spec.ts:27
+    |-- Waiting for selector 1/4: android=new UiSelector().text("Créer un plan d'achat")
+    |-- Waiting for selector 2/4: android=new UiSelector().resourceId("dcaLabel")
+    |-- Waiting for selector 3/4: //android.widget.Button[@resource-id="selectCurrency"]//android.widget.Button
+    |-- Waiting for selector 4/4: android=new UiSelector().resourceId("dcaAmount")
+
+
+📌 Test Step: Validate DCA form
+|-- CreateDCASheet.fillAmount(-10) paymium-e2e-united/tests/wdio-android/tests/investment/dca/create-form-validations.spec.ts:31
+|-- Assert.text(Doit être un nombre positif) paymium-e2e-united/tests/wdio-android/tests/investment/dca/create-form-validations.spec.ts:32
+    |-- Assert text: "Doit être un nombre positif"
+|-- CreateDCASheet.fillAmount(0) paymium-e2e-united/tests/wdio-android/tests/investment/dca/create-form-validations.spec.ts:33
+|-- Assert.text(Doit être un nombre positif) paymium-e2e-united/tests/wdio-android/tests/investment/dca/create-form-validations.spec.ts:34
+    |-- Assert text: "Doit être un nombre positif"
+|-- CreateDCASheet.fillAmount(1000000000) paymium-e2e-united/tests/wdio-android/tests/investment/dca/create-form-validations.spec.ts:35
+|-- Assert.text(Montant trop élevé) paymium-e2e-united/tests/wdio-android/tests/investment/dca/create-form-validations.spec.ts:36
+    |-- Assert text: "Montant trop élevé"
