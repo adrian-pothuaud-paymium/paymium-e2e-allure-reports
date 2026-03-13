@@ -1,0 +1,21 @@
+POST /users failed Request failed with status code 429
+Attempt 1 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 2 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 3 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 4 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 5 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 6 to create test user failed: Request failed with status code 429
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('content-select').getByRole('listitem').filter({ hasText: /Boulevard de Sébastopol, 75001 Paris, France/ }).first() to be visible
+
+    at SearchableContentSelect.searchAndSelect (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/_components/SearchableContentSelect.ts:17:34)
+    at FamilyCreate.selectAddress (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/family/create/index.ts:75:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/investment/family-plan/not-approved.spec.ts:35:3

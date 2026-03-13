@@ -1,0 +1,12 @@
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /^(.*)\/onboarding$/
+Received string:  "http://paymium.local:3000/sign-up/email-sent?email=adrian.pothuaud%2Bauto.1773390440919%40paymium.com"
+Timeout: 30000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 30000ms
+    34 × unexpected value "http://paymium.local:3000/sign-up/email-sent?email=adrian.pothuaud%2Bauto.1773390440919%40paymium.com"
+
+

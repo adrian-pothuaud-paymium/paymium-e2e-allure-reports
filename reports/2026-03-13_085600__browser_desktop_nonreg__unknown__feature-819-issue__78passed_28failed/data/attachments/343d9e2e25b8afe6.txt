@@ -1,0 +1,7 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('expertMode.tradeForm.sellMode') to be visible
+
+
