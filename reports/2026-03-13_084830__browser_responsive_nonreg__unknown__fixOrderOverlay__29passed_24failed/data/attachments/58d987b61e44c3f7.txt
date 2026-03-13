@@ -1,0 +1,8 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user/user_balance_histories?period=month due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user/card_payments?scope=token due to access control checks.
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('content-select').getByRole('listitem').filter({ hasText: /Nouvelle CB/ }).first()
+
+

@@ -1,0 +1,2 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] TypeError: t is not a function. (In 't()', 't' is undefined)
