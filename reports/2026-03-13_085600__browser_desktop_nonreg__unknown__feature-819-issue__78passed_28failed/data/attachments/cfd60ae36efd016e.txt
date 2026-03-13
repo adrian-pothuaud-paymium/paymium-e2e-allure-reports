@@ -1,6 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByText(/^Boulevard de Sébastopol, 75001 Paris, France$/) to be visible
-
-
