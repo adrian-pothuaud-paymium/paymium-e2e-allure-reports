@@ -1,0 +1,14 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/currencies due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/user/tracking/consent due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/general_settings due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /sandbox-paymium.com/api/users/sign_in due to access control checks.
+Login attempt 1 failed
+[pageerror] SyntaxError: Unexpected token '<'
+TimeoutError: locator.clear: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Email' })
+
+
