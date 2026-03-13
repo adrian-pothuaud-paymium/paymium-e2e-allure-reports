@@ -1,7 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] Unhandled Promise Rejection: TypeError: Load failed
-[pageerror] SyntaxError: Unexpected token '<'

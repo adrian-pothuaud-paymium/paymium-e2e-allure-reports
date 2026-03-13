@@ -1,0 +1,17 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /^(.*)\/sign-in(.*)$/
+Received string:  "http://paymium.local:3000/deposit/EUR"
+Timeout: 30000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 30000ms
+    17 × unexpected value "http://paymium.local:3000/deposit/EUR"
+
+

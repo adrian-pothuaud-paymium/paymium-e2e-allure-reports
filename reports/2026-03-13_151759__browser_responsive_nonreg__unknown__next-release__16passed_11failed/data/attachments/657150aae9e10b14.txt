@@ -1,0 +1,68 @@
+POST /users failed Request failed with status code 429
+Attempt 1 to create test user failed: Request failed with status code 429
+[pageerror] SyntaxError: Unexpected token '<'
+Login attempt 1 failed: locator.pressSequentially: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Email' })
+    - locator resolved to <input rows="1" value="" dir="auto" id="email" type="email" autocorrect="off" autocomplete="on" inputmode="email" spellcheck="false" autocapitalize="none" data-testid="login.email" virtualkeyboardpolicy="auto" class="css-11aywtz r-6taxm2 color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] background-color-[var(--components--input-primary-default-background)] border-radius-[8px] padding-top-[var(--space-md)] padding-bottom-[var(--space-md)] padding-left-[var(-…/>
+  - elementHandle.type("adrian.pothuaud+auto.1773412224202@paymium.com")
+
+    at SignIn.fill (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/sign-in/index.ts:58:27)
+    at SignIn.loginRetries (/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/sign-in/index.ts:127:9)
+    at _fixtures.test.step.box (/builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/authentication/locked-account/nominal.spec.ts:20:5)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/authentication/locked-account/nominal.spec.ts:18:3 {
+  name: 'TimeoutError',
+  Symbol(step): {
+    location: {
+      file: '/builds/crypto-platform/paymium-e2e-united/tests/playwright/pages/account.paymium.com/sign-in/index.ts',
+      line: 58,
+      column: 27,
+      function: 'SignIn.fill'
+    },
+    category: 'pw:api',
+    title: `Type "adrian.pothuaud+auto.1773412224202@paymium.com" getByRole('textbox', { name: 'Email' })`,
+    apiName: 'locator.pressSequentially',
+    params: {
+      selector: 'internal:role=textbox[name="Email"i]',
+      text: 'adrian.pothuaud+auto.1773412224202@paymium.com',
+      strict: true,
+      timeout: 10000
+    },
+    group: undefined,
+    stepId: 'pw:api@60',
+    boxedStack: [],
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@60',
+      _title: `Type "adrian.pothuaud+auto.1773412224202@paymium.com" getByRole('textbox', { name: 'Email' })`,
+      _parentStep: [TestStepInfoImpl],
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1773412300786,
+    error: {
+      message: 'TimeoutError: locator.pressSequentially: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('textbox', { name: 'Email' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <input rows="1" value="" dir="auto" id="email" type="email" autocorrect="off" autocomplete="on" inputmode="email" spellcheck="false" autocapitalize="none" data-testid="login.email" virtualkeyboardpolicy="auto" class="css-11aywtz r-6taxm2 color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] background-color-[var(--components--input-primary-default-background)] border-radius-[8px] padding-top-[var(--space-md)] padding-bottom-[var(--space-md)] padding-left-[var(-…/>\x1B[22m\n' +
+        '\x1B[2m  - elementHandle.type("adrian.pothuaud+auto.1773412224202@paymium.com")\x1B[22m\n',
+      stack: 'TimeoutError: locator.pressSequentially: Timeout 10000ms exceeded.\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for getByRole('textbox', { name: 'Email' })\x1B[22m\n" +
+        '\x1B[2m    - locator resolved to <input rows="1" value="" dir="auto" id="email" type="email" autocorrect="off" autocomplete="on" inputmode="email" spellcheck="false" autocapitalize="none" data-testid="login.email" virtualkeyboardpolicy="auto" class="css-11aywtz r-6taxm2 color-[var(--components--input-primary-default-text)] border-width-[1px] border-style-[solid] background-color-[var(--components--input-primary-default-background)] border-radius-[8px] padding-top-[var(--space-md)] padding-bottom-[var(--space-md)] padding-left-[var(-…/>\x1B[22m\n' +
+        '\x1B[2m  - elementHandle.type("adrian.pothuaud+auto.1773412224202@paymium.com")\x1B[22m\n' +
+        '\n',
+      cause: undefined
+    }
+  }
+}
+TimeoutError: page.reload: Timeout 20000ms exceeded.
+Call log:
+  - waiting for navigation until "load"
+    - navigated to "http://paymium.local:3000/sign-in"
+
+
+[pageerror] SyntaxError: Unexpected token '<'

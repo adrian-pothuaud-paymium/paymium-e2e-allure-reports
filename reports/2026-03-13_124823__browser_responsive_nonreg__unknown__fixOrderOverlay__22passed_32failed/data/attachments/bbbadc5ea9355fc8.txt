@@ -1,2 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-[pageerror] SyntaxError: Unexpected token '<'
