@@ -1,6 +1,0 @@
-[pageerror] SyntaxError: Unexpected token '<'
-TimeoutError: locator.click: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByTestId('marketSearch').getByRole('link', { name: /Portefeuille|Portfolio/ })
-
-
