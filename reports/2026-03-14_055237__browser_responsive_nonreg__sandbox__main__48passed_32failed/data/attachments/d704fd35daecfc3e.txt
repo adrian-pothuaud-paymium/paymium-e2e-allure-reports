@@ -1,0 +1,10 @@
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('link', { name: /Gérer vos (c|C)ookies|Manage your (c|C)ookies/ })
+    - locator resolved to <div dir="auto" role="link" tabindex="0" class="css-146c3p1 font-size-[12px] line-height-[18px] font-family-[Inter-Regular] color-[var(--colors-text-secondary)] text-decoration-color-[var(--colors-text-primary)] text-decoration-line-[underline] focus:text-decoration-line-[underline] active:text-decoration-line-[underline] cursor-[pointer] hover:text-decoration-line-[underline] r-1loqt21">Gérer vos cookies</div>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+
+

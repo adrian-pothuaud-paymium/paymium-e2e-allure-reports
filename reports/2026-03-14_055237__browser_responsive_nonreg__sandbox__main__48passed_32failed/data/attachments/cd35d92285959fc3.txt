@@ -1,0 +1,11 @@
+Error: expect(page).toHaveURL(expected) failed
+
+Expected pattern: /^(.*)\/sign-in(.*)$/
+Received string:  "https://account.sandbox-paymium.com/withdraw/EUR"
+Timeout: 30000ms
+
+Call log:
+  - Expect "toHaveURL" with timeout 30000ms
+    25 × unexpected value "https://account.sandbox-paymium.com/withdraw/EUR"
+
+

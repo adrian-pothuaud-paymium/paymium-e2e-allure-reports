@@ -1,3 +1,0 @@
-Attempting to create test user (attempt 1 of 20)...
-Creating test user in environment sandbox with state verified - attempt 1/20
-Sending GET /users/confirmation request to verify email
