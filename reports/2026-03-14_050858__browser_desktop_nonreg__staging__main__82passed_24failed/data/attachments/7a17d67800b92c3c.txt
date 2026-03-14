@@ -1,0 +1,3 @@
+Error: Transaction failed with alert: La validation a échoué.
+amount doit-être supérieur à 0.0005 ETH
+
