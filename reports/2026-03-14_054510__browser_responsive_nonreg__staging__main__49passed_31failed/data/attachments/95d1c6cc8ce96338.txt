@@ -1,0 +1,5 @@
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('content-select').getByRole('listitem').filter({ hasText: /BTC sortants \/ BTC entrants/ }).first()
+
+

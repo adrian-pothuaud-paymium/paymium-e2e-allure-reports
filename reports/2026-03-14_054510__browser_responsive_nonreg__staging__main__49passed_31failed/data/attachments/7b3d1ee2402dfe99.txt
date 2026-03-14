@@ -1,0 +1,6 @@
+[pageerror] ReferenceError: Can't find variable: Notification
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByText('Playwright 1773464805859')
+
+

@@ -1,0 +1,177 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - link [ref=e11] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e13]
+      - button [ref=e50] [cursor=pointer]:
+        - img [ref=e52]
+    - generic [ref=e54]:
+      - navigation
+      - generic [ref=e55]:
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: Bienvenue ADRIANB2CDEFAULT
+            - generic [ref=e61]: Suivez, planifiez et gérez vos actifs.
+          - generic [ref=e62]:
+            - generic [ref=e63]:
+              - generic [ref=e64]: Valeur de mon portefeuille
+              - generic [ref=e65]:
+                - generic [ref=e66]: ≈
+                - generic [ref=e67]: 31 821,66 €
+            - generic [ref=e68]:
+              - tablist [ref=e70]:
+                - generic [ref=e71]:
+                  - tab "Solde" [selected] [ref=e72] [cursor=pointer]:
+                    - generic [ref=e73]: Solde
+                  - tab "Allocation" [ref=e74] [cursor=pointer]:
+                    - generic [ref=e75]: Allocation
+              - tabpanel "Solde" [ref=e77]:
+                - generic [ref=e78]:
+                  - generic [ref=e79]:
+                    - generic [ref=e81] [cursor=pointer]: 1D
+                    - generic [ref=e83] [cursor=pointer]: 1W
+                    - generic [ref=e85] [cursor=pointer]: 1M
+                    - generic [ref=e87] [cursor=pointer]: 3M
+                    - generic [ref=e89] [cursor=pointer]: 1Y
+                    - generic [ref=e91] [cursor=pointer]: ALL
+                  - generic [ref=e92]:
+                    - img [ref=e94]
+                    - generic [ref=e96]: Votre portefeuille est vide
+                    - generic [ref=e97]: Déposer des fonds ou achetez par carte bancaire dès maintenant !
+                    - generic [ref=e98]:
+                      - button "Déposer des fonds" [ref=e99] [cursor=pointer]:
+                        - generic [ref=e100]: Déposer des fonds
+                      - button "Acheter par CB" [ref=e101] [cursor=pointer]:
+                        - generic [ref=e102]: Acheter par CB
+            - generic [ref=e103]:
+              - button "Acheter" [ref=e104] [cursor=pointer]:
+                - img [ref=e105]
+                - generic [ref=e107]: Acheter
+              - button "Vendre" [ref=e108] [cursor=pointer]:
+                - img [ref=e109]
+                - generic [ref=e110]: Vendre
+              - button "Déposer" [ref=e111] [cursor=pointer]:
+                - generic [ref=e112]: Déposer
+              - button "Retirer" [ref=e113] [cursor=pointer]:
+                - generic [ref=e114]: Retirer
+          - generic [ref=e115]: Le marché
+          - list [ref=e116]:
+            - listitem [ref=e117] [cursor=pointer]:
+              - generic [ref=e118]:
+                - img [ref=e119]
+                - generic [ref=e123]:
+                  - generic [ref=e124]: Bitcoin
+                  - generic [ref=e125]: BTC
+              - generic [ref=e126]:
+                - generic [ref=e128]: 76 100,00 €
+                - generic [ref=e132]:
+                  - img [ref=e134]
+                  - generic [ref=e136]: 0,26 %
+            - separator [ref=e137]
+            - listitem [ref=e138] [cursor=pointer]:
+              - generic [ref=e139]:
+                - img [ref=e140]
+                - generic [ref=e150]:
+                  - generic [ref=e151]: Ethereum
+                  - generic [ref=e152]: ETH
+              - generic [ref=e153]:
+                - generic [ref=e155]: 1 831,67 €
+                - generic [ref=e159]:
+                  - img [ref=e161]
+                  - generic [ref=e163]: 1,66 %
+            - separator [ref=e164]
+            - listitem [ref=e165] [cursor=pointer]:
+              - generic [ref=e166]:
+                - img [ref=e167]
+                - generic [ref=e171]:
+                  - generic [ref=e172]: USDC
+                  - generic [ref=e173]: USDC
+              - generic [ref=e174]:
+                - generic [ref=e176]: 0,87 €
+                - generic [ref=e180]:
+                  - img [ref=e182]
+                  - generic [ref=e184]: 0,34 %
+            - separator [ref=e185]
+            - listitem [ref=e186] [cursor=pointer]:
+              - generic [ref=e187]:
+                - img [ref=e188]
+                - generic [ref=e193]:
+                  - generic [ref=e194]: Euro CoinVertible
+                  - generic [ref=e195]: EURCV
+              - generic [ref=e196]:
+                - generic [ref=e198]: 1,00 €
+                - generic [ref=e200]: "-"
+            - separator [ref=e201]
+            - listitem [ref=e202] [cursor=pointer]:
+              - generic [ref=e203]:
+                - img [ref=e204]
+                - generic [ref=e208]:
+                  - generic [ref=e209]: Litecoin
+                  - generic [ref=e210]: LTC
+              - generic [ref=e211]:
+                - generic [ref=e213]: 48,65 €
+                - generic [ref=e217]:
+                  - img [ref=e219]
+                  - generic [ref=e221]: 0,28 %
+            - separator [ref=e222]
+            - listitem [ref=e223] [cursor=pointer]:
+              - generic [ref=e224]:
+                - img [ref=e225]
+                - generic [ref=e229]:
+                  - generic [ref=e230]: Bitcoin Cash
+                  - generic [ref=e231]: BCH
+              - generic [ref=e232]:
+                - generic [ref=e234]: 404,56 €
+                - generic [ref=e238]:
+                  - img [ref=e240]
+                  - generic [ref=e242]: 1,64 %
+            - separator [ref=e243]
+            - listitem [ref=e244] [cursor=pointer]:
+              - generic [ref=e245]:
+                - img [ref=e246]
+                - generic [ref=e254]:
+                  - generic [ref=e255]: Ethereum Classic
+                  - generic [ref=e256]: ETC
+              - generic [ref=e257]:
+                - generic [ref=e259]: 7,41 €
+                - generic [ref=e263]:
+                  - img [ref=e265]
+                  - generic [ref=e267]: 0,33 %
+            - separator [ref=e268]
+            - listitem [ref=e269] [cursor=pointer]:
+              - generic [ref=e270]:
+                - img [ref=e271]
+                - generic [ref=e275]:
+                  - generic [ref=e276]: Basic Attention Token
+                  - generic [ref=e277]: BAT
+              - generic [ref=e278]:
+                - generic [ref=e280]: 0,08 €
+                - generic [ref=e284]:
+                  - img [ref=e286]
+                  - generic [ref=e288]: 0,35 %
+            - separator [ref=e289]
+            - listitem [ref=e290] [cursor=pointer]:
+              - generic [ref=e291]:
+                - img [ref=e292]
+                - generic [ref=e296]:
+                  - generic [ref=e297]: BCIO
+                  - generic [ref=e298]: BCIO
+              - generic [ref=e299]:
+                - generic [ref=e301]: 0,03 €
+                - generic [ref=e303]: "-"
+        - contentinfo [ref=e304]:
+          - generic [ref=e305]:
+            - generic [ref=e306]: Copyright © 2026
+            - link "Paymium" [ref=e307] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e308]: 6.15.0
+            - link "Statut" [ref=e309] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e310] [cursor=pointer]
+```

@@ -1,0 +1,1 @@
+[pageerror] XMLHttpRequest cannot load https: /staging-paymium.com/api/user due to access control checks.

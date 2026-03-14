@@ -1,0 +1,6 @@
+[pageerror] ReferenceError: Can't find variable: Notification
+TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByTestId('activeOrders')
+
+
