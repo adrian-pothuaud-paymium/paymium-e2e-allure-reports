@@ -1,9 +1,0 @@
-TimeoutError: locator.click: Timeout 10000ms exceeded.
-Call log:
-  - waiting for getByTestId('toast-success').getByRole('button', { name: 'Close' })
-    - locator resolved to <button tabindex="0" role="button" type="button" aria-label="Close" class="css-g5y9jx r-1loqt21 r-1otgn73">…</button>
-  - attempting click action
-    - scrolling into view if needed
-  - element was detached from the DOM, retrying
-
-

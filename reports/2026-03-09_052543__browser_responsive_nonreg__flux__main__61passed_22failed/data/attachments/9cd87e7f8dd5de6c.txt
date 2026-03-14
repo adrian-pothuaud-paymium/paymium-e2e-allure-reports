@@ -1,3 +1,0 @@
-[pageerror] Permission policy 'Camera' check failed for document with origin 'https: /hpp-sandbox.worldpay.com'.
-[pageerror] Permission policy 'Microphone' check failed for document with origin 'https: /hpp-sandbox.worldpay.com'.
-[pageerror] Not allowed to call enumerateDevices.
