@@ -1,0 +1,54 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e8]:
+  - generic [ref=e9]:
+    - link [ref=e11] [cursor=pointer]:
+      - /url: https://www.paymium.com/
+      - img [ref=e13]
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - button "FR" [ref=e51] [cursor=pointer]:
+          - generic [ref=e52]: FR
+          - img [ref=e53]
+        - button [ref=e55] [cursor=pointer]:
+          - img [ref=e58]
+        - button [ref=e61] [cursor=pointer]:
+          - img [ref=e62]
+      - button "Créer un compte" [ref=e65] [cursor=pointer]:
+        - generic [ref=e66]: Créer un compte
+  - generic [ref=e67]:
+    - navigation
+    - generic [ref=e68]:
+      - generic [ref=e72]:
+        - generic [ref=e73]: Transfert
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - generic [ref=e76]:
+              - button "Slide to left" [disabled]:
+                - img [ref=e77]
+            - button "Slide to right" [ref=e80] [cursor=pointer]:
+              - img [ref=e81]
+            - tablist [ref=e83]:
+              - generic [ref=e84]:
+                - tab "Déposer" [disabled]:
+                  - generic: Déposer
+                - tab "Retirer" [disabled] [selected]:
+                  - generic: Retirer
+                - tab "Transfert interne" [disabled]:
+                  - generic: Transfert interne
+                - tab "Envoyer par email" [disabled]:
+                  - generic: Envoyer par email
+          - tabpanel "Retirer" [ref=e86]:
+            - progressbar [ref=e88]:
+              - img [ref=e90]
+      - contentinfo [ref=e93]:
+        - generic [ref=e94]:
+          - generic [ref=e95]: Copyright © 2026
+          - link "Paymium" [ref=e96] [cursor=pointer]:
+            - /url: https://sandbox-paymium.webflow.io/
+          - generic [ref=e97]: 6.16.1
+          - link "Statut" [ref=e98] [cursor=pointer]:
+            - /url: /status
+          - link "Gérer vos cookies" [ref=e99] [cursor=pointer]
+```

@@ -1,0 +1,275 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button "Acheter" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+          - generic [ref=e52]: Acheter
+        - button [ref=e53] [cursor=pointer]:
+          - img [ref=e54]
+        - button "FR" [ref=e57] [cursor=pointer]:
+          - generic [ref=e58]: FR
+          - img [ref=e59]
+        - button [ref=e61] [cursor=pointer]:
+          - img [ref=e64]
+        - button [ref=e66] [cursor=pointer]:
+          - img [ref=e67]
+        - button [ref=e70] [cursor=pointer]:
+          - img [ref=e71]
+        - button [active] [ref=e74] [cursor=pointer]:
+          - img [ref=e75]
+    - generic [ref=e77]:
+      - navigation [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e82]:
+            - img [ref=e84]
+            - textbox "Chercher" [ref=e86]
+          - generic [ref=e87]:
+            - link "Tableau de bord" [ref=e88] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e89]
+              - generic [ref=e91]: Tableau de bord
+            - link "Portefeuille" [ref=e92] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e93]
+              - generic [ref=e95]: Portefeuille
+            - link "Achat / vente" [ref=e96] [cursor=pointer]:
+              - img [ref=e97]
+              - generic [ref=e99]: Achat / vente
+            - link "Dépôt / retrait" [ref=e100] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e101]
+              - generic [ref=e103]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e104] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e105]
+              - generic [ref=e107]: Achat récurrent
+            - link "Mode expert" [ref=e108] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e109]
+              - generic [ref=e111]: Mode expert
+            - link "Parrainage" [ref=e112] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e113]
+              - generic [ref=e115]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e116] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e117]
+              - generic [ref=e119]: Plan Bitcoin Famille
+            - link "Historique" [ref=e120] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e121]
+              - generic [ref=e123]: Historique
+      - generic [ref=e124]:
+        - generic [ref=e126]:
+          - generic [ref=e127]:
+            - generic [ref=e128]: Développeurs
+            - generic [ref=e129]:
+              - generic [ref=e130]: Seuls les développeurs ayant un compte vérifié sur la plateforme Paymium peuvent identifier les utilisateurs. En revanche, les données publiques sont accessibles à tous.
+              - generic [ref=e131]:
+                - link "GitHub" [ref=e132] [cursor=pointer]:
+                  - /url: https://github.com/Paymium/api-documentation
+                  - img [ref=e133]
+                  - generic [ref=e136]: GitHub
+                - link "Redoc" [ref=e137] [cursor=pointer]:
+                  - /url: https://paymium.github.io/api-documentation/
+                  - img [ref=e138]
+                  - generic [ref=e140]: Redoc
+          - generic [ref=e141]:
+            - tablist [ref=e143]:
+              - generic [ref=e144]:
+                - tab "Tokens OAuth" [selected] [ref=e146] [cursor=pointer]:
+                  - generic [ref=e147]: Tokens OAuth
+                - tab "Applications OAuth2" [ref=e148] [cursor=pointer]:
+                  - generic [ref=e149]: Applications OAuth2
+                - tab "Applications tierces" [ref=e150] [cursor=pointer]:
+                  - generic [ref=e151]: Applications tierces
+            - tabpanel "Tokens OAuth" [ref=e152]:
+              - generic [ref=e155]:
+                - generic [ref=e156]:
+                  - generic [ref=e157]: Tokens d'API actifs
+                  - button
+                  - button "Créer un nouveau token d'API" [ref=e158] [cursor=pointer]:
+                    - generic [ref=e159]: Créer un nouveau token d'API
+                - button
+                - list [ref=e160]:
+                  - listitem [ref=e161]:
+                    - generic [ref=e162]:
+                      - generic [ref=e163] [cursor=pointer]: Libellé
+                      - img [ref=e165]
+                    - generic [ref=e167]:
+                      - generic [ref=e168] [cursor=pointer]: Clé publique
+                      - img [ref=e170]
+                  - separator [ref=e172]
+                  - listitem [ref=e173] [cursor=pointer]:
+                    - generic [ref=e174]: test IP not localhost
+                    - generic [ref=e178]:
+                      - textbox [ref=e179]: 9ab4c175af48ec179313bc28b622a8fc3b9957451fccefcca6e4a5109f4cc31f
+                      - button [ref=e182]:
+                        - img [ref=e183]
+                  - separator [ref=e185]
+                  - listitem [ref=e186] [cursor=pointer]:
+                    - generic [ref=e187]: Playwright 1772631539476
+                    - generic [ref=e191]:
+                      - textbox [ref=e192]: d6c5f4d854f0f9fd9ddf39a0ef5f8615f90e36579c8ffdd305866ffe19650e88
+                      - button [ref=e195]:
+                        - img [ref=e196]
+                  - separator [ref=e198]
+                  - listitem [ref=e199] [cursor=pointer]:
+                    - generic [ref=e200]: Playwright 1772629438726
+                    - generic [ref=e204]:
+                      - textbox [ref=e205]: 6a9bac3a2f309697e4cbd2c793299c5be3a435f552fc6fa4c0fa09294d2fcb6a
+                      - button [ref=e208]:
+                        - img [ref=e209]
+                  - separator [ref=e211]
+                  - listitem [ref=e212] [cursor=pointer]:
+                    - generic [ref=e213]: Playwright 1772629346013
+                    - generic [ref=e217]:
+                      - textbox [ref=e218]: 1f46d3bffaeb5dcadf7d26f7da6016885e3c962b9106d3cc4e4dc1d03b7b4700
+                      - button [ref=e221]:
+                        - img [ref=e222]
+                  - separator [ref=e224]
+                  - listitem [ref=e225] [cursor=pointer]:
+                    - generic [ref=e226]: Playwright 1772629264680
+                    - generic [ref=e230]:
+                      - textbox [ref=e231]: 00fcab467d4674777f91a077561f1a2fbf350075469cd96823f8477e58766cc0
+                      - button [ref=e234]:
+                        - img [ref=e235]
+                  - separator [ref=e237]
+                  - listitem [ref=e238] [cursor=pointer]:
+                    - generic [ref=e239]: Playwright 1772628219083
+                    - generic [ref=e243]:
+                      - textbox [ref=e244]: 09a41222cb7bae66355ed556373977f5e650a372567afa760f0e622c8511be70
+                      - button [ref=e247]:
+                        - img [ref=e248]
+                  - separator [ref=e250]
+                  - listitem [ref=e251] [cursor=pointer]:
+                    - generic [ref=e252]: Playwright 1772628175898
+                    - generic [ref=e256]:
+                      - textbox [ref=e257]: e26e9188327e20d2e9f9e53accc57669d1b2dd31807c6932875af49d1918d5e3
+                      - button [ref=e260]:
+                        - img [ref=e261]
+                  - separator [ref=e263]
+                  - listitem [ref=e264] [cursor=pointer]:
+                    - generic [ref=e265]: Playwright 1772627235186
+                    - generic [ref=e269]:
+                      - textbox [ref=e270]: 23bedee084531ab851b66b05391a6ae6bc9b027f22bd02b79f1349459afed748
+                      - button [ref=e273]:
+                        - img [ref=e274]
+                  - separator [ref=e276]
+                  - listitem [ref=e277] [cursor=pointer]:
+                    - generic [ref=e278]: Playwright 1772627101697
+                    - generic [ref=e282]:
+                      - textbox [ref=e283]: a8eca83c8a0d561e9c3cb0618e53a5a6e92b4fb90a315c0ab8e526de6748c56b
+                      - button [ref=e286]:
+                        - img [ref=e287]
+                  - separator [ref=e289]
+                  - listitem [ref=e290] [cursor=pointer]:
+                    - generic [ref=e291]: Playwright 1772627034016
+                    - generic [ref=e295]:
+                      - textbox [ref=e296]: dbdd7cbfe4650197d2263f929d136e5f21e287e1c1fac78898793c14acaa0a1e
+                      - button [ref=e299]:
+                        - img [ref=e300]
+                  - separator [ref=e302]
+                  - listitem [ref=e303] [cursor=pointer]:
+                    - generic [ref=e304]: Playwright 1772625567289
+                    - generic [ref=e308]:
+                      - textbox [ref=e309]: 0e520e89b47b49123976abaa7b676952a272461f947604c23c8b1745886faa9c
+                      - button [ref=e312]:
+                        - img [ref=e313]
+                  - separator [ref=e315]
+                  - listitem [ref=e316] [cursor=pointer]:
+                    - generic [ref=e317]: Playwright 1772625534455
+                    - generic [ref=e321]:
+                      - textbox [ref=e322]: 634bf49577840e851f88f14d43f3c95584532886934229fc16028d9249718edd
+                      - button [ref=e325]:
+                        - img [ref=e326]
+                  - separator [ref=e328]
+                  - listitem [ref=e329] [cursor=pointer]:
+                    - generic [ref=e330]: Playwright 1772623862973
+                    - generic [ref=e334]:
+                      - textbox [ref=e335]: f8209667f564d2825c47f2836119e7587ab4171038b38304076f0ad0efaa85dd
+                      - button [ref=e338]:
+                        - img [ref=e339]
+                  - separator [ref=e341]
+                  - listitem [ref=e342] [cursor=pointer]:
+                    - generic [ref=e343]: Playwright 1772623814833
+                    - generic [ref=e347]:
+                      - textbox [ref=e348]: ef1b525429a820a1799b5f246fdf24abe01ad77ee98eae5e4b252f4943adcc69
+                      - button [ref=e351]:
+                        - img [ref=e352]
+                  - separator [ref=e354]
+                  - listitem [ref=e355] [cursor=pointer]:
+                    - generic [ref=e356]: Playwright 1772623767870
+                    - generic [ref=e360]:
+                      - textbox [ref=e361]: 7c9fd8d66f636e2d8999a4302db3dc4f497a10e1cca9a24b86fe236de07ac5fd
+                      - button [ref=e364]:
+                        - img [ref=e365]
+                  - separator [ref=e367]
+                  - listitem [ref=e368] [cursor=pointer]:
+                    - generic [ref=e369]: Playwright 2026-03-04T13:38:33.592Z
+                    - generic [ref=e373]:
+                      - textbox [ref=e374]: 01974256759267f3cd415d5bebce252f510739a943577165eec6949e2c8f7463
+                      - button [ref=e377]:
+                        - img [ref=e378]
+                  - separator [ref=e380]
+                  - listitem [ref=e381] [cursor=pointer]:
+                    - generic [ref=e382]: Playwright 2026-03-04T12:42:30.002Z
+                    - generic [ref=e386]:
+                      - textbox [ref=e387]: bcfa88ec6bc9b1d13e14612378d5374355a317c5be1ac00aa8e544d8163fee5b
+                      - button [ref=e390]:
+                        - img [ref=e391]
+                  - separator [ref=e393]
+                  - listitem [ref=e394] [cursor=pointer]:
+                    - generic [ref=e395]: Playwright 2026-03-04T12:24:01.806Z
+                    - generic [ref=e399]:
+                      - textbox [ref=e400]: aa10cef7809c7a377ce51ee6a1836d687cf7a38d893b57d62e5ce87962ee21c3
+                      - button [ref=e403]:
+                        - img [ref=e404]
+                  - separator [ref=e406]
+                  - listitem [ref=e407] [cursor=pointer]:
+                    - generic [ref=e408]: Playwright 2026-03-04T11:58:33.647Z
+                    - generic [ref=e412]:
+                      - textbox [ref=e413]: 5390e62b6a755fe7da921d04d7fffe6db6f6e9ca7db950ac0a0c25cf674f15e0
+                      - button [ref=e416]:
+                        - img [ref=e417]
+                  - separator [ref=e419]
+                  - listitem [ref=e420] [cursor=pointer]:
+                    - generic [ref=e421]: Playwright 2026-03-04T11:29:24.178Z
+                    - generic [ref=e425]:
+                      - textbox [ref=e426]: cc166b54023c2bff0320cf237260556b73a7ec18baf9b73149ac1239bef0635c
+                      - button [ref=e429]:
+                        - img [ref=e430]
+                - generic [ref=e432]:
+                  - button "<" [disabled]:
+                    - generic: <
+                  - button "1" [ref=e433] [cursor=pointer]:
+                    - generic [ref=e434]: "1"
+                  - button "2" [ref=e435] [cursor=pointer]:
+                    - generic [ref=e436]: "2"
+                  - button "3" [ref=e437] [cursor=pointer]:
+                    - generic [ref=e438]: "3"
+                  - button "..." [disabled]:
+                    - generic: ...
+                  - button "45" [ref=e439] [cursor=pointer]:
+                    - generic [ref=e440]: "45"
+                  - button ">" [ref=e441] [cursor=pointer]:
+                    - generic [ref=e442]: ">"
+        - contentinfo [ref=e443]:
+          - generic [ref=e444]:
+            - generic [ref=e445]: Copyright © 2026
+            - link "Paymium" [ref=e446] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e447]: 6.16.1
+            - link "Statut" [ref=e448] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e449] [cursor=pointer]
+```
