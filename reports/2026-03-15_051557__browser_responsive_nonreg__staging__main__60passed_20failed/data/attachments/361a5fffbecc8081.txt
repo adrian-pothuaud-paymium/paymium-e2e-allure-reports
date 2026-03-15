@@ -1,0 +1,3 @@
+[pageerror] Fetch API cannot load https: /account.staging-paymium.com/ due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /staging-paymium.com/api/user due to access control checks.
+[pageerror] XMLHttpRequest cannot load https: /staging-paymium.com/api/currencies due to access control checks.

@@ -1,0 +1,300 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - button
+    - button
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - link [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+        - button [ref=e49] [cursor=pointer]:
+          - img [ref=e51]
+      - generic [ref=e53]:
+        - navigation
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - generic [ref=e58]:
+              - generic [ref=e59]: Bienvenue ADRIANB2CDEFAULT
+              - generic [ref=e60]: Suivez, planifiez et gérez vos actifs.
+            - generic [ref=e61]:
+              - generic [ref=e62]:
+                - generic [ref=e63]: Valeur de mon portefeuille
+                - generic [ref=e64]:
+                  - generic [ref=e65]: ≈
+                  - generic [ref=e66]: 31 447,00 €
+              - generic [ref=e67]:
+                - tablist [ref=e69]:
+                  - generic [ref=e70]:
+                    - tab "Solde" [selected] [ref=e71] [cursor=pointer]:
+                      - generic [ref=e72]: Solde
+                    - tab "Allocation" [ref=e73] [cursor=pointer]:
+                      - generic [ref=e74]: Allocation
+                - tabpanel "Solde" [ref=e76]:
+                  - generic [ref=e77]:
+                    - generic [ref=e78]:
+                      - generic [ref=e80] [cursor=pointer]: 1D
+                      - generic [ref=e82] [cursor=pointer]: 1W
+                      - generic [ref=e84] [cursor=pointer]: 1M
+                      - generic [ref=e86] [cursor=pointer]: 3M
+                      - generic [ref=e88] [cursor=pointer]: 1Y
+                      - generic [ref=e90] [cursor=pointer]: ALL
+                    - generic [ref=e92]:
+                      - generic [ref=e93]:
+                        - img [ref=e94]
+                        - generic [ref=e96]: 31 119,93€
+                      - generic [ref=e97]:
+                        - img [ref=e98]
+                        - generic [ref=e100]: 18 069,05€
+              - generic [ref=e106]:
+                - button "Acheter" [ref=e107] [cursor=pointer]:
+                  - img [ref=e108]
+                  - generic [ref=e110]: Acheter
+                - button "Vendre" [ref=e111] [cursor=pointer]:
+                  - img [ref=e112]
+                  - generic [ref=e113]: Vendre
+                - button "Déposer" [ref=e114] [cursor=pointer]:
+                  - generic [ref=e115]: Déposer
+                - button "Retirer" [ref=e116] [cursor=pointer]:
+                  - generic [ref=e117]: Retirer
+            - generic [ref=e118]: Le marché
+            - list [ref=e119]:
+              - listitem [ref=e120] [cursor=pointer]:
+                - generic [ref=e121]:
+                  - img [ref=e122]
+                  - generic [ref=e126]:
+                    - generic [ref=e127]: Bitcoin
+                    - generic [ref=e128]: BTC
+                - generic [ref=e129]:
+                  - generic [ref=e131]: 76 100,00 €
+                  - generic [ref=e135]:
+                    - img [ref=e137]
+                    - generic [ref=e139]: 0,26 %
+              - separator [ref=e140]
+              - listitem [ref=e141] [cursor=pointer]:
+                - generic [ref=e142]:
+                  - img [ref=e143]
+                  - generic [ref=e153]:
+                    - generic [ref=e154]: Ethereum
+                    - generic [ref=e155]: ETH
+                - generic [ref=e156]:
+                  - generic [ref=e158]: 1 839,12 €
+                  - generic [ref=e162]:
+                    - img [ref=e164]
+                    - generic [ref=e166]: 0,80 %
+              - separator [ref=e167]
+              - listitem [ref=e168] [cursor=pointer]:
+                - generic [ref=e169]:
+                  - img [ref=e170]
+                  - generic [ref=e174]:
+                    - generic [ref=e175]: USDC
+                    - generic [ref=e176]: USDC
+                - generic [ref=e177]:
+                  - generic [ref=e179]: 0,87 €
+                  - generic [ref=e183]:
+                    - img [ref=e185]
+                    - generic [ref=e187]: 0,05 %
+              - separator [ref=e188]
+              - listitem [ref=e189] [cursor=pointer]:
+                - generic [ref=e190]:
+                  - img [ref=e191]
+                  - generic [ref=e196]:
+                    - generic [ref=e197]: Euro CoinVertible
+                    - generic [ref=e198]: EURCV
+                - generic [ref=e199]:
+                  - generic [ref=e201]: 1,00 €
+                  - generic [ref=e203]: "-"
+              - separator [ref=e204]
+              - listitem [ref=e205] [cursor=pointer]:
+                - generic [ref=e206]:
+                  - img [ref=e207]
+                  - generic [ref=e211]:
+                    - generic [ref=e212]: Litecoin
+                    - generic [ref=e213]: LTC
+                - generic [ref=e214]:
+                  - generic [ref=e216]: 48,43 €
+                  - generic [ref=e220]:
+                    - img [ref=e222]
+                    - generic [ref=e224]: 0,26 %
+              - separator [ref=e225]
+              - listitem [ref=e226] [cursor=pointer]:
+                - generic [ref=e227]:
+                  - img [ref=e228]
+                  - generic [ref=e232]:
+                    - generic [ref=e233]: Bitcoin Cash
+                    - generic [ref=e234]: BCH
+                - generic [ref=e235]:
+                  - generic [ref=e237]: 407,87 €
+                  - generic [ref=e241]:
+                    - img [ref=e243]
+                    - generic [ref=e245]: 1,01 %
+              - separator [ref=e246]
+              - listitem [ref=e247] [cursor=pointer]:
+                - generic [ref=e248]:
+                  - img [ref=e249]
+                  - generic [ref=e257]:
+                    - generic [ref=e258]: Ethereum Classic
+                    - generic [ref=e259]: ETC
+                - generic [ref=e260]:
+                  - generic [ref=e262]: 7,27 €
+                  - generic [ref=e266]:
+                    - img [ref=e268]
+                    - generic [ref=e270]: 0,16 %
+              - separator [ref=e271]
+              - listitem [ref=e272] [cursor=pointer]:
+                - generic [ref=e273]:
+                  - img [ref=e274]
+                  - generic [ref=e278]:
+                    - generic [ref=e279]: Basic Attention Token
+                    - generic [ref=e280]: BAT
+                - generic [ref=e281]:
+                  - generic [ref=e283]: 0,08 €
+                  - generic [ref=e287]:
+                    - img [ref=e289]
+                    - generic [ref=e291]: 0,60 %
+              - separator [ref=e292]
+              - listitem [ref=e293] [cursor=pointer]:
+                - generic [ref=e294]:
+                  - img [ref=e295]
+                  - generic [ref=e299]:
+                    - generic [ref=e300]: BCIO
+                    - generic [ref=e301]: BCIO
+                - generic [ref=e302]:
+                  - generic [ref=e304]: 0,03 €
+                  - generic [ref=e306]: "-"
+          - contentinfo [ref=e307]:
+            - generic [ref=e308]:
+              - generic [ref=e309]: Copyright © 2026
+              - link "Paymium" [ref=e310] [cursor=pointer]:
+                - /url: https://sandbox-paymium.webflow.io/
+              - generic [ref=e311]: 6.15.0
+              - link "Statut" [ref=e312] [cursor=pointer]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e313] [cursor=pointer]
+  - dialog [ref=e315]:
+    - dialog [ref=e323]:
+      - generic [ref=e328]:
+        - generic [ref=e329]: Vous avez 09:52 pour compléter votre achat.
+        - iframe [ref=e332]:
+          - generic [active] [ref=f1e1]:
+            - generic [ref=f1e2]:
+              - generic [ref=f1e3]: buy / sell / funding
+              - text: buy / sell / funding
+              - text: "Sélectionnez l'un des modes de paiement ci-dessous:"
+            - generic [ref=f1e4]:
+              - table "Payment methods" [ref=f1e5]:
+                - rowgroup [ref=f1e6]:
+                  - row "DINERS Diners club" [ref=f1e7]:
+                    - cell "DINERS" [ref=f1e8]:
+                      - table [ref=f1e9]:
+                        - rowgroup [ref=f1e10]:
+                          - row "DINERS" [ref=f1e11]:
+                            - cell "DINERS" [ref=f1e12]:
+                              - button "DINERS" [ref=f1e13]
+                    - cell "Diners club" [ref=f1e14]:
+                      - link "Diners club" [ref=f1e15]:
+                        - /url: DINERS_SSLController.jsp?PaymentMethod=DINERS-SSL
+                  - row "MC Mastercard" [ref=f1e16]:
+                    - cell "MC" [ref=f1e17]:
+                      - table [ref=f1e18]:
+                        - rowgroup [ref=f1e19]:
+                          - row "MC" [ref=f1e20]:
+                            - cell "MC" [ref=f1e21]:
+                              - button "MC" [ref=f1e22]
+                    - cell "Mastercard" [ref=f1e23]:
+                      - link "Mastercard" [ref=f1e24]:
+                        - /url: MC_SSLController.jsp?PaymentMethod=MC-SSL
+                  - row "VISA Visa" [ref=f1e25]:
+                    - cell "VISA" [ref=f1e26]:
+                      - table [ref=f1e27]:
+                        - rowgroup [ref=f1e28]:
+                          - row "VISA" [ref=f1e29]:
+                            - cell "VISA" [ref=f1e30]:
+                              - button "VISA" [ref=f1e31]
+                    - cell "Visa" [ref=f1e32]:
+                      - link "Visa" [ref=f1e33]:
+                        - /url: Visa_SSLController.jsp?PaymentMethod=VISA-SSL
+                  - row "AMEX American Express" [ref=f1e34]:
+                    - cell "AMEX" [ref=f1e35]:
+                      - table [ref=f1e36]:
+                        - rowgroup [ref=f1e37]:
+                          - row "AMEX" [ref=f1e38]:
+                            - cell "AMEX" [ref=f1e39]:
+                              - button "AMEX" [ref=f1e40]
+                    - cell "American Express" [ref=f1e41]:
+                      - link "American Express" [ref=f1e42]:
+                        - /url: AMEX_SSLController.jsp?PaymentMethod=AMEX-SSL
+                  - row "CB Carte Bancaire" [ref=f1e43]:
+                    - cell "CB" [ref=f1e44]:
+                      - table [ref=f1e45]:
+                        - rowgroup [ref=f1e46]:
+                          - row "CB" [ref=f1e47]:
+                            - cell "CB" [ref=f1e48]:
+                              - button "CB" [ref=f1e49]
+                    - cell "Carte Bancaire" [ref=f1e50]:
+                      - link "Carte Bancaire" [ref=f1e51]:
+                        - /url: CB_SSLController.jsp?PaymentMethod=CB-SSL
+                  - row "CARTEBLEUE Carte Bleue / E-Carte Bleue" [ref=f1e52]:
+                    - cell "CARTEBLEUE" [ref=f1e53]:
+                      - table [ref=f1e54]:
+                        - rowgroup [ref=f1e55]:
+                          - row "CARTEBLEUE" [ref=f1e56]:
+                            - cell "CARTEBLEUE" [ref=f1e57]:
+                              - button "CARTEBLEUE" [ref=f1e58]
+                    - cell "Carte Bleue / E-Carte Bleue" [ref=f1e59]:
+                      - link "Carte Bleue / E-Carte Bleue" [ref=f1e60]:
+                        - /url: CarteBleue_SSLController.jsp?PaymentMethod=CARTEBLEUE-SSL
+                  - row "MAESTRO Maestro" [ref=f1e61]:
+                    - cell "MAESTRO" [ref=f1e62]:
+                      - table [ref=f1e63]:
+                        - rowgroup [ref=f1e64]:
+                          - row "MAESTRO" [ref=f1e65]:
+                            - cell "MAESTRO" [ref=f1e66]:
+                              - button "MAESTRO" [ref=f1e67]
+                    - cell "Maestro" [ref=f1e68]:
+                      - link "Maestro" [ref=f1e69]:
+                        - /url: Maestro_SSLController.jsp?PaymentMethod=MAESTRO-SSL
+                  - row "JCB JCB" [ref=f1e70]:
+                    - cell "JCB" [ref=f1e71]:
+                      - table [ref=f1e72]:
+                        - rowgroup [ref=f1e73]:
+                          - row "JCB" [ref=f1e74]:
+                            - cell "JCB" [ref=f1e75]:
+                              - button "JCB" [ref=f1e76]
+                    - cell "JCB" [ref=f1e77]:
+                      - link "JCB" [ref=f1e78]:
+                        - /url: JCB_SSLController.jsp?PaymentMethod=JCB-SSL
+                  - row "TRANSFER_FR Virement bancaire" [ref=f1e79]:
+                    - cell "TRANSFER_FR" [ref=f1e80]:
+                      - table [ref=f1e81]:
+                        - rowgroup [ref=f1e82]:
+                          - row "TRANSFER_FR" [ref=f1e83]:
+                            - cell "TRANSFER_FR" [ref=f1e84]:
+                              - button "TRANSFER_FR" [ref=f1e85]
+                    - cell "Virement bancaire" [ref=f1e86]:
+                      - link "Virement bancaire" [ref=f1e87]:
+                        - /url: Transfer_FRView.jsp?PaymentMethod=TRANSFER_FR-BANK
+                  - row "AIRPLUS AirPlus" [ref=f1e88]:
+                    - cell "AIRPLUS" [ref=f1e89]:
+                      - table [ref=f1e90]:
+                        - rowgroup [ref=f1e91]:
+                          - row "AIRPLUS" [ref=f1e92]:
+                            - cell "AIRPLUS" [ref=f1e93]:
+                              - button "AIRPLUS" [ref=f1e94]
+                    - cell "AirPlus" [ref=f1e95]:
+                      - link "AirPlus" [ref=f1e96]:
+                        - /url: AIRPLUS_SSLController.jsp?PaymentMethod=AIRPLUS-SSL
+                  - row "UATP UATP" [ref=f1e97]:
+                    - cell "UATP" [ref=f1e98]:
+                      - table [ref=f1e99]:
+                        - rowgroup [ref=f1e100]:
+                          - row "UATP" [ref=f1e101]:
+                            - cell "UATP" [ref=f1e102]:
+                              - button "UATP" [ref=f1e103]
+                    - cell "UATP" [ref=f1e104]:
+                      - link "UATP" [ref=f1e105]:
+                        - /url: UATP_SSLController.jsp?PaymentMethod=UATP-SSL
+              - paragraph
+```

@@ -1,0 +1,13 @@
+[pageerror] XMLHttpRequest cannot load https: /account.staging-paymium.com/cdn-cgi/rum? due to access control checks.
+Error: expect(locator).toHaveAttribute(expected) failed
+
+Locator: getByTestId('history-orders')
+Expected: "true"
+Timeout: 10000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toHaveAttribute" with timeout 10000ms
+  - waiting for getByTestId('history-orders')
+
+
