@@ -1,5 +1,0 @@
-Error: locator.evaluate: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('main, [role=\'main\']').first()
-
-
