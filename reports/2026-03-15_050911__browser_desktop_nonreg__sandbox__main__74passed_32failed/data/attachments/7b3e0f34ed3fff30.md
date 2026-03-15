@@ -1,0 +1,58 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e8]:
+  - generic [ref=e9]:
+    - link [ref=e11] [cursor=pointer]:
+      - /url: https://www.paymium.com/
+      - img [ref=e13]
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - button "FR" [ref=e51] [cursor=pointer]:
+          - generic [ref=e52]: FR
+          - img [ref=e53]
+        - button [ref=e55] [cursor=pointer]:
+          - img [ref=e58]
+        - button [ref=e61] [cursor=pointer]:
+          - img [ref=e62]
+      - button "Créer un compte" [ref=e65] [cursor=pointer]:
+        - generic [ref=e66]: Créer un compte
+  - generic [ref=e67]:
+    - navigation
+    - generic [ref=e68]:
+      - form [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]: Se connecter à Paymium
+          - generic [ref=e75]:
+            - generic [ref=e77]:
+              - generic [ref=e79]: Email
+              - textbox "Email" [ref=e81]: adrian.pothuaud+auto.primary@paymium.com
+            - generic [ref=e82]:
+              - generic [ref=e84]:
+                - generic [ref=e86]: Mot de passe
+                - generic [ref=e87]:
+                  - textbox "Mot de passe" [ref=e88]: Password123!
+                  - button [ref=e91] [cursor=pointer]:
+                    - img [ref=e92]
+              - link "Mot de passe oublié ?" [ref=e94] [cursor=pointer]:
+                - /url: /reset-password
+          - alert [ref=e95]:
+            - img [ref=e97]
+            - generic [ref=e100]: Request failed with status code 500
+          - button "Se connecter" [ref=e101] [cursor=pointer]:
+            - generic [ref=e102]: Se connecter
+          - generic [ref=e104]:
+            - text: Besoin d'aide ?
+            - link "Contactez nous" [ref=e105] [cursor=pointer]:
+              - /url: mailto:support@paymium.com
+            - text: .
+      - contentinfo [ref=e106]:
+        - generic [ref=e107]:
+          - generic [ref=e108]: Copyright © 2026
+          - link "Paymium" [ref=e109] [cursor=pointer]:
+            - /url: https://sandbox-paymium.webflow.io/
+          - generic [ref=e110]: 6.15.0
+          - link "Statut" [ref=e111] [cursor=pointer]:
+            - /url: /status
+          - link "Gérer vos cookies" [ref=e112] [cursor=pointer]
+```
