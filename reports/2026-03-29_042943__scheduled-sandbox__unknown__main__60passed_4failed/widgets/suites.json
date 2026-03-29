@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"0d971aa5d79f27c65c3acca4c7423bf0","name":"sandbox_desktop_nonReg","statistic":{"failed":3,"broken":0,"skipped":1,"passed":56,"unknown":0,"total":60}},{"uid":"467cf185cc4fd1f9daa1bbbcc287bc8e","name":"sandbox_clean","statistic":{"failed":1,"broken":0,"skipped":0,"passed":4,"unknown":0,"total":5}}]}

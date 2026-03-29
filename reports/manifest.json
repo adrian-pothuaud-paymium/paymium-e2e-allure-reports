@@ -1,5 +1,19 @@
 [
   {
+    "folder": "2026-03-29_042943__scheduled-sandbox__unknown__main__60passed_4failed",
+    "timestamp": "2026-03-29_042943",
+    "environment": "unknown",
+    "branch": "main",
+    "e2eBranch": "main",
+    "job": "scheduled-sandbox",
+    "total": 64,
+    "passed": 60,
+    "failed": 4,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/40677",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/255890"
+  }
+,
+  {
     "folder": "2026-03-28_133058__mr-sandbox__unknown__unknown__3passed",
     "timestamp": "2026-03-28_133058",
     "environment": "unknown",

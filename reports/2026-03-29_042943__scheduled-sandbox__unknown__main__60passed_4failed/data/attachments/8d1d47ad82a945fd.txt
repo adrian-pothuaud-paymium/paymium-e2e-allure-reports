@@ -1,0 +1,5 @@
+Sending request to get API tokens
+Found 1 API tokens to delete
+Deleting API token with ID: 714115a7-84f5-421e-b169-2f5ebce44013
+Deleted API token with ID: 714115a7-84f5-421e-b169-2f5ebce44013
+Sending request to get API tokens
