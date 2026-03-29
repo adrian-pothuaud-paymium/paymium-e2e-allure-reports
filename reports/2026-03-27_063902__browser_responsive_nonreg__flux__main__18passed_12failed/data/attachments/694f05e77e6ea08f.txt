@@ -1,0 +1,11 @@
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected pattern: /^Transfert - Déposer - Paymium$/
+Received string:  "Se connecter - Paymium"
+Timeout: 30000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 30000ms
+    32 × unexpected value "Se connecter - Paymium"
+
+

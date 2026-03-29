@@ -1,0 +1,82 @@
+Creating withdrawal address POST https://staging-paymium.com/api/user/BTC/withdrawal_addresses with payload: {
+  currency: 'BTC',
+  label: 'Playwright BTC address 1774586031043',
+  address: '1Fwfu1sFiC24tGNEfEH3eHpLy72vVGag3P',
+  environment: 'staging',
+  asTestAccount: {
+    accountType: 'individual',
+    credentials: {
+      email: 'adrian.pothuaud+auto.primary@paymium.com',
+      password: 'Password123!',
+      authenticatorKey: null
+    },
+    environment: 'staging',
+    state: 'approved',
+    cryptoAddresses: {
+      Bitcoin: 'mnLwMgB52vY8eTyEcwe3zswc1mXyEVFKN8',
+      Ethereum: '0x4a47e0937297d22db1a0a645ee7b3116c195dd11',
+      USDC: '0x4a47e0937297d22db1a0a645ee7b3116c195dd11'
+    },
+    iban: 'BE57 9771 0533 1135'
+  },
+  autoConfirm: true
+}
+Create withdrawal address response: {
+  id: 205,
+  address: '1Fwfu1sFiC24tGNEfEH3eHpLy72vVGag3P',
+  personal_address: true,
+  address_exchange_name: '',
+  label: 'Playwright BTC address 1774586031043',
+  confirmed_at: null,
+  reauthentication: 'missing'
+}
+Asking for reauthentication for withdrawal address 205 of currency BTC
+Ask for reauthentication response: {
+  created_at: '2026-03-27T04:33:55Z',
+  status: 'created',
+  factors: [
+    { type: 'email', fields: [Array], validity: 1200, status: 'ready' },
+    { type: 'sms', fields: [Array], validity: 60, status: 'ready' }
+  ]
+}
+Asking for reauthentication for withdrawal address 205 of currency BTC
+Ask for reauthentication response: {
+  created_at: '2026-03-27T04:33:55Z',
+  status: 'in_progress',
+  factors: [
+    {
+      type: 'email',
+      fields: [Array],
+      validity: 1200,
+      status: 'awaiting'
+    },
+    { type: 'sms', fields: [Array], validity: 60, status: 'ready' }
+  ]
+}
+Reauthenticating withdrawal address 205 of currency BTC with code 321654
+Reauthentication successful {
+  created_at: '2026-03-27T04:33:55Z',
+  status: 'in_progress',
+  factors: [
+    { type: 'email', status: 'completed' },
+    { type: 'sms', fields: [Array], validity: 60, status: 'ready' }
+  ]
+}
+Asking for reauthentication for withdrawal address 205 of currency BTC
+Ask for reauthentication response: {
+  created_at: '2026-03-27T04:33:55Z',
+  status: 'in_progress',
+  factors: [
+    { type: 'email', status: 'completed' },
+    { type: 'sms', fields: [Array], validity: 60, status: 'awaiting' }
+  ]
+}
+Reauthenticating withdrawal address 205 of currency BTC with code 321654
+Reauthentication successful {
+  created_at: '2026-03-27T04:33:55Z',
+  status: 'authorized',
+  factors: [
+    { type: 'email', status: 'completed' },
+    { type: 'sms', status: 'completed' }
+  ]
+}

@@ -1,0 +1,68 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - link [ref=e9] [cursor=pointer]:
+        - /url: https://www.paymium.com/
+        - img [ref=e11]
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - button "FR" [ref=e49] [cursor=pointer]:
+            - generic [ref=e50]: FR
+            - img [ref=e51]
+          - button [ref=e53] [cursor=pointer]:
+            - img [ref=e56]
+          - button [ref=e59] [cursor=pointer]:
+            - img [ref=e60]
+        - button "Créer un compte" [ref=e63] [cursor=pointer]:
+          - generic [ref=e64]: Créer un compte
+    - generic [ref=e65]:
+      - navigation
+      - generic [ref=e66]:
+        - form [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]: Se connecter à Paymium
+            - generic [ref=e73]:
+              - generic [ref=e75]:
+                - generic [ref=e77]: Email
+                - textbox "Email" [ref=e79]
+              - generic [ref=e80]:
+                - generic [ref=e82]:
+                  - generic [ref=e84]: Mot de passe
+                  - generic [ref=e85]:
+                    - textbox "Mot de passe" [ref=e86]
+                    - button [ref=e89] [cursor=pointer]:
+                      - img [ref=e90]
+                - link "Mot de passe oublié ?" [ref=e92] [cursor=pointer]:
+                  - /url: /reset-password
+            - button "Se connecter" [disabled]:
+              - generic: Se connecter
+            - generic [ref=e94]:
+              - text: Besoin d'aide ?
+              - link "Contactez nous" [ref=e95] [cursor=pointer]:
+                - /url: mailto:support@paymium.com
+              - text: .
+        - contentinfo [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]: Copyright © 2026
+            - link "Paymium" [ref=e99] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e100]: 6.18.0
+            - link "Statut" [ref=e101] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e102] [cursor=pointer]
+  - generic:
+    - generic:
+      - generic:
+        - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options"':
+          - generic [ref=e103]:
+            - text: Axeptio consent
+            - checkbox [ref=e104]
+          - generic [ref=e105]:
+            - paragraph [ref=e106]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+            - paragraph [ref=e107]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+        - button "Gérez vos préférences en matière de cookies et données personnelles" [ref=e108] [cursor=pointer]:
+          - img [ref=e112]
+```

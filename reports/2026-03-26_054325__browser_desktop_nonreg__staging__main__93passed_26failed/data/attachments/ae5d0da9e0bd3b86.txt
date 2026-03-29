@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'large',   'battle',
+  'broken',  'high',
+  'balcony', 'perfect',
+  'antenna', 'unit',
+  'weekend', 'fossil',
+  'essence', 'vicious'
+]

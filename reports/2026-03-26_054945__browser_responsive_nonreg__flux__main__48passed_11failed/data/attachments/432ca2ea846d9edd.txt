@@ -1,0 +1,6 @@
+[pageerror] Fetch API cannot load https: /account-flux.sandbox-paymium.com/ due to access control checks.
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('dialog', { name: 'Bitcoin BTC' }).getByTestId('BTC_depositButton') to be visible
+
+

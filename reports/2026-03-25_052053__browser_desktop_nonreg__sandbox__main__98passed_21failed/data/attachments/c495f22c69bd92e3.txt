@@ -1,0 +1,2 @@
+Error: Transaction failed with alert: Request failed with status code 500
+

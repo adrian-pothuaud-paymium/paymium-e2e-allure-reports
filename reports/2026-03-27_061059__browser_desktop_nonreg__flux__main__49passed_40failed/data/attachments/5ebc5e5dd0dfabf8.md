@@ -1,0 +1,170 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - link:
+            - /url: /dashboard
+            - generic:
+              - img
+          - generic:
+            - button:
+              - img
+              - generic: Acheter
+            - button:
+              - img
+            - button:
+              - generic: FR
+              - img
+            - button:
+              - generic:
+                - generic:
+                  - img
+            - button:
+              - img
+            - button:
+              - img
+            - button:
+              - img
+        - generic:
+          - navigation:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                    - textbox:
+                      - /placeholder: Chercher
+              - generic:
+                - link:
+                  - /url: /dashboard
+                  - img
+                  - generic: Tableau de bord
+                - link:
+                  - /url: /wallet
+                  - img
+                  - generic: Portefeuille
+                - link:
+                  - img
+                  - generic: Achat / vente
+                - link:
+                  - /url: /deposit/EUR
+                  - img
+                  - generic: Dépôt / retrait
+                - link:
+                  - /url: /recurrent
+                  - img
+                  - generic: Achat récurrent
+                - link:
+                  - /url: /trade/BTC/EUR
+                  - img
+                  - generic: Mode expert
+                - link:
+                  - /url: /referral
+                  - img
+                  - generic: Parrainage
+                - link:
+                  - /url: /family
+                  - img
+                  - generic: Plan Bitcoin Famille
+                - link:
+                  - /url: /history
+                  - img
+                  - generic: Historique
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Tickets
+                  - button:
+                    - img
+                    - generic: Créer un nouveau ticket
+                - generic:
+                  - generic:
+                    - generic:
+                      - tablist:
+                        - generic:
+                          - tab [selected]:
+                            - generic: Tous
+                            - generic:
+                              - generic: "1"
+                          - tab:
+                            - generic: Répondu
+                            - generic:
+                              - generic: "0"
+                          - tab:
+                            - generic: Fermé
+                            - generic:
+                              - generic: "1"
+                          - tab:
+                            - generic: En attente
+                            - generic:
+                              - generic: "0"
+                  - list:
+                    - listitem:
+                      - generic:
+                        - generic: Titre
+                        - generic:
+                          - img
+                      - generic:
+                        - generic: Date
+                        - generic:
+                          - img
+                      - generic:
+                        - generic: Statut
+                        - generic:
+                          - img
+                    - separator
+                    - listitem:
+                      - generic:
+                        - generic: Problème de connexion - 1774585797598
+                        - generic: Je n'arrive pas à me connecter à mon compte.
+                      - generic:
+                        - generic: 27/03/2026
+                        - generic: 05:32
+                      - generic:
+                        - generic:
+                          - generic: Fermé
+            - contentinfo:
+              - generic:
+                - generic: Copyright © 2026
+                - link:
+                  - /url: https://sandbox-paymium.webflow.io/
+                  - text: Paymium
+                - generic: 6.18.0
+                - link:
+                  - /url: /status
+                  - text: Statut
+                - link: Gérer vos cookies
+  - dialog [ref=e6]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - generic [ref=e13]:
+            - generic [ref=e16]: Erreur 500
+            - generic [ref=e17]: Quelque chose a mal tourné
+          - generic [ref=e18]: "Une erreur inattendue s’est produite ou vous n’avez peut-être pas la permission de consulter cette page. Les liens suivants peuvent vous aider à reprendre votre navigation :"
+          - generic [ref=e19]: "ReferenceError: containerStyles is not defined"
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - link "Documentation" [ref=e23] [cursor=pointer]
+              - img [ref=e24]
+            - generic [ref=e26]: Plongez pour tout apprendre sur le produit.
+          - generic [ref=e27]:
+            - generic [ref=e28]:
+              - link "Notre blog" [ref=e29] [cursor=pointer]
+              - img [ref=e30]
+            - generic [ref=e32]: Lisez les derniers articles sur notre blog.
+          - generic [ref=e33]:
+            - generic [ref=e34]:
+              - link "Contacter le support" [ref=e35] [cursor=pointer]
+              - img [ref=e36]
+            - generic [ref=e38]: Notre équipe sympathique est là pour vous aider.
+      - button "Fermer" [ref=e39] [cursor=pointer]:
+        - generic [ref=e40]: Fermer
+```

@@ -1,0 +1,221 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button
+  - button
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - link [ref=e9] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e11]
+      - generic [ref=e47]:
+        - button "Acheter" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+          - generic [ref=e51]: Acheter
+        - button [ref=e52] [cursor=pointer]:
+          - img [ref=e53]
+        - button "FR" [ref=e56] [cursor=pointer]:
+          - generic [ref=e57]: FR
+          - img [ref=e58]
+        - button [ref=e60] [cursor=pointer]:
+          - img [ref=e63]
+        - button [ref=e65] [cursor=pointer]:
+          - img [ref=e66]
+        - button [ref=e69] [cursor=pointer]:
+          - img [ref=e70]
+        - button [active] [ref=e73] [cursor=pointer]:
+          - img [ref=e74]
+    - generic [ref=e76]:
+      - navigation [ref=e77]:
+        - generic [ref=e78]:
+          - generic [ref=e81]:
+            - img [ref=e83]
+            - textbox "Chercher" [ref=e85]
+          - generic [ref=e86]:
+            - link "Tableau de bord" [ref=e87] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e88]
+              - generic [ref=e90]: Tableau de bord
+            - link "Portefeuille" [ref=e91] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e92]
+              - generic [ref=e94]: Portefeuille
+            - link "Achat / vente" [ref=e95] [cursor=pointer]:
+              - img [ref=e96]
+              - generic [ref=e98]: Achat / vente
+            - link "Dépôt / retrait" [ref=e99] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e100]
+              - generic [ref=e102]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e103] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e104]
+              - generic [ref=e106]: Achat récurrent
+            - link "Mode expert" [ref=e107] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e108]
+              - generic [ref=e110]: Mode expert
+            - link "Parrainage" [ref=e111] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e112]
+              - generic [ref=e114]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e115] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e116]
+              - generic [ref=e118]: Plan Bitcoin Famille
+            - link "Historique" [ref=e119] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e120]
+              - generic [ref=e122]: Historique
+      - generic [ref=e123]:
+        - generic [ref=e125]:
+          - tablist [ref=e127]:
+            - generic [ref=e128]:
+              - tab "Paramètres" [selected] [ref=e130] [cursor=pointer]:
+                - generic [ref=e131]: Paramètres
+              - tab "Sécurité du compte" [ref=e132] [cursor=pointer]:
+                - generic [ref=e133]: Sécurité du compte
+              - tab "Identification et documents" [ref=e134] [cursor=pointer]:
+                - generic [ref=e135]: Identification et documents
+          - generic [ref=e138]:
+            - generic [ref=e140]:
+              - img [ref=e141]
+              - generic [ref=e143]:
+                - generic [ref=e144]: Votre compte est vérifié.
+                - generic [ref=e145]: Profitez des fonctionnalités Paymium.
+            - button
+            - generic [ref=e146]:
+              - generic [ref=e147]:
+                - generic:
+                  - generic:
+                    - generic: Nom de famille
+                    - generic:
+                      - generic:
+                        - generic: POTHUAUD
+                - generic:
+                  - generic:
+                    - generic: Prénom
+                    - generic:
+                      - generic:
+                        - generic: ADRIAN
+                - generic:
+                  - generic:
+                    - generic: Numéro de compte
+                    - generic:
+                      - generic:
+                        - generic: SB-U99226276
+                      - img [ref=e149] [cursor=pointer]
+                - generic:
+                  - generic:
+                    - generic: Numéro de téléphone
+                    - generic:
+                      - generic:
+                        - generic: "+33672671564"
+                - generic:
+                  - generic:
+                    - generic: Type de compte
+                    - generic:
+                      - generic:
+                        - generic: Particulier
+                - generic:
+                  - generic:
+                    - generic: Email
+                    - generic:
+                      - generic:
+                        - generic: adrian.pothuaud+auto.primary@paymium.com
+                - generic:
+                  - generic:
+                    - generic: Date de naissance
+                    - generic:
+                      - generic:
+                        - generic: 1993-05-22
+                - generic:
+                  - generic:
+                    - generic: Adresse
+                    - generic:
+                      - generic:
+                        - generic: Paris 75001 Paris FRA
+                      - img [ref=e151] [cursor=pointer]
+                - generic:
+                  - generic:
+                    - generic: Numéro d’identification fiscale
+                    - generic:
+                      - generic:
+                        - generic: "7777777777"
+                      - img [ref=e153] [cursor=pointer]
+              - button "Support client" [ref=e155] [cursor=pointer]:
+                - generic [ref=e156]: Support client
+            - generic [ref=e157]:
+              - generic [ref=e158]: Utiliser mes jetons BCIO (au prix de 0,85€) pour payer mes frais (à partir du 1er Décembre 2024).
+              - switch [checked] [ref=e159] [cursor=pointer]
+            - generic [ref=e162]:
+              - generic [ref=e163]:
+                - generic [ref=e164]: Frais
+                - generic [ref=e165]:
+                  - generic [ref=e166]: Votre volume
+                  - generic [ref=e167]: 437 978,48 €
+              - list [ref=e168]:
+                - listitem [ref=e169]:
+                  - generic [ref=e170]: Volume € - 30 jours glissants
+                  - generic [ref=e171]: Frais Maker
+                  - generic [ref=e172]: Frais Taker
+                - separator [ref=e173]
+                - listitem [ref=e174]:
+                  - generic [ref=e175]: 0 - 10K
+                  - generic [ref=e176]: 0,40%
+                  - generic [ref=e177]: 0,60%
+                - listitem [ref=e178]:
+                  - generic [ref=e179]: 10K - 50K
+                  - generic [ref=e180]: 0,25%
+                  - generic [ref=e181]: 0,40%
+                - listitem [ref=e182]:
+                  - generic [ref=e183]: 50K - 100K
+                  - generic [ref=e184]: 0,15%
+                  - generic [ref=e185]: 0,30%
+                - listitem [ref=e186]:
+                  - generic [ref=e187]: 100K -1M
+                  - generic [ref=e188]: 0,12%
+                  - generic [ref=e189]: 0,25%
+                - listitem [ref=e190]:
+                  - generic [ref=e191]: 1M - 20M
+                  - generic [ref=e192]: 0,08%
+                  - generic [ref=e193]: 0,18%
+                - listitem [ref=e194]:
+                  - generic [ref=e195]: 20M - 100M
+                  - generic [ref=e196]: 0,05%
+                  - generic [ref=e197]: 0,15%
+                - listitem [ref=e198]:
+                  - generic [ref=e199]: 100M - 300M
+                  - generic [ref=e200]: 0,02%
+                  - generic [ref=e201]: 0,10%
+                - listitem [ref=e202]:
+                  - generic [ref=e203]: 300M - 500M
+                  - generic [ref=e204]: 0,00%
+                  - generic [ref=e205]: 0,08%
+                - listitem [ref=e206]:
+                  - generic [ref=e207]: 500M+
+                  - generic [ref=e208]: 0,00%
+                  - generic [ref=e209]: 0,05%
+            - generic [ref=e210]:
+              - generic [ref=e211]: Clôture du compte
+              - form [ref=e212]:
+                - generic [ref=e213]: "ATTENTION : Après la clôture de votre compte, vous serez déconnecté et ne pourrez plus accéder à nos services."
+                - generic [ref=e215]:
+                  - generic [ref=e217]: "Entrer \"ok\" pour confirmer :"
+                  - textbox "Entrer \"ok\" pour confirmer :" [ref=e219]
+                - checkbox "En cochant cette case, vous confirmez que vous cédez l’ensemble de vos soldes restants à Paymium." [ref=e220] [cursor=pointer]:
+                  - checkbox [ref=e222]
+                  - generic [ref=e224]: En cochant cette case, vous confirmez que vous cédez l’ensemble de vos soldes restants à Paymium.
+                - button "Clôturer votre compte" [disabled]:
+                  - generic: Clôturer votre compte
+        - contentinfo [ref=e225]:
+          - generic [ref=e226]:
+            - generic [ref=e227]: Copyright © 2026
+            - link "Paymium" [ref=e228] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e229]: 6.18.0
+            - link "Statut" [ref=e230] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e231] [cursor=pointer]
+```

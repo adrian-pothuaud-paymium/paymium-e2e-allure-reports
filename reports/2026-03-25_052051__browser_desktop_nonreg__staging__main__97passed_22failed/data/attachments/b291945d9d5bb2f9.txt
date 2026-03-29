@@ -1,0 +1,3 @@
+Request POST /api/user/swaps with body: {"swapping_pair":"BTC/USDC","side":"sell","price":null,"amount":0.001}
+Response status code: 422
+Response body: {"type":"about:blank","title":"Validation failed","status":422,"detail":"The request is invalid","instance":"record_invalid","errors":[{"detail":"n'est pas un nombre","parameter":"price"},{"detail":"ne peut pas être vide","parameter":"price"}]}

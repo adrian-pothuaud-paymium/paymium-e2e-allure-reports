@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'exile',    'obvious',
+  'december', 'stove',
+  'cluster',  'joy',
+  'select',   'boil',
+  'cart',     'pepper',
+  'hundred',  'illegal'
+]

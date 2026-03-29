@@ -1,0 +1,49 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e7]:
+  - generic [ref=e8]:
+    - link [ref=e9] [cursor=pointer]:
+      - /url: https://www.paymium.com/
+      - img [ref=e11]
+    - button [ref=e48] [cursor=pointer]:
+      - img [ref=e50]
+  - generic [ref=e52]:
+    - navigation
+    - generic [ref=e53]:
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e63]: Erreur 500
+            - generic [ref=e64]: Quelque chose a mal tourné
+          - generic [ref=e65]: "Une erreur inattendue s’est produite ou vous n’avez peut-être pas la permission de consulter cette page. Les liens suivants peuvent vous aider à reprendre votre navigation :"
+          - generic [ref=e66]: "ReferenceError: Can't find variable: containerStyles"
+        - button "Retourner en arrière" [ref=e68] [cursor=pointer]:
+          - img [ref=e69]
+          - generic [ref=e71]: Retourner en arrière
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - link "Documentation" [ref=e75] [cursor=pointer]
+              - img [ref=e76]
+            - generic [ref=e78]: Plongez pour tout apprendre sur le produit.
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - link "Notre blog" [ref=e81] [cursor=pointer]
+              - img [ref=e82]
+            - generic [ref=e84]: Lisez les derniers articles sur notre blog.
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - link "Contacter le support" [ref=e87] [cursor=pointer]
+              - img [ref=e88]
+            - generic [ref=e90]: Notre équipe sympathique est là pour vous aider.
+      - contentinfo [ref=e91]:
+        - generic [ref=e92]:
+          - generic [ref=e93]: Copyright © 2026
+          - link "Paymium" [ref=e94] [cursor=pointer]:
+            - /url: https://sandbox-paymium.webflow.io/
+          - generic [ref=e95]: 6.18.0
+          - link "Statut" [ref=e96] [cursor=pointer]:
+            - /url: /status
+          - link "Gérer vos cookies" [ref=e97] [cursor=pointer]
+```

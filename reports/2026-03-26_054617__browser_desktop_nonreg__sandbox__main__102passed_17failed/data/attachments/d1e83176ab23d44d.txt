@@ -1,0 +1,15 @@
+Error: locator.check: Clicking the checkbox did not change its state
+Call log:
+  - waiting for getByRole('dialog').last().getByRole('checkbox', { name: 'En cochant cette case' })
+    - locator resolved to <div tabindex="0" role="checkbox" id="disclaimer" aria-checked="false" class="css-g5y9jx r-1loqt21 r-1otgn73 display-[flex] gap-[var(--space-xl)] align-items-[center] flex-direction-[row]">…</div>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - performing click action
+    - click action done
+    - waiting for scheduled navigations to finish
+    - navigations have finished
+
+

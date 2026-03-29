@@ -1,0 +1,1423 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button
+  - button
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - link [ref=e9] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e11]
+      - generic [ref=e47]:
+        - button "Acheter" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+          - generic [ref=e51]: Acheter
+        - button [ref=e52] [cursor=pointer]:
+          - img [ref=e53]
+        - button "FR" [ref=e56] [cursor=pointer]:
+          - generic [ref=e57]: FR
+          - img [ref=e58]
+        - button [ref=e60] [cursor=pointer]:
+          - img [ref=e63]
+        - button [ref=e65] [cursor=pointer]:
+          - img [ref=e66]
+        - button [ref=e69] [cursor=pointer]:
+          - img [ref=e70]
+        - button [ref=e73] [cursor=pointer]:
+          - img [ref=e74]
+    - generic [ref=e76]:
+      - navigation [ref=e77]:
+        - generic [ref=e78]:
+          - generic [ref=e81]:
+            - img [ref=e83]
+            - textbox "Chercher" [ref=e85]
+          - generic [ref=e86]:
+            - link "Tableau de bord" [ref=e87] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e88]
+              - generic [ref=e90]: Tableau de bord
+            - link "Portefeuille" [ref=e91] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e92]
+              - generic [ref=e94]: Portefeuille
+            - link "Achat / vente" [ref=e95] [cursor=pointer]:
+              - img [ref=e96]
+              - generic [ref=e98]: Achat / vente
+            - link "Dépôt / retrait" [ref=e99] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e100]
+              - generic [ref=e102]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e103] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e104]
+              - generic [ref=e106]: Achat récurrent
+            - link "Mode expert" [ref=e107] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e108]
+              - generic [ref=e110]: Mode expert
+            - link "Parrainage" [ref=e111] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e112]
+              - generic [ref=e114]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e115] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e116]
+              - generic [ref=e118]: Plan Bitcoin Famille
+            - link "Historique" [ref=e119] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e120]
+              - generic [ref=e122]: Historique
+            - link "OTC Trading" [ref=e123] [cursor=pointer]:
+              - /url: /otc
+              - img [ref=e124]
+              - generic [ref=e126]: OTC Trading
+      - generic [ref=e127]:
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - generic [ref=e131]: Achat récurrent
+            - button "En savoir plus" [ref=e132] [cursor=pointer]:
+              - generic [ref=e133]: En savoir plus
+          - generic [ref=e134]:
+            - generic [ref=e135]:
+              - generic [ref=e136]:
+                - img [ref=e138]
+                - generic [ref=e140]: Créez votre plan d'achat
+              - generic [ref=e141]:
+                - generic [ref=e145]: Sélectionnez la cryptomonnaie de votre choix.
+                - generic [ref=e149]: Entrez le montant (min 5€) et la fréquence d'achat. Une fois activé, vos prochains dépôts euro seront automatiquement crédités sur votre compte de trading.
+                - generic [ref=e153]: Annulez ou mettez en pause le plan d'achat à tout moment.
+            - button "Créer un plan d'achat" [ref=e155] [cursor=pointer]:
+              - generic [ref=e156]: Créer un plan d'achat
+          - generic [ref=e159]:
+            - button "Bitcoin (69)" [active] [ref=e160] [cursor=pointer]:
+              - generic [ref=e161]:
+                - generic [ref=e162]:
+                  - img [ref=e163]
+                  - generic [ref=e168]: Bitcoin
+                - generic [ref=e169]: (69)
+              - img [ref=e172]
+            - generic:
+              - generic:
+                - generic:
+                  - separator
+                  - button "paymiumXPlaywright__1774415894116 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e174] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e175]:
+                          - img [ref=e177]
+                          - generic [ref=e179]:
+                            - generic [ref=e180]: paymiumXPlaywright__1774415894116
+                            - generic [ref=e181]:
+                              - generic [ref=e182]: Depuis
+                              - generic [ref=e183]: 25/03/2026
+                            - generic [ref=e184]:
+                              - generic [ref=e185]: Date du prochain achat
+                              - generic [ref=e186]: 25/04/2026
+                        - generic [ref=e187]:
+                          - generic [ref=e189]: En cours
+                          - generic [ref=e190]:
+                            - generic [ref=e191]: 5,00 €
+                            - generic [ref=e192]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774417343798 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e193] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e194]:
+                          - img [ref=e196]
+                          - generic [ref=e198]:
+                            - generic [ref=e199]: paymiumXPlaywright__1774417343798
+                            - generic [ref=e200]:
+                              - generic [ref=e201]: Depuis
+                              - generic [ref=e202]: 25/03/2026
+                            - generic [ref=e203]:
+                              - generic [ref=e204]: Date du prochain achat
+                              - generic [ref=e205]: 25/04/2026
+                        - generic [ref=e206]:
+                          - generic [ref=e208]: En cours
+                          - generic [ref=e209]:
+                            - generic [ref=e210]: 5,00 €
+                            - generic [ref=e211]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774417362635 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e212] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e213]:
+                          - img [ref=e215]
+                          - generic [ref=e217]:
+                            - generic [ref=e218]: paymiumXPlaywright__1774417362635
+                            - generic [ref=e219]:
+                              - generic [ref=e220]: Depuis
+                              - generic [ref=e221]: 25/03/2026
+                            - generic [ref=e222]:
+                              - generic [ref=e223]: Date du prochain achat
+                              - generic [ref=e224]: 25/04/2026
+                        - generic [ref=e225]:
+                          - generic [ref=e227]: En cours
+                          - generic [ref=e228]:
+                            - generic [ref=e229]: 5,00 €
+                            - generic [ref=e230]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774417402410_Updated Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e231] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e232]:
+                          - img [ref=e234]
+                          - generic [ref=e236]:
+                            - generic [ref=e237]: paymiumXPlaywright__1774417402410_Updated
+                            - generic [ref=e238]:
+                              - generic [ref=e239]: Depuis
+                              - generic [ref=e240]: 25/03/2026
+                            - generic [ref=e241]:
+                              - generic [ref=e242]: Date du prochain achat
+                              - generic [ref=e243]: 01/04/2026
+                        - generic [ref=e244]:
+                          - generic [ref=e246]: En cours
+                          - generic [ref=e247]:
+                            - generic [ref=e248]: 5,00 €
+                            - generic [ref=e249]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774419219361 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e250] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e251]:
+                          - img [ref=e253]
+                          - generic [ref=e255]:
+                            - generic [ref=e256]: paymiumXPlaywright__1774419219361
+                            - generic [ref=e257]:
+                              - generic [ref=e258]: Depuis
+                              - generic [ref=e259]: 25/03/2026
+                            - generic [ref=e260]:
+                              - generic [ref=e261]: Date du prochain achat
+                              - generic [ref=e262]: 25/04/2026
+                        - generic [ref=e263]:
+                          - generic [ref=e265]: En cours
+                          - generic [ref=e266]:
+                            - generic [ref=e267]: 5,00 €
+                            - generic [ref=e268]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774419570478 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e269] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e270]:
+                          - img [ref=e272]
+                          - generic [ref=e274]:
+                            - generic [ref=e275]: paymiumXPlaywright__1774419570478
+                            - generic [ref=e276]:
+                              - generic [ref=e277]: Depuis
+                              - generic [ref=e278]: 25/03/2026
+                            - generic [ref=e279]:
+                              - generic [ref=e280]: Date du prochain achat
+                              - generic [ref=e281]: 25/04/2026
+                        - generic [ref=e282]:
+                          - generic [ref=e284]: En cours
+                          - generic [ref=e285]:
+                            - generic [ref=e286]: 5,00 €
+                            - generic [ref=e287]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774419737642 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e288] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e289]:
+                          - img [ref=e291]
+                          - generic [ref=e293]:
+                            - generic [ref=e294]: paymiumXPlaywright__1774419737642
+                            - generic [ref=e295]:
+                              - generic [ref=e296]: Depuis
+                              - generic [ref=e297]: 25/03/2026
+                            - generic [ref=e298]:
+                              - generic [ref=e299]: Date du prochain achat
+                              - generic [ref=e300]: 25/04/2026
+                        - generic [ref=e301]:
+                          - generic [ref=e303]: En cours
+                          - generic [ref=e304]:
+                            - generic [ref=e305]: 5,00 €
+                            - generic [ref=e306]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774419915443 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e307] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e308]:
+                          - img [ref=e310]
+                          - generic [ref=e312]:
+                            - generic [ref=e313]: paymiumXPlaywright__1774419915443
+                            - generic [ref=e314]:
+                              - generic [ref=e315]: Depuis
+                              - generic [ref=e316]: 25/03/2026
+                            - generic [ref=e317]:
+                              - generic [ref=e318]: Date du prochain achat
+                              - generic [ref=e319]: 25/04/2026
+                        - generic [ref=e320]:
+                          - generic [ref=e322]: En cours
+                          - generic [ref=e323]:
+                            - generic [ref=e324]: 5,00 €
+                            - generic [ref=e325]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774420168841 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e326] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e327]:
+                          - img [ref=e329]
+                          - generic [ref=e331]:
+                            - generic [ref=e332]: paymiumXPlaywright__1774420168841
+                            - generic [ref=e333]:
+                              - generic [ref=e334]: Depuis
+                              - generic [ref=e335]: 25/03/2026
+                            - generic [ref=e336]:
+                              - generic [ref=e337]: Date du prochain achat
+                              - generic [ref=e338]: 25/04/2026
+                        - generic [ref=e339]:
+                          - generic [ref=e341]: En cours
+                          - generic [ref=e342]:
+                            - generic [ref=e343]: 5,00 €
+                            - generic [ref=e344]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774420429689_Updated Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e345] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e346]:
+                          - img [ref=e348]
+                          - generic [ref=e350]:
+                            - generic [ref=e351]: paymiumXPlaywright__1774420429689_Updated
+                            - generic [ref=e352]:
+                              - generic [ref=e353]: Depuis
+                              - generic [ref=e354]: 25/03/2026
+                            - generic [ref=e355]:
+                              - generic [ref=e356]: Date du prochain achat
+                              - generic [ref=e357]: 01/04/2026
+                        - generic [ref=e358]:
+                          - generic [ref=e360]: En cours
+                          - generic [ref=e361]:
+                            - generic [ref=e362]: 5,00 €
+                            - generic [ref=e363]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774420791757 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e364] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e365]:
+                          - img [ref=e367]
+                          - generic [ref=e369]:
+                            - generic [ref=e370]: paymiumXPlaywright__1774420791757
+                            - generic [ref=e371]:
+                              - generic [ref=e372]: Depuis
+                              - generic [ref=e373]: 25/03/2026
+                            - generic [ref=e374]:
+                              - generic [ref=e375]: Date du prochain achat
+                              - generic [ref=e376]: 25/04/2026
+                        - generic [ref=e377]:
+                          - generic [ref=e379]: En cours
+                          - generic [ref=e380]:
+                            - generic [ref=e381]: 5,00 €
+                            - generic [ref=e382]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774422004904 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e383] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e384]:
+                          - img [ref=e386]
+                          - generic [ref=e388]:
+                            - generic [ref=e389]: paymiumXPlaywright__1774422004904
+                            - generic [ref=e390]:
+                              - generic [ref=e391]: Depuis
+                              - generic [ref=e392]: 25/03/2026
+                            - generic [ref=e393]:
+                              - generic [ref=e394]: Date du prochain achat
+                              - generic [ref=e395]: 25/04/2026
+                        - generic [ref=e396]:
+                          - generic [ref=e398]: En cours
+                          - generic [ref=e399]:
+                            - generic [ref=e400]: 5,00 €
+                            - generic [ref=e401]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774424077226 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e402] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e403]:
+                          - img [ref=e405]
+                          - generic [ref=e407]:
+                            - generic [ref=e408]: paymiumXPlaywright__1774424077226
+                            - generic [ref=e409]:
+                              - generic [ref=e410]: Depuis
+                              - generic [ref=e411]: 25/03/2026
+                            - generic [ref=e412]:
+                              - generic [ref=e413]: Date du prochain achat
+                              - generic [ref=e414]: 25/04/2026
+                        - generic [ref=e415]:
+                          - generic [ref=e417]: En cours
+                          - generic [ref=e418]:
+                            - generic [ref=e419]: 5,00 €
+                            - generic [ref=e420]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774426125289 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e421] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e422]:
+                          - img [ref=e424]
+                          - generic [ref=e426]:
+                            - generic [ref=e427]: paymiumXPlaywright__1774426125289
+                            - generic [ref=e428]:
+                              - generic [ref=e429]: Depuis
+                              - generic [ref=e430]: 25/03/2026
+                            - generic [ref=e431]:
+                              - generic [ref=e432]: Date du prochain achat
+                              - generic [ref=e433]: 25/04/2026
+                        - generic [ref=e434]:
+                          - generic [ref=e436]: En cours
+                          - generic [ref=e437]:
+                            - generic [ref=e438]: 5,00 €
+                            - generic [ref=e439]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774426159962 Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e440] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e441]:
+                          - img [ref=e443]
+                          - generic [ref=e445]:
+                            - generic [ref=e446]: paymiumXPlaywright__1774426159962
+                            - generic [ref=e447]:
+                              - generic [ref=e448]: Depuis
+                              - generic [ref=e449]: 25/03/2026
+                            - generic [ref=e450]:
+                              - generic [ref=e451]: Date du prochain achat
+                              - generic [ref=e452]: 01/04/2026
+                        - generic [ref=e453]:
+                          - generic [ref=e455]: En cours
+                          - generic [ref=e456]:
+                            - generic [ref=e457]: 5,00 €
+                            - generic [ref=e458]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774426232912_Updated Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e459] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e460]:
+                          - img [ref=e462]
+                          - generic [ref=e464]:
+                            - generic [ref=e465]: paymiumXPlaywright__1774426232912_Updated
+                            - generic [ref=e466]:
+                              - generic [ref=e467]: Depuis
+                              - generic [ref=e468]: 25/03/2026
+                            - generic [ref=e469]:
+                              - generic [ref=e470]: Date du prochain achat
+                              - generic [ref=e471]: 01/04/2026
+                        - generic [ref=e472]:
+                          - generic [ref=e474]: En cours
+                          - generic [ref=e475]:
+                            - generic [ref=e476]: 5,00 €
+                            - generic [ref=e477]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774427136162 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e478] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e479]:
+                          - img [ref=e481]
+                          - generic [ref=e483]:
+                            - generic [ref=e484]: paymiumXPlaywright__1774427136162
+                            - generic [ref=e485]:
+                              - generic [ref=e486]: Depuis
+                              - generic [ref=e487]: 25/03/2026
+                            - generic [ref=e488]:
+                              - generic [ref=e489]: Date du prochain achat
+                              - generic [ref=e490]: 25/04/2026
+                        - generic [ref=e491]:
+                          - generic [ref=e493]: En cours
+                          - generic [ref=e494]:
+                            - generic [ref=e495]: 5,00 €
+                            - generic [ref=e496]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774430528346 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e497] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e498]:
+                          - img [ref=e500]
+                          - generic [ref=e502]:
+                            - generic [ref=e503]: paymiumXPlaywright__1774430528346
+                            - generic [ref=e504]:
+                              - generic [ref=e505]: Depuis
+                              - generic [ref=e506]: 25/03/2026
+                            - generic [ref=e507]:
+                              - generic [ref=e508]: Date du prochain achat
+                              - generic [ref=e509]: 25/04/2026
+                        - generic [ref=e510]:
+                          - generic [ref=e512]: En cours
+                          - generic [ref=e513]:
+                            - generic [ref=e514]: 5,00 €
+                            - generic [ref=e515]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774432675136 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e516] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e517]:
+                          - img [ref=e519]
+                          - generic [ref=e521]:
+                            - generic [ref=e522]: paymiumXPlaywright__1774432675136
+                            - generic [ref=e523]:
+                              - generic [ref=e524]: Depuis
+                              - generic [ref=e525]: 25/03/2026
+                            - generic [ref=e526]:
+                              - generic [ref=e527]: Date du prochain achat
+                              - generic [ref=e528]: 25/04/2026
+                        - generic [ref=e529]:
+                          - generic [ref=e531]: En cours
+                          - generic [ref=e532]:
+                            - generic [ref=e533]: 5,00 €
+                            - generic [ref=e534]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774432720524 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e535] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e536]:
+                          - img [ref=e538]
+                          - generic [ref=e540]:
+                            - generic [ref=e541]: paymiumXPlaywright__1774432720524
+                            - generic [ref=e542]:
+                              - generic [ref=e543]: Depuis
+                              - generic [ref=e544]: 25/03/2026
+                            - generic [ref=e545]:
+                              - generic [ref=e546]: Date du prochain achat
+                              - generic [ref=e547]: 25/04/2026
+                        - generic [ref=e548]:
+                          - generic [ref=e550]: En cours
+                          - generic [ref=e551]:
+                            - generic [ref=e552]: 5,00 €
+                            - generic [ref=e553]: Mensuelle
+                  - separator
+                  - button "E2E 1774433049198 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e554] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e555]:
+                          - img [ref=e557]
+                          - generic [ref=e559]:
+                            - generic [ref=e560]: E2E 1774433049198
+                            - generic [ref=e561]:
+                              - generic [ref=e562]: Depuis
+                              - generic [ref=e563]: 25/03/2026
+                            - generic [ref=e564]:
+                              - generic [ref=e565]: Date du prochain achat
+                              - generic [ref=e566]: 25/04/2026
+                        - generic [ref=e567]:
+                          - generic [ref=e569]: En cours
+                          - generic [ref=e570]:
+                            - generic [ref=e571]: 5,00 €
+                            - generic [ref=e572]: Mensuelle
+                  - separator
+                  - button "E2E 1774433385294 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e573] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e574]:
+                          - img [ref=e576]
+                          - generic [ref=e578]:
+                            - generic [ref=e579]: E2E 1774433385294
+                            - generic [ref=e580]:
+                              - generic [ref=e581]: Depuis
+                              - generic [ref=e582]: 25/03/2026
+                            - generic [ref=e583]:
+                              - generic [ref=e584]: Date du prochain achat
+                              - generic [ref=e585]: 25/04/2026
+                        - generic [ref=e586]:
+                          - generic [ref=e588]: En cours
+                          - generic [ref=e589]:
+                            - generic [ref=e590]: 5,00 €
+                            - generic [ref=e591]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774433662632 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e592] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e593]:
+                          - img [ref=e595]
+                          - generic [ref=e597]:
+                            - generic [ref=e598]: paymiumXPlaywright__1774433662632
+                            - generic [ref=e599]:
+                              - generic [ref=e600]: Depuis
+                              - generic [ref=e601]: 25/03/2026
+                            - generic [ref=e602]:
+                              - generic [ref=e603]: Date du prochain achat
+                              - generic [ref=e604]: 25/04/2026
+                        - generic [ref=e605]:
+                          - generic [ref=e607]: En cours
+                          - generic [ref=e608]:
+                            - generic [ref=e609]: 5,00 €
+                            - generic [ref=e610]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774433780457 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e611] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e612]:
+                          - img [ref=e614]
+                          - generic [ref=e616]:
+                            - generic [ref=e617]: paymiumXPlaywright__1774433780457
+                            - generic [ref=e618]:
+                              - generic [ref=e619]: Depuis
+                              - generic [ref=e620]: 25/03/2026
+                            - generic [ref=e621]:
+                              - generic [ref=e622]: Date du prochain achat
+                              - generic [ref=e623]: 25/04/2026
+                        - generic [ref=e624]:
+                          - generic [ref=e626]: En cours
+                          - generic [ref=e627]:
+                            - generic [ref=e628]: 5,00 €
+                            - generic [ref=e629]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774434014399 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e630] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e631]:
+                          - img [ref=e633]
+                          - generic [ref=e635]:
+                            - generic [ref=e636]: paymiumXPlaywright__1774434014399
+                            - generic [ref=e637]:
+                              - generic [ref=e638]: Depuis
+                              - generic [ref=e639]: 25/03/2026
+                            - generic [ref=e640]:
+                              - generic [ref=e641]: Date du prochain achat
+                              - generic [ref=e642]: 25/04/2026
+                        - generic [ref=e643]:
+                          - generic [ref=e645]: En cours
+                          - generic [ref=e646]:
+                            - generic [ref=e647]: 5,00 €
+                            - generic [ref=e648]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774434209055_Updated Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e649] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e650]:
+                          - img [ref=e652]
+                          - generic [ref=e654]:
+                            - generic [ref=e655]: paymiumXPlaywright__1774434209055_Updated
+                            - generic [ref=e656]:
+                              - generic [ref=e657]: Depuis
+                              - generic [ref=e658]: 25/03/2026
+                            - generic [ref=e659]:
+                              - generic [ref=e660]: Date du prochain achat
+                              - generic [ref=e661]: 01/04/2026
+                        - generic [ref=e662]:
+                          - generic [ref=e664]: En cours
+                          - generic [ref=e665]:
+                            - generic [ref=e666]: 5,00 €
+                            - generic [ref=e667]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774436146747 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e668] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e669]:
+                          - img [ref=e671]
+                          - generic [ref=e673]:
+                            - generic [ref=e674]: paymiumXPlaywright__1774436146747
+                            - generic [ref=e675]:
+                              - generic [ref=e676]: Depuis
+                              - generic [ref=e677]: 25/03/2026
+                            - generic [ref=e678]:
+                              - generic [ref=e679]: Date du prochain achat
+                              - generic [ref=e680]: 25/04/2026
+                        - generic [ref=e681]:
+                          - generic [ref=e683]: En cours
+                          - generic [ref=e684]:
+                            - generic [ref=e685]: 5,00 €
+                            - generic [ref=e686]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774436248065 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e687] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e688]:
+                          - img [ref=e690]
+                          - generic [ref=e692]:
+                            - generic [ref=e693]: paymiumXPlaywright__1774436248065
+                            - generic [ref=e694]:
+                              - generic [ref=e695]: Depuis
+                              - generic [ref=e696]: 25/03/2026
+                            - generic [ref=e697]:
+                              - generic [ref=e698]: Date du prochain achat
+                              - generic [ref=e699]: 25/04/2026
+                        - generic [ref=e700]:
+                          - generic [ref=e702]: En cours
+                          - generic [ref=e703]:
+                            - generic [ref=e704]: 5,00 €
+                            - generic [ref=e705]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774439860672 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e706] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e707]:
+                          - img [ref=e709]
+                          - generic [ref=e711]:
+                            - generic [ref=e712]: paymiumXPlaywright__1774439860672
+                            - generic [ref=e713]:
+                              - generic [ref=e714]: Depuis
+                              - generic [ref=e715]: 25/03/2026
+                            - generic [ref=e716]:
+                              - generic [ref=e717]: Date du prochain achat
+                              - generic [ref=e718]: 25/04/2026
+                        - generic [ref=e719]:
+                          - generic [ref=e721]: En cours
+                          - generic [ref=e722]:
+                            - generic [ref=e723]: 5,00 €
+                            - generic [ref=e724]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774441805340 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e725] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e726]:
+                          - img [ref=e728]
+                          - generic [ref=e730]:
+                            - generic [ref=e731]: paymiumXPlaywright__1774441805340
+                            - generic [ref=e732]:
+                              - generic [ref=e733]: Depuis
+                              - generic [ref=e734]: 25/03/2026
+                            - generic [ref=e735]:
+                              - generic [ref=e736]: Date du prochain achat
+                              - generic [ref=e737]: 25/04/2026
+                        - generic [ref=e738]:
+                          - generic [ref=e740]: En cours
+                          - generic [ref=e741]:
+                            - generic [ref=e742]: 5,00 €
+                            - generic [ref=e743]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774441824819_Updated Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e744] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e745]:
+                          - img [ref=e747]
+                          - generic [ref=e749]:
+                            - generic [ref=e750]: paymiumXPlaywright__1774441824819_Updated
+                            - generic [ref=e751]:
+                              - generic [ref=e752]: Depuis
+                              - generic [ref=e753]: 25/03/2026
+                            - generic [ref=e754]:
+                              - generic [ref=e755]: Date du prochain achat
+                              - generic [ref=e756]: 01/04/2026
+                        - generic [ref=e757]:
+                          - generic [ref=e759]: En cours
+                          - generic [ref=e760]:
+                            - generic [ref=e761]: 5,00 €
+                            - generic [ref=e762]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774442511806 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e763] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e764]:
+                          - img [ref=e766]
+                          - generic [ref=e768]:
+                            - generic [ref=e769]: paymiumXPlaywright__1774442511806
+                            - generic [ref=e770]:
+                              - generic [ref=e771]: Depuis
+                              - generic [ref=e772]: 25/03/2026
+                            - generic [ref=e773]:
+                              - generic [ref=e774]: Date du prochain achat
+                              - generic [ref=e775]: 25/04/2026
+                        - generic [ref=e776]:
+                          - generic [ref=e778]: En cours
+                          - generic [ref=e779]:
+                            - generic [ref=e780]: 5,00 €
+                            - generic [ref=e781]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774443728294 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e782] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e783]:
+                          - img [ref=e785]
+                          - generic [ref=e787]:
+                            - generic [ref=e788]: paymiumXPlaywright__1774443728294
+                            - generic [ref=e789]:
+                              - generic [ref=e790]: Depuis
+                              - generic [ref=e791]: 25/03/2026
+                            - generic [ref=e792]:
+                              - generic [ref=e793]: Date du prochain achat
+                              - generic [ref=e794]: 25/04/2026
+                        - generic [ref=e795]:
+                          - generic [ref=e797]: En cours
+                          - generic [ref=e798]:
+                            - generic [ref=e799]: 5,00 €
+                            - generic [ref=e800]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774445569390 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e801] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e802]:
+                          - img [ref=e804]
+                          - generic [ref=e806]:
+                            - generic [ref=e807]: paymiumXPlaywright__1774445569390
+                            - generic [ref=e808]:
+                              - generic [ref=e809]: Depuis
+                              - generic [ref=e810]: 25/03/2026
+                            - generic [ref=e811]:
+                              - generic [ref=e812]: Date du prochain achat
+                              - generic [ref=e813]: 25/04/2026
+                        - generic [ref=e814]:
+                          - generic [ref=e816]: En cours
+                          - generic [ref=e817]:
+                            - generic [ref=e818]: 5,00 €
+                            - generic [ref=e819]: Mensuelle
+                  - separator
+                  - button "E2E 1774447348372 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e820] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e821]:
+                          - img [ref=e823]
+                          - generic [ref=e825]:
+                            - generic [ref=e826]: E2E 1774447348372
+                            - generic [ref=e827]:
+                              - generic [ref=e828]: Depuis
+                              - generic [ref=e829]: 25/03/2026
+                            - generic [ref=e830]:
+                              - generic [ref=e831]: Date du prochain achat
+                              - generic [ref=e832]: 25/04/2026
+                        - generic [ref=e833]:
+                          - generic [ref=e835]: En cours
+                          - generic [ref=e836]:
+                            - generic [ref=e837]: 5,00 €
+                            - generic [ref=e838]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774448119998 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e839] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e840]:
+                          - img [ref=e842]
+                          - generic [ref=e844]:
+                            - generic [ref=e845]: paymiumXPlaywright__1774448119998
+                            - generic [ref=e846]:
+                              - generic [ref=e847]: Depuis
+                              - generic [ref=e848]: 25/03/2026
+                            - generic [ref=e849]:
+                              - generic [ref=e850]: Date du prochain achat
+                              - generic [ref=e851]: 25/04/2026
+                        - generic [ref=e852]:
+                          - generic [ref=e854]: En cours
+                          - generic [ref=e855]:
+                            - generic [ref=e856]: 5,00 €
+                            - generic [ref=e857]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774448112936_Updated Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e858] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e859]:
+                          - img [ref=e861]
+                          - generic [ref=e863]:
+                            - generic [ref=e864]: paymiumXPlaywright__1774448112936_Updated
+                            - generic [ref=e865]:
+                              - generic [ref=e866]: Depuis
+                              - generic [ref=e867]: 25/03/2026
+                            - generic [ref=e868]:
+                              - generic [ref=e869]: Date du prochain achat
+                              - generic [ref=e870]: 01/04/2026
+                        - generic [ref=e871]:
+                          - generic [ref=e873]: En cours
+                          - generic [ref=e874]:
+                            - generic [ref=e875]: 5,00 €
+                            - generic [ref=e876]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774448747132 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e877] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e878]:
+                          - img [ref=e880]
+                          - generic [ref=e882]:
+                            - generic [ref=e883]: paymiumXPlaywright__1774448747132
+                            - generic [ref=e884]:
+                              - generic [ref=e885]: Depuis
+                              - generic [ref=e886]: 25/03/2026
+                            - generic [ref=e887]:
+                              - generic [ref=e888]: Date du prochain achat
+                              - generic [ref=e889]: 25/04/2026
+                        - generic [ref=e890]:
+                          - generic [ref=e892]: En cours
+                          - generic [ref=e893]:
+                            - generic [ref=e894]: 5,00 €
+                            - generic [ref=e895]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774450223805 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e896] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e897]:
+                          - img [ref=e899]
+                          - generic [ref=e901]:
+                            - generic [ref=e902]: paymiumXPlaywright__1774450223805
+                            - generic [ref=e903]:
+                              - generic [ref=e904]: Depuis
+                              - generic [ref=e905]: 25/03/2026
+                            - generic [ref=e906]:
+                              - generic [ref=e907]: Date du prochain achat
+                              - generic [ref=e908]: 25/04/2026
+                        - generic [ref=e909]:
+                          - generic [ref=e911]: En cours
+                          - generic [ref=e912]:
+                            - generic [ref=e913]: 5,00 €
+                            - generic [ref=e914]: Mensuelle
+                  - separator
+                  - button "E2E 1774450377510 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e915] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e916]:
+                          - img [ref=e918]
+                          - generic [ref=e920]:
+                            - generic [ref=e921]: E2E 1774450377510
+                            - generic [ref=e922]:
+                              - generic [ref=e923]: Depuis
+                              - generic [ref=e924]: 25/03/2026
+                            - generic [ref=e925]:
+                              - generic [ref=e926]: Date du prochain achat
+                              - generic [ref=e927]: 25/04/2026
+                        - generic [ref=e928]:
+                          - generic [ref=e930]: En cours
+                          - generic [ref=e931]:
+                            - generic [ref=e932]: 5,00 €
+                            - generic [ref=e933]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774450777075 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e934] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e935]:
+                          - img [ref=e937]
+                          - generic [ref=e939]:
+                            - generic [ref=e940]: paymiumXPlaywright__1774450777075
+                            - generic [ref=e941]:
+                              - generic [ref=e942]: Depuis
+                              - generic [ref=e943]: 25/03/2026
+                            - generic [ref=e944]:
+                              - generic [ref=e945]: Date du prochain achat
+                              - generic [ref=e946]: 25/04/2026
+                        - generic [ref=e947]:
+                          - generic [ref=e949]: En cours
+                          - generic [ref=e950]:
+                            - generic [ref=e951]: 5,00 €
+                            - generic [ref=e952]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774450810410 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e953] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e954]:
+                          - img [ref=e956]
+                          - generic [ref=e958]:
+                            - generic [ref=e959]: paymiumXPlaywright__1774450810410
+                            - generic [ref=e960]:
+                              - generic [ref=e961]: Depuis
+                              - generic [ref=e962]: 25/03/2026
+                            - generic [ref=e963]:
+                              - generic [ref=e964]: Date du prochain achat
+                              - generic [ref=e965]: 25/04/2026
+                        - generic [ref=e966]:
+                          - generic [ref=e968]: En cours
+                          - generic [ref=e969]:
+                            - generic [ref=e970]: 5,00 €
+                            - generic [ref=e971]: Mensuelle
+                  - separator
+                  - button "E2E 1774450765536 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e972] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e973]:
+                          - img [ref=e975]
+                          - generic [ref=e977]:
+                            - generic [ref=e978]: E2E 1774450765536
+                            - generic [ref=e979]:
+                              - generic [ref=e980]: Depuis
+                              - generic [ref=e981]: 25/03/2026
+                            - generic [ref=e982]:
+                              - generic [ref=e983]: Date du prochain achat
+                              - generic [ref=e984]: 25/04/2026
+                        - generic [ref=e985]:
+                          - generic [ref=e987]: En cours
+                          - generic [ref=e988]:
+                            - generic [ref=e989]: 5,00 €
+                            - generic [ref=e990]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774452440747 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e991] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e992]:
+                          - img [ref=e994]
+                          - generic [ref=e996]:
+                            - generic [ref=e997]: paymiumXPlaywright__1774452440747
+                            - generic [ref=e998]:
+                              - generic [ref=e999]: Depuis
+                              - generic [ref=e1000]: 25/03/2026
+                            - generic [ref=e1001]:
+                              - generic [ref=e1002]: Date du prochain achat
+                              - generic [ref=e1003]: 25/04/2026
+                        - generic [ref=e1004]:
+                          - generic [ref=e1006]: En cours
+                          - generic [ref=e1007]:
+                            - generic [ref=e1008]: 5,00 €
+                            - generic [ref=e1009]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774452507418_Updated Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e1010] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1011]:
+                          - img [ref=e1013]
+                          - generic [ref=e1015]:
+                            - generic [ref=e1016]: paymiumXPlaywright__1774452507418_Updated
+                            - generic [ref=e1017]:
+                              - generic [ref=e1018]: Depuis
+                              - generic [ref=e1019]: 25/03/2026
+                            - generic [ref=e1020]:
+                              - generic [ref=e1021]: Date du prochain achat
+                              - generic [ref=e1022]: 01/04/2026
+                        - generic [ref=e1023]:
+                          - generic [ref=e1025]: En cours
+                          - generic [ref=e1026]:
+                            - generic [ref=e1027]: 5,00 €
+                            - generic [ref=e1028]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774452671742_Updated Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e1029] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1030]:
+                          - img [ref=e1032]
+                          - generic [ref=e1034]:
+                            - generic [ref=e1035]: paymiumXPlaywright__1774452671742_Updated
+                            - generic [ref=e1036]:
+                              - generic [ref=e1037]: Depuis
+                              - generic [ref=e1038]: 25/03/2026
+                            - generic [ref=e1039]:
+                              - generic [ref=e1040]: Date du prochain achat
+                              - generic [ref=e1041]: 01/04/2026
+                        - generic [ref=e1042]:
+                          - generic [ref=e1044]: En cours
+                          - generic [ref=e1045]:
+                            - generic [ref=e1046]: 5,00 €
+                            - generic [ref=e1047]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774454648853 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1048] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1049]:
+                          - img [ref=e1051]
+                          - generic [ref=e1053]:
+                            - generic [ref=e1054]: paymiumXPlaywright__1774454648853
+                            - generic [ref=e1055]:
+                              - generic [ref=e1056]: Depuis
+                              - generic [ref=e1057]: 25/03/2026
+                            - generic [ref=e1058]:
+                              - generic [ref=e1059]: Date du prochain achat
+                              - generic [ref=e1060]: 25/04/2026
+                        - generic [ref=e1061]:
+                          - generic [ref=e1063]: En cours
+                          - generic [ref=e1064]:
+                            - generic [ref=e1065]: 5,00 €
+                            - generic [ref=e1066]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774456393321 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1067] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1068]:
+                          - img [ref=e1070]
+                          - generic [ref=e1072]:
+                            - generic [ref=e1073]: paymiumXPlaywright__1774456393321
+                            - generic [ref=e1074]:
+                              - generic [ref=e1075]: Depuis
+                              - generic [ref=e1076]: 25/03/2026
+                            - generic [ref=e1077]:
+                              - generic [ref=e1078]: Date du prochain achat
+                              - generic [ref=e1079]: 25/04/2026
+                        - generic [ref=e1080]:
+                          - generic [ref=e1082]: En cours
+                          - generic [ref=e1083]:
+                            - generic [ref=e1084]: 5,00 €
+                            - generic [ref=e1085]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774456429840_Updated Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e1086] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1087]:
+                          - img [ref=e1089]
+                          - generic [ref=e1091]:
+                            - generic [ref=e1092]: paymiumXPlaywright__1774456429840_Updated
+                            - generic [ref=e1093]:
+                              - generic [ref=e1094]: Depuis
+                              - generic [ref=e1095]: 25/03/2026
+                            - generic [ref=e1096]:
+                              - generic [ref=e1097]: Date du prochain achat
+                              - generic [ref=e1098]: 01/04/2026
+                        - generic [ref=e1099]:
+                          - generic [ref=e1101]: En cours
+                          - generic [ref=e1102]:
+                            - generic [ref=e1103]: 5,00 €
+                            - generic [ref=e1104]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774456583523_Updated Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e1105] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1106]:
+                          - img [ref=e1108]
+                          - generic [ref=e1110]:
+                            - generic [ref=e1111]: paymiumXPlaywright__1774456583523_Updated
+                            - generic [ref=e1112]:
+                              - generic [ref=e1113]: Depuis
+                              - generic [ref=e1114]: 25/03/2026
+                            - generic [ref=e1115]:
+                              - generic [ref=e1116]: Date du prochain achat
+                              - generic [ref=e1117]: 01/04/2026
+                        - generic [ref=e1118]:
+                          - generic [ref=e1120]: En cours
+                          - generic [ref=e1121]:
+                            - generic [ref=e1122]: 5,00 €
+                            - generic [ref=e1123]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774458067836 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1124] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1125]:
+                          - img [ref=e1127]
+                          - generic [ref=e1129]:
+                            - generic [ref=e1130]: paymiumXPlaywright__1774458067836
+                            - generic [ref=e1131]:
+                              - generic [ref=e1132]: Depuis
+                              - generic [ref=e1133]: 25/03/2026
+                            - generic [ref=e1134]:
+                              - generic [ref=e1135]: Date du prochain achat
+                              - generic [ref=e1136]: 25/04/2026
+                        - generic [ref=e1137]:
+                          - generic [ref=e1139]: En cours
+                          - generic [ref=e1140]:
+                            - generic [ref=e1141]: 5,00 €
+                            - generic [ref=e1142]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774458844985 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1143] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1144]:
+                          - img [ref=e1146]
+                          - generic [ref=e1148]:
+                            - generic [ref=e1149]: paymiumXPlaywright__1774458844985
+                            - generic [ref=e1150]:
+                              - generic [ref=e1151]: Depuis
+                              - generic [ref=e1152]: 25/03/2026
+                            - generic [ref=e1153]:
+                              - generic [ref=e1154]: Date du prochain achat
+                              - generic [ref=e1155]: 25/04/2026
+                        - generic [ref=e1156]:
+                          - generic [ref=e1158]: En cours
+                          - generic [ref=e1159]:
+                            - generic [ref=e1160]: 5,00 €
+                            - generic [ref=e1161]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774458864832_Updated Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e1162] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1163]:
+                          - img [ref=e1165]
+                          - generic [ref=e1167]:
+                            - generic [ref=e1168]: paymiumXPlaywright__1774458864832_Updated
+                            - generic [ref=e1169]:
+                              - generic [ref=e1170]: Depuis
+                              - generic [ref=e1171]: 25/03/2026
+                            - generic [ref=e1172]:
+                              - generic [ref=e1173]: Date du prochain achat
+                              - generic [ref=e1174]: 01/04/2026
+                        - generic [ref=e1175]:
+                          - generic [ref=e1177]: En cours
+                          - generic [ref=e1178]:
+                            - generic [ref=e1179]: 5,00 €
+                            - generic [ref=e1180]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774461665960 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1181] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1182]:
+                          - img [ref=e1184]
+                          - generic [ref=e1186]:
+                            - generic [ref=e1187]: paymiumXPlaywright__1774461665960
+                            - generic [ref=e1188]:
+                              - generic [ref=e1189]: Depuis
+                              - generic [ref=e1190]: 25/03/2026
+                            - generic [ref=e1191]:
+                              - generic [ref=e1192]: Date du prochain achat
+                              - generic [ref=e1193]: 25/04/2026
+                        - generic [ref=e1194]:
+                          - generic [ref=e1196]: En cours
+                          - generic [ref=e1197]:
+                            - generic [ref=e1198]: 5,00 €
+                            - generic [ref=e1199]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774464035557 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1200] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1201]:
+                          - img [ref=e1203]
+                          - generic [ref=e1205]:
+                            - generic [ref=e1206]: paymiumXPlaywright__1774464035557
+                            - generic [ref=e1207]:
+                              - generic [ref=e1208]: Depuis
+                              - generic [ref=e1209]: 25/03/2026
+                            - generic [ref=e1210]:
+                              - generic [ref=e1211]: Date du prochain achat
+                              - generic [ref=e1212]: 25/04/2026
+                        - generic [ref=e1213]:
+                          - generic [ref=e1215]: En cours
+                          - generic [ref=e1216]:
+                            - generic [ref=e1217]: 5,00 €
+                            - generic [ref=e1218]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774464091174_Updated Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e1219] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1220]:
+                          - img [ref=e1222]
+                          - generic [ref=e1224]:
+                            - generic [ref=e1225]: paymiumXPlaywright__1774464091174_Updated
+                            - generic [ref=e1226]:
+                              - generic [ref=e1227]: Depuis
+                              - generic [ref=e1228]: 25/03/2026
+                            - generic [ref=e1229]:
+                              - generic [ref=e1230]: Date du prochain achat
+                              - generic [ref=e1231]: 01/04/2026
+                        - generic [ref=e1232]:
+                          - generic [ref=e1234]: En cours
+                          - generic [ref=e1235]:
+                            - generic [ref=e1236]: 5,00 €
+                            - generic [ref=e1237]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774466881337 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1238] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1239]:
+                          - img [ref=e1241]
+                          - generic [ref=e1243]:
+                            - generic [ref=e1244]: paymiumXPlaywright__1774466881337
+                            - generic [ref=e1245]:
+                              - generic [ref=e1246]: Depuis
+                              - generic [ref=e1247]: 25/03/2026
+                            - generic [ref=e1248]:
+                              - generic [ref=e1249]: Date du prochain achat
+                              - generic [ref=e1250]: 25/04/2026
+                        - generic [ref=e1251]:
+                          - generic [ref=e1253]: En cours
+                          - generic [ref=e1254]:
+                            - generic [ref=e1255]: 5,00 €
+                            - generic [ref=e1256]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774467803471 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1257] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1258]:
+                          - img [ref=e1260]
+                          - generic [ref=e1262]:
+                            - generic [ref=e1263]: paymiumXPlaywright__1774467803471
+                            - generic [ref=e1264]:
+                              - generic [ref=e1265]: Depuis
+                              - generic [ref=e1266]: 25/03/2026
+                            - generic [ref=e1267]:
+                              - generic [ref=e1268]: Date du prochain achat
+                              - generic [ref=e1269]: 25/04/2026
+                        - generic [ref=e1270]:
+                          - generic [ref=e1272]: En cours
+                          - generic [ref=e1273]:
+                            - generic [ref=e1274]: 5,00 €
+                            - generic [ref=e1275]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774468009896_Updated Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e1276] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1277]:
+                          - img [ref=e1279]
+                          - generic [ref=e1281]:
+                            - generic [ref=e1282]: paymiumXPlaywright__1774468009896_Updated
+                            - generic [ref=e1283]:
+                              - generic [ref=e1284]: Depuis
+                              - generic [ref=e1285]: 25/03/2026
+                            - generic [ref=e1286]:
+                              - generic [ref=e1287]: Date du prochain achat
+                              - generic [ref=e1288]: 01/04/2026
+                        - generic [ref=e1289]:
+                          - generic [ref=e1291]: En cours
+                          - generic [ref=e1292]:
+                            - generic [ref=e1293]: 5,00 €
+                            - generic [ref=e1294]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774470212283 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1295] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1296]:
+                          - img [ref=e1298]
+                          - generic [ref=e1300]:
+                            - generic [ref=e1301]: paymiumXPlaywright__1774470212283
+                            - generic [ref=e1302]:
+                              - generic [ref=e1303]: Depuis
+                              - generic [ref=e1304]: 25/03/2026
+                            - generic [ref=e1305]:
+                              - generic [ref=e1306]: Date du prochain achat
+                              - generic [ref=e1307]: 25/04/2026
+                        - generic [ref=e1308]:
+                          - generic [ref=e1310]: En cours
+                          - generic [ref=e1311]:
+                            - generic [ref=e1312]: 5,00 €
+                            - generic [ref=e1313]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774470631176_Updated Depuis 25/03/2026 Date du prochain achat 01/04/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e1314] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1315]:
+                          - img [ref=e1317]
+                          - generic [ref=e1319]:
+                            - generic [ref=e1320]: paymiumXPlaywright__1774470631176_Updated
+                            - generic [ref=e1321]:
+                              - generic [ref=e1322]: Depuis
+                              - generic [ref=e1323]: 25/03/2026
+                            - generic [ref=e1324]:
+                              - generic [ref=e1325]: Date du prochain achat
+                              - generic [ref=e1326]: 01/04/2026
+                        - generic [ref=e1327]:
+                          - generic [ref=e1329]: En cours
+                          - generic [ref=e1330]:
+                            - generic [ref=e1331]: 5,00 €
+                            - generic [ref=e1332]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774471413854 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1333] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1334]:
+                          - img [ref=e1336]
+                          - generic [ref=e1338]:
+                            - generic [ref=e1339]: paymiumXPlaywright__1774471413854
+                            - generic [ref=e1340]:
+                              - generic [ref=e1341]: Depuis
+                              - generic [ref=e1342]: 25/03/2026
+                            - generic [ref=e1343]:
+                              - generic [ref=e1344]: Date du prochain achat
+                              - generic [ref=e1345]: 25/04/2026
+                        - generic [ref=e1346]:
+                          - generic [ref=e1348]: En cours
+                          - generic [ref=e1349]:
+                            - generic [ref=e1350]: 5,00 €
+                            - generic [ref=e1351]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774473383754 Depuis 25/03/2026 Date du prochain achat 25/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1352] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1353]:
+                          - img [ref=e1355]
+                          - generic [ref=e1357]:
+                            - generic [ref=e1358]: paymiumXPlaywright__1774473383754
+                            - generic [ref=e1359]:
+                              - generic [ref=e1360]: Depuis
+                              - generic [ref=e1361]: 25/03/2026
+                            - generic [ref=e1362]:
+                              - generic [ref=e1363]: Date du prochain achat
+                              - generic [ref=e1364]: 25/04/2026
+                        - generic [ref=e1365]:
+                          - generic [ref=e1367]: En cours
+                          - generic [ref=e1368]:
+                            - generic [ref=e1369]: 5,00 €
+                            - generic [ref=e1370]: Mensuelle
+                  - separator
+                  - button "E2E 1774479920996 Depuis 26/03/2026 Date du prochain achat 26/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1371] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1372]:
+                          - img [ref=e1374]
+                          - generic [ref=e1376]:
+                            - generic [ref=e1377]: E2E 1774479920996
+                            - generic [ref=e1378]:
+                              - generic [ref=e1379]: Depuis
+                              - generic [ref=e1380]: 26/03/2026
+                            - generic [ref=e1381]:
+                              - generic [ref=e1382]: Date du prochain achat
+                              - generic [ref=e1383]: 26/04/2026
+                        - generic [ref=e1384]:
+                          - generic [ref=e1386]: En cours
+                          - generic [ref=e1387]:
+                            - generic [ref=e1388]: 5,00 €
+                            - generic [ref=e1389]: Mensuelle
+                  - separator
+                  - button "E2E 1774480291037 Depuis 26/03/2026 Date du prochain achat 26/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1390] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1391]:
+                          - img [ref=e1393]
+                          - generic [ref=e1395]:
+                            - generic [ref=e1396]: E2E 1774480291037
+                            - generic [ref=e1397]:
+                              - generic [ref=e1398]: Depuis
+                              - generic [ref=e1399]: 26/03/2026
+                            - generic [ref=e1400]:
+                              - generic [ref=e1401]: Date du prochain achat
+                              - generic [ref=e1402]: 26/04/2026
+                        - generic [ref=e1403]:
+                          - generic [ref=e1405]: En cours
+                          - generic [ref=e1406]:
+                            - generic [ref=e1407]: 5,00 €
+                            - generic [ref=e1408]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774498611122 Depuis 26/03/2026 Date du prochain achat 26/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1409] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1410]:
+                          - img [ref=e1412]
+                          - generic [ref=e1414]:
+                            - generic [ref=e1415]: paymiumXPlaywright__1774498611122
+                            - generic [ref=e1416]:
+                              - generic [ref=e1417]: Depuis
+                              - generic [ref=e1418]: 26/03/2026
+                            - generic [ref=e1419]:
+                              - generic [ref=e1420]: Date du prochain achat
+                              - generic [ref=e1421]: 26/04/2026
+                        - generic [ref=e1422]:
+                          - generic [ref=e1424]: En cours
+                          - generic [ref=e1425]:
+                            - generic [ref=e1426]: 5,00 €
+                            - generic [ref=e1427]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774500574489 Depuis 26/03/2026 Date du prochain achat 26/04/2026 En cours 5,00 € Mensuelle":
+                    - generic [ref=e1428] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1429]:
+                          - img [ref=e1431]
+                          - generic [ref=e1433]:
+                            - generic [ref=e1434]: paymiumXPlaywright__1774500574489
+                            - generic [ref=e1435]:
+                              - generic [ref=e1436]: Depuis
+                              - generic [ref=e1437]: 26/03/2026
+                            - generic [ref=e1438]:
+                              - generic [ref=e1439]: Date du prochain achat
+                              - generic [ref=e1440]: 26/04/2026
+                        - generic [ref=e1441]:
+                          - generic [ref=e1443]: En cours
+                          - generic [ref=e1444]:
+                            - generic [ref=e1445]: 5,00 €
+                            - generic [ref=e1446]: Mensuelle
+                  - separator
+                  - button "paymiumXPlaywright__1774500675231_Updated Depuis 26/03/2026 Date du prochain achat 26/03/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e1447] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1448]:
+                          - img [ref=e1450]
+                          - generic [ref=e1452]:
+                            - generic [ref=e1453]: paymiumXPlaywright__1774500675231_Updated
+                            - generic [ref=e1454]:
+                              - generic [ref=e1455]: Depuis
+                              - generic [ref=e1456]: 26/03/2026
+                            - generic [ref=e1457]:
+                              - generic [ref=e1458]: Date du prochain achat
+                              - generic [ref=e1459]: 26/03/2026
+                        - generic [ref=e1460]:
+                          - generic [ref=e1462]: En cours
+                          - generic [ref=e1463]:
+                            - generic [ref=e1464]: 5,00 €
+                            - generic [ref=e1465]: Hebdomadaire
+                  - separator
+                  - button "paymiumXPlaywright__1774500971880_Updated Depuis 26/03/2026 Date du prochain achat 26/03/2026 En cours 5,00 € Hebdomadaire":
+                    - generic [ref=e1466] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1467]:
+                          - img [ref=e1469]
+                          - generic [ref=e1471]:
+                            - generic [ref=e1472]: paymiumXPlaywright__1774500971880_Updated
+                            - generic [ref=e1473]:
+                              - generic [ref=e1474]: Depuis
+                              - generic [ref=e1475]: 26/03/2026
+                            - generic [ref=e1476]:
+                              - generic [ref=e1477]: Date du prochain achat
+                              - generic [ref=e1478]: 26/03/2026
+                        - generic [ref=e1479]:
+                          - generic [ref=e1481]: En cours
+                          - generic [ref=e1482]:
+                            - generic [ref=e1483]: 5,00 €
+                            - generic [ref=e1484]: Hebdomadaire
+        - contentinfo [ref=e1485]:
+          - generic [ref=e1486]:
+            - generic [ref=e1487]: Copyright © 2026
+            - link "Paymium" [ref=e1488] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e1489]: 6.18.0
+            - link "Statut" [ref=e1490] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e1491] [cursor=pointer]
+```

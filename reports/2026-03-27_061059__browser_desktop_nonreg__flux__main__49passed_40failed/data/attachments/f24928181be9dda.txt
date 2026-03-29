@@ -1,0 +1,13 @@
+[pageerror] ReferenceError: containerStyles is not defined
+Error: expect(locator).toHaveText(expected) failed
+
+Locator: getByTestId('error')
+Expected pattern: /Impossible de créer le token/
+Timeout: 10000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toHaveText" with timeout 10000ms
+  - waiting for getByTestId('error')
+
+

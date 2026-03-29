@@ -1,0 +1,253 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button
+  - button
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - link [ref=e9] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e11]
+      - generic [ref=e47]:
+        - button "Acheter" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+          - generic [ref=e51]: Acheter
+        - button [ref=e52] [cursor=pointer]:
+          - img [ref=e53]
+        - button "FR" [ref=e56] [cursor=pointer]:
+          - generic [ref=e57]: FR
+          - img [ref=e58]
+        - button [ref=e60] [cursor=pointer]:
+          - img [ref=e63]
+        - button [ref=e66] [cursor=pointer]:
+          - img [ref=e67]
+        - button [ref=e70] [cursor=pointer]:
+          - img [ref=e71]
+        - button [ref=e74] [cursor=pointer]:
+          - img [ref=e75]
+    - generic [ref=e77]:
+      - navigation [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e82]:
+            - img [ref=e84]
+            - textbox "Chercher" [ref=e86]
+          - generic [ref=e87]:
+            - link "Tableau de bord" [ref=e88] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e89]
+              - generic [ref=e91]: Tableau de bord
+            - link "Portefeuille" [ref=e92] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e93]
+              - generic [ref=e95]: Portefeuille
+            - link "Achat / vente" [ref=e96] [cursor=pointer]:
+              - img [ref=e97]
+              - generic [ref=e99]: Achat / vente
+            - link "Dépôt / retrait" [ref=e100] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e101]
+              - generic [ref=e103]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e104] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e105]
+              - generic [ref=e107]: Achat récurrent
+            - link "Mode expert" [ref=e108] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e109]
+              - generic [ref=e111]: Mode expert
+            - link "Parrainage" [ref=e112] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e113]
+              - generic [ref=e115]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e116] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e117]
+              - generic [ref=e119]: Plan Bitcoin Famille
+            - link "Historique" [ref=e120] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e121]
+              - generic [ref=e123]: Historique
+      - generic [ref=e124]:
+        - generic [ref=e126]:
+          - generic [ref=e127]: Transactions
+          - generic [ref=e128]:
+            - img [ref=e130]
+            - generic [ref=e132]:
+              - generic [ref=e133]: Exporter l'historique de vos opérations
+              - generic [ref=e134]: Générez un fichier CSV ou PDF de vos transactions directement sur Paymium. Vous recevrez une notification par e-mail une fois l'export terminée. Au-delà de 12 exports, les plus anciens seront automatiquement supprimés.
+          - generic [ref=e135]:
+            - generic [ref=e136]:
+              - img [ref=e137]
+              - generic [ref=e139]:
+                - generic [ref=e140]: Nouvel export
+                - generic [ref=e141]: "Choisissez une période à exporter :"
+            - form [ref=e142]:
+              - generic [ref=e144]:
+                - generic [ref=e146]: Du
+                - generic [active] [ref=e147] [cursor=pointer]:
+                  - generic [ref=e148]:
+                    - textbox "Du" [ref=e149]:
+                      - /placeholder: jj
+                      - text: "23"
+                    - generic [ref=e150]: /
+                    - textbox "mm" [ref=e151]: "07"
+                    - generic [ref=e152]: /
+                    - textbox "aaaa" [ref=e153]: "2025"
+                  - img [ref=e155]
+              - generic [ref=e158]:
+                - generic [ref=e160]: Au
+                - generic [ref=e161] [cursor=pointer]:
+                  - generic [ref=e162]:
+                    - textbox "Au" [ref=e163]:
+                      - /placeholder: jj
+                      - text: "05"
+                    - generic [ref=e164]: /
+                    - textbox "mm" [ref=e165]: "08"
+                    - generic [ref=e166]: /
+                    - textbox "aaaa" [ref=e167]: "2025"
+                  - img [ref=e169]
+              - button "Générer" [ref=e171] [cursor=pointer]:
+                - generic [ref=e172]: Générer
+                - img [ref=e173]
+          - list [ref=e175]:
+            - generic [ref=e176]:
+              - generic [ref=e177]: Historique des exports
+              - generic [ref=e179]: "12"
+            - separator [ref=e180]
+            - generic [ref=e181]:
+              - generic [ref=e182] [cursor=pointer]:
+                - generic [ref=e183]: Date de la demande
+                - img [ref=e185]
+              - generic [ref=e187] [cursor=pointer]:
+                - generic [ref=e188]: Période exportée
+                - img [ref=e190]
+              - generic [ref=e192] [cursor=pointer]:
+                - generic [ref=e193]: Statut
+                - img [ref=e195]
+            - listitem [ref=e197]:
+              - generic [ref=e198]: 25 mars 2026, 17:10
+              - generic [ref=e199]: déc. 2025 - janv. 2026
+              - generic [ref=e201]:
+                - generic [ref=e202]: •
+                - generic [ref=e203]: Délivré
+              - button "PDF" [ref=e205] [cursor=pointer]:
+                - img [ref=e206]
+                - generic [ref=e208]: PDF
+            - separator [ref=e209]
+            - listitem [ref=e210]:
+              - generic [ref=e211]: 25 mars 2026, 18:32
+              - generic [ref=e212]: nov. 2025 - mars 2026
+              - generic [ref=e214]:
+                - generic [ref=e215]: •
+                - generic [ref=e216]: Délivré
+              - button "CSV" [ref=e218] [cursor=pointer]:
+                - img [ref=e219]
+                - generic [ref=e221]: CSV
+            - separator [ref=e222]
+            - listitem [ref=e223]:
+              - generic [ref=e224]: 25 mars 2026, 18:32
+              - generic [ref=e225]: nov. 2025 - mars 2026
+              - generic [ref=e227]:
+                - generic [ref=e228]: •
+                - generic [ref=e229]: Délivré
+              - button "PDF" [ref=e231] [cursor=pointer]:
+                - img [ref=e232]
+                - generic [ref=e234]: PDF
+            - separator [ref=e235]
+            - listitem [ref=e236]:
+              - generic [ref=e237]: 25 mars 2026, 19:24
+              - generic [ref=e238]: déc. 2025 - déc. 2025
+              - generic [ref=e240]:
+                - generic [ref=e241]: •
+                - generic [ref=e242]: Délivré
+              - button "CSV" [ref=e244] [cursor=pointer]:
+                - img [ref=e245]
+                - generic [ref=e247]: CSV
+            - separator [ref=e248]
+            - listitem [ref=e249]:
+              - generic [ref=e250]: 25 mars 2026, 19:24
+              - generic [ref=e251]: déc. 2025 - déc. 2025
+              - generic [ref=e253]:
+                - generic [ref=e254]: •
+                - generic [ref=e255]: Délivré
+              - button "PDF" [ref=e257] [cursor=pointer]:
+                - img [ref=e258]
+                - generic [ref=e260]: PDF
+            - separator [ref=e261]
+            - listitem [ref=e262]:
+              - generic [ref=e263]: 25 mars 2026, 20:24
+              - generic [ref=e264]: déc. 2025 - janv. 2026
+              - generic [ref=e266]:
+                - generic [ref=e267]: •
+                - generic [ref=e268]: Délivré
+              - button "CSV" [ref=e270] [cursor=pointer]:
+                - img [ref=e271]
+                - generic [ref=e273]: CSV
+            - separator [ref=e274]
+            - listitem [ref=e275]:
+              - generic [ref=e276]: 25 mars 2026, 20:24
+              - generic [ref=e277]: déc. 2025 - janv. 2026
+              - generic [ref=e279]:
+                - generic [ref=e280]: •
+                - generic [ref=e281]: Délivré
+              - button "PDF" [ref=e283] [cursor=pointer]:
+                - img [ref=e284]
+                - generic [ref=e286]: PDF
+            - separator [ref=e287]
+            - listitem [ref=e288]:
+              - generic [ref=e289]: 25 mars 2026, 20:25
+              - generic [ref=e290]: déc. 2025 - mars 2026
+              - generic [ref=e292]:
+                - generic [ref=e293]: •
+                - generic [ref=e294]: Délivré
+              - button "CSV" [ref=e296] [cursor=pointer]:
+                - img [ref=e297]
+                - generic [ref=e299]: CSV
+            - separator [ref=e300]
+            - listitem [ref=e301]:
+              - generic [ref=e302]: 25 mars 2026, 20:25
+              - generic [ref=e303]: déc. 2025 - mars 2026
+              - generic [ref=e305]:
+                - generic [ref=e306]: •
+                - generic [ref=e307]: Délivré
+              - button "PDF" [ref=e309] [cursor=pointer]:
+                - img [ref=e310]
+                - generic [ref=e312]: PDF
+            - separator [ref=e313]
+            - listitem [ref=e314]:
+              - generic [ref=e315]: 25 mars 2026, 22:49
+              - generic [ref=e316]: janv. 2026 - mars 2026
+              - generic [ref=e318]:
+                - generic [ref=e319]: •
+                - generic [ref=e320]: Délivré
+              - button "CSV" [ref=e322] [cursor=pointer]:
+                - img [ref=e323]
+                - generic [ref=e325]: CSV
+            - separator [ref=e326]
+            - listitem [ref=e327]:
+              - generic [ref=e328]: 26 mars 2026, 4:13
+              - generic [ref=e329]: juil. 2025 - août 2025
+              - generic [ref=e331]:
+                - generic [ref=e332]: •
+                - generic [ref=e333]: Délivré
+              - button "CSV" [ref=e335] [cursor=pointer]:
+                - img [ref=e336]
+                - generic [ref=e338]: CSV
+            - separator [ref=e339]
+            - listitem [ref=e340]:
+              - generic [ref=e341]: 26 mars 2026, 4:13
+              - generic [ref=e342]: juil. 2025 - août 2025
+              - generic [ref=e344]:
+                - generic [ref=e345]: •
+                - generic [ref=e346]: En cours
+        - contentinfo [ref=e347]:
+          - generic [ref=e348]:
+            - generic [ref=e349]: Copyright © 2026
+            - link "Paymium" [ref=e350] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e351]: 6.18.0
+            - link "Statut" [ref=e352] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e353] [cursor=pointer]
+```

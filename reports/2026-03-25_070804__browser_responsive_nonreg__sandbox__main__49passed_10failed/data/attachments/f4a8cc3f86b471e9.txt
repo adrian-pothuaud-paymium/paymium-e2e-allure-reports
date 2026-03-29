@@ -1,0 +1,2 @@
+Error: La navigation vers le programme de parrainage n'est pas disponible en responsive
+

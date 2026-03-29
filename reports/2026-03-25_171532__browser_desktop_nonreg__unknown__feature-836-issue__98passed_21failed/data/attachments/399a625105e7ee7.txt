@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'flat',     'civil',
+  'vapor',    'drift',
+  'ski',      'piano',
+  'limit',    'exotic',
+  'profit',   'ladder',
+  'remember', 'lawn'
+]

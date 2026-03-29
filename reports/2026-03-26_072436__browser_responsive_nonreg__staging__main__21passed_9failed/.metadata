@@ -1,0 +1,10 @@
+TIMESTAMP=2026-03-26_072436
+ENVIRONMENT=staging
+BRANCH=main
+E2E_BRANCH=main
+JOB=browser_responsive_nonreg
+TOTAL=30
+PASSED=21
+FAILED=9
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/40452
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/252729

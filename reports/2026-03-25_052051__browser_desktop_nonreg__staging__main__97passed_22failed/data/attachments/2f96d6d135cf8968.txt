@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'affair',   'harbor',
+  'false',    'bone',
+  'identify', 'job',
+  'rescue',   'shop',
+  'need',     'year',
+  'spend',    'ridge'
+]

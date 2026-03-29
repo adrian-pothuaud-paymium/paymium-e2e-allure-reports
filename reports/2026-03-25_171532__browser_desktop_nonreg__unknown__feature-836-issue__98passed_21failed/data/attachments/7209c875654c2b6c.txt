@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'empower', 'dune',
+  'harsh',   'furnace',
+  'drink',   'forum',
+  'slab',    'wedding',
+  'animal',  'again',
+  'cheap',   'illness'
+]

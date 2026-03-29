@@ -1,0 +1,3 @@
+Attempting to create test user (attempt 1 of 30)...
+Creating test user in environment flux with state verified - attempt -9/20
+Sending GET /users/confirmation request to verify email

@@ -1,0 +1,5 @@
+TimeoutError: locator.click: Timeout 60000ms exceeded.
+Call log:
+  - waiting for getByTestId('cross-currencies-actions-sell')
+
+

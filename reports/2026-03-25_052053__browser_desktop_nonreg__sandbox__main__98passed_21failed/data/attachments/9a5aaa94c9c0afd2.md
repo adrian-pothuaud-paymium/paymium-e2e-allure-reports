@@ -1,0 +1,198 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - button
+  - button
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e12]
+      - generic [ref=e48]:
+        - button "Acheter" [ref=e49] [cursor=pointer]:
+          - img [ref=e50]
+          - generic [ref=e52]: Acheter
+        - button [ref=e53] [cursor=pointer]:
+          - img [ref=e54]
+        - button "FR" [ref=e57] [cursor=pointer]:
+          - generic [ref=e58]: FR
+          - img [ref=e59]
+        - button [ref=e61] [cursor=pointer]:
+          - img [ref=e64]
+        - button [ref=e67] [cursor=pointer]:
+          - img [ref=e68]
+        - button [ref=e71] [cursor=pointer]:
+          - img [ref=e72]
+        - button [ref=e75] [cursor=pointer]:
+          - img [ref=e76]
+    - generic [ref=e78]:
+      - navigation [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e83]:
+            - img [ref=e85]
+            - textbox "Chercher" [ref=e87]
+          - generic [ref=e88]:
+            - link "Tableau de bord" [ref=e89] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e90]
+              - generic [ref=e92]: Tableau de bord
+            - link "Portefeuille" [ref=e93] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e94]
+              - generic [ref=e96]: Portefeuille
+            - link "Achat / vente" [ref=e97] [cursor=pointer]:
+              - img [ref=e98]
+              - generic [ref=e100]: Achat / vente
+            - link "Dépôt / retrait" [ref=e101] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e102]
+              - generic [ref=e104]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e105] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e106]
+              - generic [ref=e108]: Achat récurrent
+            - link "Mode expert" [ref=e109] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e110]
+              - generic [ref=e112]: Mode expert
+            - link "Parrainage" [ref=e113] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e114]
+              - generic [ref=e116]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e117] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e118]
+              - generic [ref=e120]: Plan Bitcoin Famille
+            - link "Historique" [ref=e121] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e122]
+              - generic [ref=e124]: Historique
+      - generic [ref=e125]:
+        - generic [ref=e127]:
+          - generic [ref=e128]: Transfert
+          - generic [ref=e129]:
+            - tablist [ref=e131]:
+              - generic [ref=e132]:
+                - tab "Déposer" [ref=e134] [cursor=pointer]:
+                  - generic [ref=e135]: Déposer
+                - tab "Retirer" [selected] [ref=e136] [cursor=pointer]:
+                  - generic [ref=e137]: Retirer
+                - tab "Transfert interne" [ref=e138] [cursor=pointer]:
+                  - generic [ref=e139]: Transfert interne
+                - tab "Envoyer par email" [ref=e140] [cursor=pointer]:
+                  - generic [ref=e141]: Envoyer par email
+            - tabpanel "Retirer" [ref=e142]:
+              - form [ref=e144]:
+                - generic [ref=e145]:
+                  - generic [ref=e146]:
+                    - generic [ref=e147]: Retrait
+                    - generic [ref=e148]:
+                      - generic [ref=e150]:
+                        - generic [ref=e152]: Devise
+                        - button "Devise" [ref=e154] [cursor=pointer]:
+                          - textbox [ref=e156]: BTC
+                          - generic [ref=e158]:
+                            - img [ref=e159]
+                            - generic [ref=e164]: Bitcoin
+                          - img [ref=e165]
+                      - alert [ref=e167]:
+                        - generic [ref=e168]: Retirer uniquement des BTC vers des adresses du réseau Bitcoin. Les retraits vers des adresses générées sur d'autres réseaux pourraient entraîner la perte de vos fonds.
+                      - generic [ref=e169]:
+                        - button "Adresse de retrait" [ref=e170] [cursor=pointer]:
+                          - generic [ref=e172]:
+                            - generic [ref=e174]: Adresse de retrait
+                            - button "Adresse de retrait" [ref=e176]:
+                              - textbox [ref=e178]: "92602"
+                              - generic [ref=e180]:
+                                - text: Playwright BTC address 1774415070788
+                                - generic [ref=e181]: "- 1M9VK...Ut5SQ"
+                              - img [ref=e182]
+                        - button "Gérer les adresses" [ref=e184] [cursor=pointer]
+                      - generic [ref=e186]:
+                        - generic [ref=e187]:
+                          - generic [ref=e188]: Montant du retrait
+                          - generic [ref=e189]:
+                            - generic [ref=e190]: Solde
+                            - generic [ref=e191]: 0,00000820 BTC
+                        - 'button "0.001 Max Montant trop élevé (max : 0.0000082)" [ref=e193] [cursor=pointer]':
+                          - generic [ref=e195]:
+                            - generic [ref=e196]:
+                              - textbox "Montant du retrait" [active] [ref=e197]: "0.001"
+                              - button "Max" [ref=e201]:
+                                - generic [ref=e202]: Max
+                            - generic [ref=e203]: "Montant trop élevé (max : 0.0000082)"
+                        - generic [ref=e204]:
+                          - button "25%" [ref=e205] [cursor=pointer]:
+                            - generic [ref=e206]: 25%
+                          - button "50%" [ref=e207] [cursor=pointer]:
+                            - generic [ref=e208]: 50%
+                          - button "75%" [ref=e209] [cursor=pointer]:
+                            - generic [ref=e210]: 75%
+                          - button "100%" [ref=e211] [cursor=pointer]:
+                            - generic [ref=e212]: 100%
+                      - button "Commentaire" [ref=e213] [cursor=pointer]:
+                        - generic [ref=e215]:
+                          - generic [ref=e217]: Commentaire
+                          - textbox "Commentaire" [ref=e219]
+                      - button "Retrait rapide Moins de 10 min. - payant" [ref=e223] [cursor=pointer]:
+                        - textbox [ref=e225]: "true"
+                        - generic [ref=e227]:
+                          - generic [ref=e228]: Retrait rapide
+                          - generic [ref=e229]: Moins de 10 min. - payant
+                        - img [ref=e230]
+                      - generic [ref=e232]:
+                        - generic [ref=e233]:
+                          - generic [ref=e234]: Retrait minimum
+                          - generic [ref=e235]: 0,00025000 BTC
+                        - generic [ref=e236]:
+                          - generic [ref=e237]: Frais
+                          - generic [ref=e238]: 0,00005000 BTC
+                      - button "Retirer" [disabled]:
+                        - generic: Retirer
+                  - generic [ref=e239]:
+                    - generic [ref=e240]:
+                      - generic [ref=e241]:
+                        - generic [ref=e242]: Bitcoin disponible
+                        - generic [ref=e243]:
+                          - img [ref=e244]
+                          - generic [ref=e246]: BTC
+                      - generic [ref=e247]:
+                        - generic [ref=e248]: Montant total
+                        - generic [ref=e249]: 0,01120820 BTC
+                      - generic [ref=e250]:
+                        - generic [ref=e251]: Montant verrouillé
+                        - generic [ref=e252]: 0,01120000 BTC
+                      - separator [ref=e253]
+                      - generic [ref=e254]:
+                        - generic [ref=e255]: Disponible à retirer
+                        - generic [ref=e256]: 0,00000820 BTC
+                    - generic [ref=e257]:
+                      - generic [ref=e258]:
+                        - img [ref=e259]
+                        - generic [ref=e261]: Informations retrait BTC
+                        - button "Masquer" [ref=e262] [cursor=pointer]:
+                          - generic [ref=e263]: Masquer
+                      - list [ref=e267]:
+                        - generic [ref=e268]: "Les transferts de bitcoins sont traités exclusivement sur la blockchain Bitcoin. Pour effectuer votre transfert :"
+                        - listitem [ref=e269]:
+                          - generic [ref=e271]: "1"
+                          - generic [ref=e272]: Remplissez le formulaire.
+                        - listitem [ref=e273]:
+                          - generic [ref=e275]: "2"
+                          - generic [ref=e276]: Autorisez le transfert en renseignant le code à 6 chiffres qui vous sera envoyé à votre email.
+                        - listitem [ref=e277]:
+                          - generic [ref=e279]: "3"
+                          - generic [ref=e280]: Généralement, les transferts sont exécutés en quelques minutes. Au-delà de 24h, veuillez contacter notre service support client.
+                        - listitem [ref=e281]:
+                          - generic [ref=e282]: Dans certains cas, notre équipe peut vous demander des informations complémentaires par mesure de sécurité.
+        - contentinfo [ref=e283]:
+          - generic [ref=e284]:
+            - generic [ref=e285]: Copyright © 2026
+            - link "Paymium" [ref=e286] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e287]: 6.17.0
+            - link "Statut" [ref=e288] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e289] [cursor=pointer]
+```

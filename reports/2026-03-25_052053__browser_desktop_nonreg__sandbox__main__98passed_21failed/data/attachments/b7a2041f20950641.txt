@@ -1,0 +1,4 @@
+Error: Transaction failed with alert: La validation a échoué.
+price n'est pas un nombre
+price ne peut pas être vide
+

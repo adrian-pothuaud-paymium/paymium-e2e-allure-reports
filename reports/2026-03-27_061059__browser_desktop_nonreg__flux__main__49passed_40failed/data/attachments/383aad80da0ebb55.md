@@ -1,0 +1,124 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button
+  - button
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - link [ref=e9] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e11]
+      - generic [ref=e47]:
+        - button "Acheter" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+          - generic [ref=e51]: Acheter
+        - button [ref=e52] [cursor=pointer]:
+          - img [ref=e53]
+        - button "FR" [ref=e56] [cursor=pointer]:
+          - generic [ref=e57]: FR
+          - img [ref=e58]
+        - button [ref=e60] [cursor=pointer]:
+          - img [ref=e63]
+        - button [ref=e65] [cursor=pointer]:
+          - img [ref=e66]
+        - button [ref=e69] [cursor=pointer]:
+          - img [ref=e70]
+        - button [ref=e73] [cursor=pointer]:
+          - img [ref=e74]
+    - generic [ref=e76]:
+      - navigation [ref=e77]:
+        - generic [ref=e78]:
+          - generic [ref=e81]:
+            - img [ref=e83]
+            - textbox "Chercher" [ref=e85]
+          - generic [ref=e86]:
+            - link "Tableau de bord" [ref=e87] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e88]
+              - generic [ref=e90]: Tableau de bord
+            - link "Portefeuille" [ref=e91] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e92]
+              - generic [ref=e94]: Portefeuille
+            - link "Achat / vente" [ref=e95] [cursor=pointer]:
+              - img [ref=e96]
+              - generic [ref=e98]: Achat / vente
+            - link "Dépôt / retrait" [ref=e99] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e100]
+              - generic [ref=e102]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e103] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e104]
+              - generic [ref=e106]: Achat récurrent
+            - link "Mode expert" [ref=e107] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e108]
+              - generic [ref=e110]: Mode expert
+            - link "Parrainage" [ref=e111] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e112]
+              - generic [ref=e114]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e115] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e116]
+              - generic [ref=e118]: Plan Bitcoin Famille
+            - link "Historique" [ref=e119] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e120]
+              - generic [ref=e122]: Historique
+      - generic [ref=e123]:
+        - generic [ref=e125]:
+          - generic [ref=e126]: Transfert
+          - generic [ref=e127]:
+            - tablist [ref=e129]:
+              - generic [ref=e130]:
+                - tab "Déposer" [selected] [ref=e132] [cursor=pointer]:
+                  - generic [ref=e133]: Déposer
+                - tab "Retirer" [ref=e134] [cursor=pointer]:
+                  - generic [ref=e135]: Retirer
+                - tab "Transfert interne" [ref=e136] [cursor=pointer]:
+                  - generic [ref=e137]: Transfert interne
+                - tab "Envoyer par email" [ref=e138] [cursor=pointer]:
+                  - generic [ref=e139]: Envoyer par email
+            - tabpanel "Déposer" [ref=e140]:
+              - generic [ref=e142]:
+                - generic [ref=e143]:
+                  - generic [ref=e144]:
+                    - generic [ref=e147]: Erreur 500
+                    - generic [ref=e148]: Quelque chose a mal tourné
+                  - generic [ref=e149]: "Une erreur inattendue s’est produite ou vous n’avez peut-être pas la permission de consulter cette page. Les liens suivants peuvent vous aider à reprendre votre navigation :"
+                  - generic [ref=e150]: "ReferenceError: containerStyles is not defined"
+                - generic [ref=e151]:
+                  - button "Retourner en arrière" [ref=e152] [cursor=pointer]:
+                    - img [ref=e153]
+                    - generic [ref=e155]: Retourner en arrière
+                  - button "Aller sur Paymium.com" [ref=e156] [cursor=pointer]:
+                    - generic [ref=e157]: Aller sur Paymium.com
+                - generic [ref=e158]:
+                  - generic [ref=e159]:
+                    - generic [ref=e160]:
+                      - link "Documentation" [ref=e161] [cursor=pointer]
+                      - img [ref=e162]
+                    - generic [ref=e164]: Plongez pour tout apprendre sur le produit.
+                  - generic [ref=e165]:
+                    - generic [ref=e166]:
+                      - link "Notre blog" [ref=e167] [cursor=pointer]
+                      - img [ref=e168]
+                    - generic [ref=e170]: Lisez les derniers articles sur notre blog.
+                  - generic [ref=e171]:
+                    - generic [ref=e172]:
+                      - link "Contacter le support" [ref=e173] [cursor=pointer]
+                      - img [ref=e174]
+                    - generic [ref=e176]: Notre équipe sympathique est là pour vous aider.
+        - contentinfo [ref=e177]:
+          - generic [ref=e178]:
+            - generic [ref=e179]: Copyright © 2026
+            - link "Paymium" [ref=e180] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e181]: 6.18.0
+            - link "Statut" [ref=e182] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e183] [cursor=pointer]
+```

@@ -1,0 +1,7 @@
+Error: expect(received).toPassAxe(expected)
+
+Expected: No violations
+Received: 3 violations
+
+Violations: aria-roles(2), button-name(1), link-in-text-block(1)
+    at /builds/crypto-platform/paymium-e2e-united/tests/playwright/tests/authentication/sign-in-ally/axe-scan-errors.spec.ts:22:28

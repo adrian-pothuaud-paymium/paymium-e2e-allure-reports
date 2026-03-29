@@ -1,0 +1,12 @@
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected pattern: /^Vos comptes bancaires enregistrés - Paymium$/
+Received string:  "Statut du compte - Paymium"
+Timeout: 30000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 30000ms
+    4 × unexpected value "Paymium"
+    29 × unexpected value "Statut du compte - Paymium"
+
+

@@ -1,0 +1,82 @@
+Creating withdrawal address POST https://sandbox-paymium.com/api/user/BTC/withdrawal_addresses with payload: {
+  currency: 'BTC',
+  label: 'Playwright BTC address 1774452993035',
+  address: '1CoA8FF2V7R3PMNXyaRm96EmJsmxDQZ6Sw',
+  environment: 'local',
+  asTestAccount: {
+    accountType: 'individual',
+    credentials: {
+      email: 'adrian.pothuaud+auto.primary@paymium.com',
+      password: 'Password123!',
+      authenticatorKey: null
+    },
+    environment: 'sandbox',
+    state: 'approved',
+    cryptoAddresses: {
+      Bitcoin: 'n1uxe1AgTga5ToLzy7F4yWEsN1T5up2Boj',
+      Ethereum: '0x94d8bd589db4b14bb8ac56c5198c8667f24d1203',
+      USDC: '0x94d8bd589db4b14bb8ac56c5198c8667f24d1203'
+    },
+    iban: null
+  },
+  autoConfirm: true
+}
+Create withdrawal address response: {
+  id: 92665,
+  address: '1CoA8FF2V7R3PMNXyaRm96EmJsmxDQZ6Sw',
+  personal_address: true,
+  address_exchange_name: '',
+  label: 'Playwright BTC address 1774452993035',
+  confirmed_at: null,
+  reauthentication: 'missing'
+}
+Asking for reauthentication for withdrawal address 92665 of currency BTC
+Ask for reauthentication response: {
+  created_at: '2026-03-25T15:36:37Z',
+  status: 'created',
+  factors: [
+    { type: 'email', fields: [Array], validity: 1200, status: 'ready' },
+    { type: 'sms', fields: [Array], validity: 60, status: 'ready' }
+  ]
+}
+Asking for reauthentication for withdrawal address 92665 of currency BTC
+Ask for reauthentication response: {
+  created_at: '2026-03-25T15:36:37Z',
+  status: 'in_progress',
+  factors: [
+    {
+      type: 'email',
+      fields: [Array],
+      validity: 1200,
+      status: 'awaiting'
+    },
+    { type: 'sms', fields: [Array], validity: 60, status: 'ready' }
+  ]
+}
+Reauthenticating withdrawal address 92665 of currency BTC with code 321654
+Reauthentication successful {
+  created_at: '2026-03-25T15:36:37Z',
+  status: 'in_progress',
+  factors: [
+    { type: 'email', status: 'completed' },
+    { type: 'sms', fields: [Array], validity: 60, status: 'ready' }
+  ]
+}
+Asking for reauthentication for withdrawal address 92665 of currency BTC
+Ask for reauthentication response: {
+  created_at: '2026-03-25T15:36:37Z',
+  status: 'in_progress',
+  factors: [
+    { type: 'email', status: 'completed' },
+    { type: 'sms', fields: [Array], validity: 60, status: 'awaiting' }
+  ]
+}
+Reauthenticating withdrawal address 92665 of currency BTC with code 321654
+Reauthentication successful {
+  created_at: '2026-03-25T15:36:37Z',
+  status: 'authorized',
+  factors: [
+    { type: 'email', status: 'completed' },
+    { type: 'sms', status: 'completed' }
+  ]
+}

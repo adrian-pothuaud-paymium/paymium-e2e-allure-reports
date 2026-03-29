@@ -1,0 +1,129 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button
+  - button
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - link [ref=e9] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e11]
+      - button [ref=e48] [cursor=pointer]:
+        - img [ref=e50]
+    - generic [ref=e52]:
+      - navigation
+      - generic [ref=e53]:
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]: Bienvenue ADRIAN
+            - generic [ref=e59]: Suivez, planifiez et gérez vos actifs.
+          - generic [ref=e63]:
+            - img
+            - generic [ref=e66]:
+              - generic [ref=e67]: Vérification en cours
+              - generic [ref=e68]: La vérification peut prendre jusqu'à un jour ouvrable.
+          - button
+          - progressbar [ref=e70]:
+            - img [ref=e72]
+          - generic [ref=e75]: Le marché
+          - list [ref=e76]:
+            - listitem [ref=e77] [cursor=pointer]:
+              - generic [ref=e78]:
+                - img [ref=e79]
+                - generic [ref=e83]:
+                  - generic [ref=e84]: Bitcoin
+                  - generic [ref=e85]: BTC
+              - generic [ref=e86]:
+                - generic [ref=e88]: "-"
+                - generic [ref=e90]: "-"
+            - separator [ref=e91]
+            - listitem [ref=e92] [cursor=pointer]:
+              - generic [ref=e93]:
+                - img [ref=e94]
+                - generic [ref=e104]:
+                  - generic [ref=e105]: Ethereum
+                  - generic [ref=e106]: ETH
+              - generic [ref=e107]:
+                - generic [ref=e109]: "-"
+                - generic [ref=e111]: "-"
+            - separator [ref=e112]
+            - listitem [ref=e113] [cursor=pointer]:
+              - generic [ref=e114]:
+                - img [ref=e115]
+                - generic [ref=e119]:
+                  - generic [ref=e120]: USDC
+                  - generic [ref=e121]: USDC
+              - generic [ref=e122]:
+                - generic [ref=e124]: "-"
+                - generic [ref=e126]: "-"
+            - separator [ref=e127]
+            - listitem [ref=e128] [cursor=pointer]:
+              - generic [ref=e129]:
+                - img [ref=e130]
+                - generic [ref=e135]:
+                  - generic [ref=e136]: Euro CoinVertible
+                  - generic [ref=e137]: EURCV
+              - generic [ref=e138]:
+                - generic [ref=e140]: "-"
+                - generic [ref=e142]: "-"
+            - separator [ref=e143]
+            - listitem [ref=e144] [cursor=pointer]:
+              - generic [ref=e145]:
+                - img [ref=e146]
+                - generic [ref=e150]:
+                  - generic [ref=e151]: Litecoin
+                  - generic [ref=e152]: LTC
+              - generic [ref=e153]:
+                - generic [ref=e155]: "-"
+                - generic [ref=e157]: "-"
+            - separator [ref=e158]
+            - listitem [ref=e159] [cursor=pointer]:
+              - generic [ref=e160]:
+                - img [ref=e161]
+                - generic [ref=e165]:
+                  - generic [ref=e166]: Bitcoin Cash
+                  - generic [ref=e167]: BCH
+              - generic [ref=e168]:
+                - generic [ref=e170]: "-"
+                - generic [ref=e172]: "-"
+            - separator [ref=e173]
+            - listitem [ref=e174] [cursor=pointer]:
+              - generic [ref=e175]:
+                - img [ref=e176]
+                - generic [ref=e184]:
+                  - generic [ref=e185]: Ethereum Classic
+                  - generic [ref=e186]: ETC
+              - generic [ref=e187]:
+                - generic [ref=e189]: "-"
+                - generic [ref=e191]: "-"
+            - separator [ref=e192]
+            - listitem [ref=e193] [cursor=pointer]:
+              - generic [ref=e194]:
+                - img [ref=e195]
+                - generic [ref=e199]:
+                  - generic [ref=e200]: Basic Attention Token
+                  - generic [ref=e201]: BAT
+              - generic [ref=e202]:
+                - generic [ref=e204]: "-"
+                - generic [ref=e206]: "-"
+            - separator [ref=e207]
+            - listitem [ref=e208] [cursor=pointer]:
+              - generic [ref=e209]:
+                - img [ref=e210]
+                - generic [ref=e214]:
+                  - generic [ref=e215]: Bcio
+                  - generic [ref=e216]: BCIO
+              - generic [ref=e217]:
+                - generic [ref=e219]: "-"
+                - generic [ref=e221]: "-"
+        - contentinfo [ref=e222]:
+          - generic [ref=e223]:
+            - generic [ref=e224]: Copyright © 2026
+            - link "Paymium" [ref=e225] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e226]: 6.18.0
+            - link "Statut" [ref=e227] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e228] [cursor=pointer]
+```

@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'swift',    'turkey',
+  'chaos',    'convince',
+  'receive',  'student',
+  'title',    'pen',
+  'favorite', 'resource',
+  'aware',    'frog'
+]

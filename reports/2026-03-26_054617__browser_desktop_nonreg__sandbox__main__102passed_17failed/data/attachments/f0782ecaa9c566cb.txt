@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'cook',    'doctor',
+  'patient', 'clay',
+  'local',   'base',
+  'inject',  'will',
+  'flame',   'grace',
+  'admit',   'giggle'
+]

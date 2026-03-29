@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'oven',     'genuine',
+  'shrimp',   'spread',
+  'daughter', 'liar',
+  'push',     'area',
+  'below',    'help',
+  'cinnamon', 'coral'
+]

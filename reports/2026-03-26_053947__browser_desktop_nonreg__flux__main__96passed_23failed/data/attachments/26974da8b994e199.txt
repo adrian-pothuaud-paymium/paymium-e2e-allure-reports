@@ -1,0 +1,14 @@
+Error: expect(locator).toContainText(expected) failed
+
+Locator: getByRole('list').getByRole('listitem').nth(1)
+Expected substring: "mars 2025"
+Received string:    "25 mars 2026, 19:24déc. 2025 - déc. 2025•DélivréCSV"
+Timeout: 10000ms
+
+Call log:
+  - Expect "toContainText" with timeout 10000ms
+  - waiting for getByRole('list').getByRole('listitem').nth(1)
+    14 × locator resolved to <li role="listitem" class="css-g5y9jx border-style-[solid] border-width-[0px] align-items-[center] background-color-[rgba(0,-0,-0,-0)] display-[flex] flex-basis-[auto] flex-direction-[row] flex-shrink-[0] list-style-[none] margin-top-[0px] margin-bottom-[0px] margin-left-[0px] margin-right-[0px] min-height-[0px] min-width-[0px] padding-top-[var(--space-xl)] padding-bottom-[var(--space-xl)] padding-right-[var(--space-3xl)] padding-left-[var(--space-3xl)] position-[relative] text-decoration-[none] z…>…</li>
+       - unexpected value "25 mars 2026, 19:24déc. 2025 - déc. 2025•DélivréCSV"
+
+

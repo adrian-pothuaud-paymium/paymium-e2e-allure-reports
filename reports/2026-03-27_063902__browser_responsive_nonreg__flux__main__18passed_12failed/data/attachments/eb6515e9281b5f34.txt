@@ -1,0 +1,11 @@
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected pattern: /^Statut du compte - Paymium$/
+Received string:  "Tableau de bord - Paymium"
+Timeout: 30000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 30000ms
+    26 × unexpected value "Tableau de bord - Paymium"
+
+

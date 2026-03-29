@@ -1,0 +1,79 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e7]:
+  - generic [ref=e8]:
+    - link [ref=e10] [cursor=pointer]:
+      - /url: https://www.paymium.com/
+      - img [ref=e12]
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - button "FR" [ref=e50] [cursor=pointer]:
+          - generic [ref=e51]: FR
+          - img [ref=e52]
+        - button [ref=e54] [cursor=pointer]:
+          - img [ref=e57]
+        - button [ref=e60] [cursor=pointer]:
+          - img [ref=e61]
+      - button "Se connecter" [ref=e64] [cursor=pointer]:
+        - generic [ref=e65]: Se connecter
+  - generic [ref=e66]:
+    - navigation
+    - generic [ref=e67]:
+      - form [ref=e71]:
+        - generic [ref=e73]:
+          - tablist [ref=e76]:
+            - tab [ref=e77]
+            - tab [selected] [ref=e79]
+            - tab [ref=e81]
+            - tab [ref=e82]
+            - tab [ref=e83]
+          - generic [ref=e84]:
+            - button [ref=e87] [cursor=pointer]:
+              - img [ref=e88]
+            - generic [ref=e90]:
+              - generic [ref=e92]:
+                - generic [ref=e93]:
+                  - generic [ref=e94]: Votre mot de passe
+                  - generic [ref=e95]: Il doit comporter 8 caractères ou plus.
+                - generic [ref=e97]:
+                  - generic [ref=e99]: Mot de passe
+                  - generic [ref=e100]:
+                    - textbox "Mot de passe" [ref=e101]:
+                      - /placeholder: "********"
+                      - text: Password123!
+                    - button [ref=e104] [cursor=pointer]:
+                      - img [ref=e105]
+                - generic [ref=e108]:
+                  - generic [ref=e110]: Confirmer le mot de passe
+                  - generic [ref=e111]:
+                    - textbox "Confirmer le mot de passe" [ref=e112]:
+                      - /placeholder: "********"
+                      - text: Password123!
+                    - button [ref=e115] [cursor=pointer]:
+                      - img [ref=e116]
+                - generic [ref=e118]:
+                  - generic [ref=e119]:
+                    - img [ref=e120]
+                    - generic [ref=e122]: 8 caractères
+                  - generic [ref=e123]:
+                    - img [ref=e124]
+                    - generic [ref=e126]: 1 chiffre
+                  - generic [ref=e127]:
+                    - img [ref=e128]
+                    - generic [ref=e130]: 1 caractère spécial @$!*#?&-%/
+                - alert [ref=e131]:
+                  - img [ref=e133]
+                  - generic [ref=e136]: Too Many Requests
+              - button "S'inscrire" [ref=e137] [cursor=pointer]:
+                - generic [ref=e138]: S'inscrire
+      - contentinfo [ref=e139]:
+        - generic [ref=e140]:
+          - generic [ref=e141]: Copyright © 2026
+          - link "Paymium" [ref=e142] [cursor=pointer]:
+            - /url: https://sandbox-paymium.webflow.io/
+          - generic [ref=e143]: 6.18.0
+          - link "Statut" [ref=e144] [cursor=pointer]:
+            - /url: /status
+          - link "Gérer vos cookies" [ref=e145] [cursor=pointer]
+```

@@ -1,0 +1,168 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - button
+    - button
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link [ref=e9] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e11]
+        - generic [ref=e47]:
+          - button "Acheter" [ref=e48] [cursor=pointer]:
+            - img [ref=e49]
+            - generic [ref=e51]: Acheter
+          - button [ref=e52] [cursor=pointer]:
+            - img [ref=e53]
+          - button "FR" [ref=e56] [cursor=pointer]:
+            - generic [ref=e57]: FR
+            - img [ref=e58]
+          - button [ref=e60] [cursor=pointer]:
+            - img [ref=e63]
+          - button [ref=e65] [cursor=pointer]:
+            - img [ref=e66]
+          - button [ref=e69] [cursor=pointer]:
+            - img [ref=e70]
+          - button [ref=e73] [cursor=pointer]:
+            - img [ref=e74]
+      - generic [ref=e76]:
+        - navigation [ref=e77]:
+          - generic [ref=e78]:
+            - generic [ref=e81]:
+              - img [ref=e83]
+              - textbox "Chercher" [ref=e85]
+            - generic [ref=e86]:
+              - link "Tableau de bord" [ref=e87] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e88]
+                - generic [ref=e90]: Tableau de bord
+              - link "Portefeuille" [ref=e91] [cursor=pointer]:
+                - /url: /wallet
+                - img [ref=e92]
+                - generic [ref=e94]: Portefeuille
+              - link "Achat / vente" [ref=e95] [cursor=pointer]:
+                - img [ref=e96]
+                - generic [ref=e98]: Achat / vente
+              - link "Dépôt / retrait" [ref=e99] [cursor=pointer]:
+                - /url: /deposit/EUR
+                - img [ref=e100]
+                - generic [ref=e102]: Dépôt / retrait
+              - link "Achat récurrent" [ref=e103] [cursor=pointer]:
+                - /url: /recurrent
+                - img [ref=e104]
+                - generic [ref=e106]: Achat récurrent
+              - link "Mode expert" [ref=e107] [cursor=pointer]:
+                - /url: /trade/BTC/EUR
+                - img [ref=e108]
+                - generic [ref=e110]: Mode expert
+              - link "Parrainage" [ref=e111] [cursor=pointer]:
+                - /url: /referral
+                - img [ref=e112]
+                - generic [ref=e114]: Parrainage
+              - link "Plan Bitcoin Famille" [ref=e115] [cursor=pointer]:
+                - /url: /family
+                - img [ref=e116]
+                - generic [ref=e118]: Plan Bitcoin Famille
+              - link "Historique" [ref=e119] [cursor=pointer]:
+                - /url: /history
+                - img [ref=e120]
+                - generic [ref=e122]: Historique
+        - generic [ref=e123]:
+          - generic [ref=e125]:
+            - generic [ref=e126]: Transfert
+            - generic [ref=e127]:
+              - tablist [ref=e129]:
+                - generic [ref=e130]:
+                  - tab "Déposer" [selected] [ref=e132] [cursor=pointer]:
+                    - generic [ref=e133]: Déposer
+                  - tab "Retirer" [ref=e134] [cursor=pointer]:
+                    - generic [ref=e135]: Retirer
+                  - tab "Transfert interne" [ref=e136] [cursor=pointer]:
+                    - generic [ref=e137]: Transfert interne
+                  - tab "Envoyer par email" [ref=e138] [cursor=pointer]:
+                    - generic [ref=e139]: Envoyer par email
+              - tabpanel "Déposer" [ref=e140]:
+                - generic [ref=e142]:
+                  - generic [ref=e143]:
+                    - generic [ref=e145]:
+                      - generic [ref=e147]: Choisissez une devise
+                      - button "Choisissez une devise" [ref=e149] [cursor=pointer]:
+                        - textbox [ref=e151]: BTC
+                        - generic [ref=e153]:
+                          - img [ref=e154]
+                          - generic [ref=e159]: Bitcoin
+                        - img [ref=e160]
+                    - generic [ref=e164]:
+                      - alert [ref=e165]:
+                        - generic [ref=e166]:
+                          - img [ref=e168]
+                          - generic [ref=e170]: Attention ! Seulement les dépôts de BTC sur la blockchain Bitcoin seront acceptés.
+                      - generic [ref=e171]: Copiez l'adresse ou scannez le code QR à l'aide d'une application compatible.
+                      - generic [ref=e176]:
+                        - link [ref=e179] [cursor=pointer]:
+                          - /url: https://blockchair.com/bitcoin/address/n1uxe1AgTga5ToLzy7F4yWEsN1T5up2Boj?from=paymium
+                          - img [ref=e180]
+                        - textbox [ref=e182]: n1uxe1AgTga5ToLzy7F4yWEsN1T5up2Boj
+                        - button [ref=e185] [cursor=pointer]:
+                          - img [ref=e186]
+                  - generic [ref=e189]:
+                    - generic [ref=e190]:
+                      - img [ref=e191]
+                      - generic [ref=e193]: Informations dépôt Bitcoin
+                      - button "Masquer" [ref=e194] [cursor=pointer]:
+                        - generic [ref=e195]: Masquer
+                    - generic [ref=e198]: Les dépôts en BTC sont automatiquement crédités après 3 confirmations sur la blockchain Bitcoin. Veillez à ne déposer que des bitcoins sur l'adresse ci-contre. Tout autre dépôt de crypto-monnaie ne sera pas accepté.
+          - contentinfo [ref=e199]:
+            - generic [ref=e200]:
+              - generic [ref=e201]: Copyright © 2026
+              - link "Paymium" [ref=e202] [cursor=pointer]:
+                - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+              - generic [ref=e203]: 6.18.0
+              - link "Statut" [ref=e204] [cursor=pointer]:
+                - /url: /status
+              - link "Gérer vos cookies" [ref=e205] [cursor=pointer]
+  - generic:
+    - generic:
+      - generic:
+        - 'dialog "Plateforme de Gestion du Consentement : Personnalisez vos Options" [ref=e206]':
+          - generic [ref=e207]:
+            - generic [ref=e208]:
+              - button "Fermer le widget sans consentement" [ref=e209] [cursor=pointer]:
+                - generic [ref=e210]: Continuer sans accepter
+              - generic [ref=e212]:
+                - heading "Des cookies pour vos bitcoins !" [level=1] [ref=e215]:
+                  - generic [ref=e216]: Des cookies pour
+                  - generic [ref=e217]: vos bitcoins !
+                - generic [ref=e218]:
+                  - paragraph [ref=e219]:
+                    - text: Parce que
+                    - strong [ref=e220]: stacker des sats ça donne faim
+                    - text: ", nous vous proposons une pause cookie ! 🍪"
+                  - paragraph [ref=e221]:
+                    - text: Avec votre accord, Paymium aimerait utiliser des
+                    - strong [ref=e222]: cookies
+                    - text: placés par nous et/ou par nos partenaires sur notre site.
+                  - paragraph [ref=e223]: Certains de ces cookies sont strictement nécessaires au bon fonctionnement du site et à l'optimisation de ses performances techniques.
+                  - paragraph [ref=e224]:
+                    - text: D'autres sont utilisés pour mesurer l'impact de nos campagnes publicitaires.
+                    - strong [ref=e225]: Vous choisissez ceux qui vous plaisent
+                    - text: ", comme pour le trading !"
+                  - paragraph [ref=e226]: Pour obtenir d'avantages d'information et/ou modifier vos préférences, cliquez sur le bouton "Je choisis".
+                - paragraph [ref=e228]: Pour modifier vos préférences par la suite, cliquez sur le lien 'Préférences de cookies' situé dans le pied de page.
+              - button "Consentements certifiés par Axeptio" [ref=e231]:
+                - generic [ref=e232]: Consentements certifiés par
+                - img "Axeptio" [ref=e236]
+            - generic [ref=e240]:
+              - button "Je choisis les cookies à configurer" [ref=e241] [cursor=pointer]: Je choisis
+              - button "Accepter les cookies" [ref=e242] [cursor=pointer]: OK pour moi
+          - generic [ref=e243]:
+            - text: Axeptio consent
+            - checkbox [ref=e244]
+          - generic [ref=e245]:
+            - paragraph [ref=e246]: "Plateforme de Gestion du Consentement : Personnalisez vos Options"
+            - paragraph [ref=e247]: Notre plateforme vous permet d'adapter et de gérer vos paramètres de confidentialité, en garantissant la conformité avec les réglementations. Personnalisez vos préférences pour contrôler la manière dont vos informations sont manipulées.
+        - button "Fermer le widget sans consentement" [ref=e248] [cursor=pointer]:
+          - img [ref=e252]
+```

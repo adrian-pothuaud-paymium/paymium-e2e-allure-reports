@@ -1,0 +1,10 @@
+TIMESTAMP=2026-03-25_151604
+ENVIRONMENT=unknown
+BRANCH=feature/improveTicketUI
+E2E_BRANCH=main
+JOB=browser_desktop_nonreg
+TOTAL=119
+PASSED=102
+FAILED=17
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/40382
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/251308

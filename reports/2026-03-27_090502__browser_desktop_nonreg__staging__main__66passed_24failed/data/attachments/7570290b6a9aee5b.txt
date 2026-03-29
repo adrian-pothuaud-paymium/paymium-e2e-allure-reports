@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'bundle',  'huge',
+  'tumble',  'announce',
+  'scare',   'kingdom',
+  'middle',  'gloom',
+  'wife',    'forum',
+  'acquire', 'pair'
+]

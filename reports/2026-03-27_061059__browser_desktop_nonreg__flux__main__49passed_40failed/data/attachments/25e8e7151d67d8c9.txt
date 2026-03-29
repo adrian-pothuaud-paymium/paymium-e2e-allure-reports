@@ -1,0 +1,16 @@
+POST /users failed Request failed with status code 429
+Attempt 1 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 2 to create test user failed: Request failed with status code 429
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByText('Le Ticket : doit être réouvert')
+Expected: visible
+Timeout: 10000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 10000ms
+  - waiting for getByText('Le Ticket : doit être réouvert')
+
+

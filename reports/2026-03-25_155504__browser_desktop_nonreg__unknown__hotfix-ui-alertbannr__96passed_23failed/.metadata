@@ -1,0 +1,10 @@
+TIMESTAMP=2026-03-25_155504
+ENVIRONMENT=unknown
+BRANCH=hotfix/ui-alertbannr
+E2E_BRANCH=main
+JOB=browser_desktop_nonreg
+TOTAL=119
+PASSED=96
+FAILED=23
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/40386
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/251393

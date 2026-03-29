@@ -1,0 +1,305 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - link:
+            - /url: /dashboard
+            - generic:
+              - img
+          - generic:
+            - button:
+              - img
+              - generic: Acheter
+            - button:
+              - img
+            - button:
+              - generic: FR
+              - img
+            - button:
+              - generic:
+                - generic:
+                  - img
+            - button:
+              - img
+            - button:
+              - img
+            - button:
+              - img
+        - generic:
+          - navigation:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                    - textbox:
+                      - /placeholder: Chercher
+              - generic:
+                - link:
+                  - /url: /dashboard
+                  - img
+                  - generic: Tableau de bord
+                - link:
+                  - /url: /wallet
+                  - img
+                  - generic: Portefeuille
+                - link:
+                  - img
+                  - generic: Achat / vente
+                - link:
+                  - /url: /deposit/EUR
+                  - img
+                  - generic: Dépôt / retrait
+                - link:
+                  - /url: /recurrent
+                  - img
+                  - generic: Achat récurrent
+                - link:
+                  - /url: /trade/BTC/EUR
+                  - img
+                  - generic: Mode expert
+                - link:
+                  - /url: /referral
+                  - img
+                  - generic: Parrainage
+                - link:
+                  - /url: /family
+                  - img
+                  - generic: Plan Bitcoin Famille
+                - link:
+                  - /url: /history
+                  - img
+                  - generic: Historique
+                - link:
+                  - /url: /otc
+                  - img
+                  - generic: OTC Trading
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - tablist:
+                          - generic:
+                            - tab:
+                              - generic: Mes actifs
+                            - tab [selected]:
+                              - generic: Mes portefeuilles non-hébergés
+                    - tabpanel:
+                      - generic:
+                        - generic:
+                          - button:
+                            - generic: Créer un nouveau wallet non-hébergé
+                        - generic:
+                          - list:
+                            - listitem:
+                              - generic: Devise
+                              - generic:
+                                - generic: Libellé
+                                - generic:
+                                  - img
+                              - generic:
+                                - generic: Commentaire
+                                - generic:
+                                  - img
+                              - generic:
+                                - generic: Cadeau ?
+                                - generic:
+                                  - img
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/24/2026 7:17:15 PM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/24/2026 7:59:17 PM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/24/2026 8:29:28 PM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/24/2026 9:22:49 PM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/25/2026 4:27:09 AM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/25/2026 5:14:23 AM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/25/2026 6:47:25 AM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/25/2026 8:02:14 AM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/25/2026 12:34:47 PM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/25/2026 1:28:57 PM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/25/2026 2:56:57 PM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/25/2026 3:44:03 PM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/25/2026 4:34:02 PM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/25/2026 8:31:09 PM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/26/2026 5:19:39 AM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/26/2026 9:07:24 AM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/26/2026 2:31:35 PM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/26/2026 5:53:38 PM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/27/2026 5:19:08 AM
+                            - separator
+                            - listitem:
+                              - generic:
+                                - img
+                              - generic:
+                                - generic: Playwright Wallet 3/27/2026 5:41:04 AM
+            - contentinfo:
+              - generic:
+                - generic: Copyright © 2026
+                - link:
+                  - /url: https://sandbox-paymium.webflow.io/
+                  - text: Paymium
+                - generic: 6.18.0
+                - link:
+                  - /url: /status
+                  - text: Statut
+                - link: Gérer vos cookies
+  - dialog [ref=e6]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e14]: Détails du wallet
+        - generic [ref=e17]: Modèle
+        - generic [ref=e20]: Sauvegarde
+        - generic [ref=e23]: Vérification
+        - generic [ref=e26]: Succès
+      - generic [ref=e27]:
+        - generic [ref=e28]: Votre wallet à 12 mots
+        - generic [ref=e29]: Voici votre wallet à 12 mots. Prenez le temps de les enregistrer sur le support hors-ligne de votre choix, comme une feuille de papier ou le modèle imprimé que vous venez de télécharger sur Paymium.
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]: "1."
+            - generic [ref=e33]: spray
+          - generic [ref=e34]:
+            - generic [ref=e35]: "2."
+            - generic [ref=e36]: behind
+          - generic [ref=e37]:
+            - generic [ref=e38]: "3."
+            - generic [ref=e39]: sick
+          - generic [ref=e40]:
+            - generic [ref=e41]: "4."
+            - generic [ref=e42]: correct
+          - generic [ref=e43]:
+            - generic [ref=e44]: "5."
+            - generic [ref=e45]: glimpse
+          - generic [ref=e46]:
+            - generic [ref=e47]: "6."
+            - generic [ref=e48]: humor
+          - generic [ref=e49]:
+            - generic [ref=e50]: "7."
+            - generic [ref=e51]: armed
+          - generic [ref=e52]:
+            - generic [ref=e53]: "8."
+            - generic [ref=e54]: spy
+          - generic [ref=e55]:
+            - generic [ref=e56]: "9."
+            - generic [ref=e57]: goose
+          - generic [ref=e58]:
+            - generic [ref=e59]: "10."
+            - generic [ref=e60]: release
+          - generic [ref=e61]:
+            - generic [ref=e62]: "11."
+            - generic [ref=e63]: trend
+          - generic [ref=e64]:
+            - generic [ref=e65]: "12."
+            - generic [ref=e66]: denial
+        - checkbox "En cochant cette case, je confirme avoir enregistré mes 12 mots sur le support de mon choix tel qu'une feuille de papier ou le modèle téléchargé depuis Paymium. Je comprends et reconnais également que Paymium n'a pas eu accès à ce wallet et ne détient pas la clé privée. En cas de perte, Paymium ne sera pas tenu responsable et n'aura aucun moyen de récupérer l'accès aux fonds sur ce wallet." [checked] [active] [ref=e67] [cursor=pointer]:
+          - checkbox [checked] [ref=e69]
+          - img [ref=e71]
+          - generic [ref=e73]: En cochant cette case, je confirme avoir enregistré mes 12 mots sur le support de mon choix tel qu'une feuille de papier ou le modèle téléchargé depuis Paymium. Je comprends et reconnais également que Paymium n'a pas eu accès à ce wallet et ne détient pas la clé privée. En cas de perte, Paymium ne sera pas tenu responsable et n'aura aucun moyen de récupérer l'accès aux fonds sur ce wallet.
+        - button "Continuer" [ref=e75] [cursor=pointer]:
+          - generic [ref=e76]: Continuer
+      - generic [ref=e77]:
+        - separator [ref=e78]
+        - button "Fermer" [ref=e79] [cursor=pointer]:
+          - generic [ref=e80]: Fermer
+```

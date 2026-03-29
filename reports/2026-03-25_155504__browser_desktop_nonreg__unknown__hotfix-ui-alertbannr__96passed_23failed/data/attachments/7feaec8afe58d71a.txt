@@ -1,0 +1,10 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+Error: locator.evaluate: Error: strict mode violation: getByRole('dialog') resolved to 2 elements:
+    1) <div role="dialog" class="css-g5y9jx" aria-labelledby="_r_0_-title" aria-describedby="_r_0_-description">…</div> aka getByRole('dialog').filter({ hasText: 'AcheterVendreConvertirBitcoinBTC0€Solde disponible7 134,52 €1 780 €3 570 €5 350' })
+    2) <div role="dialog" data-testid="swap-buy-sell" class="css-g5y9jx border-style-[solid] border-width-[0px] align-items-[stretch] background-color-[rgba(0,-0,-0,-0)] display-[flex] flex-basis-[auto] flex-direction-[column] flex-shrink-[0] list-style-[none] margin-top-[0px] margin-bottom-[0px] margin-left-[0px] margin-right-[0px] min-height-[0px] min-width-[0px] padding-top-[0px] padding-bottom-[0px] padding-right-[0px] padding-left-[0px] position-[relative] text-decoration-[none] z-index-[0] align-sel…>…</div> aka getByTestId('swap-buy-sell')
+
+Call log:
+  - waiting for getByRole('dialog')
+
+

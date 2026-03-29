@@ -1,0 +1,189 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button
+  - button
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - link [ref=e9] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e11]
+      - generic [ref=e47]:
+        - button "Acheter" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+          - generic [ref=e51]: Acheter
+        - button [ref=e52] [cursor=pointer]:
+          - img [ref=e53]
+        - button "FR" [ref=e56] [cursor=pointer]:
+          - generic [ref=e57]: FR
+          - img [ref=e58]
+        - button [ref=e60] [cursor=pointer]:
+          - img [ref=e63]
+        - button [ref=e66] [cursor=pointer]:
+          - img [ref=e67]
+        - button [ref=e70] [cursor=pointer]:
+          - img [ref=e71]
+        - button [ref=e74] [cursor=pointer]:
+          - img [ref=e75]
+    - generic [ref=e77]:
+      - navigation [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e82]:
+            - img [ref=e84]
+            - textbox "Chercher" [ref=e86]
+          - generic [ref=e87]:
+            - link "Tableau de bord" [ref=e88] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e89]
+              - generic [ref=e91]: Tableau de bord
+            - link "Portefeuille" [ref=e92] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e93]
+              - generic [ref=e95]: Portefeuille
+            - link "Achat / vente" [ref=e96] [cursor=pointer]:
+              - img [ref=e97]
+              - generic [ref=e99]: Achat / vente
+            - link "Dépôt / retrait" [ref=e100] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e101]
+              - generic [ref=e103]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e104] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e105]
+              - generic [ref=e107]: Achat récurrent
+            - link "Mode expert" [ref=e108] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e109]
+              - generic [ref=e111]: Mode expert
+            - link "Parrainage" [ref=e112] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e113]
+              - generic [ref=e115]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e116] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e117]
+              - generic [ref=e119]: Plan Bitcoin Famille
+            - link "Historique" [ref=e120] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e121]
+              - generic [ref=e123]: Historique
+      - generic [ref=e124]:
+        - generic [ref=e128]:
+          - tablist [ref=e131]:
+            - generic [ref=e132]:
+              - tab "Mes actifs" [selected] [ref=e134] [cursor=pointer]:
+                - generic [ref=e135]: Mes actifs
+              - tab "Mes portefeuilles non-hébergés" [ref=e136] [cursor=pointer]:
+                - generic [ref=e137]: Mes portefeuilles non-hébergés
+          - tabpanel "Mes actifs" [ref=e138]:
+            - generic [ref=e139]:
+              - generic [ref=e140]:
+                - generic [ref=e141]: Valeur de mon portefeuille
+                - generic [ref=e142]:
+                  - generic [ref=e143]: ≈
+                  - generic [ref=e144]: 27 976,49 €
+              - generic [ref=e145]:
+                - tablist [ref=e147]:
+                  - generic [ref=e148]:
+                    - tab "Solde" [selected] [ref=e149] [cursor=pointer]:
+                      - generic [ref=e150]: Solde
+                    - tab "Allocation" [ref=e151] [cursor=pointer]:
+                      - generic [ref=e152]: Allocation
+                - tabpanel "Solde" [ref=e154]:
+                  - generic [ref=e155]:
+                    - generic [ref=e156]:
+                      - generic [ref=e158] [cursor=pointer]: 1D
+                      - generic [ref=e160] [cursor=pointer]: 1W
+                      - generic [ref=e162] [cursor=pointer]: 1M
+                      - generic [ref=e164] [cursor=pointer]: 3M
+                      - generic [ref=e166] [cursor=pointer]: 1Y
+                      - generic [ref=e168] [cursor=pointer]: ALL
+                    - generic [ref=e170]:
+                      - generic [ref=e171]:
+                        - img [ref=e172]
+                        - generic [ref=e174]: 31 928,41€
+                      - generic [ref=e175]:
+                        - img [ref=e176]
+                        - generic [ref=e178]: 18 232,9€
+            - list [ref=e184]:
+              - listitem [ref=e185]:
+                - generic [ref=e186]:
+                  - generic [ref=e187]:
+                    - generic [ref=e188]: Euros
+                    - generic [ref=e189]: 33,89 %
+                  - generic [ref=e191]: 9 481,07 €
+              - separator [ref=e192]
+              - listitem [ref=e193] [cursor=pointer]:
+                - generic [ref=e194]:
+                  - generic [ref=e195]:
+                    - img [ref=e196]
+                    - generic [ref=e201]:
+                      - generic [ref=e202]: Compte de trading
+                      - generic [ref=e203]: €
+                  - generic [ref=e205]: 9 365,07
+              - separator [ref=e206]
+              - listitem [ref=e207] [cursor=pointer]:
+                - generic [ref=e208]:
+                  - generic [ref=e209]:
+                    - img [ref=e210]
+                    - generic [ref=e215]:
+                      - generic [ref=e216]: Compte de dépôt
+                      - generic [ref=e217]: €
+                  - generic [ref=e219]: 116,00
+            - list [ref=e220]:
+              - listitem [ref=e221]:
+                - generic [ref=e222]:
+                  - generic [ref=e223]:
+                    - generic [ref=e224]: Cryptos
+                    - generic [ref=e225]: 66,11 %
+                  - generic [ref=e227]: 18 495,42 €
+              - separator [ref=e228]
+              - listitem [ref=e229] [cursor=pointer]:
+                - generic [ref=e230]:
+                  - generic [ref=e231]:
+                    - img [ref=e232]
+                    - generic [ref=e236]:
+                      - generic [ref=e237]: Bitcoin
+                      - generic [ref=e238]: BTC
+                  - generic [ref=e239]:
+                    - generic [ref=e240]: 0,16231694
+                    - generic [ref=e241]:
+                      - generic [ref=e242]: ≈
+                      - generic [ref=e243]: 12 352,31 €
+              - separator [ref=e244]
+              - listitem [ref=e245] [cursor=pointer]:
+                - generic [ref=e246]:
+                  - generic [ref=e247]:
+                    - img [ref=e248]
+                    - generic [ref=e258]:
+                      - generic [ref=e259]: Ethereum
+                      - generic [ref=e260]: ETH
+                  - generic [ref=e261]:
+                    - generic [ref=e262]: 1,77617418
+                    - generic [ref=e263]:
+                      - generic [ref=e264]: ≈
+                      - generic [ref=e265]: 3 203,73 €
+              - separator [ref=e266]
+              - listitem [ref=e267] [cursor=pointer]:
+                - generic [ref=e268]:
+                  - generic [ref=e269]:
+                    - img [ref=e270]
+                    - generic [ref=e274]:
+                      - generic [ref=e275]: USDC
+                      - generic [ref=e276]: USDC
+                  - generic [ref=e277]:
+                    - generic [ref=e278]: 3 378,579887
+                    - generic [ref=e279]:
+                      - generic [ref=e280]: ≈
+                      - generic [ref=e281]: 2 939,36 €
+        - contentinfo [ref=e282]:
+          - generic [ref=e283]:
+            - generic [ref=e284]: Copyright © 2026
+            - link "Paymium" [ref=e285] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e286]: 6.18.0
+            - link "Statut" [ref=e287] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e288] [cursor=pointer]
+```

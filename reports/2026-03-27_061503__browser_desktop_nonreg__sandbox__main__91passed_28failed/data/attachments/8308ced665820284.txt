@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'icon',    'slim',
+  'major',   'size',
+  'expire',  'rich',
+  'chicken', 'vague',
+  'price',   'during',
+  'great',   'trap'
+]

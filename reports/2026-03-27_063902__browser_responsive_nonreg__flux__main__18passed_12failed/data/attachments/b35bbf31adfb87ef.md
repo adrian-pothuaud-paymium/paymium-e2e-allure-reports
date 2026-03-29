@@ -1,0 +1,69 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button
+  - button
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - link [ref=e9] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e11]
+      - button [ref=e48] [cursor=pointer]:
+        - img [ref=e50]
+    - generic [ref=e52]:
+      - navigation
+      - generic [ref=e53]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: Transfert
+          - generic [ref=e57]:
+            - tablist [ref=e59]:
+              - generic [ref=e60]:
+                - tab "Déposer" [selected] [ref=e62] [cursor=pointer]:
+                  - generic [ref=e63]: Déposer
+                - tab "Retirer" [ref=e64] [cursor=pointer]:
+                  - generic [ref=e65]: Retirer
+                - tab "Transfert interne" [ref=e66] [cursor=pointer]:
+                  - generic [ref=e67]: Transfert interne
+                - tab "Envoyer par email" [ref=e68] [cursor=pointer]:
+                  - generic [ref=e69]: Envoyer par email
+            - tabpanel "Déposer" [ref=e70]:
+              - generic [ref=e72]:
+                - generic [ref=e73]:
+                  - generic [ref=e74]:
+                    - generic [ref=e77]: Erreur 500
+                    - generic [ref=e78]: Quelque chose a mal tourné
+                  - generic [ref=e79]: "Une erreur inattendue s’est produite ou vous n’avez peut-être pas la permission de consulter cette page. Les liens suivants peuvent vous aider à reprendre votre navigation :"
+                  - generic [ref=e80]: "ReferenceError: Can't find variable: containerStyles"
+                - generic [ref=e81]:
+                  - button "Retourner en arrière" [ref=e82] [cursor=pointer]:
+                    - img [ref=e83]
+                    - generic [ref=e85]: Retourner en arrière
+                  - button "Aller sur Paymium.com" [ref=e86] [cursor=pointer]:
+                    - generic [ref=e87]: Aller sur Paymium.com
+                - generic [ref=e88]:
+                  - generic [ref=e89]:
+                    - generic [ref=e90]:
+                      - link "Documentation" [ref=e91] [cursor=pointer]
+                      - img [ref=e92]
+                    - generic [ref=e94]: Plongez pour tout apprendre sur le produit.
+                  - generic [ref=e95]:
+                    - generic [ref=e96]:
+                      - link "Notre blog" [ref=e97] [cursor=pointer]
+                      - img [ref=e98]
+                    - generic [ref=e100]: Lisez les derniers articles sur notre blog.
+                  - generic [ref=e101]:
+                    - generic [ref=e102]:
+                      - link "Contacter le support" [ref=e103] [cursor=pointer]
+                      - img [ref=e104]
+                    - generic [ref=e106]: Notre équipe sympathique est là pour vous aider.
+        - contentinfo [ref=e107]:
+          - generic [ref=e108]:
+            - generic [ref=e109]: Copyright © 2026
+            - link "Paymium" [ref=e110] [cursor=pointer]:
+              - /url: https://sandbox-paymium.webflow.io/
+            - generic [ref=e111]: 6.18.0
+            - link "Statut" [ref=e112] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e113] [cursor=pointer]
+```

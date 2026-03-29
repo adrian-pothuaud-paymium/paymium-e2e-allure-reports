@@ -1,0 +1,283 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button
+  - button
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - link [ref=e9] [cursor=pointer]:
+        - /url: /dashboard
+        - img [ref=e11]
+      - generic [ref=e47]:
+        - button "Acheter" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+          - generic [ref=e51]: Acheter
+        - button [ref=e52] [cursor=pointer]:
+          - img [ref=e53]
+        - button "FR" [ref=e56] [cursor=pointer]:
+          - generic [ref=e57]: FR
+          - img [ref=e58]
+        - button [ref=e60] [cursor=pointer]:
+          - img [ref=e63]
+        - button [ref=e65] [cursor=pointer]:
+          - img [ref=e66]
+        - button [ref=e69] [cursor=pointer]:
+          - img [ref=e70]
+        - button [ref=e73] [cursor=pointer]:
+          - img [ref=e74]
+    - generic [ref=e76]:
+      - navigation [ref=e77]:
+        - generic [ref=e78]:
+          - generic [ref=e81]:
+            - img [ref=e83]
+            - textbox "Chercher" [ref=e85]
+          - generic [ref=e86]:
+            - link "Tableau de bord" [ref=e87] [cursor=pointer]:
+              - /url: /dashboard
+              - img [ref=e88]
+              - generic [ref=e90]: Tableau de bord
+            - link "Portefeuille" [ref=e91] [cursor=pointer]:
+              - /url: /wallet
+              - img [ref=e92]
+              - generic [ref=e94]: Portefeuille
+            - link "Achat / vente" [ref=e95] [cursor=pointer]:
+              - img [ref=e96]
+              - generic [ref=e98]: Achat / vente
+            - link "Dépôt / retrait" [ref=e99] [cursor=pointer]:
+              - /url: /deposit/EUR
+              - img [ref=e100]
+              - generic [ref=e102]: Dépôt / retrait
+            - link "Achat récurrent" [ref=e103] [cursor=pointer]:
+              - /url: /recurrent
+              - img [ref=e104]
+              - generic [ref=e106]: Achat récurrent
+            - link "Mode expert" [ref=e107] [cursor=pointer]:
+              - /url: /trade/BTC/EUR
+              - img [ref=e108]
+              - generic [ref=e110]: Mode expert
+            - link "Parrainage" [ref=e111] [cursor=pointer]:
+              - /url: /referral
+              - img [ref=e112]
+              - generic [ref=e114]: Parrainage
+            - link "Plan Bitcoin Famille" [ref=e115] [cursor=pointer]:
+              - /url: /family
+              - img [ref=e116]
+              - generic [ref=e118]: Plan Bitcoin Famille
+            - link "Historique" [ref=e119] [cursor=pointer]:
+              - /url: /history
+              - img [ref=e120]
+              - generic [ref=e122]: Historique
+      - generic [ref=e123]:
+        - generic [ref=e125]:
+          - tablist [ref=e127]:
+            - generic [ref=e128]:
+              - tab "Vue d'ensemble" [ref=e130] [cursor=pointer]:
+                - generic [ref=e131]: Vue d'ensemble
+              - tab "Mes boutons de paiement" [active] [selected] [ref=e132] [cursor=pointer]:
+                - generic [ref=e133]: Mes boutons de paiement
+              - tab "Historique" [ref=e134] [cursor=pointer]:
+                - generic [ref=e135]: Historique
+          - generic [ref=e138]:
+            - button "Créer" [ref=e141] [cursor=pointer]:
+              - img [ref=e142]
+              - generic [ref=e144]: Créer
+            - list [ref=e145]:
+              - listitem [ref=e146]:
+                - generic [ref=e147] [cursor=pointer]:
+                  - button "Libellé" [ref=e148]
+                  - img [ref=e150]
+                - generic [ref=e152] [cursor=pointer]:
+                  - generic [ref=e153]: Montant
+                  - img [ref=e155]
+                - generic [ref=e157]: Conversion
+                - generic [ref=e158] [cursor=pointer]:
+                  - generic [ref=e159]: Date
+                  - img [ref=e161]
+              - separator [ref=e163]
+              - listitem [ref=e164] [cursor=pointer]:
+                - generic [ref=e165]: Playwright 2026-03-25T15:20:25.120Z
+                - generic [ref=e166]: 12,00 €
+                - generic [ref=e167]:
+                  - generic [ref=e168]: 0 % Bitcoin
+                  - generic [ref=e169]: 100 % Euro
+                - generic [ref=e170]: 25/03/2026 16:20
+              - separator [ref=e171]
+              - listitem [ref=e172] [cursor=pointer]:
+                - generic [ref=e173]: Playwright 2026-03-25T15:17:53.449Z
+                - generic [ref=e174]: 12,00 €
+                - generic [ref=e175]:
+                  - generic [ref=e176]: 0 % Bitcoin
+                  - generic [ref=e177]: 100 % Euro
+                - generic [ref=e178]: 25/03/2026 16:17
+              - separator [ref=e179]
+              - listitem [ref=e180] [cursor=pointer]:
+                - generic [ref=e181]: Playwright 2026-03-25T15:15:06.346Z
+                - generic [ref=e182]: 100,00 €
+                - generic [ref=e183]:
+                  - generic [ref=e184]: 100 % Bitcoin
+                  - generic [ref=e185]: 0 % Euro
+                - generic [ref=e186]: 25/03/2026 16:16
+              - separator [ref=e187]
+              - listitem [ref=e188] [cursor=pointer]:
+                - generic [ref=e189]: Playwright 2026-03-25T15:15:07.087Z
+                - generic [ref=e190]: 12,00 €
+                - generic [ref=e191]:
+                  - generic [ref=e192]: 0 % Bitcoin
+                  - generic [ref=e193]: 100 % Euro
+                - generic [ref=e194]: 25/03/2026 16:15
+              - separator [ref=e195]
+              - listitem [ref=e196] [cursor=pointer]:
+                - generic [ref=e197]: Playwright 2026-03-25T15:12:26.559Z
+                - generic [ref=e198]: 100,00 €
+                - generic [ref=e199]:
+                  - generic [ref=e200]: 100 % Bitcoin
+                  - generic [ref=e201]: 0 % Euro
+                - generic [ref=e202]: 25/03/2026 16:14
+              - separator [ref=e203]
+              - listitem [ref=e204] [cursor=pointer]:
+                - generic [ref=e205]: Playwright 2026-03-25T15:12:28.966Z
+                - generic [ref=e206]: 12,00 €
+                - generic [ref=e207]:
+                  - generic [ref=e208]: 0 % Bitcoin
+                  - generic [ref=e209]: 100 % Euro
+                - generic [ref=e210]: 25/03/2026 16:12
+              - separator [ref=e211]
+              - listitem [ref=e212] [cursor=pointer]:
+                - generic [ref=e213]: Playwright 2026-03-25T14:55:26.403Z
+                - generic [ref=e214]: 12,00 €
+                - generic [ref=e215]:
+                  - generic [ref=e216]: 0 % Bitcoin
+                  - generic [ref=e217]: 100 % Euro
+                - generic [ref=e218]: 25/03/2026 15:55
+              - separator [ref=e219]
+              - listitem [ref=e220] [cursor=pointer]:
+                - generic [ref=e221]: Playwright 2026-03-25T14:54:33.274Z
+                - generic [ref=e222]: 12,00 €
+                - generic [ref=e223]:
+                  - generic [ref=e224]: 0 % Bitcoin
+                  - generic [ref=e225]: 100 % Euro
+                - generic [ref=e226]: 25/03/2026 15:54
+              - separator [ref=e227]
+              - listitem [ref=e228] [cursor=pointer]:
+                - generic [ref=e229]: Playwright 2026-03-25T14:53:56.100Z
+                - generic [ref=e230]: 12,00 €
+                - generic [ref=e231]:
+                  - generic [ref=e232]: 0 % Bitcoin
+                  - generic [ref=e233]: 100 % Euro
+                - generic [ref=e234]: 25/03/2026 15:53
+              - separator [ref=e235]
+              - listitem [ref=e236] [cursor=pointer]:
+                - generic [ref=e237]: Playwright 2026-03-25T14:53:40.145Z
+                - generic [ref=e238]: 12,00 €
+                - generic [ref=e239]:
+                  - generic [ref=e240]: 0 % Bitcoin
+                  - generic [ref=e241]: 100 % Euro
+                - generic [ref=e242]: 25/03/2026 15:53
+              - separator [ref=e243]
+              - listitem [ref=e244] [cursor=pointer]:
+                - generic [ref=e245]: Playwright 2026-03-25T14:52:38.209Z
+                - generic [ref=e246]: 100,00 €
+                - generic [ref=e247]:
+                  - generic [ref=e248]: 100 % Bitcoin
+                  - generic [ref=e249]: 0 % Euro
+                - generic [ref=e250]: 25/03/2026 15:53
+              - separator [ref=e251]
+              - listitem [ref=e252] [cursor=pointer]:
+                - generic [ref=e253]: Playwright 2026-03-25T14:53:03.864Z
+                - generic [ref=e254]: 12,00 €
+                - generic [ref=e255]:
+                  - generic [ref=e256]: 0 % Bitcoin
+                  - generic [ref=e257]: 100 % Euro
+                - generic [ref=e258]: 25/03/2026 15:53
+              - separator [ref=e259]
+              - listitem [ref=e260] [cursor=pointer]:
+                - generic [ref=e261]: Playwright 2026-03-25T14:52:11.369Z
+                - generic [ref=e262]: 12,00 €
+                - generic [ref=e263]:
+                  - generic [ref=e264]: 0 % Bitcoin
+                  - generic [ref=e265]: 100 % Euro
+                - generic [ref=e266]: 25/03/2026 15:52
+              - separator [ref=e267]
+              - listitem [ref=e268] [cursor=pointer]:
+                - generic [ref=e269]: Playwright 2026-03-25T14:51:02.269Z
+                - generic [ref=e270]: 100,00 €
+                - generic [ref=e271]:
+                  - generic [ref=e272]: 100 % Bitcoin
+                  - generic [ref=e273]: 0 % Euro
+                - generic [ref=e274]: 25/03/2026 15:51
+              - separator [ref=e275]
+              - listitem [ref=e276] [cursor=pointer]:
+                - generic [ref=e277]: Playwright 2026-03-25T14:43:45.627Z
+                - generic [ref=e278]: 12,00 €
+                - generic [ref=e279]:
+                  - generic [ref=e280]: 0 % Bitcoin
+                  - generic [ref=e281]: 100 % Euro
+                - generic [ref=e282]: 25/03/2026 15:43
+              - separator [ref=e283]
+              - listitem [ref=e284] [cursor=pointer]:
+                - generic [ref=e285]: Playwright 2026-03-25T14:41:59.149Z
+                - generic [ref=e286]: 12,00 €
+                - generic [ref=e287]:
+                  - generic [ref=e288]: 0 % Bitcoin
+                  - generic [ref=e289]: 100 % Euro
+                - generic [ref=e290]: 25/03/2026 15:42
+              - separator [ref=e291]
+              - listitem [ref=e292] [cursor=pointer]:
+                - generic [ref=e293]: Playwright 2026-03-25T14:40:06.065Z
+                - generic [ref=e294]: 100,00 €
+                - generic [ref=e295]:
+                  - generic [ref=e296]: 100 % Bitcoin
+                  - generic [ref=e297]: 0 % Euro
+                - generic [ref=e298]: 25/03/2026 15:41
+              - separator [ref=e299]
+              - listitem [ref=e300] [cursor=pointer]:
+                - generic [ref=e301]: Playwright 2026-03-25T14:40:31.941Z
+                - generic [ref=e302]: 12,00 €
+                - generic [ref=e303]:
+                  - generic [ref=e304]: 0 % Bitcoin
+                  - generic [ref=e305]: 100 % Euro
+                - generic [ref=e306]: 25/03/2026 15:40
+              - separator [ref=e307]
+              - listitem [ref=e308] [cursor=pointer]:
+                - generic [ref=e309]: Playwright 2026-03-25T14:37:50.013Z
+                - generic [ref=e310]: 100,00 €
+                - generic [ref=e311]:
+                  - generic [ref=e312]: 100 % Bitcoin
+                  - generic [ref=e313]: 0 % Euro
+                - generic [ref=e314]: 25/03/2026 15:39
+              - separator [ref=e315]
+              - listitem [ref=e316] [cursor=pointer]:
+                - generic [ref=e317]: Playwright 2026-03-25T14:38:34.175Z
+                - generic [ref=e318]: 12,00 €
+                - generic [ref=e319]:
+                  - generic [ref=e320]: 0 % Bitcoin
+                  - generic [ref=e321]: 100 % Euro
+                - generic [ref=e322]: 25/03/2026 15:38
+              - separator [ref=e323]
+              - listitem [ref=e324]:
+                - generic [ref=e325]:
+                  - button "<" [disabled]:
+                    - generic: <
+                  - button "1" [ref=e326] [cursor=pointer]:
+                    - generic [ref=e327]: "1"
+                  - button "2" [ref=e328] [cursor=pointer]:
+                    - generic [ref=e329]: "2"
+                  - button "3" [ref=e330] [cursor=pointer]:
+                    - generic [ref=e331]: "3"
+                  - button "..." [disabled]:
+                    - generic: ...
+                  - button "55" [ref=e332] [cursor=pointer]:
+                    - generic [ref=e333]: "55"
+                  - button ">" [ref=e334] [cursor=pointer]:
+                    - generic [ref=e335]: ">"
+        - contentinfo [ref=e336]:
+          - generic [ref=e337]:
+            - generic [ref=e338]: Copyright © 2026
+            - link "Paymium" [ref=e339] [cursor=pointer]:
+              - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+            - generic [ref=e340]: 6.18.0
+            - link "Statut" [ref=e341] [cursor=pointer]:
+              - /url: /status
+            - link "Gérer vos cookies" [ref=e342] [cursor=pointer]
+```

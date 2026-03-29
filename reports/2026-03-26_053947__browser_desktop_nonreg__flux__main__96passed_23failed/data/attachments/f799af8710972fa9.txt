@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'crew',     'nurse',
+  'cargo',    'mean',
+  'adapt',    'oval',
+  'answer',   'exotic',
+  'burger',   'drum',
+  'electric', 'soda'
+]

@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'senior',  'pizza',
+  'radar',   'embrace',
+  'drop',    'survey',
+  'bulk',    'keen',
+  'index',   'secret',
+  'imitate', 'blur'
+]

@@ -1,0 +1,11 @@
+Error: expect(page).toHaveTitle(expected) failed
+
+Expected pattern: /^Parrainage - Paymium$/
+Received string:  "99500.0 BTC/EUR - Paymium"
+Timeout: 30000ms
+
+Call log:
+  - Expect "toHaveTitle" with timeout 30000ms
+    6 × unexpected value "99500.0 BTC/EUR - Paymium"
+
+

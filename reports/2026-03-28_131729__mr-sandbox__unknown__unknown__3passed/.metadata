@@ -1,0 +1,10 @@
+TIMESTAMP=2026-03-28_131729
+ENVIRONMENT=unknown
+BRANCH=unknown
+E2E_BRANCH=unknown
+JOB=mr-sandbox
+TOTAL=3
+PASSED=3
+FAILED=0
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/40675
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/255832

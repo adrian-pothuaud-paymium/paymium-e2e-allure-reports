@@ -1,0 +1,130 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - link:
+            - /url: /dashboard
+            - generic:
+              - img
+          - generic:
+            - button:
+              - img
+              - generic: Acheter
+            - button:
+              - img
+            - button:
+              - generic: FR
+              - img
+            - button:
+              - generic:
+                - generic:
+                  - img
+            - button:
+              - img
+            - button:
+              - img
+            - button:
+              - img
+        - generic:
+          - navigation:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                    - textbox:
+                      - /placeholder: Chercher
+              - generic:
+                - link:
+                  - /url: /dashboard
+                  - img
+                  - generic: Tableau de bord
+                - link:
+                  - /url: /wallet
+                  - img
+                  - generic: Portefeuille
+                - link:
+                  - img
+                  - generic: Achat / vente
+                - link:
+                  - /url: /deposit/EUR
+                  - img
+                  - generic: Dépôt / retrait
+                - link:
+                  - /url: /recurrent
+                  - img
+                  - generic: Achat récurrent
+                - link:
+                  - /url: /trade/BTC/EUR
+                  - img
+                  - generic: Mode expert
+                - link:
+                  - /url: /referral
+                  - img
+                  - generic: Parrainage
+                - link:
+                  - /url: /family
+                  - img
+                  - generic: Plan Bitcoin Famille
+                - link:
+                  - /url: /history
+                  - img
+                  - generic: Historique
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - tablist:
+                          - generic:
+                            - tab:
+                              - generic: Mes actifs
+                            - tab [selected]:
+                              - generic: Mes portefeuilles non-hébergés
+                    - tabpanel:
+                      - generic:
+                        - generic:
+                          - button:
+                            - generic: Créer un nouveau wallet non-hébergé
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                            - generic: Bénéficiez des portefeuilles non hébergés
+                            - generic:
+                              - generic: Créer un portefeuille non hébergé sur Paymium vous donne un contrôle total et une sécurité accrue de vos actifs en vous permettant de gérer directement vos clés privées. Cela réduit les risques de piratage et d'accès non autorisé.
+            - contentinfo:
+              - generic:
+                - generic: Copyright © 2026
+                - link:
+                  - /url: https://sandbox-paymium.webflow.io/
+                  - text: Paymium
+                - generic: 6.18.0
+                - link:
+                  - /url: /status
+                  - text: Statut
+                - link: Gérer vos cookies
+  - dialog [ref=e6]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e14]: Détails du wallet
+        - generic [ref=e17]: Modèle
+        - generic [ref=e20]: Sauvegarde
+        - generic [ref=e23]: Vérification
+        - generic [ref=e26]: Succès
+      - alert [ref=e27]:
+        - generic [ref=e28]:
+          - img [ref=e30]
+          - generic [ref=e33]: Une erreur s'est produite, veuillez réessayer.
+      - generic [ref=e34]:
+        - separator [ref=e35]
+        - button "Fermer" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: Fermer
+```

@@ -1,0 +1,8 @@
+POST /users failed Request failed with status code 429
+Attempt 1 to create test user failed: Request failed with status code 429
+TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+Call log:
+  - waiting for getByText('Nom de famille') to be visible
+    38 × locator resolved to hidden <label role="label">Nom de famille</label>
+
+

@@ -1,0 +1,16 @@
+POST /users failed Request failed with status code 429
+Attempt 1 to create test user failed: Request failed with status code 429
+POST /users failed Request failed with status code 429
+Attempt 2 to create test user failed: Request failed with status code 429
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByText('Si votre compte est trouvé, vous allez recevoir un email contenant les instructions pour créer un nouveau mot de passe. N\'oubliez pas de le chercher dans votre boîte de courrier indésirable également.')
+Expected: visible
+Timeout: 10000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 10000ms
+  - waiting for getByText('Si votre compte est trouvé, vous allez recevoir un email contenant les instructions pour créer un nouveau mot de passe. N\'oubliez pas de le chercher dans votre boîte de courrier indésirable également.')
+
+

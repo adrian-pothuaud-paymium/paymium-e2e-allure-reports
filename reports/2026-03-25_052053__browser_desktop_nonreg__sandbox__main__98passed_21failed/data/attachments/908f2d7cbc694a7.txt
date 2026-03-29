@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'second',  'people',
+  'bronze',  'bacon',
+  'sadness', 'just',
+  'shoot',   'stairs',
+  'process', 'mobile',
+  'caught',  'coast'
+]

@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'purchase', 'crumble',
+  'coconut',  'force',
+  'poem',     'escape',
+  'bird',     'fortune',
+  'amateur',  'mix',
+  'super',    'coast'
+]

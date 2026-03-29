@@ -1,0 +1,6 @@
+TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+Call log:
+  - waiting for getByText('Nom de famille') to be visible
+    43 × locator resolved to hidden <label role="label">Nom de famille</label>
+
+

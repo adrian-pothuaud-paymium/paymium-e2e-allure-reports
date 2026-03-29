@@ -1,0 +1,128 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic:
+    - generic:
+      - generic:
+        - link:
+          - /url: /dashboard
+          - generic:
+            - img
+        - generic:
+          - button:
+            - img
+            - generic: Acheter
+          - button:
+            - img
+          - button:
+            - generic: FR
+            - img
+          - button:
+            - generic:
+              - generic:
+                - img
+          - button:
+            - img
+          - button:
+            - img
+          - button:
+            - img
+      - generic:
+        - navigation:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - textbox:
+                    - /placeholder: Chercher
+            - generic:
+              - link:
+                - /url: /dashboard
+                - img
+                - generic: Tableau de bord
+              - link:
+                - /url: /wallet
+                - img
+                - generic: Portefeuille
+              - link:
+                - img
+                - generic: Achat / vente
+              - link:
+                - /url: /deposit/EUR
+                - img
+                - generic: Dépôt / retrait
+              - link:
+                - /url: /recurrent
+                - img
+                - generic: Achat récurrent
+              - link:
+                - /url: /trade/BTC/EUR
+                - img
+                - generic: Mode expert
+              - link:
+                - /url: /referral
+                - img
+                - generic: Parrainage
+              - link:
+                - /url: /family
+                - img
+                - generic: Plan Bitcoin Famille
+              - link:
+                - /url: /history
+                - img
+                - generic: Historique
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - tablist:
+                        - generic:
+                          - tab:
+                            - generic: Mes actifs
+                          - tab [selected]:
+                            - generic: Mes portefeuilles non-hébergés
+                  - tabpanel:
+                    - generic:
+                      - generic:
+                        - button:
+                          - generic: Créer un nouveau wallet non-hébergé
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                          - generic: Bénéficiez des portefeuilles non hébergés
+                          - generic:
+                            - generic: Créer un portefeuille non hébergé sur Paymium vous donne un contrôle total et une sécurité accrue de vos actifs en vous permettant de gérer directement vos clés privées. Cela réduit les risques de piratage et d'accès non autorisé.
+          - contentinfo:
+            - generic:
+              - generic: Copyright © 2026
+              - link:
+                - /url: https://sandbox-paymium.webflow.io/
+                - text: Paymium
+              - generic: 6.17.0
+              - link:
+                - /url: /status
+                - text: Statut
+              - link: Gérer vos cookies
+  - dialog [ref=e8]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e17]: Détails du wallet
+        - generic [ref=e20]: Modèle
+        - generic [ref=e23]: Sauvegarde
+        - generic [ref=e26]: Vérification
+        - generic [ref=e29]: Succès
+      - alert [ref=e30]:
+        - img [ref=e32]
+        - generic [ref=e35]: Une erreur s'est produite, veuillez réessayer.
+      - generic [ref=e36]:
+        - separator [ref=e37]
+        - button "Fermer" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: Fermer
+```

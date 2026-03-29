@@ -1,0 +1,5 @@
+TimeoutError: locator.inputValue: Timeout 60000ms exceeded.
+Call log:
+  - waiting for getByRole('textbox', { name: 'Email' })
+
+

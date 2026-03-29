@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'evoke',    'forward',
+  'diesel',   'silver',
+  'mango',    'inflict',
+  'together', 'bless',
+  'whisper',  'coconut',
+  'key',      'float'
+]

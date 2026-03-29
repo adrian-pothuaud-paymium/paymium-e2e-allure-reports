@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'spray',   'behind',
+  'sick',    'correct',
+  'glimpse', 'humor',
+  'armed',   'spy',
+  'goose',   'release',
+  'trend',   'denial'
+]

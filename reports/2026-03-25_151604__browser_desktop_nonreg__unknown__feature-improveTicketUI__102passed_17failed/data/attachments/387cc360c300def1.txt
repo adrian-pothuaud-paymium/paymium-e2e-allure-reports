@@ -1,0 +1,4 @@
+[pageerror] SyntaxError: Unexpected token '<'
+[pageerror] SyntaxError: Unexpected token '<'
+Error: Impossible de fermer l'overlay après avoir essayé toutes les stratégies (dialog.close, Escape, bouton, backdrop, drag, suppression DOM)
+

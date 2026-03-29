@@ -1,0 +1,5 @@
+POST /users failed Request failed with status code 429
+Attempt 1 to create test user failed: Request failed with status code 429
+addPhoneNumber failed Request failed with status code 500
+Failed to add phone number: 500 Internal Server Error
+Attempt 2 to create test user failed: Request failed with status code 500

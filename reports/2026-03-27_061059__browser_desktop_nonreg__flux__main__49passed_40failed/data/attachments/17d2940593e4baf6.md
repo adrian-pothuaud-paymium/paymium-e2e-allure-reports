@@ -1,0 +1,59 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e7]:
+  - generic [ref=e8]:
+    - link [ref=e9] [cursor=pointer]:
+      - /url: https://www.paymium.com/
+      - img [ref=e11]
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - button "FR" [ref=e49] [cursor=pointer]:
+          - generic [ref=e50]: FR
+          - img [ref=e51]
+        - button [ref=e53] [cursor=pointer]:
+          - img [ref=e56]
+        - button [ref=e59] [cursor=pointer]:
+          - img [ref=e60]
+      - button "Se connecter" [ref=e63] [cursor=pointer]:
+        - generic [ref=e64]: Se connecter
+  - generic [ref=e65]:
+    - navigation
+    - generic [ref=e66]:
+      - form [ref=e70]:
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - generic [ref=e77]: Erreur 500
+              - generic [ref=e78]: Quelque chose a mal tourné
+            - generic [ref=e79]: "Une erreur inattendue s’est produite ou vous n’avez peut-être pas la permission de consulter cette page. Les liens suivants peuvent vous aider à reprendre votre navigation :"
+            - generic [ref=e80]: "ReferenceError: containerStyles is not defined"
+          - button "Retourner en arrière" [ref=e82] [cursor=pointer]:
+            - img [ref=e83]
+            - generic [ref=e85]: Retourner en arrière
+          - generic [ref=e86]:
+            - generic [ref=e87]:
+              - generic [ref=e88]:
+                - link "Documentation" [ref=e89] [cursor=pointer]
+                - img [ref=e90]
+              - generic [ref=e92]: Plongez pour tout apprendre sur le produit.
+            - generic [ref=e93]:
+              - generic [ref=e94]:
+                - link "Notre blog" [ref=e95] [cursor=pointer]
+                - img [ref=e96]
+              - generic [ref=e98]: Lisez les derniers articles sur notre blog.
+            - generic [ref=e99]:
+              - generic [ref=e100]:
+                - link "Contacter le support" [ref=e101] [cursor=pointer]
+                - img [ref=e102]
+              - generic [ref=e104]: Notre équipe sympathique est là pour vous aider.
+      - contentinfo [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e107]: Copyright © 2026
+          - link "Paymium" [ref=e108] [cursor=pointer]:
+            - /url: https://sandbox-paymium.webflow.io/
+          - generic [ref=e109]: 6.18.0
+          - link "Statut" [ref=e110] [cursor=pointer]:
+            - /url: /status
+          - link "Gérer vos cookies" [ref=e111] [cursor=pointer]
+```

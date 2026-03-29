@@ -1,0 +1,5 @@
+TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for getByRole('dialog').last().getByText('Wallet non-hébergé créé avec succès') to be visible
+
+

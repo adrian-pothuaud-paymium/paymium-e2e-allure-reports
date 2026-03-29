@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'coconut', 'unusual',
+  'leave',   'opinion',
+  'change',  'sand',
+  'mention', 'twelve',
+  'quantum', 'wool',
+  'flock',   'limb'
+]
