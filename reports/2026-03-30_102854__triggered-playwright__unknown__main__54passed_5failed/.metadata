@@ -1,0 +1,10 @@
+TIMESTAMP=2026-03-30_102854
+ENVIRONMENT=unknown
+BRANCH=main
+E2E_BRANCH=main
+JOB=triggered-playwright
+TOTAL=59
+PASSED=54
+FAILED=5
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/40697
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/256103

@@ -1,0 +1,59 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e7]:
+  - generic [ref=e8]:
+    - link [ref=e9] [cursor=pointer]:
+      - /url: https://www.paymium.com/
+      - img [ref=e11]
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - button "FR" [ref=e49] [cursor=pointer]:
+          - generic [ref=e50]: FR
+          - img [ref=e51]
+        - button [ref=e53] [cursor=pointer]:
+          - img [ref=e56]
+        - button [ref=e58] [cursor=pointer]:
+          - img [ref=e59]
+      - button "Créer un compte" [ref=e62] [cursor=pointer]:
+        - generic [ref=e63]: Créer un compte
+  - generic [ref=e64]:
+    - navigation
+    - generic [ref=e65]:
+      - form [ref=e69]:
+        - generic [ref=e70]:
+          - generic [ref=e71]: Se connecter à Paymium
+          - generic [ref=e72]:
+            - generic [ref=e74]:
+              - generic [ref=e76]: Email
+              - textbox "Email" [ref=e78]: adrian.pothuaud+auto.primary@paymium.com
+            - generic [ref=e79]:
+              - generic [ref=e81]:
+                - generic [ref=e83]: Mot de passe
+                - generic [ref=e84]:
+                  - textbox "Mot de passe" [ref=e85]: Password123!
+                  - button [ref=e88] [cursor=pointer]:
+                    - img [ref=e89]
+              - link "Mot de passe oublié ?" [ref=e91] [cursor=pointer]:
+                - /url: /reset-password
+          - alert [ref=e92]:
+            - generic [ref=e93]:
+              - img [ref=e95]
+              - generic [ref=e98]: Request failed with status code 500
+          - button "Se connecter" [ref=e99] [cursor=pointer]:
+            - generic [ref=e100]: Se connecter
+          - generic [ref=e102]:
+            - text: Besoin d'aide ?
+            - link "Contactez nous" [ref=e103] [cursor=pointer]:
+              - /url: mailto:support@paymium.com
+            - text: .
+      - contentinfo [ref=e104]:
+        - generic [ref=e105]:
+          - generic [ref=e106]: Copyright © 2026
+          - link "Paymium" [ref=e107] [cursor=pointer]:
+            - /url: process.env.PAYMIUM_ENV_SHOWCASE_SITE
+          - generic [ref=e108]: 6.18.0
+          - link "Statut" [ref=e109] [cursor=pointer]:
+            - /url: /status
+          - link "Gérer vos cookies" [ref=e110] [cursor=pointer]
+```

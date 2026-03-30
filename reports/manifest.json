@@ -1,5 +1,19 @@
 [
   {
+    "folder": "2026-03-30_102854__triggered-playwright__unknown__main__54passed_5failed",
+    "timestamp": "2026-03-30_102854",
+    "environment": "unknown",
+    "branch": "main",
+    "e2eBranch": "main",
+    "job": "triggered-playwright",
+    "total": 59,
+    "passed": 54,
+    "failed": 5,
+    "pipelineUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/40697",
+    "jobUrl": "https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/256103"
+  }
+,
+  {
     "folder": "2026-03-30_043714__scheduled-sandbox__unknown__main__59passed_5failed",
     "timestamp": "2026-03-30_043714",
     "environment": "unknown",
