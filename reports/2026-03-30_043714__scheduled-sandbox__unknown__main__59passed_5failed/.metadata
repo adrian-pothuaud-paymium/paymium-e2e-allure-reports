@@ -1,0 +1,10 @@
+TIMESTAMP=2026-03-30_043714
+ENVIRONMENT=unknown
+BRANCH=main
+E2E_BRANCH=main
+JOB=scheduled-sandbox
+TOTAL=64
+PASSED=59
+FAILED=5
+PIPELINE_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/pipelines/40678
+JOB_URL=https://gitlab.paymium.com/crypto-platform/paymium-e2e-united/-/jobs/255925

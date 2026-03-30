@@ -1,0 +1,12 @@
+Error: expect(locator).toBeVisible() failed
+
+Locator: locator('.table-b-cell').filter({ hasText: 'Playwright 2026-03-30T03:18:17.808Z' })
+Expected: visible
+Timeout: 10000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" with timeout 10000ms
+  - waiting for locator('.table-b-cell').filter({ hasText: 'Playwright 2026-03-30T03:18:17.808Z' })
+
+

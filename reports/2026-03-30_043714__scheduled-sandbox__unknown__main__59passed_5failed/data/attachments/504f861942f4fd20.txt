@@ -1,0 +1,5 @@
+Sending request to get API tokens
+Found 1 API tokens to delete
+Deleting API token with ID: 0451c01f-6e9d-4256-983a-46afc647e758
+Deleted API token with ID: 0451c01f-6e9d-4256-983a-46afc647e758
+Sending request to get API tokens
