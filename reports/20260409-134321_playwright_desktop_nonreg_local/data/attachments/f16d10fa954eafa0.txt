@@ -1,0 +1,2 @@
+Button created with response: {"uuid":"c5e1c8b9-6b97-425d-9cb9-692692f49a86","label":"Playwright 2026-04-09T12:29:01.239Z","currency":"EUR","payment_split":"1.0","requires_customer_email":true,"requires_delivery_address":false,"amount":"12.0","created_at":1775737742,"updated_at":1775737742}
+Button created with id: c5e1c8b9-6b97-425d-9cb9-692692f49a86

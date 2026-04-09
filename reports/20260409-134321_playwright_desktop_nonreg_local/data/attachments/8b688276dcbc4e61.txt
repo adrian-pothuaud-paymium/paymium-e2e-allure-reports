@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'junior',  'zebra',
+  'apology', 'more',
+  'pair',    'build',
+  'outdoor', 'poem',
+  'park',    'release',
+  'taste',   'kiwi'
+]

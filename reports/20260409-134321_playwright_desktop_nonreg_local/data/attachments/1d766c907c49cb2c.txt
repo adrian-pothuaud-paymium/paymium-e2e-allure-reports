@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'trigger', 'urge',
+  'owner',   'invite',
+  'rough',   'velvet',
+  'stem',    'review',
+  'wool',    'similar',
+  'wall',    'pony'
+]

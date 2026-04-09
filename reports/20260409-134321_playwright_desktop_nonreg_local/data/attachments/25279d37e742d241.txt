@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'city',     'trouble',
+  'poem',     'best',
+  'hill',     'size',
+  'sentence', 'century',
+  'memory',   'raven',
+  'zebra',    'lava'
+]

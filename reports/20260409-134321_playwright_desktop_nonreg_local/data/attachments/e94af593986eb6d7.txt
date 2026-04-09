@@ -1,0 +1,8 @@
+Mnemonic words: [
+  'fruit',  'laundry',
+  'monkey', 'hawk',
+  'review', 'pipe',
+  'match',  'card',
+  'abuse',  'inject',
+  'drift',  'emerge'
+]

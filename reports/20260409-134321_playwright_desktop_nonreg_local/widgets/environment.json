@@ -1,0 +1,1 @@
+[{"values":["true"],"name":"isCI"},{"values":["true"],"name":"isTriggered"},{"values":["next-release"],"name":"paymiumClientBranch"},{"values":["v24.14.1"],"name":"node_version"},{"values":["https://gitlab.paymium.com/crypto-platform/paymium-client-united/-/merge_requests/1407"],"name":"Client_United_MR"},{"values":["next-release"],"name":"Client_United_Branch"}]
