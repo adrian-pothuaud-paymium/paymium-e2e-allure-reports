@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","78618","Un utilisateur ne peut pas se connecter avec un mot de passe incorrect","staging_responsive_sanity","2026-04-14","passed","2026-04-14","","authentication/sign-in/wrong-password.spec.ts","",""
+"","21820","Un utilisateur ne peut pas se connecter avec un email non enregistré","staging_responsive_sanity","2026-04-14","passed","2026-04-14","","authentication/sign-in/unregistered.spec.ts","",""
+"","30021","Un utilisateur peut se connecter avec des identifiants valides et sans 2FA","staging_responsive_sanity","2026-04-14","passed","2026-04-14","","authentication/sign-in/nominal.spec.ts","",""
